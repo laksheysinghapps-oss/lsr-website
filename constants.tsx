@@ -1,6 +1,6 @@
 import React from 'react';
 import { Project, Service, TeamMember, Insight, NavItem } from './types';
-import { LineChart, PieChart, Shield, Globe, Landmark, TrendingUp, Search, Briefcase } from 'lucide-react';
+import { LineChart, PieChart, Shield, Globe, Landmark, TrendingUp, Search, Briefcase, BarChart3, Handshake } from 'lucide-react';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -135,14 +135,11 @@ export const INSIGHTS: Insight[] = [
   },
 ];
 
-// Helper icons
-import { BarChart3, Handshake } from 'lucide-react';
-
 export const COMPANY_DETAILS = {
   address: "911, Magnum Global Towers, Gurgaon, India",
   phone: "+91 98100 00000",
   email: "invest@lsr-realty.com",
-  founder: "Founder Name", // Placeholder if not explicitly named in prompt, but context implies Founder
+  founder: "Founder Name",
   tagline: "Gurgaon's Premier Real Estate Investment Advisory",
   subTagline: "Data-driven. Transparent. Institutional-quality.",
 };
