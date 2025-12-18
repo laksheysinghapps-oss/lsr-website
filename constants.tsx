@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
     priceRange: '₹ 8.5 Cr - ₹ 9.5 Cr',
     type: 'Ultra Luxury Residential',
     status: 'Sold Out / Resale Only',
-    image: 'https://picsum.photos/id/122/1200/800',
+    image: '/images/IMG_4957.jpg',
     developer: 'DLF Ltd',
     description: 'A masterpiece of low-density luxury living defined by expansive decks and state-of-the-art amenities. The Arbour represents the pinnacle of institutional-grade development in New Gurgaon.',
     highlights: ['Low Density Living', 'Expansive Decks', 'Unmatched Club Facilities', 'High Appreciation Potential'],

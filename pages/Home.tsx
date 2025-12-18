@@ -213,6 +213,69 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Client Success */}
+      <section className="py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Client Success</h4>
+            <h2 className="text-3xl md:text-5xl font-serif text-white">Trusted by Investors</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative">
+              <p className="text-gray-300 text-lg italic leading-relaxed mb-8">
+                "LSR Realty's institutional approach transformed how I view real estate investment. Their research-backed recommendations gave me confidence to make my first luxury property investment."
+              </p>
+              <div className="flex justify-between items-end">
+                <div>
+                  <p className="text-lsr-gold font-semibold">NRI Investor</p>
+                  <p className="text-gray-500 text-sm">San Francisco, USA</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-gray-500 text-xs uppercase tracking-wider">NRI</p>
+                  <p className="text-gray-400 text-sm">₹8.5 Cr in DLF Arbour</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative">
+              <p className="text-gray-300 text-lg italic leading-relaxed mb-8">
+                "As a busy corporate executive, I needed someone who could do the heavy lifting. LSR's detailed investment memos and market analysis made my decision easy."
+              </p>
+              <div className="flex justify-between items-end">
+                <div>
+                  <p className="text-lsr-gold font-semibold">Senior VP</p>
+                  <p className="text-gray-500 text-sm">MNC, Cyber City</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-gray-500 text-xs uppercase tracking-wider">Corporate Professional</p>
+                  <p className="text-gray-400 text-sm">₹12 Cr Portfolio</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative">
+              <p className="text-gray-300 text-lg italic leading-relaxed mb-8">
+                "The quarterly market reports and ongoing portfolio tracking set LSR apart. They don't disappear after the transaction – that's rare in this industry."
+              </p>
+              <div className="flex justify-between items-end">
+                <div>
+                  <p className="text-lsr-gold font-semibold">Family Office</p>
+                  <p className="text-gray-500 text-sm">Delhi</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-gray-500 text-xs uppercase tracking-wider">HNI</p>
+                  <p className="text-gray-400 text-sm">₹35 Cr across 4 assets</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-black relative">
         <div className="absolute inset-0 bg-lsr-gold/5" />
