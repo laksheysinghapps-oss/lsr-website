@@ -71,7 +71,7 @@ export const PROJECTS: Project[] = [
     possessionDate: 'September 2030',
     type: 'Premium Residential',
     status: 'New Launch',
-    image: 'https://picsum.photos/id/234/1200/800',
+    image: '/images/Emaar-Serenity-Hills-86.png',
     developer: 'Emaar India',
     rera: 'GGM/993/725/2025/96',
     totalUnits: 1500,
