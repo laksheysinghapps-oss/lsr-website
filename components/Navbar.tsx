@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
         
         {/* Logo */}
         <div onClick={() => handleNavClick('/')} className="cursor-pointer group">
-          <img src="/images/logo-07-filled-square.svg" alt="LSR Realty" className="h-[90px] md:h-[100px] w-auto" />
+          <img src="/images/logo-07-filled-square.svg" alt="LSR Realty" className="h-[108px] md:h-[120px] w-auto" />
         </div>
 
         {/* Desktop Menu */}
