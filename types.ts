@@ -5,11 +5,18 @@ export interface Project {
   name: string;
   location: string;
   priceRange: string;
+  pricePerSqFt: string;
+  possessionDate: string;
   type: string;
   status: string;
   image: string;
   description: string;
   developer: string;
+  rera?: string;
+  totalUnits?: number;
+  towers?: number;
+  floors?: number;
+  landArea?: string;
   highlights: string[];
   amenities: string[];
   unitMix: { type: string; size: string; price: string }[];

@@ -40,10 +40,46 @@ const ProjectDetail: React.FC = () => {
         </div>
       </div>
 
+      {/* Key Metrics Bar */}
+      <div className="bg-lsr-charcoal border-y border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+            <div>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Price Range</p>
+              <p className="text-lsr-gold font-semibold">{project.priceRange}</p>
+            </div>
+            <div>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Price/Sq.Ft.</p>
+              <p className="text-white font-semibold">{project.pricePerSqFt}</p>
+            </div>
+            <div>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Possession</p>
+              <p className="text-white font-semibold">{project.possessionDate}</p>
+            </div>
+            <div>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Developer</p>
+              <p className="text-white font-semibold">{project.developer}</p>
+            </div>
+            {project.landArea && (
+              <div>
+                <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Land Area</p>
+                <p className="text-white font-semibold">{project.landArea}</p>
+              </div>
+            )}
+            {project.towers && (
+              <div>
+                <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Towers</p>
+                <p className="text-white font-semibold">{project.towers} Towers{project.floors ? ` | G+${project.floors}` : ''}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-16">
         {/* Main Content */}
         <div className="lg:col-span-2 space-y-12">
-          
+
           {/* Overview */}
           <section>
             <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">Investment Thesis</h3>
@@ -142,6 +178,13 @@ const ProjectDetail: React.FC = () => {
                 <span>Chat on WhatsApp</span>
               </a>
             </div>
+
+            {project.rera && (
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">RERA Registration</p>
+                <p className="text-xs text-gray-400 font-mono">{project.rera}</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -50,6 +50,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             <span className="text-lsr-gold font-medium">{project.priceRange}</span>
           </div>
           <div className="flex justify-between text-sm border-b border-white/10 pb-2">
+            <span className="text-gray-500">Price/Sq.Ft.</span>
+            <span className="text-gray-200">{project.pricePerSqFt}</span>
+          </div>
+          <div className="flex justify-between text-sm border-b border-white/10 pb-2">
+            <span className="text-gray-500">Possession</span>
+            <span className="text-gray-200">{project.possessionDate}</span>
+          </div>
+          <div className="flex justify-between text-sm border-b border-white/10 pb-2">
             <span className="text-gray-500">Type</span>
             <span className="text-gray-200">{project.type}</span>
           </div>
