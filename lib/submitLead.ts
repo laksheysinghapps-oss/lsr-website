@@ -1,5 +1,5 @@
-// Google Apps Script Web App URL - Replace with your deployed URL
-const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+// Google Apps Script Web App URL
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzQprjikOLVxi7IAO1qXsjIEVMRAjo3H_lA0XP37geLl2bYZBdVgACBV4dFACt748cj8w/exec';
 
 export interface LeadData {
   name: string;
