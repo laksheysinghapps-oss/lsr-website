@@ -28,8 +28,8 @@ const Navbar: React.FC = () => {
         
         {/* Logo */}
         <div onClick={() => handleNavClick('/')} className="cursor-pointer group flex flex-col items-center">
-          <img src="/images/logo-07-filled-square.svg" alt="LSR Realty" className="h-12 w-auto" />
-          <p className="text-[8px] tracking-[0.2em] uppercase text-gray-400 mt-1">Investment Advisory</p>
+          <img src="/images/logo-07-filled-square.svg" alt="LSR Realty" className="h-20 w-auto" />
+          <p className="text-xs tracking-[0.3em] uppercase text-gray-300 mt-2 font-medium">Investment Advisory</p>
         </div>
 
         {/* Desktop Menu */}
