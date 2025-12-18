@@ -2,12 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import { Project } from '../types';
-import { Check, Download, MapPin, Share2 } from 'lucide-react';
+import { Check, Download, MapPin, Loader2 } from 'lucide-react';
+import { submitLead } from '../lib/submitLead';
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [project, setProject] = useState<Project | null>(null);
+
+  // Form state
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   useEffect(() => {
     const found = PROJECTS.find(p => p.id === id);
@@ -17,6 +28,36 @@ const ProjectDetail: React.FC = () => {
       navigate('/projects');
     }
   }, [id, navigate]);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const result = await submitLead({
+      ...formData,
+      project: project?.name || 'Unknown Project',
+      source: `Project Page - ${project?.name}`
+    });
+
+    setIsSubmitting(false);
+
+    if (result.success) {
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      // Reset status after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    } else {
+      setSubmitStatus('error');
+    }
+  };
 
   if (!project) return null;
 
@@ -153,25 +194,78 @@ const ProjectDetail: React.FC = () => {
           <div className="sticky top-28 bg-lsr-charcoal p-8 border border-white/10">
             <h3 className="text-xl font-serif text-white mb-2">Request Priority Access</h3>
             <p className="text-sm text-gray-400 mb-6">Get the brochure, floor plans, and latest payment plans.</p>
-            
-            <form className="space-y-4">
-              <input type="text" placeholder="Full Name" className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold" />
-              <input type="email" placeholder="Email Address" className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold" />
-              <input type="tel" placeholder="Phone Number" className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold" />
-              <textarea placeholder="Message / Specific Requirements" rows={3} className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold"></textarea>
-              <button className="w-full bg-lsr-gold text-black font-bold uppercase tracking-widest py-4 hover:bg-white transition-colors">
-                Submit Inquiry
-              </button>
-            </form>
+
+            {submitStatus === 'success' ? (
+              <div className="bg-green-900/30 border border-green-500/50 p-6 text-center">
+                <Check className="w-12 h-12 text-green-500 mx-auto mb-3" />
+                <p className="text-green-400 font-semibold">Thank you!</p>
+                <p className="text-gray-400 text-sm mt-1">We'll contact you shortly.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder="Full Name"
+                  required
+                  className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder="Email Address"
+                  required
+                  className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  placeholder="Phone Number"
+                  required
+                  className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold"
+                />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  placeholder="Message / Specific Requirements"
+                  rows={3}
+                  className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold"
+                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-lsr-gold text-black font-bold uppercase tracking-widest py-4 hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    'Submit Inquiry'
+                  )}
+                </button>
+                {submitStatus === 'error' && (
+                  <p className="text-red-400 text-sm text-center">Something went wrong. Please try again.</p>
+                )}
+              </form>
+            )}
 
             <div className="mt-8 pt-8 border-t border-white/10 flex flex-col space-y-4">
               <button className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors">
                 <Download size={16} />
                 <span>Download Brochure</span>
               </button>
-               <a 
-                href="https://wa.me/919810000000" 
-                target="_blank" 
+               <a
+                href="https://wa.me/919999315702"
+                target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-center space-x-2 w-full border border-[#25D366] text-[#25D366] py-3 text-sm hover:bg-[#25D366] hover:text-white transition-colors"
               >

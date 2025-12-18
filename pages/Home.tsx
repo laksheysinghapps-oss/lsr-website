@@ -286,7 +286,7 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <a 
-              href="https://wa.me/919810000000" 
+              href="https://wa.me/919999315702" 
               target="_blank" 
               rel="noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-opacity-90 transition-colors flex items-center justify-center gap-2"

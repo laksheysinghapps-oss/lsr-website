@@ -1,12 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { COMPANY_DETAILS } from '../constants';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Check, Loader2 } from 'lucide-react';
+import { submitLead } from '../lib/submitLead';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    interest: 'Investment Advisory',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    const result = await submitLead({
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      phone: formData.phone,
+      project: formData.interest,
+      message: formData.message,
+      source: 'Contact Page'
+    });
+
+    setIsSubmitting(false);
+
+    if (result.success) {
+      setSubmitStatus('success');
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        interest: 'Investment Advisory',
+        message: ''
+      });
+    } else {
+      setSubmitStatus('error');
+    }
+  };
+
   return (
     <div className="bg-black text-white pt-24 min-h-screen">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
-        
+
         {/* Contact Info */}
         <div>
           <h1 className="text-4xl md:text-5xl font-serif mb-8">Get In Touch</h1>
@@ -26,14 +76,18 @@ const Contact: React.FC = () => {
               <Phone className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Phone</h3>
-                <p className="text-gray-400">{COMPANY_DETAILS.phone}</p>
+                <a href={`tel:${COMPANY_DETAILS.phone.replace(/\s/g, '')}`} className="text-gray-400 hover:text-lsr-gold transition-colors">
+                  {COMPANY_DETAILS.phone}
+                </a>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Mail className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Email</h3>
-                <p className="text-gray-400">{COMPANY_DETAILS.email}</p>
+                <a href={`mailto:${COMPANY_DETAILS.email}`} className="text-gray-400 hover:text-lsr-gold transition-colors">
+                  {COMPANY_DETAILS.email}
+                </a>
               </div>
             </div>
           </div>
@@ -54,42 +108,110 @@ const Contact: React.FC = () => {
         {/* Form */}
         <div className="bg-neutral-900 p-8 md:p-12 border border-white/10">
           <h2 className="text-2xl font-serif mb-8">Send a Message</h2>
-          <form className="space-y-6">
-             <div className="grid grid-cols-2 gap-6">
-               <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-gray-500">First Name</label>
-                 <input type="text" className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors" />
-               </div>
-               <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-gray-500">Last Name</label>
-                 <input type="text" className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors" />
-               </div>
-             </div>
-             <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-gray-500">Email Address</label>
-                 <input type="email" className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors" />
-             </div>
-             <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-gray-500">Phone</label>
-                 <input type="tel" className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors" />
-             </div>
-             <div className="space-y-2">
-                 <label className="text-xs uppercase tracking-widest text-gray-500">Interest</label>
-                 <select className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors">
-                   <option>Investment Advisory</option>
-                   <option>New Project Inquiry</option>
-                   <option>NRI Services</option>
-                   <option>Other</option>
-                 </select>
-             </div>
-             <div className="space-y-2 pt-4">
-                 <label className="text-xs uppercase tracking-widest text-gray-500">Message</label>
-                 <textarea rows={4} className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"></textarea>
-             </div>
-             <button className="w-full bg-lsr-gold text-black uppercase tracking-widest font-bold py-4 hover:bg-white transition-colors mt-4">
-               Submit Request
-             </button>
-          </form>
+
+          {submitStatus === 'success' ? (
+            <div className="bg-green-900/30 border border-green-500/50 p-8 text-center">
+              <Check className="w-16 h-16 text-green-500 mx-auto mb-4" />
+              <p className="text-green-400 font-semibold text-xl">Thank you!</p>
+              <p className="text-gray-400 mt-2">We've received your message and will get back to you within 24 hours.</p>
+              <button
+                onClick={() => setSubmitStatus('idle')}
+                className="mt-6 text-lsr-gold hover:text-white transition-colors text-sm uppercase tracking-widest"
+              >
+                Send Another Message
+              </button>
+            </div>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-xs uppercase tracking-widest text-gray-500">First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs uppercase tracking-widest text-gray-500">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
+                  />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs uppercase tracking-widest text-gray-500">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs uppercase tracking-widest text-gray-500">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs uppercase tracking-widest text-gray-500">Interest</label>
+                <select
+                  name="interest"
+                  value={formData.interest}
+                  onChange={handleInputChange}
+                  className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
+                >
+                  <option>Investment Advisory</option>
+                  <option>New Project Inquiry</option>
+                  <option>NRI Services</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div className="space-y-2 pt-4">
+                <label className="text-xs uppercase tracking-widest text-gray-500">Message</label>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows={4}
+                  className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full bg-lsr-gold text-black uppercase tracking-widest font-bold py-4 hover:bg-white transition-colors mt-4 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    Submitting...
+                  </>
+                ) : (
+                  'Submit Request'
+                )}
+              </button>
+              {submitStatus === 'error' && (
+                <p className="text-red-400 text-sm text-center">Something went wrong. Please try again or contact us directly.</p>
+              )}
+            </form>
+          )}
         </div>
 
       </div>
