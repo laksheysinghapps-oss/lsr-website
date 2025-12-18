@@ -49,8 +49,8 @@ const ProjectDetail: React.FC = () => {
               <p className="text-lsr-gold font-semibold">{project.priceRange}</p>
             </div>
             <div>
-              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Price/Sq.Ft.</p>
-              <p className="text-white font-semibold">{project.pricePerSqFt}</p>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Size Range</p>
+              <p className="text-white font-semibold">{project.sizeRange}</p>
             </div>
             <div>
               <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Possession</p>

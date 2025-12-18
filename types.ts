@@ -6,6 +6,7 @@ export interface Project {
   location: string;
   priceRange: string;
   pricePerSqFt: string;
+  sizeRange: string;
   possessionDate: string;
   type: string;
   status: string;
