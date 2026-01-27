@@ -21,42 +21,9 @@ const Footer: React.FC = () => {
             Bridging the gap between institutional expertise and individual investors.
           </p>
           <div className="flex space-x-4">
-              <a
-              href={COMPANY_DETAILS.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LSR Realty LinkedIn"
-              >
-            <Linkedin className="w-5 h-5 text-gray-400 hover:text-lsr-gold transition-colors" />
-            </a>
-
-            <a
-            href={COMPANY_DETAILS.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LSR Realty Instagram"
-            >
-          <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold transition-colors" />
-          </a>
-
-          <a
-         href={COMPANY_DETAILS.facebook}
-         target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LSR Realty Facebook"
-        >
-      <Facebook className="w-5 h-5 text-gray-400 hover:text-lsr-gold transition-colors" />
- 
-      </a>
-      export const COMPANY_DETAILS = {
-      address: "...",
-      phone: "...",
-      email: "...",
-
-      linkedin: "https://www.linkedin.com/company/lsr-realty/?viewAsMember=true",
-      instagram: "https://www.instagram.com/lsrrealty/",
-      facebook: "https://www.facebook.com/profile.php?id=61586950558326",
-      };
+                     <Linkedin className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
+                    <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
+                    <Twitter className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
 
    </div>
         </div>
