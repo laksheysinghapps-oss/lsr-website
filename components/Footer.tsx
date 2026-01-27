@@ -22,8 +22,8 @@ const Footer: React.FC = () => {
           </p>
           <div className="flex space-x-4">
                    <Linkedin className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
-            <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
-            <Twitter className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
+                   <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
+                   <Twitter className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
           </div>
         </div>
 
