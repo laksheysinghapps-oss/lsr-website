@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             Bridging the gap between institutional expertise and individual investors.
           </p>
           <div className="flex space-x-4">
-            <Linkedin className="https://www.linkedin.com/company/111549909/admin/dashboard/" />
+            <Linkedin className="https://www.linkedin.com/company/lsr-realty/?viewAsMember=true" />
             <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
             <Twitter className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
           </div>
