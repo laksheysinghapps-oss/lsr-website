@@ -29,6 +29,8 @@ const Footer: React.FC = () => {
 
         {/* Quick Links */}
         <div>
+          linkedin: "https://www.linkedin.com/company/lsr-realty/?viewAsMember=true",
+  instagram: "https://www.instagram.com/lsrrealty/",
           <h3 className="text-white font-serif text-lg mb-6">Explore</h3>
           <ul className="space-y-4">
             {NAV_ITEMS.map(item => (
