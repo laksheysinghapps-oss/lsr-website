@@ -109,32 +109,13 @@ const Contact: React.FC = () => {
         <div className="bg-neutral-900 p-8 md:p-12 border border-white/10">
           <h2 className="text-2xl font-serif mb-8">Send a Message</h2>
 
-          <h2 className="text-2xl font-serif mb-1">I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC. Privacy Policy</h2>
+          <h3 className="text-2xl font-serif mb-1">I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC. Privacy Policy</h3>
           {submitStatus === 'success' ? (
             <div className="bg-green-900/30 border border-green-500/50 p-8 text-center">
               <Check className="w-16 h-16 text-green-500 mx-auto mb-4" />
               <p className="text-green-400 font-semibold text-xl">Thank you!</p>
               <p className="text-gray-400 mt-2">We've received your message and will get back to you within 24 hours.</p>
-              <div className="flex items-start gap-3 mt-6">
-          <input
-          type="checkbox"
-          id="consent"
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
-            className="mt-1 h-4 w-4 accent-lsr-gold cursor-pointer"
-            required
-            />
-
-        <label htmlFor="consent" className="text-xs text-gray-400 leading-relaxed cursor-pointer">
-        I authorize <span className="text-white">LSR Realty</span> and its representatives to contact me
-        with updates and notifications via Email, SMS, RCS, WhatsApp, and Call.
-        This will override the registry on DND/NDNC.
-      <a href="/privacy-policy" className="text-lsr-gold hover:underline ml-1">
-        Privacy Policy
-          </a>
-        </label>
-      </div>
-
+             
               <button
                 onClick={() => setSubmitStatus('idle')}
                 className="mt-6 text-lsr-gold hover:text-white transition-colors text-sm uppercase tracking-widest"
