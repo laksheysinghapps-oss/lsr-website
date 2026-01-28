@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <img
   src="/images/Logo2.png"
   alt="LSR Realty"
-  className="h-[240px] md:h-[180px] w-auto transition-all duration-300"
+  className="h-[60px] md:h-[70px] w-auto transition-all duration-300"
 />
 
         </div>
