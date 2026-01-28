@@ -194,6 +194,8 @@ const Contact: React.FC = () => {
                   className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
                 />
               </div>
+
+               <span>I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC. Privacy Policy</span>
               <button
                 type="submit"
                 disabled={isSubmitting}
