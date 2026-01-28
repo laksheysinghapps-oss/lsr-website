@@ -195,7 +195,7 @@ const Contact: React.FC = () => {
                 />
               </div>
 
-               <span>I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC. Privacy Policy</span>
+               <span>I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC.</span>
               <button
                 type="submit"
                 disabled={isSubmitting}
