@@ -29,9 +29,9 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <div onClick={() => handleNavClick('/')} className="cursor-pointer group">
           <img
-  src="/images/Logo.png"
+  src="/images/Logo2.png"
   alt="LSR Realty"
-  className="h-[170px] md:h-[270px] w-auto transition-all duration-200"
+  className="h-[100px] md:h-[170px] w-auto transition-all duration-300"
 />
 
         </div>
