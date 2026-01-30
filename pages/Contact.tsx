@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { COMPANY_DETAILS } from '../constants';
 import { MapPin, Phone, Mail, Check, Loader2 } from 'lucide-react';
 import { submitLead } from '../lib/submitLead';
 
@@ -54,7 +53,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-black text-white pt-24 min-h-screen">
+    <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
 
         {/* Contact Info */}
@@ -69,15 +68,15 @@ const Contact: React.FC = () => {
               <MapPin className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Office</h3>
-                <p className="text-gray-400">{COMPANY_DETAILS.address}</p>
+                <p className="text-gray-400">911, Magnum Global Towers, Gurgaon, India</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Phone className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Phone</h3>
-                <a href={`tel:${COMPANY_DETAILS.phone.replace(/\s/g, '')}`} className="text-gray-400 hover:text-lsr-gold transition-colors">
-                  {COMPANY_DETAILS.phone}
+                <a href="tel:+918448660818" className="text-gray-400 hover:text-lsr-gold transition-colors">
+                  +918448660818
                 </a>
               </div>
             </div>
@@ -85,8 +84,8 @@ const Contact: React.FC = () => {
               <Mail className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Email</h3>
-                <a href={`mailto:${COMPANY_DETAILS.email}`} className="text-gray-400 hover:text-lsr-gold transition-colors">
-                  {COMPANY_DETAILS.email}
+                <a href="mailto:marketing@lsrrealty.com" className="text-gray-400 hover:text-lsr-gold transition-colors">
+                  marketing@lsrrealty.com
                 </a>
               </div>
             </div>
@@ -195,11 +194,22 @@ const Contact: React.FC = () => {
                 />
               </div>
 
-               <span>I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC.</span>
+              <div className="flex items-start gap-3 pt-4">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  required
+                  className="mt-1 w-4 h-4 accent-lsr-gold cursor-pointer"
+                />
+                <label htmlFor="consent" className="text-xs text-gray-400 leading-relaxed cursor-pointer">
+                  I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC.
+                </label>
+              </div>
+
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-lsr-gold text-black uppercase tracking-widest font-bold py-4 hover:bg-white transition-colors mt-4 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full bg-lsr-gold text-black uppercase tracking-widest font-bold py-4 hover:bg-white transition-colors mt-6 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>
