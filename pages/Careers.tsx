@@ -2,7 +2,7 @@ import React from 'react';
 
 const Careers: React.FC = () => {
   return (
-    <div className="bg-black text-white pt-24 min-h-screen">
+    <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <section className="py-20 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
           <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Join The Team</h4>
