@@ -7,7 +7,6 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
-import Insights from './pages/Insights';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 
@@ -23,7 +22,6 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/projects/:id" element={<ProjectDetail />} />
-            <Route path="/insights" element={<Insights />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
