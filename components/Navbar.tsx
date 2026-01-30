@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       scrolled 
         ? 'bg-lsr-black/90 backdrop-blur-md py-0.5 border-b border-white/10' 
-        : 'bg-transparent py-6'
+        : 'bg-transparent py-4 md:py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
@@ -37,8 +37,8 @@ const Navbar: React.FC = () => {
             alt="LSR Realty"
             className={`h-auto transition-all duration-300 ${
               scrolled 
-                ? 'w-40 md:w-44 lg:w-48' 
-                : 'w-52 md:w-64 lg:w-72'
+                ? 'w-32 md:w-40 lg:w-44' 
+                : 'w-40 md:w-56 lg:w-64'
             }`}
           />
         </div>
