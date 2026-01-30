@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <img
               src="/images/Logo2.png"
               alt="LSR Realty"
-              className="h-auto w-48"
+              className="h-auto w-56 md:w-64"
             />
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
@@ -22,9 +22,30 @@ const Footer: React.FC = () => {
             Bridging the gap between institutional expertise and individual investors.
           </p>
           <div className="flex space-x-4">
-            <Linkedin className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer transition-colors" />
-            <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer transition-colors" />
-            <Facebook className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer transition-colors" />
+            <a 
+              href="https://www.linkedin.com/company/lsr-realty/posts/?feedView=all" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-lsr-gold transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.instagram.com/lsrrealty/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-lsr-gold transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.facebook.com/profile.php?id=61586950558326" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-lsr-gold transition-colors"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
           </div>
         </div>
 
@@ -64,11 +85,15 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-lsr-gold shrink-0" />
-              <span>+918448660818</span>
+              <a href="tel:+918448660818" className="hover:text-lsr-gold transition-colors">
+                +918448660818
+              </a>
             </li>
             <li className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-lsr-gold shrink-0" />
-              <span>marketing@lsrrealty.com</span>
+              <a href="mailto:marketing@lsrrealty.com" className="hover:text-lsr-gold transition-colors">
+                marketing@lsrrealty.com
+              </a>
             </li>
           </ul>
         </div>
