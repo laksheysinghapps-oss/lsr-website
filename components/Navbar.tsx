@@ -24,25 +24,23 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-  scrolled 
-    ? 'bg-lsr-black/90 backdrop-blur-md py-0.5 border-b border-white/10' 
-    : 'bg-transparent py-6'
-}`}
+      scrolled 
+        ? 'bg-lsr-black/90 backdrop-blur-md py-0.5 border-b border-white/10' 
+        : 'bg-transparent py-6'
+    }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         {/* Logo */}
         <div onClick={() => handleNavClick('/')} className="cursor-pointer group">
-  <img
-    src="/images/Logo2.png"
-    alt="LSR Realty"
-    className={`h-auto transition-all duration-300 ${
-      scrolled 
-        ? 'w-44 md:w-48 lg:w-52' 
-        : 'w-52 md:w-64 lg:w-72'
-    }`}
-  />
-</div>
-
+          <img
+            src="/images/Logo2.png"
+            alt="LSR Realty"
+            className={`h-auto transition-all duration-300 ${
+              scrolled 
+                ? 'w-40 md:w-44 lg:w-48' 
+                : 'w-52 md:w-64 lg:w-72'
+            }`}
+          />
         </div>
 
         {/* Desktop Menu */}
@@ -85,7 +83,7 @@ const Navbar: React.FC = () => {
                 {item.label}
               </NavLink>
             ))}
-             <button onClick={() => handleNavClick('/contact')} className="bg-lsr-gold text-black w-full py-3 uppercase tracking-widest font-medium">
+            <button onClick={() => handleNavClick('/contact')} className="bg-lsr-gold text-black w-full py-3 uppercase tracking-widest font-medium">
               Book Consultation
             </button>
           </div>
