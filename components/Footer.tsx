@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { COMPANY_DETAILS, NAV_ITEMS } from '../constants';
+import { NAV_ITEMS } from '../constants';
 import { MapPin, Phone, Mail, Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -10,22 +10,22 @@ const Footer: React.FC = () => {
         
         {/* Brand */}
         <div className="space-y-6">
-           <div>
-            <h2 className="text-2xl font-serif font-bold tracking-widest text-white">
-              LSR <span className="text-lsr-gold">REALTY</span>
-            </h2>
-            <p className="text-[10px] tracking-[0.3em] uppercase text-gray-500 mt-1">Investment Advisory</p>
+          <div>
+            <img
+              src="/images/Logo2.png"
+              alt="LSR Realty"
+              className="h-auto w-48"
+            />
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Gurgaon’s most trusted, data-driven real estate investment advisor. 
+            Gurgaon's most trusted, data-driven real estate investment advisor. 
             Bridging the gap between institutional expertise and individual investors.
           </p>
           <div className="flex space-x-4">
-                     <Linkedin className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
-                    <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
-                    <Facebook className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer" />
-
-   </div>
+            <Linkedin className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer transition-colors" />
+            <Instagram className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer transition-colors" />
+            <Facebook className="w-5 h-5 text-gray-400 hover:text-lsr-gold cursor-pointer transition-colors" />
+          </div>
         </div>
 
         {/* Quick Links */}
@@ -60,15 +60,15 @@ const Footer: React.FC = () => {
           <ul className="space-y-6 text-sm text-gray-400">
             <li className="flex items-start space-x-3">
               <MapPin className="w-5 h-5 text-lsr-gold shrink-0" />
-              <span>{COMPANY_DETAILS.address}</span>
+              <span>911, Magnum Global Towers, Gurgaon, India</span>
             </li>
             <li className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-lsr-gold shrink-0" />
-              <span>{COMPANY_DETAILS.phone}</span>
+              <span>+918448660818</span>
             </li>
             <li className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-lsr-gold shrink-0" />
-              <span>{COMPANY_DETAILS.email}</span>
+              <span>marketing@lsrrealty.com</span>
             </li>
           </ul>
         </div>
