@@ -31,14 +31,14 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         {/* Logo */}
-        <div onClick={() => handleNavClick('/')} className="cursor-pointer group">
+        <div onClick={() => handleNavClick('/')} className="cursor-pointer group -mt-2 md:mt-0">
           <img
             src="/images/Logo2.png"
             alt="LSR Realty"
             className={`h-auto transition-all duration-300 ${
               scrolled 
-                ? 'w-32 md:w-40 lg:w-44' 
-                : 'w-40 md:w-56 lg:w-64'
+                ? 'w-36 md:w-48 lg:w-52' 
+                : 'w-44 md:w-56 lg:w-64'
             }`}
           />
         </div>
