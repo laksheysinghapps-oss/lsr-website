@@ -3,7 +3,7 @@ import { SERVICES } from '../constants';
 
 const Services: React.FC = () => {
   return (
-    <div className="bg-black text-white pt-24">
+    <div className="bg-black text-white pt-32 md:pt-40">
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Our Expertise</h4>
@@ -13,7 +13,6 @@ const Services: React.FC = () => {
           </p>
         </div>
       </section>
-
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {SERVICES.map((service, idx) => (
@@ -35,13 +34,12 @@ const Services: React.FC = () => {
           ))}
         </div>
       </section>
-
       <section className="py-24 bg-white text-black">
          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
                <h2 className="text-3xl md:text-5xl font-serif mb-6">NRI Investment Desk</h2>
                <p className="text-gray-800 text-lg mb-8 leading-relaxed">
-                 Managing Indian assets remotely is complex. We provide a seamless, high-touch service for Non-Resident Indians looking to capitalize on Gurgaon’s growth story.
+                 Managing Indian assets remotely is complex. We provide a seamless, high-touch service for Non-Resident Indians looking to capitalize on Gurgaon's growth story.
                </p>
                <ul className="space-y-4 mb-8 font-medium">
                  <li>• Power of Attorney (POA) Assistance</li>
