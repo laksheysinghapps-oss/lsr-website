@@ -167,8 +167,8 @@ export const INSIGHTS: Insight[] = [
 
 export const COMPANY_DETAILS = {
   address: "911, Magnum Global Towers, Gurgaon, India",
-  phone: "+91 99993 15702",
-  email: "invest@lsrrealty.com",
+  phone: "+918448660818",
+  email: "marketing@lsrrealty.com",
   founder: "Founder Name",
   tagline: "Gurgaon's Premier Real Estate Investment Advisory",
   subTagline: "Data-driven. Transparent. Institutional-quality.",
