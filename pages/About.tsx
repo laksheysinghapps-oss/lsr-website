@@ -3,7 +3,7 @@ import { Award, Briefcase, BookOpen } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <div className="bg-black text-white pt-24">
+    <div className="bg-black text-white pt-32 md:pt-40">
       {/* Header */}
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -43,7 +43,7 @@ const About: React.FC = () => {
                </div>
                <div>
                  <h4 className="text-white font-serif text-lg">Cornell University</h4>
-                 <p className="text-sm text-gray-500">Master’s in Real Estate - Anchoring our analytical approach.</p>
+                 <p className="text-sm text-gray-500">Master's in Real Estate - Anchoring our analytical approach.</p>
                </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -69,7 +69,7 @@ const About: React.FC = () => {
            </blockquote>
            <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
              The company is strategically guided by <strong>Mr. Devinder Singh</strong>, CEO & MD of DLF Ltd. 
-             With over 40 years of leadership, he has been instrumental in Gurgaon’s early growth—contributing to critical infrastructure including roads, metro developments, and landscaping. His legacy provides the moral and strategic compass for our fiduciary standards.
+             With over 40 years of leadership, he has been instrumental in Gurgaon's early growth—contributing to critical infrastructure including roads, metro developments, and landscaping. His legacy provides the moral and strategic compass for our fiduciary standards.
            </p>
         </div>
       </section>
