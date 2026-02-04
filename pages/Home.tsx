@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-0">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
@@ -29,12 +29,12 @@ const Home: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         </div>
         
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center py-20">
           <h2 className="text-lsr-gold text-sm md:text-base uppercase tracking-[0.4em] mb-6 animate-fade-in-up">
             Institutional Real Estate Advisory
           </h2>
           <h1 className="text-4xl md:text-7xl font-serif font-medium leading-tight mb-8">
-            Gurgaon’s Premier <br />
+            Gurgaon's Premier <br />
             <span className="text-white">Investment Advisory</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
                 <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">40+ Years of Legacy</p>
               </div>
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6 relative z-10">
-                 <p>Developers know our strategic mentor, <strong>Mr. Devinder Singh</strong>, who literally contributed to Gurgaon’s early growth—including roads, metro work, and landscaping.</p>
+                 <p>Developers know our strategic mentor, <strong>Mr. Devinder Singh</strong>, who literally contributed to Gurgaon's early growth—including roads, metro work, and landscaping.</p>
                  <p>Because of these relationships, our clients receive priority inventory access, better pricing leverage, and direct escalation support.</p>
               </div>
             </div>
@@ -286,7 +286,7 @@ const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <a 
-              href="https://wa.me/919999315702" 
+              href="https://wa.me/918448660818" 
               target="_blank" 
               rel="noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-opacity-90 transition-colors flex items-center justify-center gap-2"
