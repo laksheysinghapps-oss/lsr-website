@@ -60,6 +60,11 @@ const Footer: React.FC = () => {
                 </NavLink>
               </li>
             ))}
+            <li>
+              <NavLink to="/privacy-policy" className="text-gray-400 hover:text-lsr-gold text-sm transition-colors">
+                Privacy Policy
+              </NavLink>
+            </li>
           </ul>
         </div>
 
@@ -102,7 +107,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
         <p>&copy; {new Date().getFullYear()} LSR Realty. All rights reserved.</p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a href="#" className="hover:text-white">Privacy Policy</a>
+          <NavLink to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</NavLink>
           <a href="#" className="hover:text-white">Terms of Service</a>
           <a href="#" className="hover:text-white">Disclaimer</a>
         </div>
