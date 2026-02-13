@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
               <MapPin className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Office</h3>
-                <p className="text-gray-400">911, Magnum Global Towers, Gurgaon, India</p>
+                <p className="text-gray-400">911, Magnum Global Park, Gurgaon, India</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
