@@ -10,6 +10,9 @@ export interface Project {
   possessionDate: string;
   type: string;
   status: string;
+  category: 'Leasing' | 'Investment';
+  subCategory: 'Commercial' | 'Residential';
+  segment?: 'Corporate' | 'Retail';
   image: string;
   description: string;
   developer: string;
