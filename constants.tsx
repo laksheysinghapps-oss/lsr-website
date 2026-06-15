@@ -121,6 +121,28 @@ export const PROJECTS: Project[] = [
     ],
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
+  {
+    id: 'dlf-magnolias',
+    name: 'DLF The Magnolias',
+    location: 'Golf Course Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'On Request',
+    sizeRange: '6,400 Sq. Ft.',
+    possessionDate: 'Ready to Move',
+    type: 'Ultra Luxury Residential',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Residential',
+    image: '/images/dlf-magnolias.jpg',
+    developer: 'DLF Ltd',
+    description: 'Some homes don’t need an introduction and DLF The Magnolias, Golf Course Road is one of them. A rare 6,400 sq. ft. residence designed for space, privacy, golf course views, and a lifestyle that naturally stands apart. Because true luxury doesn’t seek attention. It simply speaks for itself. Available for Lease | Private Viewings Only. For serious enquiries, connect with us.',
+    highlights: ['6,400 Sq. Ft. Residence', 'Golf Course Views', 'Private Viewings Only', 'Ultra Luxury 4 & 5 BHK'],
+    amenities: ['Golf Course Access', 'Premium Clubhouse', 'Landscaped Gardens', '24x7 Security'],
+    unitMix: [
+      { type: '4 & 5 BHK', size: '6,400 Sq. Ft.', price: 'On Request' }
+    ],
+    locationAdvantage: ['On Golf Course Road', 'Prime DLF Golf Links Address', 'Established Luxury Neighbourhood']
+  },
 ];
 
 export const SERVICES: Service[] = [
