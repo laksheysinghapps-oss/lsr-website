@@ -238,6 +238,17 @@ const ProjectDetail: React.FC = () => {
                   rows={3}
                   className="w-full bg-black border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-lsr-gold"
                 />
+                <div className="flex items-start gap-3 pt-2">
+                  <input
+                    type="checkbox"
+                    id="consent-project"
+                    required
+                    className="mt-1 w-4 h-4 accent-lsr-gold cursor-pointer"
+                  />
+                  <label htmlFor="consent-project" className="text-xs text-gray-400 leading-relaxed cursor-pointer">
+                    I authorize LSR Realty and its representative to contact me with updates and notifications via Email, SMS, RCS, WhatsApp, and Call. This will override the registry on DND/NDNC.
+                  </label>
+                </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
