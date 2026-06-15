@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
               <div>
                 <h3 className="text-lg font-serif text-white">Office</h3>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=911%2C+Magnum+Global+Park%2C+Gurgaon%2C+India"
+                  href="https://www.google.com/maps/place/MAGNUM+GLOBAL+PARK/@28.4119108,77.1043506,17z/data=!3m1!4b1!4m6!3m5!1s0x390d21574430835f:0x2418eeadee995606!8m2!3d28.4119061!4d77.1069255!16s%2Fg%2F11ghpc7wn_!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noreferrer"
                   className="text-gray-400 hover:text-lsr-gold transition-colors cursor-pointer underline-offset-2 hover:underline"
