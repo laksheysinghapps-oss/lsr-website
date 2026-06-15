@@ -64,20 +64,20 @@ const Contact: React.FC = () => {
           </p>
 
           <div className="space-y-8">
-            <div className="flex items-start space-x-4">
+            <a
+              href="https://www.google.com/maps/place/MAGNUM+GLOBAL+PARK/@28.4119108,77.1043506,17z/data=!3m1!4b1!4m6!3m5!1s0x390d21574430835f:0x2418eeadee995606!8m2!3d28.4119061!4d77.1069255!16s%2Fg%2F11ghpc7wn_!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-start space-x-4 group"
+            >
               <MapPin className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Office</h3>
-                <a
-                  href="https://www.google.com/maps/place/MAGNUM+GLOBAL+PARK/@28.4119108,77.1043506,17z/data=!3m1!4b1!4m6!3m5!1s0x390d21574430835f:0x2418eeadee995606!8m2!3d28.4119061!4d77.1069255!16s%2Fg%2F11ghpc7wn_!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-400 hover:text-lsr-gold transition-colors cursor-pointer underline-offset-2 hover:underline"
-                >
+                <p className="text-gray-400 group-hover:text-lsr-gold transition-colors underline-offset-2 group-hover:underline">
                   911, Magnum Global Park, Gurgaon, India
-                </a>
+                </p>
               </div>
-            </div>
+            </a>
             <div className="flex items-start space-x-4">
               <Phone className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
