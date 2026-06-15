@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
                   href="https://www.google.com/maps/search/?api=1&query=911%2C+Magnum+Global+Park%2C+Gurgaon%2C+India"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-gray-400 hover:text-lsr-gold transition-colors"
+                  className="text-gray-400"
                 >
                   911, Magnum Global Park, Gurgaon, India
                 </a>
