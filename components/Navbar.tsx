@@ -37,8 +37,8 @@ const Navbar: React.FC = () => {
             alt="LSR Realty"
             className={`h-auto transition-all duration-300 ${
               scrolled
-                ? 'w-28 md:w-36 lg:w-40'
-                : 'w-32 md:w-44 lg:w-48'
+                ? 'w-36 md:w-48 lg:w-52'
+                : 'w-44 md:w-56 lg:w-64'
             }`}
           />
         </div>
