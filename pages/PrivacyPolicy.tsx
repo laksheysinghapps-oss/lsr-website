@@ -1,4 +1,3 @@
-useEffect(() => window.scrollTo(0, 0), [])
 import React from 'react';
 
 const PrivacyPolicy: React.FC = () => {
