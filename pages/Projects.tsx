@@ -1,26 +1,20 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 
-type Category = 'All' | 'Leasing' | 'Investment';
-type SubCategory = 'All' | 'Commercial' | 'Residential';
-type Segment = 'All' | 'Corporate' | 'Retail';
-
 const Projects: React.FC = () => {
-  const [category, setCategory] = useState<Category>('All');
-  const [subCategory, setSubCategory] = useState<SubCategory>('All');
-  const [segment, setSegment] = useState<Segment>('All');
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const handleCategory = (value: Category) => {
-    setCategory(value);
-    setSubCategory('All');
-    setSegment('All');
-  };
+  const segments = location.pathname.replace(/^\/projects\/?/, '').split('/').filter(Boolean);
+  const categorySlug = segments[0]; // 'leasing' | 'investment' | undefined
+  const subCategorySlug = segments[1]; // 'commercial' | 'residential' | undefined
+  const segmentSlug = segments[2]; // 'corporate' | 'retail' | undefined
 
-  const handleSubCategory = (value: SubCategory) => {
-    setSubCategory(value);
-    setSegment('All');
-  };
+  const category = categorySlug === 'leasing' ? 'Leasing' : categorySlug === 'investment' ? 'Investment' : 'All';
+  const subCategory = subCategorySlug === 'commercial' ? 'Commercial' : subCategorySlug === 'residential' ? 'Residential' : 'All';
+  const segment = segmentSlug === 'corporate' ? 'Corporate' : segmentSlug === 'retail' ? 'Retail' : 'All';
 
   const filteredProjects = useMemo(() => {
     return PROJECTS.filter(project => {
@@ -50,31 +44,58 @@ const Projects: React.FC = () => {
       </section>
 
       <section className="py-10 max-w-7xl mx-auto px-6 border-b border-white/5">
+        {/* Top level: All / Leasing / Investment */}
         <div className="flex flex-wrap gap-3 mb-4">
-          {(['All', 'Leasing', 'Investment'] as Category[]).map(option => (
-            <button key={option} onClick={() => handleCategory(option)} className={filterButtonClass(category === option)}>
-              {option}
+          <button onClick={() => navigate('/projects')} className={filterButtonClass(category === 'All')}>
+            All
+          </button>
+          {category !== 'Investment' && (
+            <button onClick={() => navigate('/projects/leasing')} className={filterButtonClass(category === 'Leasing')}>
+              Leasing
             </button>
-          ))}
+          )}
+          {category !== 'Leasing' && (
+            <button onClick={() => navigate('/projects/investment')} className={filterButtonClass(category === 'Investment')}>
+              Investment
+            </button>
+          )}
         </div>
 
+        {/* Second level: Commercial / Residential */}
         {category !== 'All' && (
           <div className="flex flex-wrap gap-3 mb-4">
-            {(['All', 'Commercial', 'Residential'] as SubCategory[]).map(option => (
-              <button key={option} onClick={() => handleSubCategory(option)} className={filterButtonClass(subCategory === option)}>
-                {option}
+            <button onClick={() => navigate(`/projects/${categorySlug}`)} className={filterButtonClass(subCategory === 'All')}>
+              All
+            </button>
+            {subCategory !== 'Residential' && (
+              <button onClick={() => navigate(`/projects/${categorySlug}/commercial`)} className={filterButtonClass(subCategory === 'Commercial')}>
+                Commercial
               </button>
-            ))}
+            )}
+            {subCategory !== 'Commercial' && (
+              <button onClick={() => navigate(`/projects/${categorySlug}/residential`)} className={filterButtonClass(subCategory === 'Residential')}>
+                Residential
+              </button>
+            )}
           </div>
         )}
 
+        {/* Third level: Corporate / Retail */}
         {category !== 'All' && subCategory === 'Commercial' && (
           <div className="flex flex-wrap gap-3">
-            {(['All', 'Corporate', 'Retail'] as Segment[]).map(option => (
-              <button key={option} onClick={() => setSegment(option)} className={filterButtonClass(segment === option)}>
-                {option}
+            <button onClick={() => navigate(`/projects/${categorySlug}/commercial`)} className={filterButtonClass(segment === 'All')}>
+              All
+            </button>
+            {segment !== 'Retail' && (
+              <button onClick={() => navigate(`/projects/${categorySlug}/commercial/corporate`)} className={filterButtonClass(segment === 'Corporate')}>
+                Corporate
               </button>
-            ))}
+            )}
+            {segment !== 'Corporate' && (
+              <button onClick={() => navigate(`/projects/${categorySlug}/commercial/retail`)} className={filterButtonClass(segment === 'Retail')}>
+                Retail
+              </button>
+            )}
           </div>
         )}
       </section>
