@@ -24,21 +24,21 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'bg-lsr-black/90 backdrop-blur-md py-0.5 border-b border-white/10' 
-        : 'bg-transparent py-4 md:py-6'
+      scrolled
+        ? 'bg-lsr-black/90 backdrop-blur-md py-0.5 border-b border-white/10'
+        : 'bg-transparent py-2 md:py-3'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        
+
         {/* Logo */}
-        <div onClick={() => handleNavClick('/')} className="cursor-pointer group -mt-2 md:mt-0">
+        <div onClick={() => handleNavClick('/')} className="cursor-pointer group">
           <img
             src="/images/Logo2.png"
             alt="LSR Realty"
             className={`h-auto transition-all duration-300 ${
-              scrolled 
-                ? 'w-36 md:w-48 lg:w-52' 
-                : 'w-44 md:w-56 lg:w-64'
+              scrolled
+                ? 'w-28 md:w-36 lg:w-40'
+                : 'w-32 md:w-44 lg:w-48'
             }`}
           />
         </div>
