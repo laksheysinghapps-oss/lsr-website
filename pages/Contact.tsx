@@ -68,7 +68,14 @@ const Contact: React.FC = () => {
               <MapPin className="text-lsr-gold w-6 h-6 mt-1" />
               <div>
                 <h3 className="text-lg font-serif text-white">Office</h3>
-                <p className="text-gray-400">911, Magnum Global Park, Gurgaon, India</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=911%2C+Magnum+Global+Park%2C+Gurgaon%2C+India"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-400 hover:text-lsr-gold transition-colors"
+                >
+                  911, Magnum Global Park, Gurgaon, India
+                </a>
               </div>
             </div>
             <div className="flex items-start space-x-4">
