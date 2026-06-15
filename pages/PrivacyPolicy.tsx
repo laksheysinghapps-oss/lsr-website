@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const PrivacyPolicy: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <section className="py-20 max-w-4xl mx-auto px-6">
