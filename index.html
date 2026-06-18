@@ -66,6 +66,10 @@
         from { width: 0; }
         to   { width: 100%; }
       }
+      @keyframes gold-sweep {
+        0%   { transform: translateX(-100%); }
+        100% { transform: translateX(600%); }
+      }
       .status-badge {
         position: relative;
         display: inline-block;
@@ -80,6 +84,20 @@
         background: rgba(255, 255, 255, 0.85);
         width: 0;
         animation: gold-line 1.4s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards;
+      }
+      .filter-active {
+        position: relative;
+        overflow: hidden;
+      }
+      .filter-active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 30%;
+        background: rgba(255, 255, 255, 0.85);
+        animation: gold-sweep 2s ease-in-out infinite;
       }
     </style>
     <script type="application/ld+json">
