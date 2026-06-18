@@ -34,10 +34,18 @@ const Projects: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
-      <section className="py-16 bg-lsr-charcoal border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative py-28 border-b border-white/5 overflow-hidden flex items-center justify-center text-center">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+            alt="Portfolio Background"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+        </div>
+        <div className="relative z-10 px-6">
           <h1 className="text-4xl md:text-6xl font-serif mb-4">Portfolio</h1>
-          <p className="text-gray-400 max-w-2xl text-lg">
+          <p className="text-gray-400 max-w-2xl text-lg mx-auto">
             A curated selection of Gurgaon's finest opportunities, vetted for legal compliance, construction quality, and appreciation potential.
           </p>
         </div>
