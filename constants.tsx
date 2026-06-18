@@ -126,6 +126,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'elan-paradise',
+    name: 'Elan Paradise',
+    location: 'Sector 50, Nirvana Country, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Luxury Retail & Entertainment Complex',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/elan-paradise.jpeg',
+    developer: 'Elan Limited',
+    rera: '59/2022',
+    landArea: '3.35 Acres',
+    description: "Elan Paradise is the greatest luxury retail revolution in Sector 50, Nirvana Country, Gurugram — an exclusive commercial destination spanning 3.35 acres, designed by UHA and ARCOP. It features double-height high-street retail, a 5-screen multiplex with premium snack lounge, fine dining, a multi-cuisine food court, and a mesmerizing water body integrated throughout the design, all surrounded by a dense premium residential catchment in Nirvana Country.",
+    mapQuery: 'Elan+Paradise+Sector+50+Nirvana+Country+Gurugram',
+    highlights: ['5-Screen Multiplex with Premium Snack Lounge', 'Double-Height High-Street Luxury Retail', 'Fine Dining & Multi-Cuisine Food Court', 'Mesmerizing Integrated Water Body', 'Designed by UHA & ARCOP', 'Dense Residential Catchment in Nirvana Country'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', 'Multiplex Cinema', 'Water Body Feature', 'Fine Dining Restaurants', 'CCTV Surveillance', 'Ample Parking', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 50, Nirvana Country, Gurugram', 'Connected to Golf Course Extension Road', 'Easy access from NH-8 & Delhi', 'Seamless access from wide Sector Road', 'Surrounded by premium low & high-rise residences']
+  },
+  {
     id: 'elan-town-centre',
     name: 'Elan Town Centre',
     location: 'Sector 67, Sohna Road, Gurugram',
