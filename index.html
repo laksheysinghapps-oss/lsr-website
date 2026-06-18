@@ -66,6 +66,16 @@
       .bg-lsr-gold {
         background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) !important;
       }
+      /* Metallic gold gradient for SVG icons */
+      .text-lsr-gold svg path,
+      .text-lsr-gold svg circle,
+      .text-lsr-gold svg line,
+      .text-lsr-gold svg polyline,
+      .text-lsr-gold svg rect,
+      .text-lsr-gold svg polygon,
+      .text-lsr-gold svg ellipse {
+        stroke: url(#lsr-gold-grad) #c9a54a !important;
+      }
       @keyframes gold-line {
         from { width: 0; }
         to   { width: 100%; }
@@ -138,6 +148,16 @@
 </script>
 </head>
   <body class="bg-black text-white antialiased selection:bg-lsr-gold selection:text-black">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;position:absolute;overflow:hidden">
+      <defs>
+        <linearGradient id="lsr-gold-grad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%"   stop-color="#dcc87a"/>
+          <stop offset="18%"  stop-color="#f2e49e"/>
+          <stop offset="52%"  stop-color="#c9a54a"/>
+          <stop offset="100%" stop-color="#7c5212"/>
+        </linearGradient>
+      </defs>
+    </svg>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
