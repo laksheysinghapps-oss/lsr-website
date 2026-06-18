@@ -106,6 +106,22 @@
         background: rgba(255, 255, 255, 0.85);
         animation: gold-sweep 2s ease-in-out infinite;
       }
+      /* Gradient text for gold-outlined buttons */
+      .gold-gradient-text {
+        background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      /* Gradient border for outline buttons */
+      .gold-gradient-outline {
+        border: 1.5px solid transparent !important;
+        background: linear-gradient(#000, #000) padding-box,
+                    linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) border-box;
+      }
+      .gold-gradient-outline::before {
+        display: none;
+      }
       .gold-gradient-border::before {
         content: '';
         position: absolute;
