@@ -126,6 +126,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'elan-mercado',
+    name: 'Elan Mercado',
+    location: 'Sector 80, NH-8, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Mixed-Use Retail & Hospitality',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/elan-mercado.webp',
+    developer: 'Elan Limited',
+    rera: '189/2017',
+    landArea: '2.99 Acres',
+    description: "Elan Mercado is the landmark of New Gurugram — a premium mixed-use development on NH-8, Sector 80, combining double-height high-street retail, a 4-screen PVR multiplex, fine dining, a multi-cuisine food court, and luxury service apartments. With an Occupancy Certificate received in October 2022 and tenants including PVR Cinemas, KFC, Domino's, Pizza Hut, Costa Coffee, and Bikanervala, it is one of the most vibrant retail destinations on the NH-8 corridor.",
+    mapQuery: 'Elan+Mercado+Sector+80+NH8+Gurugram',
+    highlights: ['4-Screen PVR Multiplex Cinema', 'Double-Height High-Street Retail', 'Fine Dining & Multi-Cuisine Food Court', 'Luxury Service Apartments on Upper Floors', 'Premium Snack Lounge & Concierge', 'OC Received — Ready to Occupy'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', 'PVR Multiplex', 'Concierge Services', 'CCTV Surveillance', 'Ample Parking', 'Fine Dining Restaurants', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 80, on NH-8 — Landmark of New Gurugram', '5 Minutes from IMT Manesar', 'Connected to Dwarka Expressway & Golf Course Extension Road', 'Easy access to Delhi–Jaipur Highway', 'Large residential catchment in New Gurugram sectors']
+  },
+  {
     id: 'elan-epic',
     name: 'Elan Epic',
     location: 'Sector 70, Southern Peripheral Road, Gurugram',
