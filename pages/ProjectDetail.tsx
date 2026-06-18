@@ -62,6 +62,7 @@ const ProjectDetail: React.FC = () => {
   if (!project) return null;
 
   const isCommercial = project.subCategory === 'Commercial';
+  const isRetail = project.segment === 'Retail';
 
   return (
     <div className="bg-black text-white pt-20">
@@ -169,7 +170,7 @@ const ProjectDetail: React.FC = () => {
 
           {/* Unit Mix Table */}
           <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">{isCommercial ? 'Floor Availability & Leasing Options' : 'Configuration & Pricing'}</h3>
+            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">{isRetail ? 'Floor Plan & Retail Mix' : isCommercial ? 'Floor Availability & Leasing Options' : 'Configuration & Pricing'}</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>

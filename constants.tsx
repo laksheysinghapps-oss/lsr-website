@@ -126,6 +126,33 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'aipl-joy-gallery',
+    name: 'AIPL Joy Gallery',
+    location: 'Sector 66, Golf Course Extn Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'High-Street Retail',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/aipl-joy-gallery.jpg',
+    developer: 'Advance India Projects Limited (AIPL)',
+    rera: 'GGM/404/136/2020/20',
+    landArea: '4.418 Acres',
+    description: "AIPL Joy Gallery is a landmark high-street retail destination on Golf Course Extension Road, Sector 66, Gurugram. Designed by DPA Consultants (Singapore), it spans 3,38,699 Sq. Ft. across 4 levels, offering a curated mix of fashion, dining, and entertainment. With double-height retail units, five-level basement parking, and proximity to premium residential catchments — it is Gurugram's most vibrant retail and leisure address.",
+    mapQuery: 'AIPL+Joy+Gallery+Sector+66+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['Designed by DPA Consultants, Singapore', 'Double-Height Ground & 2nd Floor Units', '4-Level Retail + 5-Level Basement Parking', 'Brands: UCB, Mango, Rare, Celio', 'Valet Parking & 100% Power Backup', 'RERA Registered'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', '5-Level Basement Parking', 'Valet Parking', 'CCTV Surveillance', 'ATM Facilities', 'Drop-off Area', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
+  },
+  {
     id: 'aipl-masterpiece',
     name: 'AIPL Masterpiece',
     location: 'Golf Course Road, Gurugram',
