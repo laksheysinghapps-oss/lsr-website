@@ -199,11 +199,11 @@ const Home: React.FC = () => {
                 <LineChart data={mockChartData}>
                   <XAxis dataKey="name" stroke="#555" tick={{fill: '#888'}} />
                   <YAxis stroke="#555" tick={{fill: '#888'}} />
-                  <Tooltip 
+                  <Tooltip
                     contentStyle={{ backgroundColor: '#1A1A1A', border: '1px solid #333' }}
                     itemStyle={{ color: '#fff' }}
                   />
-                  <Line type="monotone" dataKey="ggn" stroke="#C6A667" strokeWidth={2} dot={{fill: '#C6A667'}} />
+                  <Line type="monotone" dataKey="ggn" stroke="url(#lsr-gold-grad)" strokeWidth={2} dot={{fill: '#c9a54a', stroke: '#f2e49e', strokeWidth: 1}} />
                   <Line type="monotone" dataKey="blr" stroke="#333" strokeWidth={2} strokeDasharray="5 5" />
                 </LineChart>
               </ResponsiveContainer>
