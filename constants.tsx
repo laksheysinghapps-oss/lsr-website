@@ -126,6 +126,33 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'elan-town-centre',
+    name: 'Elan Town Centre',
+    location: 'Sector 67, Sohna Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'High-Street Retail & Entertainment',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/elan-town-centre.webp',
+    developer: 'Elan Limited',
+    landArea: '2 Acres',
+    description: "Elan Town Centre is a high-street retail paradise on Sohna Road, Sector 67, Gurugram — designed by ARCOP and positioned among dense residential townships and IT parks. Spread across lower ground to 2nd floor with 400 units ranging from 300 to 1,500 sq. ft., it features double-height retail shops, a 4-screen PVR multiplex, a gourmet food court with fine dining, and a premium flea market, making it one of Sohna Road's most vibrant commercial hubs.",
+    mapQuery: 'Elan+Town+Centre+Sector+67+Sohna+Road+Gurugram',
+    highlights: ['4-Screen PVR Silver Multiplex', 'Double-Height High-Street Retail', 'Gourmet Food Court & Fine Dining', 'Premium Flea Market', '400 Units — 300 to 1,500 Sq. Ft.', 'Surrounded by Residential Townships & IT Parks'],
+    amenities: ['High-Speed Escalators & Elevators', '100% Power Backup', 'Food Court', 'PVR Multiplex', '24x7 Security', 'Ample Parking', 'Professional Maintenance', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: '300 – 1,500 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Food Court', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 67, Sohna Road, Gurugram', 'Connected to NH-48 via Rajiv Chowk', 'Surrounded by SEZs, IT parks & prestigious schools', 'Dense residential township catchment on Sohna Road', 'Easy access to Golf Course Extension Road']
+  },
+  {
     id: 'elan-miracle',
     name: 'Elan Miracle',
     location: 'Sector 84, Dwarka Expressway, Gurugram',
