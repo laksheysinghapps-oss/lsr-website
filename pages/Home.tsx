@@ -147,7 +147,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Projects */}
+      {/* Projects — hidden; restore by uncommenting this section
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-end mb-16">
@@ -159,7 +159,6 @@ const Home: React.FC = () => {
               <span>View All</span> <ArrowRight size={16} />
             </button>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {PROJECTS.map(project => (
               <ProjectCard key={project.id} project={project} />
@@ -167,6 +166,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Methodology & Data */}
       <section className="py-24 bg-neutral-900 overflow-hidden">
