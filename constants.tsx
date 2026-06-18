@@ -126,6 +126,33 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'aipl-masterpiece',
+    name: 'AIPL Masterpiece',
+    location: 'Golf Course Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: '6,000 – 40,000 Sq. Ft.',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Commercial Office',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/aipl-masterpiece.jpg',
+    developer: 'Advance India Projects Limited (AIPL)',
+    landArea: '3,14,000 Sq. Ft. Total',
+    description: "AIPL Masterpiece is a landmark Grade A commercial development on Golf Course Road, Gurugram, designed by DP Architects (Singapore) and built to IGBC Platinum standards. Featuring an iconic energy-efficient facade, a triple-height atrium, Mitsubishi high-speed access-controlled elevators, and flexible office spaces from 6,000 to 40,000 Sq. Ft. — it sets the benchmark for premium corporate leasing in Gurugram. Adjacent to the Sector 53-54 Rapid Metro Station, it offers unmatched connectivity for India's leading corporates.",
+    mapQuery: 'AIPL+Masterpiece+Golf+Course+Road+Gurugram',
+    highlights: ['IGBC Platinum Green Building', 'Designed by DP Architects, Singapore', 'Adjacent to Rapid Metro Station', 'Triple-Height Entrance Atrium', 'Italian Marble Common Areas', 'Integrated BMS & Air Purification'],
+    amenities: ['Mitsubishi High-Speed Lifts', '100% Power Backup', 'Centralised HVAC', 'Integrated BMS', 'Air Purification System', 'Italian Marble Lobbies', '24x7 Alfresco Seating', '3-Tier CCTV Security', 'Handicap Accessible'],
+    unitMix: [
+      { type: 'Partial Floor', size: '6,000 – 15,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '15,000 – 40,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: '40,000+ Sq. Ft.', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Adjacent to Sector 53-54 Rapid Metro Station', "On Golf Course Road — Gurugram's premier corporate corridor", 'HUDA City Centre Metro — 6.4 km', 'NH8 — approx. 7 km', '15+ hospitals, schools, banks & shopping centres nearby']
+  },
+  {
     id: 'dlf-magnolias',
     name: 'DLF The Magnolias',
     location: 'Golf Course Road, Gurugram',

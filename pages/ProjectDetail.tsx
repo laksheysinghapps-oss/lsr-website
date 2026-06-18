@@ -61,6 +61,8 @@ const ProjectDetail: React.FC = () => {
 
   if (!project) return null;
 
+  const isCommercial = project.subCategory === 'Commercial';
+
   return (
     <div className="bg-black text-white pt-20">
       {/* Hero — split: image left, map right */}
@@ -108,11 +110,17 @@ const ProjectDetail: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
             <div>
-              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Price Range</p>
-              <p className="text-lsr-gold font-semibold">{project.priceRange}</p>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">{isCommercial ? 'Lease Rent' : 'Price Range'}</p>
+              {project.priceRange === 'Price on Request' ? (
+                <button onClick={() => navigate('/contact')} className="text-lsr-gold font-semibold underline underline-offset-2 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0">
+                  Price on Request
+                </button>
+              ) : (
+                <p className="text-lsr-gold font-semibold">{project.priceRange}</p>
+              )}
             </div>
             <div>
-              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">Size Range</p>
+              <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">{isCommercial ? 'Area Available' : 'Size Range'}</p>
               <p className="text-white font-semibold">{project.sizeRange}</p>
             </div>
             <div>
@@ -145,7 +153,7 @@ const ProjectDetail: React.FC = () => {
 
           {/* Overview */}
           <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">Investment Thesis</h3>
+            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">{isCommercial ? 'About the Property' : 'Investment Thesis'}</h3>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               {project.description}
             </p>
@@ -161,14 +169,14 @@ const ProjectDetail: React.FC = () => {
 
           {/* Unit Mix Table */}
           <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">Configuration & Pricing</h3>
+            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">{isCommercial ? 'Floor Availability & Leasing Options' : 'Configuration & Pricing'}</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/20">
-                    <th className="py-4 text-gray-400 font-normal uppercase text-sm tracking-wider">Type</th>
-                    <th className="py-4 text-gray-400 font-normal uppercase text-sm tracking-wider">Size</th>
-                    <th className="py-4 text-gray-400 font-normal uppercase text-sm tracking-wider">Price Estimate</th>
+                    <th className="py-4 text-gray-400 font-normal uppercase text-sm tracking-wider">{isCommercial ? 'Configuration' : 'Type'}</th>
+                    <th className="py-4 text-gray-400 font-normal uppercase text-sm tracking-wider">{isCommercial ? 'Area (Sq. Ft.)' : 'Size'}</th>
+                    <th className="py-4 text-gray-400 font-normal uppercase text-sm tracking-wider">{isCommercial ? 'Lease Rent' : 'Price Estimate'}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -176,7 +184,15 @@ const ProjectDetail: React.FC = () => {
                     <tr key={idx} className="border-b border-white/10 hover:bg-white/5 transition-colors">
                       <td className="py-4 font-medium">{unit.type}</td>
                       <td className="py-4 text-gray-400">{unit.size}</td>
-                      <td className="py-4 text-lsr-gold">{unit.price}</td>
+                      <td className="py-4">
+                        {unit.price === 'Price on Request' ? (
+                          <button onClick={() => navigate('/contact')} className="text-lsr-gold underline underline-offset-2 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0">
+                            Price on Request
+                          </button>
+                        ) : (
+                          <span className="text-lsr-gold">{unit.price}</span>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -214,8 +230,8 @@ const ProjectDetail: React.FC = () => {
         {/* Sidebar Form */}
         <div className="lg:col-span-1">
           <div className="sticky top-28 bg-lsr-charcoal p-8 border border-white/10">
-            <h3 className="text-xl font-serif text-white mb-2">Request Priority Access</h3>
-            <p className="text-sm text-gray-400 mb-6">Get the brochure, floor plans, and latest payment plans.</p>
+            <h3 className="text-xl font-serif text-white mb-2">{isCommercial ? 'Request a Site Visit' : 'Request Priority Access'}</h3>
+            <p className="text-sm text-gray-400 mb-6">{isCommercial ? 'Get floor plans, availability matrix & best pricing.' : 'Get the brochure, floor plans, and latest payment plans.'}</p>
 
             {submitStatus === 'success' ? (
               <div className="bg-green-900/30 border border-green-500/50 p-6 text-center">
@@ -292,10 +308,17 @@ const ProjectDetail: React.FC = () => {
             )}
 
             <div className="mt-8 pt-8 border-t border-white/10 flex flex-col space-y-4">
-              <button className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors">
-                <Download size={16} />
-                <span>Download Brochure</span>
-              </button>
+              {isCommercial ? (
+                <button onClick={() => navigate('/contact')} className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors">
+                  <Download size={16} />
+                  <span>Download Brochure</span>
+                </button>
+              ) : (
+                <button className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors">
+                  <Download size={16} />
+                  <span>Download Brochure</span>
+                </button>
+              )}
                <a
                 href="https://wa.me/919999315702"
                 target="_blank"
