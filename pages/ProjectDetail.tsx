@@ -86,10 +86,9 @@ const ProjectDetail: React.FC = () => {
           <iframe
             title={`${project.name} Location`}
             src={`https://maps.google.com/maps?q=${project.mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
-            className="w-full h-full"
-            style={{ filter: 'invert(100%) brightness(0.85) contrast(1.1)', border: 'none' }}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            width="100%"
+            height="100%"
+            style={{ filter: 'invert(100%) brightness(0.85) contrast(1.1)', border: 'none' } as React.CSSProperties}
           />
           <div className="absolute bottom-4 left-4 bg-black/80 border border-lsr-gold/50 px-3 py-2 pointer-events-none">
             <p className="text-lsr-gold text-xs uppercase tracking-widest font-medium">{project.name}</p>
