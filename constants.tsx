@@ -126,6 +126,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'elan-epic',
+    name: 'Elan Epic',
+    location: 'Sector 70, Southern Peripheral Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Luxury High-Street Retail & Entertainment',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/elan-epic.jpeg',
+    developer: 'Elan Limited',
+    rera: 'RC/REP/HARERA/GGM/2018/30',
+    landArea: '3.525 Acres',
+    description: "Elan Epic is a landmark luxury commercial retail destination on Southern Peripheral Road, Sector 70, Gurugram — the epitome of fine retail, distinctive entertainment, and blissful dining. Spanning 3.525 acres, it features double-height high-street retail, hanging retail pods, a 5-screen NY Cinemas multiplex, a floating restaurant with panoramic views, the largest water body feature in any retail development in the vicinity, and a curated mix of brands including Nykaa, Adidas, ASICS, Levi's, Miniso, and Barista.",
+    mapQuery: 'Elan+Epic+Sector+70+Southern+Peripheral+Road+Gurugram',
+    highlights: ['Double-Height High-Street Luxury Retail', '5-Screen NY Cinemas Multiplex', 'Floating Restaurant with Panoramic Views', 'Hanging Retail Pods — Unique Design Element', 'Largest Water Body Feature', 'OC Received — Ready to Occupy'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Multi-Cuisine Food Court', 'Multiplex Cinema', 'Floating Restaurant', 'Water Body Feature', 'CCTV Surveillance', 'Ample Parking', 'Direct SPR Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Southern Peripheral Road (SPR), Sector 70', '5 Minutes from NH-8', 'Close to Golf Course Extension Road', 'Dense premium residential catchment area', 'Direct accessibility from SPR']
+  },
+  {
     id: 'aipl-joy-street',
     name: 'AIPL Joy Street',
     location: 'Sector 66, Golf Course Extn Road, Gurugram',
