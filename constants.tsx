@@ -126,6 +126,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'aipl-joy-street',
+    name: 'AIPL Joy Street',
+    location: 'Sector 66, Golf Course Extn Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Mixed-Use Retail & Lifestyle Hub',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/aipl-joy-street.webp',
+    developer: 'Advance India Projects Limited (AIPL)',
+    rera: '157 of 2017',
+    landArea: '4 Acres',
+    description: "AIPL Joy Street is a landmark mixed-use lifestyle destination on Golf Course Extension Road, Sector 66, Gurugram — blending shopping, F&B, entertainment, and offices across 15 floors and 3 lakh sq. ft. of retail space. Anchored by a PVR INOX 6-screen multiplex and a Mediterranean-inspired La Feria boulevard with a Grand Piazza, it hosts top brands including Haldiram's, Blue Tokai, Levi's, Calvin Klein, Mango, and Fabindia, making it one of the most vibrant retail destinations on the Golf Course Extension corridor.",
+    mapQuery: 'AIPL+Joy+Street+Sector+66+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['Mediterranean La Feria Boulevard & Grand Piazza', 'PVR INOX 6-Screen Multiplex', 'High-Street Retail on Ground & 1st Floor', 'Tenants: Haldiram\'s, Blue Tokai, Calvin Klein, Mango', '3-Level Basement + Surface Parking', 'RERA Registered'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Central Air Conditioning', '3-Level Basement Parking', 'Food Court & Restaurants', 'Multiplex Cinema', 'Misting Systems', 'CCTV Surveillance', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Office / Smart Suite', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Golf Course Extension Road, Sector 66', 'Adjacent to M3M Merlin & Ansal Escencia', 'CK Birla Hospital — 6.3 km | Medanta — 7.5 km', 'Sector 55-56 Metro Station — 7.9 km', 'IGI Airport — 24.1 km']
+  },
+  {
     id: 'aipl-joy-district',
     name: 'AIPL Joy District',
     location: 'Sector 88, Gurugram',
