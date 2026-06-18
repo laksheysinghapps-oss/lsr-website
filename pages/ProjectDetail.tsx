@@ -68,8 +68,8 @@ const ProjectDetail: React.FC = () => {
       {/* Hero — split: image left, map right */}
       <div className="flex flex-col md:flex-row h-[60vh] md:h-[80vh]">
         {/* Left: Project image */}
-        <div className="relative w-full md:w-1/2 h-1/2 md:h-full bg-black">
-          <img src={project.image} alt={project.name} className={`w-full h-full ${isCommercial ? 'object-contain' : 'object-cover'}`} />
+        <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
+          <img src={project.image} alt={project.name} className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 w-full p-6 md:p-12">
             <span className="bg-lsr-gold text-black px-4 py-1 text-xs font-bold uppercase tracking-widest mb-4 inline-block">
