@@ -126,6 +126,35 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'aipl-joy-central',
+    name: 'AIPL Joy Central',
+    location: 'Sector 65, Golf Course Extn Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Mixed-Use Retail & Commercial',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/aipl-joy-central.avif',
+    developer: 'Advance India Projects Limited (AIPL)',
+    rera: 'No. 183 of 2017',
+    floors: 22,
+    landArea: '3.98 Acres',
+    description: "AIPL Joy Central is a landmark mixed-use development on Golf Course Extension Road, Sector 65, Gurugram — combining high-street retail, a food court, multiplex, and Grade A office spaces across 22 floors with a striking 415 ft frontage. With 5-level basement parking, air-conditioned stores, and a curated tenant mix including Blue Tokai, ASICS, Bluestone and Celio, it is one of Gurugram's premier retail and commercial destinations.",
+    mapQuery: 'AIPL+Joy+Central+Sector+65+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['22 Floors | 415 Ft Street Frontage', 'Double-Height Ground Floor Units', 'Food Court, Restaurants & Multiplex', 'Tenants: Blue Tokai, ASICS, Bluestone', '5-Level Basement Parking', 'GRIHA Sustainability Certified'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Air-Conditioned Stores', '5-Level Basement Parking', 'Valet & Taxi Services', 'CCTV Surveillance', 'ATM Facilities', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Office Space', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['On Golf Course Extension Road — 0.3 km from main road', 'Rapid Metro access — 5.6 km', 'HUDA City Centre Metro — 8.0 km', 'IGI Airport — 22.7 km', '18+ hospitals & schools in the vicinity']
+  },
+  {
     id: 'aipl-joy-gallery',
     name: 'AIPL Joy Gallery',
     location: 'Sector 66, Golf Course Extn Road, Gurugram',
