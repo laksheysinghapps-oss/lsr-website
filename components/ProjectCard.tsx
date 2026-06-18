@@ -18,11 +18,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         window.scrollTo(0, 0);
       }}
     >
-      <div className="relative h-64 overflow-hidden">
-        <img 
-          src={project.image} 
-          alt={project.name} 
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      <div className={`relative h-64 overflow-hidden ${project.subCategory === 'Commercial' ? 'bg-black' : ''}`}>
+        <img
+          src={project.image}
+          alt={project.name}
+          className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${project.subCategory === 'Commercial' ? 'object-contain' : 'object-cover'}`}
         />
         <div className="absolute top-4 right-4 bg-lsr-gold text-black text-xs font-bold px-3 py-1 uppercase tracking-wider">
           {project.status}
