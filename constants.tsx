@@ -139,8 +139,8 @@ export const PROJECTS: Project[] = [
     subCategory: 'Residential',
     image: '/images/dlf-magnolias.jpg',
     developer: 'DLF Ltd',
-    description: "DLF The Magnolias, 6400 sq. ft. residence designed for space, privacy, golf course views, and a lifestyle that naturally stands apart. Because true luxury doesn’t seek attention. It simply speaks for itself. Available for Lease. Book your private site visit today!",
-    mapQuery: ‘DLF+The+Magnolias+Golf+Course+Road+Gurugram’,
+    description: "DLF The Magnolias, 6400 sq. ft. residence designed for space, privacy, golf course views, and a lifestyle that naturally stands apart. Because true luxury doesn't seek attention. It simply speaks for itself. Available for Lease. Book your private site visit today!",
+    mapQuery: 'DLF+The+Magnolias+Golf+Course+Road+Gurugram',
     highlights: ['6,400 Sq. Ft. Residence', 'Golf Course Views', 'Private Viewings Only', 'Ultra Luxury 4 & 5 BHK'],
     amenities: ['Golf Course Access', 'Premium Clubhouse', 'Landscaped Gardens', '24x7 Security'],
     unitMix: [
