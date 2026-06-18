@@ -126,6 +126,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
   {
+    id: 'elan-miracle',
+    name: 'Elan Miracle',
+    location: 'Sector 84, Dwarka Expressway, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Luxury Retail & Entertainment Destination',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/elan-miracle.jpeg',
+    developer: 'Elan Buildcon Pvt. Ltd.',
+    rera: '190/2017',
+    landArea: '5.92 Acres',
+    description: "Elan Miracle is an iconic luxury retail landmark on Dwarka Expressway, Sector 84, Gurugram — a gleaming combination of high-street retail, hospitality, and vibrant entertainment spread across 5.92 acres. Anchored by a 6-screen PVR multiplex, rooftop fine dining, and 70+ brands including McDonald's, Domino's, Nykaa, Puma, Bata, and Subway, it is one of the most complete retail destinations on the Dwarka Expressway corridor, with an Occupancy Certificate received in March 2023.",
+    mapQuery: 'Elan+Miracle+Sector+84+Dwarka+Expressway+Gurugram',
+    highlights: ['6-Screen PVR Multiplex Cinema', 'Double-Height High-Street Retail', 'Rooftop Fine Dining Restaurants', 'Luxury Service Apartments & Office Spaces', '70+ Brands including McDonald\'s, Nykaa, Puma', 'OC Received — Ready to Occupy'],
+    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', '6-Screen PVR Multiplex', 'Rooftop Seating', 'Premium Snack Lounge', 'Office Break-Out Areas', 'CCTV Surveillance', 'Ample Parking'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 84, Dwarka Expressway, Gurugram', 'Well-connected to Delhi, Manesar & IGI Airport', 'Close to Golf Course Extension Road', 'Large residential catchment on Dwarka Expressway corridor', 'Easy access to NH-48 & KMP Expressway']
+  },
+  {
     id: 'elan-mercado',
     name: 'Elan Mercado',
     location: 'Sector 80, NH-8, Gurugram',
