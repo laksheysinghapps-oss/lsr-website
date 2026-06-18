@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               {item.label}
             </NavLink>
           ))}
-          <button onClick={() => handleNavClick('/contact')} className="gold-gradient-outline gold-gradient-text px-6 py-2 text-sm uppercase tracking-wider hover:bg-lsr-gold hover:text-black transition-all duration-300">
+          <button onClick={() => handleNavClick('/contact')} className="gold-gradient-outline px-6 py-2 text-sm uppercase tracking-wider text-white transition-all duration-300">
             Book Consult
           </button>
         </div>
