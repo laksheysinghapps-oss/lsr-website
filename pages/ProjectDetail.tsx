@@ -63,20 +63,42 @@ const ProjectDetail: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-20">
-      {/* Hero */}
-      <div className="relative h-[60vh] md:h-[80vh]">
-        <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full p-8 md:p-16">
-          <div className="max-w-7xl mx-auto">
+      {/* Hero — split: image left, map right */}
+      <div className="flex flex-col md:flex-row h-[60vh] md:h-[80vh]">
+        {/* Left: Project image */}
+        <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
+          <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full p-6 md:p-12">
             <span className="bg-lsr-gold text-black px-4 py-1 text-xs font-bold uppercase tracking-widest mb-4 inline-block">
               {project.status}
             </span>
-            <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">{project.name}</h1>
+            <h1 className="text-3xl md:text-5xl font-serif text-white mb-3">{project.name}</h1>
             <div className="flex items-center space-x-2 text-gray-300">
               <MapPin className="text-lsr-gold" />
-              <span className="text-lg">{project.location}</span>
+              <span className="text-base">{project.location}</span>
             </div>
+          </div>
+        </div>
+
+        {/* Right: Google Map */}
+        <div className="relative w-full md:w-1/2 h-1/2 md:h-full overflow-hidden border-l border-lsr-gold/30">
+          {project.mapQuery ? (
+            <iframe
+              title={`Map - ${project.name}`}
+              src={`https://maps.google.com/maps?q=${project.mapQuery}&output=embed&z=15`}
+              className="w-full h-full"
+              style={{ filter: 'invert(90%) hue-rotate(180deg) brightness(0.85) contrast(1.1)', border: 'none' }}
+              allowFullScreen
+            />
+          ) : (
+            <div className="w-full h-full bg-lsr-charcoal flex items-center justify-center">
+              <MapPin className="text-lsr-gold w-12 h-12" />
+            </div>
+          )}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pointer-events-none">
+            <p className="text-lsr-gold text-xs uppercase tracking-widest font-bold">{project.name}</p>
+            <p className="text-gray-300 text-xs">{project.location}</p>
           </div>
         </div>
       </div>
