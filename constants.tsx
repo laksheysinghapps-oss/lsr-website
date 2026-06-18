@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'vatika-one-on-one',
+    name: 'Vatika One On One',
+    location: 'Sector 16, NH-48, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Commercial Office Campus',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/vatika-one-on-one.webp',
+    developer: 'Vatika Group',
+    rera: '237 of 2017',
+    landArea: '12 Acres',
+    description: "Vatika One On One is a landmark Grade A commercial office campus on NH-48, Sector 16, Gurugram — spanning 2.3 million sq. ft. across 6 independent structures on 12 acres. Designed by Studio u+a, New York, with a 2-acre landscaped central piazza by HM White of New York, it is a 4-Star GRIHA certified sustainable campus featuring granite and natural stone facades, energy-efficient performance glass, solar panels, LED lighting, zero water discharge systems, and 2,500-car parking. Adjacent to The Westin hotel and just 16 km from IGI Airport on a signal-free drive.",
+    mapQuery: 'Vatika+One+On+One+Sector+16+NH48+Gurugram',
+    highlights: ['Designed by Studio u+a, New York', '2-Acre Central Piazza by HM White, New York', '4-Star GRIHA Certified Sustainable Campus', 'Solar Panels, LED Lighting & Zero Water Discharge', '2,500-Car Basement Parking', '16 km from IGI Airport — Signal-Free Drive'],
+    amenities: ['High-Speed Elevators', 'Ground-Floor Restaurants & Retail', '100% Power Backup', 'Advanced BMS', 'Solar Panels & LED Lighting', 'Zero Water Discharge System', 'Insulated Facades & Roofs', '2,500-Car Parking', 'Central Piazza', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Partial Floor', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Full Floor', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 16, right on NH-48, Gurugram', 'Adjacent to The Westin Hotel', '16 km from IGI Airport — Signal-Free Drive', 'Premium NH-48 corporate corridor', 'Excellent visibility and connectivity to Delhi & Manesar']
+  },
+  {
     id: 'elan-empire',
     name: 'Elan Empire',
     location: 'Sector 66, Golf Course Extn Road, Gurugram',
