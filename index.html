@@ -106,6 +106,18 @@
         background: rgba(255, 255, 255, 0.85);
         animation: gold-sweep 2s ease-in-out infinite;
       }
+      .gold-gradient-border::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border: 2px solid transparent;
+        background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) border-box;
+        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+        pointer-events: none;
+        z-index: 10;
+      }
       .filter-active {
         position: relative;
         overflow: hidden;

@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
-      <section className="relative py-28 overflow-hidden flex items-center justify-center text-center" style={{ border: '1.5px solid transparent', borderImage: 'linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) 1' }}>
+      <section className="gold-gradient-border relative py-28 overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
