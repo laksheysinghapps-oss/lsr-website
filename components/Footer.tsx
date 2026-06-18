@@ -22,27 +22,27 @@ const Footer: React.FC = () => {
             Bridging the gap between institutional expertise and individual investors.
           </p>
           <div className="flex space-x-4">
-            <a 
-              href="https://www.linkedin.com/company/lsr-realty/posts/?feedView=all" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/company/lsr-realty/posts/?feedView=all"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-lsr-gold transition-colors"
+              className="social-icon text-gray-400 transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a 
-              href="https://www.instagram.com/lsrrealty/" 
-              target="_blank" 
+            <a
+              href="https://www.instagram.com/lsrrealty/"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-lsr-gold transition-colors"
+              className="social-icon text-gray-400 transition-colors"
             >
               <Instagram className="w-5 h-5" />
             </a>
-            <a 
-              href="https://www.facebook.com/profile.php?id=61586950558326" 
-              target="_blank" 
+            <a
+              href="https://www.facebook.com/profile.php?id=61586950558326"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-lsr-gold transition-colors"
+              className="social-icon text-gray-400 transition-colors"
             >
               <Facebook className="w-5 h-5" />
             </a>
