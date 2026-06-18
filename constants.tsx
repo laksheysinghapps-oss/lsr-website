@@ -404,6 +404,33 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'vatika-inxt-city-centre',
+    name: 'Vatika INXT City Centre',
+    location: 'Sector 83, NH-48, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Commercial Office Campus',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/vatika-inxt-city-centre.webp',
+    developer: 'Vatika Group',
+    landArea: '550-Acre Township',
+    description: "Vatika INXT City Centre is a LEED Gold certified Grade A commercial office campus in Sector 83, at the intersection of NH-48 and Dwarka Expressway, Gurugram — part of the 550-acre Vatika India Next township. Featuring six integrated ultramodern blocks with efficient floor plates of 16,000–26,000 sq. ft., it offers direct internal access to the Hyatt Regency Hotel, corporate retail including banks, ATMs, cafes, and a health club, multi-level turnstile security, and a 25-minute signal-free drive to IGI Airport.",
+    mapQuery: 'Vatika+INXT+City+Centre+Sector+83+NH48+Gurugram',
+    highlights: ['LEED Gold Certified Sustainable Campus', 'Floor Plates: 16,000 – 26,000 Sq. Ft.', 'Internal Access to Hyatt Regency Hotel', 'Corporate Retail — Banks, ATMs, Cafes, Health Club', 'Multi-Level Security with Turnstile Systems', '25-Min Signal-Free Drive to IGI Airport'],
+    amenities: ['High-Speed Elevators', 'Turnstile Security System', '100% Power Backup', 'Corporate Retail & Cafes', 'Health Club', 'Banks & ATMs', 'Ample Parking', 'Hyatt Regency Access', 'Expansive Plazas & Walkways', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Partial Floor', size: '16,000 – 26,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '16,000 – 26,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 83, at NH-48 & Dwarka Expressway intersection', 'Part of 550-acre Vatika India Next township', 'Near proposed ISBT & Metro Hub', '25-minute signal-free drive to IGI Airport', 'Adjacent to Hyatt Regency Hotel']
+  },
+  {
     id: 'vatika-one-on-one',
     name: 'Vatika One On One',
     location: 'Sector 16, NH-48, Gurugram',
