@@ -376,6 +376,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'elan-empire',
+    name: 'Elan Empire',
+    location: 'Sector 66, Golf Course Extn Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Luxury Retail & Premium Office Spaces',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/elan-empire.webp',
+    developer: 'Elan City LLP',
+    rera: '80/2023',
+    landArea: '1.46 Acres',
+    description: "Elan Empire is a premium mixed-use commercial development on Golf Course Extension Road, Sector 66, Gurugram — bringing high-end retail, exclusive office spaces, and premium F&B all under one roof. Designed by UHA and ARCOP, it features double-height retail displays, aesthetically crafted large workspaces with casual and break-out areas, a double-height office lobby, and fine dining — all with direct access from Golf Course Extension Road.",
+    mapQuery: 'Elan+Empire+Sector+66+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['Double-Height High-End Retail Displays', 'Premium Office Spaces with Break-Out Areas', 'Double-Height Office Lobby', 'Fine Dining & Multi-Cuisine Food Court', 'Designed by UHA & ARCOP', 'Direct Access from Golf Course Extension Road'],
+    amenities: ['High-Speed Elevators', 'Double-Height Lobby', '100% Power Backup', 'Centralised HVAC', 'Food Court & Fine Dining', 'Break-Out Areas', 'CCTV Surveillance', 'Ample Parking', 'Differently-abled Access'],
+    unitMix: [
+      { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Office Space', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', '2 Minutes from Sohna Road', '5 Minutes from NH-8', 'Easy connectivity to IGI Airport & Golf Course Road', 'Dense premium residential catchment in Sector 66']
+  },
+  {
     id: 'aipl-masterpiece',
     name: 'AIPL Masterpiece',
     location: 'Golf Course Road, Gurugram',
