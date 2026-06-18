@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
   const filterButtonClass = (active: boolean) =>
     `px-5 py-2 text-sm uppercase tracking-widest border transition-all duration-300 ${
       active
-        ? 'filter-active bg-lsr-gold text-black border-lsr-gold'
+        ? 'bg-lsr-gold text-black border-lsr-gold'
         : 'border-white/20 text-gray-300 hover:border-lsr-gold hover:text-lsr-gold'
     }`;
 
