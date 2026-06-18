@@ -63,20 +63,37 @@ const ProjectDetail: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-20">
-      {/* Hero */}
-      <div className="relative h-[60vh] md:h-[80vh]">
-        <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full p-8 md:p-16">
-          <div className="max-w-7xl mx-auto">
-            <span className="bg-lsr-gold text-black px-4 py-1 text-xs font-bold uppercase tracking-widest mb-4 inline-block">
+      {/* Hero - Split: Image Left, Map Right */}
+      <div className="grid grid-cols-1 md:grid-cols-2 h-[50vh] md:h-[70vh]">
+        {/* Left: Project Image */}
+        <div className="relative overflow-hidden">
+          <img src={project.image} alt={project.name} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+          <div className="absolute bottom-0 left-0 w-full p-6 md:p-10">
+            <span className="bg-lsr-gold text-black px-4 py-1 text-xs font-bold uppercase tracking-widest mb-3 inline-block">
               {project.status}
             </span>
-            <h1 className="text-4xl md:text-6xl font-serif text-white mb-4">{project.name}</h1>
+            <h1 className="text-3xl md:text-5xl font-serif text-white mb-2">{project.name}</h1>
             <div className="flex items-center space-x-2 text-gray-300">
-              <MapPin className="text-lsr-gold" />
-              <span className="text-lg">{project.location}</span>
+              <MapPin className="text-lsr-gold" size={16} />
+              <span className="text-base">{project.location}</span>
             </div>
+          </div>
+        </div>
+
+        {/* Right: Google Map */}
+        <div className="relative overflow-hidden border-l border-lsr-gold/30">
+          <iframe
+            title={`${project.name} Location`}
+            src={`https://maps.google.com/maps?q=${project.mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+            className="w-full h-full"
+            style={{ filter: 'invert(100%) brightness(0.85) contrast(1.1)', border: 'none' }}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <div className="absolute bottom-4 left-4 bg-black/80 border border-lsr-gold/50 px-3 py-2 pointer-events-none">
+            <p className="text-lsr-gold text-xs uppercase tracking-widest font-medium">{project.name}</p>
+            <p className="text-gray-400 text-xs mt-0.5">{project.location}</p>
           </div>
         </div>
       </div>

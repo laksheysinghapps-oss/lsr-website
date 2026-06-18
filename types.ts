@@ -21,6 +21,7 @@ export interface Project {
   towers?: number;
   floors?: number;
   landArea?: string;
+  mapQuery: string;
   highlights: string[];
   amenities: string[];
   unitMix: { type: string; size: string; price: string }[];

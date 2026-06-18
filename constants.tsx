@@ -32,6 +32,7 @@ export const PROJECTS: Project[] = [
     floors: 38,
     landArea: '25 Acres',
     description: 'A masterpiece of low-density luxury living defined by expansive decks and state-of-the-art amenities. The Arbour represents the pinnacle of institutional-grade development in New Gurgaon with just 2 apartments per core.',
+    mapQuery: 'DLF+The+Arbour+Sector+63+Gurgaon',
     highlights: ['Low Density Living', 'Expansive Decks', '1.25 Lakh Sq.Ft. Clubhouse', 'High Appreciation Potential'],
     amenities: ['Concierge Service', 'Temperature Controlled Pool', 'Private Elevator Lobbies', 'Business Center'],
     unitMix: [
@@ -59,6 +60,7 @@ export const PROJECTS: Project[] = [
     floors: 40,
     landArea: '25 Acres',
     description: 'Overlooking the Aravallis, Privana South is a sanctuary of nature and luxury. Designed for the discerning investor looking for long-term value creation in an emerging micro-market.',
+    mapQuery: 'DLF+Privana+South+Sector+76+Gurgaon',
     highlights: ['Aravalli Views', 'Integrated Township', 'Sustainable Design', 'Strategic Connectivity'],
     amenities: ['Forest Trails', 'Sports Complex', 'Fine Dining', 'Wellness Spa'],
     unitMix: [
@@ -86,6 +88,7 @@ export const PROJECTS: Project[] = [
     towers: 13,
     landArea: '25.9 Acres',
     description: 'Modern architecture meets serene landscapes. An ideal investment for those seeking rental yield and steady capital appreciation backed by the global Emaar brand.',
+    mapQuery: 'Emaar+Serenity+Hills+Sector+86+Gurgaon',
     highlights: ['Efficient Layouts', 'Global Brand', 'High Rental Yield Potential', 'Community Living'],
     amenities: ['Retail Plaza', 'Kids Play Areas', 'Gymnasium', 'Swimming Pool'],
     unitMix: [
@@ -113,6 +116,7 @@ export const PROJECTS: Project[] = [
     floors: 49,
     landArea: '21 Acres',
     description: 'The epitome of hotel-integrated living. 5-star Westin hospitality services within your private residence. A trophy asset for the ultra-HNI portfolio with 75,000 sq.ft. clubhouse.',
+    mapQuery: 'Westin+Residences+Sector+103+Dwarka+Expressway+Gurgaon',
     highlights: ['5-Star Westin Hospitality', 'Concierge & Valet', '75,000 Sq.Ft. Clubhouse', 'G+49 Towers'],
     amenities: ['Housekeeping', 'In-residence Dining', 'Spa & Sauna', 'Multi-cuisine Restaurants'],
     unitMix: [
@@ -135,7 +139,8 @@ export const PROJECTS: Project[] = [
     subCategory: 'Residential',
     image: '/images/dlf-magnolias.jpg',
     developer: 'DLF Ltd',
-    description: 'DLF The Magnolias, 6400 sq. ft. residence designed for space, privacy, golf course views, and a lifestyle that naturally stands apart. Because true luxury doesn’t seek attention. It simply speaks for itself. Available for Lease. Book your private site visit today!',
+    description: ‘DLF The Magnolias, 6400 sq. ft. residence designed for space, privacy, golf course views, and a lifestyle that naturally stands apart. Because true luxury doesn’t seek attention. It simply speaks for itself. Available for Lease. Book your private site visit today!’,
+    mapQuery: ‘DLF+The+Magnolias+Golf+Course+Road+Gurugram’,
     highlights: ['6,400 Sq. Ft. Residence', 'Golf Course Views', 'Private Viewings Only', 'Ultra Luxury 4 & 5 BHK'],
     amenities: ['Golf Course Access', 'Premium Clubhouse', 'Landscaped Gardens', '24x7 Security'],
     unitMix: [
