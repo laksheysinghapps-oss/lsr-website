@@ -189,6 +189,14 @@ const Projects: React.FC = () => {
       </section>
 
       <section className="py-16 max-w-7xl mx-auto px-6">
+        {searchQuery.trim() && (
+          <div className="flex items-center gap-3 mb-8">
+            <Search size={14} className="text-lsr-gold" />
+            <span className="text-xs uppercase tracking-widest text-gray-500">Search Results for</span>
+            <span className="gold-gradient-text text-sm font-medium">"{searchQuery.trim()}"</span>
+            <span className="text-gray-600 text-xs">— {(category === 'All' ? allViewProjects : filteredProjects).length} found</span>
+          </div>
+        )}
         {category === 'All' ? (
           allViewProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
