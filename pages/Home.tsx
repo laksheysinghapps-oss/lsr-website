@@ -220,8 +220,8 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative">
-              <p className="text-gray-300 text-lg italic leading-relaxed mb-8">
+            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative flex flex-col">
+              <p className="text-gray-300 text-lg italic leading-relaxed mb-8 flex-grow">
                 "LSR Realty's institutional approach transformed how I view real estate investment. Their research-backed recommendations gave me confidence to make my first luxury property investment."
               </p>
               <div className="flex justify-between items-end">
@@ -237,8 +237,8 @@ const Home: React.FC = () => {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative">
-              <p className="text-gray-300 text-lg italic leading-relaxed mb-8">
+            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative flex flex-col">
+              <p className="text-gray-300 text-lg italic leading-relaxed mb-8 flex-grow">
                 "As a busy corporate executive, I needed someone who could do the heavy lifting. LSR's detailed investment memos and market analysis made my decision easy."
               </p>
               <div className="flex justify-between items-end">
@@ -254,8 +254,8 @@ const Home: React.FC = () => {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative">
-              <p className="text-gray-300 text-lg italic leading-relaxed mb-8">
+            <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative flex flex-col">
+              <p className="text-gray-300 text-lg italic leading-relaxed mb-8 flex-grow">
                 "The quarterly market reports and ongoing portfolio tracking set LSR apart. They don't disappear after the transaction – that's rare in this industry."
               </p>
               <div className="flex justify-between items-end">
