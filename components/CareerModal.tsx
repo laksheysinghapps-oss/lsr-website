@@ -32,13 +32,21 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
     setResumeFile(file);
   };
 
+  const toBase64 = (file: File): Promise<string> =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve((reader.result as string).split(',')[1]);
+      reader.onerror = reject;
+    });
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError('');
 
     try {
-      const payload = {
+      const payload: Record<string, string> = {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -48,10 +56,15 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
           `Job Role: ${formData.jobRole}`,
           `Experience: ${formData.experience}`,
           `Location Preference: ${formData.location}`,
-          resumeFile ? `Resume: ${resumeFile.name} (to be emailed separately to saboori@lsrrealty.com)` : '',
           formData.message ? `Message: ${formData.message}` : '',
         ].filter(Boolean).join('\n'),
       };
+
+      if (resumeFile) {
+        payload.resumeBase64 = await toBase64(resumeFile);
+        payload.resumeName = resumeFile.name;
+        payload.resumeMimeType = resumeFile.type || 'application/octet-stream';
+      }
 
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
@@ -60,7 +73,6 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
         body: JSON.stringify(payload),
       });
 
-      // no-cors means we can't read the response — assume success
       setSubmitted(true);
     } catch (err) {
       setError(`Error: ${err instanceof Error ? err.message : String(err)}`);
@@ -98,9 +110,6 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
               </div>
               <p className="text-white font-semibold mb-1">Application Submitted!</p>
               <p className="text-gray-400 text-sm">Our team will review your profile and reach out if there's a fit.</p>
-              {resumeFile && (
-                <p className="text-gray-500 text-xs mt-2">Please also email your resume to <span className="text-lsr-gold">saboori@lsrrealty.com</span></p>
-              )}
               <button
                 onClick={onClose}
                 className="mt-6 px-6 py-2 border border-white/20 text-sm text-gray-300 hover:border-white hover:text-white transition-colors"
