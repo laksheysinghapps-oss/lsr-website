@@ -4,6 +4,46 @@ import { MapPin, Briefcase, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
 const OPEN_POSITIONS = [
   {
+    id: 2,
+    title: 'Sales Telecaller Intern – Real Estate',
+    location: 'Gurgaon, Haryana',
+    industry: 'Real Estate',
+    type: 'Internship (3–6 Months)',
+    about: 'We are looking for enthusiastic and confident Male & Female Interns to join our Real Estate Sales Team as Sales Telecallers. The role involves connecting with potential customers, generating leads, scheduling site visits, and supporting the sales team in converting prospects into clients.',
+    responsibilities: [
+      'Make outbound calls to prospective customers from provided databases.',
+      'Explain project details, pricing, and ongoing offers to potential buyers.',
+      'Qualify leads and understand customer requirements.',
+      'Schedule site visits and meetings for the sales team.',
+      'Follow up regularly with interested prospects.',
+      'Maintain accurate records of customer interactions in CRM/Excel.',
+      'Coordinate with the sales team for lead closures.',
+      'Achieve daily and weekly calling and lead generation targets.',
+    ],
+    requirements: [
+      'Graduate, Undergraduate, or pursuing a degree in any discipline.',
+      'Excellent communication skills in Hindi and basic English.',
+      'Strong interpersonal and persuasion skills.',
+      'Comfortable making high-volume outbound calls.',
+      'Basic knowledge of MS Excel and CRM tools is an advantage.',
+      'Interest in Sales, Real Estate, and Customer Relations.',
+    ],
+    desiredSkills: [
+      'Positive attitude and willingness to learn.',
+      'Strong negotiation and follow-up abilities.',
+      'Self-motivated and target-oriented mindset.',
+    ],
+    benefits: [
+      'Hands-on experience in Real Estate Sales.',
+      'Exposure to lead generation and customer relationship management.',
+      'Opportunity for a full-time role based on performance.',
+      'Sales and communication skill development.',
+      'Incentives for achieving targets.',
+    ],
+    mustHave: 'Open to Male & Female Candidates',
+    skills: 'Stipend: As per company policy + Performance Incentives',
+  },
+  {
     id: 1,
     title: 'Sales Runner',
     location: 'Gurgaon',
