@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SERVICES } from '../constants';
+import BrochureModal from '../components/BrochureModal';
 
 const Services: React.FC = () => {
+  const [showNRIModal, setShowNRIModal] = useState(false);
+
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
+      {showNRIModal && (
+        <BrochureModal
+          projectName="NRI Investment Desk"
+          onClose={() => setShowNRIModal(false)}
+          title="Contact NRI Desk"
+          subtitle="Share your details and our NRI specialist will reach out to assist you with your Indian real estate assets."
+          source="NRI Desk Enquiry"
+          successMessage="Our NRI specialist will be in touch with you shortly."
+          buttonLabel="Submit Enquiry"
+        />
+      )}
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Expertise</h4>
@@ -46,7 +60,7 @@ const Services: React.FC = () => {
                  <li>• Tax Repatriation Advisory</li>
                  <li>• Tenant Management & Resale</li>
                </ul>
-               <button className="bg-lsr-gold text-black px-8 py-3 uppercase tracking-widest text-sm font-bold hover:opacity-90 transition-opacity">
+               <button onClick={() => setShowNRIModal(true)} className="bg-lsr-gold text-black px-8 py-3 uppercase tracking-widest text-sm font-bold hover:opacity-90 transition-opacity">
                  Contact NRI Desk
                </button>
             </div>
