@@ -187,7 +187,7 @@ const Home: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <button onClick={() => navigate('/services')} className="border-b border-lsr-gold gold-gradient-text pb-1 hover:text-white hover:border-white transition-colors">
+            <button onClick={() => navigate('/services')} className="border-b border-lsr-gold gold-gradient-text pb-1 hover:border-white transition-colors">
               Explore Our Advisory Process
             </button>
           </div>
