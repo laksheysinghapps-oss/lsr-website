@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
               <div>
                 <h3 className="text-lg font-serif text-white">Office</h3>
                 <p className="text-gray-400 group-hover:text-lsr-gold transition-colors underline-offset-2 group-hover:underline">
-                  911, Magnum Global Park, Sector 58,<br />Gurugram, Haryana, India 122098
+                  911, Magnum Global Park,<br />Sector 58, Gurugram,<br />Haryana, India 122098
                 </p>
               </div>
             </a>
