@@ -117,12 +117,6 @@ const Careers: React.FC = () => {
               <li>• Competitive compensation structures</li>
             </ul>
           </div>
-          <button
-            onClick={() => setShowModal(true)}
-            className="inline-block bg-lsr-gold text-black px-8 py-4 uppercase tracking-widest font-bold text-sm hover:opacity-90 transition-opacity"
-          >
-            Apply Now
-          </button>
         </div>
         <div className="relative border border-white/10 p-4">
           <div className="absolute top-0 left-0 w-full h-full border border-lsr-gold/20 transform translate-x-4 translate-y-4 -z-10"></div>
