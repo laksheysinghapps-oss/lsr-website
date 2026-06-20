@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import { Project } from '../types';
@@ -21,6 +21,7 @@ const ProjectDetail: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [showBrochureModal, setShowBrochureModal] = useState(false);
+  const [showPriceModal, setShowPriceModal] = useState(false);
 
   useEffect(() => {
     const found = PROJECTS.find(p => p.id === id);
@@ -73,6 +74,16 @@ const ProjectDetail: React.FC = () => {
       {showBrochureModal && (
         <BrochureModal projectName={project.name} onClose={() => setShowBrochureModal(false)} />
       )}
+      {showPriceModal && (
+        <BrochureModal
+          projectName={project.name}
+          onClose={() => setShowPriceModal(false)}
+          title="Request Pricing"
+          subtitle="Share your details and our advisor will get back to you with the latest pricing."
+          source={`Price on Request - ${project.name}`}
+          successMessage="Our advisor will reach out with the latest pricing details shortly."
+        />
+      )}
       {/* Hero — split: image left, map right */}
       <div className="flex flex-col md:flex-row h-[60vh] md:h-[80vh]">
         {/* Left: Project image */}
@@ -120,7 +131,7 @@ const ProjectDetail: React.FC = () => {
             <div>
               <p className="text-gray-500 text-xs uppercase tracking-wider mb-1">{isCommercial ? 'Lease Rent' : 'Price Range'}</p>
               {project.priceRange === 'Price on Request' ? (
-                <button onClick={() => navigate('/contact')} className="text-lsr-gold font-semibold underline underline-offset-2 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0">
+                <button onClick={() => setShowPriceModal(true)} className="gold-gradient-text font-semibold underline underline-offset-2 hover:opacity-80 transition-opacity cursor-pointer bg-transparent border-none p-0">
                   Price on Request
                 </button>
               ) : (
@@ -194,7 +205,7 @@ const ProjectDetail: React.FC = () => {
                       <td className="py-4 text-gray-400">{unit.size}</td>
                       <td className="py-4">
                         {unit.price === 'Price on Request' ? (
-                          <button onClick={() => navigate('/contact')} className="text-lsr-gold underline underline-offset-2 hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0">
+                          <button onClick={() => setShowPriceModal(true)} className="gold-gradient-text underline underline-offset-2 hover:opacity-80 transition-opacity cursor-pointer bg-transparent border-none p-0">
                             Price on Request
                           </button>
                         ) : (
@@ -347,3 +358,4 @@ const ProjectDetail: React.FC = () => {
 };
 
 export default ProjectDetail;
+

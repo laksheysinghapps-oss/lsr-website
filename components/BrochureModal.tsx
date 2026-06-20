@@ -5,9 +5,20 @@ import { submitLead } from '../lib/submitLead';
 interface BrochureModalProps {
   projectName: string;
   onClose: () => void;
+  title?: string;
+  subtitle?: string;
+  source?: string;
+  successMessage?: string;
 }
 
-const BrochureModal: React.FC<BrochureModalProps> = ({ projectName, onClose }) => {
+const BrochureModal: React.FC<BrochureModalProps> = ({
+  projectName,
+  onClose,
+  title = 'Download Brochure',
+  subtitle = 'Share your details and we\'ll send the brochure directly to you.',
+  source,
+  successMessage = 'Our team will share the brochure with you shortly.',
+}) => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -22,8 +33,8 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ projectName, onClose }) =
     await submitLead({
       ...formData,
       project: projectName,
-      source: `Brochure Request - ${projectName}`,
-      message: 'Requested brochure download',
+      source: source ?? `Brochure Request - ${projectName}`,
+      message: source ? 'Requested pricing details' : 'Requested brochure download',
     });
     setIsSubmitting(false);
     setSubmitted(true);
@@ -41,7 +52,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ projectName, onClose }) =
         {/* Header */}
         <div className="flex items-center justify-between px-8 pt-8 pb-4">
           <div>
-            <h3 className="text-xl font-serif text-white">Download Brochure</h3>
+            <h3 className="text-xl font-serif text-white">{title}</h3>
             <p className="text-xs text-gray-500 mt-1 uppercase tracking-widest">{projectName}</p>
           </div>
           <button onClick={onClose} className="text-gray-500 hover:text-white transition-colors">
@@ -56,7 +67,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ projectName, onClose }) =
                 <Check className="text-green-400 w-7 h-7" />
               </div>
               <p className="text-white font-semibold mb-1">Request Received!</p>
-              <p className="text-gray-400 text-sm">Our team will share the brochure with you shortly.</p>
+              <p className="text-gray-400 text-sm">{successMessage}</p>
               <button
                 onClick={onClose}
                 className="mt-6 px-6 py-2 border border-white/20 text-sm text-gray-300 hover:border-white hover:text-white transition-colors"
@@ -66,7 +77,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ projectName, onClose }) =
             </div>
           ) : (
             <>
-              <p className="text-gray-400 text-sm mb-6">Share your details and we'll send the brochure directly to you.</p>
+              <p className="text-gray-400 text-sm mb-6">{subtitle}</p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <input
                   type="text"
