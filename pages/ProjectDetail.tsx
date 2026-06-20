@@ -82,6 +82,7 @@ const ProjectDetail: React.FC = () => {
           subtitle="Share your details and our advisor will get back to you with the latest pricing."
           source={`Price on Request - ${project.name}`}
           successMessage="Our advisor will reach out with the latest pricing details shortly."
+          buttonLabel="Request Pricing"
         />
       )}
       {/* Hero — split: image left, map right */}

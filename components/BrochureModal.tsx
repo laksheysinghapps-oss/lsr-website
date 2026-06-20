@@ -9,6 +9,7 @@ interface BrochureModalProps {
   subtitle?: string;
   source?: string;
   successMessage?: string;
+  buttonLabel?: string;
 }
 
 const BrochureModal: React.FC<BrochureModalProps> = ({
@@ -18,6 +19,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
   subtitle = 'Share your details and we\'ll send the brochure directly to you.',
   source,
   successMessage = 'Our team will share the brochure with you shortly.',
+  buttonLabel = 'Request Brochure',
 }) => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -128,7 +130,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
                       Submitting...
                     </>
                   ) : (
-                    'Request Brochure'
+                    buttonLabel
                   )}
                 </button>
               </form>
