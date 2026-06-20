@@ -38,33 +38,37 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
     setError('');
 
     try {
-      const data = new FormData();
-      data.append('access_key', WEB3FORMS_ACCESS_KEY);
-      data.append('subject', `Job Application — ${formData.jobRole} | ${formData.name}`);
-      data.append('to', 'saboori@lsrrealty.com');
-      data.append('cc', 'lakshey@lsrrealty.com,raghvendra@lsrrealty.com');
-      data.append('from_name', 'LSR Realty Careers');
-      data.append('Candidate Name', formData.name);
-      data.append('Mobile Number', formData.phone);
-      data.append('Email ID', formData.email);
-      data.append('Job Role', formData.jobRole);
-      data.append('Experience', formData.experience);
-      data.append('Job Location', formData.location);
-      data.append('message', formData.message || '(No message provided)');
-      if (resumeFile) {
-        data.append('attachment', resumeFile, resumeFile.name);
-      }
+      const emailBody = [
+        `Candidate Name: ${formData.name}`,
+        `Mobile Number: ${formData.phone}`,
+        `Email ID: ${formData.email}`,
+        `Job Role: ${formData.jobRole}`,
+        `Experience: ${formData.experience}`,
+        `Job Location: ${formData.location}`,
+        resumeFile ? `Resume File: ${resumeFile.name} (candidate will email separately)` : 'Resume: Not attached',
+        formData.message ? `\nMessage:\n${formData.message}` : '',
+      ].filter(Boolean).join('\n');
+
+      const payload = {
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `Job Application — ${formData.jobRole} | ${formData.name}`,
+        from_name: 'LSR Realty Careers',
+        cc: 'lakshey@lsrrealty.com,raghvendra@lsrrealty.com',
+        message: emailBody,
+        replyto: formData.email,
+      };
 
       const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: data,
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload),
       });
 
       const json = await res.json();
       if (json.success) {
         setSubmitted(true);
       } else {
-        setError('Submission failed. Please try again or email us directly.');
+        setError(`Submission failed: ${json.message || 'Please try again.'}`);
       }
     } catch {
       setError('Something went wrong. Please try again.');
@@ -102,6 +106,9 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
               </div>
               <p className="text-white font-semibold mb-1">Application Submitted!</p>
               <p className="text-gray-400 text-sm">Our team will review your profile and reach out if there's a fit.</p>
+              {resumeFile && (
+                <p className="text-gray-500 text-xs mt-2">Please also email your resume to <span className="text-lsr-gold">saboori@lsrrealty.com</span></p>
+              )}
               <button
                 onClick={onClose}
                 className="mt-6 px-6 py-2 border border-white/20 text-sm text-gray-300 hover:border-white hover:text-white transition-colors"
