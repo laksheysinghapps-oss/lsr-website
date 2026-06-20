@@ -30,7 +30,7 @@ const Home: React.FC = () => {
         </div>
         
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center py-20">
-          <h2 className="text-lsr-gold text-sm md:text-base uppercase tracking-[0.4em] mb-6 animate-fade-in-up">
+          <h2 className="gold-gradient-text text-sm md:text-base uppercase tracking-[0.4em] mb-6 animate-fade-in-up">
             Institutional Real Estate Advisory
           </h2>
           <h1 className="text-4xl md:text-7xl font-serif font-medium leading-tight mb-8">
