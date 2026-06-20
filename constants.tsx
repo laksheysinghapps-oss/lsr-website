@@ -404,6 +404,32 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'dlf-cybercity',
+    name: 'DLF Cybercity',
+    location: 'Cybercity, DLF Phase 2, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: '8,000 Sq. Ft.',
+    possessionDate: 'Ready to Occupy',
+    type: 'Premium Corporate Office Space',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/dlf-cybercity.png',
+    developer: 'DLF Limited',
+    rera: 'Available on Request',
+    landArea: 'Cybercity Campus',
+    description: "A rare 8,000 sq. ft. office space available for lease within DLF Cybercity — Gurugram's most prestigious and sought-after corporate destination. Home to the world's leading MNCs, Fortune 500 companies, and global technology giants, DLF Cybercity offers an unmatched business ecosystem with world-class infrastructure, seamless metro connectivity, and a vibrant F&B and lifestyle precinct at DLF CyberHub. The specific building and floor details are maintained in strict confidence to preserve the exclusivity of this opportunity — workspace viewing is available exclusively by appointment during a private site visit.",
+    mapQuery: 'DLF+Cybercity+Phase+2+Gurugram',
+    highlights: ['Premium 8,000 Sq. Ft. in DLF Cybercity', 'Gurugram\'s Most Prestigious Corporate Address', 'Home to Fortune 500 & Global MNC Headquarters', 'Seamless Metro Connectivity — Cybercity Station', 'DLF CyberHub — Dining & Lifestyle at Doorstep', 'Exclusive Opportunity — Site Visit by Appointment Only'],
+    amenities: ['World-Class Building Infrastructure', '100% Power Backup', 'Central Air Conditioning', 'High-Speed Elevators', 'Ample Parking', 'DLF CyberHub F&B & Retail', 'Metro Station — Walking Distance', '24x7 Security & Access Control', 'Fire Fighting System', 'Landscaped Campus'],
+    unitMix: [
+      { type: 'Office Space', size: '8,000 Sq. Ft.', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['DLF Cybercity, Phase 2, Gurugram', 'Cybercity Metro Station — Walking Distance', 'DLF CyberHub — At Doorstep', 'NH-48 & Golf Course Road — Well Connected', 'IGI Airport — 12 km']
+  },
+  {
     id: 'godrej-gcr',
     name: 'Godrej GCR',
     location: 'Golf Course Road, Gurugram',
