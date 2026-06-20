@@ -5,7 +5,7 @@ interface CareerModalProps {
   onClose: () => void;
 }
 
-const WEB3FORMS_ACCESS_KEY = 'b5516625-b8dc-4873-b3a7-c5ac7e266605';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzQprjikOLVxi7IAO1qXsjIEVMRAjo3H_lA0XP37geLl2bYZBdVgACBV4dFACt748cj8w/exec';
 
 const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
   const fileRef = useRef<HTMLInputElement>(null);
@@ -38,38 +38,30 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
     setError('');
 
     try {
-      const emailBody = [
-        `Candidate Name: ${formData.name}`,
-        `Mobile Number: ${formData.phone}`,
-        `Email ID: ${formData.email}`,
-        `Job Role: ${formData.jobRole}`,
-        `Experience: ${formData.experience}`,
-        `Job Location: ${formData.location}`,
-        resumeFile ? `Resume File: ${resumeFile.name} (candidate will email separately)` : 'Resume: Not attached',
-        formData.message ? `\nMessage:\n${formData.message}` : '',
-      ].filter(Boolean).join('\n');
-
       const payload = {
-        access_key: WEB3FORMS_ACCESS_KEY,
-        subject: `Job Application — ${formData.jobRole} | ${formData.name}`,
-        from_name: 'LSR Realty Careers',
-        cc: 'lakshey@lsrrealty.com,raghvendra@lsrrealty.com',
-        message: emailBody,
-        replyto: formData.email,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        project: `Job Application — ${formData.jobRole}`,
+        source: 'Careers Page',
+        message: [
+          `Job Role: ${formData.jobRole}`,
+          `Experience: ${formData.experience}`,
+          `Location Preference: ${formData.location}`,
+          resumeFile ? `Resume: ${resumeFile.name} (to be emailed separately to saboori@lsrrealty.com)` : '',
+          formData.message ? `Message: ${formData.message}` : '',
+        ].filter(Boolean).join('\n'),
       };
 
-      const res = await fetch('https://api.web3forms.com/submit', {
+      await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
 
-      const json = await res.json();
-      if (json.success) {
-        setSubmitted(true);
-      } else {
-        setError(`Submission failed: ${json.message || 'Please try again.'}`);
-      }
+      // no-cors means we can't read the response — assume success
+      setSubmitted(true);
     } catch (err) {
       setError(`Error: ${err instanceof Error ? err.message : String(err)}`);
     }
