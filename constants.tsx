@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'landmark-one',
+    name: 'Landmark One',
+    location: 'Sector 67, Golf Course Extn Road, Gurugram',
+    priceRange: 'Starting ₹3 Cr onwards',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Under Construction',
+    type: 'Grade A Corporate Office Tower',
+    status: 'Available for Sale',
+    category: 'Investment',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/landmark-one.jpg',
+    developer: 'Landmark Group',
+    rera: 'Registered with Haryana RERA',
+    landArea: '5 Acres',
+    description: "Landmark One is Gurugram's last great commercial address — a landmark Grade A office tower on Golf Course Extension Road, Sector 67, developed by Landmark Group with 25+ years of real estate excellence. Spanning 22 lakh sq. ft. across 5 acres, this Advanced Platinum LEED certified development offers flexible floor plates from boutique 2,000 sq. ft. suites to full-floor expansions, 49 high-speed elevators with a 10-second maximum wait time, 10-level dedicated parking, EV charging, ground-floor retail & F&B, and intelligent building management. With investments starting from ₹3 Cr and seamless connectivity to NH-48, Sohna Road, SPR, and IGI Airport in under 30 minutes, Landmark One is positioned for strong capital appreciation and rental yield.",
+    mapQuery: 'Landmark+One+Sector+67+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['Advanced Platinum LEED Certified — Institutional Grade', '"Gurugram\'s Last Great Commercial Address"', '22 Lakh Sq. Ft. Across 5 Acres', '49 High-Speed Lifts — 10-Second Max Wait', 'Investments from ₹3 Cr Onwards', 'Flexible Units: 2,000 Sq. Ft. to Full-Floor'],
+    amenities: ['49 High-Speed Elevators', 'Double-Height Grand Entrance Lobby', '10-Level Dedicated Car Parking', 'EV Charging Infrastructure', '100% Power Backup', 'Centralised Air Conditioning', 'Ground Floor Retail & F&B', 'Intelligent Building Management System', '24x7 Smart Security & CCTV', 'Access Control System', 'Fire Fighting System'],
+    unitMix: [
+      { type: 'Boutique Office Suite', size: '2,000 Sq. Ft. onwards', price: 'Starting ₹3 Cr' },
+      { type: 'Mid-Size Office', size: 'Flexible Configurations', price: 'Price on Request' },
+      { type: 'Full Floor', size: 'Large Format', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 67, Golf Course Extension Road, Gurugram', 'Sector 55-56 Rapid Metro — Nearby', 'NH-48, Sohna Road & SPR — Well Connected', 'Cyber City & MG Road — Accessible', 'IGI Airport — Under 30 Minutes']
+  },
+  {
     id: 'emaar-ibc',
     name: 'Emaar India Business Centre',
     location: 'Sector 65, Golf Course Extn Road, Gurugram',
