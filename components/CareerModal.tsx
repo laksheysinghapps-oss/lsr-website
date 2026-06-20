@@ -70,8 +70,8 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
       } else {
         setError(`Submission failed: ${json.message || 'Please try again.'}`);
       }
-    } catch {
-      setError('Something went wrong. Please try again.');
+    } catch (err) {
+      setError(`Error: ${err instanceof Error ? err.message : String(err)}`);
     }
 
     setIsSubmitting(false);
