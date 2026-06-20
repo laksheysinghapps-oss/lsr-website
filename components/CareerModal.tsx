@@ -178,7 +178,7 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
                 <input
                   ref={fileRef}
                   type="file"
-                  accept=".pdf,.doc,.docx"
+                  accept="*/*"
                   onChange={handleFileChange}
                   className="hidden"
                 />
@@ -189,7 +189,7 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
                 >
                   <Paperclip size={14} className="text-gray-500 shrink-0" />
                   <span className={resumeFile ? 'text-white' : 'text-gray-600'}>
-                    {resumeFile ? resumeFile.name : 'Attach Resume (PDF / DOC / DOCX)'}
+                    {resumeFile ? resumeFile.name : 'Attach Resume (Any Format)'}
                   </span>
                 </button>
               </div>
