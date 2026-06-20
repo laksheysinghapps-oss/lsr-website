@@ -5,7 +5,7 @@ interface CareerModalProps {
   onClose: () => void;
 }
 
-const WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'; // Replace after getting key from web3forms.com
+const WEB3FORMS_ACCESS_KEY = 'b5516625-b8dc-4873-b3a7-c5ac7e266605';
 
 const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
   const fileRef = useRef<HTMLInputElement>(null);
