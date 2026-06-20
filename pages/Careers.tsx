@@ -101,7 +101,7 @@ const Careers: React.FC = () => {
       {showModal && <CareerModal onClose={() => setShowModal(false)} />}
 
       {/* Hero */}
-      <section className="py-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <section className="py-10 w-full px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
           <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Join The Team</h4>
           <h1 className="text-5xl font-serif mb-6">Build a Career in Institutional Real Estate</h1>
@@ -125,7 +125,7 @@ const Careers: React.FC = () => {
       </section>
 
       {/* Open Positions */}
-      <section className="pb-24 max-w-7xl mx-auto px-6">
+      <section className="pb-24 w-full px-6 md:px-16">
         <div className="pt-8" style={{borderTop: '1px solid transparent', borderImage: 'linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) 1'}}>
           <h2 className="text-3xl font-serif mb-2">Open Positions</h2>
           <p className="text-gray-500 text-sm uppercase tracking-widest mb-10">{OPEN_POSITIONS.length} Opening{OPEN_POSITIONS.length !== 1 ? 's' : ''} Available</p>
