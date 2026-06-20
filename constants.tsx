@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'gardencity-arcade',
+    name: 'Gardencity Arcade',
+    location: 'Sector 92, DLF Gardencity, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Under Construction',
+    type: 'Retail Shopping Arcade',
+    status: 'Available for Sale',
+    category: 'Investment',
+    subCategory: 'Commercial',
+    segment: 'Retail',
+    image: '/images/gardencity-arcade.jpg',
+    developer: 'DLF Limited',
+    rera: 'RC/REP/HARERA/GGM/537/269/2022/12',
+    landArea: '200 m Frontage on 60m Road',
+    description: "Gardencity Arcade is a premium retail investment opportunity by DLF in the heart of Sector 92, DLF Gardencity, Gurugram. Designed as a low-rise shopping arcade to maximise footfall, it features a commanding 200-metre frontage on a 60-metre wide road and is positioned to serve a rapidly growing catchment of 15,000+ families in the neighbourhood. With limited inventory of optimally sized built-up shops, 100% power backup, multi-tier security, and DLF's hallmark construction quality, this arcade is ideal for mid-to-high-end retail occupiers across apparel, home décor, electronics, and food & beverage — offering investors a captive, under-served consumer base and strong rental income potential.",
+    mapQuery: 'Gardencity+Arcade+Sector+92+DLF+Gardencity+Gurugram',
+    highlights: ['DLF-Developed — Trusted Brand Assurance', 'RERA Registered — RC/REP/HARERA/GGM/537/269/2022/12', '200m Frontage on 60m Wide Road', 'Low-Rise Design — Maximum Footfall', 'Captive Catchment: 15,000+ Families', 'Limited Inventory — Exclusive Retail Investment'],
+    amenities: ['100% Power Backup', 'Multi-Tier Security', 'Wide Internal Roads', 'Ample Parking', 'DLF Quality Construction', 'Landscaped Surroundings'],
+    unitMix: [
+      { type: 'Ground Floor Retail Shop', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Upper Floor Retail / F&B', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Supermarket Space', size: 'Large Format', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 92, DLF Gardencity, Gurugram', 'NH-48 — 8 km', 'Dwarka Expressway (NPR) — 7 km', 'IGI Airport — 36 km', 'IMT Manesar & DLF Corporate Greens — Nearby', 'Proposed Metro Line — Under Planning']
+  },
+  {
     id: 'landmark-one',
     name: 'Landmark One',
     location: 'Sector 67, Golf Course Extn Road, Gurugram',
