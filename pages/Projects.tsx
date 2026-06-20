@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
     }`;
 
   return (
-    <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+    <div className="bg-black text-white min-h-screen">
       {/* Category Selection Modal */}
       {modalProject && (
         <div
@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
         </div>
       )}
 
-      <section className="gold-gradient-border relative py-28 overflow-hidden flex items-center justify-center text-center">
+      <section className="gold-gradient-border relative min-h-screen overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         </div>
-        <div className="relative z-10 px-6">
+        <div className="relative z-10 px-6 pt-32 md:pt-40">
           <h1 className="text-4xl md:text-6xl font-serif mb-4">Portfolio</h1>
           <p className="text-gray-400 max-w-2xl text-lg mx-auto">
             A curated selection of Gurgaon's finest opportunities, vetted for legal compliance, construction quality, and appreciation potential.
