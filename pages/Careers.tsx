@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CareerModal from '../components/CareerModal';
 
 const Careers: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+      {showModal && <CareerModal onClose={() => setShowModal(false)} />}
       <section className="py-20 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
           <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Join The Team</h4>
@@ -19,14 +23,12 @@ const Careers: React.FC = () => {
               <li>• Competitive compensation structures</li>
             </ul>
           </div>
-          <a 
-            href="https://www.linkedin.com/company/lsr-realty/jobs/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-lsr-gold text-black px-8 py-4 uppercase tracking-widest font-bold text-sm hover:bg-white transition-colors"
+          <button
+            onClick={() => setShowModal(true)}
+            className="inline-block bg-lsr-gold text-black px-8 py-4 uppercase tracking-widest font-bold text-sm hover:opacity-90 transition-opacity"
           >
             View Open Positions
-          </a>
+          </button>
         </div>
         <div className="relative border border-white/10 p-4">
            <div className="absolute top-0 left-0 w-full h-full border border-lsr-gold/20 transform translate-x-4 translate-y-4 -z-10"></div>
