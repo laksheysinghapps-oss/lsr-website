@@ -40,9 +40,10 @@ const OPEN_POSITIONS = [
       'Sales and communication skill development.',
       'Incentives for achieving targets.',
     ],
-    mustHave: 'Stipend: As per company policy + Performance Incentives',
+    mustHave: '',
     skills: 'Telecalling / Lead Generation',
     gender: 'Open to Male & Female Candidates',
+    stipend: 'As per company policy + Performance Incentives',
   },
   {
     id: 1,
@@ -87,6 +88,7 @@ const OPEN_POSITIONS = [
     mustHave: '2-Wheeler Driving Licence and Bike',
     skills: 'Inventory Sourcing',
     gender: '',
+    stipend: '',
   },
 ];
 
@@ -218,6 +220,10 @@ const Careers: React.FC = () => {
                       {job.gender && <div>
                         <span className="text-xs uppercase tracking-widest text-gray-500">Gender</span>
                         <p className="text-white text-sm mt-1">{job.gender}</p>
+                      </div>}
+                      {job.stipend && <div>
+                        <span className="text-xs uppercase tracking-widest text-gray-500">Stipend</span>
+                        <p className="text-white text-sm mt-1">{job.stipend}</p>
                       </div>}
                     </div>
 
