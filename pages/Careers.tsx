@@ -97,7 +97,7 @@ const Careers: React.FC = () => {
   const [expandedJob, setExpandedJob] = useState<number | null>(null);
 
   return (
-    <div className="bg-black text-white pt-24 md:pt-28 min-h-screen">
+    <div className="bg-black text-white pt-20 md:pt-24 min-h-screen">
       {showModal && <CareerModal onClose={() => setShowModal(false)} />}
 
       {/* Hero */}
