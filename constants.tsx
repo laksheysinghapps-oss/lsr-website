@@ -405,8 +405,8 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'gardencity-arcade',
-    name: 'Gardencity Arcade',
-    location: 'Sector 92, DLF Gardencity, Gurugram',
+    name: 'DLF Gardencity Arcade',
+    location: 'Sector 92, Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
