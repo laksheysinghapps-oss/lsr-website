@@ -108,7 +108,7 @@ const Careers: React.FC = () => {
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
             Work alongside leadership from Cornell University and Hines. We are looking for analytical, driven professionals who want to move beyond traditional brokerage into true investment advisory.
           </p>
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4">
             <h3 className="text-xl font-serif text-white">Why Join LSR?</h3>
             <ul className="space-y-2 text-gray-400">
               <li>• Mentorship from industry veterans</li>
