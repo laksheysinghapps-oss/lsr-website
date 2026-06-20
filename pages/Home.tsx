@@ -116,9 +116,6 @@ const Home: React.FC = () => {
 
             {/* 2. Relationships */}
             <div className="bg-lsr-charcoal p-8 border border-white/10 hover:border-lsr-gold/60 transition-all duration-500 group flex flex-col relative overflow-hidden">
-               <div className="absolute top-0 right-0 p-4 opacity-5">
-                 <Handshake size={150} className="text-white" />
-               </div>
               <div className="mb-6 relative z-10">
                 <Handshake className="w-10 h-10 text-lsr-gold mb-4" />
                 <h3 className="text-2xl font-serif text-white group-hover:text-lsr-gold transition-colors">Developer Access</h3>
