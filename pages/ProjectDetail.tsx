@@ -73,7 +73,7 @@ const ProjectDetail: React.FC = () => {
           <img src={project.image} alt={project.name} className="absolute inset-0 w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 w-full p-6 md:p-12">
-            <span className="status-badge bg-lsr-gold text-black px-4 py-1 text-xs font-bold uppercase tracking-widest mb-4 inline-block">
+            <span className="bg-lsr-gold text-black px-4 py-1 text-xs font-bold uppercase tracking-widest mb-4 inline-block">
               {project.status}
             </span>
             <h1 className="text-3xl md:text-5xl font-serif text-white mb-3">{project.name}</h1>
