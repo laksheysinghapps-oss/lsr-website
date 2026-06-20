@@ -157,7 +157,7 @@ const Projects: React.FC = () => {
                 type="text"
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
-                placeholder="Search Property"
+                placeholder="Search Project"
                 className="bg-transparent text-white text-sm px-3 py-2 w-56 outline-none placeholder-gray-600"
               />
               {searchQuery && (
