@@ -187,11 +187,9 @@ const Projects: React.FC = () => {
                         alt={project.name}
                         className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                       />
-                      {isDual && (
-                        <div className="absolute top-4 left-4 bg-black/70 border border-lsr-gold/40 text-xs px-3 py-1 uppercase tracking-wider gold-gradient-text">
-                          Lease &amp; Investment
-                        </div>
-                      )}
+                      <div className="status-badge absolute top-4 right-4 bg-lsr-gold text-black text-xs font-bold px-4 py-2 uppercase tracking-widest">
+                        {isDual ? 'Available for Lease & Sale' : project.status}
+                      </div>
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
                     </div>
                     <div className="p-6">

@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           alt={project.name}
           className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute top-4 right-4 bg-lsr-gold text-black text-xs font-bold px-3 py-1 uppercase tracking-wider">
+        <div className="status-badge absolute top-4 right-4 bg-lsr-gold text-black text-xs font-bold px-4 py-2 uppercase tracking-widest">
           {project.status}
         </div>
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
