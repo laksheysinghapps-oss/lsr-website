@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'vatika-first-india-place',
+    name: 'Vatika First India Place',
+    location: 'MG Road (Mehrauli-Gurgaon Road), Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Commercial Office Complex',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/vatika-first-india-place.png',
+    developer: 'Vatika Limited',
+    rera: 'Available on Request',
+    landArea: '1,71,000 Sq. Ft. Total Built-Up',
+    description: "Vatika First India Place is Vatika Group's inaugural commercial landmark on MG Road (Mehrauli-Gurgaon Road), Gurugram. Spanning 1,71,000 sq. ft. across three well-planned blocks (A, B & C), it offers efficient floor plates of 10,000–17,000 sq. ft. with wide retail frontage, architectural finesse, and Vatika's hallmark high maintenance standards. Strategically located on one of Gurugram's most established commercial arterials, this consistently high-occupancy development is a testament to enduring demand for quality workspace in the heart of the city.",
+    mapQuery: 'Vatika+First+India+Place+MG+Road+Gurugram',
+    highlights: ['Vatika Group\'s First Commercial Landmark on MG Road', '3 Blocks — 1,71,000 Sq. Ft. Total Built-Up', 'Efficient Floor Plates: 10,000 – 17,000 Sq. Ft.', 'Wide Retail Frontage — Prominent MG Road Address', 'Consistently High Occupancy — Proven Demand', 'Architectural Finesse & High Maintenance Standards'],
+    amenities: ['High-Speed Elevators', 'Wide Retail Frontage', 'Three-Block Configuration', 'Professional Building Services', 'High Maintenance Standards', '24x7 Security', 'Fire Fighting System'],
+    unitMix: [
+      { type: 'Small Office Suite', size: '10,000 Sq. Ft. onwards', price: 'Price on Request' },
+      { type: 'Full Floor', size: 'Up to 17,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['MG Road (Mehrauli-Gurgaon Road), Gurugram', 'Prime Central Gurugram Location', 'Excellent Connectivity to Delhi & NCR', 'Proximity to Retail, Hospitality & Business Hubs']
+  },
+  {
     id: 'vatika-business-park',
     name: 'Vatika Business Park',
     location: 'Sohna Road, Gurugram',
