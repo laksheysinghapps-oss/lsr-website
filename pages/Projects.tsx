@@ -1,16 +1,19 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { MapPin, ArrowUpRight, X } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
+import { Project } from '../types';
 
 const Projects: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [modalProject, setModalProject] = useState<{ name: string; image: string; loc: string; options: Project[] } | null>(null);
 
   const segments = location.pathname.replace(/^\/projects\/?/, '').split('/').filter(Boolean);
-  const categorySlug = segments[0]; // 'leasing' | 'investment' | undefined
-  const subCategorySlug = segments[1]; // 'commercial' | 'residential' | undefined
-  const segmentSlug = segments[2]; // 'corporate' | 'retail' | undefined
+  const categorySlug = segments[0];
+  const subCategorySlug = segments[1];
+  const segmentSlug = segments[2];
 
   const category = categorySlug === 'leasing' ? 'Leasing' : categorySlug === 'investment' ? 'Investment' : 'All';
   const subCategory = subCategorySlug === 'commercial' ? 'Commercial' : subCategorySlug === 'residential' ? 'Residential' : 'All';
@@ -25,6 +28,39 @@ const Projects: React.FC = () => {
     });
   }, [category, subCategory, segment]);
 
+  // Deduplicated list for "All" view
+  const allViewProjects = useMemo(() => {
+    if (category !== 'All') return filteredProjects;
+    const seen = new Map<string, Project[]>();
+    for (const p of filteredProjects) {
+      const key = p.name;
+      if (!seen.has(key)) seen.set(key, []);
+      seen.get(key)!.push(p);
+    }
+    // Return one representative per name
+    return Array.from(seen.values()).map(group => group[0]);
+  }, [category, filteredProjects]);
+
+  // Map name -> all variants (for modal detection)
+  const projectVariants = useMemo(() => {
+    const map = new Map<string, Project[]>();
+    for (const p of filteredProjects) {
+      if (!map.has(p.name)) map.set(p.name, []);
+      map.get(p.name)!.push(p);
+    }
+    return map;
+  }, [filteredProjects]);
+
+  const handleAllCardClick = (project: Project) => {
+    const variants = projectVariants.get(project.name) || [];
+    if (variants.length > 1) {
+      setModalProject({ name: project.name, image: project.image, loc: project.location, options: variants });
+    } else {
+      navigate(`/projects/${project.id}`);
+      window.scrollTo(0, 0);
+    }
+  };
+
   const filterButtonClass = (active: boolean) =>
     `px-5 py-2 text-sm uppercase tracking-widest border transition-all duration-300 ${
       active
@@ -34,6 +70,59 @@ const Projects: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+      {/* Category Selection Modal */}
+      {modalProject && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4"
+          onClick={() => setModalProject(null)}
+        >
+          <div
+            className="bg-lsr-charcoal border border-white/10 max-w-md w-full overflow-hidden"
+            onClick={e => e.stopPropagation()}
+          >
+            {/* Image */}
+            <div className="relative h-48 overflow-hidden">
+              <img src={modalProject.image} alt={modalProject.name} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/40" />
+              <button
+                className="absolute top-3 right-3 text-white hover:text-lsr-gold transition-colors"
+                onClick={() => setModalProject(null)}
+              >
+                <X size={20} />
+              </button>
+            </div>
+            {/* Content */}
+            <div className="p-8">
+              <h3 className="text-2xl font-serif text-white mb-1">{modalProject.name}</h3>
+              <div className="flex items-center space-x-2 text-gray-400 text-sm mb-6">
+                <MapPin size={13} className="text-lsr-gold" />
+                <span>{modalProject.loc}</span>
+              </div>
+              <p className="text-gray-400 text-sm mb-6">This property is available under multiple categories. Please select how you'd like to explore it:</p>
+              <div className="flex flex-col gap-3">
+                {modalProject.options.map(opt => (
+                  <button
+                    key={opt.id}
+                    className="flex items-center justify-between px-5 py-4 border border-white/10 hover:border-lsr-gold/60 transition-all duration-300 group"
+                    onClick={() => {
+                      setModalProject(null);
+                      navigate(`/projects/${opt.id}`);
+                      window.scrollTo(0, 0);
+                    }}
+                  >
+                    <div className="text-left">
+                      <div className="text-white text-sm font-medium group-hover:text-lsr-gold transition-colors uppercase tracking-wider">{opt.category}</div>
+                      <div className="text-gray-500 text-xs mt-0.5">{opt.status}</div>
+                    </div>
+                    <ArrowUpRight size={16} className="text-gray-500 group-hover:text-lsr-gold transition-colors" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <section className="gold-gradient-border relative py-28 overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
           <img
@@ -53,8 +142,6 @@ const Projects: React.FC = () => {
 
       <section className="py-8 max-w-7xl mx-auto px-6 border-b border-white/5">
         <div className="flex flex-col gap-4">
-
-          {/* Row 1: Category */}
           <div className="flex flex-wrap items-center gap-3">
             <span className="text-xs uppercase tracking-widest text-gray-500 w-20 shrink-0">Category</span>
             <button onClick={() => navigate('/projects')} className={filterButtonClass(category === 'All')}>All</button>
@@ -62,7 +149,6 @@ const Projects: React.FC = () => {
             <button onClick={() => navigate('/projects/investment')} className={filterButtonClass(category === 'Investment')}>Investment</button>
           </div>
 
-          {/* Row 2: Type — visible when a category is selected */}
           {category !== 'All' && (
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs uppercase tracking-widest text-gray-500 w-20 shrink-0">Type</span>
@@ -72,7 +158,6 @@ const Projects: React.FC = () => {
             </div>
           )}
 
-          {/* Row 3: Segment — visible when Commercial is selected */}
           {category !== 'All' && subCategory === 'Commercial' && (
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs uppercase tracking-widest text-gray-500 w-20 shrink-0">Segment</span>
@@ -81,19 +166,61 @@ const Projects: React.FC = () => {
               <button onClick={() => navigate(`/projects/${categorySlug}/commercial/retail`)} className={filterButtonClass(segment === 'Retail')}>Retail</button>
             </div>
           )}
-
         </div>
       </section>
 
       <section className="py-16 max-w-7xl mx-auto px-6">
-        {filteredProjects.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {filteredProjects.map(project => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
+        {category === 'All' ? (
+          allViewProjects.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {allViewProjects.map(project => {
+                const isDual = (projectVariants.get(project.name)?.length ?? 1) > 1;
+                return (
+                  <div
+                    key={project.name}
+                    className="group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative"
+                    onClick={() => handleAllCardClick(project)}
+                  >
+                    <div className="relative h-64 overflow-hidden">
+                      <img
+                        src={project.image}
+                        alt={project.name}
+                        className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                      />
+                      {isDual && (
+                        <div className="absolute top-4 left-4 bg-black/70 border border-lsr-gold/40 text-xs px-3 py-1 uppercase tracking-wider gold-gradient-text">
+                          Lease &amp; Investment
+                        </div>
+                      )}
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-2xl font-serif text-white group-hover:text-lsr-gold transition-colors mb-2">{project.name}</h3>
+                      <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                        <MapPin size={14} className="text-lsr-gold" />
+                        <span>{project.location}</span>
+                      </div>
+                      {isDual && (
+                        <p className="text-gray-500 text-xs mt-4 uppercase tracking-widest">Click to select category →</p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <p className="text-gray-400 text-center py-12">No projects found in this category yet.</p>
+          )
         ) : (
-          <p className="text-gray-400 text-center py-12">No projects found in this category yet.</p>
+          filteredProjects.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {filteredProjects.map(project => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-gray-400 text-center py-12">No projects found in this category yet.</p>
+          )
         )}
       </section>
     </div>
