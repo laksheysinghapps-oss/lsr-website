@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'vatika-professional-point',
+    name: 'Vatika Professional Point',
+    location: 'Golf Course Extn Road & Sohna Road Junction, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Commercial Office Complex',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/vatika-professional-point.webp',
+    developer: 'Vatika Limited',
+    rera: 'Available on Request',
+    landArea: '2.11 Acres',
+    description: "Vatika Professional Point is a premium Grade A commercial office complex located at the strategic intersection of Golf Course Extension Road and Sohna Road, Gurugram. Designed by world-renowned architects, this 14-floor tower offers 1,63,000 sq. ft. of office and retail space with efficient 12,000 sq. ft. floor plates, a double-glazed facade, plush finished lobbies, 80% open landscaped surroundings, and three-level basement parking. Walking distance from the proposed metro station, it combines prime connectivity with a sophisticated work environment crafted to Vatika's high maintenance standards.",
+    mapQuery: 'Vatika+Professional+Point+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['14-Floor Grade A Office & Retail Complex', 'Efficient Floor Plates: 12,000 Sq. Ft.', 'Total Built-Up: 1,63,000 Sq. Ft.', 'Double-Glazed Facade — Abundant Natural Light', '80% Open Landscaped Campus', 'Walking Distance from Proposed Metro Station'],
+    amenities: ['High-Speed Elevators', 'Plush Finished Lobbies', 'Three-Level Basement Parking', 'Visitor Parking', 'Double-Glazed Facade', 'Landscaped Open Spaces', 'Efficient Planning Layouts', 'High Maintenance Standards', 'Fire Fighting System'],
+    unitMix: [
+      { type: 'Partial Floor', size: 'Up to 6,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '12,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Golf Course Extension Road & Sohna Road Junction, Gurugram', 'Proposed Metro Station — Walking Distance', 'Dual Road Frontage — GCER & Sohna Road', 'Proximity to Residential & Retail Hubs']
+  },
+  {
     id: 'magnum-one-lease',
     name: 'Magnum One',
     location: 'Sector 37, Mathura Road, Faridabad',
