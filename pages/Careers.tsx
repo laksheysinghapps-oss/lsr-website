@@ -126,7 +126,7 @@ const Careers: React.FC = () => {
         </div>
         <div className="relative border border-white/10 p-4">
           <div className="absolute top-0 left-0 w-full h-full border border-lsr-gold/20 transform translate-x-4 translate-y-4 -z-10"></div>
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" alt="Team" className="w-full h-auto grayscale" />
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" alt="Team" className="w-full h-80 object-cover object-top grayscale" />
         </div>
       </section>
 
