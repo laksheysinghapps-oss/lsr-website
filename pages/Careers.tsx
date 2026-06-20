@@ -126,7 +126,7 @@ const Careers: React.FC = () => {
 
       {/* Open Positions */}
       <section className="pb-24 max-w-7xl mx-auto px-6">
-        <div className="border-t border-white/10 pt-16">
+        <div className="border-t border-white/10 pt-8">
           <h2 className="text-3xl font-serif mb-2">Open Positions</h2>
           <p className="text-gray-500 text-sm uppercase tracking-widest mb-10">{OPEN_POSITIONS.length} Opening{OPEN_POSITIONS.length !== 1 ? 's' : ''} Available</p>
 
