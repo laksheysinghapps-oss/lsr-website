@@ -100,7 +100,7 @@ const ProjectDetail: React.FC = () => {
             </div>
           )}
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 pointer-events-none">
-            <p className="text-lsr-gold text-xs uppercase tracking-widest font-bold">{project.name}</p>
+            <p className="gold-gradient-text text-xs uppercase tracking-widest font-bold">{project.name}</p>
             <p className="text-gray-300 text-xs">{project.location}</p>
           </div>
         </div>
@@ -117,7 +117,7 @@ const ProjectDetail: React.FC = () => {
                   Price on Request
                 </button>
               ) : (
-                <p className="text-lsr-gold font-semibold">{project.priceRange}</p>
+                <p className="gold-gradient-text font-semibold">{project.priceRange}</p>
               )}
             </div>
             <div>
@@ -154,7 +154,7 @@ const ProjectDetail: React.FC = () => {
 
           {/* Overview */}
           <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">{isCommercial ? 'About the Property' : 'Investment Thesis'}</h3>
+            <h3 className="text-2xl font-serif gold-gradient-text mb-6 border-b border-white/10 pb-4">{isCommercial ? 'About the Property' : 'Investment Thesis'}</h3>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               {project.description}
             </p>
@@ -170,7 +170,7 @@ const ProjectDetail: React.FC = () => {
 
           {/* Unit Mix Table */}
           <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">{isRetail ? 'Floor Plan & Retail Mix' : isCommercial ? 'Floor Availability & Leasing Options' : 'Configuration & Pricing'}</h3>
+            <h3 className="text-2xl font-serif gold-gradient-text mb-6 border-b border-white/10 pb-4">{isRetail ? 'Floor Plan & Retail Mix' : isCommercial ? 'Floor Availability & Leasing Options' : 'Configuration & Pricing'}</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
@@ -191,7 +191,7 @@ const ProjectDetail: React.FC = () => {
                             Price on Request
                           </button>
                         ) : (
-                          <span className="text-lsr-gold">{unit.price}</span>
+                          <span className="gold-gradient-text">{unit.price}</span>
                         )}
                       </td>
                     </tr>
@@ -203,7 +203,7 @@ const ProjectDetail: React.FC = () => {
 
           {/* Amenities */}
           <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">Amenities</h3>
+            <h3 className="text-2xl font-serif gold-gradient-text mb-6 border-b border-white/10 pb-4">Amenities</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               {project.amenities.map((amenity, idx) => (
                 <div key={idx} className="p-4 bg-lsr-charcoal text-center border border-white/5">
@@ -215,7 +215,7 @@ const ProjectDetail: React.FC = () => {
 
            {/* Location */}
            <section>
-            <h3 className="text-2xl font-serif text-lsr-gold mb-6 border-b border-white/10 pb-4">Location Advantage</h3>
+            <h3 className="text-2xl font-serif gold-gradient-text mb-6 border-b border-white/10 pb-4">Location Advantage</h3>
              <ul className="space-y-3">
               {project.locationAdvantage.map((loc, idx) => (
                  <li key={idx} className="flex items-center space-x-3 text-gray-400">

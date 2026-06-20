@@ -91,7 +91,7 @@ const Home: React.FC = () => {
         <div className="absolute top-0 right-0 w-96 h-96 bg-lsr-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
-            <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">The LSR Difference</h4>
+            <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">The LSR Difference</h4>
             <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">What Sets Us Apart?</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
               At LSR Realty, what truly sets us apart is trust, transparency, and deep-rooted credibility. 
@@ -172,7 +172,7 @@ const Home: React.FC = () => {
       <section className="py-24 bg-neutral-900 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Our Methodology</h4>
+            <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Methodology</h4>
             <h2 className="text-3xl md:text-4xl font-serif mb-6 leading-tight">Data-Driven Decision Making</h2>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Unlike traditional brokers, we approach real estate with an investment banking mindset. 
@@ -187,7 +187,7 @@ const Home: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <button onClick={() => navigate('/services')} className="border-b border-lsr-gold text-lsr-gold pb-1 hover:text-white hover:border-white transition-colors">
+            <button onClick={() => navigate('/services')} className="border-b border-lsr-gold gold-gradient-text pb-1 hover:text-white hover:border-white transition-colors">
               Explore Our Advisory Process
             </button>
           </div>
@@ -217,7 +217,7 @@ const Home: React.FC = () => {
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Client Success</h4>
+            <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Client Success</h4>
             <h2 className="text-3xl md:text-5xl font-serif text-white">Trusted by Investors</h2>
           </div>
 
@@ -229,7 +229,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex justify-between items-end">
                 <div>
-                  <p className="text-lsr-gold font-semibold">NRI Investor</p>
+                  <p className="gold-gradient-text font-semibold">NRI Investor</p>
                   <p className="text-gray-500 text-sm">San Francisco, USA</p>
                 </div>
                 <div className="text-right">
@@ -246,7 +246,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex justify-between items-end">
                 <div>
-                  <p className="text-lsr-gold font-semibold">Senior VP</p>
+                  <p className="gold-gradient-text font-semibold">Senior VP</p>
                   <p className="text-gray-500 text-sm">MNC, Cyber City</p>
                 </div>
                 <div className="text-right">
@@ -263,7 +263,7 @@ const Home: React.FC = () => {
               </p>
               <div className="flex justify-between items-end">
                 <div>
-                  <p className="text-lsr-gold font-semibold">Family Office</p>
+                  <p className="gold-gradient-text font-semibold">Family Office</p>
                   <p className="text-gray-500 text-sm">Delhi</p>
                 </div>
                 <div className="text-right">

@@ -31,7 +31,7 @@ const PrivacyPolicy: React.FC = () => {
           </p>
 
           <div className="pt-8">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Information Collection</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Information Collection</h2>
             <p>
               When you voluntarily send us electronic mail, we will keep a record of this information so that we 
               can respond to you. We only collect information from you when you register on our site or fill out a 
@@ -45,7 +45,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="pt-8">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Personal Information</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Personal Information</h2>
             <p>
               We at LSR Realty respect the online privacy of the visitor and recognise the need for an appropriate 
               protection of any personal information you share with us. We do not collect any personal information 
@@ -60,7 +60,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="pt-8">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Statistical Information</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Statistical Information</h2>
             <p>
               When you visit our site, our computers may automatically collect statistics about your visit. This 
               information does not identify you personally, but rather about a visit to our site. We may monitor 
@@ -72,7 +72,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="pt-8">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Communication & Updates</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Communication & Updates</h2>
             <p>
               We generally respond to any E-mail questions, requests for product or service information, and other 
               inquiries that we receive. We may also retain this correspondence to improve our products, services, 
@@ -83,7 +83,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="pt-8">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Consent</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Consent</h2>
             <p>
               By visiting our website, you consent to our Privacy Policy including but not limited to your consent 
               for sharing your information as per this Privacy Policy. This Policy may change from time to time.
@@ -91,7 +91,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="pt-8">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Changes to Privacy Policy</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Changes to Privacy Policy</h2>
             <p>
               You may access a current version of the Privacy Policy from the LSR Realty website. We may update our 
               Privacy Policy from time to time. You are advised to review this Privacy Policy periodically for any 
@@ -100,7 +100,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="pt-8 pb-12 border-t border-white/10 mt-12">
-            <h2 className="text-2xl font-serif text-lsr-gold mb-4">Contact Us</h2>
+            <h2 className="text-2xl font-serif gold-gradient-text mb-4">Contact Us</h2>
             <p>
               If you have any query, requests or grievance with regard to this Privacy Policy, please contact us at{' '}
               <a href="tel:+918448660818" className="text-lsr-gold hover:text-white transition-colors">

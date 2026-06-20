@@ -5,7 +5,7 @@ const Careers: React.FC = () => {
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <section className="py-20 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
-          <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Join The Team</h4>
+          <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Join The Team</h4>
           <h1 className="text-5xl font-serif mb-6">Build a Career in Institutional Real Estate</h1>
           <p className="text-lg text-gray-400 mb-8 leading-relaxed">
             Work alongside leadership from Cornell University and Hines. We are looking for analytical, driven professionals who want to move beyond traditional brokerage into true investment advisory.

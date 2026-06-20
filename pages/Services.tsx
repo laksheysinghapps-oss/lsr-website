@@ -6,7 +6,7 @@ const Services: React.FC = () => {
     <div className="bg-black text-white pt-32 md:pt-40">
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Our Expertise</h4>
+          <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Expertise</h4>
           <h1 className="text-5xl font-serif mb-6">Comprehensive Advisory Services</h1>
           <p className="text-xl text-gray-400 font-light">
             We support HNIs, NRIs, and Family Offices throughout the entire real estate investment lifecycle.

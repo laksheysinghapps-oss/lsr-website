@@ -22,7 +22,7 @@ const Insights: React.FC = () => {
                 <img src={insight.image} alt={insight.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               </div>
               <div className="flex items-center space-x-4 mb-4">
-                 <span className="text-lsr-gold text-xs uppercase tracking-widest">{insight.category}</span>
+                 <span className="gold-gradient-text text-xs uppercase tracking-widest">{insight.category}</span>
                  <span className="text-gray-600 text-xs">|</span>
                  <span className="text-gray-500 text-xs">{insight.date}</span>
               </div>

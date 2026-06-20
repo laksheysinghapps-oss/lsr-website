@@ -7,7 +7,7 @@ const About: React.FC = () => {
       {/* Header */}
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h4 className="text-lsr-gold uppercase tracking-[0.2em] text-sm mb-4">Who We Are</h4>
+          <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Who We Are</h4>
           <h1 className="text-5xl font-serif mb-8">Bridging Institutional Expertise & Individual Investment</h1>
           <p className="text-xl text-gray-400 font-light leading-relaxed">
             LSR Realty is the investment advisory arm of LSR Group. We are built on the belief that Indian real estate 
