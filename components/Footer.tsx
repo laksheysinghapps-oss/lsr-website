@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                 rel="noreferrer"
                 className="hover:text-lsr-gold transition-colors"
               >
-                911, Magnum Global Park,<br />Sector 58, Gurugram,<br />Haryana, India 122098
+                911, Magnum Global Park, Sector 58,<br />Gurugram, Haryana, India 122098
               </a>
             </li>
             <li className="flex items-center space-x-3">
