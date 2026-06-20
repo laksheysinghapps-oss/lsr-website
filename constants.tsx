@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'vatika-business-park',
+    name: 'Vatika Business Park',
+    location: 'Sohna Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Corporate Office Campus',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/vatika-business-park.jpg',
+    developer: 'Vatika Limited',
+    rera: 'Available on Request',
+    landArea: 'Multi-Tower Campus',
+    description: "Vatika Business Park is an established Grade A corporate campus on Sohna Road, Gurugram — home to approximately 11,000 professionals across three premium towers arranged around a signature one-acre central piazza. Offering 9,27,000 sq. ft. of office and retail space with large floor plates of 20,000–42,000 sq. ft., the development features a double-glazed facade, plush lobbies, a landscaped Bean Garden, health club, training rooms, and a vibrant F&B and retail precinct anchored by Starbucks, Chai Point, HDFC, Kotak, and more. Excellently connected via Sohna Road, NH-48, and Golf Course Extension Road.",
+    mapQuery: 'Vatika+Business+Park+Sohna+Road+Gurugram',
+    highlights: ['3 Towers — 9,27,000 Sq. Ft. Office & Retail', 'Floor Plates: 20,000 – 42,000 Sq. Ft.', '~11,000 Professionals — Thriving Corporate Community', '1-Acre Central Landscaped Piazza', 'Anchor Brands: Starbucks, HDFC, Kotak & More', 'Triple Road Access — Sohna Road, NH-48 & GCER'],
+    amenities: ['High-Speed Elevators', 'Plush Finished Lobbies', 'Double-Glazed Facade', '1-Acre Central Piazza', 'Landscaped Bean Garden', 'Health Club', 'Training Rooms', 'Restaurants & Food Court', 'Starbucks, Chai Point & More', 'ATMs & Cafeteria', 'Corporate Retail Spaces', 'Fire Fighting System', '24x7 Security'],
+    unitMix: [
+      { type: 'Partial Floor', size: 'Up to 21,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '20,000 – 42,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sohna Road, Gurugram', 'NH-48 — Easily Accessible', 'Golf Course Extension Road — Nearby', 'Proximity to Residential & Hospitality Hubs']
+  },
+  {
     id: 'vatika-professional-point',
     name: 'Vatika Professional Point',
     location: 'Golf Course Extn Road & Sohna Road Junction, Gurugram',
