@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { MapPin, ArrowUpRight, X } from 'lucide-react';
+import { MapPin, ArrowUpRight, X, Search } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 import { Project } from '../types';
@@ -9,6 +9,7 @@ const Projects: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [modalProject, setModalProject] = useState<{ name: string; image: string; loc: string; options: Project[] } | null>(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const segments = location.pathname.replace(/^\/projects\/?/, '').split('/').filter(Boolean);
   const categorySlug = segments[0];
@@ -20,13 +21,15 @@ const Projects: React.FC = () => {
   const segment = segmentSlug === 'corporate' ? 'Corporate' : segmentSlug === 'retail' ? 'Retail' : 'All';
 
   const filteredProjects = useMemo(() => {
+    const q = searchQuery.toLowerCase().trim();
     return PROJECTS.filter(project => {
       if (category !== 'All' && project.category !== category) return false;
       if (subCategory !== 'All' && project.subCategory !== subCategory) return false;
       if (subCategory === 'Commercial' && segment !== 'All' && project.segment !== segment) return false;
+      if (q && !project.name.toLowerCase().includes(q) && !project.location.toLowerCase().includes(q) && !project.developer.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [category, subCategory, segment]);
+  }, [category, subCategory, segment, searchQuery]);
 
   // Deduplicated list for "All" view
   const allViewProjects = useMemo(() => {
@@ -147,6 +150,22 @@ const Projects: React.FC = () => {
             <button onClick={() => navigate('/projects')} className={filterButtonClass(category === 'All')}>All</button>
             <button onClick={() => navigate('/projects/leasing')} className={filterButtonClass(category === 'Leasing')}>Leasing</button>
             <button onClick={() => navigate('/projects/investment')} className={filterButtonClass(category === 'Investment')}>Investment</button>
+            {/* Search Box */}
+            <div className="ml-auto flex items-center border border-white/20 hover:border-lsr-gold/50 transition-colors duration-300 bg-black/40">
+              <Search size={14} className="text-gray-500 ml-3 shrink-0" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                placeholder="Search Property"
+                className="bg-transparent text-white text-sm px-3 py-2 w-56 outline-none placeholder-gray-600"
+              />
+              {searchQuery && (
+                <button onClick={() => setSearchQuery('')} className="mr-3 text-gray-500 hover:text-white transition-colors">
+                  <X size={13} />
+                </button>
+              )}
+            </div>
           </div>
 
           {category !== 'All' && (
