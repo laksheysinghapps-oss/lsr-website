@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'godrej-gcr',
+    name: 'Godrej GCR',
+    location: 'Golf Course Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: '12,000 Sq. Ft.',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Corporate Office Tower',
+    status: 'Available for Lease',
+    category: 'Leasing',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/godrej-gcr.jpg',
+    developer: 'Godrej Ventures (Godrej Industries Group)',
+    rera: 'Available on Request',
+    landArea: '1.08 Million Sq. Ft. Total Built-Up',
+    description: "Godrej GCR is a landmark Grade A office tower on Golf Course Road, Gurugram — one of the most prestigious commercial addresses in the NCR. Rising 22 floors with 4 basement levels, this 1.08 million sq. ft. development features 50,000 sq. ft. typical floor plates, a striking curved glass facade, and a 7.0m shaded canopy. Certified IGBC Platinum, WELL Gold, and ranked 1st in Asia with a 5-star GRESB rating, it sets the benchmark for sustainable, wellness-focused corporate workspaces. On-site amenities include North India's first Starbucks Reserve, an amphitheatre, crèche, pet care, eldercare, EV charging, and MERV-16 air filtration.",
+    mapQuery: 'Godrej+GCR+Golf+Course+Road+Gurugram',
+    highlights: ['IGBC Platinum & WELL Gold Certified', '5-Star GRESB — Ranked #1 in Asia', '22-Floor Tower — 1.08 Million Sq. Ft.', 'Typical Floor Plate: 50,000 Sq. Ft.', 'North India\'s First Starbucks Reserve On-Site', 'Striking Curved Glass Facade — Aerodynamic Design'],
+    amenities: ['High-Speed Elevators', 'Striking Curved Glass Facade', '7.0m Shaded Canopy', 'MERV-16 Air Filtration System', 'EV Charging (20% of Parking)', 'North India\'s First Starbucks Reserve', 'Multiple Dining Options', 'Amphitheatre', 'Water Body Zones', 'Crèche, Pet Care & Eldercare', 'ATMs On-Site', '4-Level Basement Parking', 'ISO 14001 EMS Certified'],
+    unitMix: [
+      { type: 'Office Suite', size: '12,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Partial Floor', size: 'Flexible', price: 'Price on Request' },
+      { type: 'Full Floor', size: '50,000 Sq. Ft.', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Golf Course Road, Gurugram', 'Heart of Gurugram\'s Business District', 'Excellent Metro & Road Connectivity', 'Proximity to Premium Residential & Hospitality']
+  },
+  {
     id: 'vatika-first-india-place',
     name: 'Vatika First India Place',
     location: 'MG Road (Mehrauli-Gurgaon Road), Gurugram',
