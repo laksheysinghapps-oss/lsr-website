@@ -415,7 +415,7 @@ export const PROJECTS: Project[] = [
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
-    segment: 'Corporate',
+    segment: 'Retail',
     image: '/images/vatika-inxt-city-centre.webp',
     developer: 'Vatika Group',
     landArea: '550-Acre Township',
