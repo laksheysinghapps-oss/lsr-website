@@ -404,6 +404,34 @@ export const PROJECTS: Project[] = [
     locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
+    id: 'emaar-ibc',
+    name: 'Emaar India Business Centre',
+    location: 'Sector 65, Golf Course Extn Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: 'Multiple Sizes Available',
+    possessionDate: 'Ready to Occupy',
+    type: 'Grade A Corporate Office Tower',
+    status: 'Available for Sale',
+    category: 'Investment',
+    subCategory: 'Commercial',
+    segment: 'Corporate',
+    image: '/images/emaar-ibc.webp',
+    developer: 'Emaar India',
+    rera: 'Available on Request',
+    landArea: 'Available on Request',
+    description: "Emaar India Business Centre (IBC) is a landmark Grade A commercial investment asset on Golf Course Extension Road, Sector 65, Gurugram — developed by Emaar, one of the world's most respected real estate brands. Featuring twin premium towers with efficient large floor plates, a signature double-height entrance canopy, and high-end corporate amenities, this LEED-certified development commands one of GCER's most recognisable addresses. With strong institutional-quality construction, an established blue-chip tenant profile, and Emaar's global pedigree backing the asset, IBC offers discerning investors stable rental yields and compelling long-term capital appreciation.",
+    mapQuery: 'Emaar+India+Business+Centre+Sector+65+Golf+Course+Extension+Road+Gurugram',
+    highlights: ['Emaar-Developed — Global Real Estate Pedigree', 'Twin Premium Towers on Golf Course Extn Road', 'LEED Certified — Institutional Investment Grade', 'Blue-Chip Corporate Tenant Profile', 'Prominent GCER Address — Sector 65', 'Strong Rental Yield & Long-Term Capital Appreciation'],
+    amenities: ['High-Speed Elevators', 'Signature Double-Height Entrance Canopy', 'Central Air Conditioning', '100% Power Backup', 'Ample Basement Parking', 'Landscaped Common Areas', 'Food & Beverage Options', '24x7 Security & Access Control', 'Fire Fighting System', 'EV Charging Points'],
+    unitMix: [
+      { type: 'Partial Floor', size: 'Flexible Sizes', price: 'Price on Request' },
+      { type: 'Full Floor', size: 'Large Format', price: 'Price on Request' },
+      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'Prime GCER Corporate Corridor', 'Sector 55-56 Rapid Metro — Nearby', 'IGI Airport — ~20 km', 'Proximity to Premium Residential & Hospitality']
+  },
+  {
     id: 'dlf-cybercity',
     name: 'DLF Cybercity',
     location: 'Cybercity, DLF Phase 2, Gurugram',
