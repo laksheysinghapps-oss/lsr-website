@@ -123,7 +123,7 @@ const Projects: React.FC = () => {
         </div>
       )}
 
-      <section className="gold-gradient-border relative min-h-screen overflow-hidden flex items-center justify-center text-center">
+      <section className="gold-gradient-border relative h-[75vh] overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
