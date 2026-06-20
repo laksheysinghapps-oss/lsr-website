@@ -34,19 +34,19 @@ const Services: React.FC = () => {
           ))}
         </div>
       </section>
-      <section className="py-24 bg-white text-black">
+      <section className="py-24 bg-lsr-charcoal border-t border-white/10">
          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-               <h2 className="text-3xl md:text-5xl font-serif mb-6">NRI Investment Desk</h2>
-               <p className="text-gray-800 text-lg mb-8 leading-relaxed">
+               <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">NRI Investment Desk</h2>
+               <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                  Managing Indian assets remotely is complex. We provide a seamless, high-touch service for Non-Resident Indians looking to capitalize on Gurgaon's growth story.
                </p>
-               <ul className="space-y-4 mb-8 font-medium">
+               <ul className="space-y-4 mb-8 text-gray-300 font-medium">
                  <li>• Power of Attorney (POA) Assistance</li>
                  <li>• Tax Repatriation Advisory</li>
                  <li>• Tenant Management & Resale</li>
                </ul>
-               <button className="bg-black text-white px-8 py-3 uppercase tracking-widest text-sm hover:bg-lsr-gold hover:text-black transition-colors">
+               <button className="bg-lsr-gold text-black px-8 py-3 uppercase tracking-widest text-sm font-bold hover:opacity-90 transition-opacity">
                  Contact NRI Desk
                </button>
             </div>
