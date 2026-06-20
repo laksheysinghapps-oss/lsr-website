@@ -4,6 +4,7 @@ import { PROJECTS } from '../constants';
 import { Project } from '../types';
 import { Check, Download, MapPin, Loader2 } from 'lucide-react';
 import { submitLead } from '../lib/submitLead';
+import BrochureModal from '../components/BrochureModal';
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -19,6 +20,7 @@ const ProjectDetail: React.FC = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [showBrochureModal, setShowBrochureModal] = useState(false);
 
   useEffect(() => {
     const found = PROJECTS.find(p => p.id === id);
@@ -61,11 +63,16 @@ const ProjectDetail: React.FC = () => {
 
   if (!project) return null;
 
+  const handleBrochureClick = () => setShowBrochureModal(true);
+
   const isCommercial = project.subCategory === 'Commercial';
   const isRetail = project.segment === 'Retail';
 
   return (
     <div className="bg-black text-white pt-20">
+      {showBrochureModal && (
+        <BrochureModal projectName={project.name} onClose={() => setShowBrochureModal(false)} />
+      )}
       {/* Hero — split: image left, map right */}
       <div className="flex flex-col md:flex-row h-[60vh] md:h-[80vh]">
         {/* Left: Project image */}
@@ -309,17 +316,13 @@ const ProjectDetail: React.FC = () => {
             )}
 
             <div className="mt-8 pt-8 border-t border-white/10 flex flex-col space-y-4">
-              {isCommercial ? (
-                <button onClick={() => navigate('/contact')} className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors">
-                  <Download size={16} />
-                  <span>Download Brochure</span>
-                </button>
-              ) : (
-                <button className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors">
-                  <Download size={16} />
-                  <span>Download Brochure</span>
-                </button>
-              )}
+              <button
+                onClick={handleBrochureClick}
+                className="flex items-center justify-center space-x-2 w-full border border-white/20 py-3 text-sm text-gray-300 hover:text-white hover:border-white transition-colors"
+              >
+                <Download size={16} />
+                <span>Download Brochure</span>
+              </button>
                <a
                 href="https://wa.me/919999315702"
                 target="_blank"
