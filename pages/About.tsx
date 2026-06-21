@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Award, Briefcase, BookOpen } from 'lucide-react';
 
 const About: React.FC = () => {
@@ -62,7 +63,7 @@ const About: React.FC = () => {
              "Guided by the wisdom of 40+ years in real estate leadership."
            </blockquote>
            <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
-             The company is strategically guided by <strong>Mr. Devinder Singh</strong>, CEO & MD of DLF Ltd. With over 40 years of leadership, he has been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping. His legacy provides the moral and strategic compass for our fiduciary standards.</p>
+             The company is strategically guided by <strong>Mr. Devinder Singh</strong>, CEO & MD of DLF Ltd. With over 40 years of leadership, he has been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping, much of which is mapped in the <Link to="/maps" className="text-lsr-gold hover:underline">Gurgaon Manesar Master Plan 2031</Link>. His legacy provides the moral and strategic compass for our fiduciary standards.</p>
         </div>
       </section>
       

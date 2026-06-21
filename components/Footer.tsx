@@ -75,6 +75,11 @@ const Footer: React.FC = () => {
             <li>Market Intelligence</li>
             <li>NRI Services</li>
             <li>Resale Advisory</li>
+            <li>
+              <NavLink to="/maps" className="hover:text-lsr-gold transition-colors">
+                Gurgaon Manesar Master Plan 2031
+              </NavLink>
+            </li>
           </ul>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 import { LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Line } from 'recharts';
@@ -170,7 +170,9 @@ const Home: React.FC = () => {
             <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Methodology</h4>
             <h2 className="text-3xl md:text-4xl font-serif mb-6 leading-tight">Data Driven Decision Making</h2>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Unlike traditional brokers, we approach real estate with an investment banking mindset. We track micro market trends, infrastructure developments, and rental yields to forecast capital appreciation with higher accuracy.</p>
+              Unlike traditional brokers, we approach real estate with an investment banking mindset. We track micro market trends, infrastructure developments, and rental yields to forecast capital appreciation with higher accuracy. Our analysis is grounded in the official{' '}
+              <Link to="/maps" className="text-lsr-gold hover:underline">Gurgaon Manesar Master Plan 2031</Link>
+              {' '}and approved sector layout maps.</p>
             <ul className="space-y-4 mb-8">
               {['Proprietary Algo Based Valuation', 'Risk Adjusted Return Analysis', 'Exit Strategy Planning'].map((item, i) => (
                 <li key={i} className="flex items-center space-x-3 text-white">
