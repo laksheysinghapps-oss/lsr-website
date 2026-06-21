@@ -18,9 +18,7 @@ const Footer: React.FC = () => {
             />
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Gurgaon's most trusted, data-driven real estate investment advisor. 
-            Bridging the gap between institutional expertise and individual investors.
-          </p>
+            Gurgaon's most trusted, data driven real estate investment advisor. Bridging the gap between institutional expertise and individual investors.</p>
           <div className="flex space-x-4">
             <a
               href="https://www.linkedin.com/company/lsr-realty/posts/?feedView=all"

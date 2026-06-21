@@ -194,7 +194,7 @@ const Projects: React.FC = () => {
             <Search size={14} className="text-lsr-gold" />
             <span className="text-xs uppercase tracking-widest text-gray-500">Search Results for</span>
             <span className="gold-gradient-text text-sm font-medium">"{searchQuery.trim()}"</span>
-            <span className="text-gray-600 text-xs">— {(category === 'All' ? allViewProjects : filteredProjects).length} found</span>
+            <span className="text-gray-600 text-xs">{(category === 'All' ? allViewProjects : filteredProjects).length} found</span>
           </div>
         )}
         {category === 'All' ? (

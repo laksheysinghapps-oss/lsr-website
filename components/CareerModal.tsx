@@ -50,7 +50,7 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        project: `Job Application — ${formData.jobRole}`,
+        project: `Job Application: ${formData.jobRole}`,
         source: 'Careers Page',
         message: [
           `Job Role: ${formData.jobRole}`,
@@ -94,7 +94,7 @@ const CareerModal: React.FC<CareerModalProps> = ({ onClose }) => {
         <div className="flex items-start justify-between px-8 pt-8 pb-4 shrink-0">
           <div>
             <h3 className="text-xl font-serif text-white">Apply Now</h3>
-            <p className="text-xs text-gray-500 mt-1 uppercase tracking-widest">LSR Realty — Careers</p>
+            <p className="text-xs text-gray-500 mt-1 uppercase tracking-widest">LSR Realty, Careers</p>
           </div>
           <button onClick={onClose} className="text-gray-500 hover:text-white transition-colors mt-1">
             <X size={20} />

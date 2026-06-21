@@ -33,11 +33,7 @@ const PrivacyPolicy: React.FC = () => {
           <div className="pt-8">
             <h2 className="text-2xl font-serif gold-gradient-text mb-4">Information Collection</h2>
             <p>
-              When you voluntarily send us electronic mail, we will keep a record of this information so that we 
-              can respond to you. We only collect information from you when you register on our site or fill out a 
-              form. Also, when filling out a form on our site, you may be asked to enter your: name, e-mail address 
-              or phone number. You may, however, visit our site anonymously.
-            </p>
+              When you voluntarily send us electronic mail, we will keep a record of this information so that we can respond to you. We only collect information from you when you register on our site or fill out a form. Also, when filling out a form on our site, you may be asked to enter your: name, email address or phone number. You may, however, visit our site anonymously.</p>
             <p className="mt-4 text-gray-400">
               In case you have submitted your personal information and contact details, we reserve the rights to 
               Call, SMS, Email or WhatsApp about our products and offers, even if your number has DND activated on it.
@@ -74,12 +70,7 @@ const PrivacyPolicy: React.FC = () => {
           <div className="pt-8">
             <h2 className="text-2xl font-serif gold-gradient-text mb-4">Communication & Updates</h2>
             <p>
-              We generally respond to any E-mail questions, requests for product or service information, and other 
-              inquiries that we receive. We may also retain this correspondence to improve our products, services, 
-              and website, and for other disclosed purposes. Frequently we retain contact information for 
-              communication to enable us to send individuals updates or other important information about our 
-              services and products.
-            </p>
+              We generally respond to any email questions, requests for product or service information, and other inquiries that we receive. We may also retain this correspondence to improve our products, services, and website, and for other disclosed purposes. Frequently we retain contact information for communication to enable us to send individuals updates or other important information about our services and products.</p>
           </div>
 
           <div className="pt-8">

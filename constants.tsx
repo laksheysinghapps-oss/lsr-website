@@ -25,27 +25,27 @@ export interface SectorMap {
 // Urban Complex, sourced from tcpharyana.gov.in (Town & Country Planning Dept, Haryana)
 // and branded with LSR Realty's own logo and contact details.
 export const SECTOR_MAPS: SectorMap[] = [
-  { id: 'sector-58', name: 'Sector 58', description: 'A premium sector along Golf Course Extension Road, home to several luxury residential developments and strong social infrastructure.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-62', name: 'Sector 62', description: 'A well connected sector on Golf Course Extension Road with a mix of residential and institutional development.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-63', name: 'Sector 63', description: 'Home to landmark residential addresses with excellent access to Golf Course Extension Road and Sohna Road.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-63a', name: 'Sector 63A', description: 'An emerging micro market adjoining Sector 63, benefiting from the same Golf Course Extension Road connectivity.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-65', name: 'Sector 65', description: 'A sought after residential sector on Golf Course Extension Road with several premium project launches.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-66', name: 'Sector 66', description: 'One of Gurugram\'s most active investment corridors along Golf Course Extension Road, with multiple ongoing developments.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-67', name: 'Sector 67', description: 'A fast growing sector on Sohna Road and Golf Course Extension Road, popular for both residential and investment purchases.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 58 to 67A' },
-  { id: 'sector-70', name: 'Sector 70', description: 'Located on Southern Peripheral Road, a well planned sector with strong residential demand and growing social infrastructure.', thumb: '/images/sector-maps/sectors-68-75-thumb.jpg', zoom: '/images/sector-maps/sectors-68-75-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 68 to 75' },
-  { id: 'sector-74a', name: 'Sector 74A', description: 'A Southern Peripheral Road sector with several established residential communities and good connectivity to NH 48.', thumb: '/images/sector-maps/sectors-74a-76-thumb.jpg', zoom: '/images/sector-maps/sectors-74a-76-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 74A, 75A & 76' },
-  { id: 'sector-76-77', name: 'Sector 76 77', description: 'A developing residential belt with several large gated communities and improving social infrastructure.', thumb: '/images/sector-maps/sectors-77-80-thumb.jpg', zoom: '/images/sector-maps/sectors-77-80-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 77 to 80' },
-  { id: 'sector-80', name: 'Sector 80', description: 'Located on NH 8 with growing residential demand and proximity to upcoming infrastructure projects.', thumb: '/images/sector-maps/sectors-77-80-thumb.jpg', zoom: '/images/sector-maps/sectors-77-80-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 77 to 80' },
-  { id: 'sector-83', name: 'Sector 83', description: 'A well planned sector on NH 48 with a healthy mix of residential and commercial developments.', thumb: '/images/sector-maps/sector-83-thumb.jpg', zoom: '/images/sector-maps/sector-83-zoom.jpg', source: 'DTCP Haryana — Revised Approved Sectoral Plan, Sector 83' },
-  { id: 'sector-84', name: 'Sector 84', description: 'A Dwarka Expressway adjacent sector seeing rapid residential development and rising end user demand.', thumb: '/images/sector-maps/sectors-84-85-88-89-thumb.jpg', zoom: '/images/sector-maps/sectors-84-85-88-89-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 84, 85, 88 & 89' },
-  { id: 'sector-88', name: 'Sector 88', description: 'Located along Dwarka Expressway, a high growth sector attracting major residential launches.', thumb: '/images/sector-maps/sectors-84-85-88-89-thumb.jpg', zoom: '/images/sector-maps/sectors-84-85-88-89-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 84, 85, 88 & 89' },
-  { id: 'sector-86', name: 'Sector 86', description: 'A Dwarka Expressway sector with a growing footprint of branded residential developments.', thumb: '/images/sector-maps/sectors-86-87-90-91-thumb.jpg', zoom: '/images/sector-maps/sectors-86-87-90-91-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 86, 87, 90 & 91' },
-  { id: 'sector-92', name: 'Sector 92', description: 'A well located sector with steady residential growth and strong long term appreciation potential.', thumb: '/images/sector-maps/sectors-92-95-thumb.jpg', zoom: '/images/sector-maps/sectors-92-95-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 92 to 95' },
-  { id: 'sector-103', name: 'Sector 103', description: 'A Dwarka Expressway sector with strong connectivity to Delhi and IGI Airport, attracting major developers.', thumb: '/images/sector-maps/sectors-102a-106-thumb.jpg', zoom: '/images/sector-maps/sectors-102a-106-zoom.jpg', source: 'DTCP Haryana — Approved Sectoral Plan, Sectors 102A to 106' },
-  { id: 'golf-course-road', name: 'Golf Course Road', description: 'Gurugram\'s most iconic luxury address — Sector 42, home to landmark towers like The Magnolias, The Aralias and DLF The Belaire, with unmatched social infrastructure.', thumb: '/images/sector-maps/golf-course-road-sector42-thumb.jpg', zoom: '/images/sector-maps/golf-course-road-sector42-zoom.jpg', source: 'Stock Summary — Phase I, Gurugram (Sectors 26, 27, 28 & 42)' },
-  { id: 'mg-road', name: 'MG Road', description: 'A premium, centrally located corridor anchored by Sushant Lok, with seamless access to HUDA City Centre Metro, malls and corporate offices.', thumb: '/images/sector-maps/mg-road-sushant-lok-thumb.jpg', zoom: '/images/sector-maps/mg-road-sushant-lok-zoom.jpg', source: 'Stock Summary — Phase IV, Gurugram (Sushant Lok I & II, Sectors 27 & 43)' },
-  { id: 'sohna-road', name: 'Sohna Road', description: 'A high demand residential and investment corridor near Sector 49, close to Vatika City, Malibu Town and Artemis Hospital.', thumb: '/images/sector-maps/sohna-road-sector49-thumb.jpg', zoom: '/images/sector-maps/sohna-road-sector49-zoom.jpg', source: 'HSVP Haryana — Approved Layout cum Demarcation Plan, Sector 49' },
-  { id: 'dlf-phase2-cybercity', name: 'DLF Phase 2 / Cybercity', description: 'The heart of Gurugram\'s commercial district — home to Cyber Hub, Cybercity\'s corporate towers, and some of the city\'s most established residential streets.', thumb: '/images/sector-maps/dlf-phase2-cybercity-thumb.jpg', zoom: '/images/sector-maps/dlf-phase2-cybercity-zoom.jpg', source: 'Stock Summary — Phase II, Gurugram (Cybercity, Sector 25)' },
+  { id: 'sector-58', name: 'Sector 58', description: 'A premium sector along Golf Course Extension Road, home to several luxury residential developments and strong social infrastructure.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-62', name: 'Sector 62', description: 'A well connected sector on Golf Course Extension Road with a mix of residential and institutional development.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-63', name: 'Sector 63', description: 'Home to landmark residential addresses with excellent access to Golf Course Extension Road and Sohna Road.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-63a', name: 'Sector 63A', description: 'An emerging micro market adjoining Sector 63, benefiting from the same Golf Course Extension Road connectivity.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-65', name: 'Sector 65', description: 'A sought after residential sector on Golf Course Extension Road with several premium project launches.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-66', name: 'Sector 66', description: 'One of Gurugram\'s most active investment corridors along Golf Course Extension Road, with multiple ongoing developments.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-67', name: 'Sector 67', description: 'A fast growing sector on Sohna Road and Golf Course Extension Road, popular for both residential and investment purchases.', thumb: '/images/sector-maps/sectors-58-67a-thumb.jpg', zoom: '/images/sector-maps/sectors-58-67a-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 58 to 67A' },
+  { id: 'sector-70', name: 'Sector 70', description: 'Located on Southern Peripheral Road, a well planned sector with strong residential demand and growing social infrastructure.', thumb: '/images/sector-maps/sectors-68-75-thumb.jpg', zoom: '/images/sector-maps/sectors-68-75-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 68 to 75' },
+  { id: 'sector-74a', name: 'Sector 74A', description: 'A Southern Peripheral Road sector with several established residential communities and good connectivity to NH 48.', thumb: '/images/sector-maps/sectors-74a-76-thumb.jpg', zoom: '/images/sector-maps/sectors-74a-76-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 74A, 75A & 76' },
+  { id: 'sector-76-77', name: 'Sector 76 77', description: 'A developing residential belt with several large gated communities and improving social infrastructure.', thumb: '/images/sector-maps/sectors-77-80-thumb.jpg', zoom: '/images/sector-maps/sectors-77-80-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 77 to 80' },
+  { id: 'sector-80', name: 'Sector 80', description: 'Located on NH 8 with growing residential demand and proximity to upcoming infrastructure projects.', thumb: '/images/sector-maps/sectors-77-80-thumb.jpg', zoom: '/images/sector-maps/sectors-77-80-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 77 to 80' },
+  { id: 'sector-83', name: 'Sector 83', description: 'A well planned sector on NH 48 with a healthy mix of residential and commercial developments.', thumb: '/images/sector-maps/sector-83-thumb.jpg', zoom: '/images/sector-maps/sector-83-zoom.jpg', source: 'DTCP Haryana, Revised Approved Sectoral Plan, Sector 83' },
+  { id: 'sector-84', name: 'Sector 84', description: 'A Dwarka Expressway adjacent sector seeing rapid residential development and rising end user demand.', thumb: '/images/sector-maps/sectors-84-85-88-89-thumb.jpg', zoom: '/images/sector-maps/sectors-84-85-88-89-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 84, 85, 88 & 89' },
+  { id: 'sector-88', name: 'Sector 88', description: 'Located along Dwarka Expressway, a high growth sector attracting major residential launches.', thumb: '/images/sector-maps/sectors-84-85-88-89-thumb.jpg', zoom: '/images/sector-maps/sectors-84-85-88-89-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 84, 85, 88 & 89' },
+  { id: 'sector-86', name: 'Sector 86', description: 'A Dwarka Expressway sector with a growing footprint of branded residential developments.', thumb: '/images/sector-maps/sectors-86-87-90-91-thumb.jpg', zoom: '/images/sector-maps/sectors-86-87-90-91-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 86, 87, 90 & 91' },
+  { id: 'sector-92', name: 'Sector 92', description: 'A well located sector with steady residential growth and strong long term appreciation potential.', thumb: '/images/sector-maps/sectors-92-95-thumb.jpg', zoom: '/images/sector-maps/sectors-92-95-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 92 to 95' },
+  { id: 'sector-103', name: 'Sector 103', description: 'A Dwarka Expressway sector with strong connectivity to Delhi and IGI Airport, attracting major developers.', thumb: '/images/sector-maps/sectors-102a-106-thumb.jpg', zoom: '/images/sector-maps/sectors-102a-106-zoom.jpg', source: 'DTCP Haryana, Approved Sectoral Plan, Sectors 102A to 106' },
+  { id: 'golf-course-road', name: 'Golf Course Road', description: 'Gurugram\'s most iconic luxury address, Sector 42, home to landmark towers like The Magnolias, The Aralias and DLF The Belaire, with unmatched social infrastructure.', thumb: '/images/sector-maps/golf-course-road-sector42-thumb.jpg', zoom: '/images/sector-maps/golf-course-road-sector42-zoom.jpg', source: 'Stock Summary, Phase I, Gurugram (Sectors 26, 27, 28 & 42)' },
+  { id: 'mg-road', name: 'MG Road', description: 'A premium, centrally located corridor anchored by Sushant Lok, with seamless access to HUDA City Centre Metro, malls and corporate offices.', thumb: '/images/sector-maps/mg-road-sushant-lok-thumb.jpg', zoom: '/images/sector-maps/mg-road-sushant-lok-zoom.jpg', source: 'Stock Summary, Phase IV, Gurugram (Sushant Lok I & II, Sectors 27 & 43)' },
+  { id: 'sohna-road', name: 'Sohna Road', description: 'A high demand residential and investment corridor near Sector 49, close to Vatika City, Malibu Town and Artemis Hospital.', thumb: '/images/sector-maps/sohna-road-sector49-thumb.jpg', zoom: '/images/sector-maps/sohna-road-sector49-zoom.jpg', source: 'HSVP Haryana, Approved Layout cum Demarcation Plan, Sector 49' },
+  { id: 'dlf-phase2-cybercity', name: 'DLF Phase 2 / Cybercity', description: 'The heart of Gurugram\'s commercial district, home to Cyber Hub, Cybercity\'s corporate towers, and some of the city\'s most established residential streets.', thumb: '/images/sector-maps/dlf-phase2-cybercity-thumb.jpg', zoom: '/images/sector-maps/dlf-phase2-cybercity-zoom.jpg', source: 'Stock Summary, Phase II, Gurugram (Cybercity, Sector 25)' },
 ];
 
 export const PROJECTS: Project[] = [
@@ -53,8 +53,8 @@ export const PROJECTS: Project[] = [
     id: 'dlf-arbour',
     name: 'DLF The Arbour',
     location: 'Sector 63, Gurgaon',
-    priceRange: '₹ 9.3 Cr - ₹ 9.5 Cr',
-    pricePerSqFt: '₹ 23,500 - 24,000/sq.ft',
+    priceRange: '₹ 9.3 Cr to ₹ 9.5 Cr',
+    pricePerSqFt: '₹ 23,500 to 24,000/sq.ft',
     sizeRange: '3,900+ Sq. Ft.',
     possessionDate: 'March 2030',
     type: 'Ultra Luxury Residential',
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
     towers: 5,
     floors: 38,
     landArea: '25 Acres',
-    description: 'A masterpiece of low-density luxury living defined by expansive decks and state-of-the-art amenities. The Arbour represents the pinnacle of institutional-grade development in New Gurgaon with just 2 apartments per core.',
+    description: 'A masterpiece of low density luxury living defined by expansive decks and state of the art amenities. The Arbour represents the pinnacle of institutional grade development in New Gurgaon with just 2 apartments per core.',
     mapQuery: 'DLF+The+Arbour+Sector+63+Gurgaon',
     highlights: ['Low Density Living', 'Expansive Decks', '1.25 Lakh Sq.Ft. Clubhouse', 'High Appreciation Potential'],
     amenities: ['Concierge Service', 'Temperature Controlled Pool', 'Private Elevator Lobbies', 'Business Center'],
@@ -80,10 +80,10 @@ export const PROJECTS: Project[] = [
   {
     id: 'dlf-privana',
     name: 'DLF Privana South',
-    location: 'Sector 76-77, Gurgaon',
+    location: 'Sector 76 to 77, Gurgaon',
     priceRange: '₹ 7.5 Cr Onwards',
     pricePerSqFt: '₹ 21,000/sq.ft',
-    sizeRange: '3,577 - 5,472 Sq. Ft.',
+    sizeRange: '3,577 to 5,472 Sq. Ft.',
     possessionDate: 'July 2029',
     type: 'Luxury Residential',
     status: 'Under Construction',
@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
     towers: 7,
     floors: 40,
     landArea: '25 Acres',
-    description: 'Overlooking the Aravallis, Privana South is a sanctuary of nature and luxury. Designed for the discerning investor looking for long-term value creation in an emerging micro-market.',
+    description: 'Overlooking the Aravallis, Privana South is a sanctuary of nature and luxury. Designed for the discerning investor looking for long term value creation in an emerging micro market.',
     mapQuery: 'DLF+Privana+South+Sector+76+Gurgaon',
     highlights: ['Aravalli Views', 'Integrated Township', 'Sustainable Design', 'Strategic Connectivity'],
     amenities: ['Forest Trails', 'Sports Complex', 'Fine Dining', 'Wellness Spa'],
@@ -104,15 +104,15 @@ export const PROJECTS: Project[] = [
       { type: '4 BHK', size: '3,577 Sq. Ft.', price: '₹ 7.5 Cr*' },
       { type: 'Penthouse', size: '5,472 Sq. Ft.', price: '₹ 11.5 Cr*' }
     ],
-    locationAdvantage: ['Direct Access to NH-8', 'Close to Manesar Industrial Hub', 'Future Growth Corridor']
+    locationAdvantage: ['Direct Access to NH 8', 'Close to Manesar Industrial Hub', 'Future Growth Corridor']
   },
   {
     id: 'emaar-serenity',
     name: 'Emaar Serenity Hills',
     location: 'Sector 86, Gurgaon',
-    priceRange: '₹ 2.95 Cr - ₹ 4.4 Cr',
-    pricePerSqFt: '₹ 17,000 - 18,000/sq.ft',
-    sizeRange: '1,700 - 2,800 Sq. Ft.',
+    priceRange: '₹ 2.95 Cr to ₹ 4.4 Cr',
+    pricePerSqFt: '₹ 17,000 to 18,000/sq.ft',
+    sizeRange: '1,700 to 2,800 Sq. Ft.',
     possessionDate: 'September 2030',
     type: 'Premium Residential',
     status: 'New Launch',
@@ -138,9 +138,9 @@ export const PROJECTS: Project[] = [
     id: 'westin-residences',
     name: 'The Westin Residences',
     location: 'Sector 103, Dwarka Expressway',
-    priceRange: '₹ 6.75 Cr - ₹ 12 Cr',
-    pricePerSqFt: '₹ 25,750 - 26,750/sq.ft',
-    sizeRange: '2,693 - 4,329 Sq. Ft.',
+    priceRange: '₹ 6.75 Cr to ₹ 12 Cr',
+    pricePerSqFt: '₹ 25,750 to 26,750/sq.ft',
+    sizeRange: '2,693 to 4,329 Sq. Ft.',
     possessionDate: 'December 2029',
     type: 'Branded Residences',
     status: 'Under Construction',
@@ -152,13 +152,13 @@ export const PROJECTS: Project[] = [
     towers: 6,
     floors: 49,
     landArea: '21 Acres',
-    description: 'The epitome of hotel-integrated living. 5-star Westin hospitality services within your private residence. A trophy asset for the ultra-HNI portfolio with 75,000 sq.ft. clubhouse.',
+    description: 'The epitome of hotel integrated living. 5 star Westin hospitality services within your private residence. A trophy asset for the ultra HNI portfolio with 75,000 sq.ft. clubhouse.',
     mapQuery: 'Westin+Residences+Sector+103+Dwarka+Expressway+Gurgaon',
-    highlights: ['5-Star Westin Hospitality', 'Concierge & Valet', '75,000 Sq.Ft. Clubhouse', 'G+49 Towers'],
-    amenities: ['Housekeeping', 'In-residence Dining', 'Spa & Sauna', 'Multi-cuisine Restaurants'],
+    highlights: ['5 Star Westin Hospitality', 'Concierge & Valet', '75,000 Sq.Ft. Clubhouse', 'G+49 Towers'],
+    amenities: ['Housekeeping', 'In residence Dining', 'Spa & Sauna', 'Multi cuisine Restaurants'],
     unitMix: [
-      { type: '3 BHK', size: '2,693 - 2,939 Sq. Ft.', price: '₹ 6.75 Cr*' },
-      { type: '4 BHK', size: '3,750 - 4,329 Sq. Ft.', price: '₹ 10.03 Cr*' }
+      { type: '3 BHK', size: '2,693 to 2,939 Sq. Ft.', price: '₹ 6.75 Cr*' },
+      { type: '4 BHK', size: '3,750 to 4,329 Sq. Ft.', price: '₹ 10.03 Cr*' }
     ],
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
   },
@@ -179,16 +179,16 @@ export const PROJECTS: Project[] = [
     developer: 'Elan Limited',
     rera: '59/2022',
     landArea: '3.35 Acres',
-    description: "Elan Paradise is the greatest luxury retail revolution in Sector 50, Nirvana Country, Gurugram — an exclusive commercial destination spanning 3.35 acres, designed by UHA and ARCOP. It features double-height high-street retail, a 5-screen multiplex with premium snack lounge, fine dining, a multi-cuisine food court, and a mesmerizing water body integrated throughout the design, all surrounded by a dense premium residential catchment in Nirvana Country.",
+    description: "Elan Paradise is the greatest luxury retail revolution in Sector 50, Nirvana Country, Gurugram, an exclusive commercial destination spanning 3.35 acres, designed by UHA and ARCOP. It features double height high street retail, a 5 screen multiplex with premium snack lounge, fine dining, a multi cuisine food court, and a mesmerizing water body integrated throughout the design, all surrounded by a dense premium residential catchment in Nirvana Country.",
     mapQuery: 'Elan+Paradise+Sector+50+Nirvana+Country+Gurugram',
-    highlights: ['5-Screen Multiplex with Premium Snack Lounge', 'Double-Height High-Street Luxury Retail', 'Fine Dining & Multi-Cuisine Food Court', 'Mesmerizing Integrated Water Body', 'Designed by UHA & ARCOP', 'Dense Residential Catchment in Nirvana Country'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', 'Multiplex Cinema', 'Water Body Feature', 'Fine Dining Restaurants', 'CCTV Surveillance', 'Ample Parking', 'Differently-abled Access'],
+    highlights: ['5 Screen Multiplex with Premium Snack Lounge', 'Double Height High Street Luxury Retail', 'Fine Dining & Multi Cuisine Food Court', 'Mesmerizing Integrated Water Body', 'Designed by UHA & ARCOP', 'Dense Residential Catchment in Nirvana Country'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', 'Multiplex Cinema', 'Water Body Feature', 'Fine Dining Restaurants', 'CCTV Surveillance', 'Ample Parking', 'Differently abled Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 50, Nirvana Country, Gurugram', 'Connected to Golf Course Extension Road', 'Easy access from NH-8 & Delhi', 'Seamless access from wide Sector Road', 'Surrounded by premium low & high-rise residences']
+    locationAdvantage: ['Sector 50, Nirvana Country, Gurugram', 'Connected to Golf Course Extension Road', 'Easy access from NH 8 & Delhi', 'Seamless access from wide Sector Road', 'Surrounded by premium low & high rise residences']
   },
   {
     id: 'elan-town-centre',
@@ -198,7 +198,7 @@ export const PROJECTS: Project[] = [
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'High-Street Retail & Entertainment',
+    type: 'High Street Retail & Entertainment',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -206,16 +206,16 @@ export const PROJECTS: Project[] = [
     image: '/images/elan-town-centre.webp',
     developer: 'Elan Limited',
     landArea: '2 Acres',
-    description: "Elan Town Centre is a high-street retail paradise on Sohna Road, Sector 67, Gurugram — designed by ARCOP and positioned among dense residential townships and IT parks. Spread across lower ground to 2nd floor with 400 units ranging from 300 to 1,500 sq. ft., it features double-height retail shops, a 4-screen PVR multiplex, a gourmet food court with fine dining, and a premium flea market, making it one of Sohna Road's most vibrant commercial hubs.",
+    description: "Elan Town Centre is a high street retail paradise on Sohna Road, Sector 67, Gurugram, designed by ARCOP and positioned among dense residential townships and IT parks. Spread across lower ground to 2nd floor with 400 units ranging from 300 to 1,500 sq. ft., it features double height retail shops, a 4 screen PVR multiplex, a gourmet food court with fine dining, and a premium flea market, making it one of Sohna Road's most vibrant commercial hubs.",
     mapQuery: 'Elan+Town+Centre+Sector+67+Sohna+Road+Gurugram',
-    highlights: ['4-Screen PVR Silver Multiplex', 'Double-Height High-Street Retail', 'Gourmet Food Court & Fine Dining', 'Premium Flea Market', '400 Units — 300 to 1,500 Sq. Ft.', 'Surrounded by Residential Townships & IT Parks'],
-    amenities: ['High-Speed Escalators & Elevators', '100% Power Backup', 'Food Court', 'PVR Multiplex', '24x7 Security', 'Ample Parking', 'Professional Maintenance', 'Differently-abled Access'],
+    highlights: ['4 Screen PVR Silver Multiplex', 'Double Height High Street Retail', 'Gourmet Food Court & Fine Dining', 'Premium Flea Market', '400 Units to 300 to 1,500 Sq. Ft.', 'Surrounded by Residential Townships & IT Parks'],
+    amenities: ['High Speed Escalators & Elevators', '100% Power Backup', 'Food Court', 'PVR Multiplex', '24x7 Security', 'Ample Parking', 'Professional Maintenance', 'Differently abled Access'],
     unitMix: [
-      { type: 'Retail Unit', size: '300 – 1,500 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Retail Unit', size: '300 to 1,500 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Food Court', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 67, Sohna Road, Gurugram', 'Connected to NH-48 via Rajiv Chowk', 'Surrounded by SEZs, IT parks & prestigious schools', 'Dense residential township catchment on Sohna Road', 'Easy access to Golf Course Extension Road']
+    locationAdvantage: ['Sector 67, Sohna Road, Gurugram', 'Connected to NH 48 via Rajiv Chowk', 'Surrounded by SEZs, IT parks & prestigious schools', 'Dense residential township catchment on Sohna Road', 'Easy access to Golf Course Extension Road']
   },
   {
     id: 'elan-miracle',
@@ -234,26 +234,26 @@ export const PROJECTS: Project[] = [
     developer: 'Elan Buildcon Pvt. Ltd.',
     rera: '190/2017',
     landArea: '5.92 Acres',
-    description: "Elan Miracle is an iconic luxury retail landmark on Dwarka Expressway, Sector 84, Gurugram — a gleaming combination of high-street retail, hospitality, and vibrant entertainment spread across 5.92 acres. Anchored by a 6-screen PVR multiplex, rooftop fine dining, and 70+ brands including McDonald's, Domino's, Nykaa, Puma, Bata, and Subway, it is one of the most complete retail destinations on the Dwarka Expressway corridor, with an Occupancy Certificate received in March 2023.",
+    description: "Elan Miracle is an iconic luxury retail landmark on Dwarka Expressway, Sector 84, Gurugram, a gleaming combination of high street retail, hospitality, and vibrant entertainment spread across 5.92 acres. Anchored by a 6 screen PVR multiplex, rooftop fine dining, and 70+ brands including McDonald's, Domino's, Nykaa, Puma, Bata, and Subway, it is one of the most complete retail destinations on the Dwarka Expressway corridor, with an Occupancy Certificate received in March 2023.",
     mapQuery: 'Elan+Miracle+Sector+84+Dwarka+Expressway+Gurugram',
-    highlights: ['6-Screen PVR Multiplex Cinema', 'Double-Height High-Street Retail', 'Rooftop Fine Dining Restaurants', 'Luxury Service Apartments & Office Spaces', '70+ Brands including McDonald\'s, Nykaa, Puma', 'OC Received — Ready to Occupy'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', '6-Screen PVR Multiplex', 'Rooftop Seating', 'Premium Snack Lounge', 'Office Break-Out Areas', 'CCTV Surveillance', 'Ample Parking'],
+    highlights: ['6 Screen PVR Multiplex Cinema', 'Double Height High Street Retail', 'Rooftop Fine Dining Restaurants', 'Luxury Service Apartments & Office Spaces', '70+ Brands including McDonald\'s, Nykaa, Puma', 'OC Received, Ready to Occupy'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', '6 Screen PVR Multiplex', 'Rooftop Seating', 'Premium Snack Lounge', 'Office Break Out Areas', 'CCTV Surveillance', 'Ample Parking'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 84, Dwarka Expressway, Gurugram', 'Well-connected to Delhi, Manesar & IGI Airport', 'Close to Golf Course Extension Road', 'Large residential catchment on Dwarka Expressway corridor', 'Easy access to NH-48 & KMP Expressway']
+    locationAdvantage: ['Sector 84, Dwarka Expressway, Gurugram', 'Well connected to Delhi, Manesar & IGI Airport', 'Close to Golf Course Extension Road', 'Large residential catchment on Dwarka Expressway corridor', 'Easy access to NH 48 & KMP Expressway']
   },
   {
     id: 'elan-mercado',
     name: 'Elan Mercado',
-    location: 'Sector 80, NH-8, Gurugram',
+    location: 'Sector 80, NH 8, Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'Mixed-Use Retail & Hospitality',
+    type: 'Mixed Use Retail & Hospitality',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -262,16 +262,16 @@ export const PROJECTS: Project[] = [
     developer: 'Elan Limited',
     rera: '189/2017',
     landArea: '2.99 Acres',
-    description: "Elan Mercado is the landmark of New Gurugram — a premium mixed-use development on NH-8, Sector 80, combining double-height high-street retail, a 4-screen PVR multiplex, fine dining, a multi-cuisine food court, and luxury service apartments. With an Occupancy Certificate received in October 2022 and tenants including PVR Cinemas, KFC, Domino's, Pizza Hut, Costa Coffee, and Bikanervala, it is one of the most vibrant retail destinations on the NH-8 corridor.",
+    description: "Elan Mercado is the landmark of New Gurugram, a premium mixed use development on NH 8, Sector 80, combining double height high street retail, a 4 screen PVR multiplex, fine dining, a multi cuisine food court, and luxury service apartments. With an Occupancy Certificate received in October 2022 and tenants including PVR Cinemas, KFC, Domino's, Pizza Hut, Costa Coffee, and Bikanervala, it is one of the most vibrant retail destinations on the NH 8 corridor.",
     mapQuery: 'Elan+Mercado+Sector+80+NH8+Gurugram',
-    highlights: ['4-Screen PVR Multiplex Cinema', 'Double-Height High-Street Retail', 'Fine Dining & Multi-Cuisine Food Court', 'Luxury Service Apartments on Upper Floors', 'Premium Snack Lounge & Concierge', 'OC Received — Ready to Occupy'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', 'PVR Multiplex', 'Concierge Services', 'CCTV Surveillance', 'Ample Parking', 'Fine Dining Restaurants', 'Differently-abled Access'],
+    highlights: ['4 Screen PVR Multiplex Cinema', 'Double Height High Street Retail', 'Fine Dining & Multi Cuisine Food Court', 'Luxury Service Apartments on Upper Floors', 'Premium Snack Lounge & Concierge', 'OC Received, Ready to Occupy'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', 'Food Court', 'PVR Multiplex', 'Concierge Services', 'CCTV Surveillance', 'Ample Parking', 'Fine Dining Restaurants', 'Differently abled Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 80, on NH-8 — Landmark of New Gurugram', '5 Minutes from IMT Manesar', 'Connected to Dwarka Expressway & Golf Course Extension Road', 'Easy access to Delhi–Jaipur Highway', 'Large residential catchment in New Gurugram sectors']
+    locationAdvantage: ['Sector 80, on NH 8, Landmark of New Gurugram', '5 Minutes from IMT Manesar', 'Connected to Dwarka Expressway & Golf Course Extension Road', 'Easy access to Delhi Jaipur Highway', 'Large residential catchment in New Gurugram sectors']
   },
   {
     id: 'elan-epic',
@@ -281,7 +281,7 @@ export const PROJECTS: Project[] = [
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'Luxury High-Street Retail & Entertainment',
+    type: 'Luxury High Street Retail & Entertainment',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -290,16 +290,16 @@ export const PROJECTS: Project[] = [
     developer: 'Elan Limited',
     rera: 'RC/REP/HARERA/GGM/2018/30',
     landArea: '3.525 Acres',
-    description: "Elan Epic is a landmark luxury commercial retail destination on Southern Peripheral Road, Sector 70, Gurugram — the epitome of fine retail, distinctive entertainment, and blissful dining. Spanning 3.525 acres, it features double-height high-street retail, hanging retail pods, a 5-screen NY Cinemas multiplex, a floating restaurant with panoramic views, the largest water body feature in any retail development in the vicinity, and a curated mix of brands including Nykaa, Adidas, ASICS, Levi's, Miniso, and Barista.",
+    description: "Elan Epic is a landmark luxury commercial retail destination on Southern Peripheral Road, Sector 70, Gurugram, the epitome of fine retail, distinctive entertainment, and blissful dining. Spanning 3.525 acres, it features double height high street retail, hanging retail pods, a 5 screen NY Cinemas multiplex, a floating restaurant with panoramic views, the largest water body feature in any retail development in the vicinity, and a curated mix of brands including Nykaa, Adidas, ASICS, Levi's, Miniso, and Barista.",
     mapQuery: 'Elan+Epic+Sector+70+Southern+Peripheral+Road+Gurugram',
-    highlights: ['Double-Height High-Street Luxury Retail', '5-Screen NY Cinemas Multiplex', 'Floating Restaurant with Panoramic Views', 'Hanging Retail Pods — Unique Design Element', 'Largest Water Body Feature', 'OC Received — Ready to Occupy'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Multi-Cuisine Food Court', 'Multiplex Cinema', 'Floating Restaurant', 'Water Body Feature', 'CCTV Surveillance', 'Ample Parking', 'Direct SPR Access'],
+    highlights: ['Double Height High Street Luxury Retail', '5 Screen NY Cinemas Multiplex', 'Floating Restaurant with Panoramic Views', 'Hanging Retail Pods, Unique Design Element', 'Largest Water Body Feature', 'OC Received, Ready to Occupy'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', 'Multi Cuisine Food Court', 'Multiplex Cinema', 'Floating Restaurant', 'Water Body Feature', 'CCTV Surveillance', 'Ample Parking', 'Direct SPR Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Southern Peripheral Road (SPR), Sector 70', '5 Minutes from NH-8', 'Close to Golf Course Extension Road', 'Dense premium residential catchment area', 'Direct accessibility from SPR']
+    locationAdvantage: ['Southern Peripheral Road (SPR), Sector 70', '5 Minutes from NH 8', 'Close to Golf Course Extension Road', 'Dense premium residential catchment area', 'Direct accessibility from SPR']
   },
   {
     id: 'aipl-joy-street',
@@ -309,7 +309,7 @@ export const PROJECTS: Project[] = [
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'Mixed-Use Retail & Lifestyle Hub',
+    type: 'Mixed Use Retail & Lifestyle Hub',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -318,16 +318,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: '157 of 2017',
     landArea: '4 Acres',
-    description: "AIPL Joy Street is a landmark mixed-use lifestyle destination on Golf Course Extension Road, Sector 66, Gurugram — blending shopping, F&B, entertainment, and offices across 15 floors and 3 lakh sq. ft. of retail space. Anchored by a PVR INOX 6-screen multiplex and a Mediterranean-inspired La Feria boulevard with a Grand Piazza, it hosts top brands including Haldiram's, Blue Tokai, Levi's, Calvin Klein, Mango, and Fabindia, making it one of the most vibrant retail destinations on the Golf Course Extension corridor.",
+    description: "AIPL Joy Street is a landmark mixed use lifestyle destination on Golf Course Extension Road, Sector 66, Gurugram, blending shopping, F&B, entertainment, and offices across 15 floors and 3 lakh sq. ft. of retail space. Anchored by a PVR INOX 6 screen multiplex and a Mediterranean inspired La Feria boulevard with a Grand Piazza, it hosts top brands including Haldiram's, Blue Tokai, Levi's, Calvin Klein, Mango, and Fabindia, making it one of the most vibrant retail destinations on the Golf Course Extension corridor.",
     mapQuery: 'AIPL+Joy+Street+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Mediterranean La Feria Boulevard & Grand Piazza', 'PVR INOX 6-Screen Multiplex', 'High-Street Retail on Ground & 1st Floor', 'Tenants: Haldiram\'s, Blue Tokai, Calvin Klein, Mango', '3-Level Basement + Surface Parking', 'RERA Registered'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Central Air Conditioning', '3-Level Basement Parking', 'Food Court & Restaurants', 'Multiplex Cinema', 'Misting Systems', 'CCTV Surveillance', 'Differently-abled Access'],
+    highlights: ['Mediterranean La Feria Boulevard & Grand Piazza', 'PVR INOX 6 Screen Multiplex', 'High Street Retail on Ground & 1st Floor', 'Tenants: Haldiram\'s, Blue Tokai, Calvin Klein, Mango', '3 Level Basement + Surface Parking', 'RERA Registered'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', 'Central Air Conditioning', '3 Level Basement Parking', 'Food Court & Restaurants', 'Multiplex Cinema', 'Misting Systems', 'CCTV Surveillance', 'Differently abled Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Office / Smart Suite', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Golf Course Extension Road, Sector 66', 'Adjacent to M3M Merlin & Ansal Escencia', 'CK Birla Hospital — 6.3 km | Medanta — 7.5 km', 'Sector 55-56 Metro Station — 7.9 km', 'IGI Airport — 24.1 km']
+    locationAdvantage: ['Golf Course Extension Road, Sector 66', 'Adjacent to M3M Merlin & Ansal Escencia', 'CK Birla Hospital, 6.3 km | Medanta, 7.5 km', 'Sector 55 to 56 Metro Station, 7.9 km', 'IGI Airport, 24.1 km']
   },
   {
     id: 'aipl-joy-district',
@@ -346,16 +346,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: 'GGM/780/512/2024/07',
     landArea: '10.42 Acres',
-    description: "AIPL Joy District is Gurugram's largest destination shopping centre in Sector 88, spanning 1.2 million sq. ft. across four levels on 10.42 acres. Designed by Design Forum International, it features double-height retail facades, aqua-themed atriums, a central atrium event space with a cultural fountain, sky garden at the F&B level, 40+ cafes and fine dining restaurants, and floating corridors linking retail blocks — all positioned adjacent to Dwarka Expressway and NH-8.",
+    description: "AIPL Joy District is Gurugram's largest destination shopping centre in Sector 88, spanning 1.2 million sq. ft. across four levels on 10.42 acres. Designed by Design Forum International, it features double height retail facades, aqua themed atriums, a central atrium event space with a cultural fountain, sky garden at the F&B level, 40+ cafes and fine dining restaurants, and floating corridors linking retail blocks, all positioned adjacent to Dwarka Expressway and NH 8.",
     mapQuery: 'AIPL+Joy+District+Sector+88+Gurugram',
-    highlights: ['1.2 Million Sq. Ft. Across 4 Levels', 'Central Atrium with Cultural Fountain', 'Sky Garden at F&B Level', '40+ Cafes & Fine Dining Restaurants', 'Iconic Facade with Integrated LED Screens', 'Adjacent to Dwarka Expressway & NH-8'],
-    amenities: ['High-Speed Elevators', 'Escalators', 'Double-Height Retail Facades', 'Super-Large Basements', '100% Power Backup', 'Aqua-Themed Atriums', 'Floating Corridors', 'Sky Garden', 'Gated Security', 'Ample Parking'],
+    highlights: ['1.2 Million Sq. Ft. Across 4 Levels', 'Central Atrium with Cultural Fountain', 'Sky Garden at F&B Level', '40+ Cafes & Fine Dining Restaurants', 'Iconic Facade with Integrated LED Screens', 'Adjacent to Dwarka Expressway & NH 8'],
+    amenities: ['High Speed Elevators', 'Escalators', 'Double Height Retail Facades', 'Super Large Basements', '100% Power Backup', 'Aqua Themed Atriums', 'Floating Corridors', 'Sky Garden', 'Gated Security', 'Ample Parking'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Entertainment / Anchor', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Adjacent to Dwarka Expressway & National Highway 8', 'KMP Expressway connectivity', 'Trump Tower — 2.4 km', 'Patudi Road — 6.7 km | ISBT — 8.0 km', 'Surrounded by large-scale residential catchment in Sector 88']
+    locationAdvantage: ['Adjacent to Dwarka Expressway & National Highway 8', 'KMP Expressway connectivity', 'Trump Tower, 2.4 km', 'Patudi Road, 6.7 km | ISBT, 8.0 km', 'Surrounded by large scale residential catchment in Sector 88']
   },
   {
     id: 'aipl-joy-square',
@@ -365,7 +365,7 @@ export const PROJECTS: Project[] = [
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'High-Street Retail & Serviced Residences',
+    type: 'High Street Retail & Serviced Residences',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -374,15 +374,15 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: '259 of 2017',
     landArea: '2.84 Acres',
-    description: "AIPL Joy Square is a vibrant high-street marketplace in Sector 63A, Gurugram, offering ground and first floor retail with a curated mix of fashion, dining, and lifestyle brands. Designed by DP Architects (Singapore), the G+9 development features 3-level basement parking, EV charging points, and branded serviced residences on upper floors — all positioned off Golf Course Extension Road with seamless connectivity to key parts of Gurugram.",
+    description: "AIPL Joy Square is a vibrant high street marketplace in Sector 63A, Gurugram, offering ground and first floor retail with a curated mix of fashion, dining, and lifestyle brands. Designed by DP Architects (Singapore), the G+9 development features 3 level basement parking, EV charging points, and branded serviced residences on upper floors, all positioned off Golf Course Extension Road with seamless connectivity to key parts of Gurugram.",
     mapQuery: 'AIPL+Joy+Square+Sector+63A+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Designed by DP Architects, Singapore', 'High-Street Retail on Ground & 1st Floor', 'Tenants: Calvin Klein, Tommy Hilfiger, Mango, Chaayos', '3-Level Basement + Surface Parking', 'EV Charging Points', 'RERA Registered'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', '3-Level Basement Parking', 'Surface Parking', 'EV Charging Points', 'CCTV Surveillance', 'Differently-abled Access', 'Restaurants & Dining'],
+    highlights: ['Designed by DP Architects, Singapore', 'High Street Retail on Ground & 1st Floor', 'Tenants: Calvin Klein, Tommy Hilfiger, Mango, Chaayos', '3 Level Basement + Surface Parking', 'EV Charging Points', 'RERA Registered'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', '3 Level Basement Parking', 'Surface Parking', 'EV Charging Points', 'CCTV Surveillance', 'Differently abled Access', 'Restaurants & Dining'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Off Golf Course Extension Road, Sector 63A', 'Sector 55-56 Metro Station — 4.8 km', 'Artemis Hospital — 6.3 km | Medanta — 9.5 km', '18+ educational institutions nearby', 'Surrounded by premium residential complexes within 6 km']
+    locationAdvantage: ['Off Golf Course Extension Road, Sector 63A', 'Sector 55 to 56 Metro Station, 4.8 km', 'Artemis Hospital, 6.3 km | Medanta, 9.5 km', '18+ educational institutions nearby', 'Surrounded by premium residential complexes within 6 km']
   },
   {
     id: 'aipl-joy-central',
@@ -392,7 +392,7 @@ export const PROJECTS: Project[] = [
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'Mixed-Use Retail & Commercial',
+    type: 'Mixed Use Retail & Commercial',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -402,16 +402,16 @@ export const PROJECTS: Project[] = [
     rera: 'No. 183 of 2017',
     floors: 22,
     landArea: '3.98 Acres',
-    description: "AIPL Joy Central is a landmark mixed-use development on Golf Course Extension Road, Sector 65, Gurugram — combining high-street retail, a food court, multiplex, and Grade A office spaces across 22 floors with a striking 415 ft frontage. With 5-level basement parking, air-conditioned stores, and a curated tenant mix including Blue Tokai, ASICS, Bluestone and Celio, it is one of Gurugram's premier retail and commercial destinations.",
+    description: "AIPL Joy Central is a landmark mixed use development on Golf Course Extension Road, Sector 65, Gurugram, combining high street retail, a food court, multiplex, and Grade A office spaces across 22 floors with a striking 415 ft frontage. With 5 level basement parking, air conditioned stores, and a curated tenant mix including Blue Tokai, ASICS, Bluestone and Celio, it is one of Gurugram's premier retail and commercial destinations.",
     mapQuery: 'AIPL+Joy+Central+Sector+65+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['22 Floors | 415 Ft Street Frontage', 'Double-Height Ground Floor Units', 'Food Court, Restaurants & Multiplex', 'Tenants: Blue Tokai, ASICS, Bluestone', '5-Level Basement Parking', 'GRIHA Sustainability Certified'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', 'Air-Conditioned Stores', '5-Level Basement Parking', 'Valet & Taxi Services', 'CCTV Surveillance', 'ATM Facilities', 'Differently-abled Access'],
+    highlights: ['22 Floors | 415 Ft Street Frontage', 'Double Height Ground Floor Units', 'Food Court, Restaurants & Multiplex', 'Tenants: Blue Tokai, ASICS, Bluestone', '5 Level Basement Parking', 'GRIHA Sustainability Certified'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', 'Air Conditioned Stores', '5 Level Basement Parking', 'Valet & Taxi Services', 'CCTV Surveillance', 'ATM Facilities', 'Differently abled Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Office Space', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['On Golf Course Extension Road — 0.3 km from main road', 'Rapid Metro access — 5.6 km', 'HUDA City Centre Metro — 8.0 km', 'IGI Airport — 22.7 km', '18+ hospitals & schools in the vicinity']
+    locationAdvantage: ['On Golf Course Extension Road, 0.3 km from main road', 'Rapid Metro access, 5.6 km', 'HUDA City Centre Metro, 8.0 km', 'IGI Airport, 22.7 km', '18+ hospitals & schools in the vicinity']
   },
   {
     id: 'aipl-joy-gallery',
@@ -421,7 +421,7 @@ export const PROJECTS: Project[] = [
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
     possessionDate: 'Ready to Occupy',
-    type: 'High-Street Retail',
+    type: 'High Street Retail',
     status: 'Available for Lease',
     category: 'Leasing',
     subCategory: 'Commercial',
@@ -430,15 +430,15 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: 'GGM/404/136/2020/20',
     landArea: '4.418 Acres',
-    description: "AIPL Joy Gallery is a landmark high-street retail destination on Golf Course Extension Road, Sector 66, Gurugram. Designed by DPA Consultants (Singapore), it spans 3,38,699 Sq. Ft. across 4 levels, offering a curated mix of fashion, dining, and entertainment. With double-height retail units, five-level basement parking, and proximity to premium residential catchments — it is Gurugram's most vibrant retail and leisure address.",
+    description: "AIPL Joy Gallery is a landmark high street retail destination on Golf Course Extension Road, Sector 66, Gurugram. Designed by DPA Consultants (Singapore), it spans 3,38,699 Sq. Ft. across 4 levels, offering a curated mix of fashion, dining, and entertainment. With double height retail units, five level basement parking, and proximity to premium residential catchments, it is Gurugram's most vibrant retail and leisure address.",
     mapQuery: 'AIPL+Joy+Gallery+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Designed by DPA Consultants, Singapore', 'Double-Height Ground & 2nd Floor Units', '4-Level Retail + 5-Level Basement Parking', 'Brands: UCB, Mango, Rare, Celio', 'Valet Parking & 100% Power Backup', 'RERA Registered'],
-    amenities: ['High-Speed Elevators', 'Escalators', '100% Power Backup', '5-Level Basement Parking', 'Valet Parking', 'CCTV Surveillance', 'ATM Facilities', 'Drop-off Area', 'Differently-abled Access'],
+    highlights: ['Designed by DPA Consultants, Singapore', 'Double Height Ground & 2nd Floor Units', '4 Level Retail + 5 Level Basement Parking', 'Brands: UCB, Mango, Rare, Celio', 'Valet Parking & 100% Power Backup', 'RERA Registered'],
+    amenities: ['High Speed Elevators', 'Escalators', '100% Power Backup', '5 Level Basement Parking', 'Valet Parking', 'CCTV Surveillance', 'ATM Facilities', 'Drop off Area', 'Differently abled Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Double-Height Unit', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Double Height Unit', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ["On Golf Course Extension Road — one of Gurugram's fastest-growing corridors", '10-min drive to Sector 55-56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower — 2.4 km | M3M Golf Estates — 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
+    locationAdvantage: ["On Golf Course Extension Road, one of Gurugram's fastest growing corridors", '10 min drive to Sector 55 to 56 Rapid Metro Station', '1.6 km to AIPL Joy Central', 'Trump Tower, 2.4 km | M3M Golf Estates, 1.9 km', 'Proximity to CK Birla, Artemis & Medanta hospitals']
   },
   {
     id: 'gardencity-arcade',
@@ -457,16 +457,16 @@ export const PROJECTS: Project[] = [
     developer: 'DLF Limited',
     rera: 'RC/REP/HARERA/GGM/537/269/2022/12',
     landArea: '200 m Frontage on 60m Road',
-    description: "Gardencity Arcade is a premium retail investment opportunity by DLF in the heart of Sector 92, DLF Gardencity, Gurugram. Designed as a low-rise shopping arcade to maximise footfall, it features a commanding 200-metre frontage on a 60-metre wide road and is positioned to serve a rapidly growing catchment of 15,000+ families in the neighbourhood. With limited inventory of optimally sized built-up shops, 100% power backup, multi-tier security, and DLF's hallmark construction quality, this arcade is ideal for mid-to-high-end retail occupiers across apparel, home décor, electronics, and food & beverage — offering investors a captive, under-served consumer base and strong rental income potential.",
+    description: "Gardencity Arcade is a premium retail investment opportunity by DLF in the heart of Sector 92, DLF Gardencity, Gurugram. Designed as a low rise shopping arcade to maximise footfall, it features a commanding 200 metre frontage on a 60 metre wide road and is positioned to serve a rapidly growing catchment of 15,000+ families in the neighbourhood. With limited inventory of optimally sized built up shops, 100% power backup, multi tier security, and DLF's hallmark construction quality, this arcade is ideal for mid to high end retail occupiers across apparel, home décor, electronics, and food & beverage, offering investors a captive, under served consumer base and strong rental income potential.",
     mapQuery: 'Gardencity+Arcade+Sector+92+DLF+Gardencity+Gurugram',
-    highlights: ['DLF-Developed — Trusted Brand Assurance', 'RERA Registered — RC/REP/HARERA/GGM/537/269/2022/12', '200m Frontage on 60m Wide Road', 'Low-Rise Design — Maximum Footfall', 'Captive Catchment: 15,000+ Families', 'Limited Inventory — Exclusive Retail Investment'],
-    amenities: ['100% Power Backup', 'Multi-Tier Security', 'Wide Internal Roads', 'Ample Parking', 'DLF Quality Construction', 'Landscaped Surroundings'],
+    highlights: ['DLF Developed, Trusted Brand Assurance', 'RERA Registered, RC/REP/HARERA/GGM/537/269/2022/12', '200m Frontage on 60m Wide Road', 'Low Rise Design, Maximum Footfall', 'Captive Catchment: 15,000+ Families', 'Limited Inventory, Exclusive Retail Investment'],
+    amenities: ['100% Power Backup', 'Multi Tier Security', 'Wide Internal Roads', 'Ample Parking', 'DLF Quality Construction', 'Landscaped Surroundings'],
     unitMix: [
       { type: 'Ground Floor Retail Shop', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Upper Floor Retail / F&B', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Supermarket Space', size: 'Large Format', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 92, DLF Gardencity, Gurugram', 'NH-48 — 8 km', 'Dwarka Expressway (NPR) — 7 km', 'IGI Airport — 36 km', 'IMT Manesar & DLF Corporate Greens — Nearby', 'Proposed Metro Line — Under Planning']
+    locationAdvantage: ['Sector 92, DLF Gardencity, Gurugram', 'NH 48 to 8 km', 'Dwarka Expressway (NPR), 7 km', 'IGI Airport, 36 km', 'IMT Manesar & DLF Corporate Greens, Nearby', 'Proposed Metro Line, Under Planning']
   },
   {
     id: 'landmark-one',
@@ -485,16 +485,16 @@ export const PROJECTS: Project[] = [
     developer: 'Landmark Group',
     rera: 'Registered with Haryana RERA',
     landArea: '5 Acres',
-    description: "Landmark One is Gurugram's last great commercial address — a landmark Grade A office tower on Golf Course Extension Road, Sector 67, developed by Landmark Group with 25+ years of real estate excellence. Spanning 22 lakh sq. ft. across 5 acres, this Advanced Platinum LEED certified development offers flexible floor plates from boutique 2,000 sq. ft. suites to full-floor expansions, 49 high-speed elevators with a 10-second maximum wait time, 10-level dedicated parking, EV charging, ground-floor retail & F&B, and intelligent building management. With investments starting from ₹3 Cr and seamless connectivity to NH-48, Sohna Road, SPR, and IGI Airport in under 30 minutes, Landmark One is positioned for strong capital appreciation and rental yield.",
+    description: "Landmark One is Gurugram's last great commercial address, a landmark Grade A office tower on Golf Course Extension Road, Sector 67, developed by Landmark Group with 25+ years of real estate excellence. Spanning 22 lakh sq. ft. across 5 acres, this Advanced Platinum LEED certified development offers flexible floor plates from boutique 2,000 sq. ft. suites to full floor expansions, 49 high speed elevators with a 10 second maximum wait time, 10 level dedicated parking, EV charging, ground floor retail & F&B, and intelligent building management. With investments starting from ₹3 Cr and seamless connectivity to NH 48, Sohna Road, SPR, and IGI Airport in under 30 minutes, Landmark One is positioned for strong capital appreciation and rental yield.",
     mapQuery: 'Landmark+One+Sector+67+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Advanced Platinum LEED Certified — Institutional Grade', '"Gurugram\'s Last Great Commercial Address"', '22 Lakh Sq. Ft. Across 5 Acres', '49 High-Speed Lifts — 10-Second Max Wait', 'Investments from ₹3 Cr Onwards', 'Flexible Units: 2,000 Sq. Ft. to Full-Floor'],
-    amenities: ['49 High-Speed Elevators', 'Double-Height Grand Entrance Lobby', '10-Level Dedicated Car Parking', 'EV Charging Infrastructure', '100% Power Backup', 'Centralised Air Conditioning', 'Ground Floor Retail & F&B', 'Intelligent Building Management System', '24x7 Smart Security & CCTV', 'Access Control System', 'Fire Fighting System'],
+    highlights: ['Advanced Platinum LEED Certified, Institutional Grade', '"Gurugram\'s Last Great Commercial Address"', '22 Lakh Sq. Ft. Across 5 Acres', '49 High Speed Lifts, 10 Second Max Wait', 'Investments from ₹3 Cr Onwards', 'Flexible Units: 2,000 Sq. Ft. to Full Floor'],
+    amenities: ['49 High Speed Elevators', 'Double Height Grand Entrance Lobby', '10 Level Dedicated Car Parking', 'EV Charging Infrastructure', '100% Power Backup', 'Centralised Air Conditioning', 'Ground Floor Retail & F&B', 'Intelligent Building Management System', '24x7 Smart Security & CCTV', 'Access Control System', 'Fire Fighting System'],
     unitMix: [
       { type: 'Boutique Office Suite', size: '2,000 Sq. Ft. onwards', price: 'Starting ₹3 Cr' },
-      { type: 'Mid-Size Office', size: 'Flexible Configurations', price: 'Price on Request' },
+      { type: 'Mid Size Office', size: 'Flexible Configurations', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Large Format', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 67, Golf Course Extension Road, Gurugram', 'Sector 55-56 Rapid Metro — Nearby', 'NH-48, Sohna Road & SPR — Well Connected', 'Cyber City & MG Road — Accessible', 'IGI Airport — Under 30 Minutes']
+    locationAdvantage: ['Sector 67, Golf Course Extension Road, Gurugram', 'Sector 55 to 56 Rapid Metro, Nearby', 'NH 48, Sohna Road & SPR, Well Connected', 'Cyber City & MG Road, Accessible', 'IGI Airport, Under 30 Minutes']
   },
   {
     id: 'emaar-ibc',
@@ -513,16 +513,16 @@ export const PROJECTS: Project[] = [
     developer: 'Emaar India',
     rera: 'Available on Request',
     landArea: 'Available on Request',
-    description: "Emaar India Business Centre (IBC) is a landmark Grade A commercial investment asset on Golf Course Extension Road, Sector 65, Gurugram — developed by Emaar, one of the world's most respected real estate brands. Featuring twin premium towers with efficient large floor plates, a signature double-height entrance canopy, and high-end corporate amenities, this LEED-certified development commands one of GCER's most recognisable addresses. With strong institutional-quality construction, an established blue-chip tenant profile, and Emaar's global pedigree backing the asset, IBC offers discerning investors stable rental yields and compelling long-term capital appreciation.",
+    description: "Emaar India Business Centre (IBC) is a landmark Grade A commercial investment asset on Golf Course Extension Road, Sector 65, Gurugram, developed by Emaar, one of the world's most respected real estate brands. Featuring twin premium towers with efficient large floor plates, a signature double height entrance canopy, and high end corporate amenities, this LEED certified development commands one of GCER's most recognisable addresses. With strong institutional quality construction, an established blue chip tenant profile, and Emaar's global pedigree backing the asset, IBC offers discerning investors stable rental yields and compelling long term capital appreciation.",
     mapQuery: 'Emaar+India+Business+Centre+Sector+65+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Emaar-Developed — Global Real Estate Pedigree', 'Twin Premium Towers on Golf Course Extn Road', 'LEED Certified — Institutional Investment Grade', 'Blue-Chip Corporate Tenant Profile', 'Prominent GCER Address — Sector 65', 'Strong Rental Yield & Long-Term Capital Appreciation'],
-    amenities: ['High-Speed Elevators', 'Signature Double-Height Entrance Canopy', 'Central Air Conditioning', '100% Power Backup', 'Ample Basement Parking', 'Landscaped Common Areas', 'Food & Beverage Options', '24x7 Security & Access Control', 'Fire Fighting System', 'EV Charging Points'],
+    highlights: ['Emaar Developed, Global Real Estate Pedigree', 'Twin Premium Towers on Golf Course Extn Road', 'LEED Certified, Institutional Investment Grade', 'Blue Chip Corporate Tenant Profile', 'Prominent GCER Address, Sector 65', 'Strong Rental Yield & Long Term Capital Appreciation'],
+    amenities: ['High Speed Elevators', 'Signature Double Height Entrance Canopy', 'Central Air Conditioning', '100% Power Backup', 'Ample Basement Parking', 'Landscaped Common Areas', 'Food & Beverage Options', '24x7 Security & Access Control', 'Fire Fighting System', 'EV Charging Points'],
     unitMix: [
       { type: 'Partial Floor', size: 'Flexible Sizes', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Large Format', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'Prime GCER Corporate Corridor', 'Sector 55-56 Rapid Metro — Nearby', 'IGI Airport — ~20 km', 'Proximity to Premium Residential & Hospitality']
+    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'Prime GCER Corporate Corridor', 'Sector 55 to 56 Rapid Metro, Nearby', 'IGI Airport, ~20 km', 'Proximity to Premium Residential & Hospitality']
   },
   {
     id: 'dlf-cybercity',
@@ -541,14 +541,14 @@ export const PROJECTS: Project[] = [
     developer: 'DLF Limited',
     rera: 'Available on Request',
     landArea: 'Cybercity Campus',
-    description: "A rare 8,000 sq. ft. office space available for lease within DLF Cybercity — Gurugram's most prestigious and sought-after corporate destination. Home to the world's leading MNCs, Fortune 500 companies, and global technology giants, DLF Cybercity offers an unmatched business ecosystem with world-class infrastructure, seamless metro connectivity, and a vibrant F&B and lifestyle precinct at DLF CyberHub. The specific building and floor details are maintained in strict confidence to preserve the exclusivity of this opportunity — workspace viewing is available exclusively by appointment during a private site visit.",
+    description: "A rare 8,000 sq. ft. office space available for lease within DLF Cybercity, Gurugram's most prestigious and sought after corporate destination. Home to the world's leading MNCs, Fortune 500 companies, and global technology giants, DLF Cybercity offers an unmatched business ecosystem with world class infrastructure, seamless metro connectivity, and a vibrant F&B and lifestyle precinct at DLF CyberHub. The specific building and floor details are maintained in strict confidence to preserve the exclusivity of this opportunity, workspace viewing is available exclusively by appointment during a private site visit.",
     mapQuery: 'DLF+Cybercity+Phase+2+Gurugram',
-    highlights: ['Premium 8,000 Sq. Ft. in DLF Cybercity', 'Gurugram\'s Most Prestigious Corporate Address', 'Home to Fortune 500 & Global MNC Headquarters', 'Seamless Metro Connectivity — Cybercity Station', 'DLF CyberHub — Dining & Lifestyle at Doorstep', 'Exclusive Opportunity — Site Visit by Appointment Only'],
-    amenities: ['World-Class Building Infrastructure', '100% Power Backup', 'Central Air Conditioning', 'High-Speed Elevators', 'Ample Parking', 'DLF CyberHub F&B & Retail', 'Metro Station — Walking Distance', '24x7 Security & Access Control', 'Fire Fighting System', 'Landscaped Campus'],
+    highlights: ['Premium 8,000 Sq. Ft. in DLF Cybercity', 'Gurugram\'s Most Prestigious Corporate Address', 'Home to Fortune 500 & Global MNC Headquarters', 'Seamless Metro Connectivity, Cybercity Station', 'DLF CyberHub, Dining & Lifestyle at Doorstep', 'Exclusive Opportunity, Site Visit by Appointment Only'],
+    amenities: ['World Class Building Infrastructure', '100% Power Backup', 'Central Air Conditioning', 'High Speed Elevators', 'Ample Parking', 'DLF CyberHub F&B & Retail', 'Metro Station, Walking Distance', '24x7 Security & Access Control', 'Fire Fighting System', 'Landscaped Campus'],
     unitMix: [
       { type: 'Office Space', size: '8,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['DLF Cybercity, Phase 2, Gurugram', 'Cybercity Metro Station — Walking Distance', 'DLF CyberHub — At Doorstep', 'NH-48 & Golf Course Road — Well Connected', 'IGI Airport — 12 km']
+    locationAdvantage: ['DLF Cybercity, Phase 2, Gurugram', 'Cybercity Metro Station, Walking Distance', 'DLF CyberHub, At Doorstep', 'NH 48 & Golf Course Road, Well Connected', 'IGI Airport, 12 km']
   },
   {
     id: 'godrej-gcr',
@@ -567,10 +567,10 @@ export const PROJECTS: Project[] = [
     developer: 'Godrej Ventures (Godrej Industries Group)',
     rera: 'Available on Request',
     landArea: '1.08 Million Sq. Ft. Total Built-Up',
-    description: "Godrej GCR is a landmark Grade A office tower on Golf Course Road, Gurugram — one of the most prestigious commercial addresses in the NCR. Rising 22 floors with 4 basement levels, this 1.08 million sq. ft. development features 50,000 sq. ft. typical floor plates, a striking curved glass facade, and a 7.0m shaded canopy. Certified IGBC Platinum, WELL Gold, and ranked 1st in Asia with a 5-star GRESB rating, it sets the benchmark for sustainable, wellness-focused corporate workspaces. On-site amenities include North India's first Starbucks Reserve, an amphitheatre, crèche, pet care, eldercare, EV charging, and MERV-16 air filtration.",
+    description: "Godrej GCR is a landmark Grade A office tower on Golf Course Road, Gurugram, one of the most prestigious commercial addresses in the NCR. Rising 22 floors with 4 basement levels, this 1.08 million sq. ft. development features 50,000 sq. ft. typical floor plates, a striking curved glass facade, and a 7.0m shaded canopy. Certified IGBC Platinum, WELL Gold, and ranked 1st in Asia with a 5 star GRESB rating, it sets the benchmark for sustainable, wellness focused corporate workspaces. On site amenities include North India's first Starbucks Reserve, an amphitheatre, crèche, pet care, eldercare, EV charging, and MERV 16 air filtration.",
     mapQuery: 'Godrej+GCR+Golf+Course+Road+Gurugram',
-    highlights: ['IGBC Platinum & WELL Gold Certified', '5-Star GRESB — Ranked #1 in Asia', '22-Floor Tower — 1.08 Million Sq. Ft.', 'Typical Floor Plate: 50,000 Sq. Ft.', 'North India\'s First Starbucks Reserve On-Site', 'Striking Curved Glass Facade — Aerodynamic Design'],
-    amenities: ['High-Speed Elevators', 'Striking Curved Glass Facade', '7.0m Shaded Canopy', 'MERV-16 Air Filtration System', 'EV Charging (20% of Parking)', 'North India\'s First Starbucks Reserve', 'Multiple Dining Options', 'Amphitheatre', 'Water Body Zones', 'Crèche, Pet Care & Eldercare', 'ATMs On-Site', '4-Level Basement Parking', 'ISO 14001 EMS Certified'],
+    highlights: ['IGBC Platinum & WELL Gold Certified', '5 Star GRESB to Ranked #1 in Asia', '22 Floor Tower to 1.08 Million Sq. Ft.', 'Typical Floor Plate: 50,000 Sq. Ft.', 'North India\'s First Starbucks Reserve On Site', 'Striking Curved Glass Facade, Aerodynamic Design'],
+    amenities: ['High Speed Elevators', 'Striking Curved Glass Facade', '7.0m Shaded Canopy', 'MERV 16 Air Filtration System', 'EV Charging (20% of Parking)', 'North India\'s First Starbucks Reserve', 'Multiple Dining Options', 'Amphitheatre', 'Water Body Zones', 'Crèche, Pet Care & Eldercare', 'ATMs On Site', '4 Level Basement Parking', 'ISO 14001 EMS Certified'],
     unitMix: [
       { type: 'Office Suite', size: '12,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Flexible', price: 'Price on Request' },
@@ -581,7 +581,7 @@ export const PROJECTS: Project[] = [
   {
     id: 'vatika-first-india-place',
     name: 'Vatika First India Place',
-    location: 'MG Road (Mehrauli-Gurgaon Road), Gurugram',
+    location: 'MG Road (Mehrauli Gurgaon Road), Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
@@ -595,16 +595,16 @@ export const PROJECTS: Project[] = [
     developer: 'Vatika Limited',
     rera: 'Available on Request',
     landArea: '1,71,000 Sq. Ft. Total Built-Up',
-    description: "Vatika First India Place is Vatika Group's inaugural commercial landmark on MG Road (Mehrauli-Gurgaon Road), Gurugram. Spanning 1,71,000 sq. ft. across three well-planned blocks (A, B & C), it offers efficient floor plates of 10,000–17,000 sq. ft. with wide retail frontage, architectural finesse, and Vatika's hallmark high maintenance standards. Strategically located on one of Gurugram's most established commercial arterials, this consistently high-occupancy development is a testament to enduring demand for quality workspace in the heart of the city.",
+    description: "Vatika First India Place is Vatika Group's inaugural commercial landmark on MG Road (Mehrauli Gurgaon Road), Gurugram. Spanning 1,71,000 sq. ft. across three well planned blocks (A, B & C), it offers efficient floor plates of 10,000 to 17,000 sq. ft. with wide retail frontage, architectural finesse, and Vatika's hallmark high maintenance standards. Strategically located on one of Gurugram's most established commercial arterials, this consistently high occupancy development is a testament to enduring demand for quality workspace in the heart of the city.",
     mapQuery: 'Vatika+First+India+Place+MG+Road+Gurugram',
-    highlights: ['Vatika Group\'s First Commercial Landmark on MG Road', '3 Blocks — 1,71,000 Sq. Ft. Total Built-Up', 'Efficient Floor Plates: 10,000 – 17,000 Sq. Ft.', 'Wide Retail Frontage — Prominent MG Road Address', 'Consistently High Occupancy — Proven Demand', 'Architectural Finesse & High Maintenance Standards'],
-    amenities: ['High-Speed Elevators', 'Wide Retail Frontage', 'Three-Block Configuration', 'Professional Building Services', 'High Maintenance Standards', '24x7 Security', 'Fire Fighting System'],
+    highlights: ['Vatika Group\'s First Commercial Landmark on MG Road', '3 Blocks to 1,71,000 Sq. Ft. Total Built Up', 'Efficient Floor Plates: 10,000 to 17,000 Sq. Ft.', 'Wide Retail Frontage, Prominent MG Road Address', 'Consistently High Occupancy, Proven Demand', 'Architectural Finesse & High Maintenance Standards'],
+    amenities: ['High Speed Elevators', 'Wide Retail Frontage', 'Three Block Configuration', 'Professional Building Services', 'High Maintenance Standards', '24x7 Security', 'Fire Fighting System'],
     unitMix: [
       { type: 'Small Office Suite', size: '10,000 Sq. Ft. onwards', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 17,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['MG Road (Mehrauli-Gurgaon Road), Gurugram', 'Prime Central Gurugram Location', 'Excellent Connectivity to Delhi & NCR', 'Proximity to Retail, Hospitality & Business Hubs']
+    locationAdvantage: ['MG Road (Mehrauli Gurgaon Road), Gurugram', 'Prime Central Gurugram Location', 'Excellent Connectivity to Delhi & NCR', 'Proximity to Retail, Hospitality & Business Hubs']
   },
   {
     id: 'vatika-business-park',
@@ -623,16 +623,16 @@ export const PROJECTS: Project[] = [
     developer: 'Vatika Limited',
     rera: 'Available on Request',
     landArea: 'Multi-Tower Campus',
-    description: "Vatika Business Park is an established Grade A corporate campus on Sohna Road, Gurugram — home to approximately 11,000 professionals across three premium towers arranged around a signature one-acre central piazza. Offering 9,27,000 sq. ft. of office and retail space with large floor plates of 20,000–42,000 sq. ft., the development features a double-glazed facade, plush lobbies, a landscaped Bean Garden, health club, training rooms, and a vibrant F&B and retail precinct anchored by Starbucks, Chai Point, HDFC, Kotak, and more. Excellently connected via Sohna Road, NH-48, and Golf Course Extension Road.",
+    description: "Vatika Business Park is an established Grade A corporate campus on Sohna Road, Gurugram, home to approximately 11,000 professionals across three premium towers arranged around a signature one acre central piazza. Offering 9,27,000 sq. ft. of office and retail space with large floor plates of 20,000 to 42,000 sq. ft., the development features a double glazed facade, plush lobbies, a landscaped Bean Garden, health club, training rooms, and a vibrant F&B and retail precinct anchored by Starbucks, Chai Point, HDFC, Kotak, and more. Excellently connected via Sohna Road, NH 48, and Golf Course Extension Road.",
     mapQuery: 'Vatika+Business+Park+Sohna+Road+Gurugram',
-    highlights: ['3 Towers — 9,27,000 Sq. Ft. Office & Retail', 'Floor Plates: 20,000 – 42,000 Sq. Ft.', '~11,000 Professionals — Thriving Corporate Community', '1-Acre Central Landscaped Piazza', 'Anchor Brands: Starbucks, HDFC, Kotak & More', 'Triple Road Access — Sohna Road, NH-48 & GCER'],
-    amenities: ['High-Speed Elevators', 'Plush Finished Lobbies', 'Double-Glazed Facade', '1-Acre Central Piazza', 'Landscaped Bean Garden', 'Health Club', 'Training Rooms', 'Restaurants & Food Court', 'Starbucks, Chai Point & More', 'ATMs & Cafeteria', 'Corporate Retail Spaces', 'Fire Fighting System', '24x7 Security'],
+    highlights: ['3 Towers to 9,27,000 Sq. Ft. Office & Retail', 'Floor Plates: 20,000 to 42,000 Sq. Ft.', '~11,000 Professionals, Thriving Corporate Community', '1 Acre Central Landscaped Piazza', 'Anchor Brands: Starbucks, HDFC, Kotak & More', 'Triple Road Access, Sohna Road, NH 48 & GCER'],
+    amenities: ['High Speed Elevators', 'Plush Finished Lobbies', 'Double Glazed Facade', '1 Acre Central Piazza', 'Landscaped Bean Garden', 'Health Club', 'Training Rooms', 'Restaurants & Food Court', 'Starbucks, Chai Point & More', 'ATMs & Cafeteria', 'Corporate Retail Spaces', 'Fire Fighting System', '24x7 Security'],
     unitMix: [
       { type: 'Partial Floor', size: 'Up to 21,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Full Floor', size: '20,000 – 42,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Full Floor', size: '20,000 to 42,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sohna Road, Gurugram', 'NH-48 — Easily Accessible', 'Golf Course Extension Road — Nearby', 'Proximity to Residential & Hospitality Hubs']
+    locationAdvantage: ['Sohna Road, Gurugram', 'NH 48, Easily Accessible', 'Golf Course Extension Road, Nearby', 'Proximity to Residential & Hospitality Hubs']
   },
   {
     id: 'vatika-professional-point',
@@ -651,16 +651,16 @@ export const PROJECTS: Project[] = [
     developer: 'Vatika Limited',
     rera: 'Available on Request',
     landArea: '2.11 Acres',
-    description: "Vatika Professional Point is a premium Grade A commercial office complex located at the strategic intersection of Golf Course Extension Road and Sohna Road, Gurugram. Designed by world-renowned architects, this 14-floor tower offers 1,63,000 sq. ft. of office and retail space with efficient 12,000 sq. ft. floor plates, a double-glazed facade, plush finished lobbies, 80% open landscaped surroundings, and three-level basement parking. Walking distance from the proposed metro station, it combines prime connectivity with a sophisticated work environment crafted to Vatika's high maintenance standards.",
+    description: "Vatika Professional Point is a premium Grade A commercial office complex located at the strategic intersection of Golf Course Extension Road and Sohna Road, Gurugram. Designed by world renowned architects, this 14 floor tower offers 1,63,000 sq. ft. of office and retail space with efficient 12,000 sq. ft. floor plates, a double glazed facade, plush finished lobbies, 80% open landscaped surroundings, and three level basement parking. Walking distance from the proposed metro station, it combines prime connectivity with a sophisticated work environment crafted to Vatika's high maintenance standards.",
     mapQuery: 'Vatika+Professional+Point+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['14-Floor Grade A Office & Retail Complex', 'Efficient Floor Plates: 12,000 Sq. Ft.', 'Total Built-Up: 1,63,000 Sq. Ft.', 'Double-Glazed Facade — Abundant Natural Light', '80% Open Landscaped Campus', 'Walking Distance from Proposed Metro Station'],
-    amenities: ['High-Speed Elevators', 'Plush Finished Lobbies', 'Three-Level Basement Parking', 'Visitor Parking', 'Double-Glazed Facade', 'Landscaped Open Spaces', 'Efficient Planning Layouts', 'High Maintenance Standards', 'Fire Fighting System'],
+    highlights: ['14 Floor Grade A Office & Retail Complex', 'Efficient Floor Plates: 12,000 Sq. Ft.', 'Total Built Up: 1,63,000 Sq. Ft.', 'Double Glazed Facade, Abundant Natural Light', '80% Open Landscaped Campus', 'Walking Distance from Proposed Metro Station'],
+    amenities: ['High Speed Elevators', 'Plush Finished Lobbies', 'Three Level Basement Parking', 'Visitor Parking', 'Double Glazed Facade', 'Landscaped Open Spaces', 'Efficient Planning Layouts', 'High Maintenance Standards', 'Fire Fighting System'],
     unitMix: [
       { type: 'Partial Floor', size: 'Up to 6,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: '12,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Golf Course Extension Road & Sohna Road Junction, Gurugram', 'Proposed Metro Station — Walking Distance', 'Dual Road Frontage — GCER & Sohna Road', 'Proximity to Residential & Retail Hubs']
+    locationAdvantage: ['Golf Course Extension Road & Sohna Road Junction, Gurugram', 'Proposed Metro Station, Walking Distance', 'Dual Road Frontage, GCER & Sohna Road', 'Proximity to Residential & Retail Hubs']
   },
   {
     id: 'magnum-one-lease',
@@ -679,16 +679,16 @@ export const PROJECTS: Project[] = [
     developer: 'Galaxy Magnum Group',
     rera: 'Available on Request',
     landArea: '1.65 Acres',
-    description: "Magnum One is a futuristic Grade A commercial office development on Mathura Road, Sector 37, Faridabad — situated on the Delhi-Mumbai Expressway link road within the Mohan Cooperative Area. Spanning approximately 2.6 lakh sq. ft. with floor plates of up to 22,000 sq. ft., this energy-efficient building features a grand double-height entrance lobby, 3-level basement parking, EV charging, valet parking, concierge service, restaurants, coffee shops, conference rooms, and landscaped sit-outs. Walking distance from Badarpur Metro Station, Magnum One offers seamless connectivity to South Delhi, Jasola, and the NCR's arterial road network.",
+    description: "Magnum One is a futuristic Grade A commercial office development on Mathura Road, Sector 37, Faridabad, situated on the Delhi Mumbai Expressway link road within the Mohan Cooperative Area. Spanning approximately 2.6 lakh sq. ft. with floor plates of up to 22,000 sq. ft., this energy efficient building features a grand double height entrance lobby, 3 level basement parking, EV charging, valet parking, concierge service, restaurants, coffee shops, conference rooms, and landscaped sit outs. Walking distance from Badarpur Metro Station, Magnum One offers seamless connectivity to South Delhi, Jasola, and the NCR's arterial road network.",
     mapQuery: 'Magnum+One+Sector+37+Mathura+Road+Faridabad',
-    highlights: ['Grade A Futuristic Commercial Design', '~2.6 Lakh Sq. Ft. of Office & Retail Space', 'Floor Plates: Up to 22,000 Sq. Ft.', 'Grand Double-Height Entrance Lobby', 'Walking Distance from Badarpur Metro', 'Delhi-Mumbai Expressway Link Road Frontage'],
-    amenities: ['High-Speed Elevators', 'Grand Double-Height Lobby', '3-Level Basement Parking', 'Valet Parking & EV Charging', 'Concierge & Round-the-Clock Help Desk', 'Conference Rooms', 'Restaurants, Coffee Shops & Cafeteria', 'Car Showrooms, Banks & ATMs', 'Landscaped Courts, Sit-Outs & Gazebos', 'Hi-Tech Security System', 'Fire Fighting System'],
+    highlights: ['Grade A Futuristic Commercial Design', '~2.6 Lakh Sq. Ft. of Office & Retail Space', 'Floor Plates: Up to 22,000 Sq. Ft.', 'Grand Double Height Entrance Lobby', 'Walking Distance from Badarpur Metro', 'Delhi Mumbai Expressway Link Road Frontage'],
+    amenities: ['High Speed Elevators', 'Grand Double Height Lobby', '3 Level Basement Parking', 'Valet Parking & EV Charging', 'Concierge & Round the Clock Help Desk', 'Conference Rooms', 'Restaurants, Coffee Shops & Cafeteria', 'Car Showrooms, Banks & ATMs', 'Landscaped Courts, Sit Outs & Gazebos', 'Hi Tech Security System', 'Fire Fighting System'],
     unitMix: [
       { type: 'Small Office Suite', size: 'Flexible Small Format', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Up to 11,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 22,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 37, Mathura Road, Faridabad', 'Badarpur Metro Station — Walking Distance', 'Mohan Co-operative Industrial Estate — 300 m', 'Jasola — 6 km', 'Greater Kailash — 7.5 km', 'Connaught Place — 17.6 km']
+    locationAdvantage: ['Sector 37, Mathura Road, Faridabad', 'Badarpur Metro Station, Walking Distance', 'Mohan Co operative Industrial Estate, 300 m', 'Jasola, 6 km', 'Greater Kailash, 7.5 km', 'Connaught Place, 17.6 km']
   },
   {
     id: 'magnum-one-invest',
@@ -707,16 +707,16 @@ export const PROJECTS: Project[] = [
     developer: 'Galaxy Magnum Group',
     rera: 'Available on Request',
     landArea: '1.65 Acres',
-    description: "Magnum One presents a strong commercial investment opportunity on Mathura Road, Sector 37, Faridabad — strategically located on the Delhi-Mumbai Expressway link road with walking-distance access to Badarpur Metro. This Grade A, energy-efficient office building offers ~2.6 lakh sq. ft. of premium office and retail space with flexible floor plates up to 22,000 sq. ft., attracting a diverse corporate tenant base. Its proximity to South Delhi, the Mohan Cooperative Industrial Estate, and key NCR arterials makes it a value-driven asset with solid rental income and long-term appreciation potential.",
+    description: "Magnum One presents a strong commercial investment opportunity on Mathura Road, Sector 37, Faridabad, strategically located on the Delhi Mumbai Expressway link road with walking distance access to Badarpur Metro. This Grade A, energy efficient office building offers ~2.6 lakh sq. ft. of premium office and retail space with flexible floor plates up to 22,000 sq. ft., attracting a diverse corporate tenant base. Its proximity to South Delhi, the Mohan Cooperative Industrial Estate, and key NCR arterials makes it a value driven asset with solid rental income and long term appreciation potential.",
     mapQuery: 'Magnum+One+Sector+37+Mathura+Road+Faridabad',
-    highlights: ['Metro-Linked Asset — Badarpur Station Walking Distance', 'Grade A Office Building — ~2.6 Lakh Sq. Ft.', 'Delhi-Mumbai Expressway Link Road Frontage', 'Flexible Units — Diversified Tenant Profile', 'South Delhi Proximity — Strong Occupier Demand', 'Energy-Efficient Building — Long-Term Cost Advantage'],
-    amenities: ['High-Speed Elevators', 'Grand Double-Height Lobby', '3-Level Basement Parking', 'Valet Parking & EV Charging', 'Concierge & Round-the-Clock Help Desk', 'Conference Rooms', 'Restaurants, Coffee Shops & Cafeteria', 'Car Showrooms, Banks & ATMs', 'Landscaped Courts, Sit-Outs & Gazebos', 'Hi-Tech Security System', 'Fire Fighting System'],
+    highlights: ['Metro Linked Asset, Badarpur Station Walking Distance', 'Grade A Office Building, ~2.6 Lakh Sq. Ft.', 'Delhi Mumbai Expressway Link Road Frontage', 'Flexible Units, Diversified Tenant Profile', 'South Delhi Proximity, Strong Occupier Demand', 'Energy Efficient Building, Long Term Cost Advantage'],
+    amenities: ['High Speed Elevators', 'Grand Double Height Lobby', '3 Level Basement Parking', 'Valet Parking & EV Charging', 'Concierge & Round the Clock Help Desk', 'Conference Rooms', 'Restaurants, Coffee Shops & Cafeteria', 'Car Showrooms, Banks & ATMs', 'Landscaped Courts, Sit Outs & Gazebos', 'Hi Tech Security System', 'Fire Fighting System'],
     unitMix: [
       { type: 'Small Office Suite', size: 'Flexible Small Format', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Up to 11,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 22,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 37, Mathura Road, Faridabad', 'Badarpur Metro Station — Walking Distance', 'Mohan Co-operative Industrial Estate — 300 m', 'Jasola — 6 km', 'Greater Kailash — 7.5 km', 'Connaught Place — 17.6 km']
+    locationAdvantage: ['Sector 37, Mathura Road, Faridabad', 'Badarpur Metro Station, Walking Distance', 'Mohan Co operative Industrial Estate, 300 m', 'Jasola, 6 km', 'Greater Kailash, 7.5 km', 'Connaught Place, 17.6 km']
   },
   {
     id: 'magnum-global-park-lease',
@@ -735,16 +735,16 @@ export const PROJECTS: Project[] = [
     developer: 'Galaxy Magnum Group',
     rera: 'Available on Request',
     landArea: '6.5 Acres',
-    description: "Magnum Global Park is a premium Grade A office park spread over 6.5 acres on Golf Course Extension Road, Sector 58, Gurugram. Offering approximately 1.1 million sq. ft. of IT/ITES and corporate office space, this IGBC Pre-Certified Gold building features flexible floor plates of up to 50,000 sq. ft., a grand 30-ft. entrance lobby, 7-level car parking, concierge service, EV charging, and a fully automated building management system. With retail, food court, sit-outs, and landscaped surroundings, Magnum Global Park delivers a complete, ready-to-occupy corporate campus just 1 km from the Rapid Metro.",
+    description: "Magnum Global Park is a premium Grade A office park spread over 6.5 acres on Golf Course Extension Road, Sector 58, Gurugram. Offering approximately 1.1 million sq. ft. of IT/ITES and corporate office space, this IGBC Pre Certified Gold building features flexible floor plates of up to 50,000 sq. ft., a grand 30 ft. entrance lobby, 7 level car parking, concierge service, EV charging, and a fully automated building management system. With retail, food court, sit outs, and landscaped surroundings, Magnum Global Park delivers a complete, ready to occupy corporate campus just 1 km from the Rapid Metro.",
     mapQuery: 'Magnum+Global+Park+Sector+58+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['IGBC Pre-Certified Gold Rated Building', '~1.1 Million Sq. Ft. IT/ITES & Office Space', 'Flexible Floor Plates: Up to 50,000 Sq. Ft.', '30-Ft. Grand Entrance Lobby', '7-Level Car Parking + Valet & Concierge', '1 km from Rapid Metro Station'],
-    amenities: ['High-Speed Elevators', '30-Ft. Grand Entrance Lobby', '7-Level Car Parking', 'Valet Parking', 'Concierge Service', 'EV Charging Stations', '100% Power Backup', 'Fully Automated BMS', 'Conference & Meeting Rooms', 'Food Court & Retail', 'Sit-Outs, Gazebos & Water Bodies', 'Landscaped Surroundings', '24x7 Multi-Layer Security', 'Fire Fighting System'],
+    highlights: ['IGBC Pre Certified Gold Rated Building', '~1.1 Million Sq. Ft. IT/ITES & Office Space', 'Flexible Floor Plates: Up to 50,000 Sq. Ft.', '30 Ft. Grand Entrance Lobby', '7 Level Car Parking + Valet & Concierge', '1 km from Rapid Metro Station'],
+    amenities: ['High Speed Elevators', '30 Ft. Grand Entrance Lobby', '7 Level Car Parking', 'Valet Parking', 'Concierge Service', 'EV Charging Stations', '100% Power Backup', 'Fully Automated BMS', 'Conference & Meeting Rooms', 'Food Court & Retail', 'Sit Outs, Gazebos & Water Bodies', 'Landscaped Surroundings', '24x7 Multi Layer Security', 'Fire Fighting System'],
     unitMix: [
       { type: 'Boutique Office Suite', size: 'Small Format', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Up to 25,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 50,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 58, Golf Course Extension Road, Gurugram', 'Rapid Metro Station — 1 km', 'NH-48 & Cyber City — Well Connected', 'Proximity to MNCs & Corporate Houses', 'Healthcare, Hospitality & Education — Nearby']
+    locationAdvantage: ['Sector 58, Golf Course Extension Road, Gurugram', 'Rapid Metro Station, 1 km', 'NH 48 & Cyber City, Well Connected', 'Proximity to MNCs & Corporate Houses', 'Healthcare, Hospitality & Education, Nearby']
   },
   {
     id: 'magnum-global-park-invest',
@@ -763,16 +763,16 @@ export const PROJECTS: Project[] = [
     developer: 'Galaxy Magnum Group',
     rera: 'Available on Request',
     landArea: '6.5 Acres',
-    description: "Magnum Global Park offers a compelling commercial investment opportunity on Golf Course Extension Road, Sector 58, Gurugram. This IGBC Pre-Certified Gold rated office park spans ~1.1 million sq. ft. across 6.5 acres, with large, efficient floor plates of up to 50,000 sq. ft. ideal for attracting anchor corporate and IT/ITES tenants. A fully operational, ready-to-occupy development with premium amenities and metro proximity, it presents investors with strong rental income potential and long-term value appreciation on one of Gurugram's most active commercial corridors.",
+    description: "Magnum Global Park offers a compelling commercial investment opportunity on Golf Course Extension Road, Sector 58, Gurugram. This IGBC Pre Certified Gold rated office park spans ~1.1 million sq. ft. across 6.5 acres, with large, efficient floor plates of up to 50,000 sq. ft. ideal for attracting anchor corporate and IT/ITES tenants. A fully operational, ready to occupy development with premium amenities and metro proximity, it presents investors with strong rental income potential and long term value appreciation on one of Gurugram's most active commercial corridors.",
     mapQuery: 'Magnum+Global+Park+Sector+58+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['IGBC Pre-Certified Gold — Institutional Investment Grade', '~1.1 Million Sq. Ft. Across 6.5 Acres', 'Floor Plates Up to 50,000 Sq. Ft. — Anchor Tenant Ready', 'Ready to Occupy — Immediate Rental Income', 'Prime GCER Location — 1 km from Metro', 'Strong Demand from IT/ITES & MNC Occupiers'],
-    amenities: ['High-Speed Elevators', '30-Ft. Grand Entrance Lobby', '7-Level Car Parking', 'Valet Parking', 'Concierge Service', 'EV Charging Stations', '100% Power Backup', 'Fully Automated BMS', 'Conference & Meeting Rooms', 'Food Court & Retail', 'Sit-Outs, Gazebos & Water Bodies', 'Landscaped Surroundings', '24x7 Multi-Layer Security', 'Fire Fighting System'],
+    highlights: ['IGBC Pre Certified Gold, Institutional Investment Grade', '~1.1 Million Sq. Ft. Across 6.5 Acres', 'Floor Plates Up to 50,000 Sq. Ft., Anchor Tenant Ready', 'Ready to Occupy, Immediate Rental Income', 'Prime GCER Location, 1 km from Metro', 'Strong Demand from IT/ITES & MNC Occupiers'],
+    amenities: ['High Speed Elevators', '30 Ft. Grand Entrance Lobby', '7 Level Car Parking', 'Valet Parking', 'Concierge Service', 'EV Charging Stations', '100% Power Backup', 'Fully Automated BMS', 'Conference & Meeting Rooms', 'Food Court & Retail', 'Sit Outs, Gazebos & Water Bodies', 'Landscaped Surroundings', '24x7 Multi Layer Security', 'Fire Fighting System'],
     unitMix: [
       { type: 'Boutique Office Suite', size: 'Small Format', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Up to 25,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 50,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 58, Golf Course Extension Road, Gurugram', 'Rapid Metro Station — 1 km', 'NH-48 & Cyber City — Well Connected', 'Proximity to MNCs & Corporate Houses', 'Healthcare, Hospitality & Education — Nearby']
+    locationAdvantage: ['Sector 58, Golf Course Extension Road, Gurugram', 'Rapid Metro Station, 1 km', 'NH 48 & Cyber City, Well Connected', 'Proximity to MNCs & Corporate Houses', 'Healthcare, Hospitality & Education, Nearby']
   },
   {
     id: 'dlf-corporate-greens-lease',
@@ -791,16 +791,16 @@ export const PROJECTS: Project[] = [
     developer: 'DLF Limited',
     rera: 'Available on Request',
     landArea: '25 Acres',
-    description: "DLF Corporate Greens is a premium Grade A office campus spread across 25 acres on Southern Peripheral Road, Sector 74A, Gurugram. Comprising four advanced towers with 3.7+ million sq. ft. of office space, this LEED Gold certified development offers 1,100+ modern office units ranging from 1,600 to 3,500 sq. ft. — ideal for businesses seeking flexible, customisable workspaces. With landscaped gardens, central air-conditioning, fast elevators, conference rooms, cafes, and round-the-clock security, DLF Corporate Greens delivers a world-class corporate environment with seamless access to NH-48, Dwarka Expressway, and Southern Peripheral Road.",
+    description: "DLF Corporate Greens is a premium Grade A office campus spread across 25 acres on Southern Peripheral Road, Sector 74A, Gurugram. Comprising four advanced towers with 3.7+ million sq. ft. of office space, this LEED Gold certified development offers 1,100+ modern office units ranging from 1,600 to 3,500 sq. ft., ideal for businesses seeking flexible, customisable workspaces. With landscaped gardens, central air conditioning, fast elevators, conference rooms, cafes, and round the clock security, DLF Corporate Greens delivers a world class corporate environment with seamless access to NH 48, Dwarka Expressway, and Southern Peripheral Road.",
     mapQuery: 'DLF+Corporate+Greens+Sector+74A+Southern+Peripheral+Road+Gurugram',
-    highlights: ['25-Acre LEED Gold Certified Campus', '4 Towers — 3.7+ Million Sq. Ft. Office Space', '1,100+ Modern Office Units', 'Unit Sizes: 1,600 – 3,500 Sq. Ft.', 'Central AC, Power Backup & 24/7 Security', 'Excellent Access — NH-48, Dwarka Expressway & SPR'],
+    highlights: ['25 Acre LEED Gold Certified Campus', '4 Towers to 3.7+ Million Sq. Ft. Office Space', '1,100+ Modern Office Units', 'Unit Sizes: 1,600 to 3,500 Sq. Ft.', 'Central AC, Power Backup & 24/7 Security', 'Excellent Access, NH 48, Dwarka Expressway & SPR'],
     amenities: ['Fast Elevators', 'Ample Parking', '24/7 Security', '100% Power Backup', 'Central Air Conditioning', 'Conference Rooms', 'Gymnasium', 'Cafes & Restaurants', 'ATMs', 'Landscaped Gardens', 'Fire Fighting Systems', 'Maintenance Staff'],
     unitMix: [
-      { type: 'Small Office Suite', size: '1,600 – 2,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Mid-Size Office', size: '2,000 – 3,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Large Office Unit', size: '3,000 – 3,500 Sq. Ft.', price: 'Price on Request' }
+      { type: 'Small Office Suite', size: '1,600 to 2,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Mid Size Office', size: '2,000 to 3,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Large Office Unit', size: '3,000 to 3,500 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 74A, Southern Peripheral Road, Gurugram', 'NH-48 — Excellent Connectivity', 'Dwarka Expressway — Nearby', 'Proximity to South Delhi & Dwarka', 'Upcoming Metro Line Connectivity']
+    locationAdvantage: ['Sector 74A, Southern Peripheral Road, Gurugram', 'NH 48, Excellent Connectivity', 'Dwarka Expressway, Nearby', 'Proximity to South Delhi & Dwarka', 'Upcoming Metro Line Connectivity']
   },
   {
     id: 'dlf-corporate-greens-invest',
@@ -819,16 +819,16 @@ export const PROJECTS: Project[] = [
     developer: 'DLF Limited',
     rera: 'Available on Request',
     landArea: '25 Acres',
-    description: "DLF Corporate Greens presents a high-value commercial investment opportunity on Southern Peripheral Road, Sector 74A, Gurugram. This LEED Gold certified, 25-acre campus by DLF — India's largest real estate developer — comprises four premium towers with 3.7+ million sq. ft. of income-generating office space and 1,100+ tenanted units. The scale, DLF brand, and prime SPR location combine to offer investors stable rental income, strong occupancy, and long-term capital appreciation in one of Gurugram's fastest-growing corporate corridors.",
+    description: "DLF Corporate Greens presents a high value commercial investment opportunity on Southern Peripheral Road, Sector 74A, Gurugram. This LEED Gold certified, 25 acre campus by DLF, India's largest real estate developer, comprises four premium towers with 3.7+ million sq. ft. of income generating office space and 1,100+ tenanted units. The scale, DLF brand, and prime SPR location combine to offer investors stable rental income, strong occupancy, and long term capital appreciation in one of Gurugram's fastest growing corporate corridors.",
     mapQuery: 'DLF+Corporate+Greens+Sector+74A+Southern+Peripheral+Road+Gurugram',
-    highlights: ['DLF-Branded — India\'s Largest Real Estate Developer', 'LEED Gold Certified — 25-Acre Campus', '3.7+ Million Sq. Ft. Across 4 Premium Towers', '1,100+ Office Units — Diversified Income Stream', 'Prime SPR Location — Rapid Corridor Growth', 'Strong Occupancy & Long-Term Capital Appreciation'],
+    highlights: ['DLF Branded, India\'s Largest Real Estate Developer', 'LEED Gold Certified, 25 Acre Campus', '3.7+ Million Sq. Ft. Across 4 Premium Towers', '1,100+ Office Units, Diversified Income Stream', 'Prime SPR Location, Rapid Corridor Growth', 'Strong Occupancy & Long Term Capital Appreciation'],
     amenities: ['Fast Elevators', 'Ample Parking', '24/7 Security', '100% Power Backup', 'Central Air Conditioning', 'Conference Rooms', 'Gymnasium', 'Cafes & Restaurants', 'ATMs', 'Landscaped Gardens', 'Fire Fighting Systems', 'Maintenance Staff'],
     unitMix: [
-      { type: 'Small Office Suite', size: '1,600 – 2,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Mid-Size Office', size: '2,000 – 3,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Large Office Unit', size: '3,000 – 3,500 Sq. Ft.', price: 'Price on Request' }
+      { type: 'Small Office Suite', size: '1,600 to 2,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Mid Size Office', size: '2,000 to 3,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Large Office Unit', size: '3,000 to 3,500 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 74A, Southern Peripheral Road, Gurugram', 'NH-48 — Excellent Connectivity', 'Dwarka Expressway — Nearby', 'Proximity to South Delhi & Dwarka', 'Upcoming Metro Line Connectivity']
+    locationAdvantage: ['Sector 74A, Southern Peripheral Road, Gurugram', 'NH 48, Excellent Connectivity', 'Dwarka Expressway, Nearby', 'Proximity to South Delhi & Dwarka', 'Upcoming Metro Line Connectivity']
   },
   {
     id: 'aipl-business-club-lease',
@@ -847,16 +847,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: '166 of 2017',
     landArea: '6,67,445 Sq. Ft. Total Built-Up',
-    description: "AIPL Business Club is a fully operational, tenant-rich Grade A office complex on Golf Course Extension Road, Sector 62, Gurugram. Designed by Morphogenesis, this LEED Gold & GRIHA 4-Star certified development offers highly flexible floor plates from 8,000 to 52,000 sq. ft., a 16,680 sq. ft. food court, infinity swimming pool, Fortis medical facility, EV charging, 6-level parking, and last-mile metro connectivity. With anchor tenants including Deloitte, British Airways, Kuehne+Nagel, and Milliman, AIPL Business Club is a proven corporate destination on GCER.",
+    description: "AIPL Business Club is a fully operational, tenant rich Grade A office complex on Golf Course Extension Road, Sector 62, Gurugram. Designed by Morphogenesis, this LEED Gold & GRIHA 4 Star certified development offers highly flexible floor plates from 8,000 to 52,000 sq. ft., a 16,680 sq. ft. food court, infinity swimming pool, Fortis medical facility, EV charging, 6 level parking, and last mile metro connectivity. With anchor tenants including Deloitte, British Airways, Kuehne+Nagel, and Milliman, AIPL Business Club is a proven corporate destination on GCER.",
     mapQuery: 'AIPL+Business+Club+Sector+62+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['LEED Gold & GRIHA 4-Star Certified', 'Flexible Floor Plates: 8,000 – 52,000 Sq. Ft.', 'Anchor Tenants: Deloitte, British Airways & 20+ More', 'Infinity Swimming Pool & Fortis Medical Facility', 'Designed by Morphogenesis', '6-Level Parking + Last-Mile Metro Connectivity'],
-    amenities: ['High-Speed Elevators', 'Double-Height Entrance Lobby', 'Infinity Swimming Pool', 'Food Court (16,680 Sq. Ft.)', 'Fortis Medical Facility', 'EV Car Charging Points', '6-Level Parking (2B + 4 MLCP)', 'Shower Rooms & Driver Lounge', 'Prayer Room', 'Shuttle Service', 'Air Purification System', 'Landscape Terrace', 'CCTV & Multilevel Security', 'Fire Fighting System'],
+    highlights: ['LEED Gold & GRIHA 4 Star Certified', 'Flexible Floor Plates: 8,000 to 52,000 Sq. Ft.', 'Anchor Tenants: Deloitte, British Airways & 20+ More', 'Infinity Swimming Pool & Fortis Medical Facility', 'Designed by Morphogenesis', '6 Level Parking + Last Mile Metro Connectivity'],
+    amenities: ['High Speed Elevators', 'Double Height Entrance Lobby', 'Infinity Swimming Pool', 'Food Court (16,680 Sq. Ft.)', 'Fortis Medical Facility', 'EV Car Charging Points', '6 Level Parking (2B + 4 MLCP)', 'Shower Rooms & Driver Lounge', 'Prayer Room', 'Shuttle Service', 'Air Purification System', 'Landscape Terrace', 'CCTV & Multilevel Security', 'Fire Fighting System'],
     unitMix: [
       { type: 'Small Suite', size: '8,000 Sq. Ft. onwards', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Up to 26,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 52,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 62, Golf Course Extension Road, Gurugram', 'Sector 55-56 Rapid Metro — 4.0 km', 'Artemis Hospital — 1.9 km', 'Imperia Mindspace — 20 m', 'Emaar Digihomes — 160 m']
+    locationAdvantage: ['Sector 62, Golf Course Extension Road, Gurugram', 'Sector 55 to 56 Rapid Metro, 4.0 km', 'Artemis Hospital, 1.9 km', 'Imperia Mindspace, 20 m', 'Emaar Digihomes, 160 m']
   },
   {
     id: 'aipl-business-club-invest',
@@ -875,16 +875,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: '166 of 2017',
     landArea: '6,67,445 Sq. Ft. Total Built-Up',
-    description: "AIPL Business Club offers a compelling commercial investment opportunity on Golf Course Extension Road, Sector 62, Gurugram. This LEED Gold & GRIHA 4-Star certified asset by Morphogenesis is a fully operational, income-generating property with 20+ established tenants including Deloitte, British Airways, Kuehne+Nagel, and Milliman. With flexible floor plates of 8,000–52,000 sq. ft., premium amenities, and strong occupancy on one of Gurugram's premier corporate corridors, it delivers stable rental income and long-term capital appreciation.",
+    description: "AIPL Business Club offers a compelling commercial investment opportunity on Golf Course Extension Road, Sector 62, Gurugram. This LEED Gold & GRIHA 4 Star certified asset by Morphogenesis is a fully operational, income generating property with 20+ established tenants including Deloitte, British Airways, Kuehne+Nagel, and Milliman. With flexible floor plates of 8,000 to 52,000 sq. ft., premium amenities, and strong occupancy on one of Gurugram's premier corporate corridors, it delivers stable rental income and long term capital appreciation.",
     mapQuery: 'AIPL+Business+Club+Sector+62+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Fully Operational — Immediate Rental Income', 'LEED Gold & GRIHA 4-Star Certified Asset', 'Anchor Tenants: Deloitte, British Airways, Kuehne+Nagel & More', 'Floor Plates: 8,000 – 52,000 Sq. Ft.', 'Total Built-Up: ~6,67,445 Sq. Ft.', 'Strong Occupancy on GCER — Proven Demand'],
-    amenities: ['High-Speed Elevators', 'Double-Height Entrance Lobby', 'Infinity Swimming Pool', 'Food Court (16,680 Sq. Ft.)', 'Fortis Medical Facility', 'EV Car Charging Points', '6-Level Parking (2B + 4 MLCP)', 'Shower Rooms & Driver Lounge', 'Prayer Room', 'Shuttle Service', 'Air Purification System', 'Landscape Terrace', 'CCTV & Multilevel Security', 'Fire Fighting System'],
+    highlights: ['Fully Operational, Immediate Rental Income', 'LEED Gold & GRIHA 4 Star Certified Asset', 'Anchor Tenants: Deloitte, British Airways, Kuehne+Nagel & More', 'Floor Plates: 8,000 to 52,000 Sq. Ft.', 'Total Built Up: ~6,67,445 Sq. Ft.', 'Strong Occupancy on GCER, Proven Demand'],
+    amenities: ['High Speed Elevators', 'Double Height Entrance Lobby', 'Infinity Swimming Pool', 'Food Court (16,680 Sq. Ft.)', 'Fortis Medical Facility', 'EV Car Charging Points', '6 Level Parking (2B + 4 MLCP)', 'Shower Rooms & Driver Lounge', 'Prayer Room', 'Shuttle Service', 'Air Purification System', 'Landscape Terrace', 'CCTV & Multilevel Security', 'Fire Fighting System'],
     unitMix: [
       { type: 'Small Suite', size: '8,000 Sq. Ft. onwards', price: 'Price on Request' },
       { type: 'Partial Floor', size: 'Up to 26,000 Sq. Ft.', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Up to 52,000 Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 62, Golf Course Extension Road, Gurugram', 'Sector 55-56 Rapid Metro — 4.0 km', 'Artemis Hospital — 1.9 km', 'Imperia Mindspace — 20 m', 'Emaar Digihomes — 160 m']
+    locationAdvantage: ['Sector 62, Golf Course Extension Road, Gurugram', 'Sector 55 to 56 Rapid Metro, 4.0 km', 'Artemis Hospital, 1.9 km', 'Imperia Mindspace, 20 m', 'Emaar Digihomes, 160 m']
   },
   {
     id: 'aipl-statement-lease',
@@ -903,16 +903,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: 'GGM/404/136/2020/20',
     landArea: '4.42 Acres',
-    description: "AIPL Statement is a landmark 32-floor Grade A office tower on Golf Course Extension Road, Sector 66, Gurugram. Designed by DPA Consultants (Singapore) and Design Forum International, this GRIHA 4-Star & LEED Platinum pre-certified building offers floor plates of 24,000–30,000 sq. ft. from the 3rd to 32nd floor. Featuring a grand triple-height entrance lobby with frameless glazing, 19 high-speed destination-control elevators, air purification with IAQ monitoring, four-level basement parking, landscape terraces, and a food court — AIPL Statement defines corporate excellence at one of Gurugram's most sought-after addresses.",
+    description: "AIPL Statement is a landmark 32 floor Grade A office tower on Golf Course Extension Road, Sector 66, Gurugram. Designed by DPA Consultants (Singapore) and Design Forum International, this GRIHA 4 Star & LEED Platinum pre certified building offers floor plates of 24,000 to 30,000 sq. ft. from the 3rd to 32nd floor. Featuring a grand triple height entrance lobby with frameless glazing, 19 high speed destination control elevators, air purification with IAQ monitoring, four level basement parking, landscape terraces, and a food court, AIPL Statement defines corporate excellence at one of Gurugram's most sought after addresses.",
     mapQuery: 'AIPL+Statement+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['32-Floor GRIHA 4-Star & LEED Platinum Pre-Certified Tower', 'Floor Plates: 24,000 – 30,000 Sq. Ft.', 'Grand Triple-Height Entrance Lobby — Frameless Glazing', '19 High-Speed Destination Control Elevators', 'Designed by DPA Consultants, Singapore', 'Four-Level Basement Parking'],
-    amenities: ['19 High-Speed Destination Control Elevators', '100% Power Backup', 'Air Purification & IAQ Monitoring', 'Grand Triple-Height Lobby', 'Landscape Terraces', 'Food Court', 'Four-Level Basement Parking', 'CCTV & Multi-Tier Security', 'Fire Fighting Systems', 'Soundproof Glazing'],
+    highlights: ['32 Floor GRIHA 4 Star & LEED Platinum Pre Certified Tower', 'Floor Plates: 24,000 to 30,000 Sq. Ft.', 'Grand Triple Height Entrance Lobby, Frameless Glazing', '19 High Speed Destination Control Elevators', 'Designed by DPA Consultants, Singapore', 'Four Level Basement Parking'],
+    amenities: ['19 High Speed Destination Control Elevators', '100% Power Backup', 'Air Purification & IAQ Monitoring', 'Grand Triple Height Lobby', 'Landscape Terraces', 'Food Court', 'Four Level Basement Parking', 'CCTV & Multi Tier Security', 'Fire Fighting Systems', 'Soundproof Glazing'],
     unitMix: [
       { type: 'Partial Floor', size: '12,000 Sq. Ft. onwards', price: 'Price on Request' },
-      { type: 'Full Floor', size: '24,000 – 30,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Full Floor', size: '24,000 to 30,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central — Nearby', 'Grand Hyatt — Nearby', 'Sector 55-56 Rapid Metro — 7.5 km', 'Huda City Centre Metro — 10.5 km', 'CK Birla Hospital & Medanta — Nearby']
+    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central, Nearby', 'Grand Hyatt, Nearby', 'Sector 55 to 56 Rapid Metro, 7.5 km', 'Huda City Centre Metro, 10.5 km', 'CK Birla Hospital & Medanta, Nearby']
   },
   {
     id: 'aipl-statement-invest',
@@ -931,16 +931,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: 'GGM/404/136/2020/20',
     landArea: '4.42 Acres',
-    description: "AIPL Statement presents a rare commercial investment opportunity on Golf Course Extension Road, Sector 66, Gurugram. This 32-floor, GRIHA 4-Star & LEED Platinum pre-certified Grade A office tower — designed by DPA Consultants (Singapore) — spans 8,55,189 sq. ft. with large, efficient floor plates of 24,000–30,000 sq. ft. The asset combines iconic architecture, top-tier sustainability credentials, and a prime GCER location to offer strong rental yields and exceptional long-term capital appreciation for discerning investors.",
+    description: "AIPL Statement presents a rare commercial investment opportunity on Golf Course Extension Road, Sector 66, Gurugram. This 32 floor, GRIHA 4 Star & LEED Platinum pre certified Grade A office tower, designed by DPA Consultants (Singapore), spans 8,55,189 sq. ft. with large, efficient floor plates of 24,000 to 30,000 sq. ft. The asset combines iconic architecture, top tier sustainability credentials, and a prime GCER location to offer strong rental yields and exceptional long term capital appreciation for discerning investors.",
     mapQuery: 'AIPL+Statement+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['GRIHA 4-Star & LEED Platinum — Premium Investment Grade', 'Total Built-Up: ~8,55,189 Sq. Ft.', 'Floor Plates: 24,000 – 30,000 Sq. Ft.', 'Iconic 32-Floor Landmark on GCER', 'Designed by DPA Consultants, Singapore', 'Strong Rental Yield & Capital Appreciation Potential'],
-    amenities: ['19 High-Speed Destination Control Elevators', '100% Power Backup', 'Air Purification & IAQ Monitoring', 'Grand Triple-Height Lobby', 'Landscape Terraces', 'Food Court', 'Four-Level Basement Parking', 'CCTV & Multi-Tier Security', 'Fire Fighting Systems', 'Soundproof Glazing'],
+    highlights: ['GRIHA 4 Star & LEED Platinum, Premium Investment Grade', 'Total Built Up: ~8,55,189 Sq. Ft.', 'Floor Plates: 24,000 to 30,000 Sq. Ft.', 'Iconic 32 Floor Landmark on GCER', 'Designed by DPA Consultants, Singapore', 'Strong Rental Yield & Capital Appreciation Potential'],
+    amenities: ['19 High Speed Destination Control Elevators', '100% Power Backup', 'Air Purification & IAQ Monitoring', 'Grand Triple Height Lobby', 'Landscape Terraces', 'Food Court', 'Four Level Basement Parking', 'CCTV & Multi Tier Security', 'Fire Fighting Systems', 'Soundproof Glazing'],
     unitMix: [
       { type: 'Partial Floor', size: '12,000 Sq. Ft. onwards', price: 'Price on Request' },
-      { type: 'Full Floor', size: '24,000 – 30,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Full Floor', size: '24,000 to 30,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central — Nearby', 'Grand Hyatt — Nearby', 'Sector 55-56 Rapid Metro — 7.5 km', 'Huda City Centre Metro — 10.5 km', 'CK Birla Hospital & Medanta — Nearby']
+    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central, Nearby', 'Grand Hyatt, Nearby', 'Sector 55 to 56 Rapid Metro, 7.5 km', 'Huda City Centre Metro, 10.5 km', 'CK Birla Hospital & Medanta, Nearby']
   },
   {
     id: 'aipl-autograph-lease',
@@ -959,16 +959,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: 'GGM/481/213/2021/49',
     landArea: '6.14 Acres',
-    description: "AIPL Autograph offers Grade A corporate office spaces for lease on Golf Course Extension Road, Sector 66, Gurugram. Spread across 6.14 acres with flexible floor plates from 12,000 to 50,000 sq. ft., this IGBC Platinum pre-certified green building features a spectacular triple-height entrance lobby of ~15,000 sq. ft., destination-control high-speed elevators, co-working spaces, a business lounge, EV charging, 4-level basement parking, air purification with IAQ monitoring, and a central plaza — offering a world-class corporate address on Gurugram's premier office corridor.",
+    description: "AIPL Autograph offers Grade A corporate office spaces for lease on Golf Course Extension Road, Sector 66, Gurugram. Spread across 6.14 acres with flexible floor plates from 12,000 to 50,000 sq. ft., this IGBC Platinum pre certified green building features a spectacular triple height entrance lobby of ~15,000 sq. ft., destination control high speed elevators, co working spaces, a business lounge, EV charging, 4 level basement parking, air purification with IAQ monitoring, and a central plaza, offering a world class corporate address on Gurugram's premier office corridor.",
     mapQuery: 'AIPL+Autograph+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['IGBC Platinum Pre-Certified Green Building', 'Triple-Height Entrance Lobby (~15,000 Sq. Ft.)', 'Floor Plates: 12,000 – 50,000 Sq. Ft.', 'Destination Control High-Speed Elevators', 'Co-Working Space & Business Lounge', '4-Level Basement + Valet Parking'],
-    amenities: ['High-Speed Destination Control Elevators', '100% Power Backup', 'Central Air Conditioning', 'Air Purification & IAQ Monitoring', '4-Level Basement Parking', 'Valet Parking', 'EV Charging Points', 'Co-Working Space', 'Business Lounge', 'Restaurants & Cafes', 'Central Plaza', 'CCTV & Multilevel Security'],
+    highlights: ['IGBC Platinum Pre Certified Green Building', 'Triple Height Entrance Lobby (~15,000 Sq. Ft.)', 'Floor Plates: 12,000 to 50,000 Sq. Ft.', 'Destination Control High Speed Elevators', 'Co Working Space & Business Lounge', '4 Level Basement + Valet Parking'],
+    amenities: ['High Speed Destination Control Elevators', '100% Power Backup', 'Central Air Conditioning', 'Air Purification & IAQ Monitoring', '4 Level Basement Parking', 'Valet Parking', 'EV Charging Points', 'Co Working Space', 'Business Lounge', 'Restaurants & Cafes', 'Central Plaza', 'CCTV & Multilevel Security'],
     unitMix: [
-      { type: 'Partial Floor', size: '12,000 – 25,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Full Floor', size: '25,000 – 50,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Partial Floor', size: '12,000 to 25,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '25,000 to 50,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central — 1.5 km', 'Sector 55-56 Rapid Metro — 5.6 km', 'CK Birla Hospital — 3.6 km', 'IGI Airport — 23.1 km']
+    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central, 1.5 km', 'Sector 55 to 56 Rapid Metro, 5.6 km', 'CK Birla Hospital, 3.6 km', 'IGI Airport, 23.1 km']
   },
   {
     id: 'aipl-autograph-invest',
@@ -987,16 +987,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: 'GGM/481/213/2021/49',
     landArea: '6.14 Acres',
-    description: "AIPL Autograph presents a landmark commercial investment opportunity on Golf Course Extension Road, Sector 66, Gurugram. This IGBC Platinum pre-certified Grade A office campus spans 6.14 acres with flexible floor plates from 12,000 to 50,000 sq. ft., offering strong rental income potential and long-term capital appreciation. Backed by world-class infrastructure — triple-height lobby, destination-control elevators, co-working spaces, and a central plaza — it is an institutional-quality asset positioned on Gurugram's most sought-after corporate corridor.",
+    description: "AIPL Autograph presents a landmark commercial investment opportunity on Golf Course Extension Road, Sector 66, Gurugram. This IGBC Platinum pre certified Grade A office campus spans 6.14 acres with flexible floor plates from 12,000 to 50,000 sq. ft., offering strong rental income potential and long term capital appreciation. Backed by world class infrastructure, triple height lobby, destination control elevators, co working spaces, and a central plaza, it is an institutional quality asset positioned on Gurugram's most sought after corporate corridor.",
     mapQuery: 'AIPL+Autograph+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['IGBC Platinum Pre-Certified — Premium Investment Grade', 'Floor Plates: 12,000 – 50,000 Sq. Ft.', 'Strong Rental Yield on Golf Course Extn Road', 'Anchor-Grade Corporate Tenant Profile', 'Triple-Height Lobby — Iconic Corporate Address', 'Long-Term Capital Appreciation Potential'],
-    amenities: ['High-Speed Destination Control Elevators', '100% Power Backup', 'Central Air Conditioning', 'Air Purification & IAQ Monitoring', '4-Level Basement Parking', 'Valet Parking', 'EV Charging Points', 'Co-Working Space', 'Business Lounge', 'Restaurants & Cafes', 'Central Plaza', 'CCTV & Multilevel Security'],
+    highlights: ['IGBC Platinum Pre Certified, Premium Investment Grade', 'Floor Plates: 12,000 to 50,000 Sq. Ft.', 'Strong Rental Yield on Golf Course Extn Road', 'Anchor Grade Corporate Tenant Profile', 'Triple Height Lobby, Iconic Corporate Address', 'Long Term Capital Appreciation Potential'],
+    amenities: ['High Speed Destination Control Elevators', '100% Power Backup', 'Central Air Conditioning', 'Air Purification & IAQ Monitoring', '4 Level Basement Parking', 'Valet Parking', 'EV Charging Points', 'Co Working Space', 'Business Lounge', 'Restaurants & Cafes', 'Central Plaza', 'CCTV & Multilevel Security'],
     unitMix: [
-      { type: 'Partial Floor', size: '12,000 – 25,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Full Floor', size: '25,000 – 50,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Partial Floor', size: '12,000 to 25,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '25,000 to 50,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central — 1.5 km', 'Sector 55-56 Rapid Metro — 5.6 km', 'CK Birla Hospital — 3.6 km', 'IGI Airport — 23.1 km']
+    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', 'AIPL Joy Central, 1.5 km', 'Sector 55 to 56 Rapid Metro, 5.6 km', 'CK Birla Hospital, 3.6 km', 'IGI Airport, 23.1 km']
   },
   {
     id: 'aipl-signature-lease',
@@ -1015,16 +1015,16 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: '183 of 2017',
     landArea: '4,98,532 Sq. Ft. Total',
-    description: "AIPL Signature offers premium Grade A office spaces for lease on Golf Course Extension Road, Sector 65, Gurugram. This iconic 22-floor GRIHA 4-Star certified tower features efficient floor plates from 10,000 sq. ft., a double-height reception lobby with concierge services, 12 high-speed elevators, 5-level basement parking, air purification with IAQ monitoring, landscape terraces, a waterbody on the 5th floor, and EV charging — all with exclusive office entry from a 24-metre-wide Sector Road.",
+    description: "AIPL Signature offers premium Grade A office spaces for lease on Golf Course Extension Road, Sector 65, Gurugram. This iconic 22 floor GRIHA 4 Star certified tower features efficient floor plates from 10,000 sq. ft., a double height reception lobby with concierge services, 12 high speed elevators, 5 level basement parking, air purification with IAQ monitoring, landscape terraces, a waterbody on the 5th floor, and EV charging, all with exclusive office entry from a 24 metre wide Sector Road.",
     mapQuery: 'AIPL+Signature+Sector+65+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['22-Floor GRIHA 4-Star Certified Tower', 'Floor Plates from 10,000 Sq. Ft.', 'Double-Height Reception Lobby & Concierge', '12 High-Speed Elevators', '5-Level Basement Parking + EV Charging', 'Air Purification with IAQ Monitoring'],
-    amenities: ['12 High-Speed Elevators', '100% Power Backup', 'Centralised Air Conditioning', 'Air Purification & IAQ Monitoring', '5-Level Basement Parking', 'EV Charging Points', 'Food Court & Restaurants', 'Landscape Terraces', 'Waterbody Feature (5th Floor)', 'CCTV & Boom Barrier Security'],
+    highlights: ['22 Floor GRIHA 4 Star Certified Tower', 'Floor Plates from 10,000 Sq. Ft.', 'Double Height Reception Lobby & Concierge', '12 High Speed Elevators', '5 Level Basement Parking + EV Charging', 'Air Purification with IAQ Monitoring'],
+    amenities: ['12 High Speed Elevators', '100% Power Backup', 'Centralised Air Conditioning', 'Air Purification & IAQ Monitoring', '5 Level Basement Parking', 'EV Charging Points', 'Food Court & Restaurants', 'Landscape Terraces', 'Waterbody Feature (5th Floor)', 'CCTV & Boom Barrier Security'],
     unitMix: [
       { type: 'Partial Floor', size: '10,000 Sq. Ft. onwards', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'AIPL Joy Gallery — 350 metres away', 'Sector 55-56 Rapid Metro — 5.6 km', '18+ hospitals nearby — CK Birla, Artemis, Medanta', '18+ schools — DPS, St. Xavier\'s, HDFC School']
+    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'AIPL Joy Gallery, 350 metres away', 'Sector 55 to 56 Rapid Metro, 5.6 km', '18+ hospitals nearby, CK Birla, Artemis, Medanta', '18+ schools, DPS, St. Xavier\'s, HDFC School']
   },
   {
     id: 'aipl-signature-invest',
@@ -1043,21 +1043,21 @@ export const PROJECTS: Project[] = [
     developer: 'Advance India Projects Limited (AIPL)',
     rera: '183 of 2017',
     landArea: '4,98,532 Sq. Ft. Total',
-    description: "AIPL Signature presents a rare commercial investment opportunity on Golf Course Extension Road, Sector 65, Gurugram. This 22-floor, 4,98,532 sq. ft. GRIHA 4-Star certified Grade A office tower offers strong rental yield potential and long-term capital appreciation backed by one of Gurugram's fastest-growing corporate corridors. With efficient floor plates from 10,000 sq. ft., an aseismic structure, double-glazed energy-efficient façade, and premium-grade infrastructure, it is an institutional-quality asset designed for discerning investors.",
+    description: "AIPL Signature presents a rare commercial investment opportunity on Golf Course Extension Road, Sector 65, Gurugram. This 22 floor, 4,98,532 sq. ft. GRIHA 4 Star certified Grade A office tower offers strong rental yield potential and long term capital appreciation backed by one of Gurugram's fastest growing corporate corridors. With efficient floor plates from 10,000 sq. ft., an aseismic structure, double glazed energy efficient façade, and premium grade infrastructure, it is an institutional quality asset designed for discerning investors.",
     mapQuery: 'AIPL+Signature+Sector+65+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['22-Floor GRIHA 4-Star Certified Tower', 'Total Complex: 4,98,532 Sq. Ft.', 'Strong Rental Yield Potential', 'Aseismic Structure with Double-Glazed Façade', 'Anchor-Grade Corporate Tenant Profile', 'Capital Appreciation on Golf Course Extn Road'],
-    amenities: ['12 High-Speed Elevators', '100% Power Backup', 'Centralised Air Conditioning', 'Air Purification & IAQ Monitoring', '5-Level Basement Parking', 'EV Charging Points', 'Food Court & Restaurants', 'Landscape Terraces', 'Waterbody Feature (5th Floor)', 'CCTV & Boom Barrier Security'],
+    highlights: ['22 Floor GRIHA 4 Star Certified Tower', 'Total Complex: 4,98,532 Sq. Ft.', 'Strong Rental Yield Potential', 'Aseismic Structure with Double Glazed Façade', 'Anchor Grade Corporate Tenant Profile', 'Capital Appreciation on Golf Course Extn Road'],
+    amenities: ['12 High Speed Elevators', '100% Power Backup', 'Centralised Air Conditioning', 'Air Purification & IAQ Monitoring', '5 Level Basement Parking', 'EV Charging Points', 'Food Court & Restaurants', 'Landscape Terraces', 'Waterbody Feature (5th Floor)', 'CCTV & Boom Barrier Security'],
     unitMix: [
       { type: 'Partial Floor', size: '10,000 Sq. Ft. onwards', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'AIPL Joy Gallery — 350 metres away', 'Sector 55-56 Rapid Metro — 5.6 km', '18+ hospitals nearby — CK Birla, Artemis, Medanta', '18+ schools — DPS, St. Xavier\'s, HDFC School']
+    locationAdvantage: ['Sector 65, Golf Course Extension Road, Gurugram', 'AIPL Joy Gallery, 350 metres away', 'Sector 55 to 56 Rapid Metro, 5.6 km', '18+ hospitals nearby, CK Birla, Artemis, Medanta', '18+ schools, DPS, St. Xavier\'s, HDFC School']
   },
   {
     id: 'vatika-inxt-city-centre',
     name: 'Vatika INXT City Centre',
-    location: 'Sector 83, NH-48, Gurugram',
+    location: 'Sector 83, NH 48, Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
@@ -1070,21 +1070,21 @@ export const PROJECTS: Project[] = [
     image: '/images/vatika-inxt-city-centre.webp',
     developer: 'Vatika Group',
     landArea: '550-Acre Township',
-    description: "Vatika INXT City Centre is a LEED Gold certified Grade A commercial office campus in Sector 83, at the intersection of NH-48 and Dwarka Expressway, Gurugram — part of the 550-acre Vatika India Next township. Featuring six integrated ultramodern blocks with efficient floor plates of 16,000–26,000 sq. ft., it offers direct internal access to the Hyatt Regency Hotel, corporate retail including banks, ATMs, cafes, and a health club, multi-level turnstile security, and a 25-minute signal-free drive to IGI Airport.",
+    description: "Vatika INXT City Centre is a LEED Gold certified Grade A commercial office campus in Sector 83, at the intersection of NH 48 and Dwarka Expressway, Gurugram, part of the 550 acre Vatika India Next township. Featuring six integrated ultramodern blocks with efficient floor plates of 16,000 to 26,000 sq. ft., it offers direct internal access to the Hyatt Regency Hotel, corporate retail including banks, ATMs, cafes, and a health club, multi level turnstile security, and a 25 minute signal free drive to IGI Airport.",
     mapQuery: 'Vatika+INXT+City+Centre+Sector+83+NH48+Gurugram',
-    highlights: ['LEED Gold Certified Sustainable Campus', 'Floor Plates: 16,000 – 26,000 Sq. Ft.', 'Internal Access to Hyatt Regency Hotel', 'Corporate Retail — Banks, ATMs, Cafes, Health Club', 'Multi-Level Security with Turnstile Systems', '25-Min Signal-Free Drive to IGI Airport'],
-    amenities: ['High-Speed Elevators', 'Turnstile Security System', '100% Power Backup', 'Corporate Retail & Cafes', 'Health Club', 'Banks & ATMs', 'Ample Parking', 'Hyatt Regency Access', 'Expansive Plazas & Walkways', 'Differently-abled Access'],
+    highlights: ['LEED Gold Certified Sustainable Campus', 'Floor Plates: 16,000 to 26,000 Sq. Ft.', 'Internal Access to Hyatt Regency Hotel', 'Corporate Retail, Banks, ATMs, Cafes, Health Club', 'Multi Level Security with Turnstile Systems', '25 Min Signal Free Drive to IGI Airport'],
+    amenities: ['High Speed Elevators', 'Turnstile Security System', '100% Power Backup', 'Corporate Retail & Cafes', 'Health Club', 'Banks & ATMs', 'Ample Parking', 'Hyatt Regency Access', 'Expansive Plazas & Walkways', 'Differently abled Access'],
     unitMix: [
-      { type: 'Partial Floor', size: '16,000 – 26,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Full Floor', size: '16,000 – 26,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Partial Floor', size: '16,000 to 26,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '16,000 to 26,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 83, at NH-48 & Dwarka Expressway intersection', 'Part of 550-acre Vatika India Next township', 'Near proposed ISBT & Metro Hub', '25-minute signal-free drive to IGI Airport', 'Adjacent to Hyatt Regency Hotel']
+    locationAdvantage: ['Sector 83, at NH 48 & Dwarka Expressway intersection', 'Part of 550 acre Vatika India Next township', 'Near proposed ISBT & Metro Hub', '25 minute signal free drive to IGI Airport', 'Adjacent to Hyatt Regency Hotel']
   },
   {
     id: 'vatika-one-on-one',
     name: 'Vatika One On One',
-    location: 'Sector 16, NH-48, Gurugram',
+    location: 'Sector 16, NH 48, Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
     sizeRange: 'Multiple Sizes Available',
@@ -1098,16 +1098,16 @@ export const PROJECTS: Project[] = [
     developer: 'Vatika Group',
     rera: '237 of 2017',
     landArea: '12 Acres',
-    description: "Vatika One On One is a landmark Grade A commercial office campus on NH-48, Sector 16, Gurugram — spanning 2.3 million sq. ft. across 6 independent structures on 12 acres. Designed by Studio u+a, New York, with a 2-acre landscaped central piazza by HM White of New York, it is a 4-Star GRIHA certified sustainable campus featuring granite and natural stone facades, energy-efficient performance glass, solar panels, LED lighting, zero water discharge systems, and 2,500-car parking. Adjacent to The Westin hotel and just 16 km from IGI Airport on a signal-free drive.",
+    description: "Vatika One On One is a landmark Grade A commercial office campus on NH 48, Sector 16, Gurugram to spanning 2.3 million sq. ft. across 6 independent structures on 12 acres. Designed by Studio u+a, New York, with a 2 acre landscaped central piazza by HM White of New York, it is a 4 Star GRIHA certified sustainable campus featuring granite and natural stone facades, energy efficient performance glass, solar panels, LED lighting, zero water discharge systems, and 2,500 car parking. Adjacent to The Westin hotel and just 16 km from IGI Airport on a signal free drive.",
     mapQuery: 'Vatika+One+On+One+Sector+16+NH48+Gurugram',
-    highlights: ['Designed by Studio u+a, New York', '2-Acre Central Piazza by HM White, New York', '4-Star GRIHA Certified Sustainable Campus', 'Solar Panels, LED Lighting & Zero Water Discharge', '2,500-Car Basement Parking', '16 km from IGI Airport — Signal-Free Drive'],
-    amenities: ['High-Speed Elevators', 'Ground-Floor Restaurants & Retail', '100% Power Backup', 'Advanced BMS', 'Solar Panels & LED Lighting', 'Zero Water Discharge System', 'Insulated Facades & Roofs', '2,500-Car Parking', 'Central Piazza', 'Differently-abled Access'],
+    highlights: ['Designed by Studio u+a, New York', '2 Acre Central Piazza by HM White, New York', '4 Star GRIHA Certified Sustainable Campus', 'Solar Panels, LED Lighting & Zero Water Discharge', '2,500 Car Basement Parking', '16 km from IGI Airport, Signal Free Drive'],
+    amenities: ['High Speed Elevators', 'Ground Floor Restaurants & Retail', '100% Power Backup', 'Advanced BMS', 'Solar Panels & LED Lighting', 'Zero Water Discharge System', 'Insulated Facades & Roofs', '2,500 Car Parking', 'Central Piazza', 'Differently abled Access'],
     unitMix: [
       { type: 'Partial Floor', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Full Floor', size: 'Multiple Sizes', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 16, right on NH-48, Gurugram', 'Adjacent to The Westin Hotel', '16 km from IGI Airport — Signal-Free Drive', 'Premium NH-48 corporate corridor', 'Excellent visibility and connectivity to Delhi & Manesar']
+    locationAdvantage: ['Sector 16, right on NH 48, Gurugram', 'Adjacent to The Westin Hotel', '16 km from IGI Airport, Signal Free Drive', 'Premium NH 48 corporate corridor', 'Excellent visibility and connectivity to Delhi & Manesar']
   },
   {
     id: 'elan-empire',
@@ -1126,16 +1126,16 @@ export const PROJECTS: Project[] = [
     developer: 'Elan City LLP',
     rera: '80/2023',
     landArea: '1.46 Acres',
-    description: "Elan Empire is a premium mixed-use commercial development on Golf Course Extension Road, Sector 66, Gurugram — bringing high-end retail, exclusive office spaces, and premium F&B all under one roof. Designed by UHA and ARCOP, it features double-height retail displays, aesthetically crafted large workspaces with casual and break-out areas, a double-height office lobby, and fine dining — all with direct access from Golf Course Extension Road.",
+    description: "Elan Empire is a premium mixed use commercial development on Golf Course Extension Road, Sector 66, Gurugram, bringing high end retail, exclusive office spaces, and premium F&B all under one roof. Designed by UHA and ARCOP, it features double height retail displays, aesthetically crafted large workspaces with casual and break out areas, a double height office lobby, and fine dining, all with direct access from Golf Course Extension Road.",
     mapQuery: 'Elan+Empire+Sector+66+Golf+Course+Extension+Road+Gurugram',
-    highlights: ['Double-Height High-End Retail Displays', 'Premium Office Spaces with Break-Out Areas', 'Double-Height Office Lobby', 'Fine Dining & Multi-Cuisine Food Court', 'Designed by UHA & ARCOP', 'Direct Access from Golf Course Extension Road'],
-    amenities: ['High-Speed Elevators', 'Double-Height Lobby', '100% Power Backup', 'Centralised HVAC', 'Food Court & Fine Dining', 'Break-Out Areas', 'CCTV Surveillance', 'Ample Parking', 'Differently-abled Access'],
+    highlights: ['Double Height High End Retail Displays', 'Premium Office Spaces with Break Out Areas', 'Double Height Office Lobby', 'Fine Dining & Multi Cuisine Food Court', 'Designed by UHA & ARCOP', 'Direct Access from Golf Course Extension Road'],
+    amenities: ['High Speed Elevators', 'Double Height Lobby', '100% Power Backup', 'Centralised HVAC', 'Food Court & Fine Dining', 'Break Out Areas', 'CCTV Surveillance', 'Ample Parking', 'Differently abled Access'],
     unitMix: [
       { type: 'Retail Unit', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'Office Space', size: 'Multiple Sizes', price: 'Price on Request' },
       { type: 'F&B / Restaurant', size: 'Multiple Sizes', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', '2 Minutes from Sohna Road', '5 Minutes from NH-8', 'Easy connectivity to IGI Airport & Golf Course Road', 'Dense premium residential catchment in Sector 66']
+    locationAdvantage: ['Sector 66, Golf Course Extension Road, Gurugram', '2 Minutes from Sohna Road', '5 Minutes from NH 8', 'Easy connectivity to IGI Airport & Golf Course Road', 'Dense premium residential catchment in Sector 66']
   },
   {
     id: 'aipl-masterpiece',
@@ -1143,7 +1143,7 @@ export const PROJECTS: Project[] = [
     location: 'Golf Course Road, Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
-    sizeRange: '6,000 – 40,000 Sq. Ft.',
+    sizeRange: '6,000 to 40,000 Sq. Ft.',
     possessionDate: 'Ready to Occupy',
     type: 'Grade A Commercial Office',
     status: 'Available for Lease',
@@ -1153,16 +1153,16 @@ export const PROJECTS: Project[] = [
     image: '/images/aipl-masterpiece.jpg',
     developer: 'Advance India Projects Limited (AIPL)',
     landArea: '3,14,000 Sq. Ft. Total',
-    description: "AIPL Masterpiece is a landmark Grade A commercial development on Golf Course Road, Gurugram, designed by DP Architects (Singapore) and built to IGBC Platinum standards. Featuring an iconic energy-efficient facade, a triple-height atrium, Mitsubishi high-speed access-controlled elevators, and flexible office spaces from 6,000 to 40,000 Sq. Ft. — it sets the benchmark for premium corporate leasing in Gurugram. Adjacent to the Sector 53-54 Rapid Metro Station, it offers unmatched connectivity for India's leading corporates.",
+    description: "AIPL Masterpiece is a landmark Grade A commercial development on Golf Course Road, Gurugram, designed by DP Architects (Singapore) and built to IGBC Platinum standards. Featuring an iconic energy efficient facade, a triple height atrium, Mitsubishi high speed access controlled elevators, and flexible office spaces from 6,000 to 40,000 Sq. Ft., it sets the benchmark for premium corporate leasing in Gurugram. Adjacent to the Sector 53 to 54 Rapid Metro Station, it offers unmatched connectivity for India's leading corporates.",
     mapQuery: 'AIPL+Masterpiece+Golf+Course+Road+Gurugram',
-    highlights: ['IGBC Platinum Green Building', 'Designed by DP Architects, Singapore', 'Adjacent to Rapid Metro Station', 'Triple-Height Entrance Atrium', 'Italian Marble Common Areas', 'Integrated BMS & Air Purification'],
-    amenities: ['Mitsubishi High-Speed Lifts', '100% Power Backup', 'Centralised HVAC', 'Integrated BMS', 'Air Purification System', 'Italian Marble Lobbies', '24x7 Alfresco Seating', '3-Tier CCTV Security', 'Handicap Accessible'],
+    highlights: ['IGBC Platinum Green Building', 'Designed by DP Architects, Singapore', 'Adjacent to Rapid Metro Station', 'Triple Height Entrance Atrium', 'Italian Marble Common Areas', 'Integrated BMS & Air Purification'],
+    amenities: ['Mitsubishi High Speed Lifts', '100% Power Backup', 'Centralised HVAC', 'Integrated BMS', 'Air Purification System', 'Italian Marble Lobbies', '24x7 Alfresco Seating', '3 Tier CCTV Security', 'Handicap Accessible'],
     unitMix: [
-      { type: 'Partial Floor', size: '6,000 – 15,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Full Floor', size: '15,000 – 40,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi-Floor Block', size: '40,000+ Sq. Ft.', price: 'Price on Request' }
+      { type: 'Partial Floor', size: '6,000 to 15,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Full Floor', size: '15,000 to 40,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Multi Floor Block', size: '40,000+ Sq. Ft.', price: 'Price on Request' }
     ],
-    locationAdvantage: ['Adjacent to Sector 53-54 Rapid Metro Station', "On Golf Course Road — Gurugram's premier corporate corridor", 'HUDA City Centre Metro — 6.4 km', 'NH8 — approx. 7 km', '15+ hospitals, schools, banks & shopping centres nearby']
+    locationAdvantage: ['Adjacent to Sector 53 to 54 Rapid Metro Station', "On Golf Course Road, Gurugram's premier corporate corridor", 'HUDA City Centre Metro, 6.4 km', 'NH8 to approx. 7 km', '15+ hospitals, schools, banks & shopping centres nearby']
   },
   {
     id: 'dlf-magnolias',
@@ -1197,7 +1197,7 @@ export const SERVICES: Service[] = [
   },
   {
     title: 'Market Research',
-    description: 'Institutional-grade reports on micro-markets, price trends, and infrastructure.',
+    description: 'Institutional grade reports on micro markets, price trends, and infrastructure.',
     icon: <BarChart3 className="w-8 h-8 text-lsr-gold" />
   },
   {
@@ -1207,7 +1207,7 @@ export const SERVICES: Service[] = [
   },
   {
     title: 'NRI Services',
-    description: 'End-to-end management for global investors, from acquisition to exit.',
+    description: 'End to end management for global investors, from acquisition to exit.',
     icon: <Globe className="w-8 h-8 text-lsr-gold" />
   },
 ];

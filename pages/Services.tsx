@@ -53,8 +53,7 @@ const Services: React.FC = () => {
             <div>
                <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">NRI Investment Desk</h2>
                <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                 Managing Indian assets remotely is complex. We provide a seamless, high-touch service for Non-Resident Indians looking to capitalize on Gurgaon's growth story.
-               </p>
+                 Managing Indian assets remotely is complex. We provide a seamless, high touch service for Non Resident Indians looking to capitalize on Gurgaon's growth story.</p>
                <ul className="space-y-4 mb-8 text-gray-300 font-medium">
                  <li>• Power of Attorney (POA) Assistance</li>
                  <li>• Tax Repatriation Advisory</li>

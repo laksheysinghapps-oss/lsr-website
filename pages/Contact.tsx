@@ -60,8 +60,7 @@ const Contact: React.FC = () => {
         <div>
           <h1 className="text-4xl md:text-5xl font-serif mb-8">Get In Touch</h1>
           <p className="text-gray-400 text-lg mb-12">
-            Schedule a 15-minute consultation with our senior advisors to discuss your portfolio requirements.
-          </p>
+            Schedule a 15 minute consultation with our senior advisors to discuss your portfolio requirements.</p>
 
           <div className="space-y-8">
             <a
@@ -101,8 +100,8 @@ const Contact: React.FC = () => {
           <div className="mt-12 p-8 bg-lsr-charcoal border border-white/5">
             <h3 className="text-xl font-serif mb-4">Office Hours</h3>
             <div className="flex justify-between text-gray-400 text-sm mb-2">
-              <span>Monday - Saturday</span>
-              <span>10:00 AM - 7:00 PM</span>
+              <span>Monday to Saturday</span>
+              <span>10:00 AM to 7:00 PM</span>
             </div>
             <div className="flex justify-between text-gray-400 text-sm">
               <span>Sunday</span>

@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             <span className="text-white">Investment Advisory</span>
           </h1>
           <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
-            Data-driven. Transparent. Institutional-quality. <br/>
+            Data driven. Transparent. Institutional quality.<br/>
             Strategically guided by industry leadership.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
             <div className="p-4">
               <div className="text-lsr-gold mb-4"><TrendingUp size={32} /></div>
               <h3 className="text-xl font-serif text-white mb-2">Research First</h3>
-              <p className="text-sm text-gray-400">Every recommendation is backed by micro-market analytics and ROI projections.</p>
+              <p className="text-sm text-gray-400">Every recommendation is backed by micro market analytics and ROI projections.</p>
             </div>
             <div className="p-4">
               <div className="text-lsr-gold mb-4"><Shield size={32} /></div>
@@ -94,9 +94,7 @@ const Home: React.FC = () => {
             <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">The LSR Difference</h4>
             <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">What Sets Us Apart?</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
-              At LSR Realty, what truly sets us apart is trust, transparency, and deep-rooted credibility. 
-              We aren't just brokers; we are genuine advisors ensuring you buy into the safest and strongest projects.
-            </p>
+              At LSR Realty, what truly sets us apart is trust, transparency, and deep rooted credibility. We aren't just brokers; we are genuine advisors ensuring you buy into the safest and strongest projects.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
@@ -110,7 +108,7 @@ const Home: React.FC = () => {
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6">
                  <p>Clients value honesty. We give clear, unbiased advice, even if it means suggesting <strong>not</strong> to buy something.</p>
                  <p>Our consultative approach focuses on understanding risks, returns, and providing absolute clarity on project approvals.</p>
-                 <p className="italic text-gray-500">"Buyers trust us because they feel fully informed — not sold to."</p>
+                 <p className="italic text-gray-500">"Buyers trust us because they feel fully informed, not sold to."</p>
               </div>
             </div>
 
@@ -122,7 +120,7 @@ const Home: React.FC = () => {
                 <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">40+ Years of Legacy</p>
               </div>
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6 relative z-10">
-                 <p>Developers know our strategic mentor, <strong>Mr. Devinder Singh</strong>, who literally contributed to Gurgaon's early growth—including roads, metro work, and landscaping.</p>
+                 <p>Developers know our strategic mentor, <strong>Mr. Devinder Singh</strong>, who literally contributed to Gurgaon's early growth, including roads, metro work, and landscaping.</p>
                  <p>Because of these relationships, our clients receive priority inventory access, better pricing leverage, and direct escalation support.</p>
               </div>
             </div>
@@ -170,14 +168,11 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Methodology</h4>
-            <h2 className="text-3xl md:text-4xl font-serif mb-6 leading-tight">Data-Driven Decision Making</h2>
+            <h2 className="text-3xl md:text-4xl font-serif mb-6 leading-tight">Data Driven Decision Making</h2>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Unlike traditional brokers, we approach real estate with an investment banking mindset. 
-              We track micro-market trends, infrastructure developments, and rental yields to forecast 
-              capital appreciation with higher accuracy.
-            </p>
+              Unlike traditional brokers, we approach real estate with an investment banking mindset. We track micro market trends, infrastructure developments, and rental yields to forecast capital appreciation with higher accuracy.</p>
             <ul className="space-y-4 mb-8">
-              {['Proprietary Algo-based Valuation', 'Risk-Adjusted Return Analysis', 'Exit Strategy Planning'].map((item, i) => (
+              {['Proprietary Algo Based Valuation', 'Risk Adjusted Return Analysis', 'Exit Strategy Planning'].map((item, i) => (
                 <li key={i} className="flex items-center space-x-3 text-white">
                   <div className="w-1.5 h-1.5 bg-lsr-gold rounded-full" />
                   <span>{item}</span>
@@ -222,8 +217,7 @@ const Home: React.FC = () => {
             {/* Testimonial 1 */}
             <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative flex flex-col">
               <p className="text-gray-300 text-lg italic leading-relaxed mb-8 flex-grow">
-                "LSR Realty's institutional approach transformed how I view real estate investment. Their research-backed recommendations gave me confidence to make my first luxury property investment."
-              </p>
+                "LSR Realty's institutional approach transformed how I view real estate investment. Their research backed recommendations gave me confidence to make my first luxury property investment."</p>
               <div className="flex justify-between items-end">
                 <div>
                   <p className="gold-gradient-text font-semibold">NRI Investor</p>
@@ -256,8 +250,7 @@ const Home: React.FC = () => {
             {/* Testimonial 3 */}
             <div className="bg-lsr-charcoal p-8 border-l-2 border-lsr-gold relative flex flex-col">
               <p className="text-gray-300 text-lg italic leading-relaxed mb-8 flex-grow">
-                "The quarterly market reports and ongoing portfolio tracking set LSR apart. They don't disappear after the transaction – that's rare in this industry."
-              </p>
+                "The quarterly market reports and ongoing portfolio tracking set LSR apart. They don't disappear after the transaction, that's rare in this industry."</p>
               <div className="flex justify-between items-end">
                 <div>
                   <p className="gold-gradient-text font-semibold">Family Office</p>
@@ -279,8 +272,7 @@ const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl font-serif text-white mb-6">Invest with Confidence</h2>
           <p className="text-xl text-gray-400 mb-10 font-light">
-            Leverage our institutional expertise to build a high-performing real estate portfolio.
-          </p>
+            Leverage our institutional expertise to build a high performing real estate portfolio.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <a 
               href="https://wa.me/918448660818" 
@@ -294,8 +286,7 @@ const Home: React.FC = () => {
               onClick={() => navigate('/contact')}
               className="bg-lsr-gold text-black px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-white transition-colors"
             >
-              Schedule 15-Min Call
-            </button>
+              Schedule 15 Min Call</button>
           </div>
         </div>
       </section>

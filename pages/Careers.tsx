@@ -5,10 +5,10 @@ import { MapPin, Briefcase, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 const OPEN_POSITIONS = [
   {
     id: 2,
-    title: 'Sales Telecaller Intern – Real Estate',
+    title: 'Sales Telecaller Intern, Real Estate',
     location: 'Gurgaon, Haryana',
     industry: 'Real Estate',
-    type: 'Internship (3–6 Months)',
+    type: 'Internship (3 to 6 Months)',
     about: 'We are looking for enthusiastic and confident Male & Female Interns to join our Real Estate Sales Team as Sales Telecallers. The role involves connecting with potential customers, generating leads, scheduling site visits, and supporting the sales team in converting prospects into clients.',
     responsibilities: [
       'Make outbound calls to prospective customers from provided databases.',
@@ -24,19 +24,19 @@ const OPEN_POSITIONS = [
       'Graduate, Undergraduate, or pursuing a degree in any discipline.',
       'Excellent communication skills in Hindi and basic English.',
       'Strong interpersonal and persuasion skills.',
-      'Comfortable making high-volume outbound calls.',
+      'Comfortable making high volume outbound calls.',
       'Basic knowledge of MS Excel and CRM tools is an advantage.',
       'Interest in Sales, Real Estate, and Customer Relations.',
     ],
     desiredSkills: [
       'Positive attitude and willingness to learn.',
-      'Strong negotiation and follow-up abilities.',
-      'Self-motivated and target-oriented mindset.',
+      'Strong negotiation and follow up abilities.',
+      'Self motivated and target oriented mindset.',
     ],
     benefits: [
-      'Hands-on experience in Real Estate Sales.',
+      'Hands on experience in Real Estate Sales.',
       'Exposure to lead generation and customer relationship management.',
-      'Opportunity for a full-time role based on performance.',
+      'Opportunity for a full time role based on performance.',
       'Sales and communication skill development.',
       'Incentives for achieving targets.',
     ],
@@ -50,31 +50,31 @@ const OPEN_POSITIONS = [
     title: 'Sales Runner',
     location: 'Gurgaon',
     industry: 'Real Estate',
-    type: 'Full-Time',
-    about: 'We are looking for an energetic and proactive Sales Runner to support our sales team by managing site visits, client coordination, lead follow-ups, and on-ground sales activities. The ideal candidate should have excellent communication skills, a customer-focused approach, and the ability to work in a fast-paced environment.',
+    type: 'Full Time',
+    about: 'We are looking for an energetic and proactive Sales Runner to support our sales team by managing site visits, client coordination, lead follow ups, and on ground sales activities. The ideal candidate should have excellent communication skills, a customer focused approach, and the ability to work in a fast paced environment.',
     responsibilities: [
       'Coordinate and schedule client site visits.',
       'Accompany clients during property visits and provide basic project information.',
-      'Assist the sales team in lead management and follow-ups.',
+      'Assist the sales team in lead management and follow ups.',
       'Maintain accurate records of customer interactions and visit reports.',
       'Coordinate with internal teams to ensure smooth client servicing.',
       'Support sales executives in documentation and booking processes.',
-      'Conduct regular follow-ups with prospective customers.',
+      'Conduct regular follow ups with prospective customers.',
       'Ensure timely sharing of project updates, offers, and inventory availability with clients.',
       'Assist in organizing sales events, open houses, and promotional activities.',
       'Collect market feedback and competitor insights.',
     ],
     requirements: [
       'Graduate in any discipline.',
-      '0–2 years of experience in sales, customer service, or real estate (Freshers can apply).',
+      '0 to 2 years of experience in sales, customer service, or real estate (Freshers can apply).',
       'Good communication and interpersonal skills.',
-      'Presentable personality with a customer-centric attitude.',
+      'Presentable personality with a customer centric attitude.',
       'Basic knowledge of MS Office and CRM tools is preferred.',
       'Willingness to travel for site visits and client meetings.',
       'Valid driving license is an added advantage.',
     ],
     desiredSkills: [
-      'Strong follow-up and coordination abilities.',
+      'Strong follow up and coordination abilities.',
       'Positive attitude and eagerness to learn.',
       'Ability to work under targets and deadlines.',
       'Team player with excellent organizational skills.',
@@ -85,7 +85,7 @@ const OPEN_POSITIONS = [
       'Training and Development Support',
       'Dynamic and Professional Work Environment',
     ],
-    mustHave: '2-Wheeler Driving Licence and Bike',
+    mustHave: '2 Wheeler Driving Licence and Bike',
     skills: 'Inventory Sourcing',
     gender: '',
     stipend: '',
@@ -112,7 +112,7 @@ const Careers: React.FC = () => {
             <h3 className="text-xl font-serif text-white">Why Join LSR?</h3>
             <ul className="space-y-2 text-gray-400">
               <li>• Mentorship from industry veterans</li>
-              <li>• Access to high-quality HNI inventory</li>
+              <li>• Access to high quality HNI inventory</li>
               <li>• Professional, corporate culture</li>
               <li>• Competitive compensation structures</li>
             </ul>

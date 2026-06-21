@@ -10,9 +10,7 @@ const About: React.FC = () => {
           <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Who We Are</h4>
           <h1 className="text-5xl font-serif mb-8">Bridging Institutional Expertise & Individual Investment</h1>
           <p className="text-xl text-gray-400 font-light leading-relaxed">
-            LSR Realty is the investment advisory arm of LSR Group. We are built on the belief that Indian real estate 
-            deserves a structured, research-backed, and transparent approach.
-          </p>
+            LSR Realty is the investment advisory arm of LSR Group. We are built on the belief that Indian real estate deserves a structured, research backed, and transparent approach.</p>
         </div>
       </section>
 
@@ -28,13 +26,9 @@ const About: React.FC = () => {
         <div className="flex flex-col justify-center">
           <h2 className="text-3xl font-serif mb-6">The LSR Story</h2>
           <p className="text-gray-400 mb-6 leading-relaxed">
-            Beginning with bespoke builder-floor development in 2020, LSR Group quickly recognized a gap in the market: 
-            High Net Worth Individuals lacked the data-driven advisory services available to institutional investors.
-          </p>
+            Beginning with bespoke builder floor development in 2020, LSR Group quickly recognized a gap in the market: High Net Worth Individuals lacked the data driven advisory services available to institutional investors.</p>
           <p className="text-gray-400 mb-8 leading-relaxed">
-            Founded by an Ivy League alumni with deep operational experience at Hines (New York), LSR Realty brings global best practices 
-            to the Gurgaon micro-market.
-          </p>
+            Founded by an Ivy League alumni with deep operational experience at Hines (New York), LSR Realty brings global best practices to the Gurgaon micro market.</p>
           
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
@@ -43,7 +37,7 @@ const About: React.FC = () => {
                </div>
                <div>
                  <h4 className="text-white font-serif text-lg">Cornell University</h4>
-                 <p className="text-sm text-gray-500">Master's in Real Estate - Anchoring our analytical approach.</p>
+                 <p className="text-sm text-gray-500">Master's in Real Estate, Anchoring our analytical approach.</p>
                </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -68,9 +62,7 @@ const About: React.FC = () => {
              "Guided by the wisdom of 40+ years in real estate leadership."
            </blockquote>
            <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
-             The company is strategically guided by <strong>Mr. Devinder Singh</strong>, CEO & MD of DLF Ltd. 
-             With over 40 years of leadership, he has been instrumental in Gurgaon's early growth—contributing to critical infrastructure including roads, metro developments, and landscaping. His legacy provides the moral and strategic compass for our fiduciary standards.
-           </p>
+             The company is strategically guided by <strong>Mr. Devinder Singh</strong>, CEO & MD of DLF Ltd. With over 40 years of leadership, he has been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping. His legacy provides the moral and strategic compass for our fiduciary standards.</p>
         </div>
       </section>
       
