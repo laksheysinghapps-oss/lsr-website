@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import { X } from 'lucide-react';
 
 const PAGE_TITLE = 'Gurugram Sector Maps — Golf Course Road, Sohna Road, MG Road & DLF Cybercity | LSR Realty';
-const PAGE_DESCRIPTION = 'Official DTCP & HSVP approved layout maps for Gurugram\'s key micro-markets — Sectors 58 to 103, Golf Course Road, MG Road, Sohna Road and DLF Phase 2/Cybercity — with live inventory access from LSR Realty.';
+const PAGE_DESCRIPTION = 'Official DTCP & HSVP approved layout maps for Gurugram\'s key micro markets — Sectors 58 to 103, Golf Course Road, MG Road, Sohna Road and DLF Phase 2/Cybercity — with live inventory access from LSR Realty.';
 
 const Maps: React.FC = () => {
   const [inventorySector, setInventorySector] = useState<string | null>(null);
@@ -49,7 +49,7 @@ const Maps: React.FC = () => {
           onClose={() => setInventorySector(null)}
           title="Request Inventory"
           subtitle="Share your details and our team will share live inventory and pricing for this location."
-          source={`Sector Map Inventory - ${inventorySector}`}
+          source={`Sector Map Inventory: ${inventorySector}`}
           successMessage="Our team will share the available inventory with you shortly."
           buttonLabel="Request Inventory"
         />
@@ -93,10 +93,10 @@ const Maps: React.FC = () => {
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
         <h1 className="text-4xl md:text-5xl font-serif mb-6">Gurugram Sector Maps</h1>
         <p className="text-gray-400 text-lg max-w-2xl mb-4 leading-relaxed">
-          Official DTCP and HSVP approved layout maps for the Gurugram micro-markets where LSR Realty has active projects and inventory — including Golf Course Road, MG Road, Sohna Road, DLF Phase 2/Cybercity and Sectors 58 through 103.
+          Official DTCP and HSVP approved layout maps for the Gurugram micro markets where LSR Realty has active projects and inventory — including Golf Course Road, MG Road, Sohna Road, DLF Phase 2/Cybercity and Sectors 58 through 103.
         </p>
         <p className="text-gray-500 text-sm max-w-2xl mb-16 leading-relaxed">
-          Source: Town &amp; Country Planning Department, Haryana (tcpharyana.gov.in) and Haryana Shehri Vikas Pradhikaran (hsvphry.org.in) — official, government-approved layout and sectoral plans.
+          Source: Town &amp; Country Planning Department, Haryana (tcpharyana.gov.in) and Haryana Shehri Vikas Pradhikaran (hsvphry.org.in) — official, government approved layout and sectoral plans.
         </p>
 
         <section aria-label="Gurugram sector and location maps" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
