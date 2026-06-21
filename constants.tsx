@@ -1172,7 +1172,8 @@ export const SERVICES: Service[] = [
   {
     title: 'Office Leasing',
     description: 'Curated Grade A office space across Gurgaon, matched to your team size, budget, and growth plans.',
-    icon: <Briefcase className="w-8 h-8 text-lsr-gold" />
+    icon: <Briefcase className="w-8 h-8 text-lsr-gold" />,
+    link: '/projects/leasing/commercial/corporate'
   },
   {
     title: 'Retail Leasing',

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { SERVICES } from '../constants';
 import BrochureModal from '../components/BrochureModal';
 import SEO from '../components/SEO';
 
 const Services: React.FC = () => {
+  const navigate = useNavigate();
   const [showNRIModal, setShowNRIModal] = useState(false);
 
   return (
@@ -36,7 +38,11 @@ const Services: React.FC = () => {
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {SERVICES.map((service, idx) => (
-            <div key={idx} className="p-10 border border-white/10 hover:border-lsr-gold group transition-all duration-300 bg-lsr-charcoal/50">
+            <div
+              key={idx}
+              onClick={service.link ? () => navigate(service.link!) : undefined}
+              className={`p-10 border border-white/10 hover:border-lsr-gold group transition-all duration-300 bg-lsr-charcoal/50 ${service.link ? 'cursor-pointer' : ''}`}
+            >
               <div className="mb-6 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
               <h3 className="text-2xl font-serif text-white mb-4">{service.title}</h3>
               <p className="text-gray-400 leading-relaxed mb-6">{service.description}</p>
