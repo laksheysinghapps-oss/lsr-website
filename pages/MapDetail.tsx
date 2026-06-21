@@ -84,8 +84,8 @@ const MapDetail: React.FC = () => {
             <img
               src={sector.zoom}
               alt={`${sector.name} Gurugram, full resolution official approved layout map, source: ${sector.source}`}
-              className="w-full h-auto cursor-zoom-in"
-              style={{ maxWidth: isZoomed ? 'none' : '100%' }}
+              className={isZoomed ? 'h-auto cursor-zoom-out' : 'w-full h-auto cursor-zoom-in'}
+              style={{ width: isZoomed ? '220%' : '100%', maxWidth: 'none' }}
               onClick={() => setIsZoomed(z => !z)}
             />
           </div>
