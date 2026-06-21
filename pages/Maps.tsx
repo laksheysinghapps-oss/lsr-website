@@ -4,7 +4,7 @@ import { SECTOR_MAPS } from '../constants';
 import SEO from '../components/SEO';
 
 const PAGE_TITLE = 'Gurgaon Manesar Master Plan 2031 & Sector Maps | LSR Realty';
-const PAGE_DESCRIPTION = 'View the official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, along with approved sector layout maps for Golf Course Road, Sohna Road, MG Road, DLF Phase 2/Cybercity and Sectors 58 to 103, with live inventory access from LSR Realty.';
+const PAGE_DESCRIPTION = 'View the official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, for Gurugram\'s key micro markets, with live inventory access from LSR Realty.';
 
 const structuredData = [
   {
@@ -54,7 +54,7 @@ const Maps: React.FC = () => {
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
         <h1 className="text-4xl md:text-5xl font-serif mb-6">Sector Maps and Master Plan 2031</h1>
         <p className="text-gray-400 text-lg max-w-2xl mb-4 leading-relaxed">
-          Explore approved sector layout maps and the Gurgaon Manesar Master Plan 2031 for Gurugram's key micro markets, including Golf Course Road, MG Road, Sohna Road, DLF Phase 2/Cybercity and Sectors 58 through 103.</p>
+          Explore the official Gurgaon Manesar Master Plan 2031 for Gurugram's key micro markets, with more location specific sector maps coming soon.</p>
         <p className="text-gray-500 text-sm max-w-2xl mb-16 leading-relaxed">
           Source: Town &amp; Country Planning Department, Haryana (tcpharyana.gov.in) and Haryana Shehri Vikas Pradhikaran (hsvphry.org.in), official, government approved layout and sectoral plans.</p>
 
