@@ -11,8 +11,8 @@ const Services: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
       <SEO
-        title="Our Services | Investment Advisory, Portfolio Structuring & NRI Services | LSR Realty"
-        description="Explore LSR Realty's institutional grade real estate services in Gurgaon: investment advisory, portfolio structuring, market intelligence, resale advisory and a dedicated NRI investment desk."
+        title="Real Estate Advisory Services in Gurgaon | LSR Realty"
+        description="LSR Realty offers institutional grade real estate advisory in Gurgaon: office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services."
         path="/services"
       />
       {showNRIModal && (
@@ -29,7 +29,7 @@ const Services: React.FC = () => {
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Expertise</h4>
-          <h1 className="text-5xl font-serif mb-6">Comprehensive Advisory Services</h1>
+          <h1 className="text-5xl font-serif mb-6">Real Estate Advisory Services in Gurgaon</h1>
           <p className="text-xl text-gray-400 font-light">
             We support HNIs, NRIs, and Family Offices throughout the entire real estate investment lifecycle.
           </p>

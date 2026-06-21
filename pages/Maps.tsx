@@ -95,6 +95,21 @@ const Maps: React.FC = () => {
             </article>
           ))}
         </section>
+
+        <section className="max-w-3xl pb-24 border-t border-white/10 pt-16">
+          <h2 className="text-2xl md:text-3xl font-serif mb-6">Understanding the Gurgaon Manesar Master Plan 2031</h2>
+          <div className="text-gray-400 leading-relaxed space-y-5">
+            <p>
+              The Gurgaon Manesar Master Plan 2031, also referred to as the Gurugram Manesar Master Plan 2031, is the official long term development blueprint prepared by the Town and Country Planning Department, Haryana for the Gurugram Manesar Urban Complex. It defines how land across the city is zoned and used: residential sectors, commercial belts, industrial estates, institutional land, green belts and the road and transport network that connects them. For anyone evaluating a property purchase in Gurugram, this is the single most important document to consult, since it shows not just what exists today but what is planned for the surrounding area over the coming years.
+            </p>
+            <p>
+              Each numbered sector on the master plan, from the older HUDA sectors near MG Road to the newer sectors along Dwarka Expressway and Southern Peripheral Road, has a defined land use category and a sectoral plan that governs plot sizes, road widths and permitted development. Investors typically use the master plan to check three things before committing capital: confirmed road connectivity (including the 24 metre and 90 metre wide roads marked on the plan), the proposed metro route extension, and whether a sector is zoned for the use they intend, whether that is residential, commercial office space or retail.
+            </p>
+            <p>
+              At LSR Realty, we reference the Gurgaon Manesar Master Plan 2031 alongside our own market research when advising clients on residential, office and retail leasing opportunities across Gurugram. Whether you are looking at established corridors like Golf Course Road and MG Road or emerging sectors along Dwarka Expressway and Sohna Road, understanding where a project sits within this master plan helps clarify its long term appreciation potential, connectivity, and the civic infrastructure that is either already in place or formally planned. We are progressively adding location specific sector maps to this page so that every corridor we cover comes with a clear, official reference alongside our advisory.
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   );
