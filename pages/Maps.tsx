@@ -1,14 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { SECTOR_MAPS } from '../constants';
 import BrochureModal from '../components/BrochureModal';
+import SEO from '../components/SEO';
 import { X } from 'lucide-react';
+
+const PAGE_TITLE = 'Gurugram Sector Maps — Golf Course Road, Sohna Road, MG Road & DLF Cybercity | LSR Realty';
+const PAGE_DESCRIPTION = 'Official DTCP & HSVP approved layout maps for Gurugram\'s key micro-markets — Sectors 58 to 103, Golf Course Road, MG Road, Sohna Road and DLF Phase 2/Cybercity — with live inventory access from LSR Realty.';
 
 const Maps: React.FC = () => {
   const [inventorySector, setInventorySector] = useState<string | null>(null);
   const [zoomedSector, setZoomedSector] = useState<{ name: string; zoom: string; source: string } | null>(null);
 
+  const structuredData = useMemo(() => [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Gurugram Sector Maps', item: 'https://lsrrealty.com/maps' },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Gurugram Sector Maps',
+      description: PAGE_DESCRIPTION,
+      itemListElement: SECTOR_MAPS.map((sector, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'Place',
+          name: sector.name,
+          description: sector.description,
+          image: `https://lsrrealty.com${sector.zoom}`,
+          address: { '@type': 'PostalAddress', addressLocality: sector.name, addressRegion: 'Haryana', addressCountry: 'IN' },
+        },
+      })),
+    },
+  ], []);
+
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+      <SEO title={PAGE_TITLE} description={PAGE_DESCRIPTION} path="/maps" structuredData={structuredData} />
+
       {inventorySector && (
         <BrochureModal
           projectName={inventorySector}
@@ -42,7 +76,7 @@ const Maps: React.FC = () => {
             <div className="overflow-auto max-h-[75vh] bg-black" style={{ touchAction: 'pinch-zoom' }}>
               <img
                 src={zoomedSector.zoom}
-                alt={zoomedSector.name}
+                alt={`${zoomedSector.name} Gurugram — full resolution official approved layout map, source: ${zoomedSector.source}`}
                 className="w-full h-auto cursor-zoom-in"
                 onClick={e => {
                   const img = e.currentTarget;
@@ -56,26 +90,36 @@ const Maps: React.FC = () => {
       )}
 
       <div className="max-w-7xl mx-auto px-6">
-        <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</h4>
+        <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
         <h1 className="text-4xl md:text-5xl font-serif mb-6">Gurugram Sector Maps</h1>
         <p className="text-gray-400 text-lg max-w-2xl mb-4 leading-relaxed">
-          Official DTCP/HUDA approved layout maps for the Gurugram micro-markets where LSR Realty has active projects and inventory.
+          Official DTCP and HSVP approved layout maps for the Gurugram micro-markets where LSR Realty has active projects and inventory — including Golf Course Road, MG Road, Sohna Road, DLF Phase 2/Cybercity and Sectors 58 through 103.
         </p>
         <p className="text-gray-500 text-sm max-w-2xl mb-16 leading-relaxed">
-          Source: Town &amp; Country Planning Department, Haryana (tcpharyana.gov.in) — official, government-approved Sectoral Plans.
+          Source: Town &amp; Country Planning Department, Haryana (tcpharyana.gov.in) and Haryana Shehri Vikas Pradhikaran (hsvphry.org.in) — official, government-approved layout and sectoral plans.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
+        <section aria-label="Gurugram sector and location maps" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
           {SECTOR_MAPS.map(sector => (
-            <div key={sector.id} className="border border-white/10 hover:border-lsr-gold/40 transition-all duration-300 flex flex-col">
-              <div
+            <article key={sector.id} className="border border-white/10 hover:border-lsr-gold/40 transition-all duration-300 flex flex-col">
+              <button
+                type="button"
+                aria-label={`View full ${sector.name} layout map`}
                 className="relative h-48 overflow-hidden cursor-pointer"
                 onClick={() => setZoomedSector({ name: sector.name, zoom: sector.zoom, source: sector.source })}
               >
-                <img src={sector.thumb} alt={sector.name} className="w-full h-full object-cover" loading="lazy" />
-              </div>
+                <img
+                  src={sector.thumb}
+                  alt={`${sector.name} Gurugram — official approved layout map`}
+                  title={`${sector.name} approved layout map`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={1000}
+                  height={496}
+                />
+              </button>
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-lg font-serif text-white mb-2">{sector.name}</h3>
+                <h2 className="text-lg font-serif text-white mb-2">{sector.name}</h2>
                 <p className="text-gray-400 text-sm leading-relaxed flex-grow mb-6">{sector.description}</p>
                 <div className="flex gap-3">
                   <button
@@ -92,9 +136,9 @@ const Maps: React.FC = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
-        </div>
+        </section>
       </div>
     </div>
   );
