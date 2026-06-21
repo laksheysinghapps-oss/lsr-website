@@ -52,7 +52,7 @@ const Maps: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6">
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
-        <h1 className="text-4xl md:text-5xl font-serif mb-6">Gurgaon Manesar Master Plan 2031 & Sector Maps</h1>
+        <h1 className="text-4xl md:text-5xl font-serif mb-6">Sector Maps and Master Plan 2031</h1>
         <p className="text-gray-400 text-lg max-w-2xl mb-4 leading-relaxed">
           Explore the official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, along with approved layout maps for the Gurugram micro markets where LSR Realty has active projects and inventory, including Golf Course Road, MG Road, Sohna Road, DLF Phase 2/Cybercity and Sectors 58 through 103.</p>
         <p className="text-gray-500 text-sm max-w-2xl mb-16 leading-relaxed">
