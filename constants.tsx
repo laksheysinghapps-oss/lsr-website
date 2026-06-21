@@ -1178,7 +1178,8 @@ export const SERVICES: Service[] = [
   {
     title: 'Retail Leasing',
     description: 'High street and mall retail leasing in prime catchments, backed by footfall and trade mix analysis.',
-    icon: <Store className="w-8 h-8 text-lsr-gold" />
+    icon: <Store className="w-8 h-8 text-lsr-gold" />,
+    link: '/projects/leasing/commercial/retail'
   },
   {
     title: 'Investment Advisory',
