@@ -564,7 +564,7 @@ export const PROJECTS: Project[] = [
     location: 'MG Road (Mehrauli Gurgaon Road), Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
-    sizeRange: 'Multiple Sizes Available',
+    sizeRange: '3,850 to 12,372 Sq. Ft.',
     possessionDate: 'Ready to Occupy',
     type: 'Grade A Commercial Office Complex',
     status: 'Available for Lease',
@@ -580,9 +580,8 @@ export const PROJECTS: Project[] = [
     highlights: ['Vatika Group\'s First Commercial Landmark on MG Road', '3 Blocks to 1,71,000 Sq. Ft. Total Built Up', 'Efficient Floor Plates: 10,000 to 17,000 Sq. Ft.', 'Wide Retail Frontage, Prominent MG Road Address', 'Consistently High Occupancy, Proven Demand', 'Architectural Finesse & High Maintenance Standards'],
     amenities: ['High Speed Elevators', 'Wide Retail Frontage', 'Three Block Configuration', 'Professional Building Services', 'High Maintenance Standards', '24x7 Security', 'Fire Fighting System'],
     unitMix: [
-      { type: 'Small Office Suite', size: '10,000 Sq. Ft. onwards', price: 'Price on Request' },
-      { type: 'Full Floor', size: 'Up to 17,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Multi Floor Block', size: 'Multiple Sizes', price: 'Price on Request' }
+      { type: 'Bare Shell Office', size: '3,850 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Bare Shell Office', size: '12,372 Sq. Ft.', price: 'Price on Request' }
     ],
     locationAdvantage: ['MG Road (Mehrauli Gurgaon Road), Gurugram', 'Prime Central Gurugram Location', 'Excellent Connectivity to Delhi & NCR', 'Proximity to Retail, Hospitality & Business Hubs']
   },
