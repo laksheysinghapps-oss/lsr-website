@@ -70,6 +70,8 @@ const Maps: React.FC = () => {
                   loading="lazy"
                   width={1000}
                   height={496}
+                  draggable={false}
+                  onContextMenu={e => e.preventDefault()}
                 />
               </Link>
               <div className="p-6 flex flex-col flex-grow">

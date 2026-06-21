@@ -87,6 +87,8 @@ const MapDetail: React.FC = () => {
               className={isZoomed ? 'h-auto cursor-zoom-out' : 'w-full h-auto cursor-zoom-in'}
               style={{ width: isZoomed ? '220%' : '100%', maxWidth: 'none' }}
               onClick={() => setIsZoomed(z => !z)}
+              draggable={false}
+              onContextMenu={e => e.preventDefault()}
             />
           </div>
           <p className="text-center text-xs text-gray-500 py-2 border-t border-white/10">Click the image to zoom in / out</p>
