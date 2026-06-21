@@ -94,8 +94,8 @@ const PrivacyPolicy: React.FC = () => {
             <h2 className="text-2xl font-serif gold-gradient-text mb-4">Contact Us</h2>
             <p>
               If you have any query, requests or grievance with regard to this Privacy Policy, please contact us at{' '}
-              <a href="tel:+918448660818" className="text-lsr-gold hover:text-white transition-colors">
-                +91 844 866 0818
+              <a href="tel:+918448660019" className="text-lsr-gold hover:text-white transition-colors">
+                +91 844 866 0019
               </a>{' '}
               or email us at{' '}
               <a href="mailto:marketing@lsrrealty.com" className="text-lsr-gold hover:text-white transition-colors">

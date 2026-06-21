@@ -277,7 +277,7 @@ const Home: React.FC = () => {
             Leverage our institutional expertise to build a high performing real estate portfolio.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <a 
-              href="https://wa.me/918448660818" 
+              href="https://wa.me/918448660019"
               target="_blank" 
               rel="noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-opacity-90 transition-colors flex items-center justify-center gap-2"
