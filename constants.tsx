@@ -564,7 +564,7 @@ export const PROJECTS: Project[] = [
     location: 'MG Road (Mehrauli Gurgaon Road), Gurugram',
     priceRange: 'Price on Request',
     pricePerSqFt: 'Price on Request',
-    sizeRange: '3,850 to 12,372 Sq. Ft.',
+    sizeRange: '3,850 and 12,372 Sq. Ft.',
     possessionDate: 'Ready to Occupy',
     type: 'Grade A Commercial Office Complex',
     status: 'Available for Lease',
