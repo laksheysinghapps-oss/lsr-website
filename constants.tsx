@@ -1,6 +1,6 @@
 import React from 'react';
 import { Project, Service, TeamMember, Insight, NavItem } from './types';
-import { LineChart, PieChart, Shield, Globe, Landmark, TrendingUp, Search, Briefcase, BarChart3, Handshake } from 'lucide-react';
+import { LineChart, PieChart, Shield, Globe, Landmark, TrendingUp, Search, Briefcase, BarChart3, Handshake, Store } from 'lucide-react';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -1188,6 +1188,21 @@ export const SERVICES: Service[] = [
     title: 'NRI Services',
     description: 'End to end management for global investors, from acquisition to exit.',
     icon: <Globe className="w-8 h-8 text-lsr-gold" />
+  },
+  {
+    title: 'Office Leasing',
+    description: 'Curated Grade A office space across Gurgaon, matched to your team size, budget, and growth plans.',
+    icon: <Briefcase className="w-8 h-8 text-lsr-gold" />
+  },
+  {
+    title: 'Retail Leasing',
+    description: 'High street and mall retail leasing in prime catchments, backed by footfall and trade mix analysis.',
+    icon: <Store className="w-8 h-8 text-lsr-gold" />
+  },
+  {
+    title: 'Inventory Sourcing',
+    description: 'Off market and pre launch inventory sourced through our developer and broker network.',
+    icon: <Search className="w-8 h-8 text-lsr-gold" />
   },
 ];
 
