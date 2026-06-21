@@ -1,102 +1,54 @@
-import React, { useState, useMemo } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { SECTOR_MAPS } from '../constants';
-import BrochureModal from '../components/BrochureModal';
 import SEO from '../components/SEO';
-import { X } from 'lucide-react';
 
 const PAGE_TITLE = 'Gurgaon Manesar Master Plan 2031 & Sector Maps | LSR Realty';
 const PAGE_DESCRIPTION = 'View the official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, along with approved sector layout maps for Golf Course Road, Sohna Road, MG Road, DLF Phase 2/Cybercity and Sectors 58 to 103, with live inventory access from LSR Realty.';
 
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Gurgaon Manesar Master Plan 2031 & Sector Maps', item: 'https://lsrrealty.com/maps' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Map',
+    name: 'Gurgaon Manesar Master Plan 2031',
+    alternateName: 'Gurugram Manesar Master Plan 2031',
+    description: 'The official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, for the Gurugram Manesar Urban Complex, showing all sectors, land use zones, transport corridors and the proposed metro route.',
+    image: `https://lsrrealty.com${SECTOR_MAPS[0].zoom}`,
+    url: 'https://lsrrealty.com/maps',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Gurgaon Manesar Master Plan 2031 & Sector Maps',
+    description: PAGE_DESCRIPTION,
+    itemListElement: SECTOR_MAPS.map((sector, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://lsrrealty.com/maps/${sector.id}`,
+      item: {
+        '@type': 'Place',
+        name: sector.name,
+        description: sector.description,
+        image: `https://lsrrealty.com${sector.zoom}`,
+        url: `https://lsrrealty.com/maps/${sector.id}`,
+        address: { '@type': 'PostalAddress', addressLocality: sector.name, addressRegion: 'Haryana', addressCountry: 'IN' },
+      },
+    })),
+  },
+];
+
 const Maps: React.FC = () => {
-  const [inventorySector, setInventorySector] = useState<string | null>(null);
-  const [zoomedSector, setZoomedSector] = useState<{ name: string; zoom: string; source: string } | null>(null);
-
-  const structuredData = useMemo(() => [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Gurgaon Manesar Master Plan 2031 & Sector Maps', item: 'https://lsrrealty.com/maps' },
-      ],
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Map',
-      name: 'Gurgaon Manesar Master Plan 2031',
-      alternateName: 'Gurugram Manesar Master Plan 2031',
-      description: 'The official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, for the Gurugram Manesar Urban Complex, showing all sectors, land use zones, transport corridors and the proposed metro route.',
-      image: `https://lsrrealty.com${SECTOR_MAPS[0].zoom}`,
-      url: 'https://lsrrealty.com/maps',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'ItemList',
-      name: 'Gurgaon Manesar Master Plan 2031 & Sector Maps',
-      description: PAGE_DESCRIPTION,
-      itemListElement: SECTOR_MAPS.map((sector, i) => ({
-        '@type': 'ListItem',
-        position: i + 1,
-        item: {
-          '@type': 'Place',
-          name: sector.name,
-          description: sector.description,
-          image: `https://lsrrealty.com${sector.zoom}`,
-          address: { '@type': 'PostalAddress', addressLocality: sector.name, addressRegion: 'Haryana', addressCountry: 'IN' },
-        },
-      })),
-    },
-  ], []);
-
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO title={PAGE_TITLE} description={PAGE_DESCRIPTION} path="/maps" structuredData={structuredData} />
-
-      {inventorySector && (
-        <BrochureModal
-          projectName={inventorySector}
-          onClose={() => setInventorySector(null)}
-          title="Request Inventory"
-          subtitle="Share your details and our team will share live inventory and pricing for this location."
-          source={`Sector Map Inventory: ${inventorySector}`}
-          successMessage="Our team will share the available inventory with you shortly."
-          buttonLabel="Request Inventory"
-        />
-      )}
-
-      {zoomedSector && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm px-4 py-8"
-          onClick={() => setZoomedSector(null)}
-        >
-          <div
-            className="bg-lsr-charcoal border border-white/10 w-full max-w-5xl overflow-hidden"
-            onClick={e => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
-              <div>
-                <h3 className="text-lg font-serif text-white">{zoomedSector.name}</h3>
-                <p className="text-xs text-gray-500 mt-1">{zoomedSector.source}</p>
-              </div>
-              <button onClick={() => setZoomedSector(null)} className="text-gray-500 hover:text-white transition-colors">
-                <X size={20} />
-              </button>
-            </div>
-            <div className="overflow-auto max-h-[75vh] bg-black" style={{ touchAction: 'pinch-zoom' }}>
-              <img
-                src={zoomedSector.zoom}
-                alt={`${zoomedSector.name} Gurugram, full resolution official approved layout map, source: ${zoomedSector.source}`}
-                className="w-full h-auto cursor-zoom-in"
-                onClick={e => {
-                  const img = e.currentTarget;
-                  img.style.maxWidth = img.style.maxWidth === 'none' ? '100%' : 'none';
-                }}
-              />
-            </div>
-            <p className="text-center text-xs text-gray-500 py-2 border-t border-white/10">Click the image to zoom in / out</p>
-          </div>
-        </div>
-      )}
 
       <div className="max-w-7xl mx-auto px-6">
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
@@ -109,12 +61,7 @@ const Maps: React.FC = () => {
         <section aria-label="Gurugram sector and location maps" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
           {SECTOR_MAPS.map(sector => (
             <article key={sector.id} className="border border-white/10 hover:border-lsr-gold/40 transition-all duration-300 flex flex-col">
-              <button
-                type="button"
-                aria-label={`View full ${sector.name} layout map`}
-                className="relative h-48 overflow-hidden cursor-pointer"
-                onClick={() => setZoomedSector({ name: sector.name, zoom: sector.zoom, source: sector.source })}
-              >
+              <Link to={`/maps/${sector.id}`} aria-label={`View full ${sector.name} layout map`} className="relative h-48 overflow-hidden block">
                 <img
                   src={sector.thumb}
                   alt={`${sector.name} Gurugram, official approved layout map`}
@@ -124,23 +71,25 @@ const Maps: React.FC = () => {
                   width={1000}
                   height={496}
                 />
-              </button>
+              </Link>
               <div className="p-6 flex flex-col flex-grow">
-                <h2 className="text-lg font-sans font-semibold text-white mb-2">{sector.name}</h2>
+                <h2 className="text-lg font-sans font-semibold text-white mb-2">
+                  <Link to={`/maps/${sector.id}`} className="hover:text-lsr-gold transition-colors">{sector.name}</Link>
+                </h2>
                 <p className="text-gray-400 text-sm leading-relaxed flex-grow mb-6">{sector.description}</p>
                 <div className="flex gap-3">
-                  <button
-                    onClick={() => setZoomedSector({ name: sector.name, zoom: sector.zoom, source: sector.source })}
-                    className="flex-1 border border-lsr-gold gold-gradient-text px-4 py-2 text-xs uppercase tracking-widest font-bold hover:border-white transition-colors"
+                  <Link
+                    to={`/maps/${sector.id}`}
+                    className="flex-1 border border-lsr-gold gold-gradient-text px-4 py-2 text-xs uppercase tracking-widest font-bold hover:border-white transition-colors text-center"
                   >
                     View Sector Map
-                  </button>
-                  <button
-                    onClick={() => setInventorySector(sector.name)}
-                    className="flex-1 bg-lsr-gold text-black px-4 py-2 text-xs uppercase tracking-widest font-bold hover:opacity-90 transition-opacity"
+                  </Link>
+                  <Link
+                    to={`/maps/${sector.id}`}
+                    className="flex-1 bg-lsr-gold text-black px-4 py-2 text-xs uppercase tracking-widest font-bold hover:opacity-90 transition-opacity text-center"
                   >
                     View Inventory
-                  </button>
+                  </Link>
                 </div>
               </div>
             </article>
