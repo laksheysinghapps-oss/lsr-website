@@ -181,7 +181,7 @@ const Projects: React.FC = () => {
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs uppercase tracking-widest text-gray-500 w-20 shrink-0">Segment</span>
               <button onClick={() => navigate(`/projects/${categorySlug}/commercial`)} className={filterButtonClass(segment === 'All')}>All</button>
-              <button onClick={() => navigate(`/projects/${categorySlug}/commercial/corporate`)} className={filterButtonClass(segment === 'Corporate')}>Corporate</button>
+              <button onClick={() => navigate(`/projects/${categorySlug}/commercial/corporate`)} className={filterButtonClass(segment === 'Corporate')}>Office</button>
               <button onClick={() => navigate(`/projects/${categorySlug}/commercial/retail`)} className={filterButtonClass(segment === 'Retail')}>Retail</button>
             </div>
           )}
