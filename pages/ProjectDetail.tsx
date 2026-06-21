@@ -5,6 +5,7 @@ import { Project } from '../types';
 import { Check, Download, MapPin, Loader2 } from 'lucide-react';
 import { submitLead } from '../lib/submitLead';
 import BrochureModal from '../components/BrochureModal';
+import SEO from '../components/SEO';
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -47,7 +48,7 @@ const ProjectDetail: React.FC = () => {
     const result = await submitLead({
       ...formData,
       project: project?.name || 'Unknown Project',
-      source: `Project Page - ${project?.name}`
+      source: `Project Page: ${project?.name}`
     });
 
     setIsSubmitting(false);
@@ -69,8 +70,21 @@ const ProjectDetail: React.FC = () => {
   const isCommercial = project.subCategory === 'Commercial';
   const isRetail = project.segment === 'Retail';
 
+  const pageTitle = `${project.name} | ${project.location} | LSR Realty`;
+  const pageDescription = `${project.name} in ${project.location}, ${project.priceRange}. ${project.type}. ${project.status}. View inventory, pricing and floor plans with LSR Realty.`;
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Place',
+    name: project.name,
+    description: project.description,
+    image: `https://lsrrealty.com${project.image}`,
+    url: `https://lsrrealty.com/projects/${project.id}`,
+    address: { '@type': 'PostalAddress', addressLocality: project.location, addressRegion: 'Haryana', addressCountry: 'IN' },
+  };
+
   return (
     <div className="bg-black text-white pt-20">
+      <SEO title={pageTitle} description={pageDescription} path={`/projects/${project.id}`} structuredData={structuredData} />
       {showBrochureModal && (
         <BrochureModal projectName={project.name} onClose={() => setShowBrochureModal(false)} />
       )}

@@ -4,6 +4,19 @@ import { MapPin, ArrowUpRight, X, Search } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 import { Project } from '../types';
+import SEO from '../components/SEO';
+
+const projectsStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'LSR Realty Projects',
+  itemListElement: PROJECTS.map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: `https://lsrrealty.com/projects/${p.id}`,
+    item: { '@type': 'Place', name: p.name, image: `https://lsrrealty.com${p.image}`, address: { '@type': 'PostalAddress', addressLocality: p.location, addressRegion: 'Haryana', addressCountry: 'IN' } },
+  })),
+};
 
 const Projects: React.FC = () => {
   const location = useLocation();
@@ -73,6 +86,12 @@ const Projects: React.FC = () => {
 
   return (
     <div className="bg-black text-white min-h-screen">
+      <SEO
+        title="Projects | Gurgaon Investment & Leasing Opportunities | LSR Realty"
+        description="Browse LSR Realty's curated portfolio of Gurgaon real estate investment and leasing opportunities, vetted for legal compliance, construction quality and appreciation potential."
+        path="/projects"
+        structuredData={projectsStructuredData}
+      />
       {/* Category Selection Modal */}
       {modalProject && (
         <div

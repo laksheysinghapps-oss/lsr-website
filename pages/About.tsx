@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Award, Briefcase, BookOpen } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
+      <SEO
+        title="About LSR Realty | Institutional Real Estate Advisory in Gurgaon"
+        description="LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade, research backed, and transparent real estate advisory to HNI and NRI investors in Gurgaon."
+        path="/about"
+      />
       {/* Header */}
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center">

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { SERVICES } from '../constants';
 import BrochureModal from '../components/BrochureModal';
+import SEO from '../components/SEO';
 
 const Services: React.FC = () => {
   const [showNRIModal, setShowNRIModal] = useState(false);
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
+      <SEO
+        title="Our Services | Investment Advisory, Portfolio Structuring & NRI Services | LSR Realty"
+        description="Explore LSR Realty's institutional grade real estate services in Gurgaon: investment advisory, portfolio structuring, market intelligence, resale advisory and a dedicated NRI investment desk."
+        path="/services"
+      />
       {showNRIModal && (
         <BrochureModal
           projectName="NRI Investment Desk"

@@ -4,6 +4,7 @@ import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
 import { LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Line } from 'recharts';
 import { ArrowRight, Shield, Globe, TrendingUp, UserCheck, Handshake, Award } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const mockChartData = [
   { name: '2020', ggn: 100, blr: 80 },
@@ -18,6 +19,11 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-black text-white">
+      <SEO
+        title="LSR Realty | Gurgaon's Premier Real Estate Investment Advisory"
+        description="LSR Realty is Gurgaon's premier institutional-grade real estate investment advisory, helping HNI and NRI investors access data-driven, transparent property investments in DLF, Emaar, and other top-tier developments."
+        path="/"
+      />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-0">
         <div className="absolute inset-0 z-0">

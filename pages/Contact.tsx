@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Check, Loader2 } from 'lucide-react';
 import { submitLead } from '../lib/submitLead';
+import SEO from '../components/SEO';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -54,6 +55,11 @@ const Contact: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+      <SEO
+        title="Contact LSR Realty | Gurgaon Real Estate Investment Advisory"
+        description="Get in touch with LSR Realty for a 15 minute consultation on real estate investment advisory, portfolio structuring or NRI services in Gurgaon."
+        path="/contact"
+      />
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
 
         {/* Contact Info */}

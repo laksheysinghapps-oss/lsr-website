@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 const PrivacyPolicy: React.FC = () => {
   useEffect(() => {
@@ -7,6 +8,11 @@ const PrivacyPolicy: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+      <SEO
+        title="Privacy Policy | LSR Realty"
+        description="Read LSR Realty's privacy policy covering how we collect, use and protect your personal information."
+        path="/privacy-policy"
+      />
       <section className="py-20 max-w-4xl mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-serif mb-8 text-center">Privacy Policy</h1>
         

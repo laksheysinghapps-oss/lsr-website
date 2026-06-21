@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CareerModal from '../components/CareerModal';
+import SEO from '../components/SEO';
 import { MapPin, Briefcase, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
 const OPEN_POSITIONS = [
@@ -92,12 +93,37 @@ const OPEN_POSITIONS = [
   },
 ];
 
+const careersStructuredData = OPEN_POSITIONS.map(job => ({
+  '@context': 'https://schema.org',
+  '@type': 'JobPosting',
+  title: job.title,
+  description: job.about,
+  datePosted: '2026-01-01',
+  employmentType: job.type.toLowerCase().includes('intern') ? 'INTERN' : 'FULL_TIME',
+  hiringOrganization: {
+    '@type': 'Organization',
+    name: 'LSR Realty',
+    sameAs: 'https://lsrrealty.com/',
+    logo: 'https://lsrrealty.com/images/Logo2.png',
+  },
+  jobLocation: {
+    '@type': 'Place',
+    address: { '@type': 'PostalAddress', addressLocality: 'Gurugram', addressRegion: 'Haryana', addressCountry: 'IN' },
+  },
+}));
+
 const Careers: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [expandedJob, setExpandedJob] = useState<number | null>(null);
 
   return (
     <div className="bg-black text-white pt-20 md:pt-24 min-h-screen">
+      <SEO
+        title="Careers at LSR Realty | Join Gurgaon's Premier Real Estate Advisory"
+        description="Explore open roles at LSR Realty, including Sales Runner and Sales Telecaller Intern positions in Gurgaon. Build a career in institutional-grade real estate investment advisory."
+        path="/careers"
+        structuredData={careersStructuredData}
+      />
       {showModal && <CareerModal onClose={() => setShowModal(false)} />}
 
       {/* Hero */}
