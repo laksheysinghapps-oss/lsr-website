@@ -1170,6 +1170,16 @@ export const PROJECTS: Project[] = [
 
 export const SERVICES: Service[] = [
   {
+    title: 'Office Leasing',
+    description: 'Curated Grade A office space across Gurgaon, matched to your team size, budget, and growth plans.',
+    icon: <Briefcase className="w-8 h-8 text-lsr-gold" />
+  },
+  {
+    title: 'Retail Leasing',
+    description: 'High street and mall retail leasing in prime catchments, backed by footfall and trade mix analysis.',
+    icon: <Store className="w-8 h-8 text-lsr-gold" />
+  },
+  {
     title: 'Investment Advisory',
     description: 'Bespoke portfolio strategies based on risk appetite and IRR targets.',
     icon: <TrendingUp className="w-8 h-8 text-lsr-gold" />
@@ -1188,16 +1198,6 @@ export const SERVICES: Service[] = [
     title: 'NRI Services',
     description: 'End to end management for global investors, from acquisition to exit.',
     icon: <Globe className="w-8 h-8 text-lsr-gold" />
-  },
-  {
-    title: 'Office Leasing',
-    description: 'Curated Grade A office space across Gurgaon, matched to your team size, budget, and growth plans.',
-    icon: <Briefcase className="w-8 h-8 text-lsr-gold" />
-  },
-  {
-    title: 'Retail Leasing',
-    description: 'High street and mall retail leasing in prime catchments, backed by footfall and trade mix analysis.',
-    icon: <Store className="w-8 h-8 text-lsr-gold" />
   },
   {
     title: 'Inventory Sourcing',
