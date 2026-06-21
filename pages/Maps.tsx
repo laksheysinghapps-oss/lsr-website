@@ -119,7 +119,7 @@ const Maps: React.FC = () => {
                 />
               </button>
               <div className="p-6 flex flex-col flex-grow">
-                <h2 className="text-lg font-serif text-white mb-2">{sector.name}</h2>
+                <h2 className="text-lg font-sans font-semibold text-white mb-2">{sector.name}</h2>
                 <p className="text-gray-400 text-sm leading-relaxed flex-grow mb-6">{sector.description}</p>
                 <div className="flex gap-3">
                   <button
