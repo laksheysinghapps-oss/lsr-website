@@ -26,8 +26,16 @@ const Services: React.FC = () => {
           buttonLabel="Submit Enquiry"
         />
       )}
-      <section className="py-20 bg-lsr-charcoal border-b border-white/5">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative py-32 overflow-hidden border-b border-white/5">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+            alt="Advisory consultation"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h4 className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Our Expertise</h4>
           <h1 className="text-5xl font-serif mb-6">Real Estate Advisory Services in Gurgaon</h1>
           <p className="text-xl text-gray-400 font-light">
