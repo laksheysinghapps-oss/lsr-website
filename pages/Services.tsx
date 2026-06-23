@@ -77,7 +77,7 @@ const Services: React.FC = () => {
             </div>
             <div>
                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop" alt="Global Connectivity" className="w-full h-auto grayscale" />
-                  className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+  
             </div>
          </div>
       </section>
