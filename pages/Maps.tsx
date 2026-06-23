@@ -64,7 +64,7 @@ const Maps: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
         <h1 className="text-4xl md:text-5xl font-serif mb-4">Gurgaon Sector Maps &amp; Location Investment Guide</h1>
-        <h2 className="text-lg text-gray-400 font-normal max-w-2xl mb-10 leading-relaxed">
+        <h2 className="text-lg text-gray-400 font-normal mb-10 leading-relaxed">
           Explore Gurugram's key micro markets, sector layouts, connectivity and investment potential in one place, including the Gurgaon Manesar Master Plan 2031.
         </h2>
 
