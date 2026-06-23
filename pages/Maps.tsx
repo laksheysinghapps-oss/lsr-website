@@ -69,7 +69,7 @@ const Maps: React.FC = () => {
         </h2>
 
         <div className="text-gray-400 leading-relaxed space-y-5 mb-4">
-          <p className={!isContentExpanded ? 'line-clamp-3' : ''}>
+          <p className={!isContentExpanded ? 'line-clamp-1' : ''}>
             Gurgaon, officially Gurugram, is divided into more than a hundred numbered sectors spread across a handful of major investment corridors: Golf Course Road, Golf Course Extension Road, Dwarka Expressway, Sohna Road, NH 48 and Southern Peripheral Road (SPR). Understanding where a sector sits within this structure, and what is happening there in terms of infrastructure, connectivity and inventory, is the first step to making an informed property decision.
           </p>
           {isContentExpanded && (
