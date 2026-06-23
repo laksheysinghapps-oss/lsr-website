@@ -106,6 +106,9 @@ const Maps: React.FC = () => {
         <section aria-label="Gurugram sector and location maps" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
           {SECTOR_MAPS.map(sector => (
             <article key={sector.id} className="border border-white/10 hover:border-lsr-gold/40 transition-all duration-300 flex flex-col">
+              <h2 className="text-lg font-sans font-semibold text-white px-6 pt-6 pb-3">
+                <Link to={`/maps/${sector.id}`} className="hover:text-lsr-gold transition-colors">{sector.name}</Link>
+              </h2>
               <Link to={`/maps/${sector.id}`} aria-label={`View full ${sector.name} layout map`} className="relative h-48 overflow-hidden block">
                 <img
                   src={sector.thumb}
@@ -120,9 +123,6 @@ const Maps: React.FC = () => {
                 />
               </Link>
               <div className="p-6 flex flex-col flex-grow">
-                <h2 className="text-lg font-sans font-semibold text-white mb-2">
-                  <Link to={`/maps/${sector.id}`} className="hover:text-lsr-gold transition-colors">{sector.name}</Link>
-                </h2>
                 <p className="text-gray-400 text-sm leading-relaxed flex-grow mb-6">{sector.description}</p>
                 <div className="flex gap-3">
                   <Link
