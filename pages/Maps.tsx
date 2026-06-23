@@ -97,7 +97,7 @@ const Maps: React.FC = () => {
         </div>
         <button
           onClick={() => setIsContentExpanded(v => !v)}
-          className="flex items-center gap-1.5 gold-gradient-text text-sm font-semibold mb-16 hover:opacity-80 transition-opacity"
+          className="flex items-center gap-1.5 gold-gradient-text text-sm font-semibold mb-8 hover:opacity-80 transition-opacity"
         >
           {isContentExpanded ? 'Show Less' : 'Read More'}
           {isContentExpanded ? <ChevronUp size={16} className="text-lsr-gold" /> : <ChevronDown size={16} className="text-lsr-gold" />}
