@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SECTOR_MAPS } from '../constants';
 import SEO from '../components/SEO';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const PAGE_TITLE = 'Gurgaon Sector Maps & Master Plan 2031 | LSR Realty';
 const PAGE_DESCRIPTION = 'Explore sector wise maps of Gurugram, DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View location guides and connect with LSR Realty on available inventory.';
@@ -54,6 +55,8 @@ const structuredData = [
 ];
 
 const Maps: React.FC = () => {
+  const [isContentExpanded, setIsContentExpanded] = useState(false);
+
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO title={PAGE_TITLE} description={PAGE_DESCRIPTION} path="/maps" structuredData={structuredData} />
@@ -65,29 +68,40 @@ const Maps: React.FC = () => {
           Explore Gurugram's key micro markets, sector layouts, connectivity and investment potential in one place, including the Gurgaon Manesar Master Plan 2031.
         </h2>
 
-        <div className="text-gray-400 leading-relaxed space-y-5 mb-16">
-          <p>
+        <div className="text-gray-400 leading-relaxed space-y-5 mb-4">
+          <p className={!isContentExpanded ? 'line-clamp-3' : ''}>
             Gurgaon, officially Gurugram, is divided into more than a hundred numbered sectors spread across a handful of major investment corridors: Golf Course Road, Golf Course Extension Road, Dwarka Expressway, Sohna Road, NH 48 and Southern Peripheral Road (SPR). Understanding where a sector sits within this structure, and what is happening there in terms of infrastructure, connectivity and inventory, is the first step to making an informed property decision.
           </p>
-          <p>
-            The Gurgaon Manesar Master Plan 2031 is the official blueprint that governs land use across the entire Gurugram Manesar Urban Complex. It defines which areas are zoned residential, commercial or industrial, and maps the road network and planned metro extensions that influence how a location develops over time. We cover the full master plan, along with location specific sector maps, below.
-          </p>
-          <p>
-            <strong className="text-white">Golf Course Road</strong> is home to Gurgaon's oldest established luxury enclaves, including the DLF Phase I to V developments and Sushant Lok, and remains the city's most aspirational residential address.
-          </p>
-          <p>
-            <strong className="text-white">Golf Course Extension Road and Southern Peripheral Road</strong> form a newer, fast developing corridor with premium high rise residential and commercial projects from several major developers, sitting between the older Golf Course Road sectors and the Dwarka Expressway belt.
-          </p>
-          <p>
-            <strong className="text-white">Dwarka Expressway</strong>, formally the Northern Peripheral Road, became a fully operational expressway in 2024 and anchors New Gurgaon's growth, with several major developers active across its adjoining sectors.
-          </p>
-          <p>
-            <strong className="text-white">Sohna Road</strong> is an established residential belt with a strong school catchment and a long track record of end user and rental demand.
-          </p>
-          <p>
-            Use the sector maps below to identify the right location for your investment. Our advisors are available to walk you through micro market analysis for any sector, get in touch to book a consultation.
-          </p>
+          {isContentExpanded && (
+            <>
+              <p>
+                The Gurgaon Manesar Master Plan 2031 is the official blueprint that governs land use across the entire Gurugram Manesar Urban Complex. It defines which areas are zoned residential, commercial or industrial, and maps the road network and planned metro extensions that influence how a location develops over time. We cover the full master plan, along with location specific sector maps, below.
+              </p>
+              <p>
+                <strong className="text-white">Golf Course Road</strong> is home to Gurgaon's oldest established luxury enclaves, including the DLF Phase I to V developments and Sushant Lok, and remains the city's most aspirational residential address.
+              </p>
+              <p>
+                <strong className="text-white">Golf Course Extension Road and Southern Peripheral Road</strong> form a newer, fast developing corridor with premium high rise residential and commercial projects from several major developers, sitting between the older Golf Course Road sectors and the Dwarka Expressway belt.
+              </p>
+              <p>
+                <strong className="text-white">Dwarka Expressway</strong>, formally the Northern Peripheral Road, became a fully operational expressway in 2024 and anchors New Gurgaon's growth, with several major developers active across its adjoining sectors.
+              </p>
+              <p>
+                <strong className="text-white">Sohna Road</strong> is an established residential belt with a strong school catchment and a long track record of end user and rental demand.
+              </p>
+              <p>
+                Use the sector maps below to identify the right location for your investment. Our advisors are available to walk you through micro market analysis for any sector, get in touch to book a consultation.
+              </p>
+            </>
+          )}
         </div>
+        <button
+          onClick={() => setIsContentExpanded(v => !v)}
+          className="flex items-center gap-1.5 gold-gradient-text text-sm font-semibold mb-16 hover:opacity-80 transition-opacity"
+        >
+          {isContentExpanded ? 'Show Less' : 'Read More'}
+          {isContentExpanded ? <ChevronUp size={16} className="text-lsr-gold" /> : <ChevronDown size={16} className="text-lsr-gold" />}
+        </button>
 
         <section aria-label="Gurugram sector and location maps" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
           {SECTOR_MAPS.map(sector => (
