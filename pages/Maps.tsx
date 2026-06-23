@@ -65,7 +65,7 @@ const Maps: React.FC = () => {
           Explore Gurugram's key micro markets, sector layouts, connectivity and investment potential in one place, including the Gurgaon Manesar Master Plan 2031.
         </h2>
 
-        <div className="max-w-3xl text-gray-400 leading-relaxed space-y-5 mb-16">
+        <div className="text-gray-400 leading-relaxed space-y-5 mb-16">
           <p>
             Gurgaon, officially Gurugram, is divided into more than a hundred numbered sectors spread across a handful of major investment corridors: Golf Course Road, Golf Course Extension Road, Dwarka Expressway, Sohna Road, NH 48 and Southern Peripheral Road (SPR). Understanding where a sector sits within this structure, and what is happening there in terms of infrastructure, connectivity and inventory, is the first step to making an informed property decision.
           </p>
@@ -86,9 +86,6 @@ const Maps: React.FC = () => {
           </p>
           <p>
             Use the sector maps below to identify the right location for your investment. Our advisors are available to walk you through micro market analysis for any sector, get in touch to book a consultation.
-          </p>
-          <p className="text-gray-500 text-sm">
-            Source: Town &amp; Country Planning Department, Haryana and Haryana Urban Development Authority (HUDA), official, government approved layout and sectoral plans.
           </p>
         </div>
 
