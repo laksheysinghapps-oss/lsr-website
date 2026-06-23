@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { SECTOR_MAPS } from '../constants';
 import SEO from '../components/SEO';
 
-const PAGE_TITLE = 'Gurgaon Manesar Master Plan 2031 & Sector Maps | LSR Realty';
-const PAGE_DESCRIPTION = 'View the official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, for Gurugram\'s key micro markets, with live inventory access from LSR Realty.';
+const PAGE_TITLE = 'Gurgaon Sector Maps & Master Plan 2031 | LSR Realty';
+const PAGE_DESCRIPTION = 'Explore sector wise maps of Gurugram, DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View location guides and connect with LSR Realty on available inventory.';
 
 const structuredData = [
   {
@@ -12,8 +12,16 @@ const structuredData = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Gurgaon Manesar Master Plan 2031 & Sector Maps', item: 'https://lsrrealty.com/maps' },
+      { '@type': 'ListItem', position: 2, name: 'Gurgaon Sector Maps & Master Plan 2031', item: 'https://lsrrealty.com/maps' },
     ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Gurgaon Sector Maps & Location Guide',
+    description: 'Comprehensive sector maps and location guides for all major investment corridors in Gurugram, Haryana, India.',
+    url: 'https://lsrrealty.com/maps',
+    publisher: { '@type': 'RealEstateAgent', name: 'LSR Realty', url: 'https://lsrrealty.com' },
   },
   {
     '@context': 'https://schema.org',
@@ -52,11 +60,37 @@ const Maps: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6">
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
-        <h1 className="text-4xl md:text-5xl font-serif mb-6">Sector Maps and Master Plan 2031</h1>
-        <p className="text-gray-400 text-lg max-w-2xl mb-4 leading-relaxed">
-          Explore the official Gurgaon Manesar Master Plan 2031 along with approved sector layout maps for Old Gurgaon's HUDA sectors, with more locations being added regularly.</p>
-        <p className="text-gray-500 text-sm max-w-2xl mb-16 leading-relaxed">
-          Source: Town &amp; Country Planning Department, Haryana and Haryana Urban Development Authority (HUDA), official, government approved layout and sectoral plans.</p>
+        <h1 className="text-4xl md:text-5xl font-serif mb-4">Gurgaon Sector Maps &amp; Location Investment Guide</h1>
+        <h2 className="text-lg text-gray-400 font-normal max-w-2xl mb-10 leading-relaxed">
+          Explore Gurugram's key micro markets, sector layouts, connectivity and investment potential in one place, including the Gurgaon Manesar Master Plan 2031.
+        </h2>
+
+        <div className="max-w-3xl text-gray-400 leading-relaxed space-y-5 mb-16">
+          <p>
+            Gurgaon, officially Gurugram, is divided into more than a hundred numbered sectors spread across a handful of major investment corridors: Golf Course Road, Golf Course Extension Road, Dwarka Expressway, Sohna Road, NH 48 and Southern Peripheral Road (SPR). Understanding where a sector sits within this structure, and what is happening there in terms of infrastructure, connectivity and inventory, is the first step to making an informed property decision.
+          </p>
+          <p>
+            The Gurgaon Manesar Master Plan 2031 is the official blueprint that governs land use across the entire Gurugram Manesar Urban Complex. It defines which areas are zoned residential, commercial or industrial, and maps the road network and planned metro extensions that influence how a location develops over time. We cover the full master plan, along with location specific sector maps, below.
+          </p>
+          <p>
+            <strong className="text-white">Golf Course Road</strong> is home to Gurgaon's oldest established luxury enclaves, including the DLF Phase I to V developments and Sushant Lok, and remains the city's most aspirational residential address.
+          </p>
+          <p>
+            <strong className="text-white">Golf Course Extension Road and Southern Peripheral Road</strong> form a newer, fast developing corridor with premium high rise residential and commercial projects from several major developers, sitting between the older Golf Course Road sectors and the Dwarka Expressway belt.
+          </p>
+          <p>
+            <strong className="text-white">Dwarka Expressway</strong>, formally the Northern Peripheral Road, became a fully operational expressway in 2024 and anchors New Gurgaon's growth, with several major developers active across its adjoining sectors.
+          </p>
+          <p>
+            <strong className="text-white">Sohna Road</strong> is an established residential belt with a strong school catchment and a long track record of end user and rental demand.
+          </p>
+          <p>
+            Use the sector maps below to identify the right location for your investment. Our advisors are available to walk you through micro market analysis for any sector, get in touch to book a consultation.
+          </p>
+          <p className="text-gray-500 text-sm">
+            Source: Town &amp; Country Planning Department, Haryana and Haryana Urban Development Authority (HUDA), official, government approved layout and sectoral plans.
+          </p>
+        </div>
 
         <section aria-label="Gurugram sector and location maps" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-24">
           {SECTOR_MAPS.map(sector => (
