@@ -145,7 +145,13 @@ const Careers: React.FC = () => {
           </div>
         </div>
         <div className="relative">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" alt="Team" className="w-full h-80 object-cover object-top grayscale" />
+          <img
+            src="/images/careers-team.png"
+            alt="LSR Realty team"
+            className="w-full h-80 object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+            draggable={false}
+            onContextMenu={e => e.preventDefault()}
+          />
         </div>
       </section>
 
