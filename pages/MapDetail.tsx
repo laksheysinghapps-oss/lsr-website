@@ -55,7 +55,7 @@ const MapDetail: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
-      <SEO title={pageTitle} description={pageDescription} path={`/maps/${sector.id}`} structuredData={structuredData} />
+      <SEO title={pageTitle} description={pageDescription} path={`/maps/${sector.id}`} image={`https://lsrrealty.com${sector.zoom}`} structuredData={structuredData} />
 
       {showInventoryModal && (
         <BrochureModal
