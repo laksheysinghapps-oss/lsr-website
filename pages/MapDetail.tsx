@@ -99,7 +99,7 @@ const MapDetail: React.FC = () => {
             onClick={() => setShowInventoryModal(true)}
             className="flex-1 bg-lsr-gold text-black px-6 py-4 text-sm uppercase tracking-widest font-bold hover:opacity-90 transition-opacity"
           >
-            View Inventory in {sector.name}
+            Check Inventory in {sector.name}
           </button>
           <Link
             to="/maps"
