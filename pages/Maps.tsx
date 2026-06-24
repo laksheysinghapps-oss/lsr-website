@@ -127,13 +127,13 @@ const Maps: React.FC = () => {
                 <div className="flex gap-3">
                   <Link
                     to={`/maps/${sector.id}`}
-                    className="flex-1 border border-lsr-gold gold-gradient-text px-4 py-2 text-xs uppercase tracking-widest font-bold hover:border-white transition-colors text-center"
+                    className="flex-1 border border-lsr-gold gold-gradient-text px-3 py-2 text-[10px] uppercase tracking-wide font-bold whitespace-nowrap hover:border-white transition-colors text-center"
                   >
                     View Sector Map
                   </Link>
                   <Link
                     to={`/maps/${sector.id}`}
-                    className="flex-1 bg-lsr-gold text-black px-4 py-2 text-xs uppercase tracking-widest font-bold hover:opacity-90 transition-opacity text-center"
+                    className="flex-1 bg-lsr-gold text-black px-3 py-2 text-[10px] uppercase tracking-wide font-bold whitespace-nowrap hover:opacity-90 transition-opacity text-center"
                   >
                     View Inventory
                   </Link>
