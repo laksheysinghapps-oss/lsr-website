@@ -70,8 +70,16 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-white font-serif text-lg mb-6">Expertise</h3>
           <ul className="space-y-4 text-sm text-gray-400">
-            <li>Investment Advisory</li>
-            <li>Portfolio Structuring</li>
+            <li>
+              <NavLink to="/projects/investment" className="hover:text-lsr-gold transition-colors">
+                Investment Advisory
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects" className="hover:text-lsr-gold transition-colors">
+                Portfolio Structuring
+              </NavLink>
+            </li>
             <li>Market Intelligence</li>
             <li>NRI Services</li>
             <li>Resale Advisory</li>
