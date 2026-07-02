@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project, Service, TeamMember, Insight, NavItem } from './types';
+import { Project, Service, TeamMember, Insight, NavItem, BlogPost } from './types';
 import { LineChart, PieChart, Shield, Globe, Landmark, TrendingUp, Search, Briefcase, BarChart3, Handshake, Store } from 'lucide-react';
 
 export const NAV_ITEMS: NavItem[] = [
@@ -8,6 +8,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Services', path: '/services' },
   { label: 'Projects', path: '/projects' },
   { label: 'Maps', path: '/maps' },
+  { label: 'Blog', path: '/blog' },
   { label: 'Careers', path: '/careers' },
   { label: 'Contact', path: '/contact' },
 ];
@@ -1319,3 +1320,51 @@ export const COMPANY_DETAILS = {
   tagline: "Gurgaon's Premier Real Estate Investment Advisory",
   subTagline: "Data-driven. Transparent. Institutional-quality.",
 };
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    id: 'gurgaon-commercial-market-2025',
+    title: 'Why Gurgaon\'s Commercial Market Is Outperforming in 2025',
+    excerpt: 'Grade A office absorption in Gurugram crossed record levels in the first half of 2025, driven by GCC expansion, flex space demand, and renewed multinational confidence. Here is what the data says for investors.',
+    category: 'Market Intelligence',
+    date: 'June 2025',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    featured: true,
+    published: false,
+    content: `<p>Placeholder content. Update with your article on Gurgaon's commercial market performance in 2025.</p>`,
+  },
+  {
+    id: 'golf-course-extension-road-investor-guide',
+    title: 'Golf Course Extension Road: The Investor\'s Location Guide',
+    excerpt: 'From Sector 55 to Southern Peripheral Road, Golf Course Extension Road has emerged as Gurugram\'s most active premium residential and office corridor. We break down the micro market sector by sector.',
+    category: 'Location Guide',
+    date: 'May 2025',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=2070&auto=format&fit=crop',
+    published: false,
+    content: `<p>Placeholder content. Update with your Golf Course Extension Road location guide.</p>`,
+  },
+  {
+    id: 'nri-real-estate-buying-guide-gurgaon',
+    title: 'NRI Real Estate Buying Guide: Investing in Gurugram From Abroad',
+    excerpt: 'Owning property in India as a Non Resident Indian involves FEMA compliance, repatriation planning, and power of attorney logistics. This guide walks through the complete process for Gurgaon-focused investments.',
+    category: 'NRI Advisory',
+    date: 'April 2025',
+    readTime: '10 min read',
+    image: 'https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=2070&auto=format&fit=crop',
+    published: false,
+    content: `<p>Placeholder content. Update with your NRI buying guide for Gurgaon real estate.</p>`,
+  },
+  {
+    id: 'office-vs-retail-gurgaon-asset-class',
+    title: 'Office vs Retail: Which Asset Class Wins in Gurgaon\'s New Corridors',
+    excerpt: 'As Dwarka Expressway matures and SPR sees fresh leasing activity, the debate between office and retail as an investment asset class is sharper than ever. We compare yields, tenant quality, and exit options.',
+    category: 'Investment Advisory',
+    date: 'March 2025',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070&auto=format&fit=crop',
+    published: false,
+    content: `<p>Placeholder content. Update with your office vs retail asset class comparison for Gurgaon.</p>`,
+  },
+];

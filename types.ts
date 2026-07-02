@@ -55,3 +55,16 @@ export interface NavItem {
   label: string;
   path: string;
 }
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+  content: string;
+  featured?: boolean;
+  published: boolean;
+}
