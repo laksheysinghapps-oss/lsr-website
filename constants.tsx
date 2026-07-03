@@ -1390,7 +1390,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <br>
 <p><strong>Limited land supply pushing values up.</strong> Golf Course Road is largely built out. There isn't much fresh inventory left to launch there. GCER still has room to build, which is exactly why developers keep pouring capital in and why DLF itself has been picking up land parcels along the stretch for future projects. When the market leader starts buying where you're already invested, that's usually a signal worth paying attention to.</p>
 
-<br><br><h2 style="font-size:2.5rem">Conclusion</h2><br>
+<br><br><h2 style="font-size:2.35rem">Conclusion</h2><br>
 
 <p>Golf Course Extension Road isn't chasing Golf Course Road anymore. On the numbers that actually decide where money goes, capital growth, rental yield, new supply, and where the biggest developers are putting their own capital, GCER has already pulled level or moved ahead. The original address still carries the name, and it always will. But a name is not the same as momentum, and momentum is what builds wealth over the next five years, not the last fifteen.</p>
 
