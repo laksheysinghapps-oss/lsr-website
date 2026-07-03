@@ -22,7 +22,7 @@ execSync(
   `"${path.join(root, 'node_modules/.bin/esbuild')}" constants.tsx --bundle --platform=node --format=esm --outfile="${bundlePath}"`,
   { cwd: root, stdio: 'inherit' }
 );
-const { PROJECTS, SECTOR_MAPS } = await import(`${pathToFileURL(bundlePath)}?t=${Date.now()}`);
+const { PROJECTS, SECTOR_MAPS, BLOG_POSTS } = await import(`${pathToFileURL(bundlePath)}?t=${Date.now()}`);
 fs.unlinkSync(bundlePath);
 
 const template = fs.readFileSync(path.join(distDir, 'index.html'), 'utf8');
@@ -54,6 +54,7 @@ function escapeHtml(str) {
 // Static pages — keep these in sync with each page's <SEO title=... description=... /> props.
 const staticRoutes = [
   { route: '/about', title: "About LSR Realty | Institutional Real Estate Advisory in Gurgaon", description: "LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade, research backed, and transparent real estate advisory to HNI and NRI investors in Gurgaon." },
+  { route: '/blog', title: "Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty", description: "Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory." },
   { route: '/services', title: "Real Estate Advisory Services in Gurgaon | LSR Realty", description: "LSR Realty offers institutional grade real estate advisory in Gurgaon: office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services." },
   { route: '/projects', title: "Projects | Gurgaon Investment & Leasing Opportunities | LSR Realty", description: "Browse LSR Realty's curated portfolio of Gurgaon real estate investment and leasing opportunities, vetted for legal compliance, construction quality and appreciation potential." },
   { route: '/maps', title: "Gurgaon Sector Maps & Master Plan 2031 | LSR Realty", description: "Explore sector wise maps of Gurugram, DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View location guides and connect with LSR Realty on available inventory." },
@@ -89,4 +90,15 @@ for (const sector of SECTOR_MAPS) {
   });
 }
 
-console.log(`Prerendered SEO HTML for ${staticRoutes.length + PROJECTS.length + SECTOR_MAPS.length} routes.`);
+// Blog detail pages
+const publishedPosts = BLOG_POSTS.filter(p => p.published);
+for (const post of publishedPosts) {
+  renderRoute({
+    route: `/blog/${post.id}`,
+    title: `${post.title} | LSR Realty — Gurgaon Real Estate Blog`,
+    description: post.excerpt,
+    image: post.image?.startsWith('http') ? post.image : `${SITE_URL}${post.image}`,
+  });
+}
+
+console.log(`Prerendered SEO HTML for ${staticRoutes.length + PROJECTS.length + SECTOR_MAPS.length + publishedPosts.length} routes.`);

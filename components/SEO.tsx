@@ -48,7 +48,8 @@ const SEO: React.FC<SEOProps> = ({
   useEffect(() => {
     const prevTitle = document.title;
     const url = `${SITE_URL}${path}`;
-    const ogImage = image ?? `${SITE_URL}/images/Logo2.png`;
+    const rawImage = image ?? '/images/Logo2.png';
+    const ogImage = rawImage.startsWith('http') ? rawImage : `${SITE_URL}${rawImage}`;
 
     document.title = title;
     upsertMeta('name', 'description', description);
