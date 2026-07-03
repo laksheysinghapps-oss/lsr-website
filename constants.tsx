@@ -1350,10 +1350,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Golf Course Road, the original address, still commands a premium. Plots there go anywhere from <strong>₹3.5 lakh to over ₹5 lakh per square yard</strong>, and it remains a magnet for buyers who want an established, settled luxury pocket. Nothing wrong with that. It earned its name over time.</p>
 
+<br>
 <p><strong>Ready to move in versus under construction: two different rate stories.</strong> Lumping every GCER transaction into one average hides what's actually happening, so it's worth separating the two. Homes that are ready to move in today, like Pioneer Araya, live since 2018, moved from around <strong>₹33,700 per square foot to about ₹34,500 per square foot</strong> through Q3 2025, a steady, single digit climb typical of completed inventory that carries no construction risk. Under construction and newly launched stock told a much sharper story. Pricing across the whole corridor for new launches moved from roughly <strong>₹24,855 per square foot in 2024 to nearly ₹37,899 per square foot in 2025</strong>, according to a joint report from India Sotheby's International Realty and CRE Matrix, the kind of jump you only see when fresh developer entries are actively repricing a corridor.</p>
 
+<br>
 <p><strong>Rental yields have kept pace, not lagged.</strong> Between 2020 and 2022, well before GCER was fashionable, several project pockets along the corridor were already generating rental yields in the <strong>5% to 7% range</strong>, noticeably ahead of Golf Course Road's more typical 3.5% to 4%. That gap has narrowed as GCER prices have caught up, but yields have held up rather than collapsed the way they usually do when capital values spike this fast, and that combination is what actually matters to an investor weighing income against appreciation.</p>
 
+<br>
 <p><strong>Case study: what ₹4.68 crore in 2021 looks like today.</strong> In September 2021, one of our clients purchased a unit at Pioneer Araya, Sector 62, for <strong>₹4.68 crore</strong>. As of mid 2026, comparable units in the same tower are valued at approximately <strong>₹17 crore</strong>. That's a gain of about <strong>₹12.3 crore, 263% in total</strong>, or a compounded annual return of roughly <strong>30% a year</strong> over a holding period of just under five years. For context, that's well above what averages across the corridor show for the same stretch of time, which tells you this specific project and layout outperformed even a genuinely hot market.</p>
 
 <figure class="my-10">
@@ -1361,6 +1364,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <figcaption class="text-center text-xs text-gray-500 mt-3">New luxury developments in Sectors 62 and 63A along GCER are setting new benchmarks for Gurgaon pricing.</figcaption>
 </figure>
 
+<br>
 <p><strong>It's not just Pioneer Araya, and it wouldn't be honest to suggest every GCER buyer did this well.</strong> Sector 62 as a whole has appreciated by roughly <strong>100% over the past five years</strong> according to market trackers, while several newer premium launches across GCER logged appreciation closer to <strong>30% to 35% over just the last two years</strong>. Anarock's H1 2025 NCR snapshot put weighted average capital values across Gurgaon's premium and luxury bands up <strong>8% to 12% year on year</strong> across the corridor. Depending on the specific project, launch timing, and unit type, a buyer entering GCER in the same window as our Pioneer Araya client could reasonably have seen anywhere from roughly 30% to over 100% in appreciation. The numbers above sit at the high end of that range, not the average, and we'd rather be upfront about that than let one exceptional case study imply it's typical.</p>
 
 <p>When both capital value and rental yield are climbing together on the same stretch of road, that's not speculation. That's genuine demand outrunning supply, and it's the single biggest reason investors are shifting their attention toward Golf Course Extension Road Gurgaon over the older, more saturated address next door.</p>
@@ -1369,6 +1373,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>At LSR Realty, we've worked with enough GCER buyers over the last couple of years to know the switch isn't accidental. A few reasons keep coming up.</p>
 
+<br>
 <p><strong>Newer inventory, without the compromise.</strong> Golf Course Road plots were carved out years ago, and a lot of what's available now is either resale or built on layouts that feel dated by 2026 standards. Golf Course Extension Road, by contrast, is where developers like <strong>Sobha, DLF, Oberoi Realty, and Emaar</strong> are putting up their newest, most ambitious luxury residences. Sobha's first GCER launch, Sobha Crescent in Sector 63A, is already RERA registered, with 3 and 4BHK corner residences starting upward of ₹5.75 crore. Oberoi Realty picked GCER for its entire NCR debut: a ₹597 crore, 14.8 acre land acquisition in Sector 58 that's becoming Three Sixty North, with 4 and 5BHK residences starting at ₹19 crore. Emaar and DLF continue building out their own clusters along the same stretch. Think 3 and 4BHK configurations with actual study rooms, WFH nooks, and clubhouse amenities that weren't even a checklist item a decade ago. Sectors 61 through 67 on GCER, especially <strong>Sector 63A and Sector 66</strong>, have become the address of choice for exactly this reason.</p>
 
 <figure class="my-10">
@@ -1376,10 +1381,13 @@ export const BLOG_POSTS: BlogPost[] = [
   <figcaption class="text-center text-xs text-gray-500 mt-3">Improved road and metro connectivity is closing the last gap between GCER and Gurgaon's core.</figcaption>
 </figure>
 
+<br>
 <p><strong>Connectivity that finally matches the name.</strong> GCER links directly to <strong>NH48, Sohna Road, SPR, and Dwarka Expressway</strong>, and from there straight into Cyber City, Udyog Vihar, and onward to Delhi and IGI Airport. The Rapid Metro stop at Sector 55/56 already serves the Golf Course Extension Road belt, and the planned metro extension toward Vatika Chowk is closing one real gap. The piece most connectivity write ups leave out is Greater SPR. Today, getting from IGI Airport to GCER means routing via NH48 and then Golf Course Road before you actually reach the extension, a drive that runs close to 60 minutes even in reasonable traffic. Once Greater SPR's elevated corridor is fully operational, that same run drops to roughly <strong>25 minutes</strong>, slashing the overall time by almost half. For a corridor whose one lingering weakness was last mile connectivity without a car, that's the development that closes it.</p>
 
+<br>
 <p><strong>Social infrastructure that used to be Golf Course Road's exclusive edge.</strong> Schools like <strong>Shriram Millennium, Scottish High, and St. Xavier's</strong>, and hospitals such as <strong>CK Birla and Marengo Asia</strong>, are now firmly part of the Golf Course Extension Road ecosystem. Families relocating from Delhi, or moving back to India as NRIs, no longer have to choose between good schools for their kids and a good property investment in Gurgaon.</p>
 
+<br>
 <p><strong>Limited land supply pushing values up.</strong> Golf Course Road is largely built out. There isn't much fresh inventory left to launch there. GCER still has room to build, which is exactly why developers keep pouring capital in and why DLF itself has been picking up land parcels along the stretch for future projects. When the market leader starts buying where you're already invested, that's usually a signal worth paying attention to.</p>
 
 <br><br><h2>Conclusion</h2><br>
