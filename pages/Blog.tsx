@@ -27,25 +27,6 @@ const structuredData = [
       logo: { '@type': 'ImageObject', url: 'https://lsrrealty.com/images/Logo2.png' },
     },
   },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'LSR Realty',
-    url: 'https://lsrrealty.com',
-    logo: 'https://lsrrealty.com/images/Logo2.png',
-    sameAs: [
-      'https://www.linkedin.com/company/lsr-realty',
-      'https://www.instagram.com/lsrrealty',
-    ],
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '911, Magnum Global Park, Sector 58',
-      addressLocality: 'Gurugram',
-      addressRegion: 'Haryana',
-      postalCode: '122098',
-      addressCountry: 'IN',
-    },
-  },
 ];
 
 const COMING_SOON_TOPICS = [
@@ -71,50 +52,77 @@ const COMING_SOON_TOPICS = [
   },
 ];
 
-const BlogCard: React.FC<{
+interface CardProps {
   id: string;
   title: string;
   excerpt: string;
   category: string;
   date: string;
   image: string;
-  featured?: boolean;
-}> = ({ id, title, excerpt, category, date, image, featured }) => (
-  <article className={`group flex flex-col${featured ? ' md:col-span-2 lg:col-span-3' : ''}`}>
-    {/* Thumbnail */}
-    <Link to={`/blog/${id}`} className="block overflow-hidden rounded-lg mb-4">
+}
+
+const BlogCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, image }) => (
+  <article className="group flex flex-col bg-[#111] rounded-2xl overflow-hidden hover:shadow-[0_8px_40px_rgba(198,166,103,0.12)] transition-shadow duration-300">
+    {/* Image */}
+    <Link to={`/blog/${id}`} className="block overflow-hidden h-52 flex-shrink-0">
       <img
         src={image}
         alt={title}
-        className={`w-full object-cover transition-transform duration-500 group-hover:scale-105${featured ? ' h-72 md:h-[420px]' : ' h-52'}`}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         draggable={false}
         onContextMenu={e => e.preventDefault()}
       />
     </Link>
 
-    {/* Meta */}
-    <p className="text-sm text-gray-400 mb-2">
-      {date} &bull; <span className="text-lsr-gold">{category}</span>
-    </p>
-
-    {/* Title */}
-    <h2 className={`font-serif text-white leading-snug mb-3 group-hover:text-lsr-gold transition-colors${featured ? ' text-2xl md:text-3xl' : ' text-lg'}`}>
-      <Link to={`/blog/${id}`}>{title}</Link>
-    </h2>
-
-    {/* Excerpt */}
-    <p className={`text-gray-400 text-sm leading-relaxed${featured ? ' line-clamp-3 max-w-3xl' : ' line-clamp-2'}`}>
-      {excerpt}
-    </p>
-
-    {featured && (
+    {/* Body */}
+    <div className="flex flex-col flex-1 p-5">
+      <p className="text-xs text-gray-500 mb-3">
+        {date}&nbsp;&nbsp;·&nbsp;&nbsp;<span className="text-lsr-gold">{category}</span>
+      </p>
+      <h2 className="font-serif text-white text-base leading-snug mb-2 group-hover:text-lsr-gold transition-colors duration-200">
+        <Link to={`/blog/${id}`}>{title}</Link>
+      </h2>
+      <p className="text-gray-400 text-sm leading-relaxed line-clamp-3 flex-1">{excerpt}</p>
       <Link
         to={`/blog/${id}`}
-        className="inline-flex items-center gap-2 mt-5 gold-gradient-text text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity"
+        className="inline-flex items-center gap-1 mt-4 text-lsr-gold text-xs font-semibold uppercase tracking-widest hover:opacity-70 transition-opacity"
       >
-        Read Article <ArrowRight size={14} />
+        Read More <ArrowRight size={12} />
       </Link>
-    )}
+    </div>
+  </article>
+);
+
+/* Wider card for the featured post */
+const FeaturedCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, image }) => (
+  <article className="group flex flex-col md:flex-row bg-[#111] rounded-2xl overflow-hidden hover:shadow-[0_8px_40px_rgba(198,166,103,0.12)] transition-shadow duration-300">
+    {/* Image — left half on md+ */}
+    <Link to={`/blog/${id}`} className="block overflow-hidden flex-shrink-0 md:w-1/2 h-56 md:h-auto">
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        draggable={false}
+        onContextMenu={e => e.preventDefault()}
+      />
+    </Link>
+
+    {/* Body — right half */}
+    <div className="flex flex-col justify-center flex-1 p-7 md:p-10">
+      <p className="text-xs text-gray-500 mb-4">
+        {date}&nbsp;&nbsp;·&nbsp;&nbsp;<span className="text-lsr-gold">{category}</span>
+      </p>
+      <h2 className="font-serif text-white text-xl md:text-2xl leading-snug mb-4 group-hover:text-lsr-gold transition-colors duration-200">
+        <Link to={`/blog/${id}`}>{title}</Link>
+      </h2>
+      <p className="text-gray-400 text-sm leading-relaxed line-clamp-4 mb-6">{excerpt}</p>
+      <Link
+        to={`/blog/${id}`}
+        className="inline-flex items-center gap-2 text-lsr-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity"
+      >
+        Read Article <ArrowRight size={13} />
+      </Link>
+    </div>
   </article>
 );
 
@@ -140,7 +148,7 @@ const Blog: React.FC = () => {
         </p>
 
         {publishedPosts.length === 0 ? (
-          /* ── Coming Soon state ── */
+          /* ── Coming Soon ── */
           <div>
             <div className="border border-white/10 bg-lsr-charcoal/30 p-10 md:p-16 text-center mb-16">
               <p className="gold-gradient-text uppercase tracking-[0.2em] text-xs mb-5">Launching Soon</p>
@@ -148,7 +156,7 @@ const Blog: React.FC = () => {
                 Institutional-Grade Insights on Gurgaon Real Estate
               </h2>
               <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-                We are preparing a curated library of market intelligence reports, investment guides, location analyses, and NRI advisory articles on Gurugram real estate. Every piece will be research-backed, data-driven, and relevant to HNI, UHNI, and NRI investors.
+                We are preparing a curated library of market intelligence reports, investment guides, location analyses, and NRI advisory articles on Gurugram real estate.
               </p>
               <p className="text-gray-500 text-sm mb-10">
                 In the meantime, speak directly with our advisors for personalised Gurgaon market intelligence.
@@ -162,9 +170,7 @@ const Blog: React.FC = () => {
             </div>
 
             <h2 className="text-2xl font-serif mb-2 text-white">What to Expect</h2>
-            <p className="text-gray-400 text-sm mb-10">
-              Our blog will cover four core areas of Gurgaon real estate intelligence.
-            </p>
+            <p className="text-gray-400 text-sm mb-10">Our blog will cover four core areas of Gurgaon real estate intelligence.</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
               {COMING_SOON_TOPICS.map(topic => (
                 <div
@@ -194,40 +200,35 @@ const Blog: React.FC = () => {
             </div>
           </div>
         ) : (
-          /* ── Live post listing ── */
-          <div className="space-y-16">
-            {/* Featured post — full width */}
+          /* ── Live posts ── */
+          <div className="space-y-10">
+            {/* Featured — horizontal card */}
             {featured && (
-              <>
-                <BlogCard
-                  id={featured.id}
-                  title={featured.title}
-                  excerpt={featured.excerpt}
-                  category={featured.category}
-                  date={featured.date}
-                  image={featured.image}
-                  featured
-                />
-                {/* Divider before grid */}
-                {rest.length > 0 && (
-                  <div className="border-t border-white/10 pt-14">
-                    <h2 className="text-xl font-serif text-white mb-10">More Insights</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                      {rest.map(post => (
-                        <BlogCard
-                          key={post.id}
-                          id={post.id}
-                          title={post.title}
-                          excerpt={post.excerpt}
-                          category={post.category}
-                          date={post.date}
-                          image={post.image}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </>
+              <FeaturedCard
+                id={featured.id}
+                title={featured.title}
+                excerpt={featured.excerpt}
+                category={featured.category}
+                date={featured.date}
+                image={featured.image}
+              />
+            )}
+
+            {/* Rest — card grid */}
+            {rest.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 pt-4">
+                {rest.map(post => (
+                  <BlogCard
+                    key={post.id}
+                    id={post.id}
+                    title={post.title}
+                    excerpt={post.excerpt}
+                    category={post.category}
+                    date={post.date}
+                    image={post.image}
+                  />
+                ))}
+              </div>
             )}
           </div>
         )}
