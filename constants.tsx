@@ -1333,7 +1333,7 @@ export const BLOG_POSTS: BlogPost[] = [
     featured: true,
     published: true,
     content: `
-<p class="text-lg leading-relaxed">A decade ago, telling a Gurgaon buyer to look at Golf Course Extension Road instead of Golf Course Road got you laughed out of the room. GCER, as most brokers and buyers now call it, was the consolation prize: close enough to the real address to be convenient, cheap enough to justify the distance, but everyone knew it wasn't where the money actually lived.</p>
+<p>A decade ago, telling a Gurgaon buyer to look at Golf Course Extension Road instead of Golf Course Road got you laughed out of the room. GCER, as most brokers and buyers now call it, was the consolation prize: close enough to the real address to be convenient, cheap enough to justify the distance, but everyone knew it wasn't where the money actually lived.</p>
 
 <br>
 <p>That conversation is dead. One of our own clients bought a home on Golf Course Extension Road for <strong>₹4.68 crore in September 2021</strong>. Today, that same property is valued at close to <strong>₹17 crore</strong>, a gain of roughly <strong>263% in under five years</strong>. That's not an outlier we selected for shock value. It's the headline number for a corridor that has quietly outrun its older, more famous neighbor, and we'll break down exactly how later in this piece.</p>
