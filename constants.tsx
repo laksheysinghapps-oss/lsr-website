@@ -8,9 +8,9 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Services', path: '/services' },
   { label: 'Projects', path: '/projects' },
   { label: 'Maps', path: '/maps' },
-  { label: 'Blog', path: '/blog' },
   { label: 'Careers', path: '/careers' },
   { label: 'Contact', path: '/contact' },
+  { label: 'Blog', path: '/blog' },
 ];
 
 export interface SectorMap {
