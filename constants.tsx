@@ -1355,7 +1355,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>Case study: what ₹4.68 crore in 2021 looks like today.</strong> In September 2021, one of our clients purchased a unit at Pioneer Araya, Sector 62, for <strong>₹4.68 crore</strong>. As of mid 2026, comparable units in the same tower are valued at approximately <strong>₹17 crore</strong>. That's a gain of about <strong>₹12.3 crore, 263% in total</strong>, or a compounded annual return of roughly <strong>30% a year</strong> over a holding period of just under five years. For context, that's well above what averages across the corridor show for the same stretch of time, which tells you this specific project and layout outperformed even a genuinely hot market.</p>
 
 <figure class="my-10">
-  <img src="/images/gcr-roundabout.png" alt="Golf Course Road roundabout with Gurugram elevated metro aerial view Gurgaon connectivity" class="w-full rounded-sm object-cover" style="max-height:420px;object-position:center" draggable="false" oncontextmenu="return false" />
+  <img src="/images/gcr-roundabout-2.jpg" alt="Golf Course Road roundabout with Gurugram elevated metro aerial view Gurgaon connectivity" class="w-full rounded-sm object-cover" style="max-height:420px;object-position:center" draggable="false" oncontextmenu="return false" />
   <figcaption class="text-center text-xs text-gray-500 mt-3">Gurugram's rapid metro and expanding road network underpin the investment case for Golf Course Extension Road.</figcaption>
 </figure>
 
