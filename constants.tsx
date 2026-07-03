@@ -1339,11 +1339,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Drive down Golf Course Extension Road today, from where it splits off Golf Course Road near Sector 55/56, all the way through to where it meets Sohna Road and SPR, and you're not looking at a fallback option. You're looking at where Gurgaon real estate money actually wants to be right now.</p>
 
-<figure class="my-10">
-  <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070&auto=format&fit=crop" alt="Modern luxury residential towers on Golf Course Extension Road Gurgaon" class="w-full rounded-sm object-cover" style="max-height:480px;object-position:center" draggable="false" oncontextmenu="return false" />
-  <figcaption class="text-center text-xs text-gray-500 mt-3">Golf Course Extension Road is home to Gurugram's newest generation of luxury residential towers.</figcaption>
-</figure>
-
 <h2>Golf Course Extension Road Property Rates: The Numbers Tell Their Own Story</h2>
 
 <p>Here's the part that changes minds fastest: money.</p>
