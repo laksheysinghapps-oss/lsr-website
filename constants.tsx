@@ -1389,8 +1389,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <p>Golf Course Extension Road isn't chasing Golf Course Road anymore. On the numbers that actually decide where money goes, capital growth, rental yield, new supply, and where the biggest developers are putting their own capital, GCER has already pulled level or moved ahead. The original address still carries the name, and it always will. But a name is not the same as momentum, and momentum is what builds wealth over the next five years, not the last fifteen.</p>
 
+<br>
 <p>Here's what we'd tell you if you were sitting across from us. The ₹4.68 crore to ₹17 crore story is real, but it's the ceiling, not the floor. Most buyers won't triple their money. What they can still get on GCER right now is a rare window: a corridor that's actively repricing upward, land that's genuinely running out, and infrastructure catching up to the address that hasn't been fully paid for in today's rates. Windows like that close quietly, usually right after everyone agrees they were obvious.</p>
 
+<br>
 <p>We could have written this the way most brokers do, with round numbers, zero caveats, and one lucky case study dressed up as the average. We didn't, because the whole point of advice is to be right, not to be loud. If you're weighing a move on Golf Course Extension Road, or anywhere across Gurgaon's luxury corridors, talk to us before you commit. We'll give you the version with the caveats left in. In this market, that's the only version worth acting on.</p>
 `,
   },
