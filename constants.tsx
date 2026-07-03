@@ -1325,7 +1325,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'golf-course-extension-road-vs-golf-course-road-gurgaon',
     title: 'Golf Course Extension Road vs Golf Course Road: Why GCER Is Gurgaon\'s New Golf Course Road',
-    excerpt: 'A decade ago, Golf Course Extension Road was the consolation prize. One client bought there for ₹4.68 crore in 2021 — that same property is valued at ₹17 crore today. We break down exactly why GCER is now Gurgaon\'s real investment address.',
+    excerpt: 'A decade ago, Golf Course Extension Road was the consolation prize. One client bought there for ₹4.68 crore in 2021, that same property is valued at ₹17 crore today. We break down exactly why GCER is now Gurgaon\'s real investment address.',
     category: 'Location Guide',
     date: 'July 2026',
     readTime: '9 min read',
