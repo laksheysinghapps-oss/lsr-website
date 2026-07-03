@@ -132,7 +132,7 @@ const Blog: React.FC = () => {
   const rest = featured ? publishedPosts.filter(p => p.id !== featured.id) : [];
 
   return (
-    <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
+    <div className="bg-black text-white min-h-screen">
       <SEO
         title="Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty"
         description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory."
@@ -140,12 +140,26 @@ const Blog: React.FC = () => {
         structuredData={structuredData}
       />
 
-      <div className="max-w-7xl mx-auto px-6 pb-24">
-        <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Market Intelligence</p>
-        <h1 className="text-4xl md:text-5xl font-serif mb-4">Real Estate Insights &amp; Advisory</h1>
-        <p className="text-lg text-gray-400 font-normal mb-14 max-w-2xl leading-relaxed">
-          Data-driven perspectives on Gurgaon real estate investment, commercial market trends, sector location guides, and NRI advisory from LSR Realty.
-        </p>
+      {/* Hero Banner */}
+      <section className="gold-gradient-border relative h-[75vh] overflow-hidden flex items-center justify-center text-center">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+            alt="LSR Realty Blogs"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+        </div>
+        <div className="relative z-10 px-6 pt-32 md:pt-40">
+          <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Market Intelligence</p>
+          <h1 className="text-4xl md:text-6xl font-serif mb-4">Real Estate Insights &amp; Advisory</h1>
+          <p className="text-gray-400 max-w-2xl text-lg mx-auto">
+            Data-driven perspectives on Gurgaon real estate investment, commercial market trends, sector location guides, and NRI advisory from LSR Realty.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-6 pb-24 pt-16">
 
         {publishedPosts.length === 0 ? (
           /* ── Coming Soon ── */
