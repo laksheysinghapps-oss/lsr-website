@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants';
 import SEO from '../components/SEO';
-import { ArrowRight, Clock, Tag, TrendingUp, MapPin, Globe, BarChart3 } from 'lucide-react';
+import { ArrowRight, TrendingUp, MapPin, Globe, BarChart3 } from 'lucide-react';
 
 const structuredData = [
   {
@@ -70,6 +70,53 @@ const COMING_SOON_TOPICS = [
     description: 'Asset class comparisons, deal structuring frameworks, and portfolio construction guidance for HNI and family office real estate investors.',
   },
 ];
+
+const BlogCard: React.FC<{
+  id: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  image: string;
+  featured?: boolean;
+}> = ({ id, title, excerpt, category, date, image, featured }) => (
+  <article className={`group flex flex-col${featured ? ' md:col-span-2 lg:col-span-3' : ''}`}>
+    {/* Thumbnail */}
+    <Link to={`/blog/${id}`} className="block overflow-hidden rounded-lg mb-4">
+      <img
+        src={image}
+        alt={title}
+        className={`w-full object-cover transition-transform duration-500 group-hover:scale-105${featured ? ' h-72 md:h-[420px]' : ' h-52'}`}
+        draggable={false}
+        onContextMenu={e => e.preventDefault()}
+      />
+    </Link>
+
+    {/* Meta */}
+    <p className="text-sm text-gray-400 mb-2">
+      {date} &bull; <span className="text-lsr-gold">{category}</span>
+    </p>
+
+    {/* Title */}
+    <h2 className={`font-serif text-white leading-snug mb-3 group-hover:text-lsr-gold transition-colors${featured ? ' text-2xl md:text-3xl' : ' text-lg'}`}>
+      <Link to={`/blog/${id}`}>{title}</Link>
+    </h2>
+
+    {/* Excerpt */}
+    <p className={`text-gray-400 text-sm leading-relaxed${featured ? ' line-clamp-3 max-w-3xl' : ' line-clamp-2'}`}>
+      {excerpt}
+    </p>
+
+    {featured && (
+      <Link
+        to={`/blog/${id}`}
+        className="inline-flex items-center gap-2 mt-5 gold-gradient-text text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity"
+      >
+        Read Article <ArrowRight size={14} />
+      </Link>
+    )}
+  </article>
+);
 
 const Blog: React.FC = () => {
   const publishedPosts = BLOG_POSTS.filter(p => p.published);
@@ -148,77 +195,41 @@ const Blog: React.FC = () => {
           </div>
         ) : (
           /* ── Live post listing ── */
-          <>
-            {/* Featured post */}
-            <article className="grid grid-cols-1 lg:grid-cols-2 gap-0 border border-white/10 hover:border-lsr-gold/40 transition-all duration-300 mb-12 group">
-              <Link to={`/blog/${featured.id}`} className="block overflow-hidden">
-                <img
-                  src={featured.image}
-                  alt={featured.title}
-                  className="w-full h-72 lg:h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                  draggable={false}
-                  onContextMenu={e => e.preventDefault()}
+          <div className="space-y-16">
+            {/* Featured post — full width */}
+            {featured && (
+              <>
+                <BlogCard
+                  id={featured.id}
+                  title={featured.title}
+                  excerpt={featured.excerpt}
+                  category={featured.category}
+                  date={featured.date}
+                  image={featured.image}
+                  featured
                 />
-              </Link>
-              <div className="p-8 lg:p-12 flex flex-col justify-center bg-lsr-charcoal/40">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="gold-gradient-text text-xs uppercase tracking-widest font-semibold">{featured.category}</span>
-                  <span className="text-gray-500 text-xs">Featured</span>
-                </div>
-                <h2 className="text-2xl md:text-3xl font-serif text-white mb-4 leading-snug">
-                  <Link to={`/blog/${featured.id}`} className="hover:text-lsr-gold transition-colors">
-                    {featured.title}
-                  </Link>
-                </h2>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">{featured.excerpt}</p>
-                <div className="flex items-center gap-6 text-xs text-gray-500 mb-8">
-                  <span className="flex items-center gap-1.5"><Clock size={12} className="text-lsr-gold" />{featured.readTime}</span>
-                  <span className="flex items-center gap-1.5"><Tag size={12} className="text-lsr-gold" />{featured.date}</span>
-                </div>
-                <Link
-                  to={`/blog/${featured.id}`}
-                  className="inline-flex items-center gap-2 gold-gradient-text text-sm font-bold uppercase tracking-widest hover:opacity-80 transition-opacity"
-                >
-                  Read Article <ArrowRight size={14} />
-                </Link>
-              </div>
-            </article>
-
-            {/* Grid */}
-            {rest.length > 0 && (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {rest.map(post => (
-                  <article
-                    key={post.id}
-                    className="border border-white/10 hover:border-lsr-gold/40 transition-all duration-300 flex flex-col group"
-                  >
-                    <Link to={`/blog/${post.id}`} className="block overflow-hidden h-48">
-                      <img
-                        src={post.image}
-                        alt={post.title}
-                        className="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                        draggable={false}
-                        onContextMenu={e => e.preventDefault()}
-                      />
-                    </Link>
-                    <div className="p-6 flex flex-col flex-grow">
-                      <span className="gold-gradient-text text-xs uppercase tracking-widest font-semibold mb-3">{post.category}</span>
-                      <h2 className="text-lg font-serif text-white mb-3 leading-snug flex-grow">
-                        <Link to={`/blog/${post.id}`} className="hover:text-lsr-gold transition-colors">
-                          {post.title}
-                        </Link>
-                      </h2>
-                      <p className="text-gray-400 text-sm leading-relaxed mb-5 line-clamp-2">{post.excerpt}</p>
-                      <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-white/10">
-                        <span className="flex items-center gap-1.5"><Clock size={11} className="text-lsr-gold" />{post.readTime}</span>
-                        <span>{post.date}</span>
-                      </div>
+                {/* Divider before grid */}
+                {rest.length > 0 && (
+                  <div className="border-t border-white/10 pt-14">
+                    <h2 className="text-xl font-serif text-white mb-10">More Insights</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                      {rest.map(post => (
+                        <BlogCard
+                          key={post.id}
+                          id={post.id}
+                          title={post.title}
+                          excerpt={post.excerpt}
+                          category={post.category}
+                          date={post.date}
+                          image={post.image}
+                        />
+                      ))}
                     </div>
-                  </article>
-                ))}
-              </div>
+                  </div>
+                )}
+              </>
             )}
-          </>
+          </div>
         )}
       </div>
     </div>
