@@ -10,7 +10,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Maps', path: '/maps' },
   { label: 'Careers', path: '/careers' },
   { label: 'Contact', path: '/contact' },
-  { label: 'Blog', path: '/blog' },
+  { label: 'Blogs', path: '/blog' },
 ];
 
 export interface SectorMap {
@@ -1329,7 +1329,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Location Guide',
     date: 'July 2026',
     readTime: '9 min read',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070&auto=format&fit=crop',
+    image: '/images/gcer-8-lane-road.png',
     featured: true,
     published: true,
     content: `
