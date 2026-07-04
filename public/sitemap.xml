@@ -232,8 +232,15 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/gurgaon-manesar-master-plan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lsrrealty.com/gurgaon-master-plan-2041</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-4-7</loc>
@@ -447,8 +454,9 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/imt-manesar</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/malibu-town</loc>
