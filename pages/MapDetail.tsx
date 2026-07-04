@@ -65,6 +65,7 @@ const MapDetail: React.FC = () => {
   if (!sector) return null;
 
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
+  const isImtManesar = sector.id === 'imt-manesar';
   const pageTitle = isMasterPlan
     ? 'Gurgaon Master Plan 2031 – Map, Sectors & Free Download | LSR Realty'
     : `${sector.name} Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`;
@@ -351,7 +352,29 @@ const MapDetail: React.FC = () => {
           </div>
         )}
 
-        {!isMasterPlan && (
+        {isImtManesar && (
+          <div className="max-w-3xl">
+            <section className="border-t border-white/10 pt-16 mt-16">
+              <h2 className={h2Class}>IMT Manesar and the Manesar Master Plan 2031</h2>
+              <div className="space-y-5">
+                <p className={pClass}>
+                  IMT (Industrial Model Township) Manesar is the industrial anchor of the <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031</Link>, the official development plan for the Gurgaon-Manesar Urban Complex notified by DTCP Haryana in November 2012. Development began in 1992, when HSIIDC — initially in collaboration with Japanese entrepreneurs — developed the first 700 hectares that went on to anchor Gurugram's automobile and manufacturing economy.
+                </p>
+                <p className={pClass}>
+                  Under the 2031 plan, 4,613 hectares across the urban complex are reserved for industrial use, concentrated in and around IMT Manesar and targeted at software, automobile and non-polluting hi-tech industries. New industrial areas are planned along the NH-48 expressway adjacent to the township.
+                </p>
+                <p className={pClass}>
+                  Three planned transport corridors define Manesar's investment case: the Kundli-Manesar-Palwal (KMP) Expressway, reserved as a 100 metre road with 100 metre green belts on both sides; the proposed metro extension from HUDA City Centre to Manesar via SPR and NH-48; and the 50 metre Orbital Rail Corridor reservation, now taking shape as the Haryana Orbital Rail Corridor. Together they connect Manesar's industrial base to Delhi, the airport and the wider NCR freight network.
+                </p>
+                <p className={pClass}>
+                  For investors, this combination of reserved industrial land, expressway access and planned mass transit drives demand for industrial plots, warehousing and workforce housing in the sectors surrounding IMT Manesar. At LSR Realty we advise on <Link to="/projects" className="gold-gradient-text hover:underline">opportunities</Link> across this corridor — always read against the official master plan before committing capital.
+                </p>
+              </div>
+            </section>
+          </div>
+        )}
+
+        {!isMasterPlan && !isImtManesar && (
           <section className="max-w-3xl border-t border-white/10 pt-16 mt-16">
             <p className="text-gray-400 leading-relaxed">
               This map is part of the <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031</Link> (Gurugram Manesar Urban Complex), the official development blueprint prepared by the Town and Country Planning Department, Haryana.
