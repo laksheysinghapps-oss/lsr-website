@@ -81,10 +81,10 @@ for (const sector of SECTOR_MAPS) {
   renderRoute({
     route: `/maps/${sector.id}`,
     title: isMasterPlan
-      ? `${sector.name} (Gurugram Manesar Master Plan 2031) | LSR Realty`
+      ? 'Gurgaon Master Plan 2031 – Map, Sectors & Free Download | LSR Realty'
       : `${sector.name} Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`,
     description: isMasterPlan
-      ? `${sector.description} Also known as the Gurugram Manesar Master Plan 2031.`
+      ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map — all sectors, land use zones, metro routes and free download. Updated July 2026.'
       : `${sector.description} View the official, government approved layout map for ${sector.name}, part of the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`,
     image: `${SITE_URL}${sector.zoom}`,
   });
