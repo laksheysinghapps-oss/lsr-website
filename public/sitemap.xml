@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lsrrealty.com/</loc>
     <changefreq>weekly</changefreq>
@@ -235,6 +235,10 @@
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/gurgaon-manesar-master-plan-zoom.jpg</image:loc>
+      <image:title>Gurgaon Master Plan 2031 Map (Gurugram Manesar Urban Complex)</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/gurgaon-master-plan-2041</loc>
@@ -246,382 +250,686 @@
     <loc>https://lsrrealty.com/maps/sector-4-7</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-4-7-zoom.jpg</image:loc>
+      <image:title>Sector 4 7 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-5</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-5-zoom.jpg</image:loc>
+      <image:title>Sector 5 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-7</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-7-zoom.jpg</image:loc>
+      <image:title>Sector 7 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-7-ext</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-7-ext-zoom.jpg</image:loc>
+      <image:title>Sector 7 Ext Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-9</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-9-zoom.jpg</image:loc>
+      <image:title>Sector 9 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-9a</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-9a-zoom.jpg</image:loc>
+      <image:title>Sector 9A Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-10</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-10-zoom.jpg</image:loc>
+      <image:title>Sector 10 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-10a</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-10a-zoom.jpg</image:loc>
+      <image:title>Sector 10A Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-12a</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-12a-zoom.jpg</image:loc>
+      <image:title>Sector 12A Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-14</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-14-zoom.jpg</image:loc>
+      <image:title>Sector 14 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-15-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-15-1-zoom.jpg</image:loc>
+      <image:title>Sector 15 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-15-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-15-2-zoom.jpg</image:loc>
+      <image:title>Sector 15 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-17</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-17-zoom.jpg</image:loc>
+      <image:title>Sector 17 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-21</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-21-zoom.jpg</image:loc>
+      <image:title>Sector 21 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-22</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-22-zoom.jpg</image:loc>
+      <image:title>Sector 22 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-23</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-23-zoom.jpg</image:loc>
+      <image:title>Sector 23 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-23a</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-23a-zoom.jpg</image:loc>
+      <image:title>Sector 23A Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-27-28</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-27-28-zoom.jpg</image:loc>
+      <image:title>Sector 27 28 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-31-new-colony</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-31-new-colony-zoom.jpg</image:loc>
+      <image:title>Sector 31 New Colony Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-32-33-34</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-32-33-34-zoom.jpg</image:loc>
+      <image:title>Sector 32 33 34 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-34</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-34-zoom.jpg</image:loc>
+      <image:title>Sector 34 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-38</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-38-zoom.jpg</image:loc>
+      <image:title>Sector 38 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-39</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-39-zoom.jpg</image:loc>
+      <image:title>Sector 39 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-40</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-40-zoom.jpg</image:loc>
+      <image:title>Sector 40 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-42</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-42-zoom.jpg</image:loc>
+      <image:title>Sector 42 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-43</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-43-zoom.jpg</image:loc>
+      <image:title>Sector 43 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-44</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-44-zoom.jpg</image:loc>
+      <image:title>Sector 44 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-45</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-45-zoom.jpg</image:loc>
+      <image:title>Sector 45 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-47</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-47-zoom.jpg</image:loc>
+      <image:title>Sector 47 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/pace-city-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/pace-city-2-zoom.jpg</image:loc>
+      <image:title>Pace City 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/anant-raj-estate-sector-63</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/anant-raj-estate-sector-63-zoom.jpg</image:loc>
+      <image:title>Anant Raj Estate Sector 63 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/bptp-amstoria-sector-102</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/bptp-amstoria-sector-102-zoom.jpg</image:loc>
+      <image:title>Bptp Amstoria Sector 102 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-alameda</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-alameda-zoom.jpg</image:loc>
+      <image:title>Dlf Alameda Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-garden-city</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-garden-city-zoom.jpg</image:loc>
+      <image:title>Dlf Garden City Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-phase-1-zoom.jpg</image:loc>
+      <image:title>Dlf Phase 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-phase-2-zoom.jpg</image:loc>
+      <image:title>Dlf Phase 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-phase-3-zoom.jpg</image:loc>
+      <image:title>Dlf Phase 3 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-4</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-phase-4-zoom.jpg</image:loc>
+      <image:title>Dlf Phase 4 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-5</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dlf-phase-5-zoom.jpg</image:loc>
+      <image:title>Dlf Phase 5 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dharuhera-industrial-complex</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/dharuhera-industrial-complex-zoom.jpg</image:loc>
+      <image:title>Dharuhera Industrial Complex Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/emerald-floors</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/emerald-floors-zoom.jpg</image:loc>
+      <image:title>Emerald Floors Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/green-wood-city</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/green-wood-city-zoom.jpg</image:loc>
+      <image:title>Green Wood City Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/imt-manesar</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/imt-manesar-zoom.jpg</image:loc>
+      <image:title>Imt Manesar Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/malibu-town</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/malibu-town-zoom.jpg</image:loc>
+      <image:title>Malibu Town Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/mayfield-gardens</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/mayfield-gardens-zoom.jpg</image:loc>
+      <image:title>Mayfield Gardens Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/nirvana-country</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/nirvana-country-zoom.jpg</image:loc>
+      <image:title>Nirvana Country Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/pace-city-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/pace-city-1-zoom.jpg</image:loc>
+      <image:title>Pace City 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar-part-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/palam-vihar-part-1-zoom.jpg</image:loc>
+      <image:title>Palam Vihar Part 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar-part-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/palam-vihar-part-2-zoom.jpg</image:loc>
+      <image:title>Palam Vihar Part 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar-part-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/palam-vihar-part-3-zoom.jpg</image:loc>
+      <image:title>Palam Vihar Part 3 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/palam-vihar-zoom.jpg</image:loc>
+      <image:title>Palam Vihar Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/raheja-aranya-city</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/raheja-aranya-city-zoom.jpg</image:loc>
+      <image:title>Raheja Aranya City Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/rosewood-city</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/rosewood-city-zoom.jpg</image:loc>
+      <image:title>Rosewood City Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sushant-lok-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sushant-lok-2-zoom.jpg</image:loc>
+      <image:title>Sushant Lok 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-1-pataudi-road</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-1-pataudi-road-zoom.jpg</image:loc>
+      <image:title>Sector 1 Pataudi Road Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/ireo-city-sector-60</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/ireo-city-sector-60-zoom.jpg</image:loc>
+      <image:title>Ireo City Sector 60 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/esencia-sector-67</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/esencia-sector-67-zoom.jpg</image:loc>
+      <image:title>Esencia Sector 67 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sohna-master-plan-2031</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sohna-master-plan-2031-zoom.jpg</image:loc>
+      <image:title>Sohna Master Plan 2031 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sushant-lok-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sushant-lok-3-zoom.jpg</image:loc>
+      <image:title>Sushant Lok 3 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/saraswati-vihar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/saraswati-vihar-zoom.jpg</image:loc>
+      <image:title>Saraswati Vihar Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-46</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-46-zoom.jpg</image:loc>
+      <image:title>Sector 46 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-51</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-51-zoom.jpg</image:loc>
+      <image:title>Sector 51 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-52</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-52-zoom.jpg</image:loc>
+      <image:title>Sector 52 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-57</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sector-57-zoom.jpg</image:loc>
+      <image:title>Sector 57 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/south-city-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/south-city-1-zoom.jpg</image:loc>
+      <image:title>South City 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/south-city-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/south-city-2-zoom.jpg</image:loc>
+      <image:title>South City 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sun-city-sector-54</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sun-city-sector-54-zoom.jpg</image:loc>
+      <image:title>Sun City Sector 54 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sushant-lok-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/sushant-lok-1-zoom.jpg</image:loc>
+      <image:title>Sushant Lok 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/uppals-southend</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/uppals-southend-zoom.jpg</image:loc>
+      <image:title>Uppals Southend Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/udyog-vihar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/udyog-vihar-zoom.jpg</image:loc>
+      <image:title>Udyog Vihar Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/vatika-india-next-1-zoom.jpg</image:loc>
+      <image:title>Vatika India Next 1 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/vatika-india-next-2-zoom.jpg</image:loc>
+      <image:title>Vatika India Next 2 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-3</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/vatika-india-next-3-zoom.jpg</image:loc>
+      <image:title>Vatika India Next 3 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-4</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/vatika-india-next-4-zoom.jpg</image:loc>
+      <image:title>Vatika India Next 4 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-5</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/vatika-india-next-5-zoom.jpg</image:loc>
+      <image:title>Vatika India Next 5 Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vipul-world</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/sector-maps/vipul-world-zoom.jpg</image:loc>
+      <image:title>Vipul World Map Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/blog</loc>
