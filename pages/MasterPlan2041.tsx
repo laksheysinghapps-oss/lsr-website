@@ -39,7 +39,7 @@ const MasterPlan2041: React.FC = () => {
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
-      headline: 'Gurgaon Master Plan 2041 – Status, Expected Changes & Timeline',
+      headline: 'Gurgaon Master Plan 2041 - Status, Expected Changes & Timeline',
       description: 'Track the Gurgaon Master Plan 2041 (Gurugram 2041): current status, expected population and infrastructure planning, and how it will differ from Master Plan 2031.',
       author: { '@type': 'Organization', name: 'LSR Realty', url: 'https://lsrrealty.com/' },
       publisher: {
@@ -68,7 +68,7 @@ const MasterPlan2041: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO
-        title="Gurgaon Master Plan 2041 – Status, Changes & Timeline | LSR Realty"
+        title="Gurgaon Master Plan 2041 - Status, Changes & Timeline | LSR Realty"
         description="Gurgaon Master Plan 2041 tracker: current status, expected population growth to 55 lakh, GMDA infrastructure roadmap and how it differs from Master Plan 2031. Updated July 2026."
         path="/gurgaon-master-plan-2041"
         structuredData={structuredData}
@@ -86,10 +86,10 @@ const MasterPlan2041: React.FC = () => {
             <h2 className={h2Class}>Current Status: In Preparation</h2>
             <div className="space-y-5">
               <p className={pClass}>
-                As of July 2026, the statutory Final Development Plan 2041 for the Gurgaon-Manesar Urban Complex has not yet been notified. The <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031</Link> — in force since November 2012 — remains the operative legal document governing land use across Gurugram and Manesar.
+                As of July 2026, the statutory Final Development Plan 2041 for the Gurgaon-Manesar Urban Complex has not yet been notified. The <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031</Link> - in force since November 2012 - remains the operative legal document governing land use across Gurugram and Manesar.
               </p>
               <p className={pClass}>
-                Preparatory work for the 2041 horizon is well underway. The Gurugram Metropolitan Development Authority (GMDA) has prepared a Social Infrastructure Development Plan for the urban complex — drafted with the School of Planning and Architecture and approved by the state government — that maps the city's infrastructure needs through 2041.
+                Preparatory work for the 2041 horizon is well underway. The Gurugram Metropolitan Development Authority (GMDA) has prepared a Social Infrastructure Development Plan for the urban complex - drafted with the School of Planning and Architecture and approved by the state government - that maps the city's infrastructure needs through 2041.
               </p>
             </div>
           </section>
@@ -101,7 +101,7 @@ const MasterPlan2041: React.FC = () => {
                 The GMDA's 2041-horizon studies project Gurugram's population growing to roughly <strong className="text-white">55 lakh by 2041</strong>, up from the 42.5 lakh the 2031 plan was designed for. To support that growth, the infrastructure roadmap envisions around 210 speciality hospitals and diagnostic centres, 250 dispensaries and clinics, four district parks, 26 community parks and over 700 neighbourhood parks, alongside new sports facilities.
               </p>
               <p className={pClass}>
-                For investors, the direction is clear: the next plan will push urbanisation deeper into New Gurgaon, the Dwarka Expressway corridor, Manesar and the peripheral sectors — the same corridors where the 2031 plan reserved land for future growth.
+                For investors, the direction is clear: the next plan will push urbanisation deeper into New Gurgaon, the Dwarka Expressway corridor, Manesar and the peripheral sectors - the same corridors where the 2031 plan reserved land for future growth.
               </p>
             </div>
           </section>
@@ -110,10 +110,10 @@ const MasterPlan2041: React.FC = () => {
             <h2 className={h2Class}>Master Plan 2031 vs 2041: What to Expect</h2>
             <div className="space-y-5">
               <p className={pClass}>
-                Every revision of Gurugram's master plan has followed the same pattern: higher population targets, expanded urbanisable area, and re-planning of land whose earlier designation no longer matched market reality (the 2031 plan itself exists largely because SEZ land from the 2025 plan found no takers). The 2041 plan is expected to continue that pattern — with particular focus on mobility (metro expansion, the Haryana Orbital Rail Corridor), civic infrastructure, and the integration of Manesar's industrial belt with residential growth.
+                Every revision of Gurugram's master plan has followed the same pattern: higher population targets, expanded urbanisable area, and re-planning of land whose earlier designation no longer matched market reality (the 2031 plan itself exists largely because SEZ land from the 2025 plan found no takers). The 2041 plan is expected to continue that pattern - with particular focus on mobility (metro expansion, the Haryana Orbital Rail Corridor), civic infrastructure, and the integration of Manesar's industrial belt with residential growth.
               </p>
               <p className={pClass}>
-                Sector-level details — which villages get new sectors, where land use changes — will only be known when the draft plan is published for public objections and suggestions. That draft publication is the moment property markets react. We will update this page the day it happens.
+                Sector-level details - which villages get new sectors, where land use changes - will only be known when the draft plan is published for public objections and suggestions. That draft publication is the moment property markets react. We will update this page the day it happens.
               </p>
             </div>
           </section>

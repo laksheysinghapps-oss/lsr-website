@@ -16,7 +16,7 @@ const structuredData = [
   {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'LSR Realty — Gurgaon Real Estate Market Intelligence Blog',
+    name: 'LSR Realty | Gurgaon Real Estate Market Intelligence Blog',
     description: 'Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory, and Gurugram sector guides from LSR Realty.',
     url: 'https://lsrrealty.com/blog',
     inLanguage: 'en-IN',
@@ -96,7 +96,7 @@ const BlogCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, ima
 /* Wider card for the featured post */
 const FeaturedCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, image }) => (
   <article className="group flex flex-col md:flex-row bg-[#111] rounded-2xl overflow-hidden hover:shadow-[0_8px_40px_rgba(198,166,103,0.12)] transition-shadow duration-300">
-    {/* Image — left half on md+ */}
+    {/* Image - left half on md+ */}
     <Link to={`/blog/${id}`} className="block overflow-hidden flex-shrink-0 md:w-1/2 h-56 md:h-auto">
       <img
         src={image}
@@ -107,7 +107,7 @@ const FeaturedCard: React.FC<CardProps> = ({ id, title, excerpt, category, date,
       />
     </Link>
 
-    {/* Body — right half */}
+    {/* Body - right half */}
     <div className="flex flex-col justify-center flex-1 p-7 md:p-10">
       <p className="text-xs text-gray-500 mb-4">
         {date}&nbsp;&nbsp;·&nbsp;&nbsp;<span className="text-lsr-gold">{category}</span>
@@ -135,7 +135,7 @@ const Blog: React.FC = () => {
     <div className="bg-black text-white min-h-screen">
       <SEO
         title="Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty"
-        description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory."
+        description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty, an institutional-grade real estate advisory."
         path="/blog"
         structuredData={structuredData}
       />
@@ -216,7 +216,7 @@ const Blog: React.FC = () => {
         ) : (
           /* ── Live posts ── */
           <div className="space-y-10">
-            {/* Featured — horizontal card */}
+            {/* Featured - horizontal card */}
             {featured && (
               <FeaturedCard
                 id={featured.id}
@@ -228,7 +228,7 @@ const Blog: React.FC = () => {
               />
             )}
 
-            {/* Rest — card grid */}
+            {/* Rest - card grid */}
             {rest.length > 0 && (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 pt-4">
                 {rest.map(post => (

@@ -79,7 +79,7 @@ const BlogDetail: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO
-        title={`${post.title} | LSR Realty — Gurgaon Real Estate Blog`}
+        title={`${post.title} | LSR Realty - Gurgaon Real Estate Blog`}
         description={post.excerpt}
         path={`/blog/${post.id}`}
         image={post.image}

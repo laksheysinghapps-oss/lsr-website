@@ -16,7 +16,7 @@ const MASTER_PLAN_FAQS = [
   },
   {
     q: 'Are the Gurgaon Master Plan 2031 and Gurugram Master Plan 2031 different?',
-    a: 'No — the city was renamed Gurugram in 2016, but the plan is the same document: the Gurgaon-Manesar Urban Complex Development Plan 2031 AD.',
+    a: 'No - the city was renamed Gurugram in 2016, but the plan is the same document: the Gurgaon-Manesar Urban Complex Development Plan 2031 AD.',
   },
   {
     q: 'Does the master plan cover Manesar?',
@@ -67,10 +67,10 @@ const MapDetail: React.FC = () => {
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
   const isImtManesar = sector.id === 'imt-manesar';
   const pageTitle = isMasterPlan
-    ? 'Gurgaon Master Plan 2031 – Map, Sectors & Free Download | LSR Realty'
+    ? 'Gurgaon Master Plan 2031 - Map, Sectors & Free Download | LSR Realty'
     : `${sector.name} Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`;
   const pageDescription = isMasterPlan
-    ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map — all sectors, land use zones, metro routes and free download. Updated July 2026.'
+    ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map - all sectors, land use zones, metro routes and free download. Updated July 2026.'
     : `${sector.description} View the official, government approved layout map for ${sector.name}, part of the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`;
 
   const structuredData: object[] = [
@@ -90,7 +90,7 @@ const MapDetail: React.FC = () => {
       {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: 'Gurgaon Master Plan 2031 – Map, Sectors & Free Download',
+        headline: 'Gurgaon Master Plan 2031 - Map, Sectors & Free Download',
         description: pageDescription,
         image: `https://lsrrealty.com${sector.zoom}`,
         author: { '@type': 'Organization', name: 'LSR Realty', url: 'https://lsrrealty.com/' },
@@ -168,7 +168,7 @@ const MapDetail: React.FC = () => {
         </h1>
         <p className="text-gray-400 text-lg max-w-3xl mb-2 leading-relaxed">
           {isMasterPlan
-            ? 'The official Gurgaon Master Plan 2031 — formally the Gurgaon-Manesar Urban Complex Final Development Plan 2031 AD — showing every sector, land use zone, transport corridor and the proposed metro route. Zoom into the map below or download the high-resolution version.'
+            ? 'The official Gurgaon Master Plan 2031 - formally the Gurgaon-Manesar Urban Complex Final Development Plan 2031 AD - showing every sector, land use zone, transport corridor and the proposed metro route. Zoom into the map below or download the high-resolution version.'
             : sector.description}
         </p>
         <p className="text-gray-500 text-sm mb-10">Source: {sector.source}</p>
@@ -215,10 +215,10 @@ const MapDetail: React.FC = () => {
               <h2 className={h2Class}>What is the Gurgaon Master Plan 2031?</h2>
               <div className="space-y-5">
                 <p className={pClass}>
-                  The Gurgaon Master Plan 2031 — officially the Gurgaon-Manesar Urban Complex (GMUC) Final Development Plan 2031 AD — was notified by the Town and Country Planning Department (DTCP), Haryana on 15 November 2012. It is the legal land-use framework for the entire urban complex, designed for a projected population of 42.5 lakh across a total planned area of 33,872 hectares. It defines exactly what can be built where: residential sectors, commercial belts, industrial estates, institutional land, green belts, agricultural zones and the road, metro and rail network that connects them.
+                  The Gurgaon Master Plan 2031 - officially the Gurgaon-Manesar Urban Complex (GMUC) Final Development Plan 2031 AD - was notified by the Town and Country Planning Department (DTCP), Haryana on 15 November 2012. It is the legal land-use framework for the entire urban complex, designed for a projected population of 42.5 lakh across a total planned area of 33,872 hectares. It defines exactly what can be built where: residential sectors, commercial belts, industrial estates, institutional land, green belts, agricultural zones and the road, metro and rail network that connects them.
                 </p>
                 <p className={pClass}>
-                  Because Gurgaon was officially renamed Gurugram in 2016, the same document is also referred to as the Gurugram Master Plan 2031 or Gurugram Manesar Master Plan 2031 — they are all one and the same plan. For anyone buying property in Gurugram, this is the single most important document to consult: it shows not only what exists today, but what is formally planned around a property, which is what determines long-term appreciation.
+                  Because Gurgaon was officially renamed Gurugram in 2016, the same document is also referred to as the Gurugram Master Plan 2031 or Gurugram Manesar Master Plan 2031 - they are all one and the same plan. For anyone buying property in Gurugram, this is the single most important document to consult: it shows not only what exists today, but what is formally planned around a property, which is what determines long-term appreciation.
                 </p>
               </div>
             </section>
@@ -227,13 +227,13 @@ const MapDetail: React.FC = () => {
               <h2 className={h2Class}>History: Master Plan 2021 → 2025 → 2031</h2>
               <div className="space-y-5">
                 <p className={pClass}>
-                  <strong className="text-white">Master Plan 2021</strong> was published on 5 February 2007 for a projected population of 37 lakh at a density of 80 persons per acre (PPA). Density norms were later raised to 120 PPA across Haryana, and the road network in Sectors 58–67 was re-planned.
+                  <strong className="text-white">Master Plan 2021</strong> was published on 5 February 2007 for a projected population of 37 lakh at a density of 80 persons per acre (PPA). Density norms were later raised to 120 PPA across Haryana, and the road network in Sectors 58-67 was re-planned.
                 </p>
                 <p className={pClass}>
                   <strong className="text-white">Master Plan 2025</strong> followed with a marginal increase (about 1.18%) in urbanisable area. Its defining feature was roughly 4,570 hectares earmarked for Special Economic Zones (SEZs).
                 </p>
                 <p className={pClass}>
-                  <strong className="text-white">Master Plan 2031</strong>, notified on 15 November 2012, exists primarily because SEZ demand collapsed after 2008. Notified SEZ land had no takers, landowners demanded re-planning, and the government revised the entire development plan — raising the population target to 42.5 lakh and re-allocating former SEZ land to residential, commercial and industrial use.
+                  <strong className="text-white">Master Plan 2031</strong>, notified on 15 November 2012, exists primarily because SEZ demand collapsed after 2008. Notified SEZ land had no takers, landowners demanded re-planning, and the government revised the entire development plan - raising the population target to 42.5 lakh and re-allocating former SEZ land to residential, commercial and industrial use.
                 </p>
               </div>
             </section>
@@ -276,7 +276,7 @@ const MapDetail: React.FC = () => {
                 </table>
               </div>
               <p className={`${pClass} mt-5`}>
-                Nearly half the planned area is residential — enough to house the 20.5 lakh additional residents projected beyond the roughly 22 lakh already accommodated when the plan was notified. New residential sectors follow the neighbourhood concept at a net density of 250 persons per hectare, with parks at a minimum of 2.5 sq m per person and internal roads no narrower than 12 metres.
+                Nearly half the planned area is residential - enough to house the 20.5 lakh additional residents projected beyond the roughly 22 lakh already accommodated when the plan was notified. New residential sectors follow the neighbourhood concept at a net density of 250 persons per hectare, with parks at a minimum of 2.5 sq m per person and internal roads no narrower than 12 metres.
               </p>
             </section>
 
@@ -287,7 +287,7 @@ const MapDetail: React.FC = () => {
                   The 2031 plan extends Gurugram's sector grid well beyond the established HUDA sectors, up to Sector 115. Key additions include Sectors 88A, 88B, 89A, 89B, 95A, 95B and 99A across New Gurgaon, Pataudi Road and the Dwarka Expressway corridor, covering land in villages such as Wazirpur, Hayatpur, Mohammadpur, Garauli Khurd, Garauli Kalan and Harsaru.
                 </p>
                 <p className={pClass}>
-                  Notable sector-level reservations: about 48.5 hectares for wholesale markets in Sector 99A along the Delhi–Rewari railway line; 215 hectares for a university in Sector 68; public utility sites in Sectors 37D, 99A, 100, 101 and 107; a planned artificial water body in Sectors 72/72A for groundwater recharge and flood control; and a 200/172 metre wide institutional belt along the outer periphery road for government and semi-government offices.
+                  Notable sector-level reservations: about 48.5 hectares for wholesale markets in Sector 99A along the Delhi-Rewari railway line; 215 hectares for a university in Sector 68; public utility sites in Sectors 37D, 99A, 100, 101 and 107; a planned artificial water body in Sectors 72/72A for groundwater recharge and flood control; and a 200/172 metre wide institutional belt along the outer periphery road for government and semi-government offices.
                 </p>
               </div>
             </section>
@@ -296,10 +296,10 @@ const MapDetail: React.FC = () => {
               <h2 className={h2Class}>Manesar Master Plan 2031: IMT Manesar and the Industrial Zone</h2>
               <div className="space-y-5">
                 <p className={pClass}>
-                  Manesar is not a separate plan — the Manesar Master Plan 2031 is the industrial and southern half of the same GMUC document, and it is where much of Gurugram's future growth is concentrated. <Link to="/maps/imt-manesar" className="gold-gradient-text hover:underline">IMT Manesar</Link> was started in 1992 by HSIIDC, initially in collaboration with Japanese entrepreneurs, and its first 700 hectares anchored Gurugram's automobile and manufacturing economy.
+                  Manesar is not a separate plan - the Manesar Master Plan 2031 is the industrial and southern half of the same GMUC document, and it is where much of Gurugram's future growth is concentrated. <Link to="/maps/imt-manesar" className="gold-gradient-text hover:underline">IMT Manesar</Link> was started in 1992 by HSIIDC, initially in collaboration with Japanese entrepreneurs, and its first 700 hectares anchored Gurugram's automobile and manufacturing economy.
                 </p>
                 <p className={pClass}>
-                  Under the 2031 plan, 4,613 hectares are reserved for industry — targeted at software, automobile and non-polluting hi-tech units — with new industrial areas planned along the NH-48 expressway adjacent to IMT Manesar. Three transport reservations matter most for Manesar: the Kundli–Manesar–Palwal (KMP) Expressway, reserved as a 100 metre wide road with 100 metre green belts on both sides; the proposed metro extension from HUDA City Centre to Manesar via Sectors 43-44, 52-52A, 56-57, SPR and NH-48; and a 50 metre wide Orbital Rail Corridor reservation.
+                  Under the 2031 plan, 4,613 hectares are reserved for industry - targeted at software, automobile and non-polluting hi-tech units - with new industrial areas planned along the NH-48 expressway adjacent to IMT Manesar. Three transport reservations matter most for Manesar: the Kundli-Manesar-Palwal (KMP) Expressway, reserved as a 100 metre wide road with 100 metre green belts on both sides; the proposed metro extension from HUDA City Centre to Manesar via Sectors 43-44, 52-52A, 56-57, SPR and NH-48; and a 50 metre wide Orbital Rail Corridor reservation.
                 </p>
                 <p className={pClass}>
                   For investors, Manesar's combination of reserved industrial land, expressway connectivity and planned mass transit is what drives demand for plots, warehousing and workforce housing in the surrounding sectors.
@@ -311,7 +311,7 @@ const MapDetail: React.FC = () => {
               <h2 className={h2Class}>Metro, RRTS and Road Network in the 2031 Plan</h2>
               <div className="space-y-5">
                 <p className={pClass}>
-                  The plan proposes a metro extension from HUDA City Centre to Manesar, plus a second loop from Sikanderpur via Sector 25-25A extended to SPR through Golf Course Road. A Mass Rapid Transit corridor runs along the 150 metre northern link road from Dwarka to a proposed ISBT of about 162 hectares near Kherki Daula, and the Delhi–Alwar Regional Rapid Transit (RRTS) alignment follows NH-48. New Delhi links include 90 metre roads from Vasant Kunj and Andheria Mor, and the 150 metre Dwarka link road — today's Dwarka Expressway.
+                  The plan proposes a metro extension from HUDA City Centre to Manesar, plus a second loop from Sikanderpur via Sector 25-25A extended to SPR through Golf Course Road. A Mass Rapid Transit corridor runs along the 150 metre northern link road from Dwarka to a proposed ISBT of about 162 hectares near Kherki Daula, and the Delhi-Alwar Regional Rapid Transit (RRTS) alignment follows NH-48. New Delhi links include 90 metre roads from Vasant Kunj and Andheria Mor, and the 150 metre Dwarka link road - today's Dwarka Expressway.
                 </p>
                 <p className={pClass}>
                   Roads follow a V-1 to V-4 hierarchy, from 150 metre arterials with 60 metre green belts down to 24 metre internal sector roads; sector-dividing roads in new areas are 75 and 60 metres wide. These widths matter: a plot facing a 75 metre sector road carries very different commercial potential from one on a 24 metre internal road.
@@ -323,10 +323,10 @@ const MapDetail: React.FC = () => {
               <h2 className={h2Class}>How Investors Should Read the Master Plan</h2>
               <div className="space-y-5">
                 <p className={pClass}>
-                  Before committing capital, verify three things on the map. First, land use zoning: confirm the sector is zoned for your intended use — residential, commercial or industrial. Buying "commercial potential" land that is actually zoned agricultural is the most common master-plan mistake. Second, confirmed connectivity: check the width and status of roads serving the sector, and its distance from the metro, RRTS or expressway reservations. Third, what surrounds the sector: green belts, utility sites, defence land buffers (a 900 metre no-construction strip surrounds the ammunition depot) and the Aravalli Natural Conservation Zone all constrain — or protect — future development around a property.
+                  Before committing capital, verify three things on the map. First, land use zoning: confirm the sector is zoned for your intended use - residential, commercial or industrial. Buying "commercial potential" land that is actually zoned agricultural is the most common master-plan mistake. Second, confirmed connectivity: check the width and status of roads serving the sector, and its distance from the metro, RRTS or expressway reservations. Third, what surrounds the sector: green belts, utility sites, defence land buffers (a 900 metre no-construction strip surrounds the ammunition depot) and the Aravalli Natural Conservation Zone all constrain - or protect - future development around a property.
                 </p>
                 <p className={pClass}>
-                  At LSR Realty we read every <Link to="/projects" className="gold-gradient-text hover:underline">project</Link> against the master plan before advising clients on residential, office and retail opportunities across Gurugram — from established corridors like Golf Course Road and MG Road to emerging sectors on Dwarka Expressway, SPR and Sohna Road. Learn more about our <Link to="/services" className="gold-gradient-text hover:underline">advisory services</Link>.
+                  At LSR Realty we read every <Link to="/projects" className="gold-gradient-text hover:underline">project</Link> against the master plan before advising clients on residential, office and retail opportunities across Gurugram - from established corridors like Golf Course Road and MG Road to emerging sectors on Dwarka Expressway, SPR and Sohna Road. Learn more about our <Link to="/services" className="gold-gradient-text hover:underline">advisory services</Link>.
                 </p>
               </div>
             </section>
@@ -358,7 +358,7 @@ const MapDetail: React.FC = () => {
               <h2 className={h2Class}>IMT Manesar and the Manesar Master Plan 2031</h2>
               <div className="space-y-5">
                 <p className={pClass}>
-                  IMT (Industrial Model Township) Manesar is the industrial anchor of the <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031</Link>, the official development plan for the Gurgaon-Manesar Urban Complex notified by DTCP Haryana in November 2012. Development began in 1992, when HSIIDC — initially in collaboration with Japanese entrepreneurs — developed the first 700 hectares that went on to anchor Gurugram's automobile and manufacturing economy.
+                  IMT (Industrial Model Township) Manesar is the industrial anchor of the <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031</Link>, the official development plan for the Gurgaon-Manesar Urban Complex notified by DTCP Haryana in November 2012. Development began in 1992, when HSIIDC - initially in collaboration with Japanese entrepreneurs - developed the first 700 hectares that went on to anchor Gurugram's automobile and manufacturing economy.
                 </p>
                 <p className={pClass}>
                   Under the 2031 plan, 4,613 hectares across the urban complex are reserved for industrial use, concentrated in and around IMT Manesar and targeted at software, automobile and non-polluting hi-tech industries. New industrial areas are planned along the NH-48 expressway adjacent to the township.
@@ -367,7 +367,7 @@ const MapDetail: React.FC = () => {
                   Three planned transport corridors define Manesar's investment case: the Kundli-Manesar-Palwal (KMP) Expressway, reserved as a 100 metre road with 100 metre green belts on both sides; the proposed metro extension from HUDA City Centre to Manesar via SPR and NH-48; and the 50 metre Orbital Rail Corridor reservation, now taking shape as the Haryana Orbital Rail Corridor. Together they connect Manesar's industrial base to Delhi, the airport and the wider NCR freight network.
                 </p>
                 <p className={pClass}>
-                  For investors, this combination of reserved industrial land, expressway access and planned mass transit drives demand for industrial plots, warehousing and workforce housing in the sectors surrounding IMT Manesar. At LSR Realty we advise on <Link to="/projects" className="gold-gradient-text hover:underline">opportunities</Link> across this corridor — always read against the official master plan before committing capital.
+                  For investors, this combination of reserved industrial land, expressway access and planned mass transit drives demand for industrial plots, warehousing and workforce housing in the sectors surrounding IMT Manesar. At LSR Realty we advise on <Link to="/projects" className="gold-gradient-text hover:underline">opportunities</Link> across this corridor - always read against the official master plan before committing capital.
                 </p>
               </div>
             </section>
