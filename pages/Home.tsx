@@ -20,21 +20,21 @@ const Home: React.FC = () => {
   return (
     <div className="bg-black text-white">
       <SEO
-        title="LSR Realty | Gurgaon's Premier Real Estate Investment Advisory"
-        description="LSR Realty is Gurgaon's premier institutional-grade real estate investment advisory, helping HNI and NRI investors access data-driven, transparent property investments in DLF, Emaar, and other top-tier developments."
+        title="Real Estate Consultant in Gurgaon | LSR Realty Investment Advisory"
+        description="LSR Realty is a leading real estate consultant and advisory company in Gurgaon, helping HNI and NRI investors buy, lease and invest in residential and commercial property."
         path="/"
       />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-0">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
-            alt="Luxury Skyline" 
+          <img
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+            alt="Luxury Skyline"
             className="w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         </div>
-        
+
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center py-20">
           <h2 className="gold-gradient-text text-sm md:text-base uppercase tracking-[0.4em] mb-6 animate-fade-in-up">
             Institutional Real Estate Advisory
@@ -48,13 +48,13 @@ const Home: React.FC = () => {
             Strategically guided by industry leadership.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-            <button 
+            <button
               onClick={() => navigate('/projects')}
               className="bg-lsr-gold text-black px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-white transition-colors min-w-[200px]"
             >
               View Projects
             </button>
-            <button 
+            <button
               onClick={() => navigate('/contact')}
               className="border border-white text-white px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-white hover:text-black transition-colors min-w-[200px]"
             >
@@ -148,7 +148,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Projects — hidden; restore by uncommenting this section
+      {/* Projects - hidden; restore by uncommenting this section
       <section className="py-24 bg-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-end mb-16">
@@ -191,7 +191,7 @@ const Home: React.FC = () => {
               Explore Our Advisory Process
             </button>
           </div>
-          
+
           <div className="bg-black p-8 border border-white/5 rounded-sm relative">
             <h3 className="text-lg font-serif mb-6 text-gray-200">Gurgaon Capital Appreciation Index (Rebased)</h3>
             <div className="h-64 w-full">
@@ -282,15 +282,15 @@ const Home: React.FC = () => {
           <p className="text-xl text-gray-400 mb-10 font-light">
             Leverage our institutional expertise to build a high performing real estate portfolio.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <a 
+             <a
               href="https://wa.me/918448660019"
-              target="_blank" 
+              target="_blank"
               rel="noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-opacity-90 transition-colors flex items-center justify-center gap-2"
             >
               WhatsApp Now
             </a>
-            <button 
+            <button
               onClick={() => navigate('/contact')}
               className="bg-lsr-gold text-black px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-white transition-colors"
             >

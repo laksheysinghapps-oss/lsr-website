@@ -11,8 +11,8 @@ const Services: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
       <SEO
-        title="Real Estate Advisory Services in Gurgaon | LSR Realty"
-        description="LSR Realty offers institutional grade real estate advisory in Gurgaon: office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services."
+        title="Real Estate Consultants & Advisory Services in Gurgaon | LSR Realty"
+        description="LSR Realty is a real estate consulting company in Gurgaon offering office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services."
         path="/services"
       />
       {showNRIModal && (
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
             </div>
             <div>
                <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop" alt="Global Connectivity" className="w-full h-auto grayscale" />
-  
+
             </div>
          </div>
       </section>
