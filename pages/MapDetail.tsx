@@ -334,7 +334,7 @@ const MapDetail: React.FC = () => {
             <section className="pt-12">
               <h2 className={h2Class}>Gurgaon Master Plan 2041: What Comes Next</h2>
               <p className={pClass}>
-                Work on the next-horizon plan for Gurugram (Master Plan 2041) has been underway with DTCP Haryana. Until it is finally notified, the 2031 plan remains the operative legal document for all land use in the Gurgaon-Manesar Urban Complex. We will update this page as soon as the 2041 plan is officially released.
+                Work on the next-horizon plan for Gurugram (Master Plan 2041) has been underway with DTCP Haryana. Until it is finally notified, the 2031 plan remains the operative legal document for all land use in the Gurgaon-Manesar Urban Complex. Track the latest status, expected changes and timeline on our dedicated <Link to="/gurgaon-master-plan-2041" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2041</Link> page, which we update as official announcements are made.
               </p>
             </section>
 
