@@ -61,6 +61,7 @@ const staticRoutes = [
   { route: '/careers', title: "Careers at LSR Realty | Join Gurgaon's Premier Real Estate Advisory", description: "Explore open roles at LSR Realty, including Sales Runner and Sales Telecaller Intern positions in Gurgaon. Build a career in institutional-grade real estate investment advisory." },
   { route: '/contact', title: "Contact LSR Realty | Gurgaon Real Estate Investment Advisory", description: "Get in touch with LSR Realty for a 15 minute consultation on real estate investment advisory, portfolio structuring or NRI services in Gurgaon." },
   { route: '/privacy-policy', title: "Privacy Policy | LSR Realty", description: "Read LSR Realty's privacy policy covering how we collect, use and protect your personal information." },
+  { route: '/gurgaon-master-plan-2041', title: "Gurgaon Master Plan 2041 – Status, Changes & Timeline | LSR Realty", description: "Gurgaon Master Plan 2041 tracker: current status, expected population growth to 55 lakh, GMDA infrastructure roadmap and how it differs from Master Plan 2031. Updated July 2026." },
 ];
 
 for (const r of staticRoutes) renderRoute(r);
