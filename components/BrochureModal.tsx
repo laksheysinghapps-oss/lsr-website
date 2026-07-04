@@ -10,7 +10,10 @@ interface BrochureModalProps {
   source?: string;
   successMessage?: string;
   buttonLabel?: string;
+  downloadUrl?: string;
 }
+
+const INDIAN_MOBILE_REGEX = /^[6-9]\d{9}$/;
 
 const BrochureModal: React.FC<BrochureModalProps> = ({
   projectName,
@@ -20,17 +23,32 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
   source,
   successMessage = 'Our team will share the brochure with you shortly.',
   buttonLabel = 'Request Brochure',
+  downloadUrl,
 }) => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [phoneError, setPhoneError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    if (name === 'phone') {
+      const digitsOnly = value.replace(/\D/g, '').slice(0, 10);
+      setFormData(prev => ({ ...prev, phone: digitsOnly }));
+      if (phoneError) setPhoneError('');
+      return;
+    }
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!INDIAN_MOBILE_REGEX.test(formData.phone)) {
+      setPhoneError('Please enter a valid 10-digit mobile number starting with 6, 7, 8 or 9.');
+      return;
+    }
+
     setIsSubmitting(true);
     await submitLead({
       ...formData,
@@ -40,6 +58,15 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
     });
     setIsSubmitting(false);
     setSubmitted(true);
+
+    if (downloadUrl) {
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = '';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   return (
@@ -99,15 +126,22 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
                   required
                   className="w-full bg-black border border-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:border-lsr-gold placeholder-gray-600"
                 />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  required
-                  className="w-full bg-black border border-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:border-lsr-gold placeholder-gray-600"
-                />
+                <div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    inputMode="numeric"
+                    maxLength={10}
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="10-Digit Mobile Number"
+                    required
+                    className={`w-full bg-black border px-4 py-3 text-white text-sm focus:outline-none placeholder-gray-600 ${phoneError ? 'border-red-500 focus:border-red-500' : 'border-white/10 focus:border-lsr-gold'}`}
+                  />
+                  {phoneError && (
+                    <p className="text-red-500 text-xs mt-2">{phoneError}</p>
+                  )}
+                </div>
                 <div className="flex items-start gap-3 pt-1">
                   <input
                     type="checkbox"

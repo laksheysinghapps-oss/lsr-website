@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { SECTOR_MAPS } from '../constants';
+import { SECTOR_MAPS, SectorMap } from '../constants';
 import SEO from '../components/SEO';
+import BrochureModal from '../components/BrochureModal';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const PAGE_TITLE = 'Gurgaon Sector Maps & Master Plan 2031 | LSR Realty';
@@ -56,10 +57,24 @@ const structuredData = [
 
 const Maps: React.FC = () => {
   const [isContentExpanded, setIsContentExpanded] = useState(false);
+  const [downloadSector, setDownloadSector] = useState<SectorMap | null>(null);
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO title={PAGE_TITLE} description={PAGE_DESCRIPTION} path="/maps" structuredData={structuredData} />
+
+      {downloadSector && (
+        <BrochureModal
+          projectName={downloadSector.name}
+          onClose={() => setDownloadSector(null)}
+          title="Download the Map"
+          subtitle="Share your details and your download will start right away."
+          source={`Sector Map Download: ${downloadSector.name}`}
+          successMessage="Your download has started. Check your downloads folder."
+          buttonLabel="Download the Map"
+          downloadUrl={downloadSector.zoom}
+        />
+      )}
 
       <div className="max-w-7xl mx-auto px-6">
         <p className="gold-gradient-text uppercase tracking-[0.2em] text-sm mb-4">Sector Intelligence</p>
@@ -131,12 +146,12 @@ const Maps: React.FC = () => {
                   >
                     View Sector Map
                   </Link>
-                  <Link
-                    to={`/maps/${sector.id}`}
+                  <button
+                    onClick={() => setDownloadSector(sector)}
                     className="flex-1 bg-lsr-gold text-black px-3 py-2 text-[10px] uppercase tracking-wide font-bold whitespace-nowrap hover:opacity-90 transition-opacity text-center"
                   >
-                    View Inventory
-                  </Link>
+                    Download the Map
+                  </button>
                 </div>
               </div>
             </article>
