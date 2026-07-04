@@ -10,6 +10,7 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Maps from './pages/Maps';
 import MapDetail from './pages/MapDetail';
+import MasterPlan2041 from './pages/MasterPlan2041';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Careers from './pages/Careers';
@@ -37,6 +38,7 @@ const App: React.FC = () => {
             <Route path="/projects/:id" element={<ProjectDetail />} />
             <Route path="/maps" element={<Maps />} />
             <Route path="/maps/:id" element={<MapDetail />} />
+            <Route path="/gurgaon-master-plan-2041" element={<MasterPlan2041 />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
             <Route path="/careers" element={<Careers />} />
@@ -45,11 +47,11 @@ const App: React.FC = () => {
           </Routes>
         </main>
         <Footer />
-        
+
         {/* Floating WhatsApp Button */}
-        <a 
+        <a
           href="https://wa.me/918448660019"
-          target="_blank" 
+          target="_blank"
           rel="noreferrer"
           className="fixed bottom-8 right-8 z-50 bg-[#25D366] p-4 rounded-full shadow-lg hover:scale-110 transition-transform cursor-pointer flex items-center justify-center"
           style={{border: '2.5px solid transparent', background: 'linear-gradient(#25D366, #25D366) padding-box, linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) border-box'}}
