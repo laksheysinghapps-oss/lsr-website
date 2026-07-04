@@ -71,7 +71,7 @@ const Maps: React.FC = () => {
           subtitle="Share your details and your download will start right away."
           source={`Sector Map Download: ${downloadSector.name}`}
           successMessage="Your download has started. Check your downloads folder."
-          buttonLabel="Download the Map"
+          buttonLabel="Download Map"
           downloadUrl={downloadSector.zoom}
         />
       )}
@@ -150,7 +150,7 @@ const Maps: React.FC = () => {
                     onClick={() => setDownloadSector(sector)}
                     className="flex-1 bg-lsr-gold text-black px-3 py-2 text-[10px] uppercase tracking-wide font-bold whitespace-nowrap hover:opacity-90 transition-opacity text-center"
                   >
-                    Download the Map
+                    Download Map
                   </button>
                 </div>
               </div>
