@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import { Project } from '../types';
@@ -72,19 +72,55 @@ const ProjectDetail: React.FC = () => {
 
   const pageTitle = `${project.name} | ${project.location} | LSR Realty`;
   const pageDescription = `${project.name} in ${project.location}, ${project.priceRange}. ${project.type}. ${project.status}. View inventory, pricing and floor plans with LSR Realty.`;
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Place',
-    name: project.name,
-    description: project.description,
-    image: `https://lsrrealty.com${project.image}`,
-    url: `https://lsrrealty.com/projects/${project.id}`,
-    address: { '@type': 'PostalAddress', addressLocality: project.location, addressRegion: 'Haryana', addressCountry: 'IN' },
-  };
+  const projectImage = project.image.startsWith('http') ? project.image : `https://lsrrealty.com${project.image}`;
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Projects', item: 'https://lsrrealty.com/projects' },
+        { '@type': 'ListItem', position: 3, name: project.name, item: `https://lsrrealty.com/projects/${project.id}` },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': isCommercial ? 'Place' : 'ApartmentComplex',
+      name: project.name,
+      description: project.description,
+      image: projectImage,
+      url: `https://lsrrealty.com/projects/${project.id}`,
+      address: { '@type': 'PostalAddress', addressLocality: project.location, addressRegion: 'Haryana', addressCountry: 'IN' },
+      ...(project.amenities && project.amenities.length > 0
+        ? {
+            amenityFeature: project.amenities.map(a => ({
+              '@type': 'LocationFeatureSpecification',
+              name: a,
+              value: true,
+            })),
+          }
+        : {}),
+      ...(!isCommercial && project.towers ? { numberOfBuildings: project.towers } : {}),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'RealEstateListing',
+      name: `${project.name}, ${project.location}`,
+      description: pageDescription,
+      image: projectImage,
+      url: `https://lsrrealty.com/projects/${project.id}`,
+      provider: {
+        '@type': 'RealEstateAgent',
+        name: 'LSR Realty',
+        url: 'https://lsrrealty.com/',
+        telephone: '+91-8448660019',
+      },
+    },
+  ];
 
   return (
     <div className="bg-black text-white pt-20">
-      <SEO title={pageTitle} description={pageDescription} path={`/projects/${project.id}`} structuredData={structuredData} />
+      <SEO title={pageTitle} description={pageDescription} path={`/projects/${project.id}`} image={projectImage} structuredData={structuredData} />
       {showBrochureModal && (
         <BrochureModal projectName={project.name} onClose={() => setShowBrochureModal(false)} />
       )}
@@ -99,7 +135,7 @@ const ProjectDetail: React.FC = () => {
           buttonLabel="Request Pricing"
         />
       )}
-      {/* Hero — split: image left, map right */}
+      {/* Hero - split: image left, map right */}
       <div className="flex flex-col md:flex-row h-[60vh] md:h-[80vh]">
         {/* Left: Project image */}
         <div className="relative w-full md:w-1/2 h-1/2 md:h-full overflow-hidden">
@@ -373,4 +409,3 @@ const ProjectDetail: React.FC = () => {
 };
 
 export default ProjectDetail;
-
