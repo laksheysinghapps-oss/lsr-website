@@ -1323,6 +1323,41 @@ export const COMPANY_DETAILS = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'gurgaon-manesar-master-plan-2031-explained',
+    title: 'Gurgaon Manesar Master Plan 2031 Explained: What Every Property Investor Needs to Know',
+    excerpt: 'A plain-English guide to the Gurgaon Manesar Master Plan 2031, land use, transport corridors, and metro expansion, and what it means for property investors in Gurgaon and Gurugram.',
+    category: 'Market Intelligence',
+    date: 'July 2026',
+    readTime: '7 min read',
+    image: '/images/sector-maps/gurgaon-manesar-master-plan-zoom.jpg',
+    featured: false,
+    published: true,
+    content: `
+<p>Most conversations about buying property in Gurgaon start with a sector number and a price per square foot. They should start earlier. The Gurgaon Manesar Master Plan 2031 is the statutory land-use document that determines what can legally be built where across the entire Gurgaon Manesar Urban Complex. It answers a question that price alone cannot: is this location structurally positioned to appreciate, or is it a well-marketed project on the wrong side of a zoning boundary?</p>
+<p>At LSR Realty, the Master Plan is one of the first documents we reference when evaluating any project, because capital appreciation in Gurgaon real estate is rarely accidental. It is almost always infrastructure-led, and infrastructure in Gurugram follows the Master Plan.</p>
+<h2>What the Gurgaon Manesar Master Plan 2031 Actually Is</h2>
+<p>The Gurgaon Manesar Master Plan 2031, formally the Gurgaon-Manesar Urban Complex Development Plan 2031, is prepared by the Department of Town and Country Planning (DTCP), Haryana. It is the government's official land-use blueprint designed to accommodate a projected population of approximately 42.5 lakh people by 2031.</p>
+<p>The plan allocates land across residential, commercial, industrial, and public use zones, with over 13% of total land reserved for transport and communication infrastructure. Also referred to as the Gurugram Master Plan 2031 after the city's renaming, it covers both the Gurgaon municipal area and the Manesar industrial corridor, making it relevant to investors evaluating property from DLF Phase 1 and Golf Course Road through to the newer sectors along Dwarka Expressway and Southern Peripheral Road.</p>
+<p>That transport allocation is not a footnote. It is the primary driver of which sectors in Gurgaon outperform over a ten-year investment horizon.</p>
+<h2>Why Transport Corridors Drive Property Appreciation in Gurgaon</h2>
+<p>Land-use maps are static. Infrastructure timelines are what move property prices.</p>
+<p><strong>Metro expansion.</strong> The plan includes routes connecting Huda City Centre to Cybercity, with proposed extensions toward Dwarka and connections to the Gurgaon-Manesar-Bawal Investment Region corridor. Each confirmed metro phase brings Old Gurgaon's established commercial districts closer to the newer residential corridors along Dwarka Expressway and SPR, expanding rental demand catchment and supporting capital appreciation in those sectors.</p>
+<p><strong>Dwarka Expressway.</strong> Now substantially operational, Dwarka Expressway was designated a priority transport corridor from the Master Plan's earliest drafts. Property rates across sectors 88 to 113 have appreciated significantly, and residential projects along this corridor continue to attract strong HNI and NRI investor interest in 2025-26.</p>
+<p><strong>Golf Course Extension Road and Southern Peripheral Road.</strong> Both were planned as secondary growth spines feeding off the original DLF-anchored Gurgaon core. GCER in particular has emerged as one of the highest-appreciation corridors in Gurgaon real estate over the last five years, with Grade A developers including DLF, Emaar, M3M, and Godrej anchoring the residential belt, with Oberoi Realty entering the corridor in recent times.</p>
+<p><strong>Sohna Road.</strong> Positioned as a connecting corridor between the Golf Course Road belt and Sohna town, Sohna Road carries a mix of mid-market and premium residential projects benefiting from proximity to both the GCER residential belt and the SPR commercial corridor. Leading developers along the corridor include Central Park, Elan, Reach and more.</p>
+<h2>How to Use the Master Plan When Evaluating a Property Investment in Gurgaon</h2>
+<p><strong>Verify the land-use zoning of the specific sector, not the general area.</strong> Two adjacent sectors in Gurgaon can carry different designations. That difference determines what can legally be built next to your property, which affects long-term capital appreciation as much as daily liveability.</p>
+<p><strong>Cross-reference the developer's timeline against the Master Plan's transport timeline.</strong> A residential project marketed on upcoming metro connectivity is only as valuable as the specific metro phase it depends on. Ask which phase, what the current GMDA construction status is, and what the realistic delivery window looks like.</p>
+<p><strong>Weight legacy sectors and growth corridors differently.</strong> Sectors within DLF phases and along Golf Course Road are substantially built out. Their investment case rests on scarcity, brand legacy, and rental yield from established commercial demand. Sectors along Dwarka Expressway, Southern Peripheral Road, and the newer numbered sectors (79 and above) are still closing the gap to their planned infrastructure, which is where Master Plan timing has the most direct influence on Gurgaon property appreciation.</p>
+<h2>What the Master Plan Means for Gurgaon Real Estate in 2025-26</h2>
+<p>The Master Plan's 2031 horizon is now less than six years away. For property investors in Gurgaon, this creates a narrowing window in which infrastructure-led appreciation is still ahead of the price curve rather than already priced in.</p>
+<p>RERA registration is a baseline filter for any serious Gurgaon property investment in 2025. The Master Plan tells you whether the location has structural tailwinds. RERA tells you whether the specific project is legally sound. Both checks are necessary; neither alone is sufficient.</p>
+<h2>Conclusion</h2>
+<p>The Gurgaon Manesar Master Plan 2031 is a public document, but most investors never read it. They rely on developer brochures that describe a location's future in the most optimistic possible terms. The Master Plan does something different: it tells you what the government has committed to building, where, and by when, which is the most reliable indicator of where Gurgaon real estate values are likely to move over a ten-year hold.</p>
+<p>We use the Master Plan as the starting point for every location we advise on at LSR Realty. If you are evaluating a property investment in Gurgaon and want to understand what it says about a specific sector, our advisory team can walk you through the zoning and infrastructure timeline before you look at a single unit.</p>
+`,
+  },
+  {
     id: 'golf-course-extension-road-vs-golf-course-road-gurgaon',
     title: 'Golf Course Extension Road vs Golf Course Road: Why GCER Is Gurgaon\'s New Golf Course Road',
     excerpt: 'A decade ago, Golf Course Extension Road was the consolation prize. One client bought there for ₹4.68 crore in 2021, that same property is valued at ₹17 crore today. We break down exactly why GCER is now Gurgaon\'s real investment address.',
