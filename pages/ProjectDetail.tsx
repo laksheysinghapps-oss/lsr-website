@@ -72,7 +72,22 @@ const ProjectDetail: React.FC = () => {
 
   const pageTitle = `${project.name} | ${project.location} | LSR Realty`;
   const pageDescription = `${project.name} in ${project.location}, ${project.priceRange}. ${project.type}. ${project.status}. View inventory, pricing and floor plans with LSR Realty.`;
-  const projectImage = project.image.startsWith('http') ? project.image : `https://lsrrealty.com${project.image}`;
+
+  const priceNums = (project.priceRange.match(/[\d.]+/g) || []).map(Number).filter(n => !isNaN(n));
+  const availability = /sold\s*out/i.test(project.status)
+    ? 'https://schema.org/SoldOut'
+    : /ready|occupy/i.test(project.status)
+      ? 'https://schema.org/InStock'
+      : 'https://schema.org/PreOrder';
+  const offers = /cr/i.test(project.priceRange) && priceNums.length
+    ? {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        lowPrice: Math.round(Math.min(...priceNums) * 10000000),
+        highPrice: Math.round(Math.max(...priceNums) * 10000000),
+        availability,
+      }
+    : { '@type': 'Offer', priceCurrency: 'INR', availability };
   const structuredData = [
     {
       '@context': 'https://schema.org',
@@ -85,42 +100,34 @@ const ProjectDetail: React.FC = () => {
     },
     {
       '@context': 'https://schema.org',
-      '@type': isCommercial ? 'Place' : 'ApartmentComplex',
+      '@type': 'Product',
       name: project.name,
       description: project.description,
-      image: projectImage,
+      image: `https://lsrrealty.com${project.image}`,
       url: `https://lsrrealty.com/projects/${project.id}`,
-      address: { '@type': 'PostalAddress', addressLocality: project.location, addressRegion: 'Haryana', addressCountry: 'IN' },
-      ...(project.amenities && project.amenities.length > 0
-        ? {
-            amenityFeature: project.amenities.map(a => ({
-              '@type': 'LocationFeatureSpecification',
-              name: a,
-              value: true,
-            })),
-          }
-        : {}),
-      ...(!isCommercial && project.towers ? { numberOfBuildings: project.towers } : {}),
+      category: project.type,
+      brand: { '@type': 'Organization', name: project.developer },
+      offers,
+      additionalProperty: [
+        { '@type': 'PropertyValue', name: 'Location', value: project.location },
+        { '@type': 'PropertyValue', name: 'Status', value: project.status },
+        { '@type': 'PropertyValue', name: 'Developer', value: project.developer },
+      ],
     },
     {
       '@context': 'https://schema.org',
-      '@type': 'RealEstateListing',
-      name: `${project.name}, ${project.location}`,
-      description: pageDescription,
-      image: projectImage,
+      '@type': 'Place',
+      name: project.name,
+      description: project.description,
+      image: `https://lsrrealty.com${project.image}`,
       url: `https://lsrrealty.com/projects/${project.id}`,
-      provider: {
-        '@type': 'RealEstateAgent',
-        name: 'LSR Realty',
-        url: 'https://lsrrealty.com/',
-        telephone: '+91-8448660019',
-      },
+      address: { '@type': 'PostalAddress', addressLocality: project.location, addressRegion: 'Haryana', addressCountry: 'IN' },
     },
   ];
 
   return (
     <div className="bg-black text-white pt-20">
-      <SEO title={pageTitle} description={pageDescription} path={`/projects/${project.id}`} image={projectImage} structuredData={structuredData} />
+      <SEO title={pageTitle} description={pageDescription} path={`/projects/${project.id}`} structuredData={structuredData} />
       {showBrochureModal && (
         <BrochureModal projectName={project.name} onClose={() => setShowBrochureModal(false)} />
       )}
@@ -135,7 +142,7 @@ const ProjectDetail: React.FC = () => {
           buttonLabel="Request Pricing"
         />
       )}
-      {/* Hero - split: image left, map right */}
+      {/* Hero — split: image left, map right */}
       <div className="flex flex-col md:flex-row h-[60vh] md:h-[80vh]">
         {/* Left: Project image */}
         <div className="relative w-full md:w-1/2 h-1/2 md:h-full overflow-hidden">
