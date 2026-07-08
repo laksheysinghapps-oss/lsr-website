@@ -4,7 +4,7 @@ import { SERVICES } from '../constants';
 import BrochureModal from '../components/BrochureModal';
 import SEO from '../components/SEO';
 
-const Services: React.FC = () => {
+const FAQS = [{q:"What services does LSR Realty offer in Gurgaon?",a:"LSR Realty provides institutional-grade real estate advisory in Gurgaon, including residential and commercial investment advisory, office and retail leasing, market research, deal structuring, portfolio structuring, and a dedicated NRI investment desk."},{q:"Does LSR Realty help NRIs invest in Gurgaon property?",a:"Yes. Our NRI Investment Desk supports Non Resident Indians with property selection, Power of Attorney assistance, tax and repatriation advisory, and tenant management and resale, so you can invest in Gurgaon real estate remotely with confidence."},{q:"Which areas of Gurgaon does LSR Realty cover?",a:"We advise on property across Gurugram, including the DLF phases, Golf Course Road, Golf Course Extension Road, Dwarka Expressway, Sohna Road, Southern Peripheral Road and the newer sectors, as well as the wider Delhi NCR market."},{q:"How does LSR Realty select projects for investors?",a:"Every project is vetted against the Gurgaon Manesar Master Plan 2031, RERA registration, developer track record, construction quality, legal compliance and long-term capital appreciation potential before we recommend it."},{q:"How do I get started with LSR Realty?",a:"Book a consultation through our contact page or call +91 8448660019. Our advisory team will understand your investment goals and walk you through the most suitable opportunities in Gurgaon."}]; const serviceNames = ["Residential Investment Advisory","Commercial Investment Advisory","Office Leasing","Retail Leasing","Market Research and Intelligence","Deal Structuring","Portfolio Structuring","NRI Investment Services"]; const structuredData = [{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lsrrealty.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://lsrrealty.com/services"}]},{"@context":"https://schema.org","@type":"ItemList","name":"Real Estate Advisory Services in Gurgaon","itemListElement":serviceNames.map((name,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"Service","name":name,"serviceType":"Real estate advisory","areaServed":{"@type":"City","name":"Gurugram"},"provider":{"@type":"RealEstateAgent","name":"LSR Realty","url":"https://lsrrealty.com/"}}}))},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":FAQS.map(f=>({"@type":"Question","name":f.q,"acceptedAnswer":{"@type":"Answer","text":f.a}}))}]; const Services: React.FC = () => {
   const navigate = useNavigate();
   const [showNRIModal, setShowNRIModal] = useState(false);
 
@@ -13,7 +13,7 @@ const Services: React.FC = () => {
       <SEO
         title="Real Estate Consultants & Advisory Services in Gurgaon | LSR Realty"
         description="LSR Realty is a real estate consulting company in Gurgaon offering office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services."
-        path="/services"
+        path="/services" structuredData={structuredData}
       />
       {showNRIModal && (
         <BrochureModal
@@ -81,6 +81,7 @@ const Services: React.FC = () => {
             </div>
          </div>
       </section>
+      <section className="py-24 max-w-4xl mx-auto px-6"><h2 className="text-3xl md:text-4xl font-serif text-white mb-10">Frequently Asked Questions</h2><div className="space-y-8">{FAQS.map(f => (<div key={f.q} className="border-b border-white/10 pb-6"><h3 className="text-lg font-bold text-white mb-2">{f.q}</h3><p className="text-gray-400 leading-relaxed">{f.a}</p></div>))}</div></section>
     </div>
   );
 };
