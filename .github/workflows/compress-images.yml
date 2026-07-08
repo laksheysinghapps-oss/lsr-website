@@ -14,7 +14,13 @@ jobs:
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
           jpegQuality: '80'
           pngQuality: '80'
           webpQuality: '80'
+      - name: Commit optimized images
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Compress images'
+          default_author: github_actions
