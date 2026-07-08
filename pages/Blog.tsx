@@ -79,7 +79,7 @@ const BlogCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, ima
       <p className="text-xs text-gray-500 mb-3">
         {date}&nbsp;&nbsp;·&nbsp;&nbsp;<span className="text-lsr-gold">{category}</span>
       </p>
-      <h2 className="font-serif text-white text-base leading-snug mb-2 group-hover:text-lsr-gold transition-colors duration-200">
+      <h2 className="text-white text-base leading-snug mb-2 group-hover:text-lsr-gold transition-colors duration-200">
         <Link to={`/blog/${id}`}>{title}</Link>
       </h2>
       <p className="text-gray-400 text-sm leading-relaxed line-clamp-3 flex-1">{excerpt}</p>
