@@ -116,7 +116,7 @@ const BlogDetail: React.FC = () => {
           <span className="flex items-center gap-1.5 text-xs text-gray-500"><Tag size={11} className="text-lsr-gold" />{post.date}</span>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-serif mb-8 leading-tight">{post.title}</h1>
+        <h1 className="text-3xl md:text-5xl mb-8 leading-tight">{post.title}</h1>
 
         <div className="border border-white/10 overflow-hidden mb-10">
           <img
