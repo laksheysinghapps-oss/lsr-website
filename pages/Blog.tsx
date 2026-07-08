@@ -16,7 +16,7 @@ const structuredData = [
   {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'LSR Realty | Gurgaon Real Estate Market Intelligence Blog',
+    name: 'LSR Realty — Gurgaon Real Estate Market Intelligence Blog',
     description: 'Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory, and Gurugram sector guides from LSR Realty.',
     url: 'https://lsrrealty.com/blog',
     inLanguage: 'en-IN',
@@ -93,49 +93,14 @@ const BlogCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, ima
   </article>
 );
 
-/* Wider card for the featured post */
-const FeaturedCard: React.FC<CardProps> = ({ id, title, excerpt, category, date, image }) => (
-  <article className="group flex flex-col md:flex-row bg-[#111] rounded-2xl overflow-hidden hover:shadow-[0_8px_40px_rgba(198,166,103,0.12)] transition-shadow duration-300">
-    {/* Image - left half on md+ */}
-    <Link to={`/blog/${id}`} className="block overflow-hidden flex-shrink-0 md:w-1/2 h-56 md:h-auto">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        draggable={false}
-        onContextMenu={e => e.preventDefault()}
-      />
-    </Link>
-
-    {/* Body - right half */}
-    <div className="flex flex-col justify-center flex-1 p-7 md:p-10">
-      <p className="text-xs text-gray-500 mb-4">
-        {date}&nbsp;&nbsp;·&nbsp;&nbsp;<span className="text-lsr-gold">{category}</span>
-      </p>
-      <h2 className="font-serif text-white text-xl md:text-2xl leading-snug mb-4 group-hover:text-lsr-gold transition-colors duration-200">
-        <Link to={`/blog/${id}`}>{title}</Link>
-      </h2>
-      <p className="text-gray-400 text-sm leading-relaxed line-clamp-4 mb-6">{excerpt}</p>
-      <Link
-        to={`/blog/${id}`}
-        className="inline-flex items-center gap-2 text-lsr-gold text-xs font-bold uppercase tracking-widest hover:opacity-70 transition-opacity"
-      >
-        Read Article <ArrowRight size={13} />
-      </Link>
-    </div>
-  </article>
-);
-
 const Blog: React.FC = () => {
   const publishedPosts = BLOG_POSTS.filter(p => p.published);
-  const featured = publishedPosts.find(p => p.featured) ?? publishedPosts[0];
-  const rest = featured ? publishedPosts.filter(p => p.id !== featured.id) : [];
 
   return (
     <div className="bg-black text-white min-h-screen">
       <SEO
         title="Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty"
-        description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty, an institutional-grade real estate advisory."
+        description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory."
         path="/blog"
         structuredData={structuredData}
       />
@@ -214,36 +179,19 @@ const Blog: React.FC = () => {
             </div>
           </div>
         ) : (
-          /* ── Live posts ── */
-          <div className="space-y-10">
-            {/* Featured - horizontal card */}
-            {featured && (
-              <FeaturedCard
-                id={featured.id}
-                title={featured.title}
-                excerpt={featured.excerpt}
-                category={featured.category}
-                date={featured.date}
-                image={featured.image}
+          /* ── Live posts — uniform card grid ── */
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+            {publishedPosts.map(post => (
+              <BlogCard
+                key={post.id}
+                id={post.id}
+                title={post.title}
+                excerpt={post.excerpt}
+                category={post.category}
+                date={post.date}
+                image={post.image}
               />
-            )}
-
-            {/* Rest - card grid */}
-            {rest.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 pt-4">
-                {rest.map(post => (
-                  <BlogCard
-                    key={post.id}
-                    id={post.id}
-                    title={post.title}
-                    excerpt={post.excerpt}
-                    category={post.category}
-                    date={post.date}
-                    image={post.image}
-                  />
-                ))}
-              </div>
-            )}
+            ))}
           </div>
         )}
       </div>
