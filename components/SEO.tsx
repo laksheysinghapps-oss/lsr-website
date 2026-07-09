@@ -17,6 +17,7 @@ interface SEOProps {
   articleMeta?: ArticleMeta;
   noIndex?: boolean;
   structuredData?: object | object[];
+  keywords?: string;
 }
 
 const SITE_URL = 'https://lsrrealty.com';
@@ -44,6 +45,7 @@ const SEO: React.FC<SEOProps> = ({
   articleMeta,
   noIndex = false,
   structuredData,
+  keywords,
 }) => {
   useEffect(() => {
     const prevTitle = document.title;
@@ -53,6 +55,8 @@ const SEO: React.FC<SEOProps> = ({
 
     document.title = title;
     upsertMeta('name', 'description', description);
+    if (keywords) upsertMeta('name', 'keywords', keywords);
+    else removeMeta('name', 'keywords');
 
     // Canonical
     let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
@@ -127,7 +131,7 @@ const SEO: React.FC<SEOProps> = ({
       for (const [prop] of articleProps) removeMeta('property', prop);
       scripts.forEach(s => s.remove());
     };
-  }, [title, description, path, image, ogType, articleMeta, noIndex, structuredData]);
+  }, [title, description, path, image, ogType, articleMeta, noIndex, structuredData, keywords]);
 
   return null;
 };

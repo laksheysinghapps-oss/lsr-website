@@ -72,6 +72,7 @@ const MapDetail: React.FC = () => {
   const pageDescription = isMasterPlan
     ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map - all sectors, land use zones, metro routes and free download. Updated July 2026.'
     : `${sector.description} View the official, government approved ${sector.name} layout map, part of the Gurgaon map and Gurugram map series covering the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`;
+  const pageKeywords = `${sector.name} layout plan, ${sector.name} lay out plan, ${sector.name} map, ${sector.name}, Gurgaon map, Gurugram map, Gurugram sector map, Gurgaon layout`;
 
   const structuredData: object[] = [
     {
@@ -130,7 +131,7 @@ const MapDetail: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
-      <SEO title={pageTitle} description={pageDescription} path={`/maps/${sector.id}`} image={`https://lsrrealty.com${sector.zoom}`} structuredData={structuredData} />
+      <SEO title={pageTitle} description={pageDescription} keywords={pageKeywords} path={`/maps/${sector.id}`} image={`https://lsrrealty.com${sector.zoom}`} structuredData={structuredData} />
 
       {showInventoryModal && (
         <BrochureModal

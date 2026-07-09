@@ -27,12 +27,13 @@ fs.unlinkSync(bundlePath);
 
 const template = fs.readFileSync(path.join(distDir, 'index.html'), 'utf8');
 
-function renderRoute({ route, title, description, image }) {
+function renderRoute({ route, title, description, image, keywords }) {
   const url = `${SITE_URL}${route}`;
   const ogImage = image ?? `${SITE_URL}/images/Logo2.png`;
   let html = template;
   html = html.replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
   html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${escapeHtml(description)}" />`);
+  if (keywords) html = html.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${escapeHtml(keywords)}" />`);
   html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${url}" />`);
   html = html.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${escapeHtml(title)}" />`);
   html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${escapeHtml(description)}" />`);
@@ -57,7 +58,7 @@ const staticRoutes = [
   { route: '/blog', title: "Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty", description: "Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory." },
   { route: '/services', title: "Real Estate Advisory Services in Gurgaon | LSR Realty", description: "LSR Realty offers institutional grade real estate advisory in Gurgaon: office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services." },
   { route: '/projects', title: "Projects | Gurgaon Investment & Leasing Opportunities | LSR Realty", description: "Browse LSR Realty's curated portfolio of Gurgaon real estate investment and leasing opportunities, vetted for legal compliance, construction quality and appreciation potential." },
-  { route: '/maps', title: "Gurgaon Map & Sector Layout Plans | Master Plan 2031 | LSR Realty", description: "Explore Gurgaon map and sector layout plans for Gurugram — DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View Gurugram map guides for every location and connect with LSR Realty on available inventory." },
+  { route: '/maps', title: "Gurgaon Map & Sector Layout Plans | Master Plan 2031 | LSR Realty", description: "Explore Gurgaon map and sector layout plans for Gurugram — DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View Gurugram map guides for every location and connect with LSR Realty on available inventory.", keywords: "Gurgaon map, Gurugram map, Gurgaon layout plan, Gurgaon lay out plan, Gurgaon sector maps, Gurugram sector map, Master Plan 2031" },
   { route: '/careers', title: "Careers at LSR Realty | Join Gurgaon's Premier Real Estate Advisory", description: "Explore open roles at LSR Realty, including Sales Runner and Sales Telecaller Intern positions in Gurgaon. Build a career in institutional-grade real estate investment advisory." },
   { route: '/contact', title: "Contact LSR Realty | Gurgaon Real Estate Investment Advisory", description: "Get in touch with LSR Realty for a 15 minute consultation on real estate investment advisory, portfolio structuring or NRI services in Gurgaon." },
   { route: '/privacy-policy', title: "Privacy Policy | LSR Realty", description: "Read LSR Realty's privacy policy covering how we collect, use and protect your personal information." },
@@ -87,6 +88,7 @@ for (const sector of SECTOR_MAPS) {
     description: isMasterPlan
       ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map - all sectors, land use zones, metro routes and free download. Updated July 2026.'
       : `${sector.description} View the official, government approved ${sector.name} layout map, part of the Gurgaon map and Gurugram map series covering the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`,
+    keywords: `${sector.name} layout plan, ${sector.name} lay out plan, ${sector.name} map, ${sector.name}, Gurgaon map, Gurugram map, Gurugram sector map, Gurgaon layout`,
     image: `${SITE_URL}${sector.zoom}`,
   });
 }
