@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lsr-gold: #C6A667;
+  --color-lsr-black: #000000;
+  --color-lsr-charcoal: #1A1A1A;
+  --color-lsr-light: #F5F5F5;
+  --font-serif: "Playfair Display", "Cormorant Garamond", serif;
+  --font-sans: Inter, sans-serif;
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A667;
+}
+/* Metallic gold gradient for all gold boxes/buttons */
+.bg-lsr-gold {
+  background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) !important;
+}
+/* Metallic gold gradient for SVG icons */
+.text-lsr-gold path,
+.text-lsr-gold circle,
+.text-lsr-gold line,
+.text-lsr-gold polyline,
+.text-lsr-gold rect,
+.text-lsr-gold polygon,
+.text-lsr-gold ellipse,
+.text-lsr-gold svg path,
+.text-lsr-gold svg circle,
+.text-lsr-gold svg line,
+.text-lsr-gold svg polyline,
+.text-lsr-gold svg rect,
+.text-lsr-gold svg polygon,
+.text-lsr-gold svg ellipse {
+  stroke: url(#lsr-gold-grad) #c9a54a !important;
+}
+@keyframes gold-line {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+@keyframes gold-sweep {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(600%); }
+}
+.status-badge {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.status-badge::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.85);
+  display: none;
+}
+/* Gradient text for gold-outlined buttons */
+.gold-gradient-text {
+  background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+/* Gradient border for outline buttons */
+.gold-gradient-outline {
+  border: 1.5px solid transparent !important;
+  background: linear-gradient(#000, #000) padding-box,
+              linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) border-box;
+}
+.gold-gradient-outline::before {
+  display: none;
+}
+.gold-gradient-outline:hover {
+  background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%) !important;
+  -webkit-text-fill-color: #000 !important;
+  color: #000 !important;
+}
+/* Gradient text on all gold hover states */
+.hover\:text-lsr-gold:hover,
+.group:hover .group-hover\:text-lsr-gold {
+  background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent !important;
+}
+/* Gradient hover for social media icons */
+.social-icon:hover path,
+.social-icon:hover circle,
+.social-icon:hover line,
+.social-icon:hover polyline,
+.social-icon:hover rect,
+.social-icon:hover ellipse {
+  stroke: url(#lsr-gold-grad) #c9a54a !important;
+  transition: stroke 0.3s;
+}
+.gold-gradient-border::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #dcc87a 0%, #f2e49e 18%, #c9a54a 52%, #7c5212 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+.filter-active {
+  position: relative;
+  overflow: hidden;
+}
+.filter-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 30%;
+  background: rgba(255, 255, 255, 0.85);
+  display: none;
+}
