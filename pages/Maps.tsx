@@ -5,8 +5,8 @@ import SEO from '../components/SEO';
 import BrochureModal from '../components/BrochureModal';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const PAGE_TITLE = 'Gurgaon Sector Maps & Master Plan 2031 | LSR Realty';
-const PAGE_DESCRIPTION = 'Explore sector wise maps of Gurugram, DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View location guides and connect with LSR Realty on available inventory.';
+const PAGE_TITLE = 'Gurgaon Map & Sector Layout Plans | Master Plan 2031 | LSR Realty';
+const PAGE_DESCRIPTION = 'Explore Gurgaon map and sector layout plans for Gurugram — DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View Gurugram map guides for every location and connect with LSR Realty on available inventory.';
 
 const structuredData = [
   {
@@ -20,8 +20,8 @@ const structuredData = [
   {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Gurgaon Sector Maps & Location Guide',
-    description: 'Comprehensive sector maps and location guides for all major investment corridors in Gurugram, Haryana, India.',
+    name: 'Gurgaon Map & Sector Layout Guide',
+    description: 'Comprehensive Gurgaon map and Gurugram map layout guides for all major investment corridors in Gurugram, Haryana, India.',
     url: 'https://lsrrealty.com/maps',
     publisher: { '@type': 'RealEstateAgent', name: 'LSR Realty', url: 'https://lsrrealty.com' },
   },
@@ -30,7 +30,7 @@ const structuredData = [
     '@type': 'Map',
     name: 'Gurgaon Manesar Master Plan 2031',
     alternateName: 'Gurugram Manesar Master Plan 2031',
-    description: 'The official Gurgaon Manesar Master Plan 2031, also known as the Gurugram Manesar Master Plan 2031, for the Gurugram Manesar Urban Complex, showing all sectors, land use zones, transport corridors and the proposed metro route.',
+    description: 'The official Gurgaon Manesar Master Plan 2031 layout map, also known as the Gurugram Manesar Master Plan 2031, for the Gurugram Manesar Urban Complex, showing all sectors, land use zones, transport corridors and the proposed metro route.',
     image: `https://lsrrealty.com${SECTOR_MAPS[0].zoom}`,
     url: 'https://lsrrealty.com/maps',
   },
@@ -124,11 +124,11 @@ const Maps: React.FC = () => {
               <h2 className="text-lg font-sans font-semibold text-white px-6 pt-6 pb-3">
                 <Link to={`/maps/${sector.id}`} className="hover:text-lsr-gold transition-colors">{sector.name}</Link>
               </h2>
-              <Link to={`/maps/${sector.id}`} aria-label={`View full ${sector.name} layout map`} className="relative h-48 overflow-hidden block">
+              <Link to={`/maps/${sector.id}`} aria-label={`View full ${sector.name} Gurgaon map and layout plan`} className="relative h-48 overflow-hidden block">
                 <img
                   src={sector.thumb}
-                  alt={`${sector.name} Gurugram, official approved layout map`}
-                  title={`${sector.name} approved layout map`}
+                  alt={`${sector.name} map — Gurgaon layout plan, Gurugram sector map, official approved`}
+                  title={`${sector.name} Gurgaon map, official approved layout`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                   width={1000}

@@ -57,7 +57,7 @@ const staticRoutes = [
   { route: '/blog', title: "Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty", description: "Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory." },
   { route: '/services', title: "Real Estate Advisory Services in Gurgaon | LSR Realty", description: "LSR Realty offers institutional grade real estate advisory in Gurgaon: office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services." },
   { route: '/projects', title: "Projects | Gurgaon Investment & Leasing Opportunities | LSR Realty", description: "Browse LSR Realty's curated portfolio of Gurgaon real estate investment and leasing opportunities, vetted for legal compliance, construction quality and appreciation potential." },
-  { route: '/maps', title: "Gurgaon Sector Maps & Master Plan 2031 | LSR Realty", description: "Explore sector wise maps of Gurugram, DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View location guides and connect with LSR Realty on available inventory." },
+  { route: '/maps', title: "Gurgaon Map & Sector Layout Plans | Master Plan 2031 | LSR Realty", description: "Explore Gurgaon map and sector layout plans for Gurugram — DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View Gurugram map guides for every location and connect with LSR Realty on available inventory." },
   { route: '/careers', title: "Careers at LSR Realty | Join Gurgaon's Premier Real Estate Advisory", description: "Explore open roles at LSR Realty, including Sales Runner and Sales Telecaller Intern positions in Gurgaon. Build a career in institutional-grade real estate investment advisory." },
   { route: '/contact', title: "Contact LSR Realty | Gurgaon Real Estate Investment Advisory", description: "Get in touch with LSR Realty for a 15 minute consultation on real estate investment advisory, portfolio structuring or NRI services in Gurgaon." },
   { route: '/privacy-policy', title: "Privacy Policy | LSR Realty", description: "Read LSR Realty's privacy policy covering how we collect, use and protect your personal information." },
@@ -82,11 +82,11 @@ for (const sector of SECTOR_MAPS) {
   renderRoute({
     route: `/maps/${sector.id}`,
     title: isMasterPlan
-      ? `${sector.name} (Gurugram Manesar Master Plan 2031) | LSR Realty`
-      : `${sector.name} Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`,
+      ? 'Gurgaon Master Plan 2031 - Map, Sectors & Free Download | LSR Realty'
+      : `${sector.name} Layout Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`,
     description: isMasterPlan
-      ? `${sector.description} Also known as the Gurugram Manesar Master Plan 2031.`
-      : `${sector.description} View the official, government approved layout map for ${sector.name}, part of the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`,
+      ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map - all sectors, land use zones, metro routes and free download. Updated July 2026.'
+      : `${sector.description} View the official, government approved ${sector.name} layout map, part of the Gurgaon map and Gurugram map series covering the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`,
     image: `${SITE_URL}${sector.zoom}`,
   });
 }

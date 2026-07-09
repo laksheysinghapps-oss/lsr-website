@@ -68,10 +68,10 @@ const MapDetail: React.FC = () => {
   const isImtManesar = sector.id === 'imt-manesar';
   const pageTitle = isMasterPlan
     ? 'Gurgaon Master Plan 2031 - Map, Sectors & Free Download | LSR Realty'
-    : `${sector.name} Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`;
+    : `${sector.name} Layout Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`;
   const pageDescription = isMasterPlan
     ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map - all sectors, land use zones, metro routes and free download. Updated July 2026.'
-    : `${sector.description} View the official, government approved layout map for ${sector.name}, part of the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`;
+    : `${sector.description} View the official, government approved ${sector.name} layout map, part of the Gurgaon map and Gurugram map series covering the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`;
 
   const structuredData: object[] = [
     {
@@ -177,7 +177,7 @@ const MapDetail: React.FC = () => {
           <div className="overflow-auto max-h-[75vh] bg-black" style={{ touchAction: 'pinch-zoom' }}>
             <img
               src={sector.zoom}
-              alt={`${sector.name} Gurugram, full resolution official approved layout map, source: ${sector.source}`}
+              alt={`${sector.name} map — Gurgaon layout plan, Gurugram map, full resolution official approved, source: ${sector.source}`}
               className={isZoomed ? 'h-auto cursor-zoom-out' : 'w-full h-auto cursor-zoom-in'}
               style={{ width: isZoomed ? '220%' : '100%', maxWidth: 'none' }}
               onClick={() => setIsZoomed(z => !z)}
