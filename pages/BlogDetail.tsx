@@ -26,6 +26,16 @@ const BlogDetail: React.FC = () => {
 
   const others = BLOG_POSTS.filter(p => p.published && p.id !== post.id).slice(0, 3);
 
+  // Shortened <title>/<meta description> variants that stay under Google's SERP
+  // truncation limits, while post.title/post.excerpt keep the full text for the H1, OG, and cards.
+  const shortHeadline = post.title.includes(':') ? post.title.split(':')[0].trim() : post.title;
+  const pageTitle = shortHeadline.length + 13 <= 60
+    ? `${shortHeadline} | LSR Realty`
+    : `${shortHeadline.slice(0, 44).trim()}... | LSR Realty`;
+  const metaDescription = post.excerpt.length > 158
+    ? `${post.excerpt.slice(0, 155).replace(/\s+\S*$/, '')}...`
+    : post.excerpt;
+
   const structuredData = [
     {
       '@context': 'https://schema.org',
@@ -79,8 +89,8 @@ const BlogDetail: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO
-        title={`${post.title} | LSR Realty - Gurgaon Real Estate Blog`}
-        description={post.excerpt}
+        title={pageTitle}
+        description={metaDescription}
         keywords={`${post.title}, ${post.category}, Gurgaon real estate, Gurugram investment`}
         path={`/blog/${post.id}`}
         image={post.image}

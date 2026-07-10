@@ -30,8 +30,8 @@ const About: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
       <SEO
-        title="About LSR Realty | Institutional Real Estate Advisory in Gurgaon"
-        description="LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade, research backed, and transparent real estate advisory to HNI and NRI investors in Gurgaon."
+        title="About LSR Realty | Real Estate Advisory Gurgaon"
+        description="LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade real estate advisory to HNI and NRI investors in Gurgaon."
         keywords="LSR Realty about us, LSR Group, institutional real estate advisory Gurgaon, real estate advisory company Gurgaon"
         path="/about"
         structuredData={aboutStructuredData}

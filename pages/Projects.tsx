@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { MapPin, ArrowUpRight, X, Search } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
@@ -87,8 +87,8 @@ const Projects: React.FC = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       <SEO
-        title="Projects | Gurgaon Investment & Leasing Opportunities | LSR Realty"
-        description="Browse LSR Realty's curated portfolio of Gurgaon real estate investment and leasing opportunities, vetted for legal compliance, construction quality and appreciation potential."
+        title="Gurgaon Investment & Leasing Projects | LSR Realty"
+        description="Browse LSR Realty's curated portfolio of Gurgaon investment and leasing opportunities, vetted for legal compliance and quality."
         keywords="Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon"
         path="/projects"
         structuredData={projectsStructuredData}
@@ -223,10 +223,18 @@ const Projects: React.FC = () => {
               {allViewProjects.map(project => {
                 const isDual = (projectVariants.get(project.name)?.length ?? 1) > 1;
                 return (
-                  <div
+                  <Link
                     key={project.name}
-                    className="group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative"
-                    onClick={() => handleAllCardClick(project)}
+                    to={`/projects/${project.id}`}
+                    className="group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative block"
+                    onClick={(e) => {
+                      if (isDual) {
+                        e.preventDefault();
+                        handleAllCardClick(project);
+                      } else {
+                        window.scrollTo(0, 0);
+                      }
+                    }}
                   >
                     <div className="relative h-64 overflow-hidden">
                       <img
@@ -249,7 +257,7 @@ const Projects: React.FC = () => {
                         <p className="text-gray-500 text-xs mt-4 uppercase tracking-widest">Click to select category →</p>
                       )}
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>

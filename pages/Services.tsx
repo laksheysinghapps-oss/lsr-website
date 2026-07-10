@@ -11,8 +11,8 @@ const FAQS = [{q:"What services does LSR Realty offer in Gurgaon?",a:"LSR Realty
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
       <SEO
-        title="Real Estate Consultants & Advisory Services in Gurgaon | LSR Realty"
-        description="LSR Realty is a real estate consulting company in Gurgaon offering office leasing, retail leasing, investment advisory, market research, deal structuring and NRI services."
+        title="Real Estate Advisory Services Gurgaon | LSR Realty"
+        description="LSR Realty offers real estate advisory in Gurgaon: office and retail leasing, investment advisory, market research and NRI services."
         keywords="real estate advisory services Gurgaon, office leasing Gurgaon, retail leasing Gurgaon, NRI investment services, deal structuring Gurgaon, real estate market research Gurgaon"
         path="/services" structuredData={structuredData}
       />

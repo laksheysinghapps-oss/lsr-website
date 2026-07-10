@@ -99,8 +99,8 @@ const Blog: React.FC = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       <SEO
-        title="Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty"
-        description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory."
+        title="Gurgaon Real Estate Blog | LSR Realty"
+        description="Expert insights on Gurgaon real estate investment, market trends, location guides and NRI advisory from LSR Realty."
         keywords="Gurgaon real estate blog, Gurugram property market insights, Gurgaon investment guide, real estate news Gurgaon"
         path="/blog"
         structuredData={structuredData}

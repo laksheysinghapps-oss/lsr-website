@@ -20,8 +20,8 @@ const Home: React.FC = () => {
   return (
     <div className="bg-black text-white">
       <SEO
-        title="Real Estate Consultant in Gurgaon | LSR Realty Investment Advisory"
-        description="LSR Realty is a leading real estate consultant and advisory company in Gurgaon, helping HNI and NRI investors buy, lease and invest in residential and commercial property."
+        title="Real Estate Consultant in Gurgaon | LSR Realty"
+        description="LSR Realty is a leading real estate consultant in Gurgaon, helping HNI and NRI investors buy, lease and invest in property."
         keywords="real estate consultant Gurgaon, real estate advisory Gurgaon, Gurgaon property investment, Gurugram real estate, HNI NRI real estate investment, LSR Realty"
         path="/"
       />

@@ -119,8 +119,8 @@ const Careers: React.FC = () => {
   return (
     <div className="bg-black text-white pt-20 md:pt-24 min-h-screen">
       <SEO
-        title="Careers at LSR Realty | Join Gurgaon's Premier Real Estate Advisory"
-        description="Explore open roles at LSR Realty, including Sales Runner and Sales Telecaller Intern positions in Gurgaon. Build a career in institutional-grade real estate investment advisory."
+        title="Careers at LSR Realty | Gurgaon Real Estate Jobs"
+        description="Explore open roles at LSR Realty, including Sales Runner and Telecaller Intern positions in Gurgaon real estate advisory."
         keywords="LSR Realty careers, real estate jobs Gurgaon, sales jobs Gurgaon, real estate advisory careers"
         path="/careers"
         structuredData={careersStructuredData}

@@ -74,8 +74,8 @@ const MasterPlan2041: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO
-        title="Gurgaon Master Plan 2041: Status, Map & PDF Download | LSR Realty"
-        description="Gurgaon Master Plan 2041 (Gurugram) tracker: latest status and news, draft timeline, GMDA infrastructure roadmap for a 55 lakh population, and how 2041 differs from 2031. View and download the current Gurgaon master plan map and PDF free."
+        title="Gurgaon Master Plan 2041: Status & Map | LSR Realty"
+        description="Gurgaon Master Plan 2041 tracker: latest status, GMDA infrastructure roadmap, and how it differs from the 2031 plan."
         keywords="Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon Master Plan 2041 map, Gurgaon layout plan, Gurgaon map"
         path="/gurgaon-master-plan-2041"
         structuredData={structuredData}

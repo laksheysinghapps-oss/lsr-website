@@ -67,11 +67,14 @@ const MapDetail: React.FC = () => {
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
   const isImtManesar = sector.id === 'imt-manesar';
   const pageTitle = isMasterPlan
-    ? 'Gurgaon Master Plan 2031 - Map, Sectors & Free Download | LSR Realty'
-    : `${sector.name} Layout Map | Gurgaon Manesar Master Plan 2031 | LSR Realty`;
+    ? 'Gurgaon Master Plan 2031 Map & Download | LSR Realty'
+    : `${sector.name} | Layout Map | LSR Realty`;
+  const descSuffix = ` Official ${sector.name} layout map, part of Gurgaon Manesar Master Plan 2031.`;
   const pageDescription = isMasterPlan
-    ? 'View the official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map - all sectors, land use zones, metro routes and free download. Updated July 2026.'
-    : `${sector.description} View the official, government approved ${sector.name} layout map, part of the Gurgaon map and Gurugram map series covering the Gurgaon Manesar Master Plan 2031 (Gurugram Manesar Master Plan 2031).`;
+    ? 'Official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map — all sectors, land use zones, metro routes. Free download.'
+    : sector.description.length + descSuffix.length > 160
+      ? `${sector.description.slice(0, Math.max(157 - descSuffix.length, 0)).trim()}...${descSuffix}`
+      : `${sector.description}${descSuffix}`;
   const pageKeywords = `${sector.name} layout plan, ${sector.name} lay out plan, ${sector.name} map, ${sector.name}, Gurgaon map, Gurugram map, Gurugram sector map, Gurgaon layout`;
 
   const structuredData: object[] = [

@@ -5,8 +5,8 @@ import SEO from '../components/SEO';
 import BrochureModal from '../components/BrochureModal';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const PAGE_TITLE = 'Gurgaon Map & Sector Layout Plans | Master Plan 2031 | LSR Realty';
-const PAGE_DESCRIPTION = 'Explore Gurgaon map and sector layout plans for Gurugram — DLF phases, Golf Course Road, Dwarka Expressway, Sohna Road and the Gurgaon Manesar Master Plan 2031. View Gurugram map guides for every location and connect with LSR Realty on available inventory.';
+const PAGE_TITLE = 'Gurgaon Map & Sector Layout Plans | LSR Realty';
+const PAGE_DESCRIPTION = 'Explore Gurgaon map and sector layout plans for Gurugram, including the Gurgaon Manesar Master Plan 2031.';
 const PAGE_KEYWORDS = 'Gurgaon map, Gurugram map, Gurgaon layout plan, Gurgaon lay out plan, Gurgaon sector maps, Gurugram sector map, Master Plan 2031';
 
 const structuredData = [

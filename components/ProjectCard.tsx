@@ -1,22 +1,18 @@
 import React from 'react';
 import { Project } from '../types';
 import { MapPin, ArrowUpRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const navigate = useNavigate();
-
   return (
-    <div 
-      className="group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative"
-      onClick={() => {
-        navigate(`/projects/${project.id}`);
-        window.scrollTo(0, 0);
-      }}
+    <Link
+      to={`/projects/${project.id}`}
+      className="group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative block"
+      onClick={() => window.scrollTo(0, 0)}
     >
       <div className="relative h-64 overflow-hidden">
         <img
@@ -63,12 +59,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
         </div>
 
-        <button className="flex items-center space-x-2 text-xs uppercase tracking-widest text-white group-hover:text-lsr-gold transition-colors">
+        <div className="flex items-center space-x-2 text-xs uppercase tracking-widest text-white group-hover:text-lsr-gold transition-colors">
           <span>View Investment Memo</span>
           <ArrowUpRight size={14} />
-        </button>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

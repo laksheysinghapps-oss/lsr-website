@@ -70,8 +70,8 @@ const ProjectDetail: React.FC = () => {
   const isCommercial = project.subCategory === 'Commercial';
   const isRetail = project.segment === 'Retail';
 
-  const pageTitle = `${project.name} | ${project.location} | LSR Realty`;
-  const pageDescription = `${project.name} in ${project.location}, ${project.priceRange}. ${project.type}. ${project.status}. View inventory, pricing and floor plans with LSR Realty.`;
+  const pageTitle = `${project.name} — ${project.category === 'Leasing' ? 'For Lease' : 'Investment'} | LSR Realty`;
+  const pageDescription = `${project.name}, ${project.location}. ${project.priceRange}. ${project.status}.`;
   const pageKeywords = `${project.name}, ${project.location}, ${project.name} price, ${project.name} floor plan, Gurgaon real estate investment`;
 
   const priceNums = (project.priceRange.match(/[\d.]+/g) || []).map(Number).filter(n => !isNaN(n));
