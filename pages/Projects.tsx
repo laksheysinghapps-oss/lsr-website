@@ -89,6 +89,7 @@ const Projects: React.FC = () => {
       <SEO
         title="Projects | Gurgaon Investment & Leasing Opportunities | LSR Realty"
         description="Browse LSR Realty's curated portfolio of Gurgaon real estate investment and leasing opportunities, vetted for legal compliance, construction quality and appreciation potential."
+        keywords="Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon"
         path="/projects"
         structuredData={projectsStructuredData}
       />

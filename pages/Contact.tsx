@@ -3,6 +3,37 @@ import { MapPin, Phone, Mail, Check, Loader2 } from 'lucide-react';
 import { submitLead } from '../lib/submitLead';
 import SEO from '../components/SEO';
 
+const contactStructuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://lsrrealty.com/contact' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact LSR Realty',
+    url: 'https://lsrrealty.com/contact',
+    mainEntity: {
+      '@type': 'RealEstateAgent',
+      name: 'LSR Realty',
+      telephone: '+91-8448660019',
+      email: 'marketing@lsrrealty.com',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '911, Magnum Global Park, Sector 58',
+        addressLocality: 'Gurugram',
+        postalCode: '122098',
+        addressRegion: 'Haryana',
+        addressCountry: 'IN',
+      },
+    },
+  },
+];
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     firstName: '',
@@ -58,7 +89,9 @@ const Contact: React.FC = () => {
       <SEO
         title="Contact LSR Realty | Gurgaon Real Estate Investment Advisory"
         description="Get in touch with LSR Realty for a 15 minute consultation on real estate investment advisory, portfolio structuring or NRI services in Gurgaon."
+        keywords="contact LSR Realty, real estate consultation Gurgaon, book consultation Gurgaon real estate"
         path="/contact"
+        structuredData={contactStructuredData}
       />
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-16">
 

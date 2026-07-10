@@ -101,6 +101,7 @@ const Blog: React.FC = () => {
       <SEO
         title="Gurgaon Real Estate Blog | Market Intelligence & Investment Insights | LSR Realty"
         description="Expert insights on Gurgaon real estate investment, commercial market trends, location analysis, NRI advisory and Gurugram sector guides from LSR Realty — institutional-grade real estate advisory."
+        keywords="Gurgaon real estate blog, Gurugram property market insights, Gurgaon investment guide, real estate news Gurgaon"
         path="/blog"
         structuredData={structuredData}
       />

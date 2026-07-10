@@ -81,6 +81,7 @@ const BlogDetail: React.FC = () => {
       <SEO
         title={`${post.title} | LSR Realty - Gurgaon Real Estate Blog`}
         description={post.excerpt}
+        keywords={`${post.title}, ${post.category}, Gurgaon real estate, Gurugram investment`}
         path={`/blog/${post.id}`}
         image={post.image}
         ogType="article"

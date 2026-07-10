@@ -3,13 +3,38 @@ import { Link } from 'react-router-dom';
 import { Award, Briefcase, BookOpen } from 'lucide-react';
 import SEO from '../components/SEO';
 
+const aboutStructuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://lsrrealty.com/' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://lsrrealty.com/about' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About LSR Realty',
+    url: 'https://lsrrealty.com/about',
+    description: 'LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade, research backed, and transparent real estate advisory to HNI and NRI investors in Gurgaon.',
+    mainEntity: {
+      '@type': 'RealEstateAgent',
+      name: 'LSR Realty',
+      url: 'https://lsrrealty.com/',
+    },
+  },
+];
+
 const About: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40">
       <SEO
         title="About LSR Realty | Institutional Real Estate Advisory in Gurgaon"
         description="LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade, research backed, and transparent real estate advisory to HNI and NRI investors in Gurgaon."
+        keywords="LSR Realty about us, LSR Group, institutional real estate advisory Gurgaon, real estate advisory company Gurgaon"
         path="/about"
+        structuredData={aboutStructuredData}
       />
       {/* Header */}
       <section className="py-20 bg-lsr-charcoal border-b border-white/5">

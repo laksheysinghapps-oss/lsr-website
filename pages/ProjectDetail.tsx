@@ -72,6 +72,7 @@ const ProjectDetail: React.FC = () => {
 
   const pageTitle = `${project.name} | ${project.location} | LSR Realty`;
   const pageDescription = `${project.name} in ${project.location}, ${project.priceRange}. ${project.type}. ${project.status}. View inventory, pricing and floor plans with LSR Realty.`;
+  const pageKeywords = `${project.name}, ${project.location}, ${project.name} price, ${project.name} floor plan, Gurgaon real estate investment`;
 
   const priceNums = (project.priceRange.match(/[\d.]+/g) || []).map(Number).filter(n => !isNaN(n));
   const availability = /sold\s*out/i.test(project.status)
@@ -127,7 +128,7 @@ const ProjectDetail: React.FC = () => {
 
   return (
     <div className="bg-black text-white pt-20">
-      <SEO title={pageTitle} description={pageDescription} path={`/projects/${project.id}`} structuredData={structuredData} />
+      <SEO title={pageTitle} description={pageDescription} keywords={pageKeywords} path={`/projects/${project.id}`} structuredData={structuredData} />
       {showBrochureModal && (
         <BrochureModal projectName={project.name} onClose={() => setShowBrochureModal(false)} />
       )}
