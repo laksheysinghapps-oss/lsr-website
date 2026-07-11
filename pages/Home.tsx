@@ -14,6 +14,52 @@ const mockChartData = [
   { name: '2024', ggn: 210, blr: 140 },
 ];
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'RealEstateAgent',
+  name: 'LSR Realty',
+  url: 'https://lsrrealty.com',
+  logo: 'https://lsrrealty.com/images/Logo2.png',
+  image: 'https://lsrrealty.com/images/Logo2.png',
+  description: 'LSR Realty is a leading real estate investment advisory firm in Gurgaon, offering institutional-grade property advisory, office leasing, retail leasing, and NRI investment services across Gurugram.',
+  telephone: '+918448660019',
+  email: 'marketing@lsrrealty.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '911, Magnum Global Park, Sector 58',
+    addressLocality: 'Gurugram',
+    addressRegion: 'Haryana',
+    postalCode: '122098',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 28.4091,
+    longitude: 77.0517,
+  },
+  priceRange: '₹₹₹₹',
+  areaServed: [
+    { '@type': 'City', name: 'Gurgaon' },
+    { '@type': 'City', name: 'Gurugram' },
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Real Estate Advisory Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Real Estate Investment Advisory' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Office Leasing Gurgaon' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Retail Leasing Gurgaon' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'NRI Property Investment Advisory' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Portfolio Structuring' } },
+    ],
+  },
+  sameAs: [
+    'https://www.linkedin.com/company/lsr-realty/',
+    'https://www.instagram.com/lsrrealty/',
+    'https://www.facebook.com/profile.php?id=61586950558326',
+  ],
+};
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
@@ -21,9 +67,9 @@ const Home: React.FC = () => {
     <div className="bg-black text-white">
       <SEO
         title="Real Estate Consultant in Gurgaon | LSR Realty"
-        description="LSR Realty is a leading real estate consultant in Gurgaon, helping HNI and NRI investors buy, lease and invest in property."
-        keywords="real estate consultant Gurgaon, real estate advisory Gurgaon, Gurgaon property investment, Gurugram real estate, HNI NRI real estate investment, LSR Realty"
+        description="LSR Realty is a leading real estate consultant in Gurgaon, helping HNI and NRI investors buy, lease and invest in property across Gurugram."
         path="/"
+        structuredData={localBusinessSchema}
       />
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 md:pt-0">
