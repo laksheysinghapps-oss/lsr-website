@@ -5,6 +5,43 @@ import { MapPin, Briefcase, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
 const OPEN_POSITIONS = [
   {
+    id: 3,
+    title: 'Leasing Manager — Commercial & Retail Real Estate',
+    location: 'Sector 58, Gurugram',
+    industry: 'Real Estate',
+    type: 'Full Time',
+    about: 'LSR Realty is looking for an experienced Leasing Manager to drive commercial and retail leasing across office spaces, retail outlets, high streets, malls, and mixed-use developments. If you are passionate about commercial real estate and thrive in a target-driven environment, we would love to hear from you.',
+    responsibilities: [
+      'Drive leasing and business development activities across commercial and retail segments.',
+      'Build and maintain relationships with corporate clients, retail brands, landlords, and channel partners.',
+      'Lead site visits, lease negotiations, and deal closures.',
+      'Conduct market research and identify new leasing opportunities.',
+      'Achieve occupancy and revenue targets.',
+    ],
+    requirements: [
+      '5 to 8 years of experience in Commercial and Retail Leasing.',
+      'Strong network within the commercial real estate industry.',
+      'Excellent negotiation, client management, and business development skills.',
+      'Willingness to travel for client meetings and site visits.',
+    ],
+    desiredSkills: [
+      'Deep understanding of office and retail leasing market dynamics in Gurgaon.',
+      'Proven track record of closing commercial lease deals.',
+      'Strong relationships with corporate occupiers and retail brands.',
+    ],
+    benefits: [
+      'Competitive Salary + Performance Incentives',
+      'High-value commercial deal exposure',
+      'Access to premium inventory across Gurugram',
+      'Professional, research-driven work environment',
+    ],
+    mustHave: '5+ years in Commercial & Retail Leasing',
+    skills: 'Commercial Leasing / Business Development / Lease Negotiations',
+    gender: '',
+    stipend: '',
+    applyEmail: 'saboori@lsrrealty.com',
+  },
+  {
     id: 2,
     title: 'Sales Telecaller Intern, Real Estate',
     location: 'Gurgaon, Haryana',
@@ -45,6 +82,7 @@ const OPEN_POSITIONS = [
     skills: 'Telecalling / Lead Generation',
     gender: 'Open to Male & Female Candidates',
     stipend: 'As per company policy + Performance Incentives',
+    applyEmail: '',
   },
   {
     id: 1,
@@ -90,6 +128,7 @@ const OPEN_POSITIONS = [
     skills: 'Inventory Sourcing',
     gender: '',
     stipend: '',
+    applyEmail: '',
   },
 ];
 
@@ -120,8 +159,8 @@ const Careers: React.FC = () => {
     <div className="bg-black text-white pt-20 md:pt-24 min-h-screen">
       <SEO
         title="Careers at LSR Realty | Gurgaon Real Estate Jobs"
-        description="Explore open roles at LSR Realty, including Sales Runner and Telecaller Intern positions in Gurgaon real estate advisory."
-        keywords="LSR Realty careers, real estate jobs Gurgaon, sales jobs Gurgaon, real estate advisory careers"
+        description="Explore open roles at LSR Realty — Leasing Manager, Sales Runner, and Telecaller Intern positions in Gurgaon commercial real estate advisory."
+        keywords="LSR Realty careers, real estate jobs Gurgaon, leasing manager Gurgaon, commercial real estate jobs, sales jobs Gurgaon"
         path="/careers"
         structuredData={careersStructuredData}
       />
@@ -253,12 +292,24 @@ const Careers: React.FC = () => {
                       </div>}
                     </div>
 
-                    <button
-                      onClick={() => setShowModal(true)}
-                      className="bg-lsr-gold text-black px-8 py-3 text-sm uppercase tracking-widest font-bold hover:opacity-90 transition-opacity"
-                    >
-                      Apply for this Position
-                    </button>
+                    {job.applyEmail ? (
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                        <button
+                          onClick={() => setShowModal(true)}
+                          className="bg-lsr-gold text-black px-8 py-3 text-sm uppercase tracking-widest font-bold hover:opacity-90 transition-opacity"
+                        >
+                          Apply for this Position
+                        </button>
+                        <span className="text-gray-400 text-sm">or email your resume to <a href={`mailto:${job.applyEmail}`} className="text-lsr-gold hover:opacity-80 transition-opacity">{job.applyEmail}</a></span>
+                      </div>
+                    ) : (
+                      <button
+                        onClick={() => setShowModal(true)}
+                        className="bg-lsr-gold text-black px-8 py-3 text-sm uppercase tracking-widest font-bold hover:opacity-90 transition-opacity"
+                      >
+                        Apply for this Position
+                      </button>
+                    )}
                   </div>
                 )}
               </div>
