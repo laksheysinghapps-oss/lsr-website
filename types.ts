@@ -60,8 +60,10 @@ export interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
+  metaDescription?: string;
   category: string;
   date: string;
+  dateISO?: string;
   readTime: string;
   image: string;
   content: string;
