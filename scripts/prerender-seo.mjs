@@ -214,6 +214,7 @@ const staticRoutes = [
       name: 'Gurgaon Real Estate Investment & Leasing Projects — LSR Realty',
       description: 'Curated portfolio of Gurgaon investment and leasing opportunities including luxury residential, Grade A office and premium retail across all major Gurugram corridors.',
       url: `${SITE_URL}/projects`,
+      numberOfItems: PROJECTS.length,
       about: { '@type': 'City', name: 'Gurugram', alternateName: 'Gurgaon' },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
       hasPart: PROJECTS.map((p, i) => ({
@@ -237,6 +238,7 @@ const staticRoutes = [
       name: 'Gurgaon Sector Maps & Layout Plans Library',
       description: '75+ approved sector layout plans for Gurugram, including the official Gurgaon Manesar Master Plan 2031. Maintained by LSR Realty for property investors and planners.',
       url: `${SITE_URL}/maps`,
+      numberOfItems: SECTOR_MAPS.length,
       about: {
         '@type': 'Place',
         name: 'Gurugram',
@@ -640,5 +642,5 @@ ${imageEntries.map(e => `  <url>
 fs.writeFileSync(path.join(distDir, 'sitemap-images.xml'), imageSitemapXml);
 
 const totalRoutes = staticRoutes.length + PROJECTS.length + SECTOR_MAPS.length + publishedPosts.length;
-console.log(`✓ Prerendered ${totalRoutes} routes with BreadcrumbList, RealEstateListing, Article, and Service schemas.`);
+console.log(`✓ Prerendered ${totalRoutes} routes: BreadcrumbList, RealEstateListing, Article, ItemList, Blog, Map, WebPage, JobPosting, FAQPage, CollectionPage schemas.`);
 console.log(`✓ Image sitemap: ${imageEntries.length} images across ${imageEntries.length} pages.`);
