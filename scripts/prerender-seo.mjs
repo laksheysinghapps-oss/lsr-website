@@ -378,7 +378,7 @@ const staticRoutes = [
   },
   {
     route: '/gurgaon-master-plan-2041',
-    title: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure | LSR Realty',
+    title: 'Gurgaon Master Plan 2041: Status & Infrastructure | LSR Realty',
     description: 'Gurgaon Master Plan 2041 tracker: GMDA status, infrastructure projects, 55 lakh population projection, and investment zones compared to Master Plan 2031.',
     keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon 2041 master plan status, GMDA 2041, Gurugram infrastructure plan 2041, Gurgaon 2041 map, Gurgaon 2041 investment zones',
     breadcrumbs: [HOME, { name: 'Gurgaon Master Plan 2041', url: `${SITE_URL}/gurgaon-master-plan-2041` }],
@@ -587,6 +587,58 @@ for (const sector of SECTOR_MAPS) {
 
 // ── Blog detail pages ─────────────────────────────────────────────────────────
 const publishedPosts = BLOG_POSTS.filter(p => p.published);
+// FAQ schemas per blog post — injected as FAQPage structured data for rich snippet eligibility
+const BLOG_FAQ_SCHEMAS = {
+  'golf-course-extension-road-vs-golf-course-road-gurgaon': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Is Golf Course Extension Road better than Golf Course Road for property investment?',
+        acceptedAnswer: { '@type': 'Answer', text: 'GCER (Golf Course Extension Road, Sectors 58–65) has outperformed Golf Course Road in price appreciation since 2020. One LSR Realty client property on GCER rose from ₹4.68 Cr in September 2021 to ₹17 Cr in 2026, a gain of 263% in under five years. New supply on GCR is limited while GCER has active development with projects like DLF Privana, DLF Arbour, and Emaar Serenity. Current prices on GCER are ₹15,000 to ₹25,000 per sqft versus ₹18,000 to ₹30,000 per sqft on GCR. GCER is the preferred corridor for capital appreciation; GCR is preferred for established luxury and Grade A commercial.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the price per sqft on Golf Course Extension Road in 2026?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Golf Course Extension Road (GCER, Sectors 58–65) prices in 2026 range from ₹15,000 to ₹25,000 per sqft for luxury residential projects. DLF Arbour is priced at approximately ₹23,500 to ₹24,000 per sqft. DLF Privana South is priced at ₹7.5 Cr and above for 4 BHK. Emaar Serenity and newer Elan projects on GCER range from ₹15,000 to ₹19,000 per sqft. Contact LSR Realty at +91 8448660019 for current project-specific pricing.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which luxury residential projects are available on Golf Course Extension Road, Gurgaon?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Active luxury projects on Golf Course Extension Road (GCER) in 2026 include DLF The Arbour (Sector 63, ultra-luxury 4 BHK, resale only), DLF Privana South (Sector 76–77, luxury 4 BHK), Emaar Serenity (Sector 65, 3 and 4 BHK), Elan Paradise (Sector 50), and AIPL Joy Street (high-street retail). LSR Realty is an authorised advisor for all these projects. Contact +91 8448660019 or marketing@lsrrealty.com.' },
+      },
+    ],
+  },
+  'gurgaon-manesar-master-plan-2031-explained': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the Gurgaon Manesar Master Plan 2031?',
+        acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 is the official land use and development plan for the Gurgaon-Manesar Urban Complex, prepared by the Department of Town and Country Planning (DTCP), Haryana. It covers Gurugram district up to Sector 115 and the Manesar IMT zone. The plan defines residential, commercial, industrial, and green zones, designates major road corridors, and specifies floor-area-ratio (FAR) norms. It is the statutory basis for all development approvals, RERA registrations, and land-use changes in Gurgaon.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the Gurgaon Master Plan 2031 affect property investment?',
+        acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Master Plan 2031 determines where new residential and commercial development can occur, what FSI developers can build to, and which corridors receive infrastructure investment. Sectors zoned Residential R3 have seen new apartment supply under RERA. Corridors designated for metro extension have seen property price premiums near proposed stations. Investors should cross-reference any project\'s land parcel against the Master Plan 2031 zone to verify legality and growth outlook.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Gurgaon Master Plan 2031 and Master Plan 2041?',
+        acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 is the current operative land-use plan, in force and the basis for all RERA registrations in Gurugram. The Master Plan 2041 is under preparation by GMDA (Gurugram Metropolitan Development Authority) and has not been finalised. It is expected to extend the planning boundary, account for a projected population of 55 lakh by 2041, and add new infrastructure corridors. Until the 2041 plan is formally notified by the Haryana government, the 2031 plan remains the legal reference for property transactions.' },
+      },
+    ],
+  },
+};
+
+// SEO-optimised short titles for blog posts whose full title exceeds 65 chars
+const BLOG_TITLE_OVERRIDES = {
+  'golf-course-extension-road-vs-golf-course-road-gurgaon': 'GCER vs Golf Course Road: Gurgaon Investment Guide | LSR Realty',
+  'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Master Plan 2031: Property Investor Guide | LSR Realty',
+};
+
 for (const post of publishedPosts) {
   const postDescription = post.metaDescription || post.excerpt;
   const postImage = post.image?.startsWith('http') ? post.image : `${SITE_URL}${post.image}`;
@@ -631,7 +683,7 @@ for (const post of publishedPosts) {
 
   renderRoute({
     route: `/blog/${post.id}`,
-    title: `${post.title} | LSR Realty`,
+    title: BLOG_TITLE_OVERRIDES[post.id] || `${post.title} | LSR Realty`,
     description: postDescription,
     keywords: `${post.category}, Gurgaon real estate, Gurugram investment, LSR Realty`,
     image: postImage,
@@ -647,7 +699,7 @@ for (const post of publishedPosts) {
       { name: 'Real Estate Blog', url: `${SITE_URL}/blog` },
       { name: post.title, url: postUrl },
     ],
-    structuredData: [articleSchema],
+    structuredData: BLOG_FAQ_SCHEMAS[post.id] ? [articleSchema, BLOG_FAQ_SCHEMAS[post.id]] : [articleSchema],
     preloadImage: post.image?.startsWith('/') ? post.image : undefined,
   });
 }
