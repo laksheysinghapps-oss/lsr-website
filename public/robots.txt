@@ -16,3 +16,4 @@ Allow: /
 Crawl-delay: 10
 
 Sitemap: https://lsrrealty.com/sitemap.xml
+Sitemap: https://lsrrealty.com/sitemap-images.xml
