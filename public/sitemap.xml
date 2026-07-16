@@ -1013,13 +1013,19 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/blog</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/blog/golf-course-extension-road-vs-golf-course-road-gurgaon</loc>
     <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lsrrealty.com/blog/gurgaon-manesar-master-plan-2031-explained</loc>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
