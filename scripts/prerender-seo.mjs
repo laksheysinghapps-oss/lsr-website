@@ -470,6 +470,29 @@ for (const sector of SECTOR_MAPS) {
       ? `${sector.description.slice(0, Math.max(157 - descSuffix.length, 0)).trim()}...${descSuffix}`
       : `${sector.description}${descSuffix}`;
 
+  const mapSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Map',
+    name: mapTitle.replace(' | LSR Realty', ''),
+    description: mapDesc,
+    url: `${SITE_URL}/maps/${sector.id}`,
+    image: { '@type': 'ImageObject', url: `${SITE_URL}${sector.zoom}`, name: `${sector.name} Layout Plan`, description: mapDesc },
+    about: {
+      '@type': 'Place',
+      name: sector.name,
+      containedInPlace: {
+        '@type': 'City',
+        name: 'Gurugram',
+        alternateName: 'Gurgaon',
+        containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
+      },
+    },
+    publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
+    mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
+    license: 'https://dtcpharyana.gov.in/',
+    dateModified: '2026-07-16',
+  };
+
   renderRoute({
     route: `/maps/${sector.id}`,
     title: mapTitle,
@@ -481,6 +504,7 @@ for (const sector of SECTOR_MAPS) {
       { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` },
       { name: sector.name, url: `${SITE_URL}/maps/${sector.id}` },
     ],
+    structuredData: [mapSchema],
   });
 }
 
