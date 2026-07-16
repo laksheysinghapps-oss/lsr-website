@@ -426,7 +426,25 @@ for (const project of PROJECTS) {
       ...(project.rera ? [{ '@type': 'PropertyValue', name: 'RERA Number', value: project.rera }] : []),
       ...(project.possessionDate ? [{ '@type': 'PropertyValue', name: 'Possession Date', value: project.possessionDate }] : []),
       ...(project.totalUnits ? [{ '@type': 'PropertyValue', name: 'Total Units', value: String(project.totalUnits) }] : []),
+      ...(project.landArea ? [{ '@type': 'PropertyValue', name: 'Land Area', value: project.landArea }] : []),
+      ...(project.towers ? [{ '@type': 'PropertyValue', name: 'Towers', value: String(project.towers) }] : []),
+      ...(project.floors ? [{ '@type': 'PropertyValue', name: 'Floors', value: String(project.floors) }] : []),
+      ...(project.pricePerSqFt ? [{ '@type': 'PropertyValue', name: 'Price Per Sq Ft', value: project.pricePerSqFt }] : []),
     ],
+    ...(project.amenities?.length || project.highlights?.length ? {
+      amenityFeature: [
+        ...(project.highlights ?? []).map(h => ({ '@type': 'LocationFeatureSpecification', name: h, value: true })),
+        ...(project.amenities ?? []).map(a => ({ '@type': 'LocationFeatureSpecification', name: a, value: true })),
+      ],
+    } : {}),
+    ...(project.unitMix?.length ? {
+      accommodationFloorPlan: project.unitMix.map(u => ({
+        '@type': 'FloorPlan',
+        name: u.type,
+        floorSize: { '@type': 'QuantitativeValue', value: u.size, unitText: 'sqft' },
+        ...(u.price ? { numberOfRooms: { '@type': 'QuantitativeValue', value: u.type.replace(/[^0-9]/g, '') || undefined } } : {}),
+      })),
+    } : {}),
   };
 
   const locationNoComma = project.location.replace(/,/g, '');
