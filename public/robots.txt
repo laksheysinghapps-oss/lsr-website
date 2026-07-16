@@ -1,4 +1,18 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /.prerender-constants.mjs
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 10
 
 Sitemap: https://lsrrealty.com/sitemap.xml
