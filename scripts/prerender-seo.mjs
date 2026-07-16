@@ -558,13 +558,23 @@ for (const sector of SECTOR_MAPS) {
     mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
     license: 'https://dtcpharyana.gov.in/',
     dateModified: '2026-07-16',
+    ...(isMasterPlan ? {
+      potentialAction: {
+        '@type': 'DownloadAction',
+        name: 'Download Gurgaon Master Plan 2031 Map',
+        target: `${SITE_URL}${sector.zoom}`,
+        object: { '@type': 'ImageObject', url: `${SITE_URL}${sector.zoom}`, name: 'Gurgaon Manesar Master Plan 2031 High-Resolution Map' },
+      },
+    } : {}),
   };
 
   renderRoute({
     route: `/maps/${sector.id}`,
     title: mapTitle,
     description: mapDesc,
-    keywords: `${sector.name} layout plan, ${sector.name} map, ${sector.name} Gurgaon, ${sector.name} plot layout, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout`,
+    keywords: isMasterPlan
+      ? 'Gurgaon Master Plan 2031 map, Gurgaon Master Plan 2031 PDF download, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 land use, Gurgaon sector map download, Gurugram Master Plan 2031'
+      : `${sector.name} layout plan, ${sector.name} map, ${sector.name} Gurgaon, ${sector.name} plot layout, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout`,
     image: `${SITE_URL}${sector.zoom}`,
     breadcrumbs: [
       HOME,
