@@ -535,6 +535,11 @@ for (const post of publishedPosts) {
     articleSection: post.category,
     inLanguage: 'en-IN',
     url: postUrl,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '.article-lead', '[data-speakable]'],
+      xpath: ['/html/head/title', "/html/head/meta[@name='description']/@content"],
+    },
   };
 
   renderRoute({
