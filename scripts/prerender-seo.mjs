@@ -451,7 +451,12 @@ for (const project of PROJECTS) {
   const unitType = project.unitMix?.[0]?.type ?? '';
   renderRoute({
     route: `/projects/${project.id}`,
-    title: `${project.name} — ${project.category === 'Leasing' ? 'For Lease in Gurgaon' : 'Investment in Gurgaon'} | LSR Realty`,
+    title: (() => {
+      const unitSuffix = unitType ? ` ${unitType}` : '';
+      const action = project.category === 'Leasing' ? 'For Lease' : 'Investment';
+      const base = `${project.name}${unitSuffix} — ${action} in Gurgaon | LSR Realty`;
+      return base.length <= 65 ? base : `${project.name} — ${action} in Gurgaon | LSR Realty`;
+    })(),
     description: (() => {
       const base = `${project.name}, ${project.location}. ${project.priceRange}. ${project.developer}.`;
       const suffix = ` ${project.category === 'Leasing' ? 'Leasing' : 'Investment'} advisory by LSR Realty, Gurgaon.`;
