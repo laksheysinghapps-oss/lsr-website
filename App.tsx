@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
-import Maps from './pages/Maps';
-import MapDetail from './pages/MapDetail';
-import MasterPlan2041 from './pages/MasterPlan2041';
-import Blog from './pages/Blog';
-import BlogDetail from './pages/BlogDetail';
-import Careers from './pages/Careers';
-import Contact from './pages/Contact';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
+const Maps = lazy(() => import('./pages/Maps'));
+const MapDetail = lazy(() => import('./pages/MapDetail'));
+const MasterPlan2041 = lazy(() => import('./pages/MasterPlan2041'));
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogDetail = lazy(() => import('./pages/BlogDetail'));
+const Careers = lazy(() => import('./pages/Careers'));
+const Contact = lazy(() => import('./pages/Contact'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <ScrollToTop />
         <Navbar />
         <main className="flex-grow">
+          <Suspense fallback={<div className="min-h-screen bg-black" />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -45,6 +47,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
+          </Suspense>
         </main>
         <Footer />
 
