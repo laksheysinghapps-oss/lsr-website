@@ -523,6 +523,8 @@ for (const post of publishedPosts) {
   const postUrl = `${SITE_URL}/blog/${post.id}`;
   const isoDate = post.dateISO || '2026-07-03';
 
+  const wordCount = post.content ? post.content.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length : 0;
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -531,7 +533,12 @@ for (const post of publishedPosts) {
     image: postImage,
     datePublished: isoDate,
     dateModified: isoDate,
-    author: { '@type': 'Organization', name: 'LSR Realty Advisory Team', url: `${SITE_URL}/about` },
+    author: {
+      '@type': 'Organization',
+      name: 'LSR Realty Advisory Team',
+      url: `${SITE_URL}/about`,
+      knowsAbout: ['real estate investment Gurgaon', 'office leasing Gurgaon', 'NRI property investment India'],
+    },
     publisher: {
       '@type': 'Organization',
       name: 'LSR Realty',
@@ -542,6 +549,9 @@ for (const post of publishedPosts) {
     articleSection: post.category,
     inLanguage: 'en-IN',
     url: postUrl,
+    wordCount: wordCount || undefined,
+    keywords: `${post.category}, Gurgaon real estate, Gurugram property investment, LSR Realty`,
+    audience: { '@type': 'Audience', audienceType: 'Real estate investors, HNI, NRI, property buyers in Gurgaon' },
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '.article-lead', '[data-speakable]'],
