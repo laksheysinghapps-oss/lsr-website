@@ -303,11 +303,26 @@ for (const project of PROJECTS) {
     ],
   };
 
+  const locationNoComma = project.location.replace(/,/g, '');
+  const unitType = project.unitMix?.[0]?.type ?? '';
   renderRoute({
     route: `/projects/${project.id}`,
-    title: `${project.name} — ${project.category === 'Leasing' ? 'For Lease' : 'Investment'} | LSR Realty`,
-    description: `${project.name}, ${project.location}. ${project.priceRange}. ${project.status}. View inventory, pricing and investment analysis with LSR Realty.`,
-    keywords: `${project.name}, ${project.location}, ${project.name} price, ${project.name} floor plan, Gurgaon real estate investment`,
+    title: `${project.name} — ${project.category === 'Leasing' ? 'For Lease in Gurgaon' : 'Investment in Gurgaon'} | LSR Realty`,
+    description: `${project.name}, ${project.location}. ${project.priceRange}. ${project.status}. ${project.developer}. View inventory, pricing and investment analysis with LSR Realty.`,
+    keywords: [
+      project.name,
+      `${project.name} price`,
+      `${project.name} floor plan`,
+      `${project.name} ${project.developer}`,
+      project.location,
+      locationNoComma,
+      project.developer,
+      project.type,
+      unitType ? `${unitType} Gurgaon` : '',
+      project.rera ? `${project.name} RERA` : '',
+      'Gurgaon real estate investment',
+      `real estate ${project.category === 'Leasing' ? 'leasing' : 'investment'} Gurgaon`,
+    ].filter(Boolean).join(', '),
     image: projectImage,
     breadcrumbs: [
       HOME,
@@ -335,7 +350,7 @@ for (const sector of SECTOR_MAPS) {
     route: `/maps/${sector.id}`,
     title: mapTitle,
     description: mapDesc,
-    keywords: `${sector.name} layout plan, ${sector.name} map, ${sector.name}, Gurgaon map, Gurugram map, Gurugram sector map`,
+    keywords: `${sector.name} layout plan, ${sector.name} map, ${sector.name} Gurgaon, ${sector.name} plot layout, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout`,
     image: `${SITE_URL}${sector.zoom}`,
     breadcrumbs: [
       HOME,
