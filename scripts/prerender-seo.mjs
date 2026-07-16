@@ -340,7 +340,7 @@ const staticRoutes = [
   },
   {
     route: '/gurgaon-master-plan-2041',
-    title: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure Roadmap | LSR Realty',
+    title: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure | LSR Realty',
     description: 'Gurgaon Master Plan 2041 tracker: GMDA status, infrastructure projects, 55 lakh population projection, and investment zones compared to Master Plan 2031.',
     keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon 2041 master plan status, GMDA 2041, Gurugram infrastructure plan 2041, Gurgaon 2041 map, Gurgaon 2041 investment zones',
     breadcrumbs: [HOME, { name: 'Gurgaon Master Plan 2041', url: `${SITE_URL}/gurgaon-master-plan-2041` }],
