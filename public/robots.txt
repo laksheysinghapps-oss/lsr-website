@@ -15,5 +15,20 @@ User-agent: Slurp
 Allow: /
 Crawl-delay: 10
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 Sitemap: https://lsrrealty.com/sitemap.xml
 Sitemap: https://lsrrealty.com/sitemap-images.xml
