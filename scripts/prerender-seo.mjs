@@ -48,6 +48,8 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${escapeHtml(description)}" />`);
   if (keywords) html = html.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${escapeHtml(keywords)}" />`);
   html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${url}" />`);
+  html = html.replace(/hreflang="en-IN" href=".*?" \/>/, `hreflang="en-IN" href="${url}" />`);
+  html = html.replace(/hreflang="en" href=".*?" \/>/, `hreflang="en" href="${url}" />`);
   if (ogType) html = html.replace(/<meta property="og:type" content=".*?" \/>/, `<meta property="og:type" content="${ogType}" />`);
   html = html.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${escapeHtml(title)}" />`);
   html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${escapeHtml(description)}" />`);
@@ -168,7 +170,37 @@ const staticRoutes = [
     description: 'LSR Realty offers real estate advisory in Gurgaon: office and retail leasing, investment advisory, market research and NRI services.',
     keywords: 'real estate advisory services Gurgaon, office leasing Gurgaon, retail leasing Gurgaon, NRI investment services, deal structuring Gurgaon',
     breadcrumbs: [HOME, { name: 'Our Services', url: `${SITE_URL}/services` }],
-    structuredData: [servicesSchema],
+    structuredData: [servicesSchema, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What real estate advisory services does LSR Realty offer in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty offers seven core services in Gurgaon: (1) Office Leasing Advisory — Grade A office spaces across Golf Course Road, Udyog Vihar, Cyber City and SPR; (2) Retail Leasing — high street and mall retail in prime Gurgaon catchments; (3) Investment Advisory — bespoke portfolio strategies for HNI and NRI investors; (4) Market Research — institutional-grade reports on Gurgaon micro-markets; (5) Deal Structuring — negotiation, legal due diligence and financial structuring; (6) NRI Services — end-to-end FEMA-compliant investment management for overseas Indians; (7) Inventory Sourcing — off-market and pre-launch inventory via exclusive developer relationships.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How does LSR Realty\'s office leasing advisory work in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty\'s office leasing process starts with a detailed brief on team size, budget, workplace requirements and growth plans. We then shortlist Grade A office spaces across Gurgaon\'s key corridors — Golf Course Road, Udyog Vihar, Cyber City, Dwarka Expressway and SPR — negotiate terms, and manage the entire transaction through to lease execution. Our fee is typically a landlord-paid transaction commission, so tenants pay nothing.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does LSR Realty handle NRI property investments in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. LSR Realty operates a dedicated NRI Desk that manages the complete investment process for overseas Indian investors under FEMA guidelines. Services include property identification and due diligence, builder coordination, NRE/NRO account compliance, power of attorney structuring, rental management, and exit advisory. Everything is managed remotely so NRI clients can invest from any country.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the cost of LSR Realty\'s investment advisory services?',
+          acceptedAnswer: { '@type': 'Answer', text: 'For residential and commercial property transactions, LSR Realty\'s fee is a brokerage arrangement with the developer or landlord — investors pay no upfront advisory fee. For standalone consultancy assignments (portfolio review, market entry strategy, independent due diligence), fees are agreed case-by-case. Contact marketing@lsrrealty.com for a consultation.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which areas of Gurgaon does LSR Realty cover for real estate services?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty covers all major Gurgaon real estate corridors: Golf Course Extension Road (Sectors 58–65), Golf Course Road, Dwarka Expressway, Sohna Road, Southern Peripheral Road (SPR), Udyog Vihar, Cyber City, and New Gurgaon/Manesar. We advise on both residential (luxury apartments, villas) and commercial (Grade A office, high-street retail, mall retail) assets across these micro-markets.' },
+        },
+      ],
+    }],
   },
   {
     route: '/projects',
