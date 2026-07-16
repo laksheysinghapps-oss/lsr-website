@@ -114,7 +114,7 @@ const staticRoutes = [
   {
     route: '/about',
     title: 'LSR Realty | Institutional Real Estate Advisory Gurgaon',
-    description: 'LSR Realty is the investment advisory arm of LSR Group, bringing institutional-grade, research-backed real estate advisory to HNI, UHNI and NRI investors in Gurgaon.',
+    description: 'LSR Realty — investment advisory arm of LSR Group. Institutional-grade, research-backed real estate advisory for HNI, UHNI and NRI investors in Gurgaon.',
     keywords: 'LSR Realty about, LSR Group, institutional real estate advisory Gurgaon, HNI NRI real estate advisory',
     breadcrumbs: [HOME, { name: 'About LSR Realty', url: `${SITE_URL}/about` }],
     structuredData: [{
@@ -228,7 +228,7 @@ const staticRoutes = [
   {
     route: '/maps',
     title: 'Gurgaon Sector Maps & Layout Plans — Free Download | LSR Realty',
-    description: 'Explore 75+ Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. Free high-resolution downloads for all sectors including GCER, GCR, Dwarka Expressway and Sohna Road.',
+    description: 'Free Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. High-resolution downloads for 75+ sectors: GCER, GCR, Dwarka Expressway, Sohna Road.',
     keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map',
     breadcrumbs: [HOME, { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` }],
     structuredData: [{
@@ -341,7 +341,7 @@ const staticRoutes = [
   {
     route: '/gurgaon-master-plan-2041',
     title: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure Roadmap | LSR Realty',
-    description: 'Gurgaon Master Plan 2041 tracker: GMDA\'s current status, key infrastructure projects, population projections to 55 lakh, and investment zones compared to Master Plan 2031.',
+    description: 'Gurgaon Master Plan 2041 tracker: GMDA status, infrastructure projects, 55 lakh population projection, and investment zones compared to Master Plan 2031.',
     keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon 2041 master plan status, GMDA 2041, Gurugram infrastructure plan 2041, Gurgaon 2041 map, Gurgaon 2041 investment zones',
     breadcrumbs: [HOME, { name: 'Gurgaon Master Plan 2041', url: `${SITE_URL}/gurgaon-master-plan-2041` }],
     structuredData: [{
@@ -432,7 +432,12 @@ for (const project of PROJECTS) {
   renderRoute({
     route: `/projects/${project.id}`,
     title: `${project.name} — ${project.category === 'Leasing' ? 'For Lease in Gurgaon' : 'Investment in Gurgaon'} | LSR Realty`,
-    description: `${project.name}, ${project.location}. ${project.priceRange}. ${project.status}. ${project.developer}. View inventory, pricing and investment analysis with LSR Realty.`,
+    description: (() => {
+      const base = `${project.name}, ${project.location}. ${project.priceRange}. ${project.developer}.`;
+      const suffix = ` ${project.category === 'Leasing' ? 'Leasing' : 'Investment'} advisory by LSR Realty, Gurgaon.`;
+      const full = base + suffix;
+      return full.length <= 160 ? full : (base.length <= 157 ? base + '...' : base.slice(0, 157) + '...');
+    })(),
     keywords: [
       project.name,
       `${project.name} price`,
@@ -466,8 +471,8 @@ for (const sector of SECTOR_MAPS) {
     : `${sector.name} | Layout Map | LSR Realty`;
   const mapDesc = isMasterPlan
     ? 'Official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map — all sectors, land use zones, metro routes. Free download.'
-    : sector.description.length + descSuffix.length > 160
-      ? `${sector.description.slice(0, Math.max(157 - descSuffix.length, 0)).trim()}...${descSuffix}`
+    : sector.description.length + descSuffix.length > 156
+      ? `${sector.description.slice(0, Math.max(153 - descSuffix.length, 0)).trim()}...${descSuffix}`
       : `${sector.description}${descSuffix}`;
 
   const mapSchema = {
