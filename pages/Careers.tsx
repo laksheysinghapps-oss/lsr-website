@@ -5,6 +5,42 @@ import { MapPin, Briefcase, Clock, ChevronDown, ChevronUp } from 'lucide-react';
 
 const OPEN_POSITIONS = [
   {
+    id: 3,
+    title: 'Leasing Manager — Commercial & Retail Real Estate',
+    location: 'Sector 58, Gurugram',
+    industry: 'Real Estate',
+    type: 'Full Time',
+    about: 'LSR Realty is looking for an experienced Leasing Manager to drive commercial and retail leasing across office spaces, retail outlets, high streets, malls, and mixed-use developments. If you are passionate about commercial real estate and thrive in a target-driven environment, we would love to hear from you.',
+    responsibilities: [
+      'Drive leasing and business development activities across commercial and retail segments.',
+      'Build and maintain relationships with corporate clients, retail brands, landlords, and channel partners.',
+      'Lead site visits, lease negotiations, and deal closures.',
+      'Conduct market research and identify new leasing opportunities.',
+      'Achieve occupancy and revenue targets.',
+    ],
+    requirements: [
+      '5 to 8 years of experience in Commercial and Retail Leasing.',
+      'Strong network within the commercial real estate industry.',
+      'Excellent negotiation, client management, and business development skills.',
+      'Willingness to travel for client meetings and site visits.',
+    ],
+    desiredSkills: [
+      'Deep understanding of office and retail leasing market dynamics in Gurgaon.',
+      'Proven track record of closing commercial lease deals.',
+      'Strong relationships with corporate occupiers and retail brands.',
+    ],
+    benefits: [
+      'Competitive Salary + Performance Incentives',
+      'High-value commercial deal exposure',
+      'Access to premium inventory across Gurugram',
+      'Professional, research-driven work environment',
+    ],
+    mustHave: '5+ years in Commercial & Retail Leasing',
+    skills: 'Commercial Leasing / Business Development / Lease Negotiations',
+    gender: '',
+    stipend: '',
+  },
+  {
     id: 2,
     title: 'Sales Telecaller Intern, Real Estate',
     location: 'Gurgaon, Haryana',
