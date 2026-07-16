@@ -40,7 +40,7 @@ function makeBreadcrumbSchema(crumbs) {
 
 // breadcrumbs: [{name, url}] — auto-generates BreadcrumbList and prepends to structuredData
 // articleMeta: { publishedTime, modifiedTime, author, section } — for blog posts
-function renderRoute({ route, title, description, image, keywords, ogType, structuredData, breadcrumbs, articleMeta }) {
+function renderRoute({ route, title, description, image, keywords, ogType, structuredData, breadcrumbs, articleMeta, preloadImage }) {
   const url = `${SITE_URL}${route}`;
   const ogImage = image ?? `${SITE_URL}/images/Logo2.png`;
   let html = template;
@@ -68,6 +68,12 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
       `  <meta property="article:section" content="${escapeHtml(articleMeta.section)}" />`,
     ].join('\n');
     html = html.replace('</head>', `${articleTags}\n</head>`);
+  }
+
+  // Preload hero image for LCP improvement
+  if (preloadImage) {
+    const preloadTag = `  <link rel="preload" as="image" href="${preloadImage}" fetchpriority="high">`;
+    html = html.replace('</head>', `${preloadTag}\n</head>`);
   }
 
   // Collect all structured data: BreadcrumbList first, then page-specific schemas
@@ -484,6 +490,7 @@ for (const project of PROJECTS) {
       { name: project.name, url: projectUrl },
     ],
     structuredData: [realEstateSchema],
+    preloadImage: project.image?.startsWith('/') ? project.image : undefined,
   });
 }
 
@@ -601,6 +608,7 @@ for (const post of publishedPosts) {
       { name: post.title, url: postUrl },
     ],
     structuredData: [articleSchema],
+    preloadImage: post.image?.startsWith('/') ? post.image : undefined,
   });
 }
 
