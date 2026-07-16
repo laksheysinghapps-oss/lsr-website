@@ -39,7 +39,8 @@ function makeBreadcrumbSchema(crumbs) {
 }
 
 // breadcrumbs: [{name, url}] — auto-generates BreadcrumbList and prepends to structuredData
-function renderRoute({ route, title, description, image, keywords, ogType, structuredData, breadcrumbs }) {
+// articleMeta: { publishedTime, modifiedTime, author, section } — for blog posts
+function renderRoute({ route, title, description, image, keywords, ogType, structuredData, breadcrumbs, articleMeta }) {
   const url = `${SITE_URL}${route}`;
   const ogImage = image ?? `${SITE_URL}/images/Logo2.png`;
   let html = template;
@@ -55,6 +56,17 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   html = html.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${escapeHtml(title)}" />`);
   html = html.replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${escapeHtml(description)}" />`);
   html = html.replace(/<meta name="twitter:image" content=".*?" \/>/, `<meta name="twitter:image" content="${ogImage}" />`);
+
+  // Article Open Graph meta tags (for blog posts)
+  if (ogType === 'article' && articleMeta) {
+    const articleTags = [
+      `  <meta property="article:published_time" content="${articleMeta.publishedTime}" />`,
+      `  <meta property="article:modified_time" content="${articleMeta.modifiedTime || articleMeta.publishedTime}" />`,
+      `  <meta property="article:author" content="${escapeHtml(articleMeta.author)}" />`,
+      `  <meta property="article:section" content="${escapeHtml(articleMeta.section)}" />`,
+    ].join('\n');
+    html = html.replace('</head>', `${articleTags}\n</head>`);
+  }
 
   // Collect all structured data: BreadcrumbList first, then page-specific schemas
   const allSchemas = [];
@@ -369,6 +381,12 @@ for (const post of publishedPosts) {
     keywords: `${post.category}, Gurgaon real estate, Gurugram investment, LSR Realty`,
     image: postImage,
     ogType: 'article',
+    articleMeta: {
+      publishedTime: `${isoDate}T00:00:00+05:30`,
+      modifiedTime: `${isoDate}T00:00:00+05:30`,
+      author: 'LSR Realty Advisory Team',
+      section: post.category,
+    },
     breadcrumbs: [
       HOME,
       { name: 'Real Estate Blog', url: `${SITE_URL}/blog` },
