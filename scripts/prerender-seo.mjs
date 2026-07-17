@@ -55,17 +55,20 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${escapeHtml(description)}" />`);
   html = html.replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${url}" />`);
   html = html.replace(/<meta property="og:image" content=".*?" \/>/, `<meta property="og:image" content="${ogImage}" />`);
+  html = html.replace(/<meta property="og:image:alt" content=".*?" \/>/, `<meta property="og:image:alt" content="${escapeHtml(description)}" />`);
   html = html.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${escapeHtml(title)}" />`);
   html = html.replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${escapeHtml(description)}" />`);
   html = html.replace(/<meta name="twitter:image" content=".*?" \/>/, `<meta name="twitter:image" content="${ogImage}" />`);
 
   // Article Open Graph meta tags (for blog posts)
   if (ogType === 'article' && articleMeta) {
+    const tagLines = (articleMeta.tags || []).map(t => `  <meta property="article:tag" content="${escapeHtml(t)}" />`);
     const articleTags = [
       `  <meta property="article:published_time" content="${articleMeta.publishedTime}" />`,
       `  <meta property="article:modified_time" content="${articleMeta.modifiedTime || articleMeta.publishedTime}" />`,
       `  <meta property="article:author" content="${escapeHtml(articleMeta.author)}" />`,
       `  <meta property="article:section" content="${escapeHtml(articleMeta.section)}" />`,
+      ...tagLines,
     ].join('\n');
     html = html.replace('</head>', `${articleTags}\n</head>`);
   }
@@ -420,6 +423,26 @@ const staticRoutes = [
         provider: { '@type': 'GovernmentOrganization', name: 'Gurugram Metropolitan Development Authority', alternateName: 'GMDA' },
         areaServed: { '@type': 'City', name: 'Gurugram' },
       },
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the Gurgaon Master Plan 2041?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Master Plan 2041 is the upcoming long-term urban development plan for Gurugram, being prepared by GMDA (Gurugram Metropolitan Development Authority). It will supersede the current Gurgaon Manesar Master Plan 2031 and cover a projected population of 55 lakh by 2041. The plan is expected to extend the planning boundary to new sectors, designate new infrastructure corridors including metro extensions, and create new residential and commercial zones.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'When will the Gurgaon Master Plan 2041 be released?',
+          acceptedAnswer: { '@type': 'Answer', text: 'As of mid-2026, the Gurgaon Master Plan 2041 has not been finalised or officially notified by the Haryana government. GMDA is preparing the draft plan. Until it is formally notified, the existing Gurgaon Manesar Master Plan 2031 remains the operative legal document for all land use, RERA registrations, and development approvals in Gurugram.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How will the Gurgaon Master Plan 2041 affect real estate investment?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Master Plan 2041 is expected to open up new development zones in outer Gurugram sectors, extending infrastructure to areas currently under or undeveloped. Properties in sectors earmarked for new residential or commercial designation under the 2041 plan, and along new metro corridors, typically see price appreciation once zones are formally notified. Investors tracking the 2041 plan should monitor GMDA announcements and compare proposed zoning changes against current land holdings. LSR Realty provides investment advisory guided by both the current 2031 plan and the emerging 2041 framework.' },
+        },
+      ],
     }],
   },
 ];
@@ -633,6 +656,12 @@ const BLOG_FAQ_SCHEMAS = {
   },
 };
 
+// article:tag OG meta per blog post — improves social sharing and topic signals
+const BLOG_ARTICLE_TAGS = {
+  'golf-course-extension-road-vs-golf-course-road-gurgaon': ['Golf Course Extension Road', 'Golf Course Road', 'Gurgaon real estate investment', 'GCER Gurgaon', 'property investment Gurgaon', 'luxury apartments GCER'],
+  'gurgaon-manesar-master-plan-2031-explained': ['Gurgaon Master Plan 2031', 'Gurugram Master Plan 2031', 'DTCP Haryana', 'property investment Gurgaon', 'Gurgaon real estate', 'land use Gurgaon'],
+};
+
 // SEO-optimised short titles for blog posts whose full title exceeds 65 chars
 const BLOG_TITLE_OVERRIDES = {
   'golf-course-extension-road-vs-golf-course-road-gurgaon': 'GCER vs Golf Course Road: Gurgaon Investment Guide | LSR Realty',
@@ -693,6 +722,7 @@ for (const post of publishedPosts) {
       modifiedTime: `${isoDate}T00:00:00+05:30`,
       author: 'LSR Realty Advisory Team',
       section: post.category,
+      tags: BLOG_ARTICLE_TAGS[post.id] || [],
     },
     breadcrumbs: [
       HOME,
