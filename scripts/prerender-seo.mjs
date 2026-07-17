@@ -134,15 +134,40 @@ const staticRoutes = [
       description: 'LSR Realty is the investment advisory arm of LSR Group, bringing institutional-grade, research-backed real estate advisory to HNI, UHNI and NRI investors in Gurgaon.',
       mainEntity: {
         '@type': 'Organization',
+        '@id': `${SITE_URL}/#organization`,
         name: 'LSR Realty',
+        alternateName: 'LSR Realty Advisory',
         url: SITE_URL,
-        logo: `${SITE_URL}/images/Logo2.png`,
+        logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/Logo2.png` },
         telephone: '+918448660019',
         email: 'marketing@lsrrealty.com',
+        slogan: 'Gurgaon\'s Premier Real Estate Investment Advisory',
         foundingLocation: { '@type': 'Place', name: 'Gurugram, Haryana, India' },
         description: 'Institutional-grade real estate investment advisory for HNI, UHNI and NRI investors in Gurgaon. Covers residential luxury, commercial office, and retail leasing across all major Gurgaon corridors.',
+        knowsAbout: ['real estate investment Gurgaon', 'luxury residential Gurgaon', 'office leasing Gurgaon', 'NRI property investment India', 'Gurgaon Master Plan 2031', 'HNI real estate advisory'],
+        areaServed: { '@type': 'City', name: 'Gurugram' },
         sameAs: ['https://www.linkedin.com/company/lsr-realty/', 'https://www.instagram.com/lsrrealty/', 'https://www.facebook.com/profile.php?id=61586950558326'],
       },
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is LSR Realty?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is the real estate investment advisory arm of LSR Group, based in Gurugram, Haryana. We provide institutional-grade, research-backed advisory for HNI (High Net-worth Individual), UHNI (Ultra High Net-worth Individual), and NRI (Non-Resident Indian) investors across luxury residential, Grade A commercial office, and premium retail segments in Gurgaon. Our office is at 911, Magnum Global Park, Sector 58, Gurugram.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How is LSR Realty different from other real estate companies in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty takes an institutional approach to real estate advisory: every recommendation is backed by micro-market data, RERA compliance verification, legal due diligence, and financial modelling. Unlike traditional brokerage firms that push high-commission projects, LSR Realty aligns its advice with the investor\'s return objectives and risk tolerance. The firm is also authorised to advise across residential, commercial, and retail — giving investors one point of contact for a diversified Gurgaon property portfolio.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does LSR Realty charge an upfront fee for real estate advisory?',
+          acceptedAnswer: { '@type': 'Answer', text: 'For property transactions (purchase, leasing, investment in developer projects), LSR Realty\'s fee is a developer or landlord-paid brokerage — investors and tenants pay no upfront fee. For standalone advisory mandates such as portfolio reviews, NRI investment planning, or independent due diligence, fees are structured separately and agreed before engagement. Contact marketing@lsrrealty.com or call +91 8448660019 to discuss your requirements.' },
+        },
+      ],
     }],
   },
   {
@@ -279,6 +304,26 @@ const staticRoutes = [
         url: `${SITE_URL}/projects/${p.id}`,
         image: p.image?.startsWith('http') ? p.image : `${SITE_URL}${p.image}`,
       })),
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What types of properties does LSR Realty advise on in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty advises on luxury residential (4 and 5 BHK apartments, villas), Grade A commercial office spaces, and premium retail (high street, mall retail, mixed-use) across all major Gurgaon corridors. The portfolio covers projects by DLF, Emaar, Elan, Godrej, Vatika, AIPL, Magnum, and other leading developers across Golf Course Extension Road, Golf Course Road, Dwarka Expressway, Sohna Road, and SPR.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How many real estate projects does LSR Realty cover in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: `LSR Realty actively advises on over ${PROJECTS.length} investment and leasing projects in Gurgaon, covering luxury residential, Grade A office, and premium retail segments. Projects span all major Gurugram corridors from Golf Course Extension Road and Golf Course Road to Dwarka Expressway, Sohna Road, and SPR. Contact LSR Realty at +91 8448660019 for current inventory and pricing.` },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does LSR Realty charge buyers or tenants for real estate advisory in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'For residential investment and commercial leasing transactions, LSR Realty\'s fee is a brokerage arrangement with the developer or landlord. Buyers and tenants pay no upfront advisory fee. For standalone investment consultancy or portfolio structuring assignments, fees are agreed case-by-case. Contact marketing@lsrrealty.com to discuss your requirements.' },
+        },
+      ],
     }],
   },
   {
@@ -302,7 +347,27 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-07-16',
+      dateModified: '2026-07-17',
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Where can I find official Gurgaon sector layout maps?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Official approved sector layout plans for Gurugram (Gurgaon) are available on lsrrealty.com/maps. The page hosts high-resolution layout maps for 75+ sectors and the complete Gurgaon Manesar Master Plan 2031, all approved by DTCP Haryana (Department of Town and Country Planning). Maps are free to view and download without registration.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are the Gurgaon sector maps on LSR Realty free to download?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. All sector layout maps on lsrrealty.com/maps are free to view and download, including the full-resolution Gurgaon Manesar Master Plan 2031 map. No registration or payment is required. Maps are sourced from DTCP Haryana\'s official approved plans and cover all major Gurgaon sectors, including Golf Course Extension Road sectors (58–65), Golf Course Road, Dwarka Expressway, Sohna Road, and SPR.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which sectors are covered in the Gurgaon Master Plan 2031 map?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 covers the entire Gurugram-Manesar Urban Complex, including all residential and commercial sectors up to Sector 115 and the Manesar IMT industrial zone. The plan designates land use zones (residential R1–R4, commercial, industrial, green/recreational), major road corridors, metro alignments, and development control norms (FAR, coverage, setbacks). Individual sector layout plans show plot boundaries, road widths, and land use within each sector.' },
+        },
+      ],
     }],
   },
   {
@@ -509,7 +574,7 @@ for (const project of PROJECTS) {
     description: project.description,
     url: projectUrl,
     image: projectImage,
-    datePosted: '2026-01-01',
+    datePosted: '2026-07-01',
     availableAtOrFrom: {
       '@type': 'Place',
       name: `${project.name}, ${project.location}`,
@@ -725,7 +790,7 @@ for (const post of publishedPosts) {
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': ['Article', 'NewsArticle'],
     headline: post.title,
     description: postDescription,
     image: postImage,
