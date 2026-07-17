@@ -54,5 +54,6 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+Sitemap: https://lsrrealty.com/sitemap_index.xml
 Sitemap: https://lsrrealty.com/sitemap.xml
 Sitemap: https://lsrrealty.com/sitemap-images.xml
