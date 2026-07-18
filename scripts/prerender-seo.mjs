@@ -91,6 +91,15 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
     html = html.replace('</head>', `${jsonLdBlocks}\n</head>`);
   }
 
+  // Inject geo meta tags on all prerendered pages (the whole site represents the Gurgaon business)
+  const geoTags = [
+    '  <meta name="geo.region" content="IN-HR" />',
+    '  <meta name="geo.placename" content="Gurugram, Haryana, India" />',
+    '  <meta name="geo.position" content="28.4091;77.0517" />',
+    '  <meta name="ICBM" content="28.4091, 77.0517" />',
+  ].join('\n');
+  html = html.replace('</head>', `${geoTags}\n</head>`);
+
   const outDir = path.join(distDir, route.replace(/^\//, ''));
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, 'index.html'), html);
@@ -482,6 +491,26 @@ const staticRoutes = [
           { '@type': 'Place', name: 'Southern Peripheral Road, Gurgaon' },
         ],
       },
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How can I contact LSR Realty for real estate advisory in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'You can reach LSR Realty at +91 8448660019 or email marketing@lsrrealty.com. The office is at 911, Magnum Global Park, Sector 58, Gurugram, Haryana 122098. Office hours are Monday to Friday 10 AM to 7 PM and Saturday to Sunday 10 AM to 5 PM. You can also submit an inquiry through the contact form at lsrrealty.com/contact.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does LSR Realty offer free real estate consultation in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. LSR Realty offers a free initial consultation for residential investment, office leasing, retail leasing, and NRI advisory. For property transactions (purchases, leasing), our advisory is at no upfront cost to you — our fee is a brokerage arrangement with the developer or landlord. Call +91 8448660019 or email marketing@lsrrealty.com to schedule a consultation.' },
+        },
+        {
+          '@type': 'Question',
+          name: "Where is LSR Realty's office located in Gurgaon?",
+          acceptedAnswer: { '@type': 'Answer', text: "LSR Realty's office is located at 911, Magnum Global Park, Sector 58, Golf Course Extension Road, Gurugram, Haryana 122098. Magnum Global Park is on Golf Course Extension Road (GCER), easily accessible from Golf Course Road, Sohna Road, and NH 48. The nearest landmark is the Sector 58 Rapid Metro Station, approximately 1 km away." },
+        },
+      ],
     }],
   },
   {

@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lsrrealty.com/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/about</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/services</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -272,7 +272,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -288,7 +288,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/gurgaon-master-plan-2041</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1054,7 +1054,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/blog</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1072,18 +1072,19 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/careers</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/contact</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/privacy-policy</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
