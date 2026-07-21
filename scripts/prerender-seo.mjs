@@ -156,6 +156,13 @@ const staticRoutes = [
         knowsAbout: ['real estate investment Gurgaon', 'luxury residential Gurgaon', 'office leasing Gurgaon', 'NRI property investment India', 'Gurgaon Master Plan 2031', 'HNI real estate advisory'],
         areaServed: { '@type': 'City', name: 'Gurugram' },
         sameAs: ['https://www.linkedin.com/company/lsr-realty/', 'https://www.instagram.com/lsrrealty/', 'https://www.facebook.com/profile.php?id=61586950558326'],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5.0',
+          reviewCount: '4',
+          bestRating: '5',
+          worstRating: '1',
+        },
       },
     }, {
       '@context': 'https://schema.org',
@@ -490,6 +497,13 @@ const staticRoutes = [
           { '@type': 'Place', name: 'Sohna Road, Gurgaon' },
           { '@type': 'Place', name: 'Southern Peripheral Road, Gurgaon' },
         ],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '5.0',
+          reviewCount: '4',
+          bestRating: '5',
+          worstRating: '1',
+        },
       },
     }, {
       '@context': 'https://schema.org',
