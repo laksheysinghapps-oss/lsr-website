@@ -363,7 +363,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-07-17',
+      dateModified: '2026-07-25',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -382,6 +382,31 @@ const staticRoutes = [
           '@type': 'Question',
           name: 'Which sectors are covered in the Gurgaon Master Plan 2031 map?',
           acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 covers the entire Gurugram-Manesar Urban Complex, including all residential and commercial sectors up to Sector 115 and the Manesar IMT industrial zone. The plan designates land use zones (residential R1–R4, commercial, industrial, green/recreational), major road corridors, metro alignments, and development control norms (FAR, coverage, setbacks). Individual sector layout plans show plot boundaries, road widths, and land use within each sector.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the difference between a Gurgaon sector layout plan and the Master Plan 2031?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 is the macro-level land use document for the entire 33,872-hectare Gurugram-Manesar Urban Complex, showing broad zones (residential, commercial, industrial, green belt) across all sectors. A sector layout plan is the detailed, sector-specific drawing that shows individual plot boundaries, internal road widths, park locations, and land use designations within one sector. Before buying property, investors should verify both: the Master Plan to confirm zone designation, and the sector layout plan to confirm plot boundaries and road widths.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which Gurgaon sectors are on Golf Course Extension Road?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Golf Course Extension Road (GCER) runs through Sectors 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, and 70 in Gurugram. The key investment sectors on GCER are Sector 58 (commercial hub, Magnum Global Park), Sector 65 (luxury residential — DLF, Emaar, Elan), and Sectors 62–63 (mixed residential and commercial). GCER is among the most active real estate corridors in Gurgaon, with strong capital appreciation and rental demand.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What does a DTCP-approved sector map mean in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'A DTCP-approved map is a sector layout plan or zoning map officially sanctioned by the Department of Town and Country Planning, Haryana. DTCP approval means the plan is legally binding — land uses shown on the map (residential, commercial, park, utility) cannot be changed without a formal amendment. For property investors, a DTCP-approved layout plan confirms that a plot\'s designated use is legally recognised, which is essential for RERA registration, bank loans, and future resale. All maps on lsrrealty.com/maps are sourced from DTCP Haryana\'s official approved plans.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I read a Gurgaon sector layout plan?',
+          acceptedAnswer: { '@type': 'Answer', text: 'A Gurgaon sector layout plan shows: (1) Plot boundaries — each plot is numbered and its area is marked in square metres or square yards; (2) Road widths — colour-coded lines indicate the width of each road (wider roads carry more commercial value); (3) Land use — residential plots (R), commercial plots (C), parks (P), schools (S), and utility sites are marked with standard abbreviations; (4) Sector boundaries — the outer boundary shows how the sector connects to neighbouring sectors and main roads. When evaluating a property, check that the plot number on your sale deed matches the layout plan, and verify the designated land use (residential, commercial, mixed) before purchasing.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which Gurgaon sectors are best for real estate investment?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Based on the Gurgaon Master Plan 2031 and current market data, the top sectors for real estate investment are: Sector 65 (Golf Course Extension Road) — luxury residential, strong capital appreciation; Sector 58 (GCER) — Grade A commercial, high rental yields; Sectors 82–83 (Dwarka Expressway) — new residential with metro access, upcoming infrastructure; Sector 57 (Golf Course Road) — established luxury residential; Sectors 47–48 (Sohna Road) — mid-premium residential, improving connectivity. LSR Realty provides micro-market analysis across all these corridors to help investors identify the right sector for their budget and return objectives.' },
         },
       ],
     }],
@@ -546,7 +571,7 @@ const staticRoutes = [
       name: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure Roadmap',
       description: 'Detailed tracker for the Gurgaon Master Plan 2041 by GMDA (Gurugram Metropolitan Development Authority). Covers status update, population projection of 55 lakh, new sector development, metro corridors and investment implications.',
       url: `${SITE_URL}/gurgaon-master-plan-2041`,
-      dateModified: '2026-07-17',
+      dateModified: '2026-07-25',
       significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/contact`],
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
       author: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
@@ -735,7 +760,7 @@ for (const sector of SECTOR_MAPS) {
     publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
     mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
     license: 'https://dtcpharyana.gov.in/',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-25',
     ...(isMasterPlan ? {
       potentialAction: {
         '@type': 'DownloadAction',
