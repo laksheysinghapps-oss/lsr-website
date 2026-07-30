@@ -50,6 +50,8 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${url}" />`);
   html = html.replace(/hreflang="en-IN" href=".*?" \/>/, `hreflang="en-IN" href="${url}" />`);
   html = html.replace(/hreflang="en" href=".*?" \/>/, `hreflang="en" href="${url}" />`);
+  // x-default always points to homepage
+  html = html.replace(/hreflang="x-default" href=".*?" \/>/, `hreflang="x-default" href="${SITE_URL}/" />`);
   if (ogType) html = html.replace(/<meta property="og:type" content=".*?" \/>/, `<meta property="og:type" content="${ogType}" />`);
   html = html.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${escapeHtml(title)}" />`);
   html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${escapeHtml(description)}" />`);
@@ -77,6 +79,17 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   if (preloadImage) {
     const preloadTag = `  <link rel="preload" as="image" href="${preloadImage}" fetchpriority="high">`;
     html = html.replace('</head>', `${preloadTag}\n</head>`);
+  }
+
+  // If page has its own FAQPage, remove the global homepage FAQPage from the template
+  const hasFaq = structuredData && structuredData.some(sd => sd['@type'] === 'FAQPage');
+  if (hasFaq) {
+    html = html.replace(/<!--global-faq-start-->[\s\S]*?<!--global-faq-end-->/g, '');
+  }
+
+  // Strip recharts modulepreload from pages that don't render charts (charts only on / and /blog*)
+  if (!route.startsWith('/blog')) {
+    html = html.replace(/<link rel="modulepreload" crossorigin href="[^"]*recharts[^"]*">\n?/g, '');
   }
 
   // Collect all structured data: BreadcrumbList first, then page-specific schemas
@@ -155,11 +168,11 @@ const staticRoutes = [
         description: 'Institutional-grade real estate investment advisory for HNI, UHNI and NRI investors in Gurgaon. Covers residential luxury, commercial office, and retail leasing across all major Gurgaon corridors.',
         knowsAbout: ['real estate investment Gurgaon', 'luxury residential Gurgaon', 'office leasing Gurgaon', 'NRI property investment India', 'Gurgaon Master Plan 2031', 'HNI real estate advisory'],
         areaServed: { '@type': 'City', name: 'Gurugram' },
-        sameAs: ['https://www.linkedin.com/company/lsr-realty/', 'https://www.instagram.com/lsrrealty/', 'https://www.facebook.com/profile.php?id=61586950558326'],
+        sameAs: ['https://www.linkedin.com/company/lsr-realty/', 'https://www.instagram.com/lsrrealty/', 'https://www.facebook.com/profile.php?id=61586950558326', 'https://www.crunchbase.com/organization/lsr-realty', 'https://in.pinterest.com/lsrrealty/', 'https://www.hotfrog.in/company/afbcfb081d69d2b906f5180911b4704f/lsr-realty', 'https://www.brownbook.net/business/55272361/lsr-realty'],
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '4',
+          reviewCount: '2',
           bestRating: '5',
           worstRating: '1',
         },
@@ -525,7 +538,7 @@ const staticRoutes = [
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '4',
+          reviewCount: '2',
           bestRating: '5',
           worstRating: '1',
         },
