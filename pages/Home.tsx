@@ -133,7 +133,7 @@ const Home: React.FC = () => {
             <div className="p-4">
               <div className="text-lsr-gold mb-4"><UserCheck size={32} /></div>
               <h3 className="text-xl font-serif text-white mb-2">Industry Guidance</h3>
-              <p className="text-sm text-gray-400">Mentored by seasoned industry leaders with 40+ years of real estate expertise.</p>
+              <p className="text-sm text-gray-400">Mentored by seasoned industry leaders from DLF, Elan and Vatika, with 40+ years of real estate expertise.</p>
             </div>
           </div>
         </div>
