@@ -91,10 +91,10 @@ const About: React.FC = () => {
            <Award className="w-16 h-16 text-lsr-gold mx-auto mb-8" />
            <h2 className="text-3xl font-serif mb-6">Strategic Guidance</h2>
            <blockquote className="text-xl md:text-2xl font-light text-gray-300 italic mb-8">
-             "Guided by the wisdom of 40+ years in real estate leadership."
+             "Guided by the wisdom of 30+ years in real estate leadership."
            </blockquote>
            <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
-             LSR Realty is strategically guided by industry veterans with over 40 years of real estate leadership. Our mentors have been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping, much of which is mapped in the <Link to="/maps" className="text-lsr-gold hover:underline">Gurugram Manesar Master Plan 2031</Link>. Their legacy forms the moral and strategic compass for our fiduciary standards.</p>
+             LSR Realty is strategically guided by industry veterans with over 30 years of real estate leadership. Our mentors have been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping, much of which is mapped in the <Link to="/maps" className="text-lsr-gold hover:underline">Gurugram Manesar Master Plan 2031</Link>. Their legacy forms the moral and strategic compass for our fiduciary standards.</p>
         </div>
       </section>
       

@@ -133,7 +133,7 @@ const Home: React.FC = () => {
             <div className="p-4">
               <div className="text-lsr-gold mb-4"><UserCheck size={32} /></div>
               <h3 className="text-xl font-serif text-white mb-2">Industry Guidance</h3>
-              <p className="text-sm text-gray-400">Mentored by seasoned industry leaders from DLF, Elan and Vatika, with 40+ years of real estate expertise.</p>
+              <p className="text-sm text-gray-400">Mentored by seasoned industry leaders from DLF, Elan and Vatika, with 30+ years of real estate expertise.</p>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@ const Home: React.FC = () => {
               <div className="mb-6 relative z-10">
                 <Handshake className="w-10 h-10 text-lsr-gold mb-4" />
                 <h3 className="text-2xl font-serif text-white group-hover:text-lsr-gold transition-colors">Developer Access</h3>
-                <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">40+ Years of Legacy</p>
+                <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">30+ Years of Legacy</p>
               </div>
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6 relative z-10">
                  <p>Our leadership is mentored by industry veterans who have directly contributed to Gurgaon's early growth, including its roads, metro infrastructure, and landscaping.</p>
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
                 <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">Global & Local</p>
               </div>
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6">
-                 <p>We combine 40+ years of family credibility with Ivy League education (Cornell) and institutional experience (Hines, NY).</p>
+                 <p>We combine 30+ years of family credibility with Ivy League education (Cornell) and institutional experience (Hines, NY).</p>
                  <p>Our clients receive the best of both worlds: local relationships they can trust, and global analytical expertise they can rely on.</p>
                  <p className="italic text-gray-500">"Guided by someone highly educated AND deeply connected."</p>
               </div>
