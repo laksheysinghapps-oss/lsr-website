@@ -173,7 +173,7 @@ const Home: React.FC = () => {
                 <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">30+ Years of Legacy</p>
               </div>
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6 relative z-10">
-                 <p>Our leadership is mentored by industry veterans who have directly contributed to Gurgaon's early growth, including its roads, metro infrastructure, and landscaping.</p>
+                 <p>Our leadership is mentored by industry veterans from DLF, Elan, and Vatika, who have directly contributed to Gurgaon's early growth, including its roads, metro infrastructure, and landscaping.</p>
                  <p>Because of these relationships, our clients receive priority inventory access, better pricing leverage, and direct escalation support.</p>
               </div>
             </div>
