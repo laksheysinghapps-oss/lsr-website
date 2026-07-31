@@ -133,7 +133,7 @@ const Home: React.FC = () => {
             <div className="p-4">
               <div className="text-lsr-gold mb-4"><UserCheck size={32} /></div>
               <h3 className="text-xl font-serif text-white mb-2">Industry Guidance</h3>
-              <p className="text-sm text-gray-400">Mentored by Mr. Devinder Singh (CEO, DLF Ltd) with 40+ years experience.</p>
+              <p className="text-sm text-gray-400">Mentored by seasoned industry leaders with 40+ years of real estate expertise.</p>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ const Home: React.FC = () => {
                 <p className="text-xs uppercase tracking-widest text-gray-500 mt-1">40+ Years of Legacy</p>
               </div>
               <div className="flex-grow space-y-4 text-gray-400 text-sm leading-relaxed border-t border-white/10 pt-6 relative z-10">
-                 <p>Developers know our strategic mentor, <strong>Mr. Devinder Singh</strong>, who literally contributed to Gurgaon's early growth, including roads, metro work, and landscaping.</p>
+                 <p>Our leadership is mentored by industry veterans who have directly contributed to Gurgaon's early growth, including its roads, metro infrastructure, and landscaping.</p>
                  <p>Because of these relationships, our clients receive priority inventory access, better pricing leverage, and direct escalation support.</p>
               </div>
             </div>

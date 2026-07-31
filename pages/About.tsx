@@ -94,7 +94,7 @@ const About: React.FC = () => {
              "Guided by the wisdom of 40+ years in real estate leadership."
            </blockquote>
            <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed">
-             The company is strategically guided by <strong>Mr. Devinder Singh</strong>, CEO & MD of DLF Ltd. With over 40 years of leadership, he has been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping, much of which is mapped in the <Link to="/maps" className="text-lsr-gold hover:underline">Gurugram Manesar Master Plan 2031</Link>. His legacy provides the moral and strategic compass for our fiduciary standards.</p>
+             LSR Realty is strategically guided by industry veterans with over 40 years of real estate leadership. Our mentors have been instrumental in Gurgaon's early growth, contributing to critical infrastructure including roads, metro developments, and landscaping, much of which is mapped in the <Link to="/maps" className="text-lsr-gold hover:underline">Gurugram Manesar Master Plan 2031</Link>. Their legacy forms the moral and strategic compass for our fiduciary standards.</p>
         </div>
       </section>
       
