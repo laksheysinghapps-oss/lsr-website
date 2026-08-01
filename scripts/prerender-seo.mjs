@@ -144,8 +144,8 @@ const servicesSchema = {
 const staticRoutes = [
   {
     route: '/about',
-    title: 'LSR Realty | Institutional Real Estate Advisory Gurgaon',
-    description: 'LSR Realty — investment advisory arm of LSR Group. Institutional-grade, research-backed real estate advisory for HNI, UHNI and NRI investors in Gurgaon.',
+    title: 'About LSR Realty | Luxury Real Estate Advisory Gurgaon | HNI & NRI',
+    description: 'LSR Realty is the investment advisory arm of LSR Group — delivering institutional-grade, research-backed luxury real estate advisory to HNI, UHNI and NRI investors in Gurgaon and Gurugram.',
     keywords: 'LSR Realty about, LSR Group, institutional real estate advisory Gurgaon, HNI NRI real estate advisory',
     breadcrumbs: [HOME, { name: 'About LSR Realty', url: `${SITE_URL}/about` }],
     structuredData: [{
@@ -229,8 +229,8 @@ const staticRoutes = [
   },
   {
     route: '/services',
-    title: 'Real Estate Advisory Services Gurgaon | LSR Realty',
-    description: 'LSR Realty offers real estate advisory in Gurgaon: office and retail leasing, investment advisory, market research and NRI services.',
+    title: 'Gurgaon Real Estate Services | Residential, Commercial & NRI Advisory | LSR Realty',
+    description: 'LSR Realty offers end-to-end real estate services in Gurgaon and Gurugram: office leasing, retail leasing, HNI and NRI investment advisory, market research and deal structuring.',
     keywords: 'real estate advisory services Gurgaon, office leasing Gurgaon, retail leasing Gurgaon, NRI investment services, deal structuring Gurgaon',
     breadcrumbs: [HOME, { name: 'Our Services', url: `${SITE_URL}/services` }],
     structuredData: [servicesSchema, {
@@ -313,8 +313,8 @@ const staticRoutes = [
   },
   {
     route: '/projects',
-    title: 'Gurgaon Investment & Leasing Projects | LSR Realty',
-    description: 'Browse LSR Realty\'s curated portfolio of Gurgaon investment and leasing opportunities, vetted for legal compliance and quality.',
+    title: 'Curated Property Investment & Leasing Opportunities Gurgaon | LSR Realty',
+    description: 'Browse LSR Realty\'s curated portfolio of vetted property investment and leasing opportunities across Gurgaon and Gurugram — luxury residential, Grade A office and premium retail.',
     keywords: 'Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon',
     breadcrumbs: [HOME, { name: 'Projects & Listings', url: `${SITE_URL}/projects` }],
     structuredData: [{
@@ -357,8 +357,8 @@ const staticRoutes = [
   },
   {
     route: '/maps',
-    title: 'Gurgaon Sector Maps & Layout Plans — Free Download | LSR Realty',
-    description: 'Free Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. High-resolution downloads for 75+ sectors: GCER, GCR, Dwarka Expressway, Sohna Road.',
+    title: 'Gurgaon Sector Maps & Layout Plans | Free PDF Download | LSR Realty',
+    description: 'Free Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. High-resolution PDF downloads for 75+ sectors across GCER, Golf Course Road, Dwarka Expressway and Sohna Road.',
     keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map',
     breadcrumbs: [HOME, { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` }],
     structuredData: [{
@@ -480,8 +480,8 @@ const staticRoutes = [
   },
   {
     route: '/contact',
-    title: 'Contact LSR Realty | Gurgaon Real Estate Advisory',
-    description: 'Get in touch with LSR Realty for a consultation on real estate investment advisory, portfolio structuring or NRI services in Gurgaon.',
+    title: 'Talk to Our Real Estate Consultants in Gurgaon | LSR Realty',
+    description: 'Speak with LSR Realty\'s real estate consultants in Gurgaon for investment advisory, office leasing, portfolio structuring or NRI services. Free initial consultation.',
     keywords: 'contact LSR Realty, real estate consultation Gurgaon, book consultation Gurgaon real estate',
     breadcrumbs: [HOME, { name: 'Contact Us', url: `${SITE_URL}/contact` }],
     structuredData: [{
@@ -745,8 +745,8 @@ for (const sector of SECTOR_MAPS) {
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
   const descSuffix = ` Official ${sector.name} layout map, part of Gurgaon Manesar Master Plan 2031.`;
   const mapTitle = isMasterPlan
-    ? 'Gurgaon Master Plan 2031 Map & Download | LSR Realty'
-    : `${sector.name} | Layout Map | LSR Realty`;
+    ? 'Gurgaon Manesar Master Plan 2031 | Official Zone Map Free Download | LSR Realty'
+    : `${sector.name} Gurgaon | Sector Layout Plan | LSR Realty`;
   const mapDesc = isMasterPlan
     ? 'Official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map — all sectors, land use zones, metro routes. Free download.'
     : sector.description.length + descSuffix.length > 156
@@ -857,8 +857,8 @@ const BLOG_ARTICLE_TAGS = {
 
 // SEO-optimised short titles for blog posts whose full title exceeds 65 chars
 const BLOG_TITLE_OVERRIDES = {
-  'golf-course-extension-road-vs-golf-course-road-gurgaon': 'GCER vs Golf Course Road: Gurgaon Investment Guide | LSR Realty',
-  'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Master Plan 2031: Property Investor Guide | LSR Realty',
+  'golf-course-extension-road-vs-golf-course-road-gurgaon': 'Golf Course Extension Road vs Golf Course Road | Gurgaon Investment Guide | LSR Realty',
+  'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Manesar Master Plan 2031 Explained | Property Investor Guide | LSR Realty',
 };
 
 for (const post of publishedPosts) {
