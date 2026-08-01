@@ -1,0 +1,96 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.7" fill="#181818"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#070707"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="3" fill="#C6A667"/>
+  <rect x="0" y="627" width="1200" height="3" fill="#C6A667"/>
+  <rect x="80" y="40" width="148" height="25" fill="none" stroke="#C6A667" stroke-width="0.75" rx="1"/>
+  <text x="154" y="57" font-family="'Segoe UI',Arial,sans-serif" font-size="9" letter-spacing="2.5" fill="#C6A667" text-anchor="middle" font-weight="700">NRI ADVISORY</text>
+  <text x="1120" y="57" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#2a3040" text-anchor="end">LSR REALTY · lsrrealty.com</text>
+  <text x="80" y="128" font-family="Georgia,'Times New Roman',serif" font-size="48" fill="#f8f8f8" font-weight="700">NRI Property Investment</text>
+  <text x="80" y="186" font-family="Georgia,'Times New Roman',serif" font-size="48" fill="#C6A667" font-weight="700">in Gurugram</text>
+  <text x="80" y="222" font-family="'Segoe UI',Arial,sans-serif" font-size="13.5" fill="#64748b">Complete Guide: FEMA · NRE/NRO · Due Diligence · Power of Attorney · Registration</text>
+  <line x1="80" y1="242" x2="820" y2="242" stroke="#C6A667" stroke-width="0.6" opacity="0.3"/>
+
+  <!-- Step 1 x=80 -->
+  <rect x="80" y="260" width="200" height="248" fill="#0d0d0d" rx="2" stroke="#202020" stroke-width="1"/>
+  <rect x="80" y="260" width="200" height="2" fill="#C6A667" opacity="0.4"/>
+  <text x="92" y="292" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#C6A667" letter-spacing="2" font-weight="700">STEP 01</text>
+  <text x="92" y="320" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">FEMA</text>
+  <text x="92" y="342" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Eligibility</text>
+  <line x1="92" y1="354" x2="268" y2="354" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="92" y="374" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Residential &amp;</text>
+  <text x="92" y="391" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">commercial open</text>
+  <text x="92" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">to NRIs — no RBI</text>
+  <text x="92" y="425" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">approval needed.</text>
+  <text x="92" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Agricultural land</text>
+  <text x="92" y="459" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">remains restricted.</text>
+  <polygon points="282,379 290,384 282,389" fill="#C6A667" opacity="0.4"/>
+
+  <!-- Step 2 x=300 -->
+  <rect x="300" y="260" width="200" height="248" fill="#0d0d0d" rx="2" stroke="#202020" stroke-width="1"/>
+  <rect x="300" y="260" width="200" height="2" fill="#C6A667" opacity="0.4"/>
+  <text x="312" y="292" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#C6A667" letter-spacing="2" font-weight="700">STEP 02</text>
+  <text x="312" y="320" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Account</text>
+  <text x="312" y="342" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Structure</text>
+  <line x1="312" y1="354" x2="488" y2="354" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="312" y="374" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">NRE for full exit</text>
+  <text x="312" y="391" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">repatriation. NRO</text>
+  <text x="312" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">for India income.</text>
+  <text x="312" y="425" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Home loans up to</text>
+  <text x="312" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">80% LTV from</text>
+  <text x="312" y="459" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">HDFC, SBI, ICICI.</text>
+  <polygon points="502,379 510,384 502,389" fill="#C6A667" opacity="0.4"/>
+
+  <!-- Step 3 x=520 -->
+  <rect x="520" y="260" width="200" height="248" fill="#0d0d0d" rx="2" stroke="#202020" stroke-width="1"/>
+  <rect x="520" y="260" width="200" height="2" fill="#C6A667" opacity="0.4"/>
+  <text x="532" y="292" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#C6A667" letter-spacing="2" font-weight="700">STEP 03</text>
+  <text x="532" y="320" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Legal Due</text>
+  <text x="532" y="342" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Diligence</text>
+  <line x1="532" y1="354" x2="708" y2="354" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="532" y="374" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">RERA registration</text>
+  <text x="532" y="391" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">check. Title search</text>
+  <text x="532" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">&amp; land-use verify.</text>
+  <text x="532" y="425" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">70% RERA escrow</text>
+  <text x="532" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">account confirm.</text>
+  <text x="532" y="459" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Builder track rec.</text>
+  <polygon points="722,379 730,384 722,389" fill="#C6A667" opacity="0.4"/>
+
+  <!-- Step 4 x=740 -->
+  <rect x="740" y="260" width="200" height="248" fill="#0d0d0d" rx="2" stroke="#202020" stroke-width="1"/>
+  <rect x="740" y="260" width="200" height="2" fill="#C6A667" opacity="0.4"/>
+  <text x="752" y="292" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#C6A667" letter-spacing="2" font-weight="700">STEP 04</text>
+  <text x="752" y="320" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Power of</text>
+  <text x="752" y="342" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Attorney</text>
+  <line x1="752" y1="354" x2="928" y2="354" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="752" y="374" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Apostille PoA in</text>
+  <text x="752" y="391" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">your country. US,</text>
+  <text x="752" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">UK, UAE, SG, CA</text>
+  <text x="752" y="425" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">all qualify. Register</text>
+  <text x="752" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">with Sub-Registrar</text>
+  <text x="752" y="459" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">office in India.</text>
+  <polygon points="942,379 950,384 942,389" fill="#C6A667" opacity="0.4"/>
+
+  <!-- Step 5 x=960 highlighted -->
+  <rect x="960" y="260" width="160" height="248" fill="#0d0d0d" rx="2" stroke="#C6A667" stroke-width="1.5"/>
+  <rect x="960" y="260" width="160" height="2" fill="#C6A667"/>
+  <text x="972" y="292" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#C6A667" letter-spacing="2" font-weight="700">STEP 05</text>
+  <text x="972" y="320" font-family="Georgia,serif" font-size="19" fill="#f0f0f0" font-weight="700">Register</text>
+  <text x="972" y="342" font-family="Georgia,serif" font-size="19" fill="#C6A667" font-weight="700">&amp; Possess</text>
+  <line x1="972" y1="354" x2="1108" y2="354" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="972" y="374" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Sub-Registrar</text>
+  <text x="972" y="391" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">reg after RERA</text>
+  <text x="972" y="408" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">OC. Rental mgmt</text>
+  <text x="972" y="425" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">via LSR Realty</text>
+  <text x="972" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">NRI Desk from</text>
+  <text x="972" y="459" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">anywhere abroad.</text>
+
+  <line x1="80" y1="522" x2="1120" y2="522" stroke="#141414" stroke-width="1"/>
+  <text x="600" y="548" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#2c3649" text-anchor="middle">LSR Realty Advisory · NRI Desk: marketing@lsrrealty.com · +91 8448660019 · lsrrealty.com</text>
+  <text x="600" y="572" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#1c222e" text-anchor="middle">#NRIInvestment · #GurgaonRealEstate · #FEMA · #NREAccount · #PowerOfAttorney · #RERA</text>
+</svg>

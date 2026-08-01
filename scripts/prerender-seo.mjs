@@ -847,18 +847,56 @@ const BLOG_FAQ_SCHEMAS = {
       },
     ],
   },
+  'nri-real-estate-buying-guide-gurgaon': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can NRIs buy property in India without visiting the country?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Yes. NRIs can complete the entire property purchase process remotely through a properly structured Power of Attorney (PoA). The PoA is executed and apostilled in the NRI\'s country of residence, then registered in India, allowing a trusted representative to sign documents, make payments, and complete registration. LSR Realty handles NRI transactions for clients in the US, UK, UAE, Singapore, Canada, and Australia without a single India visit required.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between NRE and NRO accounts for NRI property investment in India?',
+        acceptedAnswer: { '@type': 'Answer', text: 'An NRE (Non-Resident External) account is funded with money remitted from abroad and is fully repatriable — principal and interest can be moved back out of India without limit, and interest is tax-free in India. An NRO (Non-Resident Ordinary) account is funded with India-sourced income such as rent or dividends. NRO funds carry a USD 1 million per year repatriation cap and are subject to Indian income tax. NRIs should route fresh property investments through NRE for clean repatriation on exit.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is RERA registration mandatory for NRI property investments in Gurugram?',
+        acceptedAnswer: { '@type': 'Answer', text: 'RERA registration is the developer\'s statutory obligation. NRI buyers should refuse to proceed with any project that is not RERA registered and should be. RERA provides three key protections: 70% escrow protection on buyer funds; compensation rights for delivery delays; and a formal grievance mechanism. These protections are particularly important for NRI buyers who cannot monitor construction in person.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much TDS does an NRI pay when selling property in India?',
+        acceptedAnswer: { '@type': 'Answer', text: 'When an NRI sells property, the buyer must deduct TDS at 20% for long-term capital gains (property held more than 24 months) or 30% for short-term gains. The NRI seller also pays LTCG tax at 20% on the indexed gain. DTAA treaties with the US, UK, UAE, Singapore, and Canada may reduce effective tax. Capital gains can be deferred by reinvesting in a new residential property under Section 54 or in capital gains bonds under Section 54EC (up to ₹50 lakh) within prescribed timelines.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What documents does an NRI need to buy property in India?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Key documents include: valid passport and visa; PAN card (mandatory for property transactions above ₹50 lakh); NRE or NRO bank account details; OCI or PIO card if applicable; Power of Attorney (apostilled from country of residence); address proof from country of residence; and Form 60 if PAN is not yet available at booking. The Sub-Registrar also requires proof that all payments were routed through NRE or NRO banking channels.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How can NRIs repatriate money from a property sale in India?',
+        acceptedAnswer: { '@type': 'Answer', text: 'NRI repatriation depends on how the purchase was funded: NRE-funded property allows full proceeds to be repatriated after paying applicable LTCG tax; NRO-funded property is capped at USD 1 million per financial year. A CA certificate in Form 15CB and Form 15CA filing are required before the bank releases the remittance. Repatriation should be planned before the sale, not after, especially if DTAA treaty benefits or Section 54 reinvestment deferral are involved.' },
+      },
+    ],
+  },
 };
 
 // article:tag OG meta per blog post — improves social sharing and topic signals
 const BLOG_ARTICLE_TAGS = {
   'golf-course-extension-road-vs-golf-course-road-gurgaon': ['Golf Course Extension Road', 'Golf Course Road', 'Gurgaon real estate investment', 'GCER Gurgaon', 'property investment Gurgaon', 'luxury apartments GCER'],
   'gurgaon-manesar-master-plan-2031-explained': ['Gurgaon Master Plan 2031', 'Gurugram Master Plan 2031', 'DTCP Haryana', 'property investment Gurgaon', 'Gurgaon real estate', 'land use Gurgaon'],
+  'nri-real-estate-buying-guide-gurgaon': ['NRI property investment India', 'NRI buying property Gurugram', 'FEMA NRI property', 'NRE NRO account property', 'NRI real estate Gurgaon', 'NRI power of attorney India', 'NRI home loan India', 'RERA NRI buyer'],
 };
 
 // SEO-optimised short titles for blog posts whose full title exceeds 65 chars
 const BLOG_TITLE_OVERRIDES = {
   'golf-course-extension-road-vs-golf-course-road-gurgaon': 'Golf Course Extension Road vs Golf Course Road | Gurgaon Investment Guide | LSR Realty',
   'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Manesar Master Plan 2031 Explained | Property Investor Guide | LSR Realty',
+  'nri-real-estate-buying-guide-gurgaon': 'NRI Real Estate Buying Guide Gurugram | FEMA, NRE, RERA and Tax | LSR Realty',
 };
 
 for (const post of publishedPosts) {

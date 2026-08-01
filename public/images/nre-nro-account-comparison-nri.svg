@@ -1,0 +1,76 @@
+<svg width="1000" height="460" viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="460" fill="#070707"/>
+  <rect width="1000" height="3" fill="#C6A667"/>
+  <rect x="0" y="457" width="1000" height="3" fill="#C6A667"/>
+
+  <!-- Title -->
+  <text x="50" y="52" font-family="Georgia,'Times New Roman',serif" font-size="22" fill="#f0f0f0" font-weight="700">NRE vs NRO: Which Account for NRI Property Investment in India?</text>
+  <text x="50" y="76" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#546070">The account you use at purchase determines your repatriation rights on exit — this decision is very hard to reverse.</text>
+
+  <!-- Column headers row -->
+  <rect x="50" y="96" width="280" height="40" fill="#0a0a0a" rx="1"/>
+  <text x="190" y="121" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#6b7280" text-anchor="middle" letter-spacing="1" font-weight="600">FEATURE</text>
+
+  <rect x="340" y="96" width="280" height="40" fill="#1a1308" rx="1" stroke="#C6A667" stroke-width="0.75" stroke-opacity="0.5"/>
+  <text x="480" y="115" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#C6A667" text-anchor="middle" letter-spacing="1.5" font-weight="700">NRE ACCOUNT</text>
+  <text x="480" y="130" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#8a7040" text-anchor="middle">Non-Resident External</text>
+
+  <rect x="630" y="96" width="320" height="40" fill="#0d0d0d" rx="1" stroke="#374151" stroke-width="0.75"/>
+  <text x="790" y="115" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" text-anchor="middle" letter-spacing="1.5" font-weight="700">NRO ACCOUNT</text>
+  <text x="790" y="130" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563" text-anchor="middle">Non-Resident Ordinary</text>
+
+  <!-- Row 1: Funded by -->
+  <rect x="50" y="136" width="900" height="52" fill="#0b0b0b"/>
+  <line x1="50" y1="136" x2="950" y2="136" stroke="#161616" stroke-width="1"/>
+  <text x="62" y="157" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" letter-spacing="1" font-weight="600">FUNDED BY</text>
+  <text x="62" y="176" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Source of money</text>
+  <text x="352" y="157" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#e5e7eb" font-weight="600">Foreign remittance from abroad</text>
+  <text x="352" y="176" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8a9aaa">Wire transfer, NEFT, RTGS</text>
+  <text x="642" y="157" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#9ca3af" font-weight="600">Income earned in India</text>
+  <text x="642" y="176" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Rent, dividends, Indian salary</text>
+
+  <!-- Row 2: Repatriation -->
+  <rect x="50" y="188" width="900" height="52" fill="#0d0d0d"/>
+  <line x1="50" y1="188" x2="950" y2="188" stroke="#161616" stroke-width="1"/>
+  <text x="62" y="209" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" letter-spacing="1" font-weight="600">REPATRIATION</text>
+  <text x="62" y="228" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Capital on exit</text>
+  <text x="352" y="209" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#C6A667" font-weight="700">Unlimited — no cap</text>
+  <text x="352" y="228" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8a9aaa">Principal + gains freely remittable</text>
+  <text x="642" y="209" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#ef4444" font-weight="600">USD 1 million / year cap</text>
+  <text x="642" y="228" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Form 15CB + 15CA required</text>
+
+  <!-- Row 3: Interest tax -->
+  <rect x="50" y="240" width="900" height="52" fill="#0b0b0b"/>
+  <line x1="50" y1="240" x2="950" y2="240" stroke="#161616" stroke-width="1"/>
+  <text x="62" y="261" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" letter-spacing="1" font-weight="600">INTEREST TAX</text>
+  <text x="62" y="280" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Indian income tax</text>
+  <text x="352" y="261" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#C6A667" font-weight="700">Tax-free in India</text>
+  <text x="352" y="280" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8a9aaa">Interest fully exempt</text>
+  <text x="642" y="261" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#ef4444" font-weight="600">Taxable in India</text>
+  <text x="642" y="280" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">TDS deducted at source</text>
+
+  <!-- Row 4: NRI home loan -->
+  <rect x="50" y="292" width="900" height="52" fill="#0d0d0d"/>
+  <line x1="50" y1="292" x2="950" y2="292" stroke="#161616" stroke-width="1"/>
+  <text x="62" y="313" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" letter-spacing="1" font-weight="600">EMI PAYMENT</text>
+  <text x="62" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Home loan servicing</text>
+  <text x="352" y="313" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#e5e7eb" font-weight="600">Allowed</text>
+  <text x="352" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8a9aaa">EMIs payable from NRE</text>
+  <text x="642" y="313" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#9ca3af" font-weight="600">Allowed</text>
+  <text x="642" y="332" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">EMIs payable from NRO</text>
+
+  <!-- Row 5: Best for -->
+  <rect x="50" y="344" width="900" height="52" fill="#0b0b0b"/>
+  <line x1="50" y1="344" x2="950" y2="344" stroke="#161616" stroke-width="1"/>
+  <text x="62" y="365" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" letter-spacing="1" font-weight="600">BEST FOR</text>
+  <text x="62" y="384" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Investor type</text>
+  <text x="352" y="365" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#C6A667" font-weight="700">Fresh investment from abroad</text>
+  <text x="352" y="384" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#8a9aaa">Priority if you plan to repatriate</text>
+  <text x="642" y="365" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#9ca3af" font-weight="600">Managing existing India income</text>
+  <text x="642" y="384" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#546070">Rental income, dividends etc.</text>
+
+  <!-- Bottom bar -->
+  <line x1="50" y1="400" x2="950" y2="400" stroke="#161616" stroke-width="1"/>
+  <text x="500" y="425" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#374151" text-anchor="middle">LSR Realty NRI Desk recommends routing all fresh property investment through NRE for clean repatriation on exit.</text>
+  <text x="500" y="445" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#1f2937" text-anchor="middle">Contact: marketing@lsrrealty.com · +91 8448660019 · lsrrealty.com</text>
+</svg>
