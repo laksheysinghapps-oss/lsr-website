@@ -1,0 +1,332 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070707"/>
+      <stop offset="100%" stop-color="#0c0c10"/>
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1208"/>
+      <stop offset="100%" stop-color="#0a0a08"/>
+    </linearGradient>
+    <linearGradient id="laptopScreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2540"/>
+      <stop offset="100%" stop-color="#061520"/>
+    </linearGradient>
+    <radialGradient id="roomLight" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#C6A667" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#C6A667" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <pattern id="dots2" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.5" fill="#161616"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots2)"/>
+  <rect width="1200" height="630" fill="url(#roomLight)"/>
+
+  <!-- Gold borders -->
+  <rect width="1200" height="3" fill="#C6A667"/>
+  <rect x="0" y="627" width="1200" height="3" fill="#C6A667"/>
+
+  <!-- ===== OFFICE BACKGROUND ELEMENTS ===== -->
+  <!-- Back wall -->
+  <rect x="0" y="0" width="1200" height="420" fill="#080808"/>
+
+  <!-- Large window / glass wall at back -->
+  <rect x="300" y="30" width="600" height="350" fill="#07141f" rx="2"/>
+  <!-- Window pane divisions -->
+  <line x1="500" y1="30" x2="500" y2="380" stroke="#0a0a0a" stroke-width="5"/>
+  <line x1="700" y1="30" x2="700" y2="380" stroke="#0a0a0a" stroke-width="5"/>
+  <line x1="300" y1="200" x2="900" y2="200" stroke="#0a0a0a" stroke-width="5"/>
+  <!-- Night city visible through window -->
+  <!-- Building silhouettes -->
+  <rect x="310" y="260" width="30" height="120" fill="#0d1e2e"/>
+  <rect x="345" y="240" width="25" height="140" fill="#0a1828"/>
+  <rect x="374" y="255" width="40" height="125" fill="#0d1e2e"/>
+  <rect x="418" y="230" width="30" height="150" fill="#0a1828"/>
+  <rect x="452" y="248" width="35" height="132" fill="#0d1e2e"/>
+  <rect x="510" y="235" width="40" height="145" fill="#0a1828"/>
+  <rect x="554" y="250" width="28" height="130" fill="#0d1e2e"/>
+  <rect x="586" y="238" width="35" height="142" fill="#0a1828"/>
+  <rect x="625" y="252" width="40" height="128" fill="#0d1e2e"/>
+  <rect x="669" y="241" width="28" height="139" fill="#0a1828"/>
+  <rect x="701" y="255" width="35" height="125" fill="#0d1e2e"/>
+  <rect x="740" y="243" width="30" height="137" fill="#0a1828"/>
+  <rect x="774" y="258" width="40" height="122" fill="#0d1e2e"/>
+  <rect x="818" y="235" width="28" height="145" fill="#0a1828"/>
+  <rect x="850" y="250" width="35" height="130" fill="#0d1e2e"/>
+  <!-- Building lights -->
+  <rect x="317" y="270" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="326" y="284" width="5" height="4" fill="#C6A667" opacity="0.25"/>
+  <rect x="382" y="265" width="5" height="4" fill="#C6A667" opacity="0.35"/>
+  <rect x="395" y="278" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="420" y="248" width="5" height="4" fill="#C6A667" opacity="0.4"/>
+  <rect x="432" y="260" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="516" y="252" width="5" height="4" fill="#C6A667" opacity="0.35"/>
+  <rect x="529" y="264" width="5" height="4" fill="#C6A667" opacity="0.25"/>
+  <rect x="592" y="255" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="604" y="268" width="5" height="4" fill="#C6A667" opacity="0.35"/>
+  <rect x="631" y="260" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="675" y="252" width="5" height="4" fill="#C6A667" opacity="0.4"/>
+  <rect x="687" y="264" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="748" y="255" width="5" height="4" fill="#C6A667" opacity="0.35"/>
+  <rect x="780" y="267" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="824" y="248" width="5" height="4" fill="#C6A667" opacity="0.4"/>
+  <!-- Stars in sky -->
+  <circle cx="340" cy="80" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="450" cy="60" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="560" cy="90" r="0.8" fill="#ffffff" opacity="0.4"/>
+  <circle cx="640" cy="55" r="1" fill="#ffffff" opacity="0.7"/>
+  <circle cx="750" cy="75" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="820" cy="65" r="0.8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="870" cy="85" r="1" fill="#ffffff" opacity="0.4"/>
+  <!-- Window frame border -->
+  <rect x="300" y="30" width="600" height="350" fill="none" stroke="#131313" stroke-width="5" rx="2"/>
+
+  <!-- Floor -->
+  <rect x="0" y="420" width="1200" height="210" fill="#0a0a09"/>
+  <!-- Floor reflection line -->
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#1a1a18" stroke-width="2"/>
+
+  <!-- ===== CONFERENCE TABLE ===== -->
+  <!-- Table perspective: slight top-down angle -->
+  <!-- Table surface -->
+  <path d="M 150 440 L 1050 440 L 1020 560 L 180 560 Z" fill="url(#tableGrad)"/>
+  <!-- Table top edge highlight -->
+  <line x1="150" y1="440" x2="1050" y2="440" stroke="#C6A667" stroke-width="1.5" opacity="0.6"/>
+  <!-- Table side edges -->
+  <line x1="150" y1="440" x2="180" y2="560" stroke="#0f0f0a" stroke-width="2"/>
+  <line x1="1050" y1="440" x2="1020" y2="560" stroke="#0f0f0a" stroke-width="2"/>
+  <!-- Table bottom edge -->
+  <line x1="180" y1="560" x2="1020" y2="560" stroke="#0f0f0a" stroke-width="1"/>
+  <!-- Table surface sheen -->
+  <path d="M 150 440 L 1050 440 L 1050 455 L 150 455 Z" fill="#C6A667" opacity="0.03"/>
+  <!-- Table legs (visible at corners) -->
+  <rect x="185" y="558" width="14" height="50" fill="#0f0f08" rx="2"/>
+  <rect x="1001" y="558" width="14" height="50" fill="#0f0f08" rx="2"/>
+
+  <!-- ===== ITEMS ON TABLE ===== -->
+  <!-- Laptop (center-left on table) -->
+  <rect x="440" y="400" width="150" height="68" fill="#111" rx="3"/>
+  <rect x="443" y="403" width="144" height="62" fill="url(#laptopScreen)" rx="2"/>
+  <!-- Screen content - LSR Realty property -->
+  <rect x="447" y="407" width="136" height="10" fill="#0a1a2a"/>
+  <text x="515" y="415" font-family="'Segoe UI',Arial,sans-serif" font-size="5.5" fill="#C6A667" text-anchor="middle" letter-spacing="0.5">LSR REALTY · NRI ADVISORY</text>
+  <rect x="447" y="419" width="65" height="38" fill="#0d1e30" rx="1"/>
+  <rect x="449" y="421" width="61" height="7" fill="#C6A667" opacity="0.12"/>
+  <text x="480" y="428" font-family="'Segoe UI',Arial,sans-serif" font-size="4.5" fill="#9ca3af" text-anchor="middle">DLF PRIVANA SOUTH</text>
+  <text x="480" y="438" font-family="Georgia,serif" font-size="8" fill="#C6A667" text-anchor="middle" font-weight="700">₹7.5 Cr</text>
+  <text x="480" y="448" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">4 BHK · Sec 76–77</text>
+  <text x="480" y="455" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#22c55e" text-anchor="middle">RERA ✓ · NRI Eligible</text>
+  <rect x="516" y="419" width="65" height="38" fill="#0d1e30" rx="1"/>
+  <text x="549" y="428" font-family="'Segoe UI',Arial,sans-serif" font-size="4.5" fill="#9ca3af" text-anchor="middle">GOLF COURSE EXT RD</text>
+  <text x="549" y="438" font-family="Georgia,serif" font-size="8" fill="#C6A667" text-anchor="middle" font-weight="700">₹4.8 Cr</text>
+  <text x="549" y="448" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">3 BHK · Sec 65</text>
+  <text x="549" y="455" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#22c55e" text-anchor="middle">RERA ✓ · NRI Eligible</text>
+  <!-- Laptop base -->
+  <rect x="438" y="466" width="162" height="7" fill="#0d0d0d" rx="2"/>
+  <ellipse cx="519" cy="473" rx="84" ry="4" fill="#0a0a0a" opacity="0.7"/>
+
+  <!-- Property brochures / papers on table right side -->
+  <rect x="640" y="438" width="90" height="55" fill="#0f0d08" rx="2" transform="rotate(-5 685 465)"/>
+  <rect x="644" y="442" width="82" height="47" fill="#0a0808" rx="1" transform="rotate(-5 685 465)"/>
+  <text x="685" y="460" font-family="Georgia,serif" font-size="7" fill="#C6A667" text-anchor="middle" transform="rotate(-5 685 465)" font-weight="700">PROPERTY</text>
+  <text x="685" y="470" font-family="Georgia,serif" font-size="7" fill="#C6A667" text-anchor="middle" transform="rotate(-5 685 465)" font-weight="700">PORTFOLIO</text>
+  <text x="685" y="480" font-family="'Segoe UI',Arial,sans-serif" font-size="5" fill="#4b5563" text-anchor="middle" transform="rotate(-5 685 465)">LSR Realty · 2026</text>
+
+  <!-- Second paper -->
+  <rect x="740" y="434" width="85" height="52" fill="#0d0b06" rx="2" transform="rotate(4 782 460)"/>
+  <text x="782" y="456" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="#6b7280" text-anchor="middle" transform="rotate(4 782 460)">RERA COMPLIANCE</text>
+  <text x="782" y="466" font-family="'Segoe UI',Arial,sans-serif" font-size="5" fill="#4b5563" text-anchor="middle" transform="rotate(4 782 460)">Haryana Registration</text>
+  <text x="782" y="476" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="#C6A667" opacity="0.6" text-anchor="middle" transform="rotate(4 782 460)">✓ Verified</text>
+
+  <!-- Water glass -->
+  <rect x="370" y="440" width="16" height="28" fill="#0a0a18" rx="2" opacity="0.9"/>
+  <rect x="371" y="441" width="14" height="5" fill="#ffffff" opacity="0.06"/>
+  <rect x="372" y="442" width="12" height="26" fill="#060610" rx="1" opacity="0.8"/>
+  <!-- Water glass 2 -->
+  <rect x="810" y="442" width="16" height="28" fill="#0a0a18" rx="2" opacity="0.9"/>
+  <rect x="812" y="442" width="14" height="5" fill="#ffffff" opacity="0.06"/>
+
+  <!-- ===== PERSON 1: LSR REALTY ADVISOR (LEFT) — facing right ===== -->
+  <!-- Advisor chair back -->
+  <rect x="170" y="290" width="80" height="160" fill="#0d0d0d" rx="6"/>
+  <rect x="173" y="293" width="74" height="154" fill="#111" rx="4"/>
+
+  <!-- Advisor body - dark business suit -->
+  <path d="M 140 360 C 134 344 145 325 168 318 L 210 312 L 252 318 C 275 325 286 344 280 360 L 285 440 L 135 440 Z" fill="#1c1e2a" filter="url(#shadow2)"/>
+  <!-- Right arm extended on table (toward client) -->
+  <path d="M 280 358 L 310 390 C 318 400 315 420 304 428 L 280 435 L 278 368 Z" fill="#1c1e2a"/>
+  <!-- Right hand on documents -->
+  <ellipse cx="307" cy="432" rx="16" ry="7" fill="#b07850" transform="rotate(-15 307 432)"/>
+  <!-- Left arm resting -->
+  <path d="M 140 358 L 120 388 C 114 398 117 415 128 422 L 148 430 L 148 368 Z" fill="#1c1e2a"/>
+  <ellipse cx="126" cy="425" rx="14" ry="6" fill="#b07850" transform="rotate(15 126 425)"/>
+
+  <!-- Jacket lapels (dark navy with gold pin) -->
+  <path d="M 168 318 L 188 338 L 210 330 L 196 318 Z" fill="#242638"/>
+  <path d="M 252 318 L 232 338 L 210 330 L 224 318 Z" fill="#242638"/>
+  <!-- White shirt/collar -->
+  <path d="M 196 318 L 210 330 L 224 318 L 218 314 L 210 316 L 202 314 Z" fill="#e5ddd0"/>
+  <!-- Tie (dark gold/champagne for advisor) -->
+  <path d="M 210 330 L 206 350 L 210 362 L 214 350 Z" fill="#7a6030"/>
+  <!-- Gold tie pin -->
+  <rect x="208" y="346" width="4" height="1.5" fill="#C6A667" opacity="0.9"/>
+  <!-- Lapel pin - LSR brand -->
+  <circle cx="198" cy="334" r="3" fill="#C6A667" opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="203" y="304" width="14" height="16" fill="#b07850" rx="3"/>
+
+  <!-- HEAD — Advisor: mature South Asian male, slightly 3/4 right view -->
+  <ellipse cx="210" cy="280" rx="34" ry="37" fill="#a06840" filter="url(#soft)"/>
+
+  <!-- Hair - slightly greying/distinguished -->
+  <path d="M 176 268 C 176 246 184 234 210 232 C 236 234 244 246 244 268 C 240 254 234 244 226 240 C 220 236 215 234 210 234 C 205 234 200 236 194 240 C 186 244 180 254 176 268 Z" fill="#2a1a0a"/>
+  <!-- Grey temples -->
+  <path d="M 176 268 C 174 262 175 252 179 245 L 180 258 C 178 263 177 266 176 268 Z" fill="#3d3028"/>
+  <path d="M 244 268 C 246 262 245 252 241 245 L 240 258 C 242 263 243 266 244 268 Z" fill="#3d3028"/>
+
+  <!-- Ear (left visible since facing right) -->
+  <ellipse cx="244" cy="284" rx="6" ry="9" fill="#906030"/>
+  <ellipse cx="245" cy="284" rx="4" ry="6" fill="#804828"/>
+
+  <!-- Eyebrows (slightly thick, mature) -->
+  <path d="M 193 265 Q 200 261 206 264" stroke="#2a1a08" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 214 264 Q 220 261 227 265" stroke="#2a1a08" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - focused on client, looking right -->
+  <!-- Left eye (slightly less visible in 3/4 view) -->
+  <ellipse cx="201" cy="274" rx="5.5" ry="4.5" fill="#f0e8dc"/>
+  <ellipse cx="202" cy="274" rx="4" ry="3.5" fill="#3a1f10"/>
+  <ellipse cx="202" cy="274" rx="2.5" ry="2.5" fill="#0a0500"/>
+  <circle cx="201" cy="272" r="0.8" fill="#ffffff" opacity="0.7"/>
+  <!-- Right eye -->
+  <ellipse cx="220" cy="274" rx="6" ry="5" fill="#f0e8dc"/>
+  <ellipse cx="221" cy="274" rx="4.5" ry="4" fill="#3a1f10"/>
+  <ellipse cx="221" cy="274" rx="3" ry="3" fill="#0a0500"/>
+  <circle cx="220" cy="272" r="0.8" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Nose (3/4 right view) -->
+  <path d="M 210 278 L 215 290 Q 218 293 221 290" stroke="#805030" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="214" cy="291" rx="2.5" ry="1.5" fill="#805030" opacity="0.4"/>
+
+  <!-- Mouth - slight professional smile, engaged expression -->
+  <path d="M 201 302 Q 210 308 220 302" stroke="#7a4028" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Subtle lower lip -->
+  <path d="M 204 304 Q 210 308 217 304" stroke="#6a3820" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Slight chin crease for maturity -->
+  <path d="M 198 316 Q 210 322 222 316" stroke="#806040" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- ===== PERSON 2: NRI CLIENT (RIGHT) — facing left ===== -->
+  <!-- Client chair -->
+  <rect x="950" y="290" width="80" height="160" fill="#0d0d0d" rx="6"/>
+  <rect x="953" y="293" width="74" height="154" fill="#111" rx="4"/>
+
+  <!-- Client body - slightly lighter suit (charcoal, modern) -->
+  <path d="M 920 360 C 914 344 925 325 948 318 L 990 312 L 1032 318 C 1055 325 1066 344 1060 360 L 1065 440 L 915 440 Z" fill="#20222e" filter="url(#shadow2)"/>
+  <!-- Left arm extended toward table -->
+  <path d="M 920 358 L 892 388 C 884 398 887 418 898 426 L 920 434 L 922 368 Z" fill="#20222e"/>
+  <!-- Left hand near laptop/docs -->
+  <ellipse cx="890" cy="428" rx="14" ry="6" fill="#b07850" transform="rotate(-10 890 428)"/>
+  <!-- Right arm - slight gesture or resting -->
+  <path d="M 1060 358 L 1078 386 C 1084 396 1081 412 1070 420 L 1050 430 L 1050 368 Z" fill="#20222e"/>
+  <ellipse cx="1073" cy="424" rx="13" ry="6" fill="#b07850" transform="rotate(10 1073 424)"/>
+
+  <!-- Jacket lapels (facing left now) -->
+  <path d="M 948 318 L 968 338 L 990 330 L 976 318 Z" fill="#282a38"/>
+  <path d="M 1032 318 L 1012 338 L 990 330 L 1004 318 Z" fill="#282a38"/>
+  <!-- Shirt collar (white) -->
+  <path d="M 976 318 L 990 330 L 1004 318 L 998 314 L 990 316 L 982 314 Z" fill="#e8e0d5"/>
+  <!-- Tie (deep blue/navy for client) -->
+  <path d="M 990 330 L 986 350 L 990 363 L 994 350 Z" fill="#1a2a5a"/>
+  <!-- Tie knot -->
+  <polygon points="990,326 984,332 990,336 996,332" fill="#1e3068"/>
+
+  <!-- Client neck -->
+  <rect x="983" y="304" width="14" height="16" fill="#b07850" rx="3"/>
+
+  <!-- HEAD — NRI Client: South Asian male, younger, 3/4 left view -->
+  <ellipse cx="990" cy="280" rx="34" ry="37" fill="#b07850" filter="url(#soft)"/>
+
+  <!-- Hair - darker, fuller (younger) -->
+  <path d="M 956 268 C 956 246 964 233 990 231 C 1016 233 1024 246 1024 268 C 1020 253 1014 243 1006 239 C 1000 235 995 233 990 233 C 985 233 980 235 974 239 C 966 243 960 253 956 268 Z" fill="#0f0800"/>
+  <!-- Hair sides -->
+  <path d="M 956 268 C 954 261 955 251 959 244 L 960 257 C 958 262 957 265 956 268 Z" fill="#0f0800"/>
+  <path d="M 1024 268 C 1026 261 1025 251 1021 244 L 1020 257 C 1022 262 1023 265 1024 268 Z" fill="#0f0800"/>
+
+  <!-- Ear (right side visible since facing left) -->
+  <ellipse cx="956" cy="284" rx="6" ry="9" fill="#a06040"/>
+  <ellipse cx="955" cy="284" rx="4" ry="6" fill="#904838"/>
+
+  <!-- Eyebrows (darker, fuller) -->
+  <path d="M 973 265 Q 980 261 986 264" stroke="#1a0d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 994 264 Q 1000 261 1007 265" stroke="#1a0d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - engaging with advisor, looking left -->
+  <!-- Left eye -->
+  <ellipse cx="980" cy="274" rx="6" ry="5" fill="#f5ede0"/>
+  <ellipse cx="979" cy="274" rx="4.5" ry="4" fill="#3a1f10"/>
+  <ellipse cx="979" cy="274" rx="3" ry="3" fill="#0a0500"/>
+  <circle cx="978" cy="272" r="0.8" fill="#ffffff" opacity="0.7"/>
+  <!-- Right eye (slightly less visible) -->
+  <ellipse cx="999" cy="274" rx="5.5" ry="4.5" fill="#f5ede0"/>
+  <ellipse cx="998" cy="274" rx="4" ry="3.5" fill="#3a1f10"/>
+  <ellipse cx="998" cy="274" rx="2.5" ry="2.5" fill="#0a0500"/>
+  <circle cx="997" cy="272" r="0.8" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Nose (3/4 left view) -->
+  <path d="M 990 278 L 985 290 Q 982 293 979 290" stroke="#905030" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="986" cy="291" rx="2.5" ry="1.5" fill="#905030" opacity="0.4"/>
+
+  <!-- Mouth - engaged, slight smile, interested expression -->
+  <path d="M 979 302 Q 990 308 1001 302" stroke="#8a4028" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 982 305 Q 990 309 998 305" stroke="#6a3020" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- ===== CENTER BRANDING / OVERLAY ===== -->
+  <!-- Subtle divider line in center of table area -->
+  <line x1="600" y1="430" x2="600" y2="450" stroke="#C6A667" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- ===== TOP BRANDING ===== -->
+  <!-- LSR tag top left -->
+  <rect x="72" y="38" width="160" height="26" fill="none" stroke="#C6A667" stroke-width="0.75" rx="1"/>
+  <text x="152" y="55" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#C6A667" text-anchor="middle" font-weight="700">NRI ADVISORY DESK</text>
+
+  <!-- Top right tag -->
+  <text x="1128" y="55" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#2a3040" text-anchor="end">LSR REALTY · lsrrealty.com</text>
+
+  <!-- ===== HEADLINE OVERLAY (center bottom) ===== -->
+  <!-- Semi-dark band for text readability -->
+  <rect x="340" y="488" width="520" height="110" fill="#070707" opacity="0.9" rx="2"/>
+  <rect x="340" y="488" width="520" height="2" fill="#C6A667" opacity="0.7"/>
+
+  <!-- Main headline -->
+  <text x="600" y="522" font-family="Georgia,'Times New Roman',serif" font-size="26" fill="#f0f0f0" text-anchor="middle" font-weight="700">Expert NRI Property Advisory in Gurugram</text>
+  <text x="600" y="550" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#9ca3af" text-anchor="middle">Face-to-face expertise. Remote execution. End-to-end NRI investment support.</text>
+
+  <!-- Two labels under people -->
+  <!-- Advisor label -->
+  <rect x="145" y="490" width="130" height="42" fill="#0d0d0d" rx="2" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="210" y="508" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#C6A667" text-anchor="middle" font-weight="700" letter-spacing="0.5">LSR REALTY</text>
+  <text x="210" y="522" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">Investment Advisor</text>
+  <text x="210" y="534" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#4b5563" text-anchor="middle">DLF · Elan · Vatika Access</text>
+
+  <!-- Client label -->
+  <rect x="925" y="490" width="130" height="42" fill="#0d0d0d" rx="2" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="990" y="508" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#C6A667" text-anchor="middle" font-weight="700" letter-spacing="0.5">NRI CLIENT</text>
+  <text x="990" y="522" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280" text-anchor="middle">Based in UAE · UK · USA</text>
+  <text x="990" y="534" font-family="'Segoe UI',Arial,sans-serif" font-size="8.5" fill="#4b5563" text-anchor="middle">Property Investment in India</text>
+
+  <!-- Bottom bar -->
+  <line x1="72" y1="594" x2="1128" y2="594" stroke="#141414" stroke-width="1"/>
+  <text x="600" y="616" font-family="'Segoe UI',Arial,sans-serif" font-size="10.5" fill="#2a3040" text-anchor="middle">marketing@lsrrealty.com · +91 8448660019 · lsrrealty.com</text>
+</svg>

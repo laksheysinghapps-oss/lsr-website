@@ -1,0 +1,252 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070707"/>
+      <stop offset="100%" stop-color="#0d0d10"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2540"/>
+      <stop offset="100%" stop-color="#061525"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1208"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C6A667" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#C6A667" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <!-- Subtle dot pattern -->
+  <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="0.5" fill="#181818"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Gold top and bottom borders -->
+  <rect width="1200" height="3" fill="#C6A667"/>
+  <rect x="0" y="627" width="1200" height="3" fill="#C6A667"/>
+
+  <!-- Warm right-side glow behind figure -->
+  <ellipse cx="850" cy="320" rx="320" ry="280" fill="url(#glow)"/>
+
+  <!-- ===== OFFICE WINDOW BACKGROUND (RIGHT SIDE) ===== -->
+  <!-- Large window frame -->
+  <rect x="680" y="60" width="320" height="280" fill="#0a1824" rx="3"/>
+  <!-- City skyline through window (Gurugram) -->
+  <rect x="690" y="185" width="35" height="155" fill="#0f2035"/>
+  <rect x="693" y="165" width="29" height="20" fill="#0d1c30"/>
+  <rect x="728" y="200" width="28" height="140" fill="#112238"/>
+  <rect x="759" y="172" width="40" height="168" fill="#0f2035"/>
+  <rect x="762" y="155" width="34" height="17" fill="#0d1c30"/>
+  <rect x="802" y="190" width="32" height="150" fill="#112238"/>
+  <rect x="837" y="177" width="45" height="163" fill="#0f2035"/>
+  <rect x="840" y="160" width="39" height="17" fill="#0d1c30"/>
+  <rect x="885" y="195" width="30" height="145" fill="#112238"/>
+  <rect x="918" y="183" width="38" height="157" fill="#0f2035"/>
+  <rect x="959" y="210" width="25" height="130" fill="#0d1c30"/>
+  <!-- Window lights in buildings -->
+  <rect x="697" y="195" width="6" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="707" y="210" width="6" height="4" fill="#C6A667" opacity="0.25"/>
+  <rect x="697" y="220" width="6" height="4" fill="#C6A667" opacity="0.2"/>
+  <rect x="765" y="180" width="5" height="4" fill="#C6A667" opacity="0.35"/>
+  <rect x="775" y="195" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="765" y="210" width="5" height="4" fill="#C6A667" opacity="0.25"/>
+  <rect x="843" y="170" width="6" height="4" fill="#C6A667" opacity="0.4"/>
+  <rect x="853" y="185" width="6" height="4" fill="#C6A667" opacity="0.3"/>
+  <rect x="843" y="200" width="6" height="4" fill="#C6A667" opacity="0.25"/>
+  <rect x="843" y="215" width="6" height="4" fill="#C6A667" opacity="0.2"/>
+  <rect x="922" y="193" width="5" height="4" fill="#C6A667" opacity="0.35"/>
+  <rect x="932" y="207" width="5" height="4" fill="#C6A667" opacity="0.3"/>
+  <!-- Night sky tint in window -->
+  <rect x="680" y="60" width="320" height="105" fill="#060d15" opacity="0.5"/>
+  <!-- Stars -->
+  <circle cx="720" cy="90" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="780" cy="75" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="850" cy="85" r="1" fill="#ffffff" opacity="0.7"/>
+  <circle cx="920" cy="70" r="1" fill="#ffffff" opacity="0.4"/>
+  <circle cx="960" cy="95" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="700" cy="80" r="0.8" fill="#ffffff" opacity="0.5"/>
+  <!-- Window frame divisions -->
+  <line x1="840" y1="60" x2="840" y2="340" stroke="#0d0d0d" stroke-width="4"/>
+  <line x1="680" y1="200" x2="1000" y2="200" stroke="#0d0d0d" stroke-width="4"/>
+  <!-- Window outer frame -->
+  <rect x="680" y="60" width="320" height="280" fill="none" stroke="#1a1a1a" stroke-width="4" rx="3"/>
+
+  <!-- ===== DESK ===== -->
+  <rect x="580" y="432" width="600" height="14" fill="url(#deskGrad)" rx="2"/>
+  <rect x="580" y="432" width="600" height="2" fill="#C6A667" opacity="0.5"/>
+  <!-- Desk legs suggested -->
+  <rect x="610" y="446" width="8" height="80" fill="#111108" rx="1"/>
+  <rect x="1152" y="446" width="8" height="80" fill="#111108" rx="1"/>
+
+  <!-- ===== LAPTOP ON DESK ===== -->
+  <!-- Laptop screen open -->
+  <rect x="750" y="355" width="170" height="80" fill="#111" rx="3"/>
+  <rect x="753" y="358" width="164" height="74" fill="url(#screenGrad)" rx="2"/>
+  <!-- Screen UI mock - real estate app -->
+  <rect x="757" y="362" width="156" height="12" fill="#0a1a2a"/>
+  <text x="835" y="371" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="#C6A667" text-anchor="middle" letter-spacing="0.5">GURUGRAM PROPERTY PORTFOLIO</text>
+  <rect x="757" y="376" width="50" height="30" fill="#0d2035" rx="1"/>
+  <rect x="759" y="378" width="46" height="10" fill="#C6A667" opacity="0.1"/>
+  <text x="782" y="386" font-family="'Segoe UI',Arial,sans-serif" font-size="5" fill="#C6A667" text-anchor="middle">₹ 4.2 Cr</text>
+  <text x="782" y="395" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">Est. Value</text>
+  <rect x="811" y="376" width="50" height="30" fill="#0d2035" rx="1"/>
+  <text x="836" y="386" font-family="'Segoe UI',Arial,sans-serif" font-size="5" fill="#22c55e" text-anchor="middle">+18.3%</text>
+  <text x="836" y="395" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">ROI 3 Yrs</text>
+  <rect x="865" y="376" width="50" height="30" fill="#0d2035" rx="1"/>
+  <text x="890" y="386" font-family="'Segoe UI',Arial,sans-serif" font-size="5" fill="#9ca3af" text-anchor="middle">4.2%</text>
+  <text x="890" y="395" font-family="'Segoe UI',Arial,sans-serif" font-size="4" fill="#6b7280" text-anchor="middle">Yield p.a.</text>
+  <!-- Small bar chart on screen -->
+  <rect x="757" y="410" width="156" height="18" fill="#0a1828"/>
+  <rect x="762" y="418" width="10" height="9" fill="#C6A667" opacity="0.5"/>
+  <rect x="775" y="415" width="10" height="12" fill="#C6A667" opacity="0.6"/>
+  <rect x="788" y="413" width="10" height="14" fill="#C6A667" opacity="0.7"/>
+  <rect x="801" y="410" width="10" height="17" fill="#C6A667" opacity="0.9"/>
+  <rect x="814" y="412" width="10" height="15" fill="#C6A667" opacity="0.8"/>
+  <rect x="827" y="416" width="10" height="11" fill="#C6A667" opacity="0.5"/>
+  <rect x="840" y="414" width="10" height="13" fill="#C6A667" opacity="0.6"/>
+  <!-- Laptop hinge + base -->
+  <rect x="748" y="435" width="174" height="6" fill="#0d0d0d" rx="2"/>
+  <ellipse cx="835" cy="441" rx="90" ry="4" fill="#111" opacity="0.8"/>
+
+  <!-- Coffee mug on desk -->
+  <rect x="940" y="406" width="28" height="30" fill="#111" rx="3"/>
+  <rect x="942" y="408" width="24" height="26" fill="#1a0800" rx="2"/>
+  <path d="M 968 415 Q 976 420 968 425" stroke="#111" stroke-width="2" fill="none"/>
+  <!-- Steam from mug -->
+  <path d="M 950 404 Q 953 398 950 393" stroke="#2a2a2a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 957 402 Q 960 396 957 391" stroke="#2a2a2a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- ===== PERSON (South Asian male NRI, business attire, seated) ===== -->
+  <!-- Chair back -->
+  <rect x="895" y="310" width="76" height="130" fill="#0f0f0f" rx="6"/>
+  <rect x="898" y="313" width="70" height="124" fill="#111" rx="4"/>
+  <!-- Chair seat -->
+  <ellipse cx="933" cy="440" rx="52" ry="10" fill="#0f0f0f"/>
+
+  <!-- Body — dark business suit -->
+  <!-- Main jacket torso -->
+  <path d="M 868 380 C 862 365 872 348 895 340 L 933 335 L 971 340 C 994 348 1004 365 998 380 L 1000 440 L 866 440 Z" fill="#1c1e28" filter="url(#softShadow)"/>
+  <!-- Jacket lapels -->
+  <path d="M 895 340 L 910 358 L 933 350 L 920 340 Z" fill="#22253a"/>
+  <path d="M 971 340 L 956 358 L 933 350 L 946 340 Z" fill="#22253a"/>
+  <!-- White shirt visible at collar -->
+  <path d="M 920 340 L 933 350 L 946 340 L 940 337 L 933 338 L 926 337 Z" fill="#e8e0d5"/>
+  <!-- Tie (dark maroon/burgundy) -->
+  <path d="M 933 350 L 929 370 L 933 382 L 937 370 Z" fill="#7a1515"/>
+  <!-- Tie knot -->
+  <polygon points="933,346 927,352 933,356 939,352" fill="#8B1A1A"/>
+  <!-- Jacket button detail -->
+  <circle cx="933" cy="400" r="2" fill="#2a2d3e"/>
+  <circle cx="933" cy="415" r="2" fill="#2a2d3e"/>
+  <!-- Left arm on desk -->
+  <path d="M 868 380 L 848 420 C 845 430 850 440 858 440 L 868 440 L 870 395 Z" fill="#1c1e28"/>
+  <!-- Left hand/forearm near keyboard -->
+  <path d="M 848 418 C 840 422 838 430 845 434 L 870 438 L 870 420 Z" fill="#b07850"/>
+  <!-- Right arm gesturing or near mouse -->
+  <path d="M 998 380 L 1015 418 C 1018 428 1014 438 1006 440 L 996 440 L 994 395 Z" fill="#1c1e28"/>
+  <!-- Right hand near mouse -->
+  <ellipse cx="1008" cy="436" rx="12" ry="6" fill="#b07850"/>
+
+  <!-- Neck -->
+  <rect x="924" y="325" width="18" height="18" fill="#b07850" rx="4"/>
+
+  <!-- HEAD (3/4 front view, South Asian male, professional) -->
+  <!-- Head shape - slightly oval -->
+  <ellipse cx="933" cy="298" rx="36" ry="40" fill="#b07850" filter="url(#softShadow)"/>
+
+  <!-- Hair — short, professional (very dark) -->
+  <!-- Top of head hair coverage -->
+  <path d="M 897 285 C 897 260 907 248 933 246 C 959 248 969 260 969 285 C 965 270 958 260 950 255 C 943 250 938 248 933 248 C 928 248 923 250 916 255 C 908 260 901 270 897 285 Z" fill="#0f0800"/>
+  <!-- Hair on sides (temples) -->
+  <path d="M 897 285 C 895 278 896 268 900 261 C 899 271 897 280 897 285 Z" fill="#0f0800"/>
+  <path d="M 969 285 C 971 278 970 268 966 261 C 967 271 969 280 969 285 Z" fill="#0f0800"/>
+  <!-- Slight hair at the front -->
+  <path d="M 910 250 C 915 244 924 242 933 242 C 942 242 951 244 956 250 C 950 248 942 247 933 247 C 924 247 916 248 910 250 Z" fill="#0f0800"/>
+
+  <!-- Ear (left) -->
+  <ellipse cx="897" cy="302" rx="6" ry="9" fill="#a06840"/>
+  <!-- Ear inner -->
+  <ellipse cx="898" cy="302" rx="4" ry="6" fill="#906030"/>
+
+  <!-- Face features -->
+  <!-- Eyebrows (slightly thick, professional) -->
+  <path d="M 915 280 Q 922 276 928 279" stroke="#1a0d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 938 279 Q 944 276 951 280" stroke="#1a0d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes (dark brown, focused, looking slightly forward) -->
+  <!-- Left eye -->
+  <ellipse cx="922" cy="290" rx="6" ry="5" fill="#f8f0e8"/>
+  <ellipse cx="922" cy="290" rx="4.5" ry="4" fill="#3a1f10"/>
+  <ellipse cx="922" cy="290" rx="3" ry="3" fill="#0a0500"/>
+  <circle cx="920" cy="288" r="1" fill="#ffffff" opacity="0.7"/>
+  <!-- Right eye -->
+  <ellipse cx="944" cy="290" rx="6" ry="5" fill="#f8f0e8"/>
+  <ellipse cx="944" cy="290" rx="4.5" ry="4" fill="#3a1f10"/>
+  <ellipse cx="944" cy="290" rx="3" ry="3" fill="#0a0500"/>
+  <circle cx="942" cy="288" r="1" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Nose (subtle 3/4 view) -->
+  <path d="M 933 295 L 929 308 Q 933 311 937 308 L 933 295" stroke="#906030" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="928" cy="309" rx="3" ry="2" fill="#906030" opacity="0.5"/>
+  <ellipse cx="938" cy="309" rx="3" ry="2" fill="#906030" opacity="0.5"/>
+
+  <!-- Mouth (subtle professional expression) -->
+  <path d="M 922 320 Q 933 325 944 320" stroke="#8a5030" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Lower lip shadow -->
+  <path d="M 926 322 Q 933 326 940 322" stroke="#7a4020" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Subtle chin line -->
+  <path d="M 908 325 Q 933 340 958 325" stroke="#906040" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- ===== LEFT SIDE CONTENT ===== -->
+  <!-- Category tag -->
+  <rect x="72" y="42" width="178" height="26" fill="none" stroke="#C6A667" stroke-width="0.75" rx="1"/>
+  <text x="161" y="59" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" letter-spacing="2" fill="#C6A667" text-anchor="middle" font-weight="700">NRI INVESTMENT ADVISORY</text>
+
+  <!-- Main headline -->
+  <text x="72" y="132" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#f5f5f5" font-weight="700">Invest in</text>
+  <text x="72" y="188" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#f5f5f5" font-weight="700">Gurugram</text>
+  <text x="72" y="244" font-family="Georgia,'Times New Roman',serif" font-size="46" fill="#C6A667" font-weight="700">From Abroad</text>
+
+  <!-- Divider -->
+  <line x1="72" y1="264" x2="360" y2="264" stroke="#C6A667" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- Sub text -->
+  <text x="72" y="290" font-family="'Segoe UI',Arial,sans-serif" font-size="13.5" fill="#9ca3af">FEMA eligibility · NRE &amp; NRO accounts</text>
+  <text x="72" y="310" font-family="'Segoe UI',Arial,sans-serif" font-size="13.5" fill="#9ca3af">RERA due diligence · Power of Attorney</text>
+  <text x="72" y="330" font-family="'Segoe UI',Arial,sans-serif" font-size="13.5" fill="#9ca3af">Tax planning · Rental management</text>
+
+  <!-- Country icons row -->
+  <text x="72" y="368" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563" letter-spacing="0.5">NRI INVESTORS FROM</text>
+  <text x="72" y="390" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#6b7280">USA · UK · UAE · Singapore</text>
+  <text x="72" y="410" font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#6b7280">Canada · Australia</text>
+
+  <!-- Stats row -->
+  <rect x="72" y="432" width="110" height="64" fill="#0d0d0d" rx="2" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="127" y="458" font-family="Georgia,serif" font-size="26" fill="#C6A667" text-anchor="middle" font-weight="700">30+</text>
+  <text x="127" y="474" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">Years Expertise</text>
+  <text x="127" y="487" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">Gurgaon Market</text>
+
+  <rect x="192" y="432" width="110" height="64" fill="#0d0d0d" rx="2" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="247" y="458" font-family="Georgia,serif" font-size="26" fill="#C6A667" text-anchor="middle" font-weight="700">DLF</text>
+  <text x="247" y="474" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">Elan · Vatika</text>
+  <text x="247" y="487" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">Developer Access</text>
+
+  <rect x="312" y="432" width="110" height="64" fill="#0d0d0d" rx="2" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="367" y="458" font-family="Georgia,serif" font-size="26" fill="#C6A667" text-anchor="middle" font-weight="700">100%</text>
+  <text x="367" y="474" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">Remote Process</text>
+  <text x="367" y="487" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#6b7280" text-anchor="middle">No India Visit Needed</text>
+
+  <!-- Bottom bar -->
+  <line x1="72" y1="518" x2="1128" y2="518" stroke="#141414" stroke-width="1"/>
+  <text x="600" y="548" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#374151" text-anchor="middle">LSR Realty · NRI Advisory Desk · marketing@lsrrealty.com · +91 8448660019 · lsrrealty.com</text>
+  <text x="600" y="566" font-family="'Segoe UI',Arial,sans-serif" font-size="9.5" fill="#1f2937" text-anchor="middle">#NRIInvestment #GurgaonRealEstate #InvestInIndia #NRIAdvisory</text>
+</svg>
