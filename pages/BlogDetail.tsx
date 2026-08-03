@@ -36,6 +36,10 @@ const BlogDetail: React.FC = () => {
     ? `${post.excerpt.slice(0, 155).replace(/\s+\S*$/, '')}...`
     : post.excerpt;
 
+  const SITE_URL = 'https://lsrrealty.com';
+  const absoluteImage = post.image?.startsWith('http') ? post.image : `${SITE_URL}${post.image}`;
+  const isoDate = post.dateISO ? `${post.dateISO}T00:00:00+05:30` : post.date;
+
   const structuredData = [
     {
       '@context': 'https://schema.org',
@@ -53,12 +57,12 @@ const BlogDetail: React.FC = () => {
       description: post.excerpt,
       image: {
         '@type': 'ImageObject',
-        url: post.image,
+        url: absoluteImage,
         width: 2070,
         height: 1380,
       },
-      datePublished: post.date,
-      dateModified: post.date,
+      datePublished: isoDate,
+      dateModified: isoDate,
       author: {
         '@type': 'Organization',
         name: 'LSR Realty Advisory Team',
