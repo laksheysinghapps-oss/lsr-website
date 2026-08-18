@@ -40,6 +40,18 @@ const BlogDetail: React.FC = () => {
   const absoluteImage = post.image?.startsWith('http') ? post.image : `${SITE_URL}${post.image}`;
   const isoDate = post.dateISO ? `${post.dateISO}T00:00:00+05:30` : post.date;
 
+  // Per-post keyword sets for the Article schema — avoids the same GCER keywords appearing on every blog
+  const POST_ARTICLE_KEYWORDS: Record<string, string> = {
+    'golf-course-extension-road-vs-golf-course-road-gurgaon':
+      'Golf Course Extension Road, GCER Gurgaon, Golf Course Road Gurgaon, Golf Course Extension Road property rates, DLF Arbour Sector 63, DLF Privana Gurgaon, Gurgaon luxury residential 2026, Gurgaon real estate investment, GCER vs GCR Gurgaon, property rates GCER 2026, LSR Realty',
+    'gurgaon-manesar-master-plan-2031-explained':
+      'Gurgaon Manesar Master Plan 2031, Gurgaon Master Plan 2031 explained, DTCP Haryana master plan, Gurgaon land use zones, Gurugram development plan 2031, Gurgaon property zones, Gurgaon master plan 2031 vs 2041, Gurgaon real estate, property investment Gurugram, LSR Realty',
+    'nri-real-estate-buying-guide-gurgaon':
+      'NRI property investment India, NRI buying property Gurgaon, FEMA NRI real estate, NRE NRO account property investment, NRI real estate Gurugram, NRI home loan India, RERA NRI buyer, Power of Attorney NRI India, NRI property tax India, repatriation NRI property sale, NRI buying guide Gurugram 2026, LSR Realty',
+  };
+  const articleKeywords = POST_ARTICLE_KEYWORDS[post.id]
+    ?? `${post.category}, Gurgaon real estate, Gurugram investment, LSR Realty`;
+
   const structuredData = [
     {
       '@context': 'https://schema.org',
@@ -84,7 +96,7 @@ const BlogDetail: React.FC = () => {
         '@id': `https://lsrrealty.com/blog/${post.id}`,
       },
       articleSection: post.category,
-      keywords: `Gurgaon real estate, ${post.category}, Gurugram investment, Golf Course Extension Road, GCER Gurgaon, Golf Course Extension Road property rates, Gurgaon luxury residential 2025, LSR Realty`,
+      keywords: articleKeywords,
       inLanguage: 'en-IN',
       url: `https://lsrrealty.com/blog/${post.id}`,
     },

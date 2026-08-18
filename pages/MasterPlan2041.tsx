@@ -53,7 +53,7 @@ const MasterPlan2041: React.FC = () => {
         logo: { '@type': 'ImageObject', url: 'https://lsrrealty.com/images/Logo2.png' },
       },
       datePublished: '2026-07-04',
-      dateModified: '2026-07-07',
+      dateModified: '2026-08-18',
       mainEntityOfPage: 'https://lsrrealty.com/gurgaon-master-plan-2041',
     },
     {
@@ -74,9 +74,9 @@ const MasterPlan2041: React.FC = () => {
   return (
     <div className="bg-black text-white pt-32 md:pt-40 min-h-screen">
       <SEO
-        title="Gurgaon Master Plan 2041: Status & Map | LSR Realty"
-        description="Gurgaon Master Plan 2041 tracker: latest status, GMDA infrastructure roadmap, and how it differs from the 2031 plan."
-        keywords="Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon Master Plan 2041 map, Gurgaon layout plan, Gurgaon map"
+        title="Gurgaon Master Plan 2041: Status, Map & PDF | LSR Realty"
+        description="Gurgaon Master Plan 2041 tracker: latest status, map and PDF download guidance, GMDA infrastructure roadmap, 55 lakh population projection, and how it differs from the 2031 plan."
+        keywords="Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon Master Plan 2041 map, Gurgaon Master Plan 2041 PDF download, Gurgaon Master Plan 2041 status, Gurgaon Master Plan 2041 latest news, GMDA 2041, Gurgaon master plan 2041 vs 2031"
         path="/gurgaon-master-plan-2041"
         structuredData={structuredData}
       />
@@ -140,7 +140,7 @@ const MasterPlan2041: React.FC = () => {
           <section className="pt-12">
             <h2 className={h2Class}>What Buyers Should Do Until Then</h2>
             <p className={pClass}>
-              Until the 2041 plan is notified, every purchase decision should be read against the current <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031 map</Link>: confirm the sector's land use zoning, the width and status of roads serving it, and what is reserved around it. Our <Link to="/maps" className="gold-gradient-text hover:underline">sector maps library</Link> covers the official layout plans for over a hundred Gurugram locations, and our <Link to="/services" className="gold-gradient-text hover:underline">advisory team</Link> reads every project against the plan before recommending it.
+              Until the 2041 plan is notified, every purchase decision should be read against the current <Link to="/maps/gurgaon-manesar-master-plan" className="gold-gradient-text hover:underline">Gurgaon Master Plan 2031 map</Link>: confirm the sector's land use zoning, the width and status of roads serving it, and what is reserved around it. Our <Link to="/maps" className="gold-gradient-text hover:underline">sector maps library</Link> covers the official layout plans for over a hundred Gurugram locations, and our <Link to="/services" className="gold-gradient-text hover:underline">advisory team</Link> reads every project against the plan before recommending it. Our <Link to="/blog/gurgaon-manesar-master-plan-2031-explained" className="gold-gradient-text hover:underline">complete guide to the Gurgaon Manesar Master Plan 2031</Link> explains every zone and land use classification in plain language for property investors.
             </p>
           </section>
 

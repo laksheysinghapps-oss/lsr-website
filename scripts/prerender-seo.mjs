@@ -573,9 +573,9 @@ const staticRoutes = [
   },
   {
     route: '/gurgaon-master-plan-2041',
-    title: 'Gurgaon Master Plan 2041: Status & Infrastructure | LSR Realty',
-    description: 'Gurgaon Master Plan 2041 tracker: GMDA status, infrastructure projects, 55 lakh population projection, and investment zones compared to Master Plan 2031.',
-    keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon 2041 master plan status, GMDA 2041, Gurugram infrastructure plan 2041, Gurgaon 2041 map, Gurgaon 2041 investment zones',
+    title: 'Gurgaon Master Plan 2041: Status, Map & PDF | LSR Realty',
+    description: 'Gurgaon Master Plan 2041 tracker: latest status, map and PDF download guidance, 55 lakh population projection, and how 2041 compares to the current Master Plan 2031.',
+    keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon Master Plan 2041 map, Gurgaon Master Plan 2041 PDF download, Gurgaon 2041 master plan status, Gurgaon master plan 2041 latest news, GMDA 2041, Gurgaon 2041 infrastructure, Gurgaon master plan 2041 vs 2031, Gurgaon 2041 investment zones',
     breadcrumbs: [HOME, { name: 'Gurgaon Master Plan 2041', url: `${SITE_URL}/gurgaon-master-plan-2041` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -584,8 +584,8 @@ const staticRoutes = [
       name: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure Roadmap',
       description: 'Detailed tracker for the Gurgaon Master Plan 2041 by GMDA (Gurugram Metropolitan Development Authority). Covers status update, population projection of 55 lakh, new sector development, metro corridors and investment implications.',
       url: `${SITE_URL}/gurgaon-master-plan-2041`,
-      dateModified: '2026-07-25',
-      significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/contact`],
+      dateModified: '2026-08-18',
+      significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`, `${SITE_URL}/contact`],
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
       author: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
       about: [
@@ -899,6 +899,39 @@ const BLOG_TITLE_OVERRIDES = {
   'nri-real-estate-buying-guide-gurgaon': 'NRI Real Estate Buying Guide Gurugram | FEMA, NRE, RERA and Tax | LSR Realty',
 };
 
+// Per-blog keyword sets — specific long-tail keywords per post rather than generic cross-post keywords
+const BLOG_KEYWORDS = {
+  'golf-course-extension-road-vs-golf-course-road-gurgaon':
+    'Golf Course Extension Road, GCER Gurgaon, Golf Course Road Gurgaon, Golf Course Extension Road property rates, DLF Arbour Sector 63, DLF Privana Gurgaon, Gurgaon luxury residential 2026, Gurgaon real estate investment, GCER vs GCR Gurgaon, property rates GCER 2026, LSR Realty',
+  'gurgaon-manesar-master-plan-2031-explained':
+    'Gurgaon Manesar Master Plan 2031, Gurgaon Master Plan 2031 explained, DTCP Haryana master plan, Gurgaon land use zones, Gurugram development plan 2031, Gurgaon property zones, Gurgaon master plan 2031 vs 2041, Gurgaon real estate, property investment Gurugram, LSR Realty',
+  'nri-real-estate-buying-guide-gurgaon':
+    'NRI property investment India, NRI buying property Gurgaon, FEMA NRI real estate, NRE NRO account property investment, NRI real estate Gurugram, NRI home loan India, RERA NRI buyer, Power of Attorney NRI India, NRI property tax India, repatriation NRI property sale, NRI buying guide Gurugram 2026, LSR Realty',
+};
+
+// Per-blog significantLink — cross-links between posts signal topical authority clusters to Google
+const BLOG_SIGNIFICANT_LINKS = {
+  'golf-course-extension-road-vs-golf-course-road-gurgaon': [
+    `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`,
+    `${SITE_URL}/projects`,
+    `${SITE_URL}/services`,
+    `${SITE_URL}/contact`,
+  ],
+  'gurgaon-manesar-master-plan-2031-explained': [
+    `${SITE_URL}/gurgaon-master-plan-2041`,
+    `${SITE_URL}/maps/gurgaon-manesar-master-plan`,
+    `${SITE_URL}/blog/golf-course-extension-road-vs-golf-course-road-gurgaon`,
+    `${SITE_URL}/services`,
+    `${SITE_URL}/contact`,
+  ],
+  'nri-real-estate-buying-guide-gurgaon': [
+    `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`,
+    `${SITE_URL}/blog/golf-course-extension-road-vs-golf-course-road-gurgaon`,
+    `${SITE_URL}/services`,
+    `${SITE_URL}/contact`,
+  ],
+};
+
 for (const post of publishedPosts) {
   const postDescription = post.metaDescription || post.excerpt;
   const postImage = post.image?.startsWith('http') ? post.image : `${SITE_URL}${post.image}`;
@@ -931,9 +964,9 @@ for (const post of publishedPosts) {
     articleSection: post.category,
     inLanguage: 'en-IN',
     url: postUrl,
-    significantLink: [`${SITE_URL}/services`, `${SITE_URL}/contact`],
+    significantLink: BLOG_SIGNIFICANT_LINKS[post.id] || [`${SITE_URL}/services`, `${SITE_URL}/contact`],
     wordCount: wordCount || undefined,
-    keywords: `${post.category}, Gurgaon real estate, Gurugram property investment, LSR Realty`,
+    keywords: BLOG_KEYWORDS[post.id] || `${post.category}, Gurgaon real estate, Gurugram property investment, LSR Realty`,
     audience: { '@type': 'Audience', audienceType: 'Real estate investors, HNI, NRI, property buyers in Gurgaon' },
     speakable: {
       '@type': 'SpeakableSpecification',
