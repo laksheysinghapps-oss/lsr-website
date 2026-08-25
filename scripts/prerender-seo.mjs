@@ -862,6 +862,37 @@ const BLOG_FAQ_SCHEMAS = {
       },
     ],
   },
+  'dlf-arbour-vs-dlf-privana-gurgaon': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Is DLF Arbour better than DLF Privana South?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Neither is objectively better. DLF The Arbour is the superior product in terms of privacy, density, and finish, and suits buyers prioritising end use and product quality. DLF Privana South offers stronger appreciation potential at a lower entry price and suits investors with a 3-year horizon. The right choice depends on your objective and timeline.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the current resale price of DLF Arbour in Gurgaon?',
+        acceptedAnswer: { '@type': 'Answer', text: 'DLF The Arbour is currently trading on the resale market at ₹23,500 to ₹24,000 per sqft. A 4 BHK plus staff unit of 3,900 sqft is priced between ₹9.3 crore and ₹9.5 crore. The project is fully sold out from the developer; all purchases are through the resale market.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the current price of DLF Privana South?',
+        acceptedAnswer: { '@type': 'Answer', text: 'DLF Privana South is currently priced at ₹21,000 per sqft. A 4 BHK of 3,577 sqft starts at ₹7.5 crore, and a penthouse of 5,472 sqft is priced at approximately ₹11.5 crore. The project is under construction with possession expected in July 2029 and is RERA-registered under HARERA/GGM/772/504/2023/116.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I still buy DLF Arbour from the developer?',
+        acceptedAnswer: { '@type': 'Answer', text: 'No. DLF The Arbour is sold out at the developer level. All available units are through the resale market. LSR Realty can connect you with verified resale inventory across specific towers and preferred floors based on your requirements.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which DLF project has better resale value in Gurgaon?',
+        acceptedAnswer: { '@type': 'Answer', text: 'DLF The Arbour currently has a stronger established resale market given that it is a completed and delivered product with a track record. DLF Privana South\'s resale market will mature at and after possession in July 2029. For long-term resale value potential, both projects carry the DLF brand premium, but Privana South\'s appreciation from current prices has more room to grow before it is fully priced in.' },
+      },
+    ],
+  },
 };
 
 // article:tag OG meta per blog post — improves social sharing and topic signals
@@ -869,6 +900,7 @@ const BLOG_ARTICLE_TAGS = {
   'golf-course-extension-road-vs-golf-course-road-gurgaon': ['Golf Course Extension Road', 'Golf Course Road', 'Gurgaon real estate investment', 'GCER Gurgaon', 'property investment Gurgaon', 'luxury apartments GCER'],
   'gurgaon-manesar-master-plan-2031-explained': ['Gurgaon Master Plan 2031', 'Gurugram Master Plan 2031', 'DTCP Haryana', 'property investment Gurgaon', 'Gurgaon real estate', 'land use Gurgaon'],
   'nri-real-estate-buying-guide-gurgaon': ['NRI property investment India', 'NRI buying property Gurugram', 'FEMA NRI property', 'NRE NRO account property', 'NRI real estate Gurgaon', 'NRI power of attorney India', 'NRI home loan India', 'RERA NRI buyer'],
+  'dlf-arbour-vs-dlf-privana-gurgaon': ['DLF Arbour Sector 63', 'DLF Privana South', 'DLF Privana Gurgaon', 'GCER luxury apartments', 'Gurgaon real estate investment', 'luxury apartments Gurgaon 2026', 'DLF resale Gurgaon', 'Gurgaon HNI property'],
 };
 
 // SEO-optimised short titles for blog posts whose full title exceeds 65 chars
@@ -876,6 +908,7 @@ const BLOG_TITLE_OVERRIDES = {
   'golf-course-extension-road-vs-golf-course-road-gurgaon': 'Golf Course Extension Road vs Golf Course Road | Gurgaon Investment Guide | LSR Realty',
   'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Manesar Master Plan 2031 Explained | Property Investor Guide | LSR Realty',
   'nri-real-estate-buying-guide-gurgaon': 'NRI Real Estate Buying Guide Gurugram | FEMA, NRE, RERA and Tax | LSR Realty',
+  'dlf-arbour-vs-dlf-privana-gurgaon': 'DLF Arbour vs DLF Privana South | Gurgaon Investment Comparison 2026 | LSR Realty',
 };
 
 // Per-blog keyword sets — specific long-tail keywords per post rather than generic cross-post keywords
@@ -886,6 +919,8 @@ const BLOG_KEYWORDS = {
     'Gurgaon Manesar Master Plan 2031, Gurgaon Master Plan 2031 explained, DTCP Haryana master plan, Gurgaon land use zones, Gurugram development plan 2031, Gurgaon property zones, Gurgaon master plan 2031 vs 2041, Gurgaon real estate, property investment Gurugram, LSR Realty',
   'nri-real-estate-buying-guide-gurgaon':
     'NRI property investment India, NRI buying property Gurgaon, FEMA NRI real estate, NRE NRO account property investment, NRI real estate Gurugram, NRI home loan India, RERA NRI buyer, Power of Attorney NRI India, NRI property tax India, repatriation NRI property sale, NRI buying guide Gurugram 2026, LSR Realty',
+  'dlf-arbour-vs-dlf-privana-gurgaon':
+    'DLF Arbour vs DLF Privana South, DLF Arbour Sector 63 resale price, DLF Privana South price 2026, DLF Arbour investment, DLF Privana Gurgaon, GCER luxury apartments, Golf Course Extension Road property, DLF resale Gurgaon, luxury 4 BHK Gurgaon, Gurgaon HNI property investment, LSR Realty',
 };
 
 // Per-blog significantLink — cross-links between posts signal topical authority clusters to Google
@@ -906,6 +941,13 @@ const BLOG_SIGNIFICANT_LINKS = {
   'nri-real-estate-buying-guide-gurgaon': [
     `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`,
     `${SITE_URL}/blog/golf-course-extension-road-vs-golf-course-road-gurgaon`,
+    `${SITE_URL}/services`,
+    `${SITE_URL}/contact`,
+  ],
+  'dlf-arbour-vs-dlf-privana-gurgaon': [
+    `${SITE_URL}/blog/golf-course-extension-road-vs-golf-course-road-gurgaon`,
+    `${SITE_URL}/projects/dlf-arbour`,
+    `${SITE_URL}/projects/dlf-privana`,
     `${SITE_URL}/services`,
     `${SITE_URL}/contact`,
   ],

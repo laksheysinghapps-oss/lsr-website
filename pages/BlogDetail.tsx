@@ -48,6 +48,8 @@ const BlogDetail: React.FC = () => {
       'Gurgaon Manesar Master Plan 2031, Gurgaon Master Plan 2031 explained, DTCP Haryana master plan, Gurgaon land use zones, Gurugram development plan 2031, Gurgaon property zones, Gurgaon master plan 2031 vs 2041, Gurgaon real estate, property investment Gurugram, LSR Realty',
     'nri-real-estate-buying-guide-gurgaon':
       'NRI property investment India, NRI buying property Gurgaon, FEMA NRI real estate, NRE NRO account property investment, NRI real estate Gurugram, NRI home loan India, RERA NRI buyer, Power of Attorney NRI India, NRI property tax India, repatriation NRI property sale, NRI buying guide Gurugram 2026, LSR Realty',
+    'dlf-arbour-vs-dlf-privana-gurgaon':
+      'DLF Arbour vs DLF Privana South, DLF Arbour Sector 63 resale price, DLF Privana South price 2026, DLF Arbour investment, DLF Privana Gurgaon, GCER luxury apartments, Golf Course Extension Road property, DLF resale Gurgaon, luxury 4 BHK Gurgaon, Gurgaon HNI property investment, LSR Realty',
   };
   const articleKeywords = POST_ARTICLE_KEYWORDS[post.id]
     ?? `${post.category}, Gurgaon real estate, Gurugram investment, LSR Realty`;
