@@ -18,11 +18,8 @@ const aboutStructuredData = [
     name: 'About LSR Realty',
     url: 'https://lsrrealty.com/about',
     description: 'LSR Realty is the investment advisory arm of LSR Group, bringing institutional grade, research backed, and transparent real estate advisory to HNI and NRI investors in Gurgaon.',
-    mainEntity: {
-      '@type': 'RealEstateAgent',
-      name: 'LSR Realty',
-      url: 'https://lsrrealty.com/',
-    },
+    // Reference the canonical entity defined in index.html — avoids a 4th duplicate LSR Realty entity
+    mainEntity: { '@id': 'https://lsrrealty.com/#organization' },
   },
 ];
 
