@@ -202,7 +202,12 @@ const staticRoutes = [
         image: p.image?.startsWith('http') ? p.image : `${SITE_URL}${p.image}`,
         author: { '@type': 'Organization', name: 'LSR Realty Advisory Team', url: SITE_URL },
         publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-        keywords: `${p.category}, Gurgaon real estate, Gurugram investment`,
+        keywords: ({
+          'golf-course-extension-road-vs-golf-course-road-gurgaon': 'Golf Course Extension Road, GCER Gurgaon, Golf Course Road Gurgaon, DLF Arbour Sector 63, DLF Privana Gurgaon, Gurgaon real estate investment, GCER vs GCR Gurgaon, property rates GCER 2026',
+          'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Manesar Master Plan 2031, Gurgaon Master Plan 2031 explained, DTCP Haryana master plan, Gurgaon land use zones, Gurugram development plan 2031, property investment Gurugram',
+          'nri-real-estate-buying-guide-gurgaon': 'NRI property investment India, NRI buying property Gurgaon, FEMA NRI real estate, NRE NRO account property investment, NRI home loan India, RERA NRI buyer, NRI buying guide Gurugram 2026',
+          'dlf-arbour-vs-dlf-privana-gurgaon': 'DLF Arbour vs DLF Privana South, DLF Arbour Sector 63 resale price, DLF Privana South price 2026, GCER luxury apartments, Golf Course Extension Road property, luxury 4 BHK Gurgaon',
+        })[p.id] || `${p.category}, Gurgaon real estate, Gurugram investment`,
       })),
     }],
   },
@@ -355,7 +360,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-07-25',
+      dateModified: '2026-08-25',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -516,10 +521,10 @@ const staticRoutes = [
         ],
         aggregateRating: {
           '@type': 'AggregateRating',
-          ratingValue: '5.0',
-          reviewCount: '2',
-          bestRating: '5',
-          worstRating: '1',
+          ratingValue: 5.0,
+          reviewCount: 2,
+          bestRating: 5,
+          worstRating: 1,
         },
       },
     }, {
@@ -988,6 +993,7 @@ for (const post of publishedPosts) {
     significantLink: BLOG_SIGNIFICANT_LINKS[post.id] || [`${SITE_URL}/services`, `${SITE_URL}/contact`],
     wordCount: wordCount || undefined,
     keywords: BLOG_KEYWORDS[post.id] || `${post.category}, Gurgaon real estate, Gurugram property investment, LSR Realty`,
+    isPartOf: { '@type': 'Blog', '@id': `${SITE_URL}/blog`, name: 'LSR Realty — Gurgaon Real Estate Blog', url: `${SITE_URL}/blog` },
     audience: { '@type': 'Audience', audienceType: 'Real estate investors, HNI, NRI, property buyers in Gurgaon' },
     speakable: {
       '@type': 'SpeakableSpecification',
