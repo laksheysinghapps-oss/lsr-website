@@ -626,6 +626,74 @@ const staticRoutes = [
 
 for (const r of staticRoutes) renderRoute(r);
 
+// ── Project FAQ schemas — per-project FAQPage for rich snippet eligibility ────
+const PROJECT_FAQ_SCHEMAS = {
+  'dlf-arbour': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is the price of DLF The Arbour in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF The Arbour is currently available on the resale market at ₹23,500 to ₹24,000 per sqft. A 4 BHK plus staff unit of 3,900+ sqft is priced between ₹9.3 crore and ₹9.5 crore. The project is fully sold out from the developer. Contact LSR Realty at +91 8448660019 for verified resale inventory and current pricing.' } },
+      { '@type': 'Question', name: 'Is DLF The Arbour sold out?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, DLF The Arbour in Sector 63, Golf Course Extension Road, Gurgaon, is fully sold out at the developer level. All available units are on the secondary resale market. LSR Realty can connect buyers with verified resale inventory across preferred towers and floors.' } },
+      { '@type': 'Question', name: 'What is the RERA number of DLF The Arbour?', acceptedAnswer: { '@type': 'Answer', text: 'The RERA registration number for DLF The Arbour is GGM/671/403/2023/15, registered with HARERA (Haryana Real Estate Regulatory Authority). Buyers can verify project details, escrow compliance, and builder information on the HRERA portal at harerait.org.in.' } },
+      { '@type': 'Question', name: 'When is DLF Arbour possession date?', acceptedAnswer: { '@type': 'Answer', text: 'DLF The Arbour has a declared possession date of March 2030. The project is currently under construction in Sector 63, Golf Course Extension Road, Gurgaon. For resale purchases, buyers are typically transferring ownership of a unit that will be delivered at the same March 2030 timeline.' } },
+      { '@type': 'Question', name: 'What makes DLF Arbour unique compared to other luxury projects in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF The Arbour offers just 2 apartments per core across 38 floors — an exceptional level of privacy unmatched by almost any other project in Gurgaon. The 1.25 lakh sqft clubhouse, private elevator lobbies, concierge service, and temperature-controlled pools set it apart. At 3,900+ sqft per unit, it is one of the largest ultra-luxury 4 BHK configurations available on Golf Course Extension Road.' } },
+    ],
+  },
+  'dlf-privana': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is the price of DLF Privana South in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Privana South is priced at ₹21,000 per sqft. A 4 BHK of 3,577 sqft starts at ₹7.5 crore, and a penthouse of 5,472 sqft is priced at approximately ₹11.5 crore. The project is under construction in Sectors 76–77, Golf Course Extension Road, Gurgaon, with possession expected in July 2029. Contact LSR Realty at +91 8448660019 for current pricing and availability.' } },
+      { '@type': 'Question', name: 'When is DLF Privana South possession?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Privana South has a declared possession date of July 2029. The project is RERA-registered under HARERA/GGM/772/504/2023/116 and is under active construction in Sectors 76–77, Golf Course Extension Road, Gurgaon.' } },
+      { '@type': 'Question', name: 'What is the RERA number of DLF Privana South?', acceptedAnswer: { '@type': 'Answer', text: 'The RERA registration number for DLF Privana South is HARERA/GGM/772/504/2023/116, registered with the Haryana Real Estate Regulatory Authority. Project details including escrow compliance can be verified at harerait.org.in.' } },
+      { '@type': 'Question', name: 'Is DLF Privana South a good investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Privana South at ₹21,000 per sqft in an emerging sector with direct NH 48 access and Aravalli views is considered a strong appreciation play by LSR Realty\'s advisory team. The Sectors 76–80 corridor is being built out as an integrated DLF township. Investors with a 3-year-plus horizon and comfort with under-construction risk from DLF\'s proven delivery record are well-positioned. Contact LSR Realty for a detailed investment analysis.' } },
+      { '@type': 'Question', name: 'What is the difference between DLF Privana South and DLF Privana West?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Privana South is located in Sectors 76–77, Golf Course Extension Road, with Aravalli views and direct NH 48 access. DLF Privana West is a separate parcel within the larger DLF Privana township cluster in the Sectors 76–80 zone. Both are part of DLF\'s integrated township vision for New Gurgaon. Contact LSR Realty for a comparison of pricing, unit configurations, and investment potential across both projects.' } },
+    ],
+  },
+  'emaar-serenity': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is the price of Emaar Serenity Hills in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Emaar Serenity Hills is priced at ₹17,000 to ₹18,000 per sqft. A 3 BHK of 1,700 sqft starts at ₹2.95 crore and a 4 BHK of 2,800 sqft is priced at ₹4.4 crore. The project is a new launch in Sector 86, Dwarka Expressway, Gurgaon, with possession expected in September 2030. Contact LSR Realty at +91 8448660019 for current pricing and availability.' } },
+      { '@type': 'Question', name: 'Where is Emaar Serenity Hills located?', acceptedAnswer: { '@type': 'Answer', text: 'Emaar Serenity Hills is located in Sector 86, Dwarka Expressway, Gurgaon. Sector 86 offers easy access to Dwarka Expressway, established social infrastructure, and proximity to IGI Airport, making it a well-connected location for premium residential investment.' } },
+      { '@type': 'Question', name: 'Is Emaar Serenity Hills RERA registered?', acceptedAnswer: { '@type': 'Answer', text: 'Emaar Serenity Hills in Sector 86, Gurgaon is developed by Emaar India, a subsidiary of Emaar Properties (Dubai). Buyers should verify the current RERA registration on the HRERA portal at harerait.org.in before proceeding. LSR Realty is an authorised advisor for Emaar Serenity Hills and can share verified RERA details. Contact marketing@lsrrealty.com.' } },
+    ],
+  },
+  'westin-residences': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is the price of The Westin Residences Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'The Westin Residences on Dwarka Expressway are priced at ₹25,750 to ₹26,750 per sqft. A 3 BHK of 2,693 to 2,939 sqft starts at ₹6.75 crore and a 4 BHK of 3,750 to 4,329 sqft starts at ₹10.03 crore. Possession is expected in December 2029. Contact LSR Realty at +91 8448660019 for current pricing and payment plan details.' } },
+      { '@type': 'Question', name: 'What are branded residences and how does Westin differ from regular luxury apartments?', acceptedAnswer: { '@type': 'Answer', text: 'Branded residences are luxury homes co-developed with a global hospitality brand — in this case, Westin by Marriott International. Residents receive hotel-standard services including housekeeping, in-residence dining, spa and sauna, and concierge support as part of living in the building. The Westin Residences differ from regular luxury apartments in that the brand\'s operational standards, design guidelines, and service delivery are maintained by the hotel group, not just a residential management company.' } },
+      { '@type': 'Question', name: 'Where is The Westin Residences located in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'The Westin Residences is located in Sector 103, Dwarka Expressway, Gurgaon. Sector 103 offers direct Dwarka Expressway access, proximity to IGI Airport (approximately 15 km), and connectivity to Golf Course Road and NH 48. The location is ideal for senior corporate professionals and NRI buyers seeking proximity to the airport.' } },
+    ],
+  },
+  'elan-paradise': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Elan Paradise in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Paradise is a luxury retail and entertainment complex in Sector 50, Nirvana Country, Gurugram. Developed by Elan Group, it offers retail units, double height units, and F&B / restaurant spaces in a premium catchment surrounded by established residential communities on Golf Course Extension Road. The project is ready to occupy and available for lease through LSR Realty.' } },
+      { '@type': 'Question', name: 'How can I lease retail space in Elan Paradise Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'To lease retail space in Elan Paradise, Sector 50, Gurgaon, contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com. LSR Realty is an authorised leasing advisor for Elan Paradise and can provide available unit sizes, lease pricing, fit-out allowances, and current tenant mix information.' } },
+    ],
+  },
+  'aipl-joy-street': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Joy Street in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Street is a high-street retail development by Advance India Projects Limited (AIPL) on Golf Course Extension Road, Gurgaon. It offers retail units across ground and upper floors in a walkable street-retail format designed for F&B, fashion, wellness, and lifestyle brands. LSR Realty is an authorised leasing advisor. Contact +91 8448660019 for available units and lease pricing.' } },
+      { '@type': 'Question', name: 'How do I lease a shop in AIPL Joy Street Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to enquire about available units in AIPL Joy Street, Golf Course Extension Road, Gurgaon. LSR Realty is an authorised advisor for AIPL projects and can provide unit availability, current asking rents, fit-out conditions, and nearby tenant mix information.' } },
+    ],
+  },
+  'dlf-magnolias': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is DLF The Magnolias in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF The Magnolias is an ultra-luxury residential project by DLF on Golf Course Road, Sector 42, Gurgaon. It is one of DLF\'s most prestigious addresses, offering large-format 4 and 5 BHK luxury apartments with expansive floor plates, dedicated service areas, and a world-class clubhouse. The project is delivered and available on the resale market.' } },
+      { '@type': 'Question', name: 'What is the current resale price of DLF Magnolias in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF The Magnolias on Golf Course Road, Gurgaon is available on the resale market. Pricing varies significantly by floor, tower, and view. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for verified current resale pricing and available inventory.' } },
+    ],
+  },
+};
+
 // ── Project detail pages ──────────────────────────────────────────────────────
 for (const project of PROJECTS) {
   const projectImage = project.image?.startsWith('http') ? project.image : `${SITE_URL}${project.image}`;
@@ -719,7 +787,7 @@ for (const project of PROJECTS) {
       { name: 'Projects', url: `${SITE_URL}/projects` },
       { name: project.name, url: projectUrl },
     ],
-    structuredData: [realEstateSchema],
+    structuredData: PROJECT_FAQ_SCHEMAS[project.id] ? [realEstateSchema, PROJECT_FAQ_SCHEMAS[project.id]] : [realEstateSchema],
     preloadImage: project.image?.startsWith('/') ? project.image : undefined,
   });
 }

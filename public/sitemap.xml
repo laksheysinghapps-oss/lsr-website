@@ -2,271 +2,295 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lsrrealty.com/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/about</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/services</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/dlf-arbour</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/IMG_4957.jpg</image:loc>
+      <image:title>DLF The Arbour — Ultra Luxury 4 BHK Apartments Sector 63 Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/dlf-privana</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/Privana%20South.jpeg</image:loc>
+      <image:title>DLF Privana South — Luxury 4 BHK Apartments Sectors 76-77 Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/emaar-serenity</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/Emaar-Serenity-Hills-86.png</image:loc>
+      <image:title>Emaar Serenity Hills — Premium 3 and 4 BHK Apartments Sector 86 Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/westin-residences</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/westin-residences.png</image:loc>
+      <image:title>The Westin Residences — Branded Residences Sector 103 Dwarka Expressway Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/elan-paradise</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/elan-paradise.jpeg</image:loc>
+      <image:title>Elan Paradise — Luxury Retail and Entertainment Complex Sector 50 Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/elan-town-centre</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://lsrrealty.com/images/elan-town-centre.webp</image:loc>
+      <image:title>Elan Town Centre — High Street Retail Sector 67 Sohna Road Gurgaon</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/elan-miracle</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/elan-mercado</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/elan-epic</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-joy-street</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-joy-district</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-joy-square</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-joy-central</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-joy-gallery</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/gardencity-arcade</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/landmark-one</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/emaar-ibc</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/dlf-cybercity</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/godrej-gcr</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/vatika-first-india-place</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/vatika-business-park</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/vatika-professional-point</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/magnum-one-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/magnum-one-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/magnum-global-park-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/magnum-global-park-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/dlf-corporate-greens-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/dlf-corporate-greens-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-business-club-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-business-club-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-statement-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-statement-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-autograph-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-autograph-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-signature-lease</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-signature-invest</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/vatika-inxt-city-centre</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/vatika-one-on-one</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/elan-empire</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/aipl-masterpiece</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/projects/dlf-magnolias</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -278,7 +302,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/gurgaon-manesar-master-plan</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -294,7 +318,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-4-7</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -304,7 +328,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-5</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -314,7 +338,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-7</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -324,7 +348,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-7-ext</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -334,7 +358,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-9</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -344,7 +368,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-9a</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -354,7 +378,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-10</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -364,7 +388,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-10a</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -374,7 +398,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-12a</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -384,7 +408,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-14</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -394,7 +418,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-15-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -404,7 +428,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-15-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -414,7 +438,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-17</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -424,7 +448,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-21</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -434,7 +458,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-22</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -444,7 +468,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-23</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -454,7 +478,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-23a</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -464,7 +488,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-27-28</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -474,7 +498,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-31-new-colony</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -484,7 +508,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-32-33-34</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -494,7 +518,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-34</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -504,7 +528,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-38</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -514,7 +538,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-39</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -524,7 +548,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-40</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -534,7 +558,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-42</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -544,7 +568,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-43</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -554,7 +578,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-44</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -564,7 +588,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-45</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -574,7 +598,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-47</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -584,7 +608,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/pace-city-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -594,7 +618,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/anant-raj-estate-sector-63</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -604,7 +628,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/bptp-amstoria-sector-102</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -614,7 +638,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-alameda</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -624,7 +648,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-garden-city</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -634,7 +658,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -644,7 +668,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -654,7 +678,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-3</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -664,7 +688,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-4</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -674,7 +698,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dlf-phase-5</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -684,7 +708,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/dharuhera-industrial-complex</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -694,7 +718,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/emerald-floors</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -704,7 +728,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/green-wood-city</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -714,7 +738,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/imt-manesar</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -724,7 +748,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/malibu-town</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -734,7 +758,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/mayfield-gardens</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -744,7 +768,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/nirvana-country</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -754,7 +778,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/pace-city-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -764,7 +788,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar-part-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -774,7 +798,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar-part-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -784,7 +808,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar-part-3</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -794,7 +818,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/palam-vihar</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -804,7 +828,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/raheja-aranya-city</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -814,7 +838,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/rosewood-city</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -824,7 +848,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sushant-lok-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -834,7 +858,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-1-pataudi-road</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -844,7 +868,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/ireo-city-sector-60</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -854,7 +878,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/esencia-sector-67</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -864,7 +888,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sohna-master-plan-2031</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -874,7 +898,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sushant-lok-3</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -884,7 +908,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/saraswati-vihar</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -894,7 +918,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-46</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -904,7 +928,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-51</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -914,7 +938,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-52</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -924,7 +948,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sector-57</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -934,7 +958,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/south-city-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -944,7 +968,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/south-city-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -954,7 +978,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sun-city-sector-54</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -964,7 +988,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/sushant-lok-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -974,7 +998,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/uppals-southend</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -984,7 +1008,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/udyog-vihar</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -994,7 +1018,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-1</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1004,7 +1028,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-2</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1014,7 +1038,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-3</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1024,7 +1048,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-4</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1034,7 +1058,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vatika-india-next-5</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1044,7 +1068,7 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/maps/vipul-world</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1100,22 +1124,23 @@
   </url>
   <url>
     <loc>https://lsrrealty.com/careers</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/contact</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lsrrealty.com/privacy-policy</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 </urlset>
+
 
 
