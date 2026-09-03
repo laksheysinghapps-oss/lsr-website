@@ -61,6 +61,9 @@
       ]
     }
   ],
+  "redirects": [
+    { "source": "/maps/pace-city-2", "destination": "/maps/sector-37-pace-city-2", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
