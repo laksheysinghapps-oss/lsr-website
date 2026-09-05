@@ -146,7 +146,7 @@ const staticRoutes = [
     route: '/about',
     title: 'About LSR Realty | Real Estate Broker & Consultant Gurgaon | HNI & NRI Advisory',
     description: 'LSR Realty is Gurgaon\'s trusted real estate broker, consultant and authorised channel partner — the investment advisory arm of LSR Group. Institutional-grade, research-backed advisory for HNI, UHNI and NRI investors.',
-    keywords: 'LSR Realty, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, channel partner Gurgaon, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon',
+    keywords: 'LSR Realty, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, real estate agent Gurgaon, channel partner Gurgaon, real estate company Gurgaon, best real estate broker Gurgaon, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon, flat for sale Gurgaon, property in Gurgaon',
     breadcrumbs: [HOME, { name: 'About LSR Realty', url: `${SITE_URL}/about` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -182,7 +182,7 @@ const staticRoutes = [
     route: '/blog',
     title: 'Gurgaon Real Estate Blog | Market Intelligence | LSR Realty',
     description: 'Expert insights on Gurgaon real estate investment, market trends, location guides and NRI advisory from LSR Realty.',
-    keywords: 'Gurgaon real estate blog, Gurugram property market insights, Gurgaon investment guide, real estate news Gurgaon',
+    keywords: 'Gurgaon real estate blog, Gurugram property market insights, Gurgaon investment guide, real estate news Gurgaon, property prices Gurgaon 2026, flat for sale Gurgaon 2026, apartment rates Gurgaon, best areas to buy property Gurgaon, property investment tips Gurgaon, real estate market Gurgaon',
     breadcrumbs: [HOME, { name: 'Real Estate Blog', url: `${SITE_URL}/blog` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -215,7 +215,7 @@ const staticRoutes = [
     route: '/services',
     title: 'Real Estate Services Gurgaon | Broker, Channel Partner & Consultant | LSR Realty',
     description: 'LSR Realty provides real estate brokerage, channel partner advisory and consultancy services in Gurgaon: office leasing, retail leasing, HNI and NRI investment advisory, market research and deal structuring.',
-    keywords: 'real estate broker Gurgaon, real estate channel partner Gurgaon, property broker Gurgaon, real estate consultant Gurgaon, DLF channel partner Gurgaon, office leasing Gurgaon, retail leasing Gurgaon, NRI investment services Gurgaon, deal structuring Gurgaon, LSR Realty services',
+    keywords: 'real estate broker Gurgaon, real estate channel partner Gurgaon, property broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, DLF channel partner Gurgaon, Elan channel partner Gurgaon, AIPL channel partner Gurgaon, office leasing Gurgaon, office space for rent Gurgaon, retail leasing Gurgaon, shop for lease Gurgaon, flat for sale Gurgaon, villa for sale Gurgaon, property for sale Gurgaon, property for rent Gurgaon, apartment for sale Gurgaon, residential property Gurgaon, commercial property Gurgaon, NRI investment services Gurgaon, HNI real estate advisory Gurgaon, luxury property advisory Gurgaon, deal structuring Gurgaon, LSR Realty services',
     breadcrumbs: [HOME, { name: 'Our Services', url: `${SITE_URL}/services` }],
     structuredData: [servicesSchema, {
       '@context': 'https://schema.org',
@@ -299,7 +299,7 @@ const staticRoutes = [
     route: '/projects',
     title: 'Curated Property Investment & Leasing Opportunities Gurgaon | LSR Realty',
     description: 'Browse LSR Realty\'s curated portfolio of vetted property investment and leasing opportunities across Gurgaon and Gurugram — luxury residential, Grade A office and premium retail.',
-    keywords: 'Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon',
+    keywords: 'property in Gurgaon, property in Gurugram, flat for sale Gurgaon, apartment for sale Gurgaon, 2 BHK flat Gurgaon, 3 BHK flat Gurgaon, 4 BHK flat Gurgaon, villa for sale Gurgaon, plot for sale Gurgaon, ready to move flats Gurgaon, new launch property Gurgaon, pre-launch property Gurgaon, luxury property Gurgaon, buy flat in Gurgaon, residential property for sale Gurgaon, office space for lease Gurgaon, shop for lease Gurgaon, retail space Gurgaon, commercial property Gurgaon, Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon, DLF property Gurgaon, Elan project Gurgaon, Emaar property Gurgaon, AIPL project Gurgaon, LSR Realty projects',
     breadcrumbs: [HOME, { name: 'Projects & Listings', url: `${SITE_URL}/projects` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -343,7 +343,7 @@ const staticRoutes = [
     route: '/maps',
     title: 'Gurgaon Sector Maps & Layout Plans | Free PDF Download | LSR Realty',
     description: 'Free Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. High-resolution PDF downloads for 75+ sectors across GCER, Golf Course Road, Dwarka Expressway and Sohna Road.',
-    keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map',
+    keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map, property location Gurgaon, plot map Gurgaon, residential sector Gurgaon, Golf Course Extension Road map, Dwarka Expressway sector map, Sohna Road sector map',
     breadcrumbs: [HOME, { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -466,7 +466,7 @@ const staticRoutes = [
     route: '/contact',
     title: 'Contact LSR Realty | Real Estate Broker & Consultant Gurgaon',
     description: 'Speak with LSR Realty — Gurgaon\'s trusted real estate broker, consultant and authorised channel partner. Free initial consultation for investment advisory, office leasing, retail leasing and NRI services.',
-    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate',
+    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, property dealer Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate, flat for sale Gurgaon enquiry, office space lease Gurgaon enquiry, property for sale Gurgaon enquiry',
     breadcrumbs: [HOME, { name: 'Contact Us', url: `${SITE_URL}/contact` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -778,8 +778,13 @@ for (const project of PROJECTS) {
       project.type,
       unitType ? `${unitType} Gurgaon` : '',
       project.rera ? `${project.name} RERA` : '',
+      project.category === 'Leasing'
+        ? `office space for lease Gurgaon, shop for lease Gurgaon, retail space Gurgaon, commercial property for lease Gurgaon, ${project.name} lease, ${project.name} rent`
+        : `flat for sale Gurgaon, apartment for sale Gurgaon, property for sale Gurgaon, buy property Gurgaon, ${project.name} for sale`,
       'Gurgaon real estate investment',
       `real estate ${project.category === 'Leasing' ? 'leasing' : 'investment'} Gurgaon`,
+      'LSR Realty channel partner',
+      'real estate broker Gurgaon',
     ].filter(Boolean).join(', '),
     image: projectImage,
     breadcrumbs: [
