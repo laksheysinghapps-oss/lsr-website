@@ -568,7 +568,7 @@ const staticRoutes = [
       name: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure Roadmap',
       description: 'Detailed tracker for the Gurgaon Master Plan 2041 by GMDA (Gurugram Metropolitan Development Authority). Covers status update, population projection of 55 lakh, new sector development, metro corridors and investment implications.',
       url: `${SITE_URL}/gurgaon-master-plan-2041`,
-      dateModified: '2026-08-18',
+      dateModified: '2026-09-05',
       significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`, `${SITE_URL}/contact`],
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
       author: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
