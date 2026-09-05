@@ -146,7 +146,7 @@ const staticRoutes = [
     route: '/about',
     title: 'About LSR Realty | Real Estate Broker & Consultant Gurgaon | HNI & NRI Advisory',
     description: 'LSR Realty is Gurgaon\'s trusted real estate broker, consultant and authorised channel partner — the investment advisory arm of LSR Group. Institutional-grade, research-backed advisory for HNI, UHNI and NRI investors.',
-    keywords: 'LSR Realty, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, real estate agent Gurgaon, channel partner Gurgaon, real estate company Gurgaon, best real estate broker Gurgaon, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon, flat for sale Gurgaon, property in Gurgaon',
+    keywords: 'LSR Realty, LSR, LSR Reality, LSR Broker, LSR Agent, LSR Real Estate, LSR Company, LSR Real Estate Gurgaon, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, real estate agent Gurgaon, channel partner Gurgaon, real estate company Gurgaon, best real estate broker Gurgaon, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon, flat for sale Gurgaon, property in Gurgaon',
     breadcrumbs: [HOME, { name: 'About LSR Realty', url: `${SITE_URL}/about` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -163,7 +163,7 @@ const staticRoutes = [
         {
           '@type': 'Question',
           name: 'What is LSR Realty?',
-          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is the real estate investment advisory arm of LSR Group, based in Gurugram, Haryana. We provide institutional-grade, research-backed advisory for HNI (High Net-worth Individual), UHNI (Ultra High Net-worth Individual), and NRI (Non-Resident Indian) investors across luxury residential, Grade A commercial office, and premium retail segments in Gurgaon. Our office is at 911, Magnum Global Park, Sector 58, Gurugram.' },
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty (also known as LSR, LSR Reality, LSR Broker, LSR Agent, LSR Real Estate, or LSR Company) is the real estate investment advisory arm of LSR Group, based in Gurugram, Haryana. We are a professional real estate broker, consultant and authorised channel partner providing institutional-grade, research-backed advisory for HNI, UHNI and NRI investors across luxury residential, Grade A commercial office, and premium retail segments in Gurgaon. Our office is at 911, Magnum Global Park, Sector 58, Gurugram. Call +91 8448660019 or email marketing@lsrrealty.com.' },
         },
         {
           '@type': 'Question',
@@ -466,7 +466,7 @@ const staticRoutes = [
     route: '/contact',
     title: 'Contact LSR Realty | Real Estate Broker & Consultant Gurgaon',
     description: 'Speak with LSR Realty — Gurgaon\'s trusted real estate broker, consultant and authorised channel partner. Free initial consultation for investment advisory, office leasing, retail leasing and NRI services.',
-    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, property dealer Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate, flat for sale Gurgaon enquiry, office space lease Gurgaon enquiry, property for sale Gurgaon enquiry',
+    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, LSR contact, LSR Reality contact, LSR Broker contact, LSR Agent contact, LSR Real Estate contact, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, property dealer Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate, flat for sale Gurgaon enquiry, office space lease Gurgaon enquiry, property for sale Gurgaon enquiry',
     breadcrumbs: [HOME, { name: 'Contact Us', url: `${SITE_URL}/contact` }],
     structuredData: [{
       '@context': 'https://schema.org',
