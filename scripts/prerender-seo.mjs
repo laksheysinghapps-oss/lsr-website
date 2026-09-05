@@ -144,9 +144,9 @@ const servicesSchema = {
 const staticRoutes = [
   {
     route: '/about',
-    title: 'About LSR Realty | Luxury Real Estate Advisory Gurgaon | HNI & NRI',
-    description: 'LSR Realty is the investment advisory arm of LSR Group — delivering institutional-grade, research-backed luxury real estate advisory to HNI, UHNI and NRI investors in Gurgaon and Gurugram.',
-    keywords: 'LSR Realty about, LSR Group, institutional real estate advisory Gurgaon, HNI NRI real estate advisory',
+    title: 'About LSR Realty | Real Estate Broker & Consultant Gurgaon | HNI & NRI Advisory',
+    description: 'LSR Realty is Gurgaon\'s trusted real estate broker, consultant and authorised channel partner — the investment advisory arm of LSR Group. Institutional-grade, research-backed advisory for HNI, UHNI and NRI investors.',
+    keywords: 'LSR Realty, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, channel partner Gurgaon, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon',
     breadcrumbs: [HOME, { name: 'About LSR Realty', url: `${SITE_URL}/about` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -213,9 +213,9 @@ const staticRoutes = [
   },
   {
     route: '/services',
-    title: 'Gurgaon Real Estate Services | Residential, Commercial & NRI Advisory | LSR Realty',
-    description: 'LSR Realty offers end-to-end real estate services in Gurgaon and Gurugram: office leasing, retail leasing, HNI and NRI investment advisory, market research and deal structuring.',
-    keywords: 'real estate advisory services Gurgaon, office leasing Gurgaon, retail leasing Gurgaon, NRI investment services, deal structuring Gurgaon',
+    title: 'Real Estate Services Gurgaon | Broker, Channel Partner & Consultant | LSR Realty',
+    description: 'LSR Realty provides real estate brokerage, channel partner advisory and consultancy services in Gurgaon: office leasing, retail leasing, HNI and NRI investment advisory, market research and deal structuring.',
+    keywords: 'real estate broker Gurgaon, real estate channel partner Gurgaon, property broker Gurgaon, real estate consultant Gurgaon, DLF channel partner Gurgaon, office leasing Gurgaon, retail leasing Gurgaon, NRI investment services Gurgaon, deal structuring Gurgaon, LSR Realty services',
     breadcrumbs: [HOME, { name: 'Our Services', url: `${SITE_URL}/services` }],
     structuredData: [servicesSchema, {
       '@context': 'https://schema.org',
@@ -464,9 +464,9 @@ const staticRoutes = [
   },
   {
     route: '/contact',
-    title: 'Talk to Our Real Estate Consultants in Gurgaon | LSR Realty',
-    description: 'Speak with LSR Realty\'s real estate consultants in Gurgaon for investment advisory, office leasing, portfolio structuring or NRI services. Free initial consultation.',
-    keywords: 'contact LSR Realty, real estate consultation Gurgaon, book consultation Gurgaon real estate',
+    title: 'Contact LSR Realty | Real Estate Broker & Consultant Gurgaon',
+    description: 'Speak with LSR Realty — Gurgaon\'s trusted real estate broker, consultant and authorised channel partner. Free initial consultation for investment advisory, office leasing, retail leasing and NRI services.',
+    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate',
     breadcrumbs: [HOME, { name: 'Contact Us', url: `${SITE_URL}/contact` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -477,7 +477,7 @@ const staticRoutes = [
         '@type': ['LocalBusiness', 'RealEstateAgent'],
         '@id': `${SITE_URL}/#local-business`,
         name: 'LSR Realty',
-        alternateName: 'LSR Realty Advisory',
+        alternateName: ['LSR', 'LSR Realty Gurgaon', 'LSR Realty Advisory', 'LSR Group Real Estate'],
         telephone: '+918448660019',
         email: 'marketing@lsrrealty.com',
         url: SITE_URL,
