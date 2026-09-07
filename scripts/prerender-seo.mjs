@@ -182,7 +182,7 @@ const staticRoutes = [
     route: '/blog',
     title: 'Gurgaon Real Estate Blog | Market Intelligence | LSR Realty',
     description: 'Expert insights on Gurgaon real estate investment, market trends, location guides and NRI advisory from LSR Realty.',
-    keywords: 'Gurgaon real estate blog, Gurugram property market insights, Gurgaon investment guide, real estate news Gurgaon, property prices Gurgaon 2026, flat for sale Gurgaon 2026, apartment rates Gurgaon, best areas to buy property Gurgaon, property investment tips Gurgaon, real estate market Gurgaon',
+    keywords: 'Gurgaon real estate blog, Gurugram property market insights, Gurgaon investment guide, real estate news Gurgaon, property prices Gurgaon 2026, flat for sale Gurgaon 2026, apartment rates Gurgaon, best areas to buy property Gurgaon, property investment tips Gurgaon, real estate market Gurgaon, property price per sqft Gurgaon 2026, Gurgaon property market 2026, Golf Course Extension Road investment, Dwarka Expressway property 2026, best sector to invest Gurgaon, property appreciation Gurgaon, NRI property guide India, luxury real estate trends Gurgaon, RERA Haryana news, real estate capital gains Gurgaon, resale property Gurgaon, under construction property Gurgaon',
     breadcrumbs: [HOME, { name: 'Real Estate Blog', url: `${SITE_URL}/blog` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -299,7 +299,7 @@ const staticRoutes = [
     route: '/projects',
     title: 'Curated Property Investment & Leasing Opportunities Gurgaon | LSR Realty',
     description: 'Browse LSR Realty\'s curated portfolio of vetted property investment and leasing opportunities across Gurgaon and Gurugram — luxury residential, Grade A office and premium retail.',
-    keywords: 'property in Gurgaon, property in Gurugram, flat for sale Gurgaon, apartment for sale Gurgaon, 2 BHK flat Gurgaon, 3 BHK flat Gurgaon, 4 BHK flat Gurgaon, villa for sale Gurgaon, plot for sale Gurgaon, ready to move flats Gurgaon, new launch property Gurgaon, pre-launch property Gurgaon, luxury property Gurgaon, buy flat in Gurgaon, residential property for sale Gurgaon, office space for lease Gurgaon, shop for lease Gurgaon, retail space Gurgaon, commercial property Gurgaon, Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon, DLF property Gurgaon, Elan project Gurgaon, Emaar property Gurgaon, AIPL project Gurgaon, LSR Realty projects',
+    keywords: 'property in Gurgaon, property in Gurugram, flat for sale Gurgaon, apartment for sale Gurgaon, 2 BHK flat Gurgaon, 3 BHK flat Gurgaon, 4 BHK flat Gurgaon, villa for sale Gurgaon, plot for sale Gurgaon, ready to move flats Gurgaon, new launch property Gurgaon, pre-launch property Gurgaon, luxury property Gurgaon, buy flat in Gurgaon, residential property for sale Gurgaon, office space for lease Gurgaon, shop for lease Gurgaon, retail space Gurgaon, commercial property Gurgaon, Gurgaon real estate projects, Gurgaon investment properties, Gurgaon leasing opportunities, residential projects Gurgaon, commercial projects Gurgaon, DLF property Gurgaon, Elan project Gurgaon, Emaar property Gurgaon, AIPL project Gurgaon, M3M Gurgaon property, Godrej Properties Gurgaon, Sobha Realty Gurgaon, Signature Global Gurgaon, Mahindra Lifespaces Gurgaon, Whiteland Corporation Gurgaon, Smartworld Developers Gurgaon, Central Park Resorts Gurgaon, BPTP Gurgaon, Vatika Group Gurgaon, Raheja Developers Gurgaon, 3 BHK ready to move Gurgaon, 4 BHK ready to move Gurgaon, 5 BHK luxury apartment Gurgaon, property with best ROI Gurgaon, best real estate investment Gurgaon, property price appreciation Gurgaon, rental yield property Gurgaon, Sector 65 property Gurgaon, Sector 58 property Gurgaon, Sector 82 property Gurgaon, Sector 86 property Gurgaon, Sector 103 property Gurgaon, Sector 57 property Gurgaon, LSR Realty projects',
     breadcrumbs: [HOME, { name: 'Projects & Listings', url: `${SITE_URL}/projects` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -343,7 +343,7 @@ const staticRoutes = [
     route: '/maps',
     title: 'Gurgaon Sector Maps & Layout Plans | Free PDF Download | LSR Realty',
     description: 'Free Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. High-resolution PDF downloads for 75+ sectors across GCER, Golf Course Road, Dwarka Expressway and Sohna Road.',
-    keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map, property location Gurgaon, plot map Gurgaon, residential sector Gurgaon, Golf Course Extension Road map, Dwarka Expressway sector map, Sohna Road sector map',
+    keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map, property location Gurgaon, plot map Gurgaon, residential sector Gurgaon, Golf Course Extension Road map, Dwarka Expressway sector map, Sohna Road sector map, free sector map Gurgaon, Gurgaon sector 58 map, Sector 65 map Gurgaon, Sector 82 map Gurgaon, Sector 86 map Gurgaon, Sector 103 map Gurgaon, Sector 57 Gurgaon map, Sector 67 Gurgaon layout, Sector 37 map Gurgaon, Sector 47 Gurgaon map, Sector 76 Gurgaon map, Sector 77 map Gurgaon, Gurgaon zone map download, Gurugram plot layout free download, Master Plan 2031 PDF download, Gurgaon layout plan DTCP, HRERA zone map, Gurgaon land use map, Pace City II sector map Gurgaon, Nirvana Country map Gurgaon',
     breadcrumbs: [HOME, { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -412,7 +412,7 @@ const staticRoutes = [
     route: '/careers',
     title: 'Careers at LSR Realty | Real Estate Jobs Gurgaon',
     description: 'Join LSR Realty\'s advisory team in Gurgaon. We hire for real estate sales, leasing, client advisory and operations roles. View current openings.',
-    keywords: 'LSR Realty careers, real estate jobs Gurgaon, leasing manager Gurgaon, commercial real estate jobs, sales jobs Gurgaon',
+    keywords: 'LSR Realty careers, real estate jobs Gurgaon, leasing manager Gurgaon, commercial real estate jobs, sales jobs Gurgaon, real estate agent jobs Gurgaon, property consultant jobs Gurgaon, real estate sales jobs Gurgaon, channel partner jobs Gurgaon, business development real estate Gurgaon, real estate company jobs Gurugram, commercial leasing jobs Gurgaon, real estate internship Gurgaon, work in real estate Gurgaon, telecaller real estate Gurgaon, LSR Realty jobs, property sales jobs Gurgaon, real estate career Gurgaon, real estate jobs Gurugram, join real estate company Gurgaon',
     breadcrumbs: [HOME, { name: 'Careers', url: `${SITE_URL}/careers` }],
     structuredData: [
       {
@@ -785,6 +785,11 @@ for (const project of PROJECTS) {
       `real estate ${project.category === 'Leasing' ? 'leasing' : 'investment'} Gurgaon`,
       'LSR Realty channel partner',
       'real estate broker Gurgaon',
+      `${project.developer} Gurgaon`,
+      `${project.developer} channel partner`,
+      project.category === 'Leasing'
+        ? 'commercial property Gurgaon, Grade A office Gurgaon, retail leasing Gurgaon'
+        : `luxury property Gurgaon, buy property Gurgaon 2026, property investment ROI Gurgaon, property price appreciation Gurgaon`,
     ].filter(Boolean).join(', '),
     image: projectImage,
     breadcrumbs: [
