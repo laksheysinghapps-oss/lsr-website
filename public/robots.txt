@@ -54,4 +54,19 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://lsrrealty.com/sitemap_index.xml
