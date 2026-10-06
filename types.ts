@@ -64,6 +64,7 @@ export interface BlogPost {
   category: string;
   date: string;
   dateISO?: string;
+  dateModifiedISO?: string;
   readTime: string;
   image: string;
   content: string;

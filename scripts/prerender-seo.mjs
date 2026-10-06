@@ -40,9 +40,11 @@ function makeBreadcrumbSchema(crumbs) {
 
 // breadcrumbs: [{name, url}] — auto-generates BreadcrumbList and prepends to structuredData
 // articleMeta: { publishedTime, modifiedTime, author, section } — for blog posts
-function renderRoute({ route, title, description, image, keywords, ogType, structuredData, breadcrumbs, articleMeta, preloadImage }) {
+function renderRoute({ route, title, description, image, keywords, ogType, structuredData, breadcrumbs, articleMeta, preloadImage, imageAlt }) {
   const url = `${SITE_URL}${route}`;
   const ogImage = image ?? `${SITE_URL}/images/Logo2.png`;
+  // Short alt for image tags: strip "| LSR Realty" suffix from title, fallback to explicit imageAlt
+  const shortImageAlt = imageAlt || title.replace(/\s*\|[^|]*LSR Realty.*$/i, '').trim() || 'LSR Realty — Real Estate Advisory Gurgaon';
   let html = template;
   html = html.replace(/<title>.*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
   html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${escapeHtml(description)}" />`);
@@ -57,10 +59,11 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${escapeHtml(description)}" />`);
   html = html.replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${url}" />`);
   html = html.replace(/<meta property="og:image" content=".*?" \/>/, `<meta property="og:image" content="${ogImage}" />`);
-  html = html.replace(/<meta property="og:image:alt" content=".*?" \/>/, `<meta property="og:image:alt" content="${escapeHtml(description)}" />`);
+  html = html.replace(/<meta property="og:image:alt" content=".*?" \/>/, `<meta property="og:image:alt" content="${escapeHtml(shortImageAlt)}" />`);
   html = html.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${escapeHtml(title)}" />`);
   html = html.replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${escapeHtml(description)}" />`);
   html = html.replace(/<meta name="twitter:image" content=".*?" \/>/, `<meta name="twitter:image" content="${ogImage}" />`);
+  html = html.replace(/<meta name="twitter:image:alt" content=".*?" \/>/, `<meta name="twitter:image:alt" content="${escapeHtml(shortImageAlt)}" />`);
 
   // Article Open Graph meta tags (for blog posts)
   if (ogType === 'article' && articleMeta) {
@@ -162,8 +165,8 @@ const staticRoutes = [
       mainEntity: [
         {
           '@type': 'Question',
-          name: 'What is LSR Realty?',
-          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty (also known as LSR, LSR Reality, LSR Broker, LSR Agent, LSR Real Estate, or LSR Company) is the real estate investment advisory arm of LSR Group, based in Gurugram, Haryana. We are a professional real estate broker, consultant and authorised channel partner providing institutional-grade, research-backed advisory for HNI, UHNI and NRI investors across luxury residential, Grade A commercial office, and premium retail segments in Gurgaon. Our office is at 911, Magnum Global Park, Sector 58, Gurugram. Call +91 8448660019 or email marketing@lsrrealty.com.' },
+          name: 'Where is LSR Realty\'s office in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty\'s office is located at Unit 911, 9th Floor, Magnum Global Park, Sector 58, Golf Course Extension Road, Gurugram, Haryana 122098. The office is easily accessible from Golf Course Extension Road and is close to Sector 58 Metro Station. You can reach us on +91 8448660019 or email marketing@lsrrealty.com to schedule a meeting or free consultation.' },
         },
         {
           '@type': 'Question',
@@ -988,10 +991,10 @@ const BLOG_ARTICLE_TAGS = {
 
 // SEO-optimised short titles for blog posts whose full title exceeds 65 chars
 const BLOG_TITLE_OVERRIDES = {
-  'golf-course-extension-road-vs-golf-course-road-gurgaon': 'Golf Course Extension Road vs Golf Course Road | Gurgaon Investment Guide | LSR Realty',
-  'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Manesar Master Plan 2031 Explained | Property Investor Guide | LSR Realty',
-  'nri-real-estate-buying-guide-gurgaon': 'NRI Real Estate Buying Guide Gurugram | FEMA, NRE, RERA and Tax | LSR Realty',
-  'dlf-arbour-vs-dlf-privana-gurgaon': 'DLF Arbour vs DLF Privana South | Gurgaon Investment Comparison 2026 | LSR Realty',
+  'golf-course-extension-road-vs-golf-course-road-gurgaon': 'GCER vs Golf Course Road: Gurgaon Investment Guide | LSR Realty',
+  'gurgaon-manesar-master-plan-2031-explained': 'Gurgaon Master Plan 2031 Explained | Property Guide | LSR Realty',
+  'nri-real-estate-buying-guide-gurgaon': 'NRI Property Buying Guide Gurgaon | FEMA & RERA | LSR Realty',
+  'dlf-arbour-vs-dlf-privana-gurgaon': 'DLF Arbour vs DLF Privana South Gurgaon 2026 | LSR Realty',
 };
 
 // Per-blog keyword sets — specific long-tail keywords per post rather than generic cross-post keywords
@@ -1046,12 +1049,12 @@ for (const post of publishedPosts) {
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': ['Article', 'NewsArticle'],
+    '@type': 'Article',
     headline: post.title,
     description: postDescription,
     image: postImage,
     datePublished: isoDate,
-    dateModified: isoDate,
+    dateModified: post.dateModifiedISO || isoDate,
     author: {
       '@type': 'Organization',
       name: 'LSR Realty Advisory Team',
@@ -1084,12 +1087,12 @@ for (const post of publishedPosts) {
     route: `/blog/${post.id}`,
     title: BLOG_TITLE_OVERRIDES[post.id] || `${post.title} | LSR Realty`,
     description: postDescription,
-    keywords: `${post.category}, Gurgaon real estate, Gurugram investment, LSR Realty`,
+    keywords: BLOG_KEYWORDS[post.id] || `${post.category}, Gurgaon real estate, Gurugram investment, LSR Realty`,
     image: postImage,
     ogType: 'article',
     articleMeta: {
       publishedTime: `${isoDate}T00:00:00+05:30`,
-      modifiedTime: `${isoDate}T00:00:00+05:30`,
+      modifiedTime: `${post.dateModifiedISO || isoDate}T00:00:00+05:30`,
       author: 'LSR Realty Advisory Team',
       section: post.category,
       tags: BLOG_ARTICLE_TAGS[post.id] || [],
