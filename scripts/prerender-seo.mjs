@@ -363,7 +363,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-08-25',
+      dateModified: '2026-10-21',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -407,6 +407,16 @@ const staticRoutes = [
           '@type': 'Question',
           name: 'Which Gurgaon sectors are best for real estate investment?',
           acceptedAnswer: { '@type': 'Answer', text: 'Based on the Gurgaon Master Plan 2031 and current market data, the top sectors for real estate investment are: Sector 65 (Golf Course Extension Road) — luxury residential, strong capital appreciation; Sector 58 (GCER) — Grade A commercial, high rental yields; Sectors 82–83 (Dwarka Expressway) — new residential with metro access, upcoming infrastructure; Sector 57 (Golf Course Road) — established luxury residential; Sectors 47–48 (Sohna Road) — mid-premium residential, improving connectivity. LSR Realty provides micro-market analysis across all these corridors to help investors identify the right sector for their budget and return objectives.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the difference between the Gurgaon Master Plan 2031 and Master Plan 2041?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 is the current operative land-use plan for Gurugram, prepared by DTCP Haryana and legally in force for all RERA registrations, development approvals and property transactions. The Gurgaon Master Plan 2041 is a future plan being prepared by GMDA (Gurugram Metropolitan Development Authority) to accommodate 55 lakh projected population by 2041. As of October 2026, the 2041 plan has not been formally notified — only the 2031 plan is legally binding. LSR Realty tracks the 2041 plan\'s status at lsrrealty.com/gurgaon-master-plan-2041.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Where can I download the Gurgaon Master Plan 2031 map for free?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The official Gurgaon Master Plan 2031 zone map is available as a free high-resolution download at lsrrealty.com/maps/gurgaon-manesar-master-plan. The map is sourced from DTCP Haryana\'s approved plan and shows all land use zones, sector boundaries, metro corridors and transport routes across the Gurugram Manesar Urban Complex. No registration or payment required.' },
         },
       ],
     }],
@@ -562,7 +572,7 @@ const staticRoutes = [
     route: '/gurgaon-master-plan-2041',
     title: 'Gurgaon Master Plan 2041: Status, Map & PDF | LSR Realty',
     description: 'Gurgaon Master Plan 2041 tracker: latest status, map and PDF download guidance, 55 lakh population projection, and how 2041 compares to the current Master Plan 2031.',
-    keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon Master Plan 2041 map, Gurgaon Master Plan 2041 PDF download, Gurgaon 2041 master plan status, Gurgaon master plan 2041 latest news, GMDA 2041, Gurgaon 2041 infrastructure, Gurgaon master plan 2041 vs 2031, Gurgaon 2041 investment zones',
+    keywords: 'Gurgaon Master Plan 2041, Gurugram Master Plan 2041, Gurgaon Master Plan 2041 map, Gurgaon Master Plan 2041 PDF, Gurgaon Master Plan 2041 PDF download, Gurgaon Master Plan 2041 free download, Gurgaon 2041 master plan status, Gurgaon master plan 2041 latest news 2026, GMDA 2041 master plan, Gurgaon 2041 infrastructure plan, Gurgaon master plan 2041 vs 2031, Gurgaon 2041 investment zones, Gurugram 2041 development plan, Gurgaon next master plan, DTCP Haryana 2041 plan, Gurgaon Master Plan 2041 when released',
     breadcrumbs: [HOME, { name: 'Gurgaon Master Plan 2041', url: `${SITE_URL}/gurgaon-master-plan-2041` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -806,14 +816,80 @@ for (const project of PROJECTS) {
 }
 
 // ── Map detail pages ──────────────────────────────────────────────────────────
+
+// Generic FAQPage for every sector map — creates People Also Ask opportunities
+function makeSectorFAQ(sector) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `How do I download the ${sector.name} layout map for free?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `The ${sector.name} Gurgaon layout plan is available for free download at lsrrealty.com/maps/${sector.id}. The high-resolution map shows official DTCP Haryana approved plot boundaries, road widths, land use zones and park locations. No registration required — open the page, click to view full resolution and save it to your device.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: `What does the ${sector.name} Gurgaon layout plan show?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `The ${sector.name} layout plan shows plot numbers and areas, internal road widths, land use designations (residential, commercial, institutional, park and utility sites), and sector boundary connections to neighbouring sectors. It is sourced from the DTCP Haryana approved plan and forms part of the Gurgaon Manesar Master Plan 2031. Use it to verify plot boundaries and land use before purchasing property in ${sector.name}.`,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: `Is ${sector.name} Gurgaon a good area for property investment?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Investment potential in ${sector.name} Gurgaon depends on its corridor, connectivity, planned infrastructure under the Gurgaon Master Plan 2031, and current market pricing. LSR Realty provides free micro-market analysis for investors evaluating ${sector.name}. Contact +91 8448660019 or visit lsrrealty.com/contact for a free consultation.`,
+        },
+      },
+    ],
+  };
+}
+
+// Per-sector FAQ overrides for the most-searched sectors
+const SECTOR_MAP_FAQS = {
+  'gurgaon-manesar-master-plan': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I download the Gurgaon Master Plan 2031 PDF for free?',
+        acceptedAnswer: { '@type': 'Answer', text: 'The official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) is available as a free high-resolution download at lsrrealty.com/maps/gurgaon-manesar-master-plan. The map is sourced from the DTCP Haryana approved plan and shows all land use zones, sector boundaries, transport corridors and metro alignments across the entire urban complex. No registration or payment required.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What sectors does the Gurgaon Master Plan 2031 cover?',
+        acceptedAnswer: { '@type': 'Answer', text: 'The Gurgaon Manesar Master Plan 2031 covers the entire Gurugram-Manesar Urban Complex — all residential sectors from 1 to 115, the Manesar IMT industrial zone, DLF Cyber City, Udyog Vihar, all corridors (Golf Course Road, Golf Course Extension Road, Dwarka Expressway, Sohna Road, Southern Peripheral Road), and the proposed metro routes. The plan designates land use zones (R1–R4 residential, commercial, industrial, green belt) across 33,872 hectares.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is the Gurgaon Master Plan 2031 or 2041 in force?',
+        acceptedAnswer: { '@type': 'Answer', text: 'As of October 2026, the Gurgaon Manesar Master Plan 2031 is the operative legal document for all land use, RERA registrations and development approvals in Gurugram. The Gurgaon Master Plan 2041 is being prepared by GMDA (Gurugram Metropolitan Development Authority) but has not yet been formally notified. Until it is notified, the 2031 plan governs all property transactions.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I read land use zones on the Gurgaon Master Plan 2031?',
+        acceptedAnswer: { '@type': 'Answer', text: 'On the Gurgaon Master Plan 2031 map, zones are colour-coded: yellow/beige indicates residential zones (R1–R4), red indicates commercial and business zones, purple or hatched areas indicate industrial zones (including Manesar IMT), green indicates recreational and green belt areas, and blue indicates public/semi-public or utility land. Road widths are shown by line thickness — a wider line means a more important road corridor. Verify the zone designation of any plot before purchasing.' },
+      },
+    ],
+  },
+};
+
 for (const sector of SECTOR_MAPS) {
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
-  const descSuffix = ` Official ${sector.name} layout map, part of Gurgaon Manesar Master Plan 2031.`;
+  // "Free download" in suffix targets download-intent searches
+  const descSuffix = ` DTCP-approved layout — free high-resolution download. Part of Gurgaon Master Plan 2031.`;
   const mapTitle = isMasterPlan
-    ? 'Gurgaon Manesar Master Plan 2031 | Official Zone Map Free Download | LSR Realty'
-    : `${sector.name} Gurgaon | Sector Layout Plan | LSR Realty`;
+    ? 'Gurgaon Master Plan 2031 Map | Free PDF Download | All Sectors | LSR Realty'
+    : `${sector.name} Map Gurgaon | Free Layout Plan Download | LSR Realty`;
   const mapDesc = isMasterPlan
-    ? 'Official Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) map — all sectors, land use zones, metro routes. Free download.'
+    ? 'Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) — official DTCP Haryana zone map, free PDF download. All sectors, land use zones, transport corridors and metro routes.'
     : sector.description.length + descSuffix.length > 156
       ? `${sector.description.slice(0, Math.max(153 - descSuffix.length, 0)).trim()}...${descSuffix}`
       : `${sector.description}${descSuffix}`;
@@ -838,31 +914,31 @@ for (const sector of SECTOR_MAPS) {
     publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
     mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
     license: 'https://dtcpharyana.gov.in/',
-    dateModified: '2026-07-25',
-    ...(isMasterPlan ? {
-      potentialAction: {
-        '@type': 'DownloadAction',
-        name: 'Download Gurgaon Master Plan 2031 Map',
-        target: `${SITE_URL}${sector.zoom}`,
-        object: { '@type': 'ImageObject', url: `${SITE_URL}${sector.zoom}`, name: 'Gurgaon Manesar Master Plan 2031 High-Resolution Map' },
-      },
-    } : {}),
+    dateModified: '2026-10-21',
+    potentialAction: {
+      '@type': 'DownloadAction',
+      name: isMasterPlan ? 'Download Gurgaon Master Plan 2031 Map' : `Download ${sector.name} Layout Map`,
+      target: `${SITE_URL}${sector.zoom}`,
+      object: { '@type': 'ImageObject', url: `${SITE_URL}${sector.zoom}`, name: isMasterPlan ? 'Gurgaon Manesar Master Plan 2031 High-Resolution Map' : `${sector.name} Official Layout Plan, Gurgaon` },
+    },
   };
+
+  const sectorFAQ = SECTOR_MAP_FAQS[sector.id] || makeSectorFAQ(sector);
 
   renderRoute({
     route: `/maps/${sector.id}`,
     title: mapTitle,
     description: mapDesc,
     keywords: isMasterPlan
-      ? 'Gurgaon Master Plan 2031 map, Gurgaon Master Plan 2031 PDF download, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 land use, Gurgaon sector map download, Gurugram Master Plan 2031'
-      : `${sector.name} layout plan, ${sector.name} map, ${sector.name} Gurgaon, ${sector.name} plot layout, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout`,
+      ? 'Gurgaon Master Plan 2031, Gurgaon Master Plan 2031 PDF, Gurgaon Master Plan 2031 free download, Gurgaon Master Plan 2031 map download, Gurgaon Master Plan 2031 PDF download, Gurgaon Master Plan 2031 zone map, Gurgaon Master Plan 2031 land use, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 all sectors, Gurgaon sector map download, Gurugram Master Plan 2031, Gurgaon master plan 2031 2026, DTCP Haryana master plan download, Gurgaon land use map 2031, Gurugram development plan 2031, Gurgaon zone map free download'
+      : `${sector.name} map, ${sector.name} map download, ${sector.name} Gurgaon, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout, free Gurgaon sector map download, sector map PDF Gurgaon, Gurgaon layout plan free download`,
     image: `${SITE_URL}${sector.zoom}`,
     breadcrumbs: [
       HOME,
       { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` },
       { name: sector.name, url: `${SITE_URL}/maps/${sector.id}` },
     ],
-    structuredData: [mapSchema],
+    structuredData: [mapSchema, sectorFAQ],
   });
 }
 
