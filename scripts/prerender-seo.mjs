@@ -1142,6 +1142,44 @@ function makeSectorFAQ(sector) {
   };
 }
 
+// HowTo schema for every map page — enables How-to rich results in Google SERP
+function makeMapHowTo(sector) {
+  const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: isMasterPlan
+      ? 'How to Download Gurgaon Master Plan 2031 Map for Free'
+      : `How to Download ${sector.name} Gurgaon Layout Map for Free`,
+    description: isMasterPlan
+      ? 'Free download guide for the official Gurgaon Manesar Master Plan 2031 map from LSR Realty — no registration or payment required.'
+      : `Free download guide for the official ${sector.name} Gurgaon layout plan — DTCP Haryana approved, no registration required.`,
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Open the map page',
+        text: `Visit lsrrealty.com/maps/${sector.id} on any device — desktop, tablet or mobile. No login or registration required.`,
+        url: `${SITE_URL}/maps/${sector.id}`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'View the full-resolution image',
+        text: `Click or tap the ${isMasterPlan ? 'Gurgaon Master Plan 2031' : sector.name} map thumbnail to open the full high-resolution DTCP Haryana approved layout image.`,
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Save to your device',
+        text: 'Desktop: right-click the full-size image and select "Save image as". Mobile: tap and hold the image, then choose "Download image" or "Save to photos". The download is completely free.',
+      },
+    ],
+    totalTime: 'PT1M',
+    tool: { '@type': 'HowToTool', name: 'Web browser' },
+  };
+}
+
 // Per-sector FAQ overrides for the most-searched sectors
 const SECTOR_MAP_FAQS = {
   'gurgaon-manesar-master-plan': {
@@ -1170,6 +1208,136 @@ const SECTOR_MAP_FAQS = {
       },
     ],
   },
+  'sector-65': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 65 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 65 Gurgaon official layout plan is available for free at lsrrealty.com/maps/sector-65. The DTCP Haryana approved map shows plot boundaries, road widths, land use zones, and park areas. No registration required — click the map to view full resolution and save it.' } },
+      { '@type': 'Question', name: 'What projects are in Sector 65 Golf Course Extension Road Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 65 on Golf Course Extension Road, Gurgaon is home to several major projects: DLF The Arbour (ultra-luxury 4 BHK, sectors 63-65 cluster), AIPL Joy Central (premium retail mall), Emaar India Business Centre (Grade A office), AIPL Signature (office tower), and Emaar Serenity Hills (luxury residential in adjacent Sector 65/86 zone). The sector is one of the most active on GCER for both residential and commercial real estate.' } },
+      { '@type': 'Question', name: 'What is the property rate in Sector 65 Gurgaon in 2026?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 65, Golf Course Extension Road, Gurgaon property rates in 2026 range from ₹15,000 to ₹25,000 per sqft for luxury residential. DLF The Arbour trades at ₹23,500 to ₹24,000 per sqft on the resale market. Commercial office space in AIPL projects on GCER is priced on request. Contact LSR Realty at +91 8448660019 for current per-sqft pricing and investment analysis.' } },
+      { '@type': 'Question', name: 'Is Sector 65 Gurgaon good for property investment?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 65, Golf Course Extension Road is one of Gurgaon\'s top investment corridors. It combines ultra-luxury residential (DLF Arbour), premium commercial (AIPL Joy Central, Emaar IBC), and strong retail activity. Rapid Metro access at Sector 55-56 (approximately 5 km) and proximity to the GCER corporate belt make it a well-rounded long-term investment zone.' } },
+    ],
+  },
+  'sector-42': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 42 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 42 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-42. The DTCP Haryana approved map shows residential plot boundaries, road widths, and land use designations in this premium Golf Course Road sector. No registration required.' } },
+      { '@type': 'Question', name: 'What projects are in Sector 42 Golf Course Road Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 42, Golf Course Road, Gurgaon is home to DLF The Magnolias — one of Gurgaon\'s most prestigious ultra-luxury residential addresses — along with other DLF high-rise towers and high-end independent floors. The sector also has the DLF Golf and Country Club in the adjacent vicinity. It is considered one of the most established luxury residential sectors in Gurgaon.' } },
+      { '@type': 'Question', name: 'What is the property rate in Sector 42 Gurgaon in 2026?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 42, Golf Course Road, is one of Gurgaon\'s premier luxury addresses. Resale prices for properties here, including DLF Magnolias and other high-end towers, vary widely by floor, view, and size. Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com for verified current resale pricing in Sector 42, Golf Course Road.' } },
+    ],
+  },
+  'sector-44': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 44 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 44 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-44. The DTCP Haryana approved map shows commercial and institutional zones, road widths, and plot boundaries in this centrally located sector. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 44 Gurgaon known for?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 44, Gurgaon, is a prominent mixed-use zone near the HUDA City Centre Metro station (Yellow Line). It is known for large hotels, educational institutions, and office complexes, and forms part of Gurgaon\'s inner commercial belt between MG Road and Golf Course Road. Major landmarks include several 5-star hotels, the National Media Centre, and key corporate campuses.' } },
+      { '@type': 'Question', name: 'Is Sector 44 Gurgaon good for office space?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 44, Gurgaon is well-suited for offices requiring proximity to HUDA City Centre Metro, Sector 29 commercial district, and Golf Course Road. The sector has a mix of hotel-linked office space and standalone commercial buildings. For Grade A office availability in and around Sector 44, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'sector-45': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 45 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 45 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-45. The DTCP Haryana approved map shows residential plot boundaries, park areas, and road widths in this established GCER residential sector. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 45 Gurgaon like as a residential area?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 45, Gurgaon is a popular residential locality near Golf Course Extension Road, known for a mix of builder floors, mid-segment apartments, and reputed schools. Green Wood City (Unitech) is located in this sector. The area has good social infrastructure including schools, local markets, and proximity to Sohna Road and GCER.' } },
+      { '@type': 'Question', name: 'What is the property rate in Sector 45 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 45, Gurgaon is considered a mid-premium residential zone with rates lower than the GCER prime sectors but with good connectivity. For verified current property rates and availability in Sector 45, contact LSR Realty at +91 8448660019 or visit lsrrealty.com/contact.' } },
+    ],
+  },
+  'sector-47': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 47 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 47 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-47. The DTCP Haryana approved map shows residential plots, gated township boundaries, road widths, and park zones for this Sohna Road sector. No registration required.' } },
+      { '@type': 'Question', name: 'What residential areas and projects are in Sector 47 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 47, Gurgaon, on Sohna Road includes Malibu Town — an Ansal API plotted township near Rajiv Chowk known for villas and independent floors. The sector also has several high-rise apartment complexes and is near Artemis Hospital, reputed schools, and good connectivity to Sohna Road, Golf Course Extension Road, and NH 8.' } },
+      { '@type': 'Question', name: 'Is Sector 47 Gurgaon a good area to buy property?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 47, Sohna Road, Gurgaon, is an upscale residential area with strong social infrastructure — Artemis Hospital, multiple schools, and commercial markets are all nearby. The sector has appreciated steadily, driven by demand from families and professionals working in the Sohna Road and GCER corporate corridors. Contact LSR Realty at +91 8448660019 for current pricing and investment advice.' } },
+    ],
+  },
+  'sector-57': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 57 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 57 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-57. The DTCP Haryana approved map shows residential plot boundaries, road widths, and commercial zones along Golf Course Extension Road. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 57 Gurgaon known for?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 57, Golf Course Extension Road, Gurgaon is known for a mix of independent floors, builder floors, high-rise apartments, and the Hong Kong Bazaar market. Sushant Lok III (Ansal) in Sector 57 is a popular residential colony. The sector is close to Southern Peripheral Road and Golf Course Road, making it a well-connected mid-premium residential address.' } },
+      { '@type': 'Question', name: 'Is Sector 57 Gurgaon on Golf Course Extension Road good for investment?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 57, GCER, has benefited from strong demand owing to proximity to major IT parks, GCER commercial projects, and Southern Peripheral Road. It is popular among families and professionals working in the GCER and SPR corridors. Property appreciation here has been steady over the last 5 years. Contact LSR Realty at +91 8448660019 for current investment analysis.' } },
+    ],
+  },
+  'dlf-phase-5': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the DLF Phase 5 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The DLF Phase 5 (Sector 43) Gurgaon layout plan is available for free at lsrrealty.com/maps/dlf-phase-5. The DTCP Haryana approved map shows the DLF colony plot boundaries, road widths, and land use designations for this premier Golf Course Road area. No registration required.' } },
+      { '@type': 'Question', name: 'What is DLF Phase 5 in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 5 is an upscale DLF colony in Sector 43, Golf Course Road, Gurgaon. It is known for large villas, independent floors, and the DLF Club 5 — one of Gurgaon\'s most prestigious residential clubs. The colony is mature and fully developed, with excellent social infrastructure, proximity to Golf Course Road metro stations, and a quiet, tree-lined character.' } },
+      { '@type': 'Question', name: 'What is the property rate in DLF Phase 5 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 5, Sector 43, Golf Course Road, is one of Gurgaon\'s highest-rated address zones with premium land rates. Villas, independent floors, and plots here command significant premiums. For verified current pricing in DLF Phase 5, contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com.' } },
+    ],
+  },
+  'nirvana-country': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Nirvana Country Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Nirvana Country (Sector 50) Gurgaon layout plan is available for free at lsrrealty.com/maps/nirvana-country. The DTCP Haryana approved map shows the Unitech township plot boundaries, road widths, villa zones, and park areas. No registration required.' } },
+      { '@type': 'Question', name: 'What is Nirvana Country in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Nirvana Country is a Unitech gated township in Sector 50, near Sohna Road and Golf Course Road, Gurgaon. It is known for villas, independent floors, and a premium community living environment. Elan Paradise — a premium retail and entertainment complex — is located within Nirvana Country. The township has strong social infrastructure and excellent connectivity to both Sohna Road and Golf Course Extension Road.' } },
+      { '@type': 'Question', name: 'Is Nirvana Country Gurgaon a good residential investment?', acceptedAnswer: { '@type': 'Answer', text: 'Nirvana Country, Sector 50, is a mature, established gated township on the Sohna Road-GCER belt with strong resale demand. Villas and independent floors here are popular with families seeking a quieter community living environment. For investment analysis and current pricing in Nirvana Country, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'imt-manesar': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the IMT Manesar map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The IMT Manesar HSIIDC industrial layout plan is available for free at lsrrealty.com/maps/imt-manesar. The HSIIDC approved map shows plot boundaries, phase-wise layout, road widths, and land use designations across the industrial township. No registration required.' } },
+      { '@type': 'Question', name: 'What is IMT Manesar in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'IMT (Industrial Model Township) Manesar is an HSIIDC-developed industrial estate on NH 8 near Gurgaon, home to the Maruti Suzuki plant and hundreds of automobile, auto-component, electronics, and manufacturing units. It is one of India\'s largest industrial clusters and a major employment hub in the National Capital Region.' } },
+      { '@type': 'Question', name: 'What companies are in IMT Manesar?', acceptedAnswer: { '@type': 'Answer', text: 'IMT Manesar hosts Maruti Suzuki\'s second manufacturing plant (producing over 700,000 vehicles annually), Honda Motorcycles & Scooters India, Denso, Munjal Showa, Caparo, and hundreds of auto-ancillary and component manufacturers. It also has IT and electronics manufacturing units. The township has its own dedicated road network, utilities, and worker housing.' } },
+    ],
+  },
+  'udyog-vihar': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Udyog Vihar Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Udyog Vihar (Phase 1 to 5) Gurgaon layout plan is available for free at lsrrealty.com/maps/udyog-vihar. The HSIIDC approved map shows the phase-wise industrial and commercial estate boundaries, road widths, and plot designations. No registration required.' } },
+      { '@type': 'Question', name: 'What is Udyog Vihar in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Udyog Vihar is an HSIIDC-developed industrial and commercial estate on NH 8 (Delhi-Gurgaon highway), near the Delhi border. It spans five phases and is Gurgaon\'s earliest major IT and BPO hub, housing companies like American Express, IBM, Convergys, and hundreds of IT, BPO, textile, and light manufacturing units. Cyber City and DLF Phase 2 are adjacent.' } },
+      { '@type': 'Question', name: 'How do I find office space in Udyog Vihar Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Office space in Udyog Vihar, Gurgaon, ranges from older IT campus formats to newer multi-storey offices. For current Grade A office availability, lease rents, and corporate campus options in Udyog Vihar, contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com.' } },
+    ],
+  },
+  'sector-27-28': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 27 and 28 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 27 & 28 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-27-28. The DTCP Haryana approved map shows DLF colony plot boundaries, parks, and road widths for these premium Golf Course Road sectors. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 27 and Sector 28 in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sectors 27 and 28 are premium DLF residential sectors along Golf Course Road, Gurgaon, known for upscale housing, lush parks, and excellent connectivity to Sikanderpur Metro and the MG Road commercial belt. DLF Phase 4 and Saraswati Vihar are in the adjacent Sector 28 zone. These sectors are among the most sought-after addresses on Golf Course Road for families and senior executives.' } },
+      { '@type': 'Question', name: 'Is Sector 27 or 28 Gurgaon a good investment?', acceptedAnswer: { '@type': 'Answer', text: 'Sectors 27 and 28 on Golf Course Road are mature, fully-developed residential sectors with high land values and consistent resale demand. Properties here are among the most liquid in Gurgaon. For current investment analysis, pricing, and available listings in Sectors 27-28, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'dlf-garden-city': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the DLF Garden City Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The DLF Garden City (Sectors 91-93) Gurgaon layout plan is available for free at lsrrealty.com/maps/dlf-garden-city. The DTCP Haryana approved map shows the DLF township plot boundaries, road widths, and phase designations on Dwarka Expressway. No registration required.' } },
+      { '@type': 'Question', name: 'What is DLF Garden City in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Garden City is a large DLF township spanning Sectors 91 to 93 on Dwarka Expressway and Pataudi Road, Gurugram. It is known for plotted development, DLF independent floors, and a township community format. DLF Corporate Greens (Grade A IT park) is adjacent in Sector 74A. The township is close to IMT Manesar and has improving connectivity via Dwarka Expressway.' } },
+      { '@type': 'Question', name: 'Is DLF Garden City a good property investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Garden City in Sectors 91-93 has seen consistent appreciation driven by the completion of Dwarka Expressway and the growth of New Gurugram. DLF\'s brand, township infrastructure, and proximity to IMT Manesar and the upcoming metro corridor contribute to investment appeal. Contact LSR Realty at +91 8448660019 for current land and floor pricing in DLF Garden City.' } },
+    ],
+  },
+};
+
+// Per-sector keyword overrides — adds project and corridor keywords for key sectors
+const SECTOR_MAP_KEYWORDS = {
+  'sector-65': 'Sector 65 Gurgaon map, Sector 65 map download, Sector 65 layout plan Gurgaon, Sector 65 Golf Course Extension Road, Sector 65 free download, DLF Arbour Sector 65, AIPL Joy Central Sector 65, Emaar IBC Sector 65, AIPL Signature Sector 65, Sector 65 property rate Gurgaon, Sector 65 GCER, DTCP approved map Sector 65, Sector 65 Gurugram map',
+  'sector-42': 'Sector 42 Gurgaon map, Sector 42 map download, Sector 42 layout plan, Sector 42 Golf Course Road, DLF Magnolias Sector 42, Sector 42 Gurgaon free download, Sector 42 property rate Gurgaon, Golf Course Road Sector 42 map, DTCP approved Sector 42, Sector 42 Gurugram',
+  'sector-44': 'Sector 44 Gurgaon map, Sector 44 map download, Sector 44 layout plan Gurgaon, Sector 44 HUDA Gurgaon, Sector 44 commercial map, Sector 44 free download, HUDA City Centre Sector 44, Sector 44 Gurugram map, office space Sector 44 Gurgaon, Sector 44 DTCP map',
+  'sector-45': 'Sector 45 Gurgaon map, Sector 45 map download, Sector 45 layout plan Gurgaon, Sector 45 Golf Course Extension Road, Green Wood City Sector 45, Sector 45 residential map, Sector 45 free download, Sector 45 Gurugram property, DTCP approved Sector 45 map',
+  'sector-47': 'Sector 47 Gurgaon map, Sector 47 map download, Sector 47 layout plan, Sector 47 Sohna Road Gurgaon, Malibu Town Sector 47, Sector 47 free download, Sector 47 property rate Gurgaon, Sector 47 Gurugram map, DTCP approved Sector 47',
+  'sector-57': 'Sector 57 Gurgaon map, Sector 57 map download, Sector 57 layout plan, Sector 57 Golf Course Extension Road, Sushant Lok 3 Sector 57, Sector 57 free download, Sector 57 Gurugram map, Sector 57 residential map, DTCP approved Sector 57, Sector 57 property Gurgaon',
+  'dlf-phase-5': 'DLF Phase 5 map, DLF Phase 5 Gurgaon map download, DLF Phase 5 layout plan, Sector 43 DLF Golf Course Road, DLF Phase 5 free download, DLF Phase 5 Sector 43 Gurgaon, DLF Club 5 map, DLF Phase 5 property, DLF Phase 5 Gurugram, Golf Course Road DLF map',
+  'nirvana-country': 'Nirvana Country map, Nirvana Country Gurgaon map download, Nirvana Country layout plan, Sector 50 Nirvana Country, Nirvana Country free download, Nirvana Country Sohna Road Gurgaon, Elan Paradise Nirvana Country, Nirvana Country villa map, Unitech Nirvana Country, Sector 50 Gurgaon map',
+  'imt-manesar': 'IMT Manesar map, IMT Manesar layout plan, IMT Manesar free download, Manesar industrial map, IMT Manesar HSIIDC map, Maruti Suzuki plant Manesar, Manesar industrial area map, HSIIDC Manesar layout, IMT Manesar NH 8, Manesar township map download',
+  'udyog-vihar': 'Udyog Vihar map, Udyog Vihar Gurgaon map download, Udyog Vihar layout plan, Udyog Vihar Phase 1 to 5 map, Udyog Vihar free download, Udyog Vihar HSIIDC, Udyog Vihar office map, Udyog Vihar NH 8 Gurgaon, Udyog Vihar industrial estate map',
+  'sector-27-28': 'Sector 27 28 Gurgaon map, Sector 27 map download, Sector 28 map Gurgaon, Sector 27 layout plan, Sector 28 layout plan, DLF Sector 27 Gurgaon, DLF Sector 28 Golf Course Road, Sector 27 28 free download, Sector 27 28 Gurugram, DLF Golf Course Road map',
+  'dlf-garden-city': 'DLF Garden City map, DLF Garden City Gurgaon map download, DLF Garden City layout plan, Sector 91 92 93 DLF map, DLF Garden City Dwarka Expressway, DLF Garden City free download, Sector 91 Gurgaon map, DLF Garden City Pataudi Road, New Gurgaon DLF map',
+  'sector-66': 'Sector 66 Gurgaon map, Sector 66 map download, Sector 66 layout plan, Sector 66 Golf Course Extension Road, AIPL Joy Gallery Sector 66, AIPL Statement Sector 66, Elan Empire Sector 66, AIPL Autograph Sector 66, Sector 66 free download, Sector 66 Gurugram, DTCP approved Sector 66',
+  'dlf-phase-1': 'DLF Phase 1 map, DLF Phase 1 Gurgaon map download, DLF Phase 1 layout plan, DLF Phase 1 Sector 26A, DLF Phase 1 free download, DLF Phase 1 MG Road, DLF Phase 1 Cyber Hub, DLF Phase 1 Gurugram map',
+  'dlf-phase-2': 'DLF Phase 2 map, DLF Phase 2 Gurgaon map download, DLF Phase 2 layout plan, DLF Phase 2 Sector 25, DLF Phase 2 free download, DLF Cyber City map, DLF Phase 2 MG Road, DLF Phase 2 Gurugram',
+  'dlf-phase-3': 'DLF Phase 3 map, DLF Phase 3 Gurgaon map download, DLF Phase 3 layout plan, DLF Phase 3 Sector 24, DLF Phase 3 free download, DLF Phase 3 NH 8, DLF Phase 3 Gurugram',
+  'dlf-phase-4': 'DLF Phase 4 map, DLF Phase 4 Gurgaon map download, DLF Phase 4 layout plan, DLF Phase 4 Sector 28, DLF Phase 4 free download, DLF Phase 4 Galleria Market, DLF Phase 4 Gurugram map',
 };
 
 for (const sector of SECTOR_MAPS) {
@@ -1215,21 +1383,24 @@ for (const sector of SECTOR_MAPS) {
   };
 
   const sectorFAQ = SECTOR_MAP_FAQS[sector.id] || makeSectorFAQ(sector);
+  const sectorHowTo = makeMapHowTo(sector);
+  const sectorKeywords = SECTOR_MAP_KEYWORDS[sector.id]
+    || (isMasterPlan
+      ? 'Gurgaon Master Plan 2031, Gurgaon Master Plan 2031 PDF, Gurgaon Master Plan 2031 free download, Gurgaon Master Plan 2031 map download, Gurgaon Master Plan 2031 PDF download, Gurgaon Master Plan 2031 zone map, Gurgaon Master Plan 2031 land use, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 all sectors, Gurgaon sector map download, Gurugram Master Plan 2031, Gurgaon master plan 2031 2026, DTCP Haryana master plan download, Gurgaon land use map 2031, Gurugram development plan 2031, Gurgaon zone map free download'
+      : `${sector.name} map, ${sector.name} map download, ${sector.name} Gurgaon, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout, free Gurgaon sector map download, sector map PDF Gurgaon, Gurgaon layout plan free download`);
 
   renderRoute({
     route: `/maps/${sector.id}`,
     title: mapTitle,
     description: mapDesc,
-    keywords: isMasterPlan
-      ? 'Gurgaon Master Plan 2031, Gurgaon Master Plan 2031 PDF, Gurgaon Master Plan 2031 free download, Gurgaon Master Plan 2031 map download, Gurgaon Master Plan 2031 PDF download, Gurgaon Master Plan 2031 zone map, Gurgaon Master Plan 2031 land use, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 all sectors, Gurgaon sector map download, Gurugram Master Plan 2031, Gurgaon master plan 2031 2026, DTCP Haryana master plan download, Gurgaon land use map 2031, Gurugram development plan 2031, Gurgaon zone map free download'
-      : `${sector.name} map, ${sector.name} map download, ${sector.name} Gurgaon, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout, free Gurgaon sector map download, sector map PDF Gurgaon, Gurgaon layout plan free download`,
+    keywords: sectorKeywords,
     image: `${SITE_URL}${sector.zoom}`,
     breadcrumbs: [
       HOME,
       { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` },
       { name: sector.name, url: `${SITE_URL}/maps/${sector.id}` },
     ],
-    structuredData: [mapSchema, sectorFAQ],
+    structuredData: [mapSchema, sectorFAQ, sectorHowTo],
   });
 }
 
