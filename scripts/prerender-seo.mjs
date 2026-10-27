@@ -705,6 +705,297 @@ const PROJECT_FAQ_SCHEMAS = {
       { '@type': 'Question', name: 'What is the current resale price of DLF Magnolias in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF The Magnolias on Golf Course Road, Gurgaon is available on the resale market. Pricing varies significantly by floor, tower, and view. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for verified current resale pricing and available inventory.' } },
     ],
   },
+  'elan-town-centre': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Elan Town Centre in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Town Centre is a premium retail and commercial development by Elan Group in Sector 67, Sohna Road, Gurugram. It offers retail units, F&B spaces, and office floors in a high-footfall corridor surrounded by large residential townships. LSR Realty is an authorised advisor for Elan Town Centre leasing.' } },
+      { '@type': 'Question', name: 'How do I lease space in Elan Town Centre Sector 67 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'To lease retail or commercial space in Elan Town Centre, Sector 67, Sohna Road, Gurgaon, contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com. We are an authorised leasing advisor for Elan projects and can provide unit availability, current asking rents, and fit-out conditions.' } },
+      { '@type': 'Question', name: 'Where is Elan Town Centre located in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Town Centre is located in Sector 67, Sohna Road, Gurugram. The location offers strong catchment from neighbouring residential sectors, SEZs, IT parks, and prominent schools. It has easy access to NH 48 via Rajiv Chowk and Golf Course Extension Road.' } },
+    ],
+  },
+  'elan-miracle': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Elan Miracle in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Miracle is a mixed-use commercial project by Elan Group in Sector 84, Dwarka Expressway, Gurugram. It offers retail shops, food and beverage outlets, and office spaces targeting the growing residential catchment along the Dwarka Expressway corridor. LSR Realty is an authorised leasing advisor.' } },
+      { '@type': 'Question', name: 'Is Elan Miracle on Dwarka Expressway a good investment?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Miracle in Sector 84, Dwarka Expressway benefits from the rapid growth of the Dwarka Expressway corridor since the expressway\'s inauguration and the large residential population in nearby sectors. Retail and commercial spaces in high-footfall locations along this corridor have shown strong rental appreciation. Contact LSR Realty at +91 8448660019 for an investment analysis specific to your budget and objectives.' } },
+      { '@type': 'Question', name: 'How can I book or lease space in Elan Miracle Sector 84?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for leasing and investment enquiries for Elan Miracle, Sector 84, Dwarka Expressway. LSR Realty is an authorised channel partner for Elan Group and can guide you on available units, pricing, and payment terms.' } },
+    ],
+  },
+  'elan-mercado': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Elan Mercado in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Mercado is a flagship retail and food court destination by Elan Group in Sector 80, NH 8, Gurugram — a landmark commercial project in New Gurgaon. It serves the large residential catchment across New Gurugram sectors and benefits from direct NH 8 visibility and proximity to IMT Manesar.' } },
+      { '@type': 'Question', name: 'What types of shops and spaces are available in Elan Mercado?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Mercado offers retail shops, food and beverage units, entertainment zones, and high-street commercial spaces in Sector 80, NH 8. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to enquire about current availability, unit sizes, lease rents, and investment options.' } },
+      { '@type': 'Question', name: 'Where is Elan Mercado located?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Mercado is located in Sector 80, right on NH 8 (Delhi-Jaipur Highway), Gurugram. It is 5 minutes from IMT Manesar, connected to Dwarka Expressway and Golf Course Extension Road, and surrounded by large residential townships in New Gurugram.' } },
+    ],
+  },
+  'elan-epic': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Elan Epic in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Epic is a mixed-use commercial project by Elan Group in Sector 70, Southern Peripheral Road (SPR), Gurugram. It includes retail units, office spaces, and food and beverage zones in a growing corridor between Golf Course Extension Road and Sohna Road.' } },
+      { '@type': 'Question', name: 'How to lease space in Elan Epic Sector 70 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is an authorised leasing and investment advisor for Elan Epic, Sector 70, Southern Peripheral Road. Contact us at +91 8448660019 or marketing@lsrrealty.com for available unit details, current asking rents, investment pricing, and lease terms.' } },
+    ],
+  },
+  'aipl-joy-district': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Joy District in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy District is a commercial and retail development by AIPL (Advance India Projects Limited) in Sector 88, Gurugram. It is part of the AIPL Joy series of retail and commercial properties on Dwarka Expressway and the adjoining corridors, targeting the large residential population in New Gurugram sectors.' } },
+      { '@type': 'Question', name: 'Is AIPL Joy District on Dwarka Expressway a good retail investment?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy District in Sector 88 benefits from proximity to Dwarka Expressway, KMP Expressway connectivity, and the dense residential catchment of New Gurugram. As a ready project in an established AIPL township, it offers immediate rental income potential. Contact LSR Realty at +91 8448660019 for a current investment analysis and available units.' } },
+      { '@type': 'Question', name: 'How do I lease or invest in AIPL Joy District Sector 88?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for leasing and investment enquiries for AIPL Joy District, Sector 88, Gurugram. As an authorised AIPL channel partner, LSR Realty can provide unit details, pricing, lease terms, and investment outlook for this project.' } },
+    ],
+  },
+  'aipl-joy-square': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Joy Square in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Square is a high-street retail and commercial development by AIPL in Sector 63A, Golf Course Extension Road, Gurugram. It caters to the premium residential communities surrounding GCER and offers retail shops, F&B units, and commercial office floors in a well-connected micro-market.' } },
+      { '@type': 'Question', name: 'What types of spaces are available in AIPL Joy Square Sector 63A?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Square offers retail shops at ground and upper level, food and beverage units, and commercial spaces targeting Golf Course Extension Road\'s premium residential catchment. Contact LSR Realty at +91 8448660019 for current unit availability, lease rents, and investment pricing.' } },
+      { '@type': 'Question', name: 'Where is AIPL Joy Square located?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Square is located in Sector 63A, off Golf Course Extension Road, Gurugram. It is close to DLF The Arbour, M3M Golf Estate, and over 18 educational institutions. The Sector 55-56 Rapid Metro station is approximately 4.8 km away.' } },
+    ],
+  },
+  'aipl-joy-central': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Joy Central in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Central is a prominent retail mall and commercial hub by AIPL in Sector 65, Golf Course Extension Road, Gurugram. Located 0.3 km from the main GCER artery, it offers retail units, food and beverage zones, entertainment, and office spaces in one of GCER\'s highest-footfall locations.' } },
+      { '@type': 'Question', name: 'How do I lease a retail shop in AIPL Joy Central Sector 65?', acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is an authorised leasing advisor for AIPL Joy Central, Sector 65, Golf Course Extension Road. Call +91 8448660019 or email marketing@lsrrealty.com for available units, current asking rents, fit-out conditions, and current tenant mix details.' } },
+      { '@type': 'Question', name: 'Is AIPL Joy Central a good investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Central in Sector 65 commands one of the most active retail catchments on Golf Course Extension Road, with 18+ hospitals and schools nearby and a large premium residential population. As a stabilised mall with existing footfall, it offers investors the opportunity for rental income. For a current investment analysis and available units, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'aipl-joy-gallery': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Joy Gallery in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Joy Gallery is a high-street retail development by AIPL in Sector 66, Golf Course Extension Road, Gurugram. Located near AIPL Joy Central and M3M Golf Estates, it targets the dense premium residential community on GCER and offers retail units designed for lifestyle, fashion, and F&B brands.' } },
+      { '@type': 'Question', name: 'How can I lease space in AIPL Joy Gallery Sector 66?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for leasing and investment in AIPL Joy Gallery, Sector 66, Golf Course Extension Road. LSR Realty is an authorised AIPL advisor and can provide unit sizes, current asking rents, lease terms, and occupancy information.' } },
+    ],
+  },
+  'gardencity-arcade': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is DLF Gardencity Arcade in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Gardencity Arcade is a neighbourhood retail and commercial development by DLF in Sector 92, Gurugram, within the large DLF Gardencity township. It serves the residential population of DLF Gardencity and surrounding New Gurugram sectors and offers retail units, food and beverage spaces, and commercial offices.' } },
+      { '@type': 'Question', name: 'Is DLF Gardencity Arcade a good investment?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Gardencity Arcade in Sector 92 benefits from a captive residential catchment within the DLF Gardencity township, with IMT Manesar and DLF Corporate Greens nearby. As the area develops with proposed metro connectivity, commercial assets here may see increasing footfall. Contact LSR Realty at +91 8448660019 for current investment pricing and rental yield analysis.' } },
+      { '@type': 'Question', name: 'How do I reach DLF Gardencity Arcade from Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Gardencity Arcade is in Sector 92, Gurugram, approximately 8 km from NH 48 and 7 km from Dwarka Expressway (NPR). It is within the DLF Gardencity township, accessible from Pataudi Road and the Sector 92 internal road network.' } },
+    ],
+  },
+  'landmark-one': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Landmark One in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Landmark One is a premium commercial and retail development in Sector 67, Golf Course Extension Road, Gurugram. It offers office and retail spaces starting at ₹3 crore, positioned to serve the dense premium residential and corporate population on GCER. LSR Realty is an authorised advisor for Landmark One.' } },
+      { '@type': 'Question', name: 'What is the price of Landmark One Sector 67 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Landmark One in Sector 67, Golf Course Extension Road, Gurugram is priced starting at ₹3 crore onwards. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current unit pricing, floor availability, and investment analysis.' } },
+      { '@type': 'Question', name: 'Is Landmark One Sector 67 a good commercial investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Landmark One in Sector 67 sits on Golf Course Extension Road, one of Gurgaon\'s highest-appreciation commercial corridors. With Sector 55-56 Rapid Metro nearby and strong connectivity to NH 48 and Sohna Road, it is well-positioned for commercial investment. Call LSR Realty at +91 8448660019 for a detailed investment analysis.' } },
+    ],
+  },
+  'emaar-ibc': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Emaar India Business Centre in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Emaar India Business Centre (IBC) is a Grade A commercial office development by Emaar India in Sector 65, Golf Course Extension Road, Gurugram. Developed by one of the world\'s largest real estate developers, it offers premium office floors in a prime GCER corporate corridor with proximity to Rapid Metro and major residential communities.' } },
+      { '@type': 'Question', name: 'How do I lease office space at Emaar India Business Centre Sector 65?', acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is an authorised leasing advisor for Emaar India Business Centre, Sector 65, Golf Course Extension Road. Contact us at +91 8448660019 or marketing@lsrrealty.com for available floors, current lease rents per sqft, lock-in period terms, and fit-out allowance details.' } },
+      { '@type': 'Question', name: 'Is Emaar India Business Centre a good office investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Emaar India Business Centre on Golf Course Extension Road, Sector 65, offers Grade A office floors from an internationally recognised developer with a strong track record in India. GCER\'s prime corridor connectivity, Rapid Metro proximity, and premium tenant profile make this a solid commercial investment option. Contact LSR Realty at +91 8448660019 for current investment pricing and rental yield data.' } },
+    ],
+  },
+  'dlf-cybercity': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is DLF Cybercity in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Cybercity is one of India\'s most iconic integrated business districts, developed by DLF in DLF Phase 2, Gurugram. It houses the headquarters and India offices of global technology, consulting, and financial services companies. DLF CyberHub — one of Delhi NCR\'s top dining and entertainment destinations — is located within the Cybercity campus.' } },
+      { '@type': 'Question', name: 'How do I lease office space in DLF Cybercity Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Office space in DLF Cybercity is leased through authorised advisors. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to enquire about available floors, current lease rents, unit sizes, and lease terms within the DLF Cybercity campus.' } },
+      { '@type': 'Question', name: 'What companies are in DLF Cybercity Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Cybercity, Gurugram houses the offices of numerous Fortune 500 and global companies including American Express, Hewitt, Sapient, and many financial services, technology, and consulting firms. The Cybercity campus is walking distance from Cybercity Metro Station (Yellow Line) and directly adjacent to DLF CyberHub.' } },
+    ],
+  },
+  'godrej-gcr': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Godrej GCR in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Godrej GCR is a Grade A commercial office development by Godrej Properties on Golf Course Road, Gurugram. Located in the heart of Gurgaon\'s established business district, it offers premium office floors with excellent metro and road connectivity, proximity to luxury hospitality, and a premium tenant profile.' } },
+      { '@type': 'Question', name: 'How do I lease office space in Godrej GCR Golf Course Road?', acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is an authorised advisor for Godrej GCR, Golf Course Road, Gurgaon. Contact us at +91 8448660019 or email marketing@lsrrealty.com for available floor details, current lease rents per sqft, lock-in period terms, and handover conditions.' } },
+      { '@type': 'Question', name: 'Is Godrej GCR a good commercial investment on Golf Course Road?', acceptedAnswer: { '@type': 'Answer', text: 'Godrej GCR on Golf Course Road offers Grade A office space from India\'s most trusted developer brand in Gurgaon\'s premier corporate corridor. Golf Course Road\'s mature commercial ecosystem, strong metro connectivity, and premium tenant base make it one of Gurgaon\'s most liquid commercial investment markets. Contact LSR Realty at +91 8448660019 for investment analysis and current pricing.' } },
+    ],
+  },
+  'vatika-first-india-place': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Vatika First India Place in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika First India Place is a premium Grade A office complex by Vatika Group on MG Road (Mehrauli-Gurgaon Road), Gurugram. Located in central Gurgaon, it is one of the most prestigious office addresses on MG Road with excellent metro connectivity and proximity to Delhi.' } },
+      { '@type': 'Question', name: 'How do I lease office space at Vatika First India Place MG Road?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com for office leasing in Vatika First India Place, MG Road, Gurugram. LSR Realty can provide available floor details, current rents, lease terms, and handover conditions.' } },
+      { '@type': 'Question', name: 'Is MG Road Gurgaon good for office investment?', acceptedAnswer: { '@type': 'Answer', text: 'MG Road is one of Gurgaon\'s most established commercial corridors, offering strong metro connectivity (Sikanderpur and MG Road stations on the Yellow Line) and proximity to both Cyber City and the Delhi border. Grade A offices here command stable rental yields from established multinational tenants. Contact LSR Realty for a current investment and lease analysis.' } },
+    ],
+  },
+  'vatika-business-park': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Vatika Business Park in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika Business Park is a Grade A commercial office development by Vatika Group on Sohna Road, Gurugram. It offers premium office floors with good connectivity to NH 48, Golf Course Extension Road, and Sohna Road\'s growing corporate and residential ecosystem.' } },
+      { '@type': 'Question', name: 'How do I lease office space at Vatika Business Park Sohna Road?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to enquire about office leasing in Vatika Business Park, Sohna Road, Gurugram. We can provide current floor availability, lease rent per sqft, and lease term details.' } },
+    ],
+  },
+  'vatika-professional-point': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Vatika Professional Point in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika Professional Point is a premium office complex by Vatika Group at the Golf Course Extension Road and Sohna Road junction, Gurugram. The dual road frontage and proposed metro station walking distance make it one of the best-connected commercial addresses in GCER.' } },
+      { '@type': 'Question', name: 'How do I lease or invest in Vatika Professional Point Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com for leasing and investment in Vatika Professional Point at Golf Course Extension Road and Sohna Road junction. LSR Realty is an authorised Vatika advisor and can provide available floors, lease rents, and investment pricing.' } },
+      { '@type': 'Question', name: 'Is Vatika Professional Point a good investment at the GCER Sohna Road junction?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika Professional Point sits at the intersection of Golf Course Extension Road and Sohna Road, two of Gurgaon\'s highest-traffic corridors, with a proposed metro station walking distance. This dual connectivity — combined with Vatika\'s established tenancy track record — makes it an attractive commercial investment. Contact LSR Realty for current pricing and rental yield data.' } },
+    ],
+  },
+  'magnum-one-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Magnum One in Faridabad?', acceptedAnswer: { '@type': 'Answer', text: 'Magnum One is a Grade A commercial office complex in Sector 37, Mathura Road, Faridabad, walking distance from Badarpur Metro Station (Delhi Metro Violet Line). It offers premium office floors in one of Faridabad\'s most accessible corporate locations, with excellent connectivity to south Delhi and the NCR.' } },
+      { '@type': 'Question', name: 'How do I lease office space in Magnum One Faridabad?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in Magnum One, Sector 37, Mathura Road, Faridabad. LSR Realty can provide available floor sizes, current lease rents, and lease term details.' } },
+    ],
+  },
+  'magnum-one-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is Magnum One Faridabad a good commercial investment?', acceptedAnswer: { '@type': 'Answer', text: 'Magnum One in Sector 37, Mathura Road, Faridabad is walking distance from Badarpur Metro Station, 300 metres from Mohan Cooperative Industrial Estate, and offers access to the south Delhi corporate belt. Commercial office assets with metro proximity in this corridor have shown stable rental yields. Contact LSR Realty at +91 8448660019 for current investment pricing and rental yield analysis.' } },
+      { '@type': 'Question', name: 'What is the investment price for office space in Magnum One Faridabad?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for office space in Magnum One, Sector 37, Faridabad is available on request. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current per-sqft investment pricing, available floor plans, and rental yield projections.' } },
+    ],
+  },
+  'magnum-global-park-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Magnum Global Park in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Magnum Global Park is a premium Grade A office complex in Sector 58, Golf Course Extension Road, Gurugram. It is the home of LSR Realty\'s own office (Unit 911, 9th Floor) and one of the most active office leasing markets on GCER. The building offers flexible floor plates, Rapid Metro access within 1 km, and proximity to the GCER corporate corridor.' } },
+      { '@type': 'Question', name: 'How do I lease office space in Magnum Global Park Sector 58?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in Magnum Global Park, Sector 58, Golf Course Extension Road, Gurugram. We are based in this building and have direct knowledge of current availability, lease rents, and floor conditions.' } },
+      { '@type': 'Question', name: 'What is the location of Magnum Global Park on Golf Course Extension Road?', acceptedAnswer: { '@type': 'Answer', text: 'Magnum Global Park is in Sector 58, Golf Course Extension Road, Gurugram, approximately 1 km from the Sector 55-56 Rapid Metro station. It has direct NH 48 and Cyber City access and is surrounded by a dense cluster of multinational companies, hospitality, and educational institutions.' } },
+    ],
+  },
+  'magnum-global-park-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is Magnum Global Park a good commercial investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Magnum Global Park in Sector 58, Golf Course Extension Road, is a stabilised Grade A office building with strong demand from MNCs and corporate occupiers. Its Rapid Metro proximity, GCER corridor positioning, and established tenant profile make it a liquid commercial investment. Contact LSR Realty at +91 8448660019 — we are based in this building — for current investment pricing and rental yield data.' } },
+      { '@type': 'Question', name: 'What is the investment price per sqft for Magnum Global Park?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for Magnum Global Park, Sector 58, Golf Course Extension Road, Gurugram is available on request. Call LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current per-sqft investment price, available floor plans, rental yield, and lock-in period details.' } },
+    ],
+  },
+  'dlf-corporate-greens-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is DLF Corporate Greens in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Corporate Greens is a premium Grade A IT/ITES park by DLF in Sector 74A, Southern Peripheral Road, Gurugram. Spread across a large campus with green landscaping and world-class amenities, it houses global MNC tenants and is one of the flagship office destinations on SPR with easy access to NH 48 and Dwarka Expressway.' } },
+      { '@type': 'Question', name: 'How do I lease office space at DLF Corporate Greens SPR Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in DLF Corporate Greens, Sector 74A, Southern Peripheral Road. LSR Realty is an authorised DLF channel partner and can provide available floor sizes, lease rents, handover conditions, and lease terms.' } },
+      { '@type': 'Question', name: 'Is DLF Corporate Greens on Southern Peripheral Road a premium office location?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, DLF Corporate Greens in Sector 74A is a flagship DLF campus with LEED-certified buildings, large floor plates suitable for MNC headquarters, and easy access to both NH 48 and the upcoming SPR-Dwarka Expressway metro. Global technology and consulting companies have leased significant space here. Contact LSR Realty at +91 8448660019 for current leasing details.' } },
+    ],
+  },
+  'dlf-corporate-greens-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is DLF Corporate Greens Sector 74A a good investment?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Corporate Greens on Southern Peripheral Road is a campus-format Grade A office complex with MNC tenants, LEED certification, and upcoming metro connectivity. DLF\'s track record as India\'s largest real estate developer adds investment-grade quality to the asset. Contact LSR Realty at +91 8448660019 for current investment pricing, available floor details, and rental yield projections.' } },
+      { '@type': 'Question', name: 'What is the investment price for DLF Corporate Greens Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for office floors in DLF Corporate Greens, Sector 74A, Southern Peripheral Road, Gurugram is available on request. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current per-sqft pricing, available floor plans, and anticipated rental yield.' } },
+    ],
+  },
+  'aipl-business-club-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Business Club in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Business Club is a premium Grade A office complex by AIPL in Sector 62, Golf Course Extension Road, Gurugram. Adjacent to Artemis Hospital and positioned on GCER, it offers office floors with flexible configurations ranging from single floors to multi-floor blocks, targeting corporate occupiers and investors.' } },
+      { '@type': 'Question', name: 'How do I lease office space in AIPL Business Club Sector 62?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com for leasing enquiries at AIPL Business Club, Sector 62, Golf Course Extension Road. LSR Realty is an authorised AIPL advisor and can provide current availability, lease rents per sqft, and lock-in period terms.' } },
+    ],
+  },
+  'aipl-business-club-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is AIPL Business Club Sector 62 a good commercial investment?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Business Club in Sector 62, Golf Course Extension Road is positioned near Artemis Hospital and 20 metres from Imperia Mindspace, in a densely developed GCER micro-market. As a ready-to-occupy office building with active leasing demand, it offers immediate rental income potential. Contact LSR Realty at +91 8448660019 for investment pricing and rental yield analysis.' } },
+      { '@type': 'Question', name: 'What is the price to buy office space in AIPL Business Club Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for AIPL Business Club, Sector 62, Golf Course Extension Road, Gurugram is available on request. Call LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current per-sqft pricing and available floor plans.' } },
+    ],
+  },
+  'aipl-statement-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Statement in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Statement is a premium Grade A office complex by AIPL in Sector 66, Golf Course Extension Road, Gurugram. The building offers large floor plates of 24,000 to 30,000 sqft per floor, suitable for corporate headquarters and large teams. It is ready to occupy and available through LSR Realty.' } },
+      { '@type': 'Question', name: 'How do I lease office space in AIPL Statement Sector 66?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to enquire about office leasing in AIPL Statement, Sector 66, Golf Course Extension Road. We are an authorised AIPL advisor and can provide available floors, current lease rents, lock-in period details, and fit-out allowance.' } },
+    ],
+  },
+  'aipl-statement-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is AIPL Statement Sector 66 a good commercial investment?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Statement in Sector 66, Golf Course Extension Road, offers large 24,000 to 30,000 sqft floor plates in a ready building near AIPL Joy Central and Grand Hyatt. Ready-to-occupy offices in GCER with established amenities and corporate neighbours typically command strong rental yields. Contact LSR Realty at +91 8448660019 for investment pricing and available floor details.' } },
+      { '@type': 'Question', name: 'What is the investment price for AIPL Statement Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for AIPL Statement, Sector 66, Golf Course Extension Road is available on request. Call LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current per-sqft pricing, available floor plans, anticipated yield, and lock-in period details.' } },
+    ],
+  },
+  'aipl-autograph-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Autograph in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Autograph is a flagship Grade A office complex by AIPL in Sector 66, Golf Course Extension Road, Gurugram. It offers large floor plates of 25,000 to 50,000 sqft per floor — among the largest available on GCER — suitable for large corporate headquarters. It is ready to occupy and available for leasing.' } },
+      { '@type': 'Question', name: 'How do I lease office space in AIPL Autograph Sector 66?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in AIPL Autograph, Sector 66, Golf Course Extension Road. LSR Realty is an authorised AIPL advisor and can provide available floors, current lease rents, and handover terms.' } },
+    ],
+  },
+  'aipl-autograph-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is AIPL Autograph Sector 66 a good office investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Autograph in Sector 66 offers some of the largest floor plates on Golf Course Extension Road (25,000 to 50,000 sqft), appealing to corporate HQ occupiers. Located near AIPL Joy Central, Sector 55-56 Metro at 5.6 km, and CK Birla Hospital, it is in a well-developed micro-market. Contact LSR Realty at +91 8448660019 for investment pricing and rental yield analysis.' } },
+      { '@type': 'Question', name: 'What is the price to buy office in AIPL Autograph Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for AIPL Autograph, Sector 66, GCER is available on request. Call LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current per-sqft investment price and available floor details.' } },
+    ],
+  },
+  'aipl-signature-lease': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Signature in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Signature is a premium Grade A office building by AIPL in Sector 65, Golf Course Extension Road, Gurugram. Adjacent to AIPL Joy Gallery (350 metres) and close to 18+ hospitals including CK Birla, Artemis, and Medanta, it targets corporate occupiers seeking a central GCER address.' } },
+      { '@type': 'Question', name: 'How do I lease office space in AIPL Signature Sector 65?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in AIPL Signature, Sector 65, Golf Course Extension Road. We are an authorised AIPL advisor and can provide available floors, current lease rents per sqft, and lease terms.' } },
+    ],
+  },
+  'aipl-signature-invest': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is AIPL Signature Sector 65 a good commercial investment?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Signature in Sector 65, Golf Course Extension Road, is close to AIPL Joy Gallery, DPS, St Xavier\'s, and 18+ hospitals, in one of the most active corporate micro-markets on GCER. Ready-to-occupy offices here offer investors immediate rental income. Contact LSR Realty at +91 8448660019 for current investment pricing and rental yield projections.' } },
+      { '@type': 'Question', name: 'What is the investment price for office in AIPL Signature Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Investment pricing for AIPL Signature, Sector 65, Golf Course Extension Road, is available on request. Call LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for current pricing, available floor plans, and rental yield data.' } },
+    ],
+  },
+  'vatika-inxt-city-centre': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Vatika INXT City Centre in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika INXT City Centre is a premium Grade A office complex by Vatika Group in Sector 83, at the NH 48 and Dwarka Expressway intersection, Gurugram. It is part of the 550-acre Vatika India Next township, adjacent to Hyatt Regency Hotel, and near a proposed ISBT and Metro Hub. A 25-minute signal-free drive to IGI Airport makes it ideal for aviation-adjacent corporate occupiers.' } },
+      { '@type': 'Question', name: 'How do I lease office space in Vatika INXT City Centre Sector 83?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in Vatika INXT City Centre, Sector 83, NH 48, Gurugram. Floor sizes range from 16,000 to 26,000 sqft per floor. LSR Realty can provide available floors, current rents, and lease terms.' } },
+      { '@type': 'Question', name: 'Is Vatika INXT City Centre on NH 48 good for office investment?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika INXT City Centre at Sector 83, NH 48, is part of a 550-acre integrated township with hospitality (Hyatt Regency), retail, and residential components. The NH 48 and Dwarka Expressway intersection position, airport proximity, and proposed Metro Hub make it a strong long-term commercial investment. Contact LSR Realty at +91 8448660019 for current pricing.' } },
+    ],
+  },
+  'vatika-one-on-one': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Vatika One On One in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika One On One is a premium standalone Grade A office building by Vatika Group in Sector 16, right on NH 48, Gurugram. Adjacent to The Westin Hotel and 16 km from IGI Airport, it occupies a flagship NH 48 corporate corridor position and is one of Gurgaon\'s most visible commercial addresses on the Delhi-Jaipur Highway.' } },
+      { '@type': 'Question', name: 'How do I lease office space in Vatika One On One Sector 16?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com to enquire about office leasing in Vatika One On One, Sector 16, NH 48, Gurugram. LSR Realty is an authorised Vatika advisor and can provide available floors, current lease rents, and lease terms.' } },
+      { '@type': 'Question', name: 'What are the main connectivity advantages of Vatika One On One on NH 48?', acceptedAnswer: { '@type': 'Answer', text: 'Vatika One On One on NH 48, Sector 16, Gurugram, is 16 km from IGI Airport on a signal-free drive, adjacent to The Westin Hotel, and directly on the Delhi-Jaipur Highway with excellent visibility. The location suits companies needing frequent air connectivity, international client visits, or NH 48 brand presence.' } },
+    ],
+  },
+  'elan-empire': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Elan Empire in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Empire is a large-format mixed-use development by Elan Group in Sector 66, Golf Course Extension Road, Gurugram. It combines retail, office, and F&B / restaurant spaces in a ready-to-occupy structure positioned 2 minutes from Sohna Road and 5 minutes from NH 8, in a densely populated premium GCER micro-market.' } },
+      { '@type': 'Question', name: 'How do I lease space in Elan Empire Sector 66 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com for leasing and investment enquiries for Elan Empire, Sector 66, Golf Course Extension Road. LSR Realty is an authorised Elan channel partner and can provide available unit sizes, lease rents, and investment pricing for retail, office, and F&B spaces.' } },
+      { '@type': 'Question', name: 'Is Elan Empire Sector 66 a good commercial investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Elan Empire in Sector 66 offers a mixed-use format — retail, office, F&B — in a prime GCER location with a dense premium residential catchment and proximity to major arterial roads. Ready-to-occupy mixed-use assets in GCER\'s core micro-markets have shown stable leasing demand. Contact LSR Realty at +91 8448660019 for current investment pricing and rental yield analysis.' } },
+    ],
+  },
+  'aipl-masterpiece': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is AIPL Masterpiece in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Masterpiece is a premium Grade A commercial office development by AIPL on Golf Course Road, Gurugram. Located in Gurgaon\'s established commercial district, it offers office spaces of 6,000 to 40,000 sqft and is ready to occupy, targeting corporate tenants seeking Golf Course Road prestige with excellent metro and road connectivity.' } },
+      { '@type': 'Question', name: 'How do I lease office space in AIPL Masterpiece Golf Course Road?', acceptedAnswer: { '@type': 'Answer', text: 'Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to enquire about office leasing in AIPL Masterpiece, Golf Course Road, Gurugram. LSR Realty is an authorised AIPL advisor and can provide available floor details, current lease rents per sqft, lock-in period terms, and handover conditions.' } },
+      { '@type': 'Question', name: 'Is AIPL Masterpiece on Golf Course Road a good investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'AIPL Masterpiece on Golf Course Road, Gurugram benefits from one of Gurgaon\'s most prestigious office addresses with strong metro connectivity, proximity to luxury hospitality, and a blue-chip tenant ecosystem. Golf Course Road Grade A offices have historically commanded strong rental yields and capital appreciation. Contact LSR Realty at +91 8448660019 for current investment pricing.' } },
+    ],
+  },
 };
 
 // ── Project detail pages ──────────────────────────────────────────────────────
