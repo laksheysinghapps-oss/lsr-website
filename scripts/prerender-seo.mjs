@@ -355,6 +355,13 @@ const staticRoutes = [
       description: '75+ approved sector layout plans for Gurugram, including the official Gurgaon Manesar Master Plan 2031. Maintained by LSR Realty for property investors and planners.',
       url: `${SITE_URL}/maps`,
       numberOfItems: SECTOR_MAPS.length,
+      hasPart: SECTOR_MAPS.map((s, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: s.name,
+        url: `${SITE_URL}/maps/${s.id}`,
+        image: `${SITE_URL}${s.zoom}`,
+      })),
       about: {
         '@type': 'Place',
         name: 'Gurugram',
@@ -1145,15 +1152,22 @@ function makeSectorFAQ(sector) {
 // HowTo schema for every map page — enables How-to rich results in Google SERP
 function makeMapHowTo(sector) {
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
+  const isSohnaPlan = sector.id === 'sohna-master-plan-2031';
+  const isAnyMasterPlan = isMasterPlan || isSohnaPlan;
+  const planLabel = isMasterPlan ? 'Gurgaon Master Plan 2031' : isSohnaPlan ? 'Sohna Master Plan 2031' : sector.name;
   return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: isMasterPlan
       ? 'How to Download Gurgaon Master Plan 2031 Map for Free'
-      : `How to Download ${sector.name} Gurgaon Layout Map for Free`,
+      : isSohnaPlan
+        ? 'How to Download Sohna Master Plan 2031 Map for Free'
+        : `How to Download ${sector.name} Gurgaon Layout Map for Free`,
     description: isMasterPlan
       ? 'Free download guide for the official Gurgaon Manesar Master Plan 2031 map from LSR Realty — no registration or payment required.'
-      : `Free download guide for the official ${sector.name} Gurgaon layout plan — DTCP Haryana approved, no registration required.`,
+      : isSohnaPlan
+        ? 'Free download guide for the official Sohna Master Plan 2031 (DGTCP Haryana) — no registration or payment required.'
+        : `Free download guide for the official ${sector.name} Gurgaon layout plan — DTCP Haryana approved, no registration required.`,
     step: [
       {
         '@type': 'HowToStep',
@@ -1166,7 +1180,7 @@ function makeMapHowTo(sector) {
         '@type': 'HowToStep',
         position: 2,
         name: 'View the full-resolution image',
-        text: `Click or tap the ${isMasterPlan ? 'Gurgaon Master Plan 2031' : sector.name} map thumbnail to open the full high-resolution DTCP Haryana approved layout image.`,
+        text: `Click or tap the ${planLabel} map thumbnail to open the full high-resolution ${isAnyMasterPlan ? 'approved' : 'DTCP Haryana approved'} layout image.`,
       },
       {
         '@type': 'HowToStep',
@@ -1317,6 +1331,141 @@ const SECTOR_MAP_FAQS = {
       { '@type': 'Question', name: 'Is DLF Garden City a good property investment in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Garden City in Sectors 91-93 has seen consistent appreciation driven by the completion of Dwarka Expressway and the growth of New Gurugram. DLF\'s brand, township infrastructure, and proximity to IMT Manesar and the upcoming metro corridor contribute to investment appeal. Contact LSR Realty at +91 8448660019 for current land and floor pricing in DLF Garden City.' } },
     ],
   },
+  'sohna-master-plan-2031': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sohna Master Plan 2031 PDF for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sohna Master Plan 2031 (Sohna Tehsil, Haryana) is available as a free high-resolution download at lsrrealty.com/maps/sohna-master-plan-2031. The map covers land use zones, road corridors, and development boundaries for Sohna tehsil including the KMP Expressway belt. No registration required.' } },
+      { '@type': 'Question', name: 'What does the Sohna Master Plan 2031 cover?', acceptedAnswer: { '@type': 'Answer', text: 'The Sohna Master Plan 2031 is Haryana government\'s land use blueprint for Sohna tehsil, covering residential, commercial, industrial (including warehousing along KMP Expressway), institutional, and green zones. It governs approvals for new projects in Sohna, Bhondsi, Badshahpur, and villages along Southern Peripheral Road (SPR), Gurgaon-Faridabad Road, and the KMP corridor.' } },
+      { '@type': 'Question', name: 'Is Sohna a good real estate investment under the 2031 Master Plan?', acceptedAnswer: { '@type': 'Answer', text: 'Sohna tehsil has emerged as a key investment zone for affordable to mid-segment housing owing to connectivity via KMP Expressway, Southern Peripheral Road, and the proposed Orbital Rail Corridor. Under the Sohna Master Plan 2031, significant residential and commercial land has been designated for development. Contact LSR Realty at +91 8448660019 for current Sohna investment analysis.' } },
+    ],
+  },
+  'sector-43': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 43 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 43 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-43. The DTCP Haryana approved map shows residential plot boundaries, road widths, and land use zones for this Golf Course Road sector adjacent to DLF Phase 5. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 43 Gurgaon near DLF Phase 5?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 43, Gurgaon, is the administrative sector that includes DLF Phase 5 — a premier residential enclave with villas, independent floors, and DLF Club 5 along Golf Course Road. The sector is quiet and posh, bordered by Sector 42 (DLF Magnolias), and served by the Rapid Metro\'s Sector 53-54 station. It is one of the most desirable addresses on Golf Course Road.' } },
+      { '@type': 'Question', name: 'What is the property rate in Sector 43 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 43, Golf Course Road (DLF Phase 5 area), is among Gurgaon\'s premium land rate zones. Independent floors and villas command significant premiums. For verified current pricing in Sector 43 Gurgaon, contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com.' } },
+    ],
+  },
+  'sector-46': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 46 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 46 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-46. The DTCP Haryana approved map shows residential and builder floor boundaries, road widths, and park areas in this central sector near Sohna Road and GCER. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 46 Gurgaon like as a residential area?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 46, Gurgaon, is a central HUDA residential sector near the junction of Sohna Road and Golf Course Extension Road. It is known for builder floors, mid-segment apartments, and reputed schools including The Heritage School. Strong social infrastructure and proximity to Rajiv Chowk and Sohna Road commercial belt make it a popular residential choice.' } },
+      { '@type': 'Question', name: 'What is the property rate in Sector 46 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 46, Gurgaon, is a mid-premium residential zone with competitive rates relative to neighbouring GCER sectors. For verified current property rates and investment analysis in Sector 46, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'sector-51': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 51 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 51 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-51. The DTCP Haryana approved map shows residential zone boundaries, road widths, and land use for this sector near Sohna Road and Medanta Hospital. No registration required.' } },
+      { '@type': 'Question', name: 'What are the key landmarks in Sector 51 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 51, Gurgaon, is known for Mayfield Gardens — a large residential township — and proximity to Artemis Hospital (approximately 2 km) and Medanta-The Medicity (approximately 3 km). The sector is near Sohna Road and NH 48 with a mix of mid-rise apartments and builder floors.' } },
+      { '@type': 'Question', name: 'Is Sector 51 Gurgaon good for property investment?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 51, Gurgaon, is a well-connected residential sector with healthcare infrastructure (Artemis, Medanta) and Sohna Road access, offering mid-segment entry points compared to prime GCER sectors. For current pricing and investment analysis in Sector 51, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'sector-52': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 52 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 52 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-52. The DTCP Haryana approved map shows residential and commercial zone boundaries, road widths, and park areas in this GCER-adjacent sector. No registration required.' } },
+      { '@type': 'Question', name: 'What is in Sector 52 Golf Course Extension Road Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 52, Gurgaon, is home to Ardee City — a large multi-developer township with apartments, builder floors, and good social infrastructure near Golf Course Extension Road and Sohna Road. Metro connectivity at Sector 55-56 (Rapid Metro) is approximately 3 km away.' } },
+      { '@type': 'Question', name: 'What is Ardee City Sector 52 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Ardee City is a large residential township in Sector 52, Gurgaon, comprising apartments and builder floors by multiple developers. It is known for its community layout, parks, and proximity to Golf Course Extension Road and Sohna Road. For current resale pricing in Ardee City, contact LSR Realty at +91 8448660019.' } },
+    ],
+  },
+  'south-city-1': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the South City 1 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The South City 1 (Sector 41) Gurgaon layout plan is available for free at lsrrealty.com/maps/south-city-1. The DTCP Haryana approved map shows Unitech colony plot boundaries, road widths, and residential zones in this Sector 41 enclave near NH 8. No registration required.' } },
+      { '@type': 'Question', name: 'What is South City 1 in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'South City 1 is a Unitech residential enclave in Sector 41, Gurgaon, near NH 8 and Golf Course Extension Road. It is known for independent floors, plotted residential units, and a quiet community character close to Millennium City Centre metro station. The colony is mature and well-established with good connectivity to MG Road and the Delhi-Gurgaon Expressway.' } },
+      { '@type': 'Question', name: 'Is South City 1 Gurgaon a good residential area?', acceptedAnswer: { '@type': 'Answer', text: 'South City 1, Sector 41, Gurgaon, is an established, mature residential colony with stable resale values and good NH 8 and metro connectivity. It is popular with families and professionals for its quiet character and proximity to Millennium City Centre Metro. Contact LSR Realty at +91 8448660019 for current pricing in South City 1.' } },
+    ],
+  },
+  'south-city-2': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the South City 2 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The South City 2 (Sectors 49-50) Gurgaon layout plan is available for free at lsrrealty.com/maps/south-city-2. The DTCP Haryana approved map shows Unitech township boundaries, road widths, apartment zones, and villa areas between Sohna Road and Golf Course Extension Road. No registration required.' } },
+      { '@type': 'Question', name: 'What is South City 2 Gurgaon known for?', acceptedAnswer: { '@type': 'Answer', text: 'South City 2 is a large Unitech township in Sectors 49 and 50, Gurgaon, between Sohna Road and Golf Course Extension Road. It is known for a mix of apartments, villas, and independent floors, Park Hospital, and reputed schools. The township has a large residential community with parks, sports facilities, and good connectivity to both Sohna Road and GCER.' } },
+      { '@type': 'Question', name: 'Is South City 2 Gurgaon a good property investment?', acceptedAnswer: { '@type': 'Answer', text: 'South City 2, spanning Sectors 49-50, offers mid-premium residential options between Sohna Road and GCER. The township is mature with strong demand from families. Property values track the Sohna Road corridor. Contact LSR Realty at +91 8448660019 for current resale pricing and investment analysis in South City 2.' } },
+    ],
+  },
+  'palam-vihar': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Palam Vihar Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Palam Vihar Gurgaon layout plan is available for free at lsrrealty.com/maps/palam-vihar. The DTCP Haryana approved map shows residential plot boundaries, road widths, and land use zones for this established colony near Sectors 1 and 2, close to the Delhi boundary. No registration required.' } },
+      { '@type': 'Question', name: 'What is Palam Vihar Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Palam Vihar is one of Gurgaon\'s oldest and most established residential colonies, near the Delhi-Gurgaon border and the Delhi Cantonment area. It is known for independent houses, bungalows, and a quiet, leafy character spanning multiple phases (Palam Vihar, Part 1, Part 2, Part 3), accessible from NH 48 and Dwarka Sector 21 Metro.' } },
+      { '@type': 'Question', name: 'Is Palam Vihar Gurgaon close to Delhi?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Palam Vihar is one of Gurgaon\'s closest colonies to Delhi — it borders the Delhi Cantonment and Dwarka, making it convenient for families working in Delhi or at the airport. The Dwarka Sector 21 Metro station is approximately 3-4 km away, and Palam Vihar railway station on the Delhi-Rewari rail line provides rail connectivity.' } },
+    ],
+  },
+  'sector-38': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 38 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 38 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-38. The DTCP Haryana approved map shows residential and commercial zone boundaries, road widths, and park areas for this Sohna Road sector near Medanta Hospital. No registration required.' } },
+      { '@type': 'Question', name: 'Is Sector 38 Gurgaon near Medanta Hospital?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, Sector 38, Gurgaon, is located close to Medanta-The Medicity on Sohna Road — one of India\'s largest super-speciality hospitals. The sector is also near Artemis Hospital and the HUDA City Centre Metro (Yellow Line). Its central location between Sohna Road and NH 48 makes it a well-connected residential area popular with medical professionals.' } },
+      { '@type': 'Question', name: 'What is the residential character of Sector 38 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 38, Gurgaon, is a centrally located HUDA sector with residential plots, builder floors, and mid-segment housing. Proximity to Medanta and Artemis hospitals, Sohna Road, and Golf Course Extension Road makes it attractive for families and professionals. Contact LSR Realty at +91 8448660019 for property enquiries in Sector 38.' } },
+    ],
+  },
+  'sector-39': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 39 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 39 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-39. The DTCP Haryana approved map shows residential plot boundaries, road widths, and commercial zones in this well-connected sector near HUDA City Centre Metro. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 39 Gurgaon known for?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 39, Gurgaon, is a residential HUDA sector known for proximity to HUDA City Centre Metro (Yellow Line), Artemis Hospital, Medanta Hospital, and reputed schools. The sector has a mix of builder floors and plotted residential units, and is a well-established central Gurgaon address with easy access to MG Road, Golf Course Road, and Sohna Road.' } },
+      { '@type': 'Question', name: 'Is Sector 39 Gurgaon near HUDA City Centre metro?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, Sector 39 is approximately 1-2 km from HUDA City Centre Metro station (Delhi Metro Yellow Line), making it one of the better-connected residential sectors in Gurgaon for daily commuters to Delhi and Cyber City. Metro connectivity significantly boosts rental demand for properties in Sector 39.' } },
+    ],
+  },
+  'sector-40': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the Sector 40 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The Sector 40 Gurgaon layout plan is available for free at lsrrealty.com/maps/sector-40. The DTCP Haryana approved map shows residential plot boundaries, parks, and road widths for this family-friendly HUDA sector near HUDA City Centre Metro. No registration required.' } },
+      { '@type': 'Question', name: 'What is Sector 40 Gurgaon known for?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 40, Gurgaon, is a family-friendly HUDA residential sector known for parks, local markets, and proximity to HUDA City Centre Metro. It has builder floors and plotted housing, with reputed schools and hospitals nearby. The sector is popular among families seeking a well-established central Gurgaon address.' } },
+      { '@type': 'Question', name: 'Is Sector 40 Gurgaon near HUDA City Centre metro?', acceptedAnswer: { '@type': 'Answer', text: 'Sector 40, Gurgaon, is approximately 2-3 km from HUDA City Centre Metro station and within easy reach of the Sector 39-44 commercial and healthcare belt, with central location between MG Road and Sohna Road for well-connected daily commuting.' } },
+    ],
+  },
+  'dlf-phase-1': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the DLF Phase 1 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The DLF Phase 1 (Sector 26A) Gurgaon layout plan is available for free at lsrrealty.com/maps/dlf-phase-1. The DTCP Haryana approved map shows DLF colony plot boundaries, road widths, and land use zones for this MG Road area. No registration required.' } },
+      { '@type': 'Question', name: 'What is DLF Phase 1 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 1 is an established DLF colony in Sector 26A, near MG Road, Gurgaon. It is known for independent houses, tree-lined streets, and proximity to DLF Cyber Hub — one of Gurgaon\'s most popular dining and entertainment destinations. The colony adjoins DLF Phase 2 and Cyber City, and is served by Sikanderpur Metro (Yellow Line).' } },
+      { '@type': 'Question', name: 'What is near DLF Phase 1 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 1, Sector 26A, is adjacent to DLF Cyber Hub, DLF Cyber City, MG Road, and Sikanderpur Metro station — one of Gurgaon\'s most premium addresses for both residential living and corporate campuses. NH 48 and the Delhi-Gurgaon expressway are approximately 3-4 km away.' } },
+    ],
+  },
+  'dlf-phase-2': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the DLF Phase 2 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The DLF Phase 2 (Sector 25) Gurgaon layout plan is available for free at lsrrealty.com/maps/dlf-phase-2. The DTCP Haryana approved map shows DLF colony plot boundaries, Cyber City corporate campus boundary, road widths, and land use zones. No registration required.' } },
+      { '@type': 'Question', name: 'What is DLF Phase 2 Gurgaon known for?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 2 is a mature DLF colony in Sector 25, Gurgaon, adjoining DLF Cyber City — the largest IT/ITES campus in India. It is known for independent houses and proximity to MG Road Metro. Companies like American Express, Cognizant, and IBM have large operations in the adjacent Cyber City.' } },
+      { '@type': 'Question', name: 'Is DLF Phase 2 near DLF Cyber City Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. DLF Phase 2 (Sector 25) directly adjoins DLF Cyber City — Gurgaon\'s premier IT/ITES hub with over 30 million sqft of Grade A office space. MG Road Metro and Sikanderpur Metro are within 1-2 km, providing easy Delhi connectivity and making DLF Phase 2 one of Gurgaon\'s most sought-after addresses for corporate professionals.' } },
+    ],
+  },
+  'dlf-phase-3': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the DLF Phase 3 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The DLF Phase 3 (Sector 24) Gurgaon layout plan is available for free at lsrrealty.com/maps/dlf-phase-3. The DTCP Haryana approved map shows colony plot boundaries, road widths, and land use for this NH 8-adjacent sector. No registration required.' } },
+      { '@type': 'Question', name: 'What is DLF Phase 3 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 3 is a mature DLF colony in Sector 24, Gurgaon, near NH 8. It is known for independent houses and proximity to Cyber City, Sikanderpur Metro, and the MG Road commercial belt. It is quieter and slightly more affordable than Phases 1 and 2 while offering strong DLF location advantages.' } },
+      { '@type': 'Question', name: 'Where is DLF Phase 3 in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 3 is in Sector 24, Gurgaon, between NH 8 (Delhi-Jaipur expressway) and Cyber City — approximately 2 km from Sikanderpur Metro and 3 km from IFFCO Chowk on the Delhi Metro Yellow Line.' } },
+    ],
+  },
+  'dlf-phase-4': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'How do I download the DLF Phase 4 Gurgaon map for free?', acceptedAnswer: { '@type': 'Answer', text: 'The DLF Phase 4 (Sector 28) Gurgaon layout plan is available for free at lsrrealty.com/maps/dlf-phase-4. The DTCP Haryana approved map shows DLF colony plot boundaries, road widths, and land use zones near Galleria Market and Golf Course Road. No registration required.' } },
+      { '@type': 'Question', name: 'What is DLF Phase 4 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 4 is a well-established DLF colony in Sector 28, Gurgaon, adjacent to Sushant Lok and known for DLF Galleria Market — one of Gurgaon\'s most popular retail and dining destinations. Near Golf Course Road, Sikanderpur Metro, and DLF Phase 5, the colony is popular for independent houses and premium living.' } },
+      { '@type': 'Question', name: 'What is near DLF Phase 4 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'DLF Phase 4, Sector 28, is close to DLF Galleria Market, Sushant Lok 1, Golf Course Road, and Sikanderpur Metro (approximately 2 km). It is approximately 3 km from HUDA City Centre Metro and 2 km from DLF Phase 5 (Sector 43).' } },
+    ],
+  },
 };
 
 // Per-sector keyword overrides — adds project and corridor keywords for key sectors
@@ -1338,6 +1487,23 @@ const SECTOR_MAP_KEYWORDS = {
   'dlf-phase-2': 'DLF Phase 2 map, DLF Phase 2 Gurgaon map download, DLF Phase 2 layout plan, DLF Phase 2 Sector 25, DLF Phase 2 free download, DLF Cyber City map, DLF Phase 2 MG Road, DLF Phase 2 Gurugram',
   'dlf-phase-3': 'DLF Phase 3 map, DLF Phase 3 Gurgaon map download, DLF Phase 3 layout plan, DLF Phase 3 Sector 24, DLF Phase 3 free download, DLF Phase 3 NH 8, DLF Phase 3 Gurugram',
   'dlf-phase-4': 'DLF Phase 4 map, DLF Phase 4 Gurgaon map download, DLF Phase 4 layout plan, DLF Phase 4 Sector 28, DLF Phase 4 free download, DLF Phase 4 Galleria Market, DLF Phase 4 Gurugram map',
+  'sohna-master-plan-2031': 'Sohna Master Plan 2031, Sohna Master Plan 2031 PDF, Sohna Master Plan 2031 free download, Sohna Master Plan 2031 map download, Sohna Master Plan Haryana, Sohna land use map 2031, Sohna township map, KMP Expressway Sohna map, Sohna tehsil development plan, Sohna Gurgaon property map, Sohna real estate map 2031, DGTCP Haryana Sohna plan, Sohna SPR map',
+  'sector-43': 'Sector 43 Gurgaon map, Sector 43 map download, Sector 43 layout plan, Sector 43 DLF Phase 5 Golf Course Road, Sector 43 free download, DLF Phase 5 Sector 43 map, Sector 43 Gurgaon property, DLF Club 5 Sector 43 map, Sector 43 Gurugram map, Golf Course Road Sector 43',
+  'sector-46': 'Sector 46 Gurgaon map, Sector 46 map download, Sector 46 layout plan Gurgaon, Sector 46 Sohna Road GCER, The Heritage School Sector 46, Sector 46 free download, Sector 46 builder floors map, Sector 46 Gurugram residential map, DTCP approved Sector 46 Gurgaon',
+  'sector-51': 'Sector 51 Gurgaon map, Sector 51 map download, Sector 51 layout plan, Sector 51 Sohna Road, Mayfield Gardens Sector 51, Sector 51 free download, Artemis Hospital Sector 51 Gurgaon, Sector 51 Gurugram map, Medanta Sector 51 Gurgaon, DTCP Sector 51 map',
+  'sector-52': 'Sector 52 Gurgaon map, Sector 52 map download, Sector 52 layout plan, Sector 52 Golf Course Extension Road, Ardee City Sector 52, Sector 52 free download, Ardee City map Gurgaon, Sector 52 Gurugram residential map, DTCP Sector 52 Gurgaon',
+  'south-city-1': 'South City 1 Gurgaon map, South City 1 map download, South City 1 layout plan, Sector 41 South City Gurgaon, South City 1 Unitech Gurgaon, South City 1 free download, South City 1 NH 8 Gurgaon, South City 1 Gurugram map, Millennium City Centre metro South City 1',
+  'south-city-2': 'South City 2 Gurgaon map, South City 2 map download, South City 2 layout plan, Sector 49 50 South City 2, South City 2 Unitech Gurgaon, South City 2 free download, South City 2 Sohna Road map, Park Hospital Sector 49 map, South City 2 Gurugram map, South City 2 villas Gurgaon',
+  'palam-vihar': 'Palam Vihar Gurgaon map, Palam Vihar map download, Palam Vihar layout plan, Palam Vihar Sector 1 2 Gurgaon, Palam Vihar free download, Palam Vihar Delhi border map, Palam Vihar independent houses map, Palam Vihar Gurugram map, Palam Vihar railway station area map',
+  'palam-vihar-part-1': 'Palam Vihar Part 1 Gurgaon map, Palam Vihar Part 1 map download, Palam Vihar Part 1 layout plan, Palam Vihar Part 1 free download, Palam Vihar Part 1 residential map, Palam Vihar Part 1 Gurugram',
+  'palam-vihar-part-2': 'Palam Vihar Part 2 Gurgaon map, Palam Vihar Part 2 map download, Palam Vihar Part 2 layout plan, Palam Vihar Part 2 free download, Palam Vihar Part 2 residential Gurgaon, Palam Vihar extension map',
+  'palam-vihar-part-3': 'Palam Vihar Part 3 Gurgaon map, Palam Vihar Part 3 map download, Palam Vihar Part 3 layout plan, Palam Vihar Part 3 free download, Palam Vihar Part 3 residential Gurgaon, Palam Vihar Part 3 near Delhi',
+  'sector-38': 'Sector 38 Gurgaon map, Sector 38 map download, Sector 38 layout plan, Sector 38 Sohna Road Gurgaon, Medanta Hospital Sector 38 map, Sector 38 free download, Sector 38 Gurugram, Artemis Hospital Sector 38 Gurgaon, DTCP approved Sector 38 map',
+  'sector-39': 'Sector 39 Gurgaon map, Sector 39 map download, Sector 39 layout plan, Sector 39 HUDA City Centre Gurgaon, Sector 39 free download, Sector 39 Gurugram residential, HUDA Metro Sector 39, Sector 39 builder floors Gurgaon, DTCP Sector 39 map',
+  'sector-40': 'Sector 40 Gurgaon map, Sector 40 map download, Sector 40 layout plan, Sector 40 HUDA Gurgaon, Sector 40 free download, Sector 40 Gurugram family residential, Sector 40 HUDA Metro Gurgaon, Sector 40 parks map, DTCP approved Sector 40 Gurgaon',
+  'sector-1-pataudi-road': 'Sector 1 Pataudi Road Gurgaon map, Sector 1 map download, Pataudi Road sector map Gurgaon, Sector 1 layout plan Gurgaon, Sector 1 Pataudi Road free download, Pataudi Road residential plots map, New Gurgaon sector 1 map',
+  'sector-31-new-colony': 'Sector 31 Gurgaon map, Sector 31 map download, New Colony Gurgaon map, Sector 31 New Colony layout plan, Sector 31 free download, Sector 31 Gurgaon residential, New Colony map Gurgaon, DTCP Sector 31 Gurgaon',
+  'sector-32-33-34': 'Sector 32 33 34 Gurgaon map, Sector 32 map download, Sector 33 Gurgaon map, Sector 34 layout plan, Sector 32 34 schools Gurgaon, Sector 32 free download, institutional zone Gurgaon map, DTCP Sector 32 33 34',
 };
 
 for (const sector of SECTOR_MAPS) {
