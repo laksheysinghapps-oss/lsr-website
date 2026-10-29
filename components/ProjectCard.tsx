@@ -8,12 +8,11 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  return (
-    <Link
-      to={`/projects/${project.id}`}
-      className="group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative block"
-      onClick={() => window.scrollTo(0, 0)}
-    >
+  const isMaxEstate59 = project.id === 'max-estate-59';
+  const cardClass = "group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative block";
+
+  const cardContent = (
+    <>
       <div className="relative h-64 overflow-hidden">
         <img
           src={project.image}
@@ -30,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-2xl font-serif text-white group-hover:text-lsr-gold transition-colors">{project.name}</h3>
         </div>
-        
+
         <div className="flex items-center space-x-2 text-gray-400 text-sm mb-6">
           <MapPin size={14} className="text-lsr-gold" />
           <span>{project.location}</span>
@@ -60,10 +59,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
 
         <div className="flex items-center space-x-2 text-xs uppercase tracking-widest text-white group-hover:text-lsr-gold transition-colors">
-          <span>View Investment Memo</span>
+          <span>{isMaxEstate59 ? 'More Details' : 'View Investment Memo'}</span>
           <ArrowUpRight size={14} />
         </div>
       </div>
+    </>
+  );
+
+  if (isMaxEstate59) {
+    return (
+      <a
+        href="/projects/max-estate-59"
+        className={cardClass}
+        onClick={() => window.scrollTo(0, 0)}
+      >
+        {cardContent}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      to={`/projects/${project.id}`}
+      className={cardClass}
+      onClick={() => window.scrollTo(0, 0)}
+    >
+      {cardContent}
     </Link>
   );
 };
