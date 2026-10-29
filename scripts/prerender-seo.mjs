@@ -688,6 +688,16 @@ const PROJECT_FAQ_SCHEMAS = {
       { '@type': 'Question', name: 'Where is The Westin Residences located in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'The Westin Residences is located in Sector 103, Dwarka Expressway, Gurgaon. Sector 103 offers direct Dwarka Expressway access, proximity to IGI Airport (approximately 15 km), and connectivity to Golf Course Road and NH 48. The location is ideal for senior corporate professionals and NRI buyers seeking proximity to the airport.' } },
     ],
   },
+  'max-estate-59': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Max Estate 59 in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Max Estate 59 is an ultra-luxury residential project by Max Estates Ltd in Sector 59, Golf Course Extension Road, Gurugram. It offers 4 BHK apartments of 5,000 and 6,000 sq ft, townhouses, and penthouses across two Neo-Georgian towers. With only 3 homes per floor, 2 private lifts per home, 270° wraparound balconies, and no shared walls, it is one of Gurgaon\'s most exclusive new launches. LSR Realty is an authorised channel partner.' } },
+      { '@type': 'Question', name: 'What is the price of Max Estate 59 Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Max Estate 59 is a new launch by Max Estates in Sector 59, Golf Course Extension Road. The official price sheet is issued with the HARERA registration. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com to get the current cost sheet, payment plan, and floor plans on WhatsApp as soon as they are released.' } },
+      { '@type': 'Question', name: 'How is Max Estate 59 different from other luxury projects on Golf Course Extension Road?', acceptedAnswer: { '@type': 'Answer', text: 'Max Estate 59 stands out on Golf Course Extension Road for its extremely low density — only 3 homes per floor with no shared walls — and the ultra-large format with 5,000 and 6,000 sq ft apartments. Each home has 2 private lifts, giving it the character of a vertical bungalow. It is IGBC Platinum pre-certified and built around Max Estates\' Livewell philosophy of nature, community and care. Phase 1 launches 120 of 240 total residences.' } },
+      { '@type': 'Question', name: 'Where is Max Estate 59 Sector 59 in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Max Estate 59 is located in Sector 59, off Golf Course Extension Road, Gurugram — near Magnum Global Park in Sector 58. Golf Course Extension Road connects Golf Course Road and Sohna Road, and Sector 59 is one of the corridor\'s most sought-after addresses for ultra-luxury new launch projects. Contact LSR Realty at +91 8448660019 for directions and a site visit.' } },
+    ],
+  },
   'elan-paradise': {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
