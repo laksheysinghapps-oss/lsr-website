@@ -107,6 +107,36 @@ export const SECTOR_MAPS: SectorMap[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'max-estate-59',
+    name: 'Max Estate 59',
+    location: 'Sector 59, Golf Course Extension Road, Gurugram',
+    priceRange: 'Price on Request',
+    pricePerSqFt: 'Price on Request',
+    sizeRange: '5,000 to 6,000+ Sq. Ft.',
+    possessionDate: 'On Request',
+    type: 'Ultra Luxury Residential',
+    status: 'New Launch',
+    category: 'Investment',
+    subCategory: 'Residential',
+    image: '/images/max-estate-59.webp',
+    developer: 'Max Estates Ltd',
+    rera: 'Registration Awaited',
+    totalUnits: 240,
+    towers: 2,
+    landArea: 'On Request',
+    description: 'Bungalows in the sky on Golf Course Extension Road — Max Estate 59 offers 4 BHK residences of 5,000 and 6,000 sq ft, plus townhouses and penthouses, across two Neo-Georgian towers with only 3 homes per floor. Each residence has two private lifts, 270° wraparound balconies and no shared walls. Built around Max Estates\' Livewell philosophy with IGBC Platinum pre-certification and a Lutyens-inspired clubhouse connected by a signature eco-bridge.',
+    mapQuery: 'Max+Estates+Sector+59+Archview+Drive+Gurugram',
+    highlights: ['Only 3 Homes Per Floor', '2 Private Lifts Per Home', '270° Wraparound Balconies', 'IGBC Platinum Pre-Certified', 'Neo-Georgian Lutyens Architecture', 'Max Livewell Philosophy'],
+    amenities: ['Lutyens-Inspired Clubhouse', 'Signature Eco-Bridge', 'Biophilic & Nature Design', 'Community & Wellness Spaces', '8 Lifts Per Tower', 'Private Lift Lobbies'],
+    unitMix: [
+      { type: '4 BHK + Study + Staff', size: '5,000 Sq. Ft.', price: 'Price on Request' },
+      { type: '4 BHK + Family Lounge + Study + Staff', size: '6,000 Sq. Ft.', price: 'Price on Request' },
+      { type: 'Townhouse', size: 'On Request', price: 'Price on Request' },
+      { type: 'Penthouse', size: 'On Request', price: 'Price on Request' }
+    ],
+    locationAdvantage: ['Golf Course Extension Road, Sector 59', 'Near Magnum Global Park & Sector 58', 'Proximity to GCER Corporate Corridor', 'Connected to Sohna Road & Golf Course Road']
+  },
+  {
     id: 'dlf-arbour',
     name: 'DLF The Arbour',
     location: 'Sector 63, Gurgaon',
@@ -218,36 +248,6 @@ export const PROJECTS: Project[] = [
       { type: '4 BHK', size: '3,750 to 4,329 Sq. Ft.', price: '₹ 10.03 Cr*' }
     ],
     locationAdvantage: ['Direct Dwarka Expressway Access', 'Near IGI Airport', 'Connected to Golf Course Road']
-  },
-  {
-    id: 'max-estate-59',
-    name: 'Max Estate 59',
-    location: 'Sector 59, Golf Course Extension Road, Gurugram',
-    priceRange: 'Price on Request',
-    pricePerSqFt: 'Price on Request',
-    sizeRange: '5,000 to 6,000+ Sq. Ft.',
-    possessionDate: 'On Request',
-    type: 'Ultra Luxury Residential',
-    status: 'New Launch',
-    category: 'Investment',
-    subCategory: 'Residential',
-    image: '/images/max-estate-59.webp',
-    developer: 'Max Estates Ltd',
-    rera: 'Registration Awaited',
-    totalUnits: 240,
-    towers: 2,
-    landArea: 'On Request',
-    description: 'Bungalows in the sky on Golf Course Extension Road — Max Estate 59 offers 4 BHK residences of 5,000 and 6,000 sq ft, plus townhouses and penthouses, across two Neo-Georgian towers with only 3 homes per floor. Each residence has two private lifts, 270° wraparound balconies and no shared walls. Built around Max Estates\' Livewell philosophy with IGBC Platinum pre-certification and a Lutyens-inspired clubhouse connected by a signature eco-bridge.',
-    mapQuery: 'Max+Estates+Sector+59+Archview+Drive+Gurugram',
-    highlights: ['Only 3 Homes Per Floor', '2 Private Lifts Per Home', '270° Wraparound Balconies', 'IGBC Platinum Pre-Certified', 'Neo-Georgian Lutyens Architecture', 'Max Livewell Philosophy'],
-    amenities: ['Lutyens-Inspired Clubhouse', 'Signature Eco-Bridge', 'Biophilic & Nature Design', 'Community & Wellness Spaces', '8 Lifts Per Tower', 'Private Lift Lobbies'],
-    unitMix: [
-      { type: '4 BHK + Study + Staff', size: '5,000 Sq. Ft.', price: 'Price on Request' },
-      { type: '4 BHK + Family Lounge + Study + Staff', size: '6,000 Sq. Ft.', price: 'Price on Request' },
-      { type: 'Townhouse', size: 'On Request', price: 'Price on Request' },
-      { type: 'Penthouse', size: 'On Request', price: 'Price on Request' }
-    ],
-    locationAdvantage: ['Golf Course Extension Road, Sector 59', 'Near Magnum Global Park & Sector 58', 'Proximity to GCER Corporate Corridor', 'Connected to Sohna Road & Golf Course Road']
   },
   {
     id: 'elan-paradise',

@@ -1017,6 +1017,10 @@ const PROJECT_FAQ_SCHEMAS = {
 
 // ── Project detail pages ──────────────────────────────────────────────────────
 for (const project of PROJECTS) {
+  // max-estate-59 has a standalone landing page in public/projects/max-estate-59/index.html
+  // — skip prerendering so the static file is served directly by Vercel
+  if (project.id === 'max-estate-59') continue;
+
   const projectImage = project.image?.startsWith('http') ? project.image : `${SITE_URL}${project.image}`;
   const projectUrl = `${SITE_URL}/projects/${project.id}`;
   const isSoldOut = project.status?.toLowerCase().includes('sold');
