@@ -231,7 +231,7 @@ export const PROJECTS: Project[] = [
     status: 'New Launch',
     category: 'Investment',
     subCategory: 'Residential',
-    image: '/images/max-estate-59.jpg',
+    image: '/images/max-estate-59.webp',
     developer: 'Max Estates Ltd',
     rera: 'Registration Awaited',
     totalUnits: 240,
