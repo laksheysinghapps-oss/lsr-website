@@ -114,13 +114,6 @@
   ],
   "redirects": [
     {
-      "source": "/maps/pace-city-2",
-      "destination": "/maps/sector-37-pace-city-2",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
       "source": "/",
       "has": [
         {
@@ -128,8 +121,16 @@
           "value": "max59.lsrrealty.com"
         }
       ],
-      "destination": "/projects/max-estate-59/index.html"
+      "destination": "/projects/max-estate-59",
+      "permanent": false
     },
+    {
+      "source": "/maps/pace-city-2",
+      "destination": "/maps/sector-37-pace-city-2",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
