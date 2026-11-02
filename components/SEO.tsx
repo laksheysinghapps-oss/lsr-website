@@ -22,6 +22,17 @@ interface SEOProps {
 
 const SITE_URL = 'https://lsrrealty.com';
 
+// On the first page load the build step (scripts/prerender-seo.mjs) has already written this route's
+// title, description, canonical, Open Graph tags and JSON-LD into the HTML. Keep them, so search engines
+// see one consistent, keyword-optimised set of tags instead of having them replaced after JavaScript runs.
+const initialPath = typeof window !== 'undefined' ? (window.location.pathname.replace(/\/+$/, '') || '/') : '';
+let navigatedAway = false;
+function hasPrerenderedHead(url: string): boolean {
+  const canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.getAttribute('href');
+  const norm = (u: string) => u.replace(/\/+$/, '');
+  return !!canonical && norm(canonical) === norm(url);
+}
+
 function upsertMeta(attr: 'name' | 'property', key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`);
   if (!el) {
@@ -48,8 +59,13 @@ const SEO: React.FC<SEOProps> = ({
   keywords,
 }) => {
   useEffect(() => {
-    const prevTitle = document.title;
     const url = `${SITE_URL}${path}`;
+    if (!navigatedAway) {
+      const current = path.replace(/\/+$/, '') || '/';
+      if (current === initialPath && hasPrerenderedHead(url)) return;
+      navigatedAway = true;
+    }
+    const prevTitle = document.title;
     const rawImage = image ?? '/images/Logo2.png';
     const ogImage = rawImage.startsWith('http') ? rawImage : `${SITE_URL}${rawImage}`;
 
