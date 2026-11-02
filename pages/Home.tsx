@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { PROJECTS } from '../constants';
 import ProjectCard from '../components/ProjectCard';
-import { LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, Line } from 'recharts';
+const HomeChart = React.lazy(() => import('../components/HomeChart'));
 import { ArrowRight, Shield, Globe, TrendingUp, UserCheck, Handshake, Award } from 'lucide-react';
 import SEO from '../components/SEO';
 
@@ -242,18 +242,9 @@ const Home: React.FC = () => {
           <div className="bg-black p-8 border border-white/5 rounded-sm relative">
             <h3 className="text-lg font-serif mb-6 text-gray-200">Gurgaon Capital Appreciation Index (Rebased)</h3>
             <div className="h-64 w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart data={mockChartData}>
-                  <XAxis dataKey="name" stroke="#555" tick={{fill: '#888'}} />
-                  <YAxis stroke="#555" tick={{fill: '#888'}} />
-                  <Tooltip
-                    contentStyle={{ backgroundColor: '#1A1A1A', border: '1px solid #333' }}
-                    itemStyle={{ color: '#fff' }}
-                  />
-                  <Line type="monotone" dataKey="ggn" stroke="url(#lsr-gold-grad)" strokeWidth={2} dot={{fill: '#c9a54a', stroke: '#f2e49e', strokeWidth: 1}} />
-                  <Line type="monotone" dataKey="blr" stroke="#333" strokeWidth={2} strokeDasharray="5 5" />
-                </LineChart>
-              </ResponsiveContainer>
+              <React.Suspense fallback={null}>
+                <HomeChart data={mockChartData} />
+              </React.Suspense>
             </div>
             <p className="text-xs text-gray-500 mt-4 text-center">*Illustrative data representing market outperformance</p>
           </div>
