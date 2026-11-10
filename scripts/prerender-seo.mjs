@@ -646,6 +646,263 @@ const staticRoutes = [
 
 for (const r of staticRoutes) renderRoute(r);
 
+// ── Nearby project keywords – cross-pollinate sector/corridor search terms ──
+const NEARBY_PROJECT_KEYWORDS = {
+  // ─── GCER Sector 58 ──────────────────────────────────────────────────────
+  'magnum-global-park-lease': [
+    'projects in Sector 58 Gurgaon', 'Golf Course Extension Road commercial property',
+    'AIPL Business Club Sector 62', 'Max Estate 59 Sector 59',
+    'office space Sector 58 Golf Course Extension Road',
+  ],
+  'magnum-global-park-invest': [
+    'projects in Sector 58 Gurgaon', 'Golf Course Extension Road investment',
+    'AIPL Business Club Sector 62', 'Max Estate 59 Sector 59',
+    'retail investment Sector 58 Golf Course Extension Road',
+  ],
+  // ─── GCER Sector 62 ───────────────────────────────────────────────────────
+  'aipl-business-club-lease': [
+    'projects in Sector 62 Gurgaon', 'Golf Course Extension Road office space',
+    'DLF Arbour Sector 63', 'AIPL Joy Square Sector 63A', 'Magnum Global Park Sector 58',
+    'Grade A office Sector 62 Gurgaon', 'office space near Sector 63 Gurgaon',
+    'AIPL Business Club vs AIPL Joy Square',
+  ],
+  'aipl-business-club-invest': [
+    'projects in Sector 62 Gurgaon', 'commercial investment Sector 62 Gurgaon',
+    'DLF Arbour Sector 63', 'AIPL Joy Square Sector 63A', 'Magnum Global Park Sector 58',
+    'office investment Golf Course Extension Road', 'AIPL Business Club vs AIPL Joy Square',
+  ],
+  // ─── GCER Sector 63 ───────────────────────────────────────────────────────
+  'dlf-arbour': [
+    'projects in Sector 63 Gurgaon', 'luxury apartments Sector 63 Gurgaon',
+    'DLF Privana South Sector 76', 'DLF The Magnolias Golf Course Road',
+    'AIPL Joy Square Sector 63A', 'AIPL Business Club Sector 62', 'Max Estate 59 Sector 59',
+    'DLF Arbour vs DLF Privana', 'new residential launch Sector 63 Gurgaon',
+    'DLF projects Golf Course Extension Road', 'Golf Course Extension Road residential project',
+  ],
+  // ─── GCER Sector 63A ──────────────────────────────────────────────────────
+  'aipl-joy-square': [
+    'projects in Sector 63A Gurgaon', 'Golf Course Extension Road retail',
+    'DLF Arbour Sector 63', 'AIPL Business Club Sector 62', 'Elan Empire Sector 66',
+    'AIPL projects Golf Course Extension Road', 'retail space near Sector 63 Gurgaon',
+  ],
+  // ─── GCER Sector 65 ───────────────────────────────────────────────────────
+  'aipl-joy-central': [
+    'projects in Sector 65 Gurgaon', 'Golf Course Extension Road retail mall',
+    'AIPL Signature Sector 65', 'Emaar India Business Centre Sector 65',
+    'AIPL Joy Street Sector 66', 'Elan Empire Sector 66', 'AIPL Autograph Sector 66',
+    'retail investment Sector 65 Golf Course Extension Road',
+    'AIPL Joy Central vs Elan Empire',
+  ],
+  'emaar-ibc': [
+    'projects in Sector 65 Gurgaon', 'Golf Course Extension Road office',
+    'AIPL Joy Central Sector 65', 'AIPL Signature Sector 65', 'AIPL Joy Street Sector 66',
+    'Grade A office Sector 65 Gurgaon', 'office space Golf Course Extension Road',
+    'Emaar India Business Centre vs AIPL', 'Emaar office Sector 65 Gurgaon',
+  ],
+  'aipl-signature-lease': [
+    'projects in Sector 65 Gurgaon', 'office space Sector 65 Golf Course Extension Road',
+    'AIPL Joy Central Sector 65', 'Emaar India Business Centre Sector 65',
+    'AIPL Joy Street Sector 66', 'AIPL Autograph Sector 66',
+    'commercial property Sector 65 Gurgaon',
+  ],
+  'aipl-signature-invest': [
+    'projects in Sector 65 Gurgaon', 'office investment Sector 65 Gurgaon',
+    'AIPL Joy Central Sector 65', 'Emaar India Business Centre Sector 65',
+    'commercial investment Sector 65 Golf Course Extension Road',
+    'AIPL Signature vs AIPL Joy Central',
+  ],
+  // ─── GCER Sector 66 ───────────────────────────────────────────────────────
+  'aipl-joy-street': [
+    'projects in Sector 66 Gurgaon', 'Golf Course Extension Road high street retail',
+    'AIPL Joy Gallery Sector 66', 'AIPL Statement Sector 66', 'AIPL Autograph Sector 66',
+    'Elan Empire Sector 66', 'AIPL Joy Central Sector 65',
+    'high street retail Golf Course Extension Road', 'AIPL Joy Street vs Elan Empire',
+  ],
+  'aipl-joy-gallery': [
+    'projects in Sector 66 Gurgaon', 'Golf Course Extension Road retail',
+    'AIPL Joy Street Sector 66', 'AIPL Statement Sector 66', 'Elan Empire Sector 66',
+    'AIPL Autograph Sector 66', 'retail investment Sector 66 Gurgaon',
+  ],
+  'aipl-statement-lease': [
+    'projects in Sector 66 Gurgaon', 'office space Sector 66 Golf Course Extension Road',
+    'AIPL Joy Street Sector 66', 'AIPL Autograph Sector 66', 'Elan Empire Sector 66',
+    'AIPL Joy Gallery Sector 66', 'commercial leasing Sector 66 Gurgaon',
+  ],
+  'aipl-statement-invest': [
+    'projects in Sector 66 Gurgaon', 'commercial investment Sector 66 Gurgaon',
+    'AIPL Joy Street Sector 66', 'AIPL Autograph Sector 66', 'Elan Empire Sector 66',
+    'AIPL Statement vs AIPL Autograph',
+  ],
+  'aipl-autograph-lease': [
+    'projects in Sector 66 Gurgaon', 'office space Sector 66 Golf Course Extension Road',
+    'AIPL Statement Sector 66', 'AIPL Joy Street Sector 66', 'Elan Empire Sector 66',
+    'AIPL Signature Sector 65', 'Grade A office Sector 66 Gurgaon',
+  ],
+  'aipl-autograph-invest': [
+    'projects in Sector 66 Gurgaon', 'office investment Sector 66 Gurgaon',
+    'AIPL Statement Sector 66', 'AIPL Joy Street Sector 66', 'Elan Empire Sector 66',
+    'AIPL Autograph vs AIPL Statement',
+  ],
+  'elan-empire': [
+    'projects in Sector 66 Gurgaon', 'Golf Course Extension Road mixed use',
+    'AIPL Joy Street Sector 66', 'AIPL Joy Gallery Sector 66', 'AIPL Statement Sector 66',
+    'Elan Town Centre Sector 67', 'AIPL Joy Central Sector 65',
+    'mixed use property Sector 66 Gurgaon', 'Elan Empire vs AIPL Joy Street',
+  ],
+  // ─── GCER Sector 67 ───────────────────────────────────────────────────────
+  'elan-town-centre': [
+    'projects in Sector 67 Gurgaon', 'Golf Course Extension Road Sohna Road retail',
+    'Landmark One Sector 67', 'Elan Paradise Sector 50', 'Elan Empire Sector 66',
+    'AIPL Joy Street Sector 66', 'Vatika Professional Point Sohna Road',
+    'retail space Sector 67 Gurgaon Sohna Road', 'Elan Town Centre vs Landmark One',
+  ],
+  'landmark-one': [
+    'projects in Sector 67 Gurgaon', 'Golf Course Extension Road commercial',
+    'Elan Town Centre Sector 67', 'AIPL Joy Street Sector 66', 'Elan Empire Sector 66',
+    'commercial property Sector 67 Gurgaon', 'office space Sohna Road GCER junction Gurgaon',
+    'Landmark One vs Elan Town Centre',
+  ],
+  // ─── SPR Sector 70 ────────────────────────────────────────────────────────
+  'elan-epic': [
+    'projects in Sector 70 Gurgaon', 'Southern Peripheral Road retail',
+    'DLF Corporate Greens Sector 74A', 'Elan Town Centre Sector 67',
+    'commercial property Sector 70 Gurgaon', 'retail investment Southern Peripheral Road Gurgaon',
+    'SPR commercial project Gurgaon',
+  ],
+  // ─── SPR Sector 74A ───────────────────────────────────────────────────────
+  'dlf-corporate-greens-lease': [
+    'projects in Sector 74A Gurgaon', 'Southern Peripheral Road office space',
+    'Elan Epic Sector 70', 'DLF Cybercity', 'DLF office space Gurgaon',
+    'Grade A office Southern Peripheral Road Gurgaon', 'DLF Corporate Greens vs DLF Cybercity',
+  ],
+  'dlf-corporate-greens-invest': [
+    'projects in Sector 74A Gurgaon', 'Southern Peripheral Road office investment',
+    'Elan Epic Sector 70', 'DLF office investment Gurgaon',
+    'commercial investment Southern Peripheral Road Gurgaon',
+  ],
+  // ─── GCER Sector 76-77 ────────────────────────────────────────────────────
+  'dlf-privana': [
+    'projects in Sector 76 Gurgaon', 'projects in Sector 77 Gurgaon',
+    'DLF Arbour Sector 63', 'DLF The Magnolias Golf Course Road',
+    'luxury apartments Sector 76 Gurgaon', 'luxury apartments Sector 77 Gurgaon',
+    'DLF Privana vs DLF Arbour', 'new launch Sector 76 Gurgaon',
+    'Golf Course Extension Road residential new launch', 'DLF projects Gurgaon new launch',
+  ],
+  // ─── Dwarka Expressway Sector 84 ──────────────────────────────────────────
+  'elan-miracle': [
+    'projects in Sector 84 Gurgaon', 'Dwarka Expressway retail commercial',
+    'The Westin Residences Sector 103', 'AIPL Joy District Sector 88',
+    'commercial property Sector 84 Gurgaon', 'retail space Dwarka Expressway Gurgaon',
+    'Elan projects Dwarka Expressway', 'Elan Miracle vs Elan Mercado',
+  ],
+  // ─── NH-48 Sector 80 ──────────────────────────────────────────────────────
+  'elan-mercado': [
+    'projects in Sector 80 Gurgaon', 'NH 48 commercial Gurgaon',
+    'Elan Miracle Sector 84', 'Vatika INXT City Centre Sector 83',
+    'commercial property Sector 80 Gurgaon', 'retail space NH 48 Gurgaon',
+    'Elan Mercado vs Elan Epic',
+  ],
+  // ─── Dwarka Expressway Sector 86 ──────────────────────────────────────────
+  'emaar-serenity': [
+    'projects in Sector 86 Gurgaon', 'luxury apartments Sohna Road Gurgaon',
+    'DLF Privana South Sector 76', 'Emaar projects Gurgaon',
+    'luxury apartments Sector 86 Gurgaon', 'new residential launch Sohna Road Gurgaon',
+    'Emaar Serenity Hills vs DLF Privana',
+  ],
+  // ─── Dwarka Expressway Sector 88 ──────────────────────────────────────────
+  'aipl-joy-district': [
+    'projects in Sector 88 Gurgaon', 'Dwarka Expressway commercial',
+    'Elan Miracle Sector 84', 'The Westin Residences Sector 103',
+    'DLF Gardencity Arcade Sector 92', 'retail space Sector 88 Gurgaon',
+    'commercial property Dwarka Expressway Gurgaon',
+  ],
+  // ─── Dwarka Expressway Sector 92 ──────────────────────────────────────────
+  'gardencity-arcade': [
+    'projects in Sector 92 Gurgaon', 'DLF Garden City commercial property',
+    'AIPL Joy District Sector 88', 'Vatika INXT City Centre Sector 83',
+    'retail space Sector 92 Gurgaon', 'Dwarka Expressway commercial investment Gurgaon',
+  ],
+  // ─── Dwarka Expressway Sector 103 ─────────────────────────────────────────
+  'westin-residences': [
+    'projects in Sector 103 Gurgaon', 'Dwarka Expressway luxury residential',
+    'DLF Privana South Sector 76', 'branded residences Gurgaon',
+    'luxury hotel residences Dwarka Expressway', 'Westin branded apartments Gurgaon',
+    'luxury apartments Sector 103 Gurgaon', 'The Westin Residences Gurgaon price',
+  ],
+  // ─── Sector 50 Nirvana Country / Sohna Road ───────────────────────────────
+  'elan-paradise': [
+    'projects in Sector 50 Gurgaon', 'Nirvana Country retail',
+    'Elan Town Centre Sector 67', 'Vatika Business Park Sohna Road',
+    'retail space Sector 50 Gurgaon', 'retail space Nirvana Country Gurgaon',
+    'commercial property Nirvana Country Gurgaon', 'Elan Paradise vs Elan Town Centre',
+  ],
+  // ─── Sohna Road ───────────────────────────────────────────────────────────
+  'vatika-business-park': [
+    'projects on Sohna Road Gurgaon', 'Sohna Road office space',
+    'Vatika Professional Point Sohna Road GCER', 'Elan Town Centre Sector 67',
+    'Grade A office Sohna Road Gurgaon', 'Vatika office park Gurgaon',
+  ],
+  'vatika-professional-point': [
+    'projects at Sohna Road GCER junction Gurgaon',
+    'Vatika Business Park Sohna Road', 'Landmark One Sector 67',
+    'office space Golf Course Extension Road Sohna Road junction',
+    'commercial property GCER Sohna Road Gurgaon',
+  ],
+  // ─── NH-48 / MG Road ──────────────────────────────────────────────────────
+  'vatika-first-india-place': [
+    'projects on MG Road Gurgaon', 'MG Road office space Gurgaon',
+    'DLF Cybercity Gurgaon', 'Vatika One On One Sector 16',
+    'Grade A office MG Road Gurgaon', 'office space near IFFCO Chowk Gurgaon',
+    'Vatika First India Place vs Vatika Business Park',
+  ],
+  'vatika-one-on-one': [
+    'projects in Sector 16 Gurgaon', 'NH 48 office space Gurgaon',
+    'Vatika First India Place MG Road', 'Vatika INXT City Centre Sector 83',
+    'office space Sector 16 Gurgaon', 'Vatika office Sector 16 Gurgaon',
+  ],
+  'vatika-inxt-city-centre': [
+    'projects in Sector 83 Gurgaon', 'NH 48 commercial Gurgaon',
+    'Vatika One On One Sector 16', 'DLF Gardencity Arcade Sector 92',
+    'commercial property Sector 83 Gurgaon', 'retail space NH 48 Gurgaon',
+  ],
+  // ─── DLF Cybercity ────────────────────────────────────────────────────────
+  'dlf-cybercity': [
+    'DLF Cybercity office space Gurgaon', 'DLF Phase 2 office',
+    'DLF Corporate Greens Sector 74A', 'AIPL Masterpiece Golf Course Road',
+    'DLF The Magnolias Golf Course Road', 'Vatika First India Place MG Road',
+    'Grade A office DLF Cyber City Gurgaon', 'DLF office campus Gurgaon',
+  ],
+  // ─── Golf Course Road ─────────────────────────────────────────────────────
+  'godrej-gcr': [
+    'projects on Golf Course Road Gurgaon', 'Golf Course Road residential',
+    'DLF The Magnolias Golf Course Road', 'AIPL Masterpiece Golf Course Road',
+    'luxury apartments Golf Course Road Gurgaon', 'Godrej projects Gurgaon',
+    'Golf Course Road premium residential', 'Godrej GCR vs DLF Magnolias',
+  ],
+  'dlf-magnolias': [
+    'projects on Golf Course Road Gurgaon', 'ultra luxury Golf Course Road',
+    'Godrej GCR Golf Course Road', 'AIPL Masterpiece Golf Course Road',
+    'DLF Arbour Sector 63', 'DLF Privana South Sector 76',
+    'ultra luxury apartments Golf Course Road Gurgaon', 'DLF ultra luxury Gurgaon',
+    'DLF Magnolias price resale', 'DLF Magnolias vs DLF Arbour',
+  ],
+  'aipl-masterpiece': [
+    'projects on Golf Course Road Gurgaon', 'Golf Course Road office',
+    'DLF The Magnolias Golf Course Road', 'Godrej GCR Golf Course Road',
+    'DLF Cybercity Gurgaon', 'Grade A office Golf Course Road Gurgaon',
+    'AIPL office Gurgaon', 'AIPL Masterpiece vs DLF Cybercity',
+  ],
+  // ─── Faridabad ────────────────────────────────────────────────────────────
+  'magnum-one-lease': [
+    'projects in Sector 37 Faridabad', 'Mathura Road commercial Faridabad',
+    'office space Faridabad', 'commercial property Sector 37 Faridabad',
+  ],
+  'magnum-one-invest': [
+    'projects in Sector 37 Faridabad', 'investment in Faridabad commercial property',
+    'Magnum One commercial investment Faridabad', 'property investment Faridabad',
+  ],
+};
+
 // ── Project FAQ schemas — per-project FAQPage for rich snippet eligibility ────
 const PROJECT_FAQ_SCHEMAS = {
   'dlf-arbour': {
@@ -1115,6 +1372,7 @@ for (const project of PROJECTS) {
       project.category === 'Leasing'
         ? 'commercial property Gurgaon, Grade A office Gurgaon, retail leasing Gurgaon'
         : `luxury property Gurgaon, buy property Gurgaon 2026, property investment ROI Gurgaon, property price appreciation Gurgaon`,
+      ...(NEARBY_PROJECT_KEYWORDS[project.id] || []),
     ].filter(Boolean).join(', '),
     image: projectImage,
     breadcrumbs: [
