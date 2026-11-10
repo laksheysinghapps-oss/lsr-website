@@ -1770,8 +1770,67 @@ const SECTOR_MAP_FAQS = {
   },
 };
 
-// Per-sector keyword overrides — adds project and corridor keywords for key sectors
+// Per-sector keyword overrides — adds project and corridor keywords for every map
 const SECTOR_MAP_KEYWORDS = {
+  // ─── Old Gurgaon sectors ─────────────────────────────────────────────────
+  'sector-4-7': 'Sector 4 7 Gurgaon map, Sector 4 map download, Sector 7 Gurgaon map, Sector 4 & 7 layout plan, Sector 4 7 free download, Old Gurgaon sector map, Sector 4 Gurgaon residential, Sector 7 Gurgaon residential, HUDA Sector 4 Gurgaon, DTCP approved Sector 4 7 Gurgaon, Sector 4 & 7 Gurugram map, Sector 4 7 property rate Gurgaon',
+  'sector-5': 'Sector 5 Gurgaon map, Sector 5 map download, Sector 5 layout plan Gurgaon, Sector 5 free download, Sector 5 Gurugram map, HUDA Sector 5 Gurgaon, Sector 5 residential map, Old Gurgaon Sector 5, DTCP approved Sector 5, Sector 5 schools Gurgaon, Sector 5 property Gurgaon',
+  'sector-7': 'Sector 7 Gurgaon map, Sector 7 map download, Sector 7 layout plan, Sector 7 Gurugram map, Sector 7 free download, HUDA Sector 7 Gurgaon, Sector 7 residential colony, Old Gurgaon Sector 7 map, DTCP Sector 7 Gurgaon, Sector 7 property Gurgaon, Sector 7 community Gurgaon',
+  'sector-7-ext': 'Sector 7 Extension Gurgaon map, Sector 7 Ext map download, Sector 7 Extension layout plan, Sector 7 Extension free download, Sector 7 Ext Gurugram map, HUDA Sector 7 Extension Gurgaon, Sector 7 Extension residential map, Old Gurgaon Sector 7 Extension, DTCP Sector 7 Extension',
+  'sector-9': 'Sector 9 Gurgaon map, Sector 9 map download, Sector 9 layout plan, Sector 9 Gurugram map, Sector 9 free download, HUDA Sector 9 Gurgaon, Sector 9 residential colony, Old Gurgaon Sector 9, DTCP Sector 9 Gurgaon, Sector 9 schools map, Sector 9 property Gurgaon',
+  'sector-9a': 'Sector 9A Gurgaon map, Sector 9A map download, Sector 9A layout plan, Sector 9A Gurugram map, Sector 9A free download, HUDA Sector 9A Gurgaon, Sector 9A residential map, Sector 9A NH 48 Gurgaon, DTCP approved Sector 9A, Sector 9A Udyog Vihar area map',
+  'sector-10': 'Sector 10 Gurgaon map, Sector 10 map download, Sector 10 layout plan, Sector 10 Gurugram map, Sector 10 free download, HUDA Sector 10 Gurgaon, Sector 10 residential map, Sector 10 affordable housing Gurgaon, DTCP Sector 10 map, Sector 10 property rate Gurgaon',
+  'sector-10a': 'Sector 10A Gurgaon map, Sector 10A map download, Sector 10A layout plan, Sector 10A Gurugram map, Sector 10A free download, HUDA Sector 10A Gurgaon, Sector 10A plotted residential, Sector 10A NH 48 Gurgaon, DTCP approved Sector 10A, Sector 10A market Gurgaon',
+  'sector-12a': 'Sector 12A Gurgaon map, Sector 12A map download, Sector 12A layout plan, Sector 12A Gurugram map, Sector 12A free download, HUDA Sector 12A Gurgaon, Sector 12A IFFCO Chowk, Sector 12A MG Road Gurgaon, DTCP Sector 12A, Sector 12A residential plot map',
+  'sector-14': 'Sector 14 Gurgaon map, Sector 14 map download, Sector 14 layout plan, Sector 14 Gurugram map, Sector 14 free download, HUDA Sector 14 Gurgaon, Sector 14 residential plot map, Sector 14 near Delhi Gurgaon, DTCP approved Sector 14, Sector 14 community centre Gurgaon, Sector 14 property Gurgaon',
+  'sector-15-1': 'Sector 15 I Gurgaon map, Sector 15 map download, Sector 15 Part 1 layout plan, Sector 15 Gurugram map, Sector 15 free download, HUDA Sector 15 Gurgaon, Sector 15 I plotted residential map, Sector 15 NH 48 Gurgaon, DTCP approved Sector 15 I, Sector 15 Udyog Vihar area map',
+  'sector-15-2': 'Sector 15 II Gurgaon map, Sector 15 Part 2 map download, Sector 15 II layout plan, Sector 15 II Gurugram map, Sector 15 II free download, HUDA Sector 15 II Gurgaon, Sector 15 II independent houses map, DTCP Sector 15 II Gurgaon, Sector 15 Part 2 residential Gurgaon',
+  'sector-17': 'Sector 17 Gurgaon map, Sector 17 map download, Sector 17 layout plan, Sector 17 Gurugram map, Sector 17 free download, Sector 17 NH 48 Gurgaon, Sector 17 Signature Towers map, DTCP Sector 17 Gurgaon, Sector 17 commercial logistics map, Sector 17 warehouse Gurgaon',
+  'sector-21': 'Sector 21 Gurgaon map, Sector 21 map download, Sector 21 layout plan, Sector 21 Gurugram map, Sector 21 free download, Sector 21 Dwarka Expressway Gurgaon, HUDA Sector 21 map, Sector 21 Airport Road Gurgaon, DTCP approved Sector 21, Sector 21 near Delhi Gurgaon',
+  'sector-22': 'Sector 22 Gurgaon map, Sector 22 map download, Sector 22 layout plan, Sector 22 Gurugram map, Sector 22 free download, Sector 22 Udyog Vihar Gurgaon, Sector 22 commercial map, HUDA Sector 22 layout, DTCP Sector 22 Gurgaon, Sector 22 mixed use map Gurgaon',
+  'sector-23': 'Sector 23 Gurgaon map, Sector 23 map download, Sector 23 layout plan, Sector 23 Gurugram map, Sector 23 free download, Sector 23 Palam Vihar area, Sector 23 Dwarka Expressway Gurgaon, HUDA Sector 23 layout, DTCP approved Sector 23, Sector 23 residential map Gurgaon',
+  'sector-23a': 'Sector 23A Gurgaon map, Sector 23A map download, Sector 23A layout plan, Sector 23A Gurugram map, Sector 23A free download, Sector 23A airport area Gurgaon, Sector 23A Udyog Vihar, HUDA Sector 23A layout, DTCP Sector 23A Gurgaon, Sector 23A near Delhi airport',
+  'sector-34': 'Sector 34 Gurgaon map, Sector 34 map download, Sector 34 layout plan, Sector 34 Gurugram map, Sector 34 free download, HUDA Sector 34 Gurgaon, Sector 34 educational institutions, DTCP Sector 34 Gurgaon, Sector 34 Old Gurgaon commercial, Sector 34 property map',
+  'sector-37-pace-city-2': 'Sector 37 Gurgaon map, Pace City II map, Sector 37 map download, Pace City 2 layout plan, Sector 37 Pace City II free download, Sector 37 industrial map Gurgaon, Pace City II NH 8 Gurgaon, Sector 37 warehouse map, Pace City 2 Gurugram industrial, NH 8 industrial belt Gurgaon',
+  // ─── GCER corridor sectors ────────────────────────────────────────────────
+  'anant-raj-estate-sector-63': 'Anant Raj Estate Sector 63 map, Anant Raj Estate map download, Sector 63 Anant Raj layout plan, Anant Raj Estate Gurgaon GCER, Anant Raj Estate free download, Anant Raj Estate Gurugram, Sector 63 Golf Course Extension Road Anant Raj, Anant Raj Estate price, DLF Arbour Sector 63 map, Sector 63 Gurgaon residential map',
+  'emerald-floors': 'Emerald Floors map, Emerald Floors Sector 65 Gurgaon layout, Emerald Floors map download, Emaar MGF Emerald Floors GCER, Sector 65 Emerald Floors free download, Emerald Hills Sector 65 map, Emerald Floors Gurugram, Sector 65 Golf Course Extension Road residential map',
+  'ireo-city-sector-60': 'IREO City Sector 60 map, IREO City Gurgaon layout plan, IREO City map download, Sector 60 Golf Course Extension Road map, IREO Skyon towers map, IREO City free download, Sector 60 GCER Gurugram, IREO City Gurgaon property, Sector 60 Gurgaon residential map, Sector 60 GCER township',
+  // ─── South/SPR sectors ────────────────────────────────────────────────────
+  'esencia-sector-67': 'Esencia Sector 67 map, Esencia Ansal SPR layout plan, Esencia Gurgaon map download, Sector 67 SPR Esencia map, Esencia Sohna Road Sector 67, Esencia free download, Sector 67 Southern Peripheral Road Gurugram, Esencia plotted township map, Ansal Esencia Gurgaon plots',
+  'sushant-lok-3': 'Sushant Lok III map, Sushant Lok 3 Sector 57 layout plan, Sushant Lok 3 map download, Sushant Lok III SPR Golf Course Road, Sector 57 Sushant Lok 3 Gurgaon, Sushant Lok 3 free download, Ansal Sushant Lok 3 Gurugram, Sector 57 Gurgaon residential map, Sushant Lok III property rate',
+  'dlf-alameda': 'DLF Alameda map, DLF Alameda Sector 73 layout plan, DLF Alameda map download, Sector 73 DLF Alameda SPR, DLF Alameda free download, DLF Alameda Gurugram, Sector 73 Gurgaon map, DLF Alameda independent floors, Southern Peripheral Road Sector 73 DLF map',
+  'sun-city-sector-54': 'Sun City Sector 54 map, Sun City Gurgaon layout plan, Sun City map download, Sector 54 Golf Course Road Gurgaon, Suncity Heights Sector 54, Sun City Sector 54 free download, Sector 54 Chowk metro map, Sun City Unitech Gurgaon, Sector 54 Gurgaon Golf Course Road property',
+  'sushant-lok-1': 'Sushant Lok 1 map, Sushant Lok 1 Sector 43 layout plan, Sushant Lok 1 map download, Sushant Lok 1 Ansal Golf Course Road, Sushant Lok 1 free download, Sector 43 Sushant Lok 1 Gurugram, Sushant Lok 1 Golf Course Road Gurgaon, Sushant Lok 1 property map, oldest planned Gurgaon layout',
+  'sushant-lok-2': 'Sushant Lok II map, Sushant Lok 2 Sector 55 56 layout plan, Sushant Lok II map download, Sector 55 Sector 56 Sushant Lok, Sushant Lok 2 Rapid Metro, Sushant Lok II free download, Sector 55 Gurugram map, Sector 56 Gurgaon map, Ansal Sushant Lok 2 property',
+  'green-wood-city': 'Green Wood City map, Green Wood City Sector 45 Gurgaon, Green Wood City layout plan, Green Wood City Unitech map download, Sector 45 Green Wood City free download, Green Wood City Gurugram, Sector 45 Gurgaon property map, Green Wood City residential colony',
+  'saraswati-vihar': 'Saraswati Vihar map, Saraswati Vihar Sector 28 layout plan, Saraswati Vihar map download, Saraswati Vihar MG Road Gurgaon, Saraswati Vihar free download, Sector 28 Saraswati Vihar Gurugram, Saraswati Vihar independent houses, MG Road Gurgaon residential colony map',
+  // ─── Sohna Road & South Gurgaon ──────────────────────────────────────────
+  'malibu-town': 'Malibu Town map, Malibu Town Sector 47 Gurgaon layout plan, Malibu Town map download, Malibu Town Ansal API Sohna Road, Malibu Town free download, Sector 47 Malibu Town Gurugram, Malibu Town property rate Gurgaon, Rajiv Chowk Sector 47 map, Malibu Town villas Gurgaon',
+  'mayfield-gardens': 'Mayfield Gardens map, Mayfield Gardens Sector 51 layout plan, Mayfield Gardens map download, Mayfield Gardens SS Group Gurgaon, Mayfield Gardens Sohna Road, Mayfield Gardens free download, Sector 51 Mayfield Gardens Gurugram, Artemis Hospital Sector 51 map, Mayfield Gardens property map',
+  'rosewood-city': 'Rosewood City map, Rosewood City Sector 49 layout plan, Rosewood City map download, Rosewood City Eros Group Sohna Road, Rosewood City free download, Sector 49 Rosewood City Gurugram, Rosewood City Gurgaon high rise, Sohna Road Sector 49 residential map, Rosewood City property rate',
+  'uppals-southend': "Uppal's Southend map, Uppal's Southend Sohna Road layout plan, Uppal's Southend map download, Sector 49 50 Uppal Southend Gurgaon, Uppal's Southend free download, Uppal Southend Gurugram map, Sector 49 Sohna Road Gurgaon property, Uppal Group Gurgaon township",
+  'raheja-aranya-city': 'Raheja Aranya City map, Raheja Aranya Sohna layout plan, Raheja Aranya City map download, Sohna Sector 11 14 Aravalli map, Raheja Aranya Aravalli hills free download, Raheja Aranya Gurugram Sohna, Sohna residential plot map, Raheja Group Sohna township, Raheja Aranya property rate',
+  'vipul-world': 'Vipul World map, Vipul World Sector 48 Sohna Road layout plan, Vipul World map download, Vipul World Gurgaon mixed use, Vipul World free download, Sector 48 Vipul World Gurugram, Vipul World residential towers, Sohna Road Sector 48 Gurgaon property, Vipul World commercial map',
+  'nirvana-country': 'Nirvana Country map, Nirvana Country Gurgaon map download, Nirvana Country layout plan, Sector 50 Nirvana Country, Nirvana Country free download, Nirvana Country Sohna Road Gurgaon, Elan Paradise Nirvana Country, Nirvana Country villa map, Unitech Nirvana Country, Sector 50 Gurgaon map',
+  // ─── Dwarka Expressway ────────────────────────────────────────────────────
+  'bptp-amstoria-sector-102': 'BPTP Amstoria map, BPTP Amstoria Sector 102 layout plan, BPTP Amstoria map download, Sector 102 Dwarka Expressway Gurgaon, BPTP Amstoria free download, BPTP Amstoria Gurugram, Sector 102 Gurgaon map, BPTP Amstoria plots villas, Dwarka Expressway Sector 102 property',
+  'vatika-india-next-1': 'Vatika India Next Part 1 map, Vatika India Next layout plan, Vatika India Next 1 map download, Sectors 82 85 Vatika India Next Dwarka Expressway, Vatika India Next free download, Sector 82 Gurgaon Vatika map, Vatika India Next NH 8 Gurugram, Vatika India Next apartments floors',
+  'vatika-india-next-2': 'Vatika India Next Part 2 map, Vatika India Next 2 layout plan, Vatika India Next 2 map download, Vatika INXT Phase 2 Dwarka Expressway, Vatika India Next Part 2 free download, Vatika India Next 2 Gurugram, Dwarka Expressway Vatika township map',
+  'vatika-india-next-3': 'Vatika India Next Part 3 map, Vatika India Next 3 layout plan, Vatika India Next 3 map download, Vatika India Next villas Phase 3, Vatika India Next Part 3 free download, Vatika India Next 3 Gurugram, Dwarka Expressway villas Vatika phase 3 map',
+  'vatika-india-next-4': 'Vatika India Next Part 4 map, Vatika India Next 4 layout plan, Vatika India Next 4 map download, Vatika India Next independent floors Phase 4, Vatika India Next Part 4 free download, Vatika India Next 4 Gurugram, NH 8 Vatika township phase 4 map',
+  'vatika-india-next-5': 'Vatika India Next Part 5 map, Vatika India Next 5 layout plan, Vatika India Next 5 map download, Vatika INXT 2 Sovereign Floors, Vatika India Next Part 5 free download, Vatika India Next 5 Gurugram Dwarka Expressway, Vatika plotted development phase 5 map',
+  // ─── Industrial / HSIIDC ──────────────────────────────────────────────────
+  'pace-city-1': 'Pace City I map, Pace City 1 Gurgaon map download, Pace City I layout plan, Pace City 1 NH 48 Hero Honda Chowk, Pace City I free download, Pace City 1 industrial map Gurgaon, Pace City I commercial zone, Hero Honda Chowk area map, NH 48 industrial Gurgaon map',
+  'dharuhera-industrial-complex': 'Dharuhera Industrial Complex map, Dharuhera HSIIDC map download, Dharuhera Industrial layout plan, Dharuhera NH 48 industrial map, Dharuhera free download, Dharuhera Hero MotoCorp map, HSIIDC Dharuhera Rewari, Dharuhera auto manufacturing, NH 48 industrial corridor Dharuhera, Dharuhera plot map',
+  'imt-manesar': 'IMT Manesar map, IMT Manesar layout plan, IMT Manesar free download, Manesar industrial map, IMT Manesar HSIIDC map, Maruti Suzuki plant Manesar, Manesar industrial area map, HSIIDC Manesar layout, IMT Manesar NH 8, Manesar township map download',
+  'udyog-vihar': 'Udyog Vihar map, Udyog Vihar Gurgaon map download, Udyog Vihar layout plan, Udyog Vihar Phase 1 to 5 map, Udyog Vihar free download, Udyog Vihar HSIIDC, Udyog Vihar office map, Udyog Vihar NH 8 Gurgaon, Udyog Vihar industrial estate map',
+  // ─── Palam Vihar & Delhi border ───────────────────────────────────────────
+  'palam-vihar': 'Palam Vihar Gurgaon map, Palam Vihar map download, Palam Vihar layout plan, Palam Vihar Sector 1 2 Gurgaon, Palam Vihar free download, Palam Vihar Delhi border map, Palam Vihar independent houses map, Palam Vihar Gurugram map, Palam Vihar railway station area map',
+  'palam-vihar-part-1': 'Palam Vihar Part 1 Gurgaon map, Palam Vihar Part 1 map download, Palam Vihar Part 1 layout plan, Palam Vihar Part 1 free download, Palam Vihar Part 1 residential map, Palam Vihar Part 1 Gurugram',
+  'palam-vihar-part-2': 'Palam Vihar Part 2 Gurgaon map, Palam Vihar Part 2 map download, Palam Vihar Part 2 layout plan, Palam Vihar Part 2 free download, Palam Vihar Part 2 residential Gurgaon, Palam Vihar extension map',
+  'palam-vihar-part-3': 'Palam Vihar Part 3 Gurgaon map, Palam Vihar Part 3 map download, Palam Vihar Part 3 layout plan, Palam Vihar Part 3 free download, Palam Vihar Part 3 residential Gurgaon, Palam Vihar Part 3 near Delhi',
+  // ─── Established GCER/GCR sectors ────────────────────────────────────────
   'sector-65': 'Sector 65 Gurgaon map, Sector 65 map download, Sector 65 layout plan Gurgaon, Sector 65 Golf Course Extension Road, Sector 65 free download, DLF Arbour Sector 65, AIPL Joy Central Sector 65, Emaar IBC Sector 65, AIPL Signature Sector 65, Sector 65 property rate Gurgaon, Sector 65 GCER, DTCP approved map Sector 65, Sector 65 Gurugram map',
   'sector-42': 'Sector 42 Gurgaon map, Sector 42 map download, Sector 42 layout plan, Sector 42 Golf Course Road, DLF Magnolias Sector 42, Sector 42 Gurgaon free download, Sector 42 property rate Gurgaon, Golf Course Road Sector 42 map, DTCP approved Sector 42, Sector 42 Gurugram',
   'sector-44': 'Sector 44 Gurgaon map, Sector 44 map download, Sector 44 layout plan Gurgaon, Sector 44 HUDA Gurgaon, Sector 44 commercial map, Sector 44 free download, HUDA City Centre Sector 44, Sector 44 Gurugram map, office space Sector 44 Gurgaon, Sector 44 DTCP map',
@@ -1810,16 +1869,21 @@ const SECTOR_MAP_KEYWORDS = {
 
 for (const sector of SECTOR_MAPS) {
   const isMasterPlan = sector.id === 'gurgaon-manesar-master-plan';
-  // "Free download" in suffix targets download-intent searches
-  const descSuffix = ` DTCP-approved layout — free high-resolution download. Part of Gurgaon Master Plan 2031.`;
+  const isSohnaPlan = sector.id === 'sohna-master-plan-2031';
+  // "Free download" + "DTCP Haryana" in suffix targets download-intent searches with authority signal
+  const descSuffix = ` Official DTCP Haryana approved layout. Free download, no registration needed.`;
   const mapTitle = isMasterPlan
     ? 'Gurgaon Master Plan 2031 Map | Free PDF Download | All Sectors | LSR Realty'
-    : `${sector.name} Map Gurgaon | Free Layout Plan Download | LSR Realty`;
+    : isSohnaPlan
+      ? 'Sohna Master Plan 2031 Map | DGTCP Haryana Free Download | LSR Realty'
+      : `${sector.name} Gurgaon Map | DTCP Layout Plan Free Download | LSR Realty`;
   const mapDesc = isMasterPlan
     ? 'Gurgaon Master Plan 2031 (Gurugram Manesar Urban Complex) — official DTCP Haryana zone map, free PDF download. All sectors, land use zones, transport corridors and metro routes.'
-    : sector.description.length + descSuffix.length > 156
-      ? `${sector.description.slice(0, Math.max(153 - descSuffix.length, 0)).trim()}...${descSuffix}`
-      : `${sector.description}${descSuffix}`;
+    : isSohnaPlan
+      ? 'Sohna Master Plan 2031 — official DGTCP Haryana land use blueprint for Sohna tehsil. Free download. Residential, commercial, industrial zones, KMP Expressway corridor, all sectors.'
+      : sector.description.length + descSuffix.length > 156
+        ? `${sector.description.slice(0, Math.max(153 - descSuffix.length, 0)).trim()}...${descSuffix}`
+        : `${sector.description}${descSuffix}`;
 
   const mapSchema = {
     '@context': 'https://schema.org',
@@ -1855,7 +1919,7 @@ for (const sector of SECTOR_MAPS) {
   const sectorKeywords = SECTOR_MAP_KEYWORDS[sector.id]
     || (isMasterPlan
       ? 'Gurgaon Master Plan 2031, Gurgaon Master Plan 2031 PDF, Gurgaon Master Plan 2031 free download, Gurgaon Master Plan 2031 map download, Gurgaon Master Plan 2031 PDF download, Gurgaon Master Plan 2031 zone map, Gurgaon Master Plan 2031 land use, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 all sectors, Gurgaon sector map download, Gurugram Master Plan 2031, Gurgaon master plan 2031 2026, DTCP Haryana master plan download, Gurgaon land use map 2031, Gurugram development plan 2031, Gurgaon zone map free download'
-      : `${sector.name} map, ${sector.name} map download, ${sector.name} Gurgaon, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, Gurgaon sector map, Gurugram sector map, DTCP Haryana layout, free Gurgaon sector map download, sector map PDF Gurgaon, Gurgaon layout plan free download`);
+      : `${sector.name} map, ${sector.name} Gurgaon map, ${sector.name} map download, ${sector.name} Gurugram map, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, ${sector.name} property Gurgaon, Gurgaon sector map download, Gurugram sector map, DTCP Haryana approved layout, free Gurgaon sector map download, sector layout plan PDF Gurgaon, Gurgaon layout plan free download, Gurgaon Master Plan 2031`);
 
   renderRoute({
     route: `/maps/${sector.id}`,
