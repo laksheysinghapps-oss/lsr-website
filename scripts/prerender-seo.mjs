@@ -1304,6 +1304,14 @@ for (const project of PROJECTS) {
     },
     businessFunction: project.category === 'Leasing' ? 'http://purl.org/goodrelations/v1#LeaseOut' : 'http://purl.org/goodrelations/v1#Sell',
     seller: { '@type': 'RealEstateAgent', name: 'LSR Realty', url: SITE_URL, telephone: '+918448660019' },
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'INR',
+      price: project.priceRange,
+      availability: isSoldOut ? 'https://schema.org/LimitedAvailability' : 'https://schema.org/InStock',
+      validFrom: '2025-01-01',
+      seller: { '@type': 'RealEstateAgent', name: 'LSR Realty', telephone: '+918448660019', url: SITE_URL },
+    },
     additionalProperty: [
       { '@type': 'PropertyValue', name: 'Price Range', value: project.priceRange },
       { '@type': 'PropertyValue', name: 'Size Range', value: project.sizeRange },
@@ -1335,43 +1343,65 @@ for (const project of PROJECTS) {
 
   const locationNoComma = project.location.replace(/,/g, '');
   const unitType = project.unitMix?.[0]?.type ?? '';
+  const allUnitTypes = project.unitMix?.map(u => u.type) ?? [];
+  const sectorMatch = project.location.match(/Sector\s+\d+[A-Za-z]*/i);
+  const sectorStr = sectorMatch ? ` ${sectorMatch[0]}` : '';
+  const isResale = isSoldOut;
+
   renderRoute({
     route: `/projects/${project.id}`,
     title: (() => {
-      const unitSuffix = unitType ? ` ${unitType}` : '';
-      const action = project.category === 'Leasing' ? 'For Lease' : 'Investment';
-      const base = `${project.name}${unitSuffix} — ${action} in Gurgaon | LSR Realty`;
-      return base.length <= 65 ? base : `${project.name} — ${action} in Gurgaon | LSR Realty`;
+      const action = project.category === 'Leasing' ? 'For Lease' : (isResale ? 'Resale' : 'Investment');
+      const full = `${project.name}${sectorStr} — ${project.type} ${action} Gurgaon | LSR Realty`;
+      if (full.length <= 65) return full;
+      const med = `${project.name}${sectorStr} — ${action} Gurgaon | LSR Realty`;
+      if (med.length <= 65) return med;
+      return `${project.name} — ${action} Gurgaon | LSR Realty`;
     })(),
     description: (() => {
-      const base = `${project.name}, ${project.location}. ${project.priceRange}. ${project.developer}.`;
-      const suffix = ` ${project.category === 'Leasing' ? 'Leasing' : 'Investment'} advisory by LSR Realty, Gurgaon.`;
-      const full = base + suffix;
-      return full.length <= 160 ? full : (base.length <= 157 ? base + '...' : base.slice(0, 157) + '...');
+      const statusNote = isResale ? ' Resale available.' : (project.status?.toLowerCase().includes('new launch') ? ' New launch.' : '');
+      const unitNote = unitType ? ` ${unitType}.` : '';
+      const base = `${project.name}${sectorStr}, Gurgaon.${unitNote} ${project.priceRange}. ${project.developer}.${statusNote}`;
+      const cta = ' Contact LSR Realty: +91 8448660019.';
+      const full = base + cta;
+      if (full.length <= 160) return full;
+      return base.length <= 157 ? base + '...' : base.slice(0, 157) + '...';
     })(),
     keywords: [
       project.name,
       `${project.name} price`,
+      `${project.name} price per sq ft`,
       `${project.name} floor plan`,
+      `${project.name} brochure`,
+      `${project.name} site plan`,
+      `${project.name} possession`,
+      `${project.name} review`,
       `${project.name} ${project.developer}`,
+      isResale ? `${project.name} resale price` : `book ${project.name}`,
+      ...allUnitTypes.map(u => `${project.name} ${u}`),
       project.location,
       locationNoComma,
       project.developer,
+      `${project.developer} projects Gurgaon`,
+      `${project.developer} new launch Gurgaon`,
+      `${project.developer} channel partner`,
       project.type,
       unitType ? `${unitType} Gurgaon` : '',
-      project.rera ? `${project.name} RERA` : '',
+      project.pricePerSqFt ? `${project.name} ${project.pricePerSqFt}` : '',
+      project.rera && project.rera !== 'Registration Awaited'
+        ? `${project.name} RERA ${project.rera}`
+        : (project.rera ? `${project.name} RERA` : ''),
       project.category === 'Leasing'
         ? `office space for lease Gurgaon, shop for lease Gurgaon, retail space Gurgaon, commercial property for lease Gurgaon, ${project.name} lease, ${project.name} rent`
-        : `flat for sale Gurgaon, apartment for sale Gurgaon, property for sale Gurgaon, buy property Gurgaon, ${project.name} for sale`,
+        : `flat for sale Gurgaon, apartment for sale Gurgaon, luxury apartments Gurgaon 2025, buy property Gurgaon, ${project.name} for sale`,
       'Gurgaon real estate investment',
       `real estate ${project.category === 'Leasing' ? 'leasing' : 'investment'} Gurgaon`,
       'LSR Realty channel partner',
       'real estate broker Gurgaon',
-      `${project.developer} Gurgaon`,
-      `${project.developer} channel partner`,
+      `channel partner ${project.name}`,
       project.category === 'Leasing'
-        ? 'commercial property Gurgaon, Grade A office Gurgaon, retail leasing Gurgaon'
-        : `luxury property Gurgaon, buy property Gurgaon 2026, property investment ROI Gurgaon, property price appreciation Gurgaon`,
+        ? 'commercial property Gurgaon, Grade A office Gurgaon, retail leasing Gurgaon, pre-leased office Gurgaon'
+        : `luxury property Gurgaon, buy luxury property Gurgaon 2025, property investment ROI Gurgaon, price appreciation Gurgaon`,
       ...(NEARBY_PROJECT_KEYWORDS[project.id] || []),
     ].filter(Boolean).join(', '),
     image: projectImage,
