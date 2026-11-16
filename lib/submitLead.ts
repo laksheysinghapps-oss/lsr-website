@@ -8,6 +8,7 @@ export interface LeadData {
   project?: string;
   message?: string;
   source?: string;
+  downloadUrl?: string;
 }
 
 export async function submitLead(data: LeadData): Promise<{ success: boolean; error?: string }> {

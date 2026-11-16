@@ -153,10 +153,10 @@ const MapDetail: React.FC = () => {
           projectName={sector.name}
           onClose={() => setShowDownloadModal(false)}
           title="Download the Map"
-          subtitle="Share your details and your download will start right away."
+          subtitle="Enter your details and we'll email you the high-resolution download link."
           source={`Sector Map Download: ${sector.name}`}
-          successMessage="Your download has started. Check your downloads folder."
-          buttonLabel="Download Map"
+          successMessage="Check your email for the download link."
+          buttonLabel="Email Me the Map"
           downloadUrl={sector.zoom}
         />
       )}

@@ -55,18 +55,10 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
       project: projectName,
       source: source ?? `Brochure Request - ${projectName}`,
       message: source ? 'Requested pricing details' : 'Requested brochure download',
+      ...(downloadUrl ? { downloadUrl } : {}),
     });
     setIsSubmitting(false);
     setSubmitted(true);
-
-    if (downloadUrl) {
-      const link = document.createElement('a');
-      link.href = downloadUrl;
-      link.download = '';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    }
   };
 
   return (
@@ -95,8 +87,12 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
               <div className="w-14 h-14 rounded-full bg-green-900/30 border border-green-500/40 flex items-center justify-center mb-4">
                 <Check className="text-green-400 w-7 h-7" />
               </div>
-              <p className="text-white font-semibold mb-1">Request Received!</p>
-              <p className="text-gray-400 text-sm">{successMessage}</p>
+              <p className="text-white font-semibold mb-1">{downloadUrl ? 'Check your email!' : 'Request Received!'}</p>
+              <p className="text-gray-400 text-sm">
+                {downloadUrl
+                  ? `We've sent the download link to ${formData.email}. Check your inbox (and spam folder).`
+                  : successMessage}
+              </p>
               <button
                 onClick={onClose}
                 className="mt-6 px-6 py-2 border border-white/20 text-sm text-gray-300 hover:border-white hover:text-white transition-colors"
