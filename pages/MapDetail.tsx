@@ -157,7 +157,7 @@ const MapDetail: React.FC = () => {
           source={`Sector Map Download: ${sector.name}`}
           successMessage="Check your email for the download link."
           buttonLabel="Email Me the Map"
-          downloadUrl={sector.zoom}
+          downloadUrl={`https://lsrrealty.com${sector.zoom}`}
         />
       )}
 
