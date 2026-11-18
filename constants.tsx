@@ -118,7 +118,7 @@ export const PROJECTS: Project[] = [
     status: 'New Launch',
     category: 'Investment',
     subCategory: 'Residential',
-    image: '/images/Logo.png',
+    image: '/images/elevate-vista.jpg',
     developer: 'Hines & Conscient',
     rera: 'HARERA 69 of 2026',
     description: 'Elevate Vista by Hines & Conscient redefines ultra-luxury living on Golf Course Extension Road. Offering 3.5 and 4.5 BHK residences of 3,600 to 4,500 sq ft in Sector 63A, it delivers world-class amenities, private lift lobbies and curated finishes by global design studios.',
