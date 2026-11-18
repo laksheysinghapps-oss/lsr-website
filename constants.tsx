@@ -107,6 +107,31 @@ export const SECTOR_MAPS: SectorMap[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: 'elevate-vista',
+    name: 'Elevate Vista',
+    location: 'Sector 63A, Golf Course Extension Road, Gurugram',
+    priceRange: '₹7.5 Cr – ₹12 Cr',
+    pricePerSqFt: '₹20,000 – ₹22,000/sq.ft',
+    sizeRange: '3,600 to 4,500 Sq. Ft.',
+    possessionDate: 'On Request',
+    type: 'Ultra Luxury Residential',
+    status: 'New Launch',
+    category: 'Investment',
+    subCategory: 'Residential',
+    image: '/images/Logo.png',
+    developer: 'Hines & Conscient',
+    rera: 'HARERA 69 of 2026',
+    description: 'Elevate Vista by Hines & Conscient redefines ultra-luxury living on Golf Course Extension Road. Offering 3.5 and 4.5 BHK residences of 3,600 to 4,500 sq ft in Sector 63A, it delivers world-class amenities, private lift lobbies and curated finishes by global design studios.',
+    mapQuery: 'Conscient+Hines+Elevate+Vista+Sector+63A+Gurugram',
+    highlights: ['3.5 & 4.5 BHK Ultra-Luxury', 'Golf Course Extension Road', 'HARERA 69 of 2026', 'Private Lift Lobbies', 'By Hines & Conscient', 'Starting ₹7.5 Cr'],
+    amenities: ['Sky Lounge', 'Luxury Clubhouse', 'Swimming Pool', 'Fitness Centre', 'Concierge Service', 'Private Lift Lobby'],
+    unitMix: [
+      { type: '3.5 BHK', size: '3,600 Sq. Ft.', price: '₹7.5 Cr onwards' },
+      { type: '4.5 BHK', size: '4,500 Sq. Ft.', price: '₹10 Cr onwards' }
+    ],
+    locationAdvantage: ['Golf Course Extension Road, Sector 63A', 'Adjacent to Golf Courses', 'Near Sector 63 Corporate Hub', 'Rapid Metro Access']
+  },
+  {
     id: 'max-estate-59',
     name: 'Max Estate 59',
     location: 'Sector 59, Golf Course Extension Road, Gurugram',

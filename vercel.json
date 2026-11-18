@@ -130,15 +130,19 @@
       "permanent": true
     }
   ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "has": [{"type": "host", "value": "elevate-vista.lsrrealty.com"}],
-      "destination": "/elevate-vista/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "rewrites": {
+    "beforeFiles": [
+      {
+        "source": "/(.*)",
+        "has": [{"type": "host", "value": "elevate-vista.lsrrealty.com"}],
+        "destination": "/elevate-vista/index.html"
+      }
+    ],
+    "afterFiles": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }

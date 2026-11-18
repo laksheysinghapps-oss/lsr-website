@@ -9,6 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const isMaxEstate59 = project.id === 'max-estate-59';
+  const isElevateVista = project.id === 'elevate-vista';
   const cardClass = "group bg-lsr-charcoal border border-white/5 hover:border-lsr-gold/50 transition-all duration-500 cursor-pointer overflow-hidden relative block";
 
   const cardContent = (
@@ -59,12 +60,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
 
         <div className="flex items-center space-x-2 text-xs uppercase tracking-widest text-white group-hover:text-lsr-gold transition-colors">
-          <span>{isMaxEstate59 ? 'More Details' : 'View Investment Memo'}</span>
+          <span>{isMaxEstate59 || isElevateVista ? 'More Details' : 'View Investment Memo'}</span>
           <ArrowUpRight size={14} />
         </div>
       </div>
     </>
   );
+
+  if (isElevateVista) {
+    return (
+      <a
+        href="https://elevate-vista.lsrrealty.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={cardClass}
+      >
+        {cardContent}
+      </a>
+    );
+  }
 
   if (isMaxEstate59) {
     return (
