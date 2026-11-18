@@ -108,7 +108,7 @@ export const SECTOR_MAPS: SectorMap[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'elevate-vista',
-    name: 'Elevate Vista',
+    name: 'Hines Elevate Vista',
     location: 'Sector 63A, Golf Course Extension Road, Gurugram',
     priceRange: '₹7.5 Cr – ₹12 Cr',
     pricePerSqFt: '₹20,000 – ₹22,000/sq.ft',

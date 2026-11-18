@@ -18,7 +18,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <img
           src={project.image}
           alt={project.name}
-          className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+          className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${isElevateVista ? 'object-contain object-center' : 'object-cover object-center'}`}
         />
         <div className="absolute top-4 right-4 bg-lsr-gold text-black text-xs font-bold px-4 py-2 uppercase tracking-widest">
           {project.status}
