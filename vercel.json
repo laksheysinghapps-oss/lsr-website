@@ -115,6 +115,12 @@
   "redirects": [
     {
       "source": "/",
+      "has": [{"type": "host", "value": "elevate-vista.lsrrealty.com"}],
+      "destination": "https://elevate-vista.lsrrealty.com/elevate-vista/index.html",
+      "permanent": false
+    },
+    {
+      "source": "/",
       "has": [
         {
           "type": "host",
@@ -130,19 +136,10 @@
       "permanent": true
     }
   ],
-  "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/(.*)",
-        "has": [{"type": "host", "value": "elevate-vista.lsrrealty.com"}],
-        "destination": "/elevate-vista/index.html"
-      }
-    ],
-    "afterFiles": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
