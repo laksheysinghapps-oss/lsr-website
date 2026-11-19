@@ -297,6 +297,18 @@
       "brand": { "@type": "Brand", "name": "LSR Realty", "alternateName": ["LSR", "LSR Reality", "LSR Broker", "LSR Agent", "LSR Real Estate", "LSR Company"] },
       "legalName": "LSR Realty",
       "slogan": "Institutional-grade real estate advisory for HNI, UHNI and NRI investors in Gurgaon",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "RERA Registered Real Estate Channel Partner",
+        "credentialCategory": "Real Estate Broker & Channel Partner License",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Haryana Real Estate Regulatory Authority",
+          "alternateName": "HARERA",
+          "url": "https://harerait.org.in"
+        },
+        "validIn": { "@type": "State", "name": "Haryana", "containedInPlace": { "@type": "Country", "name": "India" } }
+      },
       "serviceArea": [
         { "@type": "City", "name": "Gurugram", "alternateName": "Gurgaon" },
         { "@type": "City", "name": "Delhi" },
@@ -339,13 +351,28 @@
         "email": "marketing@lsrrealty.com",
         "areaServed": "IN",
         "availableLanguage": ["English", "Hindi"],
-        "hoursAvailable": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "10:00",
-          "closes": "19:00"
+        "hoursAvailable": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "19:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "17:00" }
+        ]
+      },
+      "potentialAction": [
+        {
+          "@type": "ContactAction",
+          "name": "Contact LSR Realty",
+          "target": "https://lsrrealty.com/contact"
+        },
+        {
+          "@type": "ReserveAction",
+          "name": "Book a Free Consultation",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://lsrrealty.com/contact",
+            "inLanguage": "en-IN",
+            "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"]
+          }
         }
-      }
+      ]
     }
     </script>
 </head>
@@ -411,7 +438,7 @@
     </noscript>
     <script type="module" src="/index.tsx"></script>
         <script type="application/ld+json">
-          {"@context":"https://schema.org","@type":"WebPage","@id":"https://lsrrealty.com/#webpage","url":"https://lsrrealty.com/","name":"Real Estate Consultant Gurgaon | HNI, NRI & Investment Advisory | LSR Realty","description":"Trusted real estate consultant in Gurgaon and Gurugram for HNI, UHNI and NRI investors. Expert advisory on luxury residential, office leasing, retail and portfolio strategy.","inLanguage":"en-IN","isPartOf":{"@type":"WebSite","@id":"https://lsrrealty.com/#website"},"about":{"@type":"RealEstateAgent","@id":"https://lsrrealty.com/#organization"},"dateModified":"2026-08-25","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lsrrealty.com/"}]},"potentialAction":{"@type":"ReadAction","target":["https://lsrrealty.com/"]}}
+          {"@context":"https://schema.org","@type":"WebPage","@id":"https://lsrrealty.com/#webpage","url":"https://lsrrealty.com/","name":"Real Estate Consultant Gurgaon | HNI, NRI & Investment Advisory | LSR Realty","description":"Trusted real estate consultant in Gurgaon and Gurugram for HNI, UHNI and NRI investors. Expert advisory on luxury residential, office leasing, retail and portfolio strategy.","inLanguage":"en-IN","isPartOf":{"@type":"WebSite","@id":"https://lsrrealty.com/#website"},"about":{"@type":"RealEstateAgent","@id":"https://lsrrealty.com/#organization"},"dateModified":"2026-11-19","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lsrrealty.com/"}]},"potentialAction":{"@type":"ReadAction","target":["https://lsrrealty.com/"]}}
         </script>
         <script type="application/ld+json">
           {"@context":"https://schema.org","@type":"WebSite","@id":"https://lsrrealty.com/#website","name":"LSR Realty","alternateName":["LSR","LSR Reality","LSR Realty Advisory","LSR Real Estate","LSR Broker","LSR Agent","LSR Company","LSR Realty Gurgaon","LSR Group Real Estate"],"url":"https://lsrrealty.com/","inLanguage":"en-IN","about":{"@type":"RealEstateAgent","@id":"https://lsrrealty.com/#organization","name":"LSR Realty","url":"https://lsrrealty.com/","areaServed":{"@type":"City","name":"Gurugram"}},"publisher":{"@type":"Organization","@id":"https://lsrrealty.com/#organization","name":"LSR Realty","url":"https://lsrrealty.com/","logo":{"@type":"ImageObject","url":"https://lsrrealty.com/images/Logo2.png"}},"copyrightHolder":{"@type":"Organization","@id":"https://lsrrealty.com/#organization","name":"LSR Realty"},"copyrightYear":"2026"}
