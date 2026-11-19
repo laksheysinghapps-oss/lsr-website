@@ -13,6 +13,9 @@ Also known as: LSR, LSR Reality, LSR Broker, LSR Agent, LSR Real Estate, LSR Com
 - **Email:** marketing@lsrrealty.com
 - **Website:** https://lsrrealty.com
 - **City:** Gurugram (Gurgaon), Haryana, India
+- **Geo:** 28.4091° N, 77.0517° E (Sector 58, Golf Course Extension Road)
+- **Nearest Landmark:** Magnum Global Park, Sector 58, GCER, Gurugram
+- **Serves:** Gurugram, Delhi NCR (Delhi, Noida, Greater Noida, Faridabad)
 
 ## What LSR Realty Does
 
@@ -30,14 +33,23 @@ LSR Realty is the real estate advisory arm of LSR Group, providing research-back
 
 ## Key Corridors Covered
 
-- Golf Course Extension Road (GCER) — Sectors 58–70
-- Golf Course Road — Sectors 42, 43, 56, 57
+- Golf Course Extension Road (GCER) — Sectors 57–70 (primary base: Sector 58)
+- Golf Course Road — Sectors 42, 43, 44, 56, 57
 - Dwarka Expressway — Sectors 82–113
 - Sohna Road — Sectors 47–50
 - Southern Peripheral Road (SPR)
 - Udyog Vihar — Phase 1–6
 - Cyber City / Cyber Hub
 - New Gurgaon / Manesar
+
+## Delhi NCR Coverage
+
+LSR Realty serves HNI, UHNI and NRI investors across the Delhi NCR region:
+- **Gurugram (Gurgaon)** — primary market, full advisory coverage
+- **Delhi (South Delhi, Lutyens, Vasant Vihar)** — advisory and investment guidance
+- **Noida & Greater Noida** — commercial and residential advisory
+- **Faridabad** — select investment segments
+- For Delhi NCR investors interested in Gurgaon real estate: contact +91 8448660019
 
 ## Active Projects (as of November 2026)
 

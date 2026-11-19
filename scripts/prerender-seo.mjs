@@ -139,7 +139,15 @@ const servicesSchema = {
       description: svc.description,
       url: svc.link ? `${SITE_URL}${svc.link}` : `${SITE_URL}/services`,
       provider: { '@type': 'LocalBusiness', name: 'LSR Realty', url: SITE_URL, telephone: '+918448660019' },
-      areaServed: [{ '@type': 'City', name: 'Gurgaon' }, { '@type': 'City', name: 'Gurugram' }],
+      areaServed: [
+        { '@type': 'City', name: 'Gurgaon' },
+        { '@type': 'City', name: 'Gurugram' },
+        { '@type': 'City', name: 'Delhi' },
+        { '@type': 'City', name: 'Noida' },
+        { '@type': 'City', name: 'Greater Noida' },
+        { '@type': 'City', name: 'Faridabad' },
+        { '@type': 'AdministrativeArea', name: 'Delhi NCR' },
+      ],
     },
   })),
 };
@@ -149,7 +157,7 @@ const staticRoutes = [
     route: '/about',
     title: 'About LSR Realty | Real Estate Broker & Consultant Gurgaon | HNI & NRI Advisory',
     description: 'LSR Realty is Gurgaon\'s trusted real estate broker, consultant and authorised channel partner — the investment advisory arm of LSR Group. Institutional-grade, research-backed advisory for HNI, UHNI and NRI investors.',
-    keywords: 'LSR Realty, LSR, LSR Reality, LSR Broker, LSR Agent, LSR Real Estate, LSR Company, LSR Real Estate Gurgaon, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, real estate agent Gurgaon, channel partner Gurgaon, what is channel partner real estate, RERA registered channel partner Gurgaon, real estate company Gurgaon, best real estate broker Gurgaon, top real estate company Gurgaon 2026, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon, flat for sale Gurgaon, property in Gurgaon, real estate investment advisory India, property advisory services Gurgaon',
+    keywords: 'LSR Realty, LSR, LSR Reality, LSR Broker, LSR Agent, LSR Real Estate, LSR Company, LSR Real Estate Gurgaon, LSR Realty Gurgaon, about LSR Realty, LSR Group real estate, real estate broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, real estate agent Gurgaon, channel partner Gurgaon, what is channel partner real estate, RERA registered channel partner Gurgaon, real estate company Gurgaon, best real estate broker Gurgaon, top real estate company Gurgaon 2026, institutional real estate advisory Gurgaon, HNI NRI real estate advisory Gurgaon, flat for sale Gurgaon, property in Gurgaon, real estate investment advisory India, property advisory services Gurgaon, real estate broker near me Gurgaon, broker near me Gurugram, real estate agent near me Gurgaon, real estate consultant near me Gurugram, Delhi NCR real estate broker, real estate advisory Delhi NCR, NCR property consultant, Noida real estate broker, property investment Delhi NCR',
     breadcrumbs: [HOME, { name: 'About LSR Realty', url: `${SITE_URL}/about` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -218,7 +226,7 @@ const staticRoutes = [
     route: '/services',
     title: 'Real Estate Services Gurgaon | Broker, Channel Partner & Consultant | LSR Realty',
     description: 'LSR Realty provides real estate brokerage, channel partner advisory and consultancy services in Gurgaon: office leasing, retail leasing, HNI and NRI investment advisory, market research and deal structuring.',
-    keywords: 'real estate broker Gurgaon, real estate channel partner Gurgaon, property broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, DLF channel partner Gurgaon, Elan channel partner Gurgaon, AIPL channel partner Gurgaon, M3M channel partner Gurgaon, Godrej channel partner Gurgaon, Sobha channel partner Gurgaon, Signature Global channel partner Gurgaon, office leasing Gurgaon, office space for rent Gurgaon, office space sector 44 Gurgaon, Grade A office Udyog Vihar, office space Cyber City Gurgaon, retail leasing Gurgaon, shop for lease Gurgaon, flat for sale Gurgaon, villa for sale Gurgaon, property for sale Gurgaon, property for rent Gurgaon, apartment for sale Gurgaon, 3 BHK flat Sector 65 Gurgaon, 4 BHK flat Golf Course Extension Road, residential property Gurgaon, commercial property Gurgaon, NRI investment services Gurgaon, NRI power of attorney India, NRI home loan India, RERA registered projects Gurgaon, HRERA approved projects, eco-friendly apartments Gurgaon, IGBC certified Gurgaon, smart home Gurgaon, HNI real estate advisory Gurgaon, luxury property advisory Gurgaon, deal structuring Gurgaon, highest ROI property Gurgaon, best sector to invest Gurgaon, Dwarka Expressway investment 2026, LSR Realty services',
+    keywords: 'real estate broker Gurgaon, real estate channel partner Gurgaon, property broker Gurgaon, real estate consultant Gurgaon, property dealer Gurgaon, real estate broker near me Gurgaon, broker near me Gurugram, property broker near me Gurgaon, real estate agent near me Gurgaon, real estate broker near Sector 58 Gurgaon, real estate broker near Sector 59 Gurgaon, real estate broker near GCER, real estate broker Golf Course Extension Road, Delhi NCR real estate broker, real estate broker Delhi NCR, NCR property consultant, Delhi NCR property advisor, Noida real estate broker, Greater Noida property broker, Faridabad real estate agent, NCR real estate services, DLF channel partner Gurgaon, Elan channel partner Gurgaon, AIPL channel partner Gurgaon, M3M channel partner Gurgaon, Godrej channel partner Gurgaon, Sobha channel partner Gurgaon, Signature Global channel partner Gurgaon, office leasing Gurgaon, office space for rent Gurgaon, office space sector 44 Gurgaon, Grade A office Udyog Vihar, office space Cyber City Gurgaon, retail leasing Gurgaon, shop for lease Gurgaon, flat for sale Gurgaon, villa for sale Gurgaon, property for sale Gurgaon, property for rent Gurgaon, apartment for sale Gurgaon, 3 BHK flat Sector 65 Gurgaon, 4 BHK flat Golf Course Extension Road, residential property Gurgaon, commercial property Gurgaon, NRI investment services Gurgaon, NRI power of attorney India, NRI home loan India, RERA registered projects Gurgaon, HRERA approved projects, eco-friendly apartments Gurgaon, IGBC certified Gurgaon, smart home Gurgaon, HNI real estate advisory Gurgaon, luxury property advisory Gurgaon, deal structuring Gurgaon, highest ROI property Gurgaon, best sector to invest Gurgaon, Dwarka Expressway investment 2026, LSR Realty services',
     breadcrumbs: [HOME, { name: 'Our Services', url: `${SITE_URL}/services` }],
     structuredData: [servicesSchema, {
       '@context': 'https://schema.org',
@@ -246,8 +254,13 @@ const staticRoutes = [
         },
         {
           '@type': 'Question',
-          name: 'Which areas of Gurgaon does LSR Realty cover for real estate services?',
-          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty covers all major Gurgaon real estate corridors: Golf Course Extension Road (Sectors 58–65), Golf Course Road, Dwarka Expressway, Sohna Road, Southern Peripheral Road (SPR), Udyog Vihar, Cyber City, and New Gurgaon/Manesar. We advise on both residential (luxury apartments, villas) and commercial (Grade A office, high-street retail, mall retail) assets across these micro-markets.' },
+          name: 'Which areas of Gurgaon and Delhi NCR does LSR Realty cover for real estate services?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty covers all major Gurgaon real estate corridors: Golf Course Extension Road (Sectors 57–70), Golf Course Road (Sectors 42–44), Dwarka Expressway (Sectors 82–113), Sohna Road, Southern Peripheral Road (SPR), Udyog Vihar, Cyber City, and New Gurgaon/Manesar. Beyond Gurgaon, LSR Realty advises HNI and NRI investors on real estate across the Delhi NCR region including South Delhi, Noida, Greater Noida, and Faridabad. Contact +91 8448660019 for coverage-specific advisory.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does LSR Realty provide real estate services in Delhi NCR outside Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. While LSR Realty\'s primary base is Gurgaon (Golf Course Extension Road, Golf Course Road, Dwarka Expressway), the firm advises HNI and NRI investors across the Delhi NCR region including South Delhi, Noida, Greater Noida, Faridabad, and Ghaziabad. For Delhi NCR real estate advisory — residential investment, office leasing, or portfolio strategy — contact LSR Realty at +91 8448660019 or marketing@lsrrealty.com.' },
         },
       ],
     }, {
@@ -346,7 +359,7 @@ const staticRoutes = [
     route: '/maps',
     title: 'Gurgaon Sector Maps & Layout Plans | Free PDF Download | LSR Realty',
     description: 'Free Gurgaon sector layout maps and the Gurgaon Manesar Master Plan 2031. High-resolution PDF downloads for 75+ sectors across GCER, Golf Course Road, Dwarka Expressway and Sohna Road.',
-    keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map, property location Gurgaon, plot map Gurgaon, residential sector Gurgaon, Golf Course Extension Road map, Dwarka Expressway sector map, Sohna Road sector map, free sector map Gurgaon, Gurgaon sector 58 map, Sector 65 map Gurgaon, Sector 82 map Gurgaon, Sector 86 map Gurgaon, Sector 103 map Gurgaon, Sector 57 Gurgaon map, Sector 67 Gurgaon layout, Sector 37 map Gurgaon, Sector 47 Gurgaon map, Sector 76 Gurgaon map, Sector 77 map Gurgaon, Gurgaon zone map download, Gurugram plot layout free download, Master Plan 2031 PDF download, Gurgaon layout plan DTCP, HRERA zone map, Gurgaon land use map, Pace City II sector map Gurgaon, Nirvana Country map Gurgaon',
+    keywords: 'Gurgaon sector maps, Gurugram sector layout plans, Gurgaon map download, DTCP Haryana maps, Gurgaon Master Plan 2031, sector layout Gurgaon, Gurugram map, property location Gurgaon, plot map Gurgaon, residential sector Gurgaon, Golf Course Extension Road map, Dwarka Expressway sector map, Sohna Road sector map, free sector map Gurgaon, Gurgaon sector 58 map, Sector 59 map Gurgaon, Sector 60 Gurgaon map, Sector 61 Gurgaon map, Sector 62 Gurgaon map, Sector 63 Gurgaon map, Sector 63A Gurgaon map, Sector 64 Gurgaon map, Sector 65 map Gurgaon, Sector 66 Gurgaon map, Sector 67 Gurgaon layout, Sector 68 Gurgaon map, Sector 70 Gurgaon map, Sector 82 map Gurgaon, Sector 86 map Gurgaon, Sector 103 map Gurgaon, Sector 57 Gurgaon map, Sector 37 map Gurgaon, Sector 47 Gurgaon map, Sector 76 Gurgaon map, Sector 77 map Gurgaon, Gurgaon zone map download, Gurugram plot layout free download, Master Plan 2031 PDF download, Gurgaon layout plan DTCP, HRERA zone map, Gurgaon land use map, Pace City II sector map Gurgaon, Nirvana Country map Gurgaon, sector map near me Gurgaon, Gurgaon sector map near me, layout plan near me Gurugram, free sector map near me Gurgaon, DTCP map near me Gurgaon',
     breadcrumbs: [HOME, { name: 'Gurgaon Maps', url: `${SITE_URL}/maps` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -370,7 +383,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-10-21',
+      dateModified: '2026-11-19',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -424,6 +437,16 @@ const staticRoutes = [
           '@type': 'Question',
           name: 'Where can I download the Gurgaon Master Plan 2031 map for free?',
           acceptedAnswer: { '@type': 'Answer', text: 'The official Gurgaon Master Plan 2031 zone map is available as a free high-resolution download at lsrrealty.com/maps/gurgaon-manesar-master-plan. The map is sourced from DTCP Haryana\'s approved plan and shows all land use zones, sector boundaries, metro corridors and transport routes across the Gurugram Manesar Urban Complex. No registration or payment required.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Where can I find a sector map near me in Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'You can find official layout maps for all Gurgaon sectors near you at lsrrealty.com/maps. Maps cover every major sector — from Sector 42 (Golf Course Road) and Sector 57–70 (Golf Course Extension Road) to Sectors 82–113 (Dwarka Expressway) and Sectors 47–50 (Sohna Road). Every map is free to download, DTCP Haryana approved, and high-resolution. No registration required.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which Gurgaon sector maps are available on GCER (Golf Course Extension Road)?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty hosts official layout maps for all Golf Course Extension Road sectors: Sector 57, 58, 59, 60, 61, 62, 63, 63A, 64, 65, 66, 67, 68, and 70 Gurgaon. Each map is DTCP Haryana approved, shows plot boundaries, road widths, land use zones and park locations, and is free to download at lsrrealty.com/maps. GCER is Gurgaon\'s most active investment corridor and LSR Realty is based in Sector 58 on GCER.' },
         },
       ],
     }],
@@ -486,7 +509,7 @@ const staticRoutes = [
     route: '/contact',
     title: 'Contact LSR Realty | Real Estate Broker & Consultant Gurgaon',
     description: 'Speak with LSR Realty — Gurgaon\'s trusted real estate broker, consultant and authorised channel partner. Free initial consultation for investment advisory, office leasing, retail leasing and NRI services.',
-    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, LSR contact, LSR Reality contact, LSR Broker contact, LSR Agent contact, LSR Real Estate contact, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, property dealer Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate, flat for sale Gurgaon enquiry, office space lease Gurgaon enquiry, property for sale Gurgaon enquiry',
+    keywords: 'contact LSR Realty, LSR Realty contact number, LSR Realty Gurgaon, LSR contact, LSR Reality contact, LSR Broker contact, LSR Agent contact, LSR Real Estate contact, real estate broker near me Gurgaon, real estate agent near me Gurugram, broker near me Gurgaon, property dealer near me Gurgaon, real estate consultant near me Gurgaon, real estate broker near Sector 58 Gurgaon, real estate broker near Sector 59 Gurgaon, real estate broker near GCER, real estate broker near Golf Course Extension Road, broker near sector 58, broker near sector 59, broker near GCR Gurgaon, real estate broker near me Sector 65, Delhi NCR real estate broker, real estate consultant Delhi NCR, NCR property broker, real estate broker contact Gurgaon, real estate consultant Gurgaon contact, property dealer Gurgaon contact, channel partner Gurgaon, book consultation Gurgaon real estate, flat for sale Gurgaon enquiry, office space lease Gurgaon enquiry, property for sale Gurgaon enquiry',
     breadcrumbs: [HOME, { name: 'Contact Us', url: `${SITE_URL}/contact` }],
     structuredData: [{
       '@context': 'https://schema.org',
@@ -533,11 +556,35 @@ const staticRoutes = [
         ],
         areaServed: [
           { '@type': 'City', name: 'Gurugram' },
+          { '@type': 'City', name: 'Gurgaon' },
+          { '@type': 'City', name: 'Delhi' },
+          { '@type': 'City', name: 'Noida' },
+          { '@type': 'City', name: 'Greater Noida' },
+          { '@type': 'City', name: 'Faridabad' },
+          { '@type': 'AdministrativeArea', name: 'Delhi NCR' },
           { '@type': 'Place', name: 'Golf Course Extension Road, Gurgaon' },
           { '@type': 'Place', name: 'Golf Course Road, Gurgaon' },
           { '@type': 'Place', name: 'Dwarka Expressway, Gurgaon' },
           { '@type': 'Place', name: 'Sohna Road, Gurgaon' },
           { '@type': 'Place', name: 'Southern Peripheral Road, Gurgaon' },
+          { '@type': 'Place', name: 'Sector 57, Gurugram' },
+          { '@type': 'Place', name: 'Sector 58, Gurugram' },
+          { '@type': 'Place', name: 'Sector 59, Gurugram' },
+          { '@type': 'Place', name: 'Sector 60, Gurugram' },
+          { '@type': 'Place', name: 'Sector 61, Gurugram' },
+          { '@type': 'Place', name: 'Sector 62, Gurugram' },
+          { '@type': 'Place', name: 'Sector 63, Gurugram' },
+          { '@type': 'Place', name: 'Sector 63A, Gurugram' },
+          { '@type': 'Place', name: 'Sector 64, Gurugram' },
+          { '@type': 'Place', name: 'Sector 65, Gurugram' },
+          { '@type': 'Place', name: 'Sector 66, Gurugram' },
+          { '@type': 'Place', name: 'Sector 67, Gurugram' },
+          { '@type': 'Place', name: 'Sector 82, Gurugram' },
+          { '@type': 'Place', name: 'Sector 83, Gurugram' },
+          { '@type': 'Place', name: 'Sector 86, Gurugram' },
+          { '@type': 'Place', name: 'Sector 103, Gurugram' },
+          { '@type': 'Place', name: 'Udyog Vihar, Gurgaon' },
+          { '@type': 'Place', name: 'Cyber City, Gurgaon' },
         ],
         aggregateRating: {
           '@type': 'AggregateRating',
@@ -565,6 +612,21 @@ const staticRoutes = [
           '@type': 'Question',
           name: "Where is LSR Realty's office located in Gurgaon?",
           acceptedAnswer: { '@type': 'Answer', text: "LSR Realty's office is located at 911, Magnum Global Park, Sector 58, Golf Course Extension Road, Gurugram, Haryana 122098. Magnum Global Park is on Golf Course Extension Road (GCER), easily accessible from Golf Course Road, Sohna Road, and NH 48. The nearest landmark is the Sector 58 Rapid Metro Station, approximately 1 km away." },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which real estate broker is nearest to Sector 58 and Sector 59 Gurgaon?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is located in Sector 58, Gurgaon — right on Golf Course Extension Road. The office at 911, Magnum Global Park, Sector 58, Gurugram is ideally positioned to serve investors, buyers and tenants in Sectors 57, 58, 59, 60, 61, 62, 63, 63A, 64, and 65 along Golf Course Extension Road. For a site visit or consultation in these sectors, call +91 8448660019.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is there a real estate broker near me in Gurgaon or Gurugram?',
+          acceptedAnswer: { '@type': 'Answer', text: 'LSR Realty is Gurgaon\'s trusted real estate broker and investment consultant. Located on Golf Course Extension Road (Sector 58, Gurugram), LSR Realty serves clients across all Gurgaon sectors — GCER (Sectors 57–70), Golf Course Road (Sectors 42–44), Dwarka Expressway (Sectors 82–113), Sohna Road, and SPR. Phone: +91 8448660019. Walk-in welcome at 911, Magnum Global Park, Sector 58, Gurugram.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Does LSR Realty provide real estate advisory for clients in Delhi NCR?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. LSR Realty advises HNI and NRI investors from across the Delhi NCR region — including Delhi, Noida, Greater Noida, Faridabad, and Ghaziabad — on real estate investments, office leasing, and portfolio strategy in Gurgaon. Many NCR-based clients invest in Golf Course Extension Road and Dwarka Expressway properties through LSR Realty. Contact +91 8448660019 or marketing@lsrrealty.com for a free Delhi NCR real estate consultation.' },
         },
       ],
     }],
@@ -1473,6 +1535,14 @@ function makeSectorFAQ(sector) {
           text: `Investment potential in ${sector.name} Gurgaon depends on its corridor, connectivity, planned infrastructure under the Gurgaon Master Plan 2031, and current market pricing. LSR Realty provides free micro-market analysis for investors evaluating ${sector.name}. Contact +91 8448660019 or visit lsrrealty.com/contact for a free consultation.`,
         },
       },
+      {
+        '@type': 'Question',
+        name: `Who is the real estate broker near ${sector.name} Gurgaon?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `LSR Realty is a leading real estate broker serving ${sector.name} Gurgaon and surrounding sectors. Located at 911, Magnum Global Park, Sector 58, Golf Course Extension Road, Gurugram, LSR Realty provides investment advisory, channel partner services and property transactions for buyers and tenants in ${sector.name} and all major Gurgaon corridors. Call +91 8448660019 for a free consultation.`,
+        },
+      },
     ],
   };
 }
@@ -1945,7 +2015,7 @@ for (const sector of SECTOR_MAPS) {
   const sectorKeywords = SECTOR_MAP_KEYWORDS[sector.id]
     || (isMasterPlan
       ? 'Gurgaon Master Plan 2031, Gurgaon Master Plan 2031 PDF, Gurgaon Master Plan 2031 free download, Gurgaon Master Plan 2031 map download, Gurgaon Master Plan 2031 PDF download, Gurgaon Master Plan 2031 zone map, Gurgaon Master Plan 2031 land use, Gurugram Manesar Urban Complex map, DTCP Haryana Master Plan, Gurgaon Master Plan 2031 all sectors, Gurgaon sector map download, Gurugram Master Plan 2031, Gurgaon master plan 2031 2026, DTCP Haryana master plan download, Gurgaon land use map 2031, Gurugram development plan 2031, Gurgaon zone map free download'
-      : `${sector.name} map, ${sector.name} Gurgaon map, ${sector.name} map download, ${sector.name} Gurugram map, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, ${sector.name} property Gurgaon, Gurgaon sector map download, Gurugram sector map, DTCP Haryana approved layout, free Gurgaon sector map download, sector layout plan PDF Gurgaon, Gurgaon layout plan free download, Gurgaon Master Plan 2031`);
+      : `${sector.name} map, ${sector.name} Gurgaon map, ${sector.name} map download, ${sector.name} Gurugram map, ${sector.name} layout plan, ${sector.name} free download, ${sector.name} PDF download, ${sector.name} official layout, ${sector.name} DTCP approved, ${sector.name} property Gurgaon, ${sector.name} map near me, sector map near me Gurgaon, real estate broker near ${sector.name} Gurgaon, Gurgaon sector map download, Gurugram sector map, DTCP Haryana approved layout, free Gurgaon sector map download, sector layout plan PDF Gurgaon, Gurgaon layout plan free download, Gurgaon Master Plan 2031`);
 
   renderRoute({
     route: `/maps/${sector.id}`,
