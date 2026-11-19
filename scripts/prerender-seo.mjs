@@ -100,6 +100,27 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
   if (breadcrumbs && breadcrumbs.length > 1) allSchemas.push(makeBreadcrumbSchema(breadcrumbs));
   if (structuredData) allSchemas.push(...structuredData);
 
+  // Auto-inject WebPage + SpeakableSpecification for pages that don't already define a WebPage-type schema.
+  // SpeakableSpecification pointing to <title> and meta description enables Google Assistant voice answers.
+  const WEB_PAGE_TYPES = new Set(['WebPage','AboutPage','ContactPage','CollectionPage','Article','NewsArticle','BlogPosting']);
+  if (!allSchemas.some(sd => WEB_PAGE_TYPES.has(sd['@type']))) {
+    allSchemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${url}#webpage`,
+      url,
+      name: title,
+      description,
+      inLanguage: 'en-IN',
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'],
+      },
+      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website` },
+      dateModified: '2026-11-19',
+    });
+  }
+
   if (allSchemas.length > 0) {
     const jsonLdBlocks = allSchemas
       .map(sd => `  <script type="application/ld+json">${JSON.stringify(sd)}</script>`)
@@ -164,6 +185,7 @@ const staticRoutes = [
       '@type': 'AboutPage',
       url: `${SITE_URL}/about`,
       name: 'About LSR Realty — Institutional Real Estate Advisory, Gurgaon',
+      speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       description: 'LSR Realty is the investment advisory arm of LSR Group, bringing institutional-grade, research-backed real estate advisory to HNI, UHNI and NRI investors in Gurgaon.',
       // Reference the canonical entity already defined in index.html — avoids duplicate schemas
       mainEntity: { '@id': `${SITE_URL}/#organization` },
@@ -321,6 +343,7 @@ const staticRoutes = [
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: 'Gurgaon Real Estate Investment & Leasing Projects — LSR Realty',
+      speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       description: 'Curated portfolio of Gurgaon investment and leasing opportunities including luxury residential, Grade A office and premium retail across all major Gurugram corridors.',
       url: `${SITE_URL}/projects`,
       numberOfItems: PROJECTS.length,
@@ -365,6 +388,7 @@ const staticRoutes = [
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: 'Gurgaon Sector Maps & Layout Plans Library',
+      speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       description: '75+ approved sector layout plans for Gurugram, including the official Gurgaon Manesar Master Plan 2031. Maintained by LSR Realty for property investors and planners.',
       url: `${SITE_URL}/maps`,
       numberOfItems: SECTOR_MAPS.length,
@@ -516,6 +540,7 @@ const staticRoutes = [
       '@type': 'ContactPage',
       url: `${SITE_URL}/contact`,
       name: 'Contact LSR Realty — Real Estate Advisory Gurgaon',
+      speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       mainEntity: {
         '@type': ['LocalBusiness', 'RealEstateAgent'],
         '@id': `${SITE_URL}/#local-business`,
@@ -648,9 +673,10 @@ const staticRoutes = [
       '@type': 'WebPage',
       '@id': `${SITE_URL}/gurgaon-master-plan-2041`,
       name: 'Gurgaon Master Plan 2041: Status, Map & Infrastructure Roadmap',
+      speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       description: 'Detailed tracker for the Gurgaon Master Plan 2041 by GMDA (Gurugram Metropolitan Development Authority). Covers status update, population projection of 55 lakh, new sector development, metro corridors and investment implications.',
       url: `${SITE_URL}/gurgaon-master-plan-2041`,
-      dateModified: '2026-09-05',
+      dateModified: '2026-11-19',
       significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`, `${SITE_URL}/contact`],
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
       author: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
@@ -2001,7 +2027,7 @@ for (const sector of SECTOR_MAPS) {
     publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
     mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
     license: 'https://dtcpharyana.gov.in/',
-    dateModified: '2026-10-21',
+    dateModified: '2026-11-19',
     potentialAction: {
       '@type': 'DownloadAction',
       name: isMasterPlan ? 'Download Gurgaon Master Plan 2031 Map' : `Download ${sector.name} Layout Map`,
@@ -2218,6 +2244,7 @@ for (const post of publishedPosts) {
     '@type': 'Article',
     headline: post.title,
     description: postDescription,
+    speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
     image: postImage,
     datePublished: isoDate,
     dateModified: post.dateModifiedISO || isoDate,
@@ -2346,3 +2373,34 @@ fs.writeFileSync(path.join(distDir, 'sitemap-images.xml'), imageSitemapXml);
 const totalRoutes = staticRoutes.length + PROJECTS.length + SECTOR_MAPS.length + publishedPosts.length;
 console.log(`✓ Prerendered ${totalRoutes} routes: BreadcrumbList, RealEstateListing, Article, ItemList, Blog, Map, WebPage, JobPosting, FAQPage, CollectionPage schemas.`);
 console.log(`✓ Image sitemap: ${imageEntries.length} images across ${imageEntries.length} pages.`);
+
+// ── IndexNow: notify Bing, Yandex & Seznam instantly of all updated URLs ──────
+// Key file must be live at https://lsrrealty.com/d3a4b5c6e7f8a9b0c1d2e3f4a5b6c7d8.txt
+const INDEXNOW_KEY = 'd3a4b5c6e7f8a9b0c1d2e3f4a5b6c7d8';
+const indexNowUrls = [
+  `${SITE_URL}/`,
+  ...staticRoutes.map(r => `${SITE_URL}${r.route}`),
+  ...PROJECTS.map(p => `${SITE_URL}/projects/${p.id}`),
+  ...SECTOR_MAPS.map(s => `${SITE_URL}/maps/${s.id}`),
+  ...publishedPosts.map(p => `${SITE_URL}/blog/${p.id}`),
+];
+try {
+  const res = await fetch('https://api.indexnow.org/indexnow', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify({
+      host: 'lsrrealty.com',
+      key: INDEXNOW_KEY,
+      keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
+      urlList: indexNowUrls,
+    }),
+  });
+  const status = res.status;
+  if (status === 200 || status === 202) {
+    console.log(`✓ IndexNow: notified Bing/Yandex of ${indexNowUrls.length} URLs (HTTP ${status}).`);
+  } else {
+    console.log(`⚠ IndexNow: HTTP ${status} — ensure key file is deployed before next build.`);
+  }
+} catch (e) {
+  console.log(`⚠ IndexNow: ${e.message} (non-fatal — URLs will be crawled normally).`);
+}
