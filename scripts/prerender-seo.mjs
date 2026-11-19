@@ -316,7 +316,7 @@ const staticRoutes = [
       hasPart: PROJECTS.map((p, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        name: p.title,
+        name: p.name,
         url: `${SITE_URL}/projects/${p.id}`,
         image: p.image?.startsWith('http') ? p.image : `${SITE_URL}${p.image}`,
       })),
@@ -679,11 +679,27 @@ const NEARBY_PROJECT_KEYWORDS = {
     'DLF Arbour vs DLF Privana', 'new residential launch Sector 63 Gurgaon',
     'DLF projects Golf Course Extension Road', 'Golf Course Extension Road residential project',
   ],
+  // ─── GCER Sector 59 ───────────────────────────────────────────────────────
+  'max-estate-59': [
+    'projects in Sector 59 Gurgaon', 'Golf Course Extension Road ultra luxury',
+    'DLF Arbour Sector 63', 'Hines Elevate Vista Sector 63A', 'AIPL Business Club Sector 62',
+    'Magnum Global Park Sector 58', 'ultra luxury apartments Sector 59 Gurgaon',
+    'Max Estate 59 vs DLF Arbour', 'Max Estates Gurgaon new launch',
+    'ultra luxury 4 BHK Sector 59 Golf Course Extension Road',
+  ],
   // ─── GCER Sector 63A ──────────────────────────────────────────────────────
   'aipl-joy-square': [
     'projects in Sector 63A Gurgaon', 'Golf Course Extension Road retail',
     'DLF Arbour Sector 63', 'AIPL Business Club Sector 62', 'Elan Empire Sector 66',
-    'AIPL projects Golf Course Extension Road', 'retail space near Sector 63 Gurgaon',
+    'Hines Elevate Vista Sector 63A', 'AIPL projects Golf Course Extension Road',
+    'retail space near Sector 63 Gurgaon',
+  ],
+  'elevate-vista': [
+    'projects in Sector 63A Gurgaon', 'Golf Course Extension Road ultra luxury residential',
+    'AIPL Joy Square Sector 63A', 'DLF Arbour Sector 63', 'Max Estate 59 Sector 59',
+    'Hines Conscient Gurgaon', 'ultra luxury 3.5 BHK GCER Gurgaon',
+    'ultra luxury 4.5 BHK Golf Course Extension Road', 'Hines Elevate Vista vs DLF Arbour',
+    'new ultra luxury launch Sector 63A Gurgaon', 'HARERA 69 of 2026',
   ],
   // ─── GCER Sector 65 ───────────────────────────────────────────────────────
   'aipl-joy-central': [
@@ -943,6 +959,16 @@ const PROJECT_FAQ_SCHEMAS = {
       { '@type': 'Question', name: 'What is the price of The Westin Residences Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'The Westin Residences on Dwarka Expressway are priced at ₹25,750 to ₹26,750 per sqft. A 3 BHK of 2,693 to 2,939 sqft starts at ₹6.75 crore and a 4 BHK of 3,750 to 4,329 sqft starts at ₹10.03 crore. Possession is expected in December 2029. Contact LSR Realty at +91 8448660019 for current pricing and payment plan details.' } },
       { '@type': 'Question', name: 'What are branded residences and how does Westin differ from regular luxury apartments?', acceptedAnswer: { '@type': 'Answer', text: 'Branded residences are luxury homes co-developed with a global hospitality brand — in this case, Westin by Marriott International. Residents receive hotel-standard services including housekeeping, in-residence dining, spa and sauna, and concierge support as part of living in the building. The Westin Residences differ from regular luxury apartments in that the brand\'s operational standards, design guidelines, and service delivery are maintained by the hotel group, not just a residential management company.' } },
       { '@type': 'Question', name: 'Where is The Westin Residences located in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'The Westin Residences is located in Sector 103, Dwarka Expressway, Gurgaon. Sector 103 offers direct Dwarka Expressway access, proximity to IGI Airport (approximately 15 km), and connectivity to Golf Course Road and NH 48. The location is ideal for senior corporate professionals and NRI buyers seeking proximity to the airport.' } },
+    ],
+  },
+  'elevate-vista': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'What is Hines Elevate Vista in Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Hines Elevate Vista is an ultra-luxury residential project by Hines and Conscient in Sector 63A, Golf Course Extension Road, Gurugram. It offers 3.5 and 4.5 BHK residences of 3,600 to 4,500 sq ft, registered under HARERA 69 of 2026. The project features private lift lobbies, sky lounge, luxury clubhouse and concierge service, designed for HNI and UHNI buyers on GCER. LSR Realty is an authorised channel partner. Contact +91 8448660019 for price sheet and floor plans.' } },
+      { '@type': 'Question', name: 'What is the price of Hines Elevate Vista Gurgaon?', acceptedAnswer: { '@type': 'Answer', text: 'Hines Elevate Vista is priced at ₹20,000 to ₹22,000 per sq ft. A 3.5 BHK of 3,600 sq ft starts at ₹7.5 Cr onwards and a 4.5 BHK of 4,500 sq ft starts at ₹10 Cr onwards. The project is a new launch in Sector 63A, Golf Course Extension Road, Gurugram. Contact LSR Realty at +91 8448660019 or email marketing@lsrrealty.com for the current cost sheet and payment plan.' } },
+      { '@type': 'Question', name: 'What is the RERA number of Hines Elevate Vista?', acceptedAnswer: { '@type': 'Answer', text: 'Hines Elevate Vista is registered with HARERA (Haryana Real Estate Regulatory Authority) under HARERA 69 of 2026. Buyers can verify project details, escrow compliance, developer information, and construction status on the HRERA portal at harerait.org.in.' } },
+      { '@type': 'Question', name: 'How is Hines Elevate Vista different from other ultra-luxury projects on Golf Course Extension Road?', acceptedAnswer: { '@type': 'Answer', text: 'Hines Elevate Vista stands apart on Golf Course Extension Road for its international developer pedigree — Hines is a global real estate firm managing over $94 billion in assets, collaborating with Conscient, an established Gurgaon developer. The project offers 3.5 and 4.5 BHK residences of 3,600 to 4,500 sq ft with private lift lobbies, matching the ultra-luxury benchmark set by DLF Arbour and Max Estate 59 on the same corridor. HARERA 69 of 2026 registration confirms regulatory compliance.' } },
     ],
   },
   'max-estate-59': {
