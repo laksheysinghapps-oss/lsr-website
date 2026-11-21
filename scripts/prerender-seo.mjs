@@ -117,7 +117,7 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
         xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'],
       },
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website` },
-      dateModified: '2026-11-19',
+      dateModified: '2026-11-21',
     });
   }
 
@@ -407,7 +407,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-11-19',
+      dateModified: '2026-11-21',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -676,7 +676,7 @@ const staticRoutes = [
       speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       description: 'Detailed tracker for the Gurgaon Master Plan 2041 by GMDA (Gurugram Metropolitan Development Authority). Covers status update, population projection of 55 lakh, new sector development, metro corridors and investment implications.',
       url: `${SITE_URL}/gurgaon-master-plan-2041`,
-      dateModified: '2026-11-19',
+      dateModified: '2026-11-21',
       significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`, `${SITE_URL}/contact`],
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
       author: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
