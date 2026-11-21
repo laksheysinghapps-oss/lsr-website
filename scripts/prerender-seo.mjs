@@ -2380,10 +2380,15 @@ console.log(`✓ Image sitemap: ${imageEntries.length} images across ${imageEntr
 // ── IndexNow: notify Bing, Yandex & Seznam instantly of all updated URLs ──────
 // Key file must be live at https://lsrrealty.com/d3a4b5c6e7f8a9b0c1d2e3f4a5b6c7d8.txt
 const INDEXNOW_KEY = 'd3a4b5c6e7f8a9b0c1d2e3f4a5b6c7d8';
+// Standalone landing pages in public/projects/ that are not in the main PROJECTS array
+const STANDALONE_LANDING_PAGES = [
+  'dlf-the-dahlias', 'm3m-mansion', 'sobha-altus', 'tarc-ishva', 'whiteland-the-aspen',
+];
 const indexNowUrls = [
   `${SITE_URL}/`,
   ...staticRoutes.map(r => `${SITE_URL}${r.route}`),
   ...PROJECTS.map(p => `${SITE_URL}/projects/${p.id}`),
+  ...STANDALONE_LANDING_PAGES.map(id => `${SITE_URL}/projects/${id}`),
   ...SECTOR_MAPS.map(s => `${SITE_URL}/maps/${s.id}`),
   ...publishedPosts.map(p => `${SITE_URL}/blog/${p.id}`),
 ];

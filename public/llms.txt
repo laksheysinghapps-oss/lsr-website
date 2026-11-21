@@ -57,8 +57,13 @@ LSR Realty serves HNI, UHNI and NRI investors across the Delhi NCR region:
 |---|---|---|---|
 | Hines Elevate Vista | Sector 63A, GCER | Ultra-luxury 3.5 & 4.5 BHK (new launch) | ₹7.5 Cr+ (HARERA 69/2026) |
 | Max Estate 59 | Sector 59, GCER | Ultra-luxury 4 BHK (new launch) | On request |
+| DLF The Dahlias | Sector 54, Golf Course Road | Ultra-luxury villas & sky residences | On request |
 | DLF The Arbour | Sector 63, GCER | Ultra-luxury 4 BHK (resale) | ₹9.3 Cr+ |
 | DLF Privana South | Sectors 76–77, GCER | Luxury 4 BHK | ₹7.5 Cr+ |
+| M3M Mansion | Sector 113, Dwarka Expressway | Ultra-luxury 3.5 & 4.5 BHK | On request |
+| Sobha Altus | Sector 106, Dwarka Expressway | Luxury 3 & 4 BHK | On request |
+| TARC Ishva | Sector 63A, GCER | Ultra-luxury 4 BHK | On request |
+| Whiteland The Aspen | Sector 76, GCER | Luxury 3 & 4 BHK | On request |
 | Emaar Serenity Hills | Sector 86, Dwarka Expressway | 3 & 4 BHK | ₹2.95 Cr+ |
 | The Westin Residences | Sector 103, Dwarka Expressway | Branded residences | ₹6.75 Cr+ |
 | Elan Paradise | Sector 50, Nirvana Country | Luxury retail leasing | On request |
@@ -103,3 +108,12 @@ All RERA-registered projects in Gurgaon can be verified on the HRERA portal at h
 - [About LSR Realty](https://lsrrealty.com/about)
 - [Contact & Free Consultation](https://lsrrealty.com/contact)
 - [Gurgaon Master Plan 2041 Tracker](https://lsrrealty.com/gurgaon-master-plan-2041)
+
+## Project Landing Pages
+
+- [DLF The Dahlias — Sector 54 Golf Course Road](https://lsrrealty.com/projects/dlf-the-dahlias)
+- [M3M Mansion — Sector 113 Dwarka Expressway](https://lsrrealty.com/projects/m3m-mansion)
+- [Sobha Altus — Sector 106 Dwarka Expressway](https://lsrrealty.com/projects/sobha-altus)
+- [TARC Ishva — Sector 63A Golf Course Extension Road](https://lsrrealty.com/projects/tarc-ishva)
+- [Whiteland The Aspen — Sector 76 Golf Course Extension Road](https://lsrrealty.com/projects/whiteland-the-aspen)
+- [Hines Elevate Vista — Sector 63A GCER (New Launch)](https://elevate-vista.lsrrealty.com)
