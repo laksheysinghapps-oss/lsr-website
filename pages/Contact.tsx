@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
     lastName: '',
     email: '',
     phone: '',
-    interest: 'Investment Advisory',
+    interest: 'Hines Elevate Vista (New Launch)',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
         lastName: '',
         email: '',
         phone: '',
-        interest: 'Investment Advisory',
+        interest: 'Hines Elevate Vista (New Launch)',
         message: ''
       });
     } else {
@@ -222,10 +222,30 @@ const Contact: React.FC = () => {
                   onChange={handleInputChange}
                   className="w-full bg-black border-b border-white/20 py-3 text-white focus:outline-none focus:border-lsr-gold transition-colors"
                 >
-                  <option>Investment Advisory</option>
-                  <option>New Project Inquiry</option>
-                  <option>NRI Services</option>
-                  <option>Other</option>
+                  <optgroup label="── Residential Projects ──" style={{color:'#C6A667'}}>
+                    <option>Hines Elevate Vista (New Launch)</option>
+                    <option>Max Estate 59 (New Launch)</option>
+                    <option>DLF The Dahlias</option>
+                    <option>DLF The Arbour</option>
+                    <option>DLF Privana South</option>
+                    <option>DLF The Magnolias</option>
+                    <option>M3M Mansion</option>
+                    <option>Sobha Altus</option>
+                    <option>TARC Ishva</option>
+                    <option>Whiteland The Aspen</option>
+                    <option>Emaar Serenity Hills</option>
+                    <option>The Westin Residences</option>
+                  </optgroup>
+                  <optgroup label="── Commercial / Retail ──" style={{color:'#C6A667'}}>
+                    <option>Elan Paradise (Retail)</option>
+                    <option>AIPL Joy Street (Retail)</option>
+                    <option>Office Leasing Inquiry</option>
+                  </optgroup>
+                  <optgroup label="── General ──" style={{color:'#C6A667'}}>
+                    <option>Investment Advisory</option>
+                    <option>NRI Services</option>
+                    <option>Other</option>
+                  </optgroup>
                 </select>
               </div>
               <div className="space-y-2 pt-4">
