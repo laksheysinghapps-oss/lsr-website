@@ -1389,7 +1389,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '9 min read',
     image: '/images/IMG_4957.jpg',
     featured: true,
-    published: true,
+    published: false,
     content: `
 <style>.prose h2{font-size:1.6rem;font-weight:700;color:#ffffff;margin:2.5rem 0 1rem;line-height:1.3}.prose h3{font-size:1.05rem;font-weight:600;color:#C6A667;margin:1.25rem 0 0.4rem}.prose p{color:#d1d5db;line-height:1.8;margin:0 0 1.25rem;text-align:justify}.prose a{color:#c9a54a;text-decoration:underline}.prose strong{color:#ffffff;font-weight:700}.prose table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.85rem}.prose th{background:#1a1a1a;color:#C6A667;padding:10px 14px;text-align:left;border:1px solid #2a2a2a}.prose td{padding:10px 14px;border:1px solid #2a2a2a;color:#d1d5db;vertical-align:top}.prose tr:nth-child(even) td{background:#111111}</style>
 
