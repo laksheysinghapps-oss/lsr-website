@@ -1378,6 +1378,98 @@ export const COMPANY_DETAILS = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'top-10-real-estate-companies-india-founders',
+    title: 'Top 10 Real Estate Companies in India and Their Founders (2026 Guide)',
+    excerpt: 'From Gautam Adani\'s Rs 52,400-crore real estate empire to Irfan Razack\'s Prestige Group — a fully researched guide to India\'s top 10 real estate developers and the visionaries who built them.',
+    metaDescription: 'Discover the top 10 real estate companies in India by market value and brand recognition, their founders, landmark projects, and what drives each of them in 2026.',
+    category: 'Market Intelligence',
+    date: 'November 2026',
+    dateISO: '2026-11-25',
+    dateModifiedISO: '2026-11-25',
+    readTime: '9 min read',
+    image: '/images/IMG_4957.jpg',
+    featured: true,
+    published: true,
+    content: `
+<style>.prose h2{font-size:1.6rem;font-weight:700;color:#ffffff;margin:2.5rem 0 1rem;line-height:1.3}.prose h3{font-size:1.05rem;font-weight:600;color:#C6A667;margin:1.25rem 0 0.4rem}.prose p{color:#d1d5db;line-height:1.8;margin:0 0 1.25rem;text-align:justify}.prose a{color:#c9a54a;text-decoration:underline}.prose strong{color:#ffffff;font-weight:700}.prose table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.85rem}.prose th{background:#1a1a1a;color:#C6A667;padding:10px 14px;text-align:left;border:1px solid #2a2a2a}.prose td{padding:10px 14px;border:1px solid #2a2a2a;color:#d1d5db;vertical-align:top}.prose tr:nth-child(even) td{background:#111111}</style>
+
+<p>India's real estate sector is one of the fastest-growing industries in the world, contributing approximately 7.3% to the country's GDP and projected to reach USD 1 trillion by 2030. Behind the country's most iconic skylines, integrated townships, and commercial parks are a handful of developers whose vision, capital, and risk appetite built entire cities from scratch. This guide profiles the <strong>top 10 real estate companies in India</strong> by market capitalisation and brand recognition as of December 2026 — along with the founders and current leaders driving each organisation.</p>
+
+<p>At LSR Realty, we work directly with several of these developers as an authorised channel partner in Gurugram. Understanding their founding philosophy, track record, and financial standing is core to the advisory we provide every HNI, UHNI, and NRI investor who trusts us with their real estate decisions.</p>
+
+<h2>1. Adani Realty — Gautam Adani</h2>
+<h3>Group Founded: 1988 | Real Estate Arm: Adani Realty | Status: Unlisted</h3>
+<p>Adani Realty is India's most valuable unlisted real estate company, valued by Forbes India at Rs 52,400 crore in July 2025. It is the real estate division of the Adani Group — the infrastructure and energy conglomerate founded in 1988 by <strong>Gautam Adani</strong> in Ahmedabad. Born in 1962 into a Gujarati family, Adani started as a diamond sorter in Mumbai before moving into commodities trading and then ports. The Adani Group today spans ports, airports, power, green energy, FMCG, and media — and real estate is its newest, fastest-growing vertical.</p>
+<p>Adani Realty has approximately 108 million sq ft under development across Mumbai, Ahmedabad, Pune, and Delhi NCR. Its most significant project is the <strong>Dharavi Redevelopment Project</strong> — one of the largest urban redevelopment undertakings in Asian history, covering 240 acres in central Mumbai. In Goregaon, Adani Properties signed a deal to redevelop Motilal Nagar valued at Rs 36,000 crore under the Maharashtra SRA scheme. A 10,000 crore integrated township near the upcoming Navi Mumbai International Airport in Panvel rounds out a pipeline that most listed peers cannot match in ambition.</p>
+
+<h2>2. DLF Limited — Rajiv Singh (Founder: Chaudhary Raghvendra Singh)</h2>
+<h3>Founded: 4 July 1946 | HQ: New Delhi &amp; Gurugram | Listed: NSE, BSE</h3>
+<p>DLF Limited (Delhi Land and Finance) is <strong>India's largest listed real estate company by market capitalisation</strong> at approximately Rs 1.40 lakh crore. The company was founded on 4 July 1946 by <strong>Chaudhary Raghvendra Singh</strong>, who began by developing 22 urban colonies in Delhi. It was his son-in-law Kushal Pal Singh (K.P. Singh) who joined in 1979 and transformed DLF from a Delhi land developer into the architect of modern Gurugram. K.P. Singh's decision to acquire agricultural land south of Delhi and create DLF City, Cyber City, and the Golf Course Road corridor is arguably the most consequential single real estate bet in independent India's history.</p>
+<p>K.P. Singh retired in 2020 at age 90 and was appointed Chairman Emeritus. His son <strong>Rajiv Singh</strong> is now Chairman, having led DLF through record housing sales in FY25 and a remuneration that rose 20% to Rs 44.06 crore in FY26 — a measure of the company's strong operational performance. DLF is LSR Realty's most prominent developer partner, with active projects including <a href="/#/projects/dlf-the-arbour">DLF The Arbour</a>, <a href="/#/projects/dlf-privana-south">DLF Privana South</a>, and DLF The Dahlias.</p>
+
+<h2>3. Lodha Developers Limited — Mangal Prabhat Lodha</h2>
+<h3>Founded: 1980 | HQ: Mumbai | Listed: NSE, BSE (2021)</h3>
+<p><strong>Lodha Developers Limited</strong> (formerly Macrotech Developers) is India's largest real estate developer by annual revenue. The company was founded in 1980 by <strong>Mangal Prabhat Lodha</strong> — a lawyer from Rajasthan who relocated to Mumbai and built a residential development firm from scratch. Unusually, Mangal Prabhat Lodha also served as a Member of the Legislative Assembly (MLA) representing Mumbai's Malabar Hill constituency, combining business leadership with public service.</p>
+<p>His sons Abhishek Lodha and Abhinandan Lodha joined in 2003, triggering exponential growth. <strong>Abhishek Lodha</strong>, as MD and CEO, led the company through its IPO in April 2021 (raising Rs 2,500 crore) and renamed it Lodha Developers Limited in June 2025. The company's landmark World One tower in Mumbai — 442 metres tall — and Palava City, a 4,000-acre integrated township, are among the most ambitious real estate projects in India's history. Lodha has since expanded into Pune, Delhi NCR, and London.</p>
+
+<h2>4. Oberoi Realty — Vikas Oberoi</h2>
+<h3>Incorporated: 1998 | HQ: Mumbai | Listed: NSE, BSE</h3>
+<p>Oberoi Realty is one of India's most respected ultra-luxury developers, built by <strong>Vikas Oberoi</strong> — born in Mumbai in 1969 into a real estate family. His father Ranvir Oberoi was also a prominent Mumbai developer. Oberoi Constructions was incorporated in 1993; Oberoi Realty Limited was formally incorporated in 1998 and listed on the exchanges. Vikas Oberoi serves as Chairman and Managing Director.</p>
+<p>His defining move came in 2002: acquiring the 60-acre Novartis campus in Goregaon, Mumbai, for Rs 107 crore when most observers considered it a risk. That tract became Oberoi Garden City — a landmark development housing Oberoi Exquisite, Commerz office towers, and Oberoi International School. His Three Sixty West project in Worli remains one of Mumbai's most expensive residential addresses. In 2024, Oberoi Realty announced its first entry into Gurugram with a 14.8-acre land acquisition in Sector 58, Golf Course Extension Road — the same corridor where LSR Realty operates.</p>
+
+<h2>5. K Raheja Corp — Chandru Raheja</h2>
+<h3>Founded: 1956 | HQ: Mumbai | 3 Listed Entities</h3>
+<p>K Raheja Corp is one of India's oldest and most diversified real estate conglomerates. The group was founded in 1956 by <strong>Lachmandas Raheja</strong> in Mumbai. His son <strong>Chandru Raheja</strong> (born 1941) took full control following a family split in 1996 and built it into a multi-sector organisation with an estimated net worth of Rs 41,000 crore. Today the group is led by his sons <strong>Ravi Raheja and Neel Raheja</strong>, who serve as Group Presidents.</p>
+<p>K Raheja Corp's portfolio is unusual in its breadth. It founded <strong>Shoppers Stop</strong> in 1991 — India's first large-format fashion retail chain — which is independently listed on NSE/BSE. Its commercial arm, <strong>Mindspace Business Parks REIT</strong>, is listed on NSE/BSE and owns a Grade A office portfolio in Hyderabad, Mumbai, and Pune. Its hospitality arm, <strong>Chalet Hotels</strong>, owns and operates JW Marriott Mumbai Sahar and multiple Westin and Marriott properties. Few Indian business families have simultaneously listed three separate companies in real estate, retail, and hospitality.</p>
+
+<h2>6. The Phoenix Mills — Atul Ruia</h2>
+<h3>Founded: 1905 | HQ: Mumbai | Listed: NSE, BSE</h3>
+<p>Phoenix Mills has one of the most remarkable transformation stories in Indian business. The company was incorporated on 27 January 1905 as a cotton textile mill by <strong>Ramnarain Ruia</strong> — a Marwari industrialist who was also among the founders of Bank of India. For eight decades, Phoenix Mills was a functioning textile operation in Mumbai's Lower Parel, listed on the Bombay Stock Exchange in 1959.</p>
+<p>In 1994, <strong>Atul Ruia</strong> took over the struggling mill and made a decision that would reshape Indian retail: convert the dying factory into a destination shopping complex. <strong>High Street Phoenix</strong> — Mumbai's first large-format mall — opened in Lower Parel in 1996, pioneering the organised retail real estate category in India. Atul Ruia later transitioned to Chairman; <strong>Shishir Shrivastava</strong> serves as Group MD and CEO. Phoenix now operates flagship Marketcity and Palladium malls across nine cities with more under development.</p>
+
+<h2>7. Bagmane Group — Raja Bagmane</h2>
+<h3>Founded: 1996 | HQ: Bengaluru | REIT IPO Filed</h3>
+<p>Bagmane Group is India's most prominent commercial real estate developer outside the listed REIT space. Founded in 1996 by <strong>Raja Bagmane</strong> in Bengaluru, the group was among the earliest developers to build large-format dedicated technology parks in India. Its flagship Bagmane Tech Park — launched in C.V. Raman Nagar, Bengaluru in 2001–2002 — was one of the city's first IT parks and helped establish Bengaluru as Asia's technology capital. Raja Bagmane serves as Founder and Managing Director; his sons Aditya and Shashank Bagmane are directors and have taken on operational leadership.</p>
+<p>As of 2025, the group operates approximately <strong>30 million sq ft of Grade A office space</strong> across 150+ acres in Bengaluru — a portfolio of Bagmane World Technology Centre (ORR), Bagmane Solarium City (Whitefield), and Bagmane Constellation. Raja Bagmane's personal wealth was estimated at Rs 19,650 crore on the Grohe-Hurun India Real Estate List 2024. The group has filed a Draft Red Herring Prospectus (DRHP) with SEBI for <strong>Bagmane Prime Office REIT</strong> — a Rs 4,000 crore IPO that will be one of India's most significant office REIT listings.</p>
+
+<h2>8. Hiranandani Group — Dr. Niranjan Hiranandani &amp; Surendra Hiranandani</h2>
+<h3>Founded: 1978 | HQ: Mumbai | Unlisted (Private)</h3>
+<p>Hiranandani Group is one of India's most iconic real estate brands — an unlisted, family-controlled company that has shaped Mumbai's residential and commercial landscape more visibly than almost any other developer. The group was founded in 1978 by brothers <strong>Dr. Niranjan Hiranandani</strong> (born 1950) and <strong>Surendra Hiranandani</strong> in Mumbai. Dr. Niranjan Hiranandani is the more publicly prominent of the two and frequently represents the Indian real estate industry in government consultations.</p>
+<p>The group's defining project is <strong>Hiranandani Gardens in Powai</strong>, Mumbai — a 250-acre master-planned township that began in 1989 and transformed a rocky, waterlogged tract on Mumbai's eastern fringe into one of the city's most coveted addresses. It features its own retail, schools, hospitals, temples, and commercial towers — a privately financed, privately delivered urban environment that influenced every major township developer that followed. The group has since built Hiranandani Fortune City in Thane (100+ acres), Hiranandani Parks in Chennai, and has diversified into logistics parks and data centres through Hiranandani Infrastructure.</p>
+
+<h2>9. Godrej Properties — Gaurav Pandey (Founders: Ardeshir Godrej &amp; Pirojsha Burjorji Godrej)</h2>
+<h3>Group Founded: 1897 | Real Estate Arm: 1990 | Listed: NSE, BSE (2010)</h3>
+<p>Godrej Properties is the real estate arm of the <strong>Godrej Group</strong> — founded in 1897 by <strong>Ardeshir Godrej</strong> and his brother <strong>Pirojsha Burjorji Godrej</strong> in Mumbai, originally as a lock-making business. Over 125 years, the Godrej name has become one of the highest-trusted brand identities in India, spanning FMCG, appliances, aerospace, agri-business, and financial services.</p>
+<p>Godrej Properties was incorporated in 1990 and listed on NSE/BSE in 2010 (raising USD 100 million). Pirojsha Adi Godrej — great-grandson of the founder — served as CEO from 2012 and is now Executive Chairman. <strong>Gaurav Pandey</strong> was appointed Managing Director and CEO effective 1 January 2023 and was reappointed for a further three-year term from 1 January 2026 — a signal of strong institutional confidence. Under their leadership, Godrej Properties has built one of the most geographically diversified portfolios among Indian developers, spanning Mumbai, Pune, Delhi NCR, Bengaluru, Chennai, and Hyderabad.</p>
+
+<h2>10. Prestige Group — Irfan Razack</h2>
+<h3>Founded: 1986 | HQ: Bengaluru | Listed: NSE, BSE</h3>
+<p>Prestige Group is South India's largest real estate developer, with over 250 completed projects spanning residential, commercial, retail, and hospitality assets. The company was founded in 1986 by <strong>Razack Sattar</strong> in Bengaluru — building on a family entrepreneurial tradition that traces back to a fabric and tailoring shop Sattar opened on Commercial Street in 1950, still operating today as 'Prestige The Man Store.'</p>
+<p><strong>Irfan Razack</strong>, Razack Sattar's eldest son, is Chairman and Managing Director of Prestige Estates Projects Ltd. It was his brother Rezwan Razack who initiated property trading in the mid-1980s, and Irfan who institutionalised the firm into a full-spectrum developer. Irfan is credited with creating Forum Koramangala (Bengaluru's first shopping mall) and The Collection (described as India's first luxury mall). A recipient of the Ernst &amp; Young Entrepreneur of the Year Award, he has since led Prestige's expansion into Mumbai (Prestige City, Mulund), Hyderabad, and Delhi NCR. Irfan Razack is widely regarded as one of India's most respected real estate leaders.</p>
+
+<h2>Summary: Top 10 Real Estate Companies in India (December 2026)</h2>
+
+<table>
+<tr><th>Rank</th><th>Company</th><th>Founder</th><th>Est.</th><th>Current Leader</th><th>Exchange</th></tr>
+<tr><td>1</td><td>Adani Realty</td><td>Gautam Adani</td><td>1988</td><td>Gautam Adani</td><td>Unlisted</td></tr>
+<tr><td>2</td><td>DLF Limited</td><td>Chaudhary Raghvendra Singh</td><td>1946</td><td>Rajiv Singh (Chairman)</td><td>NSE, BSE</td></tr>
+<tr><td>3</td><td>Lodha Developers</td><td>Mangal Prabhat Lodha</td><td>1980</td><td>Abhishek Lodha (CEO)</td><td>NSE, BSE</td></tr>
+<tr><td>4</td><td>Oberoi Realty</td><td>Vikas Oberoi</td><td>1998</td><td>Vikas Oberoi (CMD)</td><td>NSE, BSE</td></tr>
+<tr><td>5</td><td>K Raheja Corp</td><td>Lachmandas Raheja</td><td>1956</td><td>Ravi &amp; Neel Raheja</td><td>3 listed entities</td></tr>
+<tr><td>6</td><td>Phoenix Mills</td><td>Ramnarain Ruia</td><td>1905</td><td>Atul Ruia (Chairman)</td><td>NSE, BSE</td></tr>
+<tr><td>7</td><td>Bagmane Group</td><td>Raja Bagmane</td><td>1996</td><td>Raja Bagmane (MD)</td><td>REIT IPO filed</td></tr>
+<tr><td>8</td><td>Hiranandani Group</td><td>Niranjan &amp; Surendra Hiranandani</td><td>1978</td><td>Dr. Niranjan Hiranandani</td><td>Unlisted</td></tr>
+<tr><td>9</td><td>Godrej Properties</td><td>Ardeshir Godrej (1897)</td><td>1990</td><td>Gaurav Pandey (MD &amp; CEO)</td><td>NSE, BSE</td></tr>
+<tr><td>10</td><td>Prestige Group</td><td>Razack Sattar</td><td>1986</td><td>Irfan Razack (CMD)</td><td>NSE, BSE</td></tr>
+</table>
+
+<h2>What India's Top Real Estate Founders Have in Common</h2>
+<p>A close reading of these ten founding stories reveals a consistent pattern: each founder made a large, contrarian bet that the market had not yet validated. K.P. Singh built Gurugram when Delhi's establishment thought he was mad to look south. Mangal Prabhat Lodha built luxury apartments in Mumbai when the market was still entry-level. Irfan Razack built malls in Bengaluru before organised retail was an Indian concept. Atul Ruia tore down a working mill and replaced it with a shopping complex. Gautam Adani entered real estate when everyone knew him only for ports — and was immediately valued at Rs 52,400 crore.</p>
+<p>The common thread is not capital. It is the willingness to build for a future market that does not yet exist, and the operational discipline to deliver quality consistently enough to build lasting brand trust. These ten companies collectively account for the majority of India's premium real estate supply and represent the gold standard of developer credibility for HNI, UHNI, and NRI investors.</p>
+<p><strong>LSR Realty is an authorised channel partner for DLF's luxury residential portfolio in Gurugram</strong>, including <a href="/#/projects/dlf-the-arbour">DLF The Arbour</a>, <a href="/#/projects/dlf-privana-south">DLF Privana South</a>, and DLF The Dahlias. For site visits, pricing, and investment advisory on any project by India's top developers, contact LSR Realty at +91 8448660019 or visit lsrrealty.com.</p>
+`,
+  },
+  {
     id: 'gurgaon-manesar-master-plan-2031-explained',
     title: 'Gurgaon Manesar Master Plan 2031 Explained: What Every Property Investor Needs to Know',
     excerpt: 'A plain-English guide to the Gurgaon Manesar Master Plan 2031, land use, transport corridors, and metro expansion, and what it means for property investors in Gurgaon and Gurugram.',
@@ -1385,7 +1477,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Market Intelligence',
     date: 'July 2026',
     dateISO: '2026-07-10',
-    dateModifiedISO: '2026-11-21',
+    dateModifiedISO: '2026-11-25',
     readTime: '7 min read',
     image: '/images/sector-maps/gurgaon-manesar-master-plan-zoom.jpg',
     featured: false,
@@ -1423,7 +1515,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Location Guide',
     date: 'July 2026',
     dateISO: '2026-07-03',
-    dateModifiedISO: '2026-11-21',
+    dateModifiedISO: '2026-11-25',
     readTime: '9 min read',
     image: '/images/gcer-8-lane-road.png',
     featured: true,
@@ -1524,7 +1616,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'NRI Advisory',
     date: 'July 2026',
     dateISO: '2026-07-25',
-    dateModifiedISO: '2026-11-21',
+    dateModifiedISO: '2026-11-25',
     readTime: '11 min read',
     image: '/images/nri-real-estate-buying-guide-gurugram.png',
     published: true,
@@ -1602,7 +1694,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Investment Advisory',
     date: 'August 2026',
     dateISO: '2026-08-18',
-    dateModifiedISO: '2026-11-21',
+    dateModifiedISO: '2026-11-25',
     readTime: '8 min read',
     image: '/images/IMG_4957.jpg',
     published: true,
