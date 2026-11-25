@@ -41,6 +41,23 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  const triggerDownload = async (url: string) => {
+    try {
+      const response = await fetch(url);
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = url.split('/').pop() || 'map.jpg';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setTimeout(() => URL.revokeObjectURL(blobUrl), 2000);
+    } catch {
+      window.open(url, '_blank');
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -59,6 +76,10 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
     });
     setIsSubmitting(false);
     setSubmitted(true);
+
+    if (downloadUrl) {
+      triggerDownload(downloadUrl);
+    }
   };
 
   return (
@@ -87,15 +108,26 @@ const BrochureModal: React.FC<BrochureModalProps> = ({
               <div className="w-14 h-14 rounded-full bg-green-900/30 border border-green-500/40 flex items-center justify-center mb-4">
                 <Check className="text-green-400 w-7 h-7" />
               </div>
-              <p className="text-white font-semibold mb-1">{downloadUrl ? 'Check your email!' : 'Request Received!'}</p>
+              <p className="text-white font-semibold mb-1">{downloadUrl ? 'Download Started!' : 'Request Received!'}</p>
               <p className="text-gray-400 text-sm">
                 {downloadUrl
-                  ? `We've sent the download link to ${formData.email}. Check your inbox (and spam folder).`
+                  ? 'Your map is downloading. If it does not start automatically, use the button below.'
                   : successMessage}
               </p>
+              {downloadUrl && (
+                <a
+                  href={downloadUrl}
+                  download
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 bg-lsr-gold text-black text-sm font-bold uppercase tracking-widest px-5 py-3 hover:opacity-90 transition-opacity"
+                >
+                  Download Again
+                </a>
+              )}
               <button
                 onClick={onClose}
-                className="mt-6 px-6 py-2 border border-white/20 text-sm text-gray-300 hover:border-white hover:text-white transition-colors"
+                className="mt-4 px-6 py-2 border border-white/20 text-sm text-gray-300 hover:border-white hover:text-white transition-colors"
               >
                 Close
               </button>
