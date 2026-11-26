@@ -117,7 +117,7 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
         xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'],
       },
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website` },
-      dateModified: '2026-11-25',
+      dateModified: '2026-11-26',
     });
   }
 
@@ -407,7 +407,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-11-25',
+      dateModified: '2026-11-26',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -1423,7 +1423,7 @@ for (const project of PROJECTS) {
       priceCurrency: 'INR',
       price: project.priceRange,
       availability: isSoldOut ? 'https://schema.org/LimitedAvailability' : 'https://schema.org/InStock',
-      validFrom: '2025-01-01',
+      validFrom: '2026-01-01',
       seller: { '@type': 'RealEstateAgent', name: 'LSR Realty', telephone: '+918448660019', url: SITE_URL },
     },
     additionalProperty: [
@@ -2027,7 +2027,7 @@ for (const sector of SECTOR_MAPS) {
     publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
     mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
     license: 'https://dtcpharyana.gov.in/',
-    dateModified: '2026-11-19',
+    dateModified: '2026-11-26',
     potentialAction: {
       '@type': 'DownloadAction',
       name: isMasterPlan ? 'Download Gurgaon Master Plan 2031 Map' : `Download ${sector.name} Layout Map`,
