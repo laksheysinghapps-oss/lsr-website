@@ -117,7 +117,7 @@ function renderRoute({ route, title, description, image, keywords, ogType, struc
         xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'],
       },
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website` },
-      dateModified: '2026-11-26',
+      dateModified: '2026-11-27',
     });
   }
 
@@ -407,7 +407,7 @@ const staticRoutes = [
         containedInPlace: { '@type': 'State', name: 'Haryana', containedInPlace: { '@type': 'Country', name: 'India' } },
       },
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
-      dateModified: '2026-11-26',
+      dateModified: '2026-11-27',
     }, {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -487,7 +487,7 @@ const staticRoutes = [
         '@type': 'JobPosting',
         title: 'Leasing Manager — Commercial & Retail Real Estate',
         description: 'LSR Realty is looking for an experienced Leasing Manager to drive commercial and retail leasing across office spaces, retail outlets, high streets, malls, and mixed-use developments in Gurgaon.',
-        datePosted: '2026-11-19',
+        datePosted: '2026-11-27',
         validThrough: '2026-12-31',
         employmentType: 'FULL_TIME',
         hiringOrganization: { '@type': 'Organization', name: 'LSR Realty', sameAs: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
@@ -504,7 +504,7 @@ const staticRoutes = [
         '@type': 'JobPosting',
         title: 'Sales Telecaller Intern — Real Estate',
         description: 'We are looking for enthusiastic Sales Telecaller Interns to join LSR Realty\'s Real Estate Sales Team in Gurgaon. The role involves lead generation, scheduling site visits, and supporting the sales team.',
-        datePosted: '2026-11-19',
+        datePosted: '2026-11-27',
         validThrough: '2026-12-31',
         employmentType: 'INTERN',
         hiringOrganization: { '@type': 'Organization', name: 'LSR Realty', sameAs: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
@@ -518,7 +518,7 @@ const staticRoutes = [
         '@type': 'JobPosting',
         title: 'Sales Runner — Real Estate',
         description: 'We are looking for an energetic Sales Runner to support LSR Realty\'s sales team in Gurgaon by managing site visits, client coordination, lead follow-ups, and on-ground sales activities.',
-        datePosted: '2026-11-19',
+        datePosted: '2026-11-27',
         validThrough: '2026-12-31',
         employmentType: 'FULL_TIME',
         hiringOrganization: { '@type': 'Organization', name: 'LSR Realty', sameAs: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
@@ -676,7 +676,7 @@ const staticRoutes = [
       speakable: { '@type': 'SpeakableSpecification', xpath: ['/html/head/title', '/html/head/meta[@name="description"]/@content'] },
       description: 'Detailed tracker for the Gurgaon Master Plan 2041 by GMDA (Gurugram Metropolitan Development Authority). Covers status update, population projection of 55 lakh, new sector development, metro corridors and investment implications.',
       url: `${SITE_URL}/gurgaon-master-plan-2041`,
-      dateModified: '2026-11-25',
+      dateModified: '2026-11-27',
       significantLink: [`${SITE_URL}/maps/gurgaon-manesar-master-plan`, `${SITE_URL}/blog/gurgaon-manesar-master-plan-2031-explained`, `${SITE_URL}/contact`],
       publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL, logo: `${SITE_URL}/images/Logo2.png` },
       author: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
@@ -1404,7 +1404,7 @@ for (const project of PROJECTS) {
     description: project.description,
     url: projectUrl,
     image: projectImage,
-    datePosted: '2026-11-19',
+    datePosted: '2026-11-27',
     availableAtOrFrom: {
       '@type': 'Place',
       name: `${project.name}, ${project.location}`,
@@ -1508,7 +1508,7 @@ for (const project of PROJECTS) {
         : (project.rera ? `${project.name} RERA` : ''),
       project.category === 'Leasing'
         ? `office space for lease Gurgaon, shop for lease Gurgaon, retail space Gurgaon, commercial property for lease Gurgaon, ${project.name} lease, ${project.name} rent`
-        : `flat for sale Gurgaon, apartment for sale Gurgaon, luxury apartments Gurgaon 2025, buy property Gurgaon, ${project.name} for sale`,
+        : `flat for sale Gurgaon, apartment for sale Gurgaon, luxury apartments Gurgaon 2026, buy property Gurgaon, ${project.name} for sale`,
       'Gurgaon real estate investment',
       `real estate ${project.category === 'Leasing' ? 'leasing' : 'investment'} Gurgaon`,
       'LSR Realty channel partner',
@@ -1516,7 +1516,7 @@ for (const project of PROJECTS) {
       `channel partner ${project.name}`,
       project.category === 'Leasing'
         ? 'commercial property Gurgaon, Grade A office Gurgaon, retail leasing Gurgaon, pre-leased office Gurgaon'
-        : `luxury property Gurgaon, buy luxury property Gurgaon 2025, property investment ROI Gurgaon, price appreciation Gurgaon`,
+        : `luxury property Gurgaon, buy luxury property Gurgaon 2026, property investment ROI Gurgaon, price appreciation Gurgaon`,
       ...(NEARBY_PROJECT_KEYWORDS[project.id] || []),
     ].filter(Boolean).join(', '),
     image: projectImage,
@@ -2028,7 +2028,7 @@ for (const sector of SECTOR_MAPS) {
     publisher: { '@type': 'Organization', name: 'LSR Realty', url: SITE_URL },
     mapType: isMasterPlan ? 'https://schema.org/ZoningMap' : 'https://schema.org/UrbanMap',
     license: 'https://dtcpharyana.gov.in/',
-    dateModified: '2026-11-26',
+    dateModified: '2026-11-27',
     potentialAction: {
       '@type': 'DownloadAction',
       name: isMasterPlan ? 'Download Gurgaon Master Plan 2031 Map' : `Download ${sector.name} Layout Map`,
