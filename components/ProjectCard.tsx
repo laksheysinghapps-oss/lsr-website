@@ -70,10 +70,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   if (isElevateVista) {
     return (
       <a
-        href="https://elevate-vista.lsrrealty.com"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/projects/elevate-vista"
         className={cardClass}
+        onClick={() => window.scrollTo(0, 0)}
       >
         {cardContent}
       </a>

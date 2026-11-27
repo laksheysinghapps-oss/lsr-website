@@ -1388,9 +1388,10 @@ const PROJECT_FAQ_SCHEMAS = {
 
 // ── Project detail pages ──────────────────────────────────────────────────────
 for (const project of PROJECTS) {
-  // max-estate-59 has a standalone landing page in public/projects/max-estate-59/index.html
-  // — skip prerendering so the static file is served directly by Vercel
-  if (project.id === 'max-estate-59') continue;
+  // max-estate-59 and elevate-vista have standalone landing pages in
+  // public/projects/<id>/index.html — skip prerendering so the static file
+  // is served directly by Vercel
+  if (project.id === 'max-estate-59' || project.id === 'elevate-vista') continue;
 
   const projectImage = project.image?.startsWith('http') ? project.image : `${SITE_URL}${project.image}`;
   const projectUrl = `${SITE_URL}/projects/${project.id}`;
